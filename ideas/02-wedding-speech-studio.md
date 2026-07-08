@@ -288,3 +288,37 @@ stay under ~$15 for the math to breathe. Cap total paid spend at **$1.5–2k** u
 ### Seasonality lever
 Bid up May–October (speech-writing panic season, 1–4 weeks before weddings) and
 December–February for engagement-season vow/planning adjacency; drop bids in the trough.
+
+---
+
+## 6. Naming Decision — Clinkworthy
+
+**Chosen name: Clinkworthy** (clinkworthy.com — available at $11.25/yr as of July 2026;
+grab clinkready.com as a redirect too).
+
+### Why it won
+- Distinctive coined word → you can own branded search entirely (competitors like
+  "Nail The Speech" and "Wedding Speech App" are stuck with generic names).
+- No "AI" in the name — consistent with the authenticity positioning ("no one will know").
+- Works as in-product language: the final quality-check state is "Clinkworthy ✓".
+- It's an adjective → free tagline: **"Make it clinkworthy."**
+- Warm and lightly funny without being a joke brand; safe for the heartfelt end of the
+  tone slider too.
+
+### Diligence (July 2026)
+- Domain: available (checked via registrar API).
+- Existing usage: none as a company/product/mark — only casual adjective use in Amazon
+  wine-gift-set copy. No app, no SaaS, no wedding business found under the name.
+- Adjacent marks that are NOT conflicts: Clink.money (fintech), Waterford's dead 2009
+  "Clink-Clink" iPhone app, a trivial "CLINK" GPT wrapper on yeschat.ai.
+- Never use: "Toastmaster(s)", "Speechcraft" — Toastmasters International trademarks.
+
+### Remaining manual checklist (do before/at purchase)
+- [ ] Buy clinkworthy.com (+ clinkready.com redirect) — ~$22 total
+- [ ] 2-min USPTO TESS search for "clinkworthy" (expected clean — coined word)
+- [ ] Register @clinkworthy on TikTok, Instagram, X, YouTube (web search shows no
+      existing profiles, but verify by hand — handles matter as much as the domain
+      for the content channels)
+- [ ] Runner-up shortlist if anything surfaces: clinkready.com, heartfelttoast.com,
+      bettertoast.com (avoid nailyourtoast.com — collides with competitor Nail The Speech)
+
