@@ -70,9 +70,82 @@ viral hook), multilingual, vow writing (separate intent, add later).
 
 ## 2. Competitor Teardown
 
-*(researched July 2026)*
+*(researched July 2026; some vendor pages blocked automated fetches — spot-check exact
+prices before relying on them)*
 
-<!-- TEARDOWN -->
+### The field at a glance
+
+| Competitor | Price | What it is | Weakness to exploit |
+|---|---|---|---|
+| [Provenance](https://www.provenance.co) | Free tier; tools ~$30 each | Funded category leader (~$4M seed, Upfront Ventures; 150k+ couples). Vow/Ceremony/Toast Builders | **Couple-centric** — vows and ceremony first; guest speakers (best man/MOH) are a bolt-on audience, not the core user |
+| [ToastWiz](https://www.toastwiz.com) | $39.90 one-time | Pure-play incumbent: guided form → 4 drafts **emailed to you** | Batch-and-email model, no in-app revision loop, no rehearsal/delivery help |
+| [SpeechyAI](https://www.speechy.com) | $29.99 one-time (cut from $65) | UK human-speechwriting firm (ex-BBC writers) productized; 40–50 question intake | Questionnaire takes 45–60 min; 3 drafts, **no editing**; few roles |
+| [Nail The Speech](https://www.nailthespeech.com) | $29.99 one-time, 90-day access | **Closest analog**: voice input, 44 roles, sentence-level editing, one-click refinements, TTS practice | TTS listening ≠ user rehearsal; no teleprompter; zero trust signals (no reviews/press); 90-day cap |
+| [Wedding Speech App](https://weddingspeech.app) | $29 one-time / 3 speeches | Built by Green Wedding Shoes (major blog) — strong in-app editing, unlimited edits | **Ends at PDF export** — no delivery features; distribution is their blog, not a moat vs you |
+| [Verble](https://www.verble.app) | ~$20 one-time / $8–25 mo | Generalist speech tool — **the only one with a real teleprompter + webcam rehearsal** | Not wedding-native; confused subscription pricing for a one-and-done occasion |
+| [Bridesmaid for Hire](https://bridesmaidforhire.com) | Free tools; human service $$$$ | Jen Glantz's SEO machine — "127 MOH speech examples" ranks top-5 | AI tools are lead magnets, not products; human service priced out of mass market |
+| Free-tool tier (AI Wedding Toast, Easy-Peasy, HyperWrite, Junia…) | Free | SERP-cloggers monetizing adjacent subscriptions | Generic one-field intake → generic output; no wedding depth |
+| App Store tier (WedSpeak, Best Man Speech AI) | $0.99–15 | Race-to-the-bottom mobile apps | Scathing reviews ("$15 for only 3 edits", "Copilot did an INSANELY better job. For free") — web is where $29–49 lives |
+
+### How people actually solve this today (the substitute ladder)
+Free (ChatGPT + free generators) → **$29–40 dedicated AI tools ← your segment, validated
+4× over** → $90–225 Fiverr human writers (category avg ~$89) → $500+ bespoke (UK:
+£80–150/minute). Your $39 sits exactly on the established price point.
+
+### The emotional insight that should drive positioning
+The #1 anxiety in this market is **"will I get caught using AI"** — viral shaming stories
+recur ("it's like he didn't even try"), people call admitting ChatGPT use "cringe", while
+the winning anecdote is an AI-assisted MOH speech where "the bride had no idea AI was
+involved." Nobody currently markets the authenticity guarantee: *"we interview you like a
+speechwriter would — the stories are yours."* Voice-note intake is the feature-shaped
+version of that promise. This validates the spec's interview-first design as the core bet,
+not a nice-to-have.
+
+### Confirmed gaps (mapped to the spec)
+1. **Write + rehearse + deliver as one wedding-native bundle is unclaimed.** Every wedding
+   writer stops at text/PDF; the only teleprompter belongs to a generalist (Verble) with
+   subscription pricing. The rehearsal mode is the paid differentiator free tools can't
+   cheaply match.
+2. **Revision loop quality is a marketable feature with documented complaints behind it**
+   (ToastWiz: none; SpeechyAI: none; WedSpeak: $15 for 3 edits, users furious). "Unlimited
+   sentence-level refinement, one-time price" goes on the pricing page.
+3. **Intake-time sweet spot is open**: SpeechyAI's 45–60 min is too long, free tools' one
+   field is too shallow. The spec's 10–14 question / ~12-minute voice-friendly interview is
+   the defensible middle.
+4. **Father-of-the-bride and couple speeches are under-served** — older, most terrified,
+   highest willingness to pay. Worth its own SEO cluster early.
+5. **Trust vacuum**: none of the pure-plays have Trustpilot presence. First to 200+ verified
+   reviews wins the comparison shopper. Start collecting from sale #1.
+6. **UK/Commonwealth wedge**: best-man culture is stronger there and the ranking sites are
+   dated content plays; localized British-humor tone is cheap to ship.
+7. **Untouched distribution channels**: wedding planners, DJs/MCs (who watch bad speeches
+   weekly), officiant networks, groomsmen-gift boxes. Provenance proved the affiliate/
+   officiant motion for ceremonies — nobody runs it for toasts.
+
+### SEO reality check
+"Best man speech examples"-type SERPs are owned by **content sites** (The Knot, Brilliant
+Earth, Bridesmaid for Hire), not products — winnable only with genuinely good example
+content, which is also the conversion surface. "Wedding speech generator" SERPs *are*
+products, with free tools ranking above paid. Nail The Speech shows the current playbook:
+programmatic role pages + `/vs/` comparison pages + self-published listicles. Copy it and
+out-execute on product trust.
+
+### Threats to respect
+- **ChatGPT keeps improving for free** — the product must win on packaging (interview,
+  wedding know-how, rehearsal), and the rehearsal features are the part a chat window
+  can't replicate.
+- **Fast copycats**: 15+ entrants in 3 years; features get cloned in months. Trust
+  (reviews) + SEO compounding + channel relationships are the actual moats.
+- **Super-app bundling**: The Knot/Zola/Joy could ship a free toast tool to captive
+  audiences; Provenance could push harder into toasts.
+- **Google AI Overviews** compressing the informational funnel everyone depends on —
+  another reason the TikTok leg matters.
+- **One-time pricing = perpetual acquisition treadmill** — accepted trade-off; mitigate
+  with the day-after keepsake upsells and multi-speech households (parents + siblings).
+
+### Market size sanity check
+~2M US weddings/yr × 3–5 speeches each ≈ **6–10M first-time, anxious speech-givers per
+year in the US alone**, before the UK/AU/CA markets where the tradition is stronger.
 
 ---
 
