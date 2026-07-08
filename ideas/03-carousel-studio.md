@@ -75,9 +75,70 @@ Chrome extension, comment-writing/engagement features (different product).
 
 ## 2. Competitor Teardown
 
-*(researched July 2026)*
+*(researched July 2026; pricing from third-party 2026 reviews where vendor pages blocked
+fetches — treat exact dollars as ±1 tier)*
 
-<!-- TEARDOWN -->
+### The field at a glance
+
+| Competitor | Price | What it is | Weakness to exploit |
+|---|---|---|---|
+| [Taplio](https://taplio.com) | $39–199/mo | Incumbent all-in-one LinkedIn suite (Lempire-owned) | Starter tier has **zero AI credits** (real price ~$65); generic output; carousel tool is a thin SEO lead-magnet; cookie-auth shadowban complaints |
+| [Supergrow](https://supergrow.ai) | $19–49/mo | **Strongest direct competitor** — repurposing (blog/PDF/YouTube → posts + carousels), voice profiles, best-in-class carousel maker | LinkedIn-only (no X output); carousels gated at $29, analytics at $39 |
+| [PostNitro](https://postnitro.ai) | $10–16/mo | Dedicated multi-platform carousel generator; proves prosumer pays ~$16 for carousels alone | Single-format (carousel only); opaque credit limits (Trustpilot complaint) |
+| [aiCarousels](https://aicarousels.com) | Free / $14.95/mo | **Ranks #1 for "linkedin carousel maker"**; free-first; 40% lifetime affiliate program | Single-format, limited customization, recognizable "aiCarousels look" |
+| [ContentDrips](https://contentdrips.com) | $15–26/mo | 1,000+ templates, blog-URL → carousel, carousel REST API for Zapier/Make | Own reviewers report template fatigue — "carousels begin to look similar to one another" |
+| Canva (+ AI 2.0, Apr 2026) | Free / $14.99/mo | The default substitute; new design foundation model, Bulk Create | No LinkedIn-native pipeline; "the Canva look" is the genericness audiences scroll past |
+| [Gamma](https://gamma.app) | $8–18/mo | AI presentation maker with a dedicated social-carousel format; output genuinely looks good | A canvas, not a repurposing pipeline; no threads/scripts |
+| [Kleo](https://kleo.so) | $99/mo flat | Voice-memory premium tool — relaunched after **LinkedIn banned its extension** | Lesson: platform risk is real; premium segment exists but isn't your fight |
+| [EasyGen](https://easygen.io) | $59.99/mo | Ruben Hassid's tool — $33K MRR in 5 months **purely off his own LinkedIn audience** | Text posts only; proof that creator distribution alone can build $400k+ ARR |
+| [Postiv AI](https://postiv.ai) | $99–229/mo | **Closest concept match**: blog/PDF/transcript → voice-trained posts + carousels + scheduling | Priced 5–8× above prosumer; LinkedIn-only |
+| Typefully / Hypefury | $12.50–29/mo | X-side suites (threads, cross-posting) | No design/carousel capability at all |
+| Free-tool farms (Typegrow, Reepl) | Free → ~$24–29/mo | 11–30+ free micro-tools each, ranking via SEO | Thin products; but they own the SERPs you want |
+
+### What the market is loudly complaining about (your openings)
+1. **AI sameness / "slop"** — the dominant complaint across every review: same training data,
+   same hooks, "the generic LinkedIn voice everyone has tuned out." A whole 2026 sub-category
+   (voice-trained tools) exists as a reaction — on *text*. Nobody has claimed anti-slop for
+   **visuals**.
+2. **Template fatigue** — ContentDrips' and aiCarousels' own users report outputs looking
+   samey. This is the visual twin of the slop complaint and is the exact wedge of this product.
+   No incumbent markets on taste.
+3. **Pricing games** — AI gated above advertised entry price (Taplio's zero-credit Starter,
+   PostNitro's opaque credits). A flat honest ~$15 plan is itself a differentiator.
+4. **Account safety** — Kleo banned, Taplio shadowban chatter. Publish-by-download + no
+   cookie auth = "we can't get you banned" positioning, free.
+
+### Is the multi-format gap real?
+Yes. Long-form → LinkedIn carousel is served (Supergrow, PostNitro, ContentDrips). Long-form
+→ voice-matched posts is crowded. But **one paste → designed carousel + X thread variants +
+video scripts with hook options does not exist as one product under $99/mo** (Postiv is the
+nearest match at $99). LinkedIn tools willfully ignore X; X tools (Typefully, Hypefury) don't
+design; video-script tools are disconnected free utilities. Hook-variants-as-a-primitive
+lives only in scattered free micro-tools or Taplio's $69 tier.
+
+### Pricing anchors (validated)
+Carousel-only prosumer: $10–16. LinkedIn suite prosumer: $19–39. Premium voice/all-in-one:
+$48–99. **Your $15 Creator tier sits at the carousel-tool ceiling / suite floor — viable
+because you deliver more formats than a carousel maker.** Data supports a later $29
+"everything" tier (Supergrow proves it).
+
+### SEO reality check
+Page 1 for "linkedin carousel maker": aiCarousels, Taplio's free tool, Reepl, Canva
+templates, ContentDrips, PostNitro, Typegrow. **Free no-signup tools rank; paid homepages
+don't.** The playbook there is fixed: one free tool page per long-tail ("blog to carousel",
+"thread to carousel", "transcript to video script" are still open), comparison pages early,
+and a 30–40% recurring affiliate program for mid-tier LinkedIn creators (aiCarousels' model;
+EasyGen's outcome).
+
+### Threats to respect
+- **Canva AI 2.0** (Apr 2026) + **Gamma** moving into social could commoditize the design
+  layer. Defense: platform-native pipeline (LinkedIn PDF specs, thread mechanics, hook
+  science) and speed-to-publish — they're canvases, not pipelines.
+- **LinkedIn algorithm rotation**: document posts still lead engagement but reports say
+  LinkedIn is starting to de-prioritize saturated PDF carousels while pushing video (views
+  +36% YoY). **Keep the video-script leg first-class — it's the hedge, not a checkbox.**
+- **Supergrow's shipping speed** — if they add X output, they collide with you directly.
+- Same-LLM commoditization: generation is not a moat; template taste + workflow are.
 
 ---
 
