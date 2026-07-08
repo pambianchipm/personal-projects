@@ -1,7 +1,11 @@
 # Idea #2 Deep Dive — Wedding Speech & Toast Studio
 
 Guided AI speech drafting + rehearsal for best-man / maid-of-honor / parent speeches.
-One-time pricing. GTM: programmatic SEO + TikTok. Solo dev, ~2–3 week build.
+One-time pricing. GTM: programmatic SEO + TikTok + targeted paid. Solo dev, ~2–3 week build.
+
+> **DECISION (July 2026): This is the one.** Chosen for buildability, validated $29–49
+> one-time price point, unclaimed write+rehearse+deliver bundle, and a real unfair
+> advantage: founder's brother works in a wedding band (see §4).
 
 ---
 
@@ -200,3 +204,87 @@ speeches are being written right now) and will be fully SEO-indexed by engagemen
   user calls before touching the funnel.
 - If neither channel shows signal by day 60 with consistent execution: kill per the
   pre-committed metric and take the SEO learnings to idea #5.
+
+---
+
+## 4. The Wedding Band Advantage (unfair advantage playbook)
+
+Founder's brother plays in a wedding band → he is in the room for 2–5 real speeches
+**every weekend**. That's 100+ live speeches a year. Use him four ways:
+
+### 4a. Quality control that no competitor can buy
+- **Weekly speech autopsy**: after each gig, a 10-minute debrief — which speech landed,
+  which died, why. What got laughs vs. what got polite silence, where people checked
+  phones, ideal length in practice (bands know: shorter than anyone thinks). This feedback
+  goes directly into the prompt rules and the laugh-beat markers in rehearsal mode.
+- **Blind voice test**: for every prompt-pipeline change, he reads 3 drafts — can he tell
+  which is AI? Would this fly at a real reception? Ship nothing that fails his read.
+- This makes the anti-cliché ruleset *empirical*, not guessed — a real moat over
+  competitors tuning prompts from their desks.
+
+### 4b. Content engine (the TikTok cheat code)
+The research showed nobody in this category has credible faces. A wedding-band member is
+inherently credible wedding content:
+- "I hear 3 wedding speeches every weekend — here's what the good ones do"
+- "Wedding band member rates famous movie best-man speeches"
+- "Things we've actually heard in best man speeches" (band-eye-view stories)
+- Duets/stitches of viral wedding speech clips with musician commentary
+He doesn't need to be the founder-face daily; even 1–2 co-created videos a week is a
+content pillar competitors can't copy.
+
+### 4c. The vendor channel (untouched per research)
+Bands, DJs and MCs watch bad speeches ruin receptions weekly — they *want* speeches to be
+better, and they talk to every wedding party weeks before the event.
+- Start with brother's band: a QR card in their gig kit / booking confirmation email —
+  "giving a toast? don't wing it" with a band-specific discount code (doubles as tracking).
+- Then his network: every band shares bills with other bands, DJs, planners. Offer a 20–30%
+  affiliate cut. Even 20 vendors × 2 referrals/month at $39 is real money at zero CAC —
+  and it's the channel the research explicitly flagged as unclaimed (Provenance runs it
+  for officiants/ceremonies; nobody runs it for toasts).
+
+### 4d. Social proof / positioning
+"Built with the people who hear 100+ wedding speeches a year." That single line, plus his
+face on the landing page, attacks the category's trust vacuum (no pure-play competitor has
+Trustpilot presence or credible humans attached).
+
+---
+
+## 5. Paid Acquisition Plan (budget-honest version)
+
+**Reality check first:** on a <$5k total budget, paid ads are a *validation instrument*,
+not a growth engine. Unit economics box: $39 price ≈ ~$35 gross margin → blended CAC must
+stay under ~$15 for the math to breathe. Cap total paid spend at **$1.5–2k** until organic
++ SEO prove the funnel converts; scale paid only from revenue.
+
+### Channel order (by intent, which is by ROI)
+1. **Google Search — start here (~60% of paid budget, $15–20/day)**
+   - Exact/phrase match on high-intent long-tail only: "best man speech generator",
+     "ai maid of honor speech writer", "help writing best man speech", "father of the
+     bride speech help". Skip broad "best man speech" (informational, content sites own it).
+   - Expect low volume — that's fine; the job is measuring **click → interview-start →
+     paid** with real strangers. ~50 paid interview-starts is enough data.
+   - Negative keywords from day 2 ("free", "examples", "template" initially — test later).
+   - This channel maps perfectly to a panic-purchase: someone searching at 11pm two weeks
+     out is your buyer.
+2. **TikTok Spark Ads — only after an organic post works (~25%)**
+   - Do not cold-launch TikTok ads with made-for-ads creative. Post organic daily first
+     (per §3 launch plan); when one hits, whitelist/spark it with $20/day. The
+     Swipewipe/Ramdam case study is the template: creator-style content, many variations.
+   - Brother-content (4b) is the ad creative pipeline.
+3. **Meta (FB/IG) — last, retargeting only (~15%)**
+   - Cold-targeting speech-givers on Meta is hard (you can find engaged couples, but the
+     buyer is their best friend/sibling — no targeting segment exists for "was just asked
+     to be best man").
+   - Use it for: retargeting interview-abandoners (highest-ROI audience you'll have) and,
+     later, lookalikes on purchasers once there are 100+.
+   - IG placement skews to the MOH demographic; creative = testimonial/reaction clips.
+
+### Measurement bar (pre-commit before spending)
+- Kill a channel after $500 spent with CAC > $30 trending flat.
+- Keep any channel with CAC < $15 and refill from revenue.
+- Attribution: UTM everything + a one-question "how did you hear about us" on checkout
+  (last-click lies, especially for TikTok).
+
+### Seasonality lever
+Bid up May–October (speech-writing panic season, 1–4 weeks before weddings) and
+December–February for engagement-season vow/planning adjacency; drop bids in the trough.
