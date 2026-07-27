@@ -18,6 +18,10 @@ sentence. Max 75 chars.
 
 - Category: **AI Services → AI Consulting** (fallback: Business → Business Consulting)
 - Attributes: pick "Consultation" + "Report" where offered.
+- Industry attributes (choose up to 5 — these act as browse filters, so cover the
+  highest-volume + highest-budget verticals): **Ecommerce · Financial Services · Legal ·
+  Real Estate · Health & Medical**. Broadest net of the three listings — any
+  ops-heavy SMB is an audit candidate.
 
 ## Project summary (1,188 chars — limit 1,200)
 
@@ -113,7 +117,12 @@ AI Automation Build and AI Chatbot projects. *(216)*
 
 ## Search tags (5)
 
-`ai audit` · `ai consulting` · `workflow automation` · `business process automation` · `ai integration`
+`ai audit` · `ai consulting` · `ai strategy` · `process improvement` · `automation consulting`
+
+*(Deliberately de-overlapped from the build listings — each listing indexes separately,
+so distinct tags widen total search coverage. `workflow automation` and
+`business process automation` belong to the Automation Build listing. Accept Upwork's
+nearest official tag where the exact phrase isn't offered.)*
 
 ## Gallery note
 

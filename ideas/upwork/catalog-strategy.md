@@ -42,6 +42,23 @@ Premium from day 1 (decided over the doc's cheap-early-jobs posture): round numb
   multi-source + one channel (Slack/site/support desk) + accuracy eval → agent that
   takes actions (booking, tickets, CRM writes) with human approval.
 
+## Industry attributes & search tags (per listing)
+
+Industry checkboxes act as browse filters (unchecked = invisible to that filter), so
+each listing covers its 5 best verticals. Tags are deliberately de-overlapped — each
+listing indexes separately, so distinct tags widen total search coverage.
+
+| Listing | Industries (5) | Search tags (5) |
+|---|---|---|
+| Audit | Ecommerce, Financial Services, Legal, Real Estate, Health & Medical | ai audit, ai consulting, ai strategy, process improvement, automation consulting |
+| Automation Build | Ecommerce, Financial Services, Legal, Real Estate, Marketing & Advertising | ai automation, workflow automation, business process automation, ai integration, api integration |
+| Chatbot Build | Ecommerce, Retail & Wholesale, Health & Medical, Real Estate, Travel & Tourism | ai chatbot, chatbot development, rag, ai agent development, customer support ai |
+
+Intent split: audit owns consulting/strategy queries, automation owns automation
+queries, chatbot owns bot/agent queries. Deliberately skipped industries: Software
+(SaaS founders hire hourly devs, not productized consulting), Government/Nonprofit
+(procurement doesn't fit catalog buying).
+
 ## Economics floor
 
 Every tier must pencil to **≥ $150/hr effective** at honest effort estimates. Current

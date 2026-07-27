@@ -14,6 +14,10 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
 
 - Category: **AI Services → AI Integration** (fallback: Development & IT → Automation)
 - Attributes: "Automation setup" / "API integration" where offered.
+- Industry attributes (choose up to 5): **Ecommerce · Financial Services · Legal ·
+  Real Estate · Marketing & Advertising**. Same high-budget core as the audit, with
+  Marketing & Advertising swapped in — agencies are repeat automation buyers and
+  resell to their client rosters.
 
 ## Project summary (1,159 chars — limit 1,200)
 
@@ -105,7 +109,11 @@ automating, and the audit fee is credited toward this build within 30 days. *(15
 
 ## Search tags (5)
 
-`ai automation` · `workflow automation` · `ai integration` · `business process automation` · `api integration`
+`ai automation` · `workflow automation` · `business process automation` · `ai integration` · `api integration`
+
+*(This listing owns the automation-intent tags; the audit listing covers
+consulting/strategy intent, the chatbot listing covers chatbot/agent intent. Accept
+Upwork's nearest official tag where the exact phrase isn't offered.)*
 
 ## Gallery note
 

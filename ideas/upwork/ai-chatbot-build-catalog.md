@@ -14,6 +14,10 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
 
 - Category: **AI Services → AI Chatbot Development**
 - Attributes: "Chatbot development" / "RAG" where offered.
+- Industry attributes (choose up to 5): **Ecommerce · Retail & Wholesale ·
+  Health & Medical · Real Estate · Travel & Tourism**. Skews toward customer-facing,
+  inquiry-heavy verticals — that's who buys bots; the Advanced action-agent tier maps
+  directly to booking/scheduling use cases.
 
 ## Project summary (1,182 chars — limit 1,200)
 
@@ -110,6 +114,9 @@ your operation, and the audit fee is credited toward this build within 30 days. 
 ## Search tags (5)
 
 `ai chatbot` · `chatbot development` · `rag` · `ai agent development` · `customer support ai`
+
+*(Already distinct from the other two listings' tag sets — no changes needed. Accept
+Upwork's nearest official tag where the exact phrase isn't offered.)*
 
 ## Gallery note
 
