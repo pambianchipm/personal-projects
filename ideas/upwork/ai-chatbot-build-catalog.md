@@ -12,7 +12,7 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
 
 ## Category & attributes
 
-- Category: **AI Services → AI Chatbot Development**
+- Category: **Development & IT → AI & Machine Learning → Chatbots** (exact match)
 - Attributes: "Chatbot development" / "RAG" where offered.
 - Industry attributes (choose up to 5): **Ecommerce · Retail & Wholesale ·
   Health & Medical · Real Estate · Travel & Tourism**. Skews toward customer-facing,

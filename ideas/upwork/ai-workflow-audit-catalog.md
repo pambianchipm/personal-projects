@@ -16,7 +16,9 @@ sentence. Max 75 chars.
 
 ## Category & attributes
 
-- Category: **AI Services → AI Consulting** (fallback: Business → Business Consulting)
+- Category: **Development & IT → AI & Machine Learning → Other AI & Machine Learning**
+  (the audit is consulting, so none of the named build buckets fit; audit buyers
+  arrive via search tags, not browse, so "Other" costs nothing)
 - Attributes: pick "Consultation" + "Report" where offered.
 - Industry attributes (choose up to 5 — these act as browse filters, so cover the
   highest-volume + highest-budget verticals): **Ecommerce · Financial Services · Legal ·

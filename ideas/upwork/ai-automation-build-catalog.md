@@ -12,7 +12,10 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
 
 ## Category & attributes
 
-- Category: **AI Services → AI Integration** (fallback: Development & IT → Automation)
+- Category: **Development & IT → AI & Machine Learning → Generative AI**
+  (Claude/GPT-powered workflow automation is generative AI applied to operations;
+  highest-traffic bucket of the four. NOT "Machine Learning" — that reads as
+  model-training/data-science work, a different buyer)
 - Attributes: "Automation setup" / "API integration" where offered.
 - Industry attributes (choose up to 5): **Ecommerce · Financial Services · Legal ·
   Real Estate · Marketing & Advertising**. Same high-budget core as the audit, with
