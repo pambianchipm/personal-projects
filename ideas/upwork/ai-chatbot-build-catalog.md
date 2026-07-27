@@ -103,13 +103,13 @@ The chatbot-specific form variant (observed on the live form):
   integration project.
 - Add-ons (check 4 of 5): **Fast Delivery** +$300/+$500/+$900 → 4/9/14 days (rush
   buyers are the least price-sensitive; queue caps make it schedulable) ·
-  **Additional Revision** +$150 · **Additional Messaging Platform** +$500 (shared
-  retrieval layer = low-effort; clarify before accepting if the buyer means
-  WhatsApp/Messenger — those are custom-scope plumbing per the FAQ) · **API
-  Integration** +$750 (lets a Standard buyer bolt on one action — booking, tickets,
-  or CRM write — capturing the "$3,500 is too much" middle). **Skip Additional
-  Conversation Step** — steps are a legacy fiction for LLM bots; don't sell units
-  that cost nothing and mean nothing.
+  **Additional Revision** +$150, +1 day · **Additional Messaging Platform** +$500,
+  +2 days (shared retrieval layer = deploy-and-test work; clarify before accepting
+  if the buyer means WhatsApp/Messenger — those are custom-scope plumbing per the
+  FAQ) · **API Integration** +$750, +5 days (real engineering plus a client-access
+  dependency — quote 5, deliver in 3; captures the "$3,500 is too much" middle).
+  **Skip Additional Conversation Step** — steps are a legacy fiction for LLM bots;
+  don't sell units that cost nothing and mean nothing.
 
 ## Project steps (buyer-visible)
 
