@@ -24,6 +24,17 @@ sentence. Max 75 chars.
   highest-volume + highest-budget verticals): **Ecommerce · Financial Services · Legal ·
   Real Estate · Health & Medical**. Broadest net of the three listings — any
   ops-heavy SMB is an audit candidate.
+- AI attribute pickers (attributes are buyer-filter *claims*, not keywords — never
+  check ML-engineering items like CNN/YOLO/GAN/Pre-Training; note Claude isn't offered
+  anywhere, so Claude coverage lives in tags/summary text):
+  - AI Algorithms: **Large Language Model · Transformer Model · Multimodal Large
+    Language Model** — nothing else.
+  - AI Applications (lean — the audit sells judgment, not tech): **Natural Language
+    Understanding · AI Content Creation · AI-Enhanced Classification · Conversational AI**
+  - AI Development Language: **Python**
+  - AI Tools: **none** (blank is a valid answer — the list is HuggingFace/PyTorch
+    territory, not this stack)
+  - AI Models: **GPT-4 · ChatGPT**
 
 ## Project summary (1,163 chars — limit 1,200)
 
@@ -61,6 +72,14 @@ Tier logic: Standard is the anchor. Starter captures buyers who won't commit to 
 audit yet; "3" belongs to Standard alone (top 3 workflows) so the ladder reads clean.
 Advanced's roadmap deliverable *is* the scope document for the Automation/Chatbot build
 listings.
+
+### Service tier options (buyer-facing checkbox grid)
+
+If the form shows the per-tier "Service Tier Options" grid: check almost nothing —
+**Model Documentation** at most (all tiers). The audit deliverable is a report, and an
+empty build-checklist correctly signals "this is consulting, not a build." Everything
+else (Model Integration/Deployment/Source Code/etc.) would promise build work this
+listing doesn't include.
 
 ## Project steps (buyer-visible)
 

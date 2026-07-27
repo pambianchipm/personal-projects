@@ -21,6 +21,17 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
   Real Estate · Marketing & Advertising**. Same high-budget core as the audit, with
   Marketing & Advertising swapped in — agencies are repeat automation buyers and
   resell to their client rosters.
+- AI attribute pickers (claims, not keywords — never check ML-engineering items;
+  Claude isn't offered in any picker, so Claude coverage lives in tags/summary):
+  - AI Algorithms: **Large Language Model · Transformer Model · Multimodal Large
+    Language Model** — nothing else (CNN/YOLO/GAN etc. invite train-a-model buyers).
+  - AI Applications: **AI Content Creation · Natural Language Generation · Natural
+    Language Understanding · AI-Enhanced Classification (= triage) · Sentiment
+    Analysis** (+ Anomaly Detection only if comfortable defending it on a call)
+  - AI Development Language: **Python**
+  - AI Tools: **none** (blank is valid; the list doesn't cover this stack)
+  - AI Models: **GPT-4 · ChatGPT** (+ Whisper only if offering voice/call
+    transcription intake; + LLaMA only if offering open-source deploys)
 
 ## Project summary (1,137 chars — limit 1,200)
 
@@ -58,6 +69,33 @@ Tier logic: complexity is the axis. Starter = one step of a process (e.g., "summ
 and log every inbound lead email"). Standard = the whole workflow with approval loop
 (the flagship — most audit conversions land here). Advanced = systems work (multiple
 workflows sharing data), priced to filter for serious buyers.
+
+### Service tier options (buyer-facing checkbox grid)
+
+The per-tier checkboxes are how the ladder becomes visible — deliberate differences
+between columns make Standard look obviously richer:
+
+| Service option | Starter | Standard | Advanced |
+|---|---|---|---|
+| AI Model Integration | ✓ | ✓ | ✓ |
+| Prompt Engineering | ✓ | ✓ | ✓ |
+| Natural Language Processing | ✓ | ✓ | ✓ |
+| Detailed Code Comments | ✓ | ✓ | ✓ |
+| Model Documentation | ✓ | ✓ | ✓ |
+| Model Deployment | ✓ | ✓ | ✓ |
+| Setup File | ✓ | ✓ | ✓ |
+| Source Code | ✓ | ✓ | ✓ |
+| Database Integration | — | ✓ | ✓ |
+| Model Testing & Optimization | — | ✓ | ✓ |
+| Model Tuning | — | ✓ | ✓ |
+| Model Monitoring | — | — | ✓ |
+
+Translation: Model Integration = wiring Claude/GPT into their tools; Documentation +
+Code Comments = the documented-handoff promise; Setup File + Source Code = the
+no-lock-in pledge (check on every tier); Monitoring is Advanced-only because that's
+where the tier table puts it. **Never check (any tier):** Batch Normalization, Image
+Upscaling, MLOps, NLP Tokenization, Pre-Training — those mean "I train neural
+networks" to buyers who filter by them.
 
 ## Project steps (buyer-visible)
 

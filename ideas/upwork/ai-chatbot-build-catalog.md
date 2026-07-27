@@ -18,6 +18,16 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
   Health & Medical · Real Estate · Travel & Tourism**. Skews toward customer-facing,
   inquiry-heavy verticals — that's who buys bots; the Advanced action-agent tier maps
   directly to booking/scheduling use cases.
+- AI attribute pickers (claims, not keywords — never check ML-engineering items;
+  Claude isn't offered in any picker, so Claude coverage lives in tags/summary):
+  - AI Algorithms: **Large Language Model · Transformer Model · Multimodal Large
+    Language Model** — nothing else.
+  - AI Applications: **AI Chatbot · Conversational AI · Natural Language
+    Understanding · Natural Language Generation · Sentiment Analysis**
+  - AI Development Language: **Python**
+  - AI Tools: **none** (blank is valid)
+  - AI Models: **GPT-4 · ChatGPT** (+ LLaMA only if offering open-source deploys for
+    cost/privacy-sensitive clients — a real differentiator on this listing if so)
 
 ## Project summary (1,181 chars — limit 1,200)
 
@@ -55,6 +65,17 @@ Tier logic: capability is the axis. Starter = answers questions from one source 
 site, docs, or FAQ). Standard = production-grade: multiple knowledge sources, deployed
 into a real channel, with an eval pass proving accuracy. Advanced = the bot becomes an
 agent — it does things, not just says things, with human approval gates.
+
+### Service tier options (buyer-facing checkbox grid)
+
+Same pattern as the Automation Build grid — eight all-tier checks (AI Model
+Integration, Prompt Engineering, Natural Language Processing, Detailed Code Comments,
+Model Documentation, Model Deployment, Setup File, Source Code), then the ladder:
+**Database Integration** and **Model Testing & Optimization** from Standard up
+(multi-source retrieval + the accuracy eval pass), **Model Tuning** from Standard up
+(retrieval/tone tuning against real questions), **Model Monitoring** on Advanced only.
+**Never check:** Batch Normalization, Image Upscaling, MLOps, NLP Tokenization,
+Pre-Training.
 
 ## Project steps (buyer-visible)
 
