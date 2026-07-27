@@ -28,6 +28,11 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
   - AI Tools: **none** (blank is valid)
   - AI Models: **GPT-4 · ChatGPT** (+ LLaMA only if offering open-source deploys for
     cost/privacy-sensitive clients — a real differentiator on this listing if so)
+  - Chatbot Type (up to 3): **Customer Service Chatbot · Lead Generation Chatbot ·
+    Scheduling & Assisting Chatbot** — support deflection is the core use case, lead
+    gen is the Real Estate/Ecommerce story, and Scheduling makes the Advanced
+    action-agent tier filterable. Shopping loses to these three; skip Finance &
+    Banking (compliance-heavy buyers).
 
 ## Project summary (1,181 chars — limit 1,200)
 
