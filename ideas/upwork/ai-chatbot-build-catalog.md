@@ -66,7 +66,7 @@ Workflow Audit — the fee credits toward this build.
 | Field | Starter | Standard | Advanced |
 |---|---|---|---|
 | **Custom title** | RAG Chatbot *(11)* | Multi-Source Chatbot *(20)* | AI Agent That Takes Action *(26)* |
-| **Custom description** | Chatbot grounded in one knowledge source, deployed as a web widget. *(67)* | Multiple sources, one channel (Slack, site, or desk) + accuracy eval. *(69)* | Agent with tools — booking, tickets, CRM updates — human-approved. *(66)* |
+| **Custom description** | Chatbot grounded in one knowledge source, deployed as a web widget. *(67)* | Multiple sources, one channel (Slack, site, or desk) + accuracy eval. *(69)* | Agent with tools — booking, tickets, CRM — 2 channels, human-approved. *(70)* |
 | **Delivery days** | 7 | 14 | 21 |
 | **Live consultation (min)** | 30 | 60 | 90 |
 | **Price** | $1,000 | $2,000 | $3,500 |
@@ -79,14 +79,28 @@ agent — it does things, not just says things, with human approval gates.
 
 ### Service tier options (buyer-facing checkbox grid)
 
-Same pattern as the Automation Build grid — eight all-tier checks (AI Model
-Integration, Prompt Engineering, Natural Language Processing, Detailed Code Comments,
-Model Documentation, Model Deployment, Setup File, Source Code), then the ladder:
-**Database Integration** and **Model Testing & Optimization** from Standard up
-(multi-source retrieval + the accuracy eval pass), **Model Tuning** from Standard up
-(retrieval/tone tuning against real questions), **Model Monitoring** on Advanced only.
-**Never check:** Batch Normalization, Image Upscaling, MLOps, NLP Tokenization,
-Pre-Training.
+If the ML-flavored grid appears (same options as the Automation Build listing): eight
+all-tier checks (AI Model Integration, Prompt Engineering, Natural Language
+Processing, Detailed Code Comments, Model Documentation, Model Deployment, Setup
+File, Source Code), then the ladder: **Database Integration** and **Model Testing &
+Optimization** from Standard up (multi-source retrieval + the accuracy eval pass),
+**Model Tuning** from Standard up (retrieval/tone tuning against real questions),
+**Model Monitoring** on Advanced only. **Never check:** Batch Normalization, Image
+Upscaling, MLOps, NLP Tokenization, Pre-Training.
+
+The chatbot-specific form variant (observed on the live form):
+
+- **Number of Conversation Steps: 10 / 25 / 50** — legacy dialog-tree field; LLM bots
+  aren't step-limited, so pick a clean ladder that's trivially over-delivered.
+- **Number of Messaging Platforms: 1 / 1 / 2** — Advanced gets a second surface
+  (e.g., widget + Slack); the retrieval layer is shared so it's cheap to deliver and
+  visibly justifies $3,500. (Advanced tier bullet: add "2 channels".)
+- Grid: **Action Plan ✓✓✓ · Chatbot Flow Design ✓✓✓ · Conversation Script ✓✓✓ · Bug
+  Fixes ✓✓✓ · API Integration —✓✓**. Flow Design/Script = prompt architecture + the
+  designed "I don't know" behavior (every tier — that's the product); API Integration
+  ladders because buyers read it as "connects to my systems" (Slack/desk at Standard,
+  actions at Advanced) — off Starter signals the entry tier is a widget, not an
+  integration project.
 
 ## Project steps (buyer-visible)
 
