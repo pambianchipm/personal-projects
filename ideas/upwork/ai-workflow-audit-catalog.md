@@ -1,23 +1,23 @@
-# Upwork Project Catalog — AI Workflow Audit
+# Upwork Catalog Listing 1 — AI Workflow Audit
 
-Paste-ready copy for Catalog project #1 from the Upwork Profile Package (strategy doc §5).
-Fields appear in the order Upwork's Catalog form asks for them. Character counts are
-annotated where Upwork enforces a limit.
+Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Character counts annotated
+where Upwork enforces limits (title ≤75, tier titles ≤30, tier descriptions ≤80,
+summary ≤1,200, FAQ answers ≤300).
 
 ---
 
 ## Title
 
-Upwork prefixes every Catalog title with **"You will get…"** — the title must complete
-that sentence. Max 75 characters.
+Upwork prefixes every Catalog title with **"You will get…"** — the title completes that
+sentence. Max 75 chars.
 
-- **A (recommended):** `an AI automation audit: your top 3 opportunities, ranked & costed` *(65 chars — leads with the search phrase "AI automation audit", promises a concrete artifact)*
-- **B:** `an AI opportunity audit of your business, with a prioritized roadmap` *(68 chars)*
+- **A (recommended):** `an AI automation audit: your top 3 opportunities, ranked & costed` *(65)*
+- **B:** `an AI opportunity audit of your business, with a prioritized roadmap` *(68)*
 
 ## Category & attributes
 
 - Category: **AI Services → AI Consulting** (fallback: Business → Business Consulting)
-- Service type / attributes: pick "Consultation" + "Report" where offered.
+- Attributes: pick "Consultation" + "Report" where offered.
 
 ## Project summary (1,188 chars — limit 1,200)
 
@@ -43,31 +43,30 @@ and honestly find nothing worth automating, the report will say that too.
 
 ## Pricing tiers
 
-| | **Starter — Process Snapshot** | **Standard — AI Workflow Audit** | **Advanced — Audit + Build Roadmap** |
+| Field | Starter | Standard | Advanced |
 |---|---|---|---|
-| **Price** | $199 | $350 | $750 |
-| **Delivery** | 3 days | 5 days | 7 days |
+| **Custom title** | Quick-Win Audit *(15)* | Full Workflow Audit *(19)* | Full Audit + 90-Day Roadmap *(27)* |
+| **Custom description** | 30-min call + a ranked quick-win memo for one workflow. *(55)* | 60-min call + ROI-ranked report across up to 3 workflows. *(57)* | Two calls, up to 6 workflows, full report + build-ready 90-day roadmap. *(71)* |
+| **Delivery days** | 3 | 5 | 7 |
+| **Live consultation (min)** | 30 | 60 | 120 |
+| **Price** | $250 | $450 | $850 |
 | **Revisions** | 1 | 1 | 2 |
-| **Discovery** | Async (written intake + follow-up questions) | 60-min discovery call | 60-min discovery call + follow-up call |
-| **Scope** | One process you name | Whole-business scan | Whole-business scan |
-| **Report** | 2-page mini-audit: one automation recommendation with effort/impact estimate | Full written report: top 3 opportunities, ranked, with effort/impact estimates and quick wins | Everything in Standard |
-| **Roadmap** | — | — | Build-ready spec for your #1 opportunity: recommended stack, milestone plan, what to hand any developer |
-| **Walkthrough** | Loom video walkthrough | 30-min report walkthrough call | 30-min walkthrough + 2 weeks of async Q&A |
 
-Tier logic: Standard is the anchor (the original $350 offer). Starter captures buyers who
-won't book a call yet. Advanced bridges directly into the "from $1,200" build project —
-its roadmap deliverable *is* the scope document for that engagement.
+Tier logic: Standard is the anchor. Starter captures buyers who won't commit to a full
+audit yet; "3" belongs to Standard alone (top 3 workflows) so the ladder reads clean.
+Advanced's roadmap deliverable *is* the scope document for the Automation/Chatbot build
+listings.
 
 ## Project steps (buyer-visible)
 
 1. **Intake** — You answer a short questionnaire: which processes eat the most hours, who
-   touches them, and what tools they run on. Takes ~15 minutes, no prep needed.
-2. **Discovery call** — We walk through how work actually flows through your team today
-   (60 minutes, recorded if you want it). Starter tier: this step is async in writing.
-3. **Analysis** — I map the workflow, identify every automation candidate, and estimate
+   touches them, and what tools they run on. ~15 minutes, no prep needed.
+2. **Discovery call** — We walk through how work actually flows through your team today.
+   (30/60/120 minutes by tier; recorded if you want it.)
+3. **Analysis** — I map the workflows, identify every automation candidate, and estimate
    effort vs. impact for each — including the ones that *aren't* worth doing.
-4. **Report delivery** — You receive the written report: your top opportunities, ranked,
-   with recommendations, rough costs, and what to do first.
+4. **Report delivery** — Your opportunities, ranked, with recommendations, rough costs,
+   and what to do first. Advanced tier adds the build-ready 90-day roadmap.
 5. **Walkthrough** — We review the report together, you ask anything, and you leave
    knowing your exact next step — whether or not that step involves me.
 
@@ -81,47 +80,43 @@ its roadmap deliverable *is* the scope document for that engagement.
 5. Any constraints I should know about — tools you must keep, budget ceiling for a future
    build, hard deadlines?
 
-## FAQs (optional section — answers kept under 300 chars)
+## FAQs (answers under 300 chars)
 
 **Is this just a sales pitch for a bigger project?**
 No. The report is tool- and vendor-neutral and stands on its own — take it to any
 developer or build in-house. If hiring me for a build genuinely makes sense, I'll say
-so once, in the walkthrough, and that's it. *(226 chars)*
+so once, in the walkthrough, and that's it. *(226)*
 
 **What if you don't find anything worth automating?**
 Then the report says exactly that, with reasons. Sometimes the right fix is a checklist,
 a template, or a hire — not AI. You still get the process map and a clear picture of
-where your team's hours actually go. *(210 chars)*
+where your team's hours actually go. *(210)*
 
 **Do I need to be technical to get value from this?**
 No. The intake and call are plain-English conversations about how work gets done. The
 report is written for the owner or operator, with a technical appendix for whoever
-eventually builds. *(188 chars)*
+eventually builds. *(188)*
 
 **Which AI tools do you recommend?**
 Whatever fits your case: sometimes a Claude or GPT integration, sometimes off-the-shelf
 automation (Zapier, Make), sometimes a simple script and no AI at all. I have no
-reseller or affiliate relationships with any tool. *(222 chars)*
+reseller or affiliate relationships with any tool. *(222)*
 
 **Is my business information kept confidential?**
 Yes — everything you share stays between us, and I'm happy to sign an NDA before the
-discovery call. *(100 chars)*
+discovery call. *(100)*
 
 **What happens after the audit?**
-Your call. Build in-house from the report, hand it to any developer, or engage me — my
-end-to-end automation builds start at $1,200 fixed-scope (see my other projects), and
-Advanced-tier buyers already have the build spec in hand. *(230 chars)*
+Your call: build in-house, hand the report to any developer, or engage me — and if you
+start a build with me within 30 days, the full audit fee is credited toward it. See my
+AI Automation Build and AI Chatbot projects. *(216)*
 
 ## Search tags (5)
 
 `ai audit` · `ai consulting` · `workflow automation` · `business process automation` · `ai integration`
 
-*(Type each into the tag field and accept Upwork's closest official tag, same as the
-profile tags.)*
-
 ## Gallery note
 
-Catalog listings need at least one image. Fastest credible option: a clean 1-page mockup
-of the report's cover + the ranked-opportunities table (blur the client column), exported
-at 1000×750. A 60-second Loom explaining the audit doubles conversion on cold traffic —
-reuse the demo-video setup from the First-30-Days checklist.
+At least one image required. Fastest credible option: a clean 1-page mockup of the
+report cover + ranked-opportunities table, exported at 1000×750. A 60-second Loom
+explaining the audit doubles conversion on cold traffic.
