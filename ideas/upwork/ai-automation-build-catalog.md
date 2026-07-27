@@ -19,7 +19,7 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
   Marketing & Advertising swapped in — agencies are repeat automation buyers and
   resell to their client rosters.
 
-## Project summary (1,159 chars — limit 1,200)
+## Project summary (1,137 chars — limit 1,200)
 
 You know the process you want automated — this is where it gets built. I take one
 workflow that eats your team's hours (intake, triage, drafting, reporting, follow-up)
@@ -31,11 +31,11 @@ CRM, support desk, spreadsheets — plus documentation your team can actually fo
 a live handoff walkthrough. Fixed scope, milestone-based, no surprise hours, and an
 explicit out-of-scope list so you know exactly what you're buying.
 
-I build these for a living. I'm a business analyst at Meta, where I architected an AI
-automation system serving ~35 engineering teams: it ingests live support signals,
-pattern-matches issues, and drafts fixes with human-in-the-loop approval. I've
-compressed a 2-month onboarding process into ~30 minutes of automation. The same
-patterns work at small-business scale, without the enterprise timeline or price.
+I build these full-time. At Meta, I architected an AI automation system serving ~35
+engineering teams: it ingested live support signals, pattern-matched issues, and
+drafted fixes with human-in-the-loop approval. I've compressed a 2-month onboarding
+process into ~30 minutes of automation. Now I bring the same patterns to
+small-business scale — without the enterprise timeline or price.
 
 Not sure the workflow is worth automating? Start with my AI Workflow Audit project —
 it's cheaper, and the fee is credited toward this build within 30 days.

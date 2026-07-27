@@ -25,9 +25,10 @@ way; don't recite.
 > report — your top three automation opportunities, ranked, with what each would take
 > to build and roughly what it would save you.
 >
-> I'm a business analyst at Meta, where I built an AI automation system serving about
-> thirty-five engineering teams. Most AI projects fail because someone automated the
-> wrong thing — my whole job is finding the *right* thing.
+> I spent my time at Meta as a business analyst building an AI automation system that
+> served about thirty-five engineering teams — and now I do this full-time for
+> businesses like yours. Most AI projects fail because someone automated the wrong
+> thing. My whole job is finding the *right* thing.
 >
 > The report is yours to keep, and it's vendor-neutral — use it with me, another
 > developer, or build in-house. And if I find nothing worth automating? The report
@@ -44,8 +45,9 @@ way; don't recite.
 > email, your CRM, your support desk. And anywhere the output faces a customer or
 > commits money, a human approves it first. Always.
 >
-> At Meta, I architected an automation system that serves about thirty-five
-> engineering teams. Same patterns, your scale — without the enterprise timeline.
+> At Meta, I architected an automation system that served about thirty-five
+> engineering teams. I do this full-time now — same patterns, your scale, without the
+> enterprise timeline.
 >
 > Everything is fixed-scope, agreed in writing before I build, and you see a working
 > version at the midpoint — not just at the end. When we're done you get

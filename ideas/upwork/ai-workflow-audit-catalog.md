@@ -23,7 +23,7 @@ sentence. Max 75 chars.
   Real Estate · Health & Medical**. Broadest net of the three listings — any
   ops-heavy SMB is an audit candidate.
 
-## Project summary (1,188 chars — limit 1,200)
+## Project summary (1,163 chars — limit 1,200)
 
 Not sure where AI actually fits in your business? This audit answers that.
 Instead of guessing which tool to buy or which process to automate first, you get a
@@ -35,11 +35,10 @@ actually flows through your team, and within days you get a written report — y
 opportunities, ranked, with what each would take to build, roughly what it would save,
 and what to do first.
 
-I do this for a living. I'm a business analyst at Meta, where I built an AI automation
-system serving ~35 engineering teams; before that I led platform delivery for Fortune
-500 clients at Accenture. Most failed AI projects fail at the workflow level, not the
-code level — someone automated the wrong thing. Scoping the right thing is the whole job
-here.
+At Meta, I built an AI automation system serving ~35 engineering teams; at Accenture,
+I led Fortune 500 platform delivery. Now I do this full-time for businesses like
+yours. Most failed AI projects fail at the workflow level, not the code level —
+someone automated the wrong thing. Scoping the right thing is the whole job here.
 
 The report is yours either way: use it to hire me, hire someone else, or build in-house.
 It's tool- and vendor-neutral — I don't resell software. And if I look at your operation

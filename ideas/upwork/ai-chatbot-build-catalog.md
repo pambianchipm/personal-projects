@@ -19,7 +19,7 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
   inquiry-heavy verticals — that's who buys bots; the Advanced action-agent tier maps
   directly to booking/scheduling use cases.
 
-## Project summary (1,182 chars — limit 1,200)
+## Project summary (1,181 chars — limit 1,200)
 
 A chatbot that actually knows your business — grounded in your documents, policies, and
 data via retrieval (RAG), not a generic ChatGPT wrapper that makes things up.
@@ -30,12 +30,11 @@ evaluation pass on real questions, and documentation plus a handoff walkthrough.
 Advanced tier the bot doesn't just answer — it acts: booking appointments, creating
 tickets, updating your CRM, with human approval on anything sensitive.
 
-Relevant background: I'm a business analyst at Meta, where I built an AI system serving
-~35 engineering teams (pattern recognition + real-time drafting with human-in-the-loop
-approval), and I shipped AutoFinder — a vehicle intelligence platform — solo end to
-end. I design for the failure cases:
-what the bot says when it doesn't know is what separates a production system from a
-demo.
+Relevant background: at Meta I built an AI system serving ~35 engineering teams
+(pattern recognition + real-time drafting with human-in-the-loop approval), and I
+shipped AutoFinder — a vehicle intelligence platform — solo end to end. I now build
+these full-time. I design for the failure cases: what the bot says when it doesn't
+know is what separates a production system from a demo.
 
 The prompt and retrieval architecture ship documented, so your team can maintain and
 extend it after I'm gone. Not sure a chatbot is the right fix? Start with my AI

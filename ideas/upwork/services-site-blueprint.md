@@ -17,17 +17,18 @@ catalog ladder so both channels sell the same three offers at the same prices.
 
 Productized AI consulting — same anti-hype voice as the Upwork profile: "I find the
 process that eats your hours and automate it. If AI isn't the fix, I'll say so."
-Fixed prices displayed openly (rare among consultants; instantly filters tire-kickers
-and signals confidence).
+Full-time independent consultant (ex-Meta) — availability and focus are part of the
+pitch. Fixed prices displayed openly (rare among consultants; instantly filters
+tire-kickers and signals confidence).
 
 ## Page structure (single page + booking)
 
 1. **Hero** — headline on the outcome, not the tech. Working angle: "Your business,
    minus the busywork." Subhead: one sentence of who this is for. CTA: "Book a fit
    call" (15 min, free). Secondary CTA: "See services & prices."
-2. **Proof strip** — Meta (AI system serving ~35 eng teams), Accenture (Fortune 500
-   delivery), AutoFinder/Lexicon (ships solo). Logos only where usage rights are clear;
-   otherwise text.
+2. **Proof strip** — Ex-Meta (built an AI system serving ~35 eng teams), Accenture
+   (Fortune 500 delivery), AutoFinder/Lexicon (ships solo). Logos only where usage
+   rights are clear; otherwise text.
 3. **Three offers** — cards mirroring the catalog exactly (Audit $250–850, Automation
    Build $1,250–4,500, Chatbot/Agent $1,000–3,500), each with the Standard tier
    spotlighted, "starting at" pricing, and a 2-line what-you-get. Same tier names as
@@ -66,5 +67,6 @@ and it compounds with LinkedIn/X presence.
 4. SEO seed (later, not launch-blocking): 3–5 pages targeting long-tail intents
    ("AI audit for small business", "automate [industry] intake", "custom RAG chatbot
    cost") — same programmatic-SEO muscle as the clinkworthy plan.
-5. Confirm Meta outside-work policy covers the public site BEFORE it goes live (same
-   flag as the Upwork profile).
+
+*(Former item: "confirm Meta outside-work policy" — moot as of 2026-07: Phin has left
+Meta. No employer-policy blocker on the site or the Upwork profile.)*

@@ -73,6 +73,24 @@ check (keep this table updated when prices change):
 If a tier's real fulfillment time creeps past its estimate on two consecutive orders,
 raise the price or cut the scope — don't eat it silently.
 
+## Capacity & queue caps (Upwork "projects at one time")
+
+Assumption: full-time freelance (ex-Meta as of 2026-07). The cap is a delivery
+promise, not a marketing stat — a late delivery on a young profile is the fastest way
+to kill JSS.
+
+| Listing | Concurrent orders | Why |
+|---|---|---|
+| AI Workflow Audit | 3 | ~3–5 focused hrs each; calls are the only fixed points |
+| AI Automation Build | 1 | 7–21-day builds with client-access dependencies |
+| AI Chatbot/Agent Build | 1 | same |
+
+Worst-case simultaneous load: 3 audits + 2 builds — heavy but deliverable full-time.
+Raise caps only on real fulfillment data (after ~5 orders), same rule as pricing. A
+full queue reads as demand ("next slot opens Monday"), not weakness. If asked
+directly: "I cap concurrent projects deliberately so every delivery date I give is
+real."
+
 ## Cross-sell mechanics
 
 - **Audit credit:** audit fee credited toward any build started within 30 days. Stated
