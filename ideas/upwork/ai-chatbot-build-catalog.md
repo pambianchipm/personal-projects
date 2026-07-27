@@ -33,6 +33,12 @@ Paste-ready copy. Prices/tiers per `catalog-strategy.md`. Limits: title ≤75, t
     gen is the Real Estate/Ecommerce story, and Scheduling makes the Advanced
     action-agent tier filterable. Shopping loses to these three; skip Finance &
     Banking (compliance-heavy buyers).
+  - Messaging Platform (despite "up to 28", check 3): **Website · Slack · Email** —
+    Website/Slack are the listing's literal promise (support desk isn't offered in
+    this list); Email is the same skill set and a common SMB ask. Leave WhatsApp/SMS
+    unchecked — Business API approval + Twilio plumbing make them scoped add-ons to
+    quote when asked, not checkbox promises. Messenger/Instagram drag in Meta app
+    review; the rest are different products.
 
 ## Project summary (1,181 chars — limit 1,200)
 
