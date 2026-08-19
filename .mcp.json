@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "player2": {
+      "type": "http",
+      "url": "https://console.clinkworthy.com/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${PLAYER2_MCP_KEY}"
+      }
+    }
+  }
+}
