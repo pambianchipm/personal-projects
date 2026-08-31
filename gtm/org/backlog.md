@@ -6,9 +6,32 @@ may propose but never self-approve.*
 
 ## DEADLINES (triage FIRST every shift)
 
-- [ ] Cornell Tech accelerator — application window: UNKNOWN, research it
-      (shift-1 side task: confirm dates, requirements)
-- [ ] NYU Endless Frontier Labs — application window: UNKNOWN, research it
+*Researched 31 Aug 2026 (boss, shift 1). Headline: BOTH of Dad's named
+accelerators are closed or affiliation-gated for this cycle. Eligibility
+question for Phin in the inbox.*
+
+- [x] **NYU Endless Frontier Labs — 2026-27 window CLOSED.** Priority
+      deadline was Fri Jul 31, 2026 11:59pm ET; final deadline Wed Aug 12,
+      2026 11:59pm ET (source: nyuefl.smapply.io program page for the
+      2026-27 application, read 31 Aug). The window predates this org's
+      bootstrap (31 Aug), so this is a founding condition, not a missed
+      clock — but law 9 says log it: next cycle (2027-28) projected to open
+      ~May 2027 (the 26-27 app opened May 7, 2026 — PROJECTED, not sourced).
+      → Watch for the 2027-28 program page; add a DEADLINE entry when dates
+      publish.
+- [x] **Cornell Tech — no open, generally-eligible window found.** The three
+      programs located (sources: tech.cornell.edu + elabstartup.com, read
+      31 Aug): (1) **Runway Startup Postdocs** — apps open Oct 15, close
+      Feb 1, decisions Apr 15; requires a recent PhD ("Recently completed
+      your Ph.D. or about to?" — program FAQ). (2) **eLab** — Cornell
+      Ithaca-campus students only; 2026-27 apps closed Aug 30, 2026.
+      (3) **Startup Awards / Startup Studio** — Cornell Tech master's
+      students, final semester. → If Phin has no Cornell affiliation or
+      PhD, none of these fit; Runway's Oct 15 opening is the only
+      near-term date worth tracking (IF a PhD co-founder path is real).
+- [ ] **Replacement pipeline (Proposed below):** research NYC accelerators
+      with open windows and no university/PhD gate (ERA, Techstars NYC,
+      etc.) — awaiting Phin's approval of the Proposed item.
 - *(Add investor-timing entries as the pipeline develops.)*
 
 ## Approved — the boss may build (top first)
@@ -61,7 +84,13 @@ may propose but never self-approve.*
 
 ## Proposed — boss pitches, Phin approves
 
-*(empty — pitch here, one item per entry, with a recommendation)*
+- **Accelerator replacement research** *(Lane A; proposed shift 1.)* Dad's
+  two named accelerators are closed/gated this cycle (see DEADLINES). One
+  shift to research NYC-reachable accelerators with OPEN windows and no
+  university/PhD gate — ERA, Techstars NYC, and researched others — output:
+  `gtm/raise/accelerators.md` with sourced dates, requirements, and a
+  recommendation each. Recommendation: approve; without it Lane A has no
+  application calendar at all.
 
 ## Phin's side (the boss nags gently via inbox, never blocks)
 

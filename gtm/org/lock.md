@@ -1,1 +1,1 @@
-CLAIMED 2026-08-31T23:59Z — GTM boss, shift 1: DEADLINES research (Cornell Tech + NYU EFL) + Approved item 1 (positioning framework v1) + persona gate.
+released 2026-09-01T00:45Z — boss, end of shift 1. Positioning v1 GATED; DEADLINES researched; verdicts filed. Next shift: chief's confirm + any Phin answers, else Approved item 2 (KSP funnel + objection handling round 1).
