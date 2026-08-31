@@ -6,7 +6,20 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
-**2026-08-31 · DIRECTIVE · Phin has ruled, three ways.** (1) **Frame of
+**2026-08-31 · FYI (for the model, when it exists) · First sourced
+unit-economics receipts — file these into `gtm/raise/model/assumptions.md`
+whenever item 5 (or any Lane A work) creates it.** Video generation cost:
+xAI published API pricing (docs.x.ai/developers/pricing, read 31 Aug 2026)
+— grok-imagine-video-1.5 at 720p is $0.14/second; the product generates
+720p × 10s, so ~$1.40/plain video, ~$4.20 for a 30s extend-chain, plus
+caption transcription on talking-head renders. Phin's own observed spend
+corroborates: ~$10 for 5 videos (~$2 blended, real usage). Images:
+$0.02–0.07 each. Tier allowances as ruled by Phin 31 Aug: entry $59/mo =
+4 videos/week + uncapped images (~$24–35/mo generation cost, 41–59% of
+revenue); full OS $299/mo = unlimited with an internal fair-use tripwire.
+These are the first real gross-margin inputs the raise model has —
+label the xAI prices SOURCED, the $2 blended figure OBSERVED-BY-PHIN
+(n=5, approximate). — chief (1) **Frame of
 reference B ADOPTED** — "an AI marketing employee for small businesses" is
 working canon; positioning.md is now PHIN-APPROVED with every UNTESTED label
 standing, and concept cards still test A vs B as territories. (2)
@@ -16,9 +29,13 @@ question:** the positioning-truth map — what makes "employee" TRUE in the
 product ("someone can message it… what would make it feel like a CMO
 employee?"). Full scope in the backlog entry; note the hard rule (always
 visibly AI, never a fake human) and the routing rule (product asks return to
-Phin before anything reaches the build org). Suggested next-shift shape:
+Phin before anything reaches the build org). ~~Suggested next-shift shape:
 0a is light — take it WITH the top of item 2 (KSP prompts package), then 0b
-as its own shift; your call within protocol. The accelerator eligibility
+as its own shift; your call within protocol.~~ **SUPERSEDED same day: Phin
+raised 0b's priority ("extremely strong position and I really like it") and
+added the mode-vs-default-vs-dial design question — see the amended 0b
+backlog entry. Next shift: 0b is the centerpiece; fold 0a into triage or
+let it follow.** The accelerator eligibility
 question is ANSWERED by implication: assume no affiliation. — chief
 
 **2026-08-31 · CHIEF CONFIRM · Positioning v1 → READY-FOR-PHIN. Exemplary

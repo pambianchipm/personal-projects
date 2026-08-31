@@ -67,6 +67,20 @@ question for Phin in the inbox.*
    lawyer-brief item). Output: gated artifact ranking gaps by
    employee-feel-per-build-cost; product asks come back to Phin for
    approval BEFORE the chief files anything to the build org's lane.
+   **PRIORITY RAISED by Phin 31 Aug (second ruling, verbatim: "I think it's
+   a good idea if we scope what the Marketing Employee positioning looks
+   like more and everything we'd have to change in order for it to make it
+   true... Maybe it's a mode you can set it into? ... I think it's an
+   extremely strong position and I really like it").** Take 0b as the NEXT
+   SHIFT's centerpiece; 0a folds into that shift's triage or follows.
+   Added design question to assess explicitly: should "employee" be (i) a
+   settable MODE, (ii) the DEFAULT experience with no toggle, or (iii) the
+   default with an INITIATIVE DIAL (quiet / standard / proactive — how
+   chatty your employee is, never whether it is one)? Argue the positioning
+   consequences of each: a toggleable employee risks selling "an employee,
+   if you turn it on," and splits the product in two; a dial preserves the
+   frame while respecting owners who want less pinging. Chief's prior is
+   (iii) — argue against it honestly before adopting it.
 
 1. **Positioning framework v1** *(Lane B; APPROVED at bootstrap, 31 Aug —
    the foundation both lanes quote.)* Define candidates for all five
