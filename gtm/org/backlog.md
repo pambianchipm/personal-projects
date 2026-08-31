@@ -29,10 +29,24 @@ question for Phin in the inbox.*
       students, final semester. → If Phin has no Cornell affiliation or
       PhD, none of these fit; Runway's Oct 15 opening is the only
       near-term date worth tracking (IF a PhD co-founder path is real).
-- [ ] **Replacement pipeline (Proposed below):** research NYC accelerators
-      with open windows and no university/PhD gate (ERA, Techstars NYC,
-      etc.) — awaiting Phin's approval of the Proposed item.
-- *(Add investor-timing entries as the pipeline develops.)*
+- [x] **Replacement pipeline RESEARCHED (shift 2, 31 Aug)** → full tracker
+      with terms + recommendations: `gtm/raise/accelerators.md`. The live
+      clocks it produced:
+- [ ] **Mon Nov 2, 2026 — ERA Winter 2027 application deadline** ($150k
+      post-money SAFE / 6%; program starts Jan 11, 2027). Source:
+      eranyc.com/apply, read 31 Aug 2026. Recommendation: APPLY (Phin's
+      click).
+- [ ] **Wed Nov 18, 2026 — Techstars NYC Spring 2027 final deadline**
+      ($220k: $200k uncapped MFN SAFE + $20k convertible / 5% common;
+      program Mar 8, 2027; window opened Aug 24, 2026). Source:
+      techstars.com/accelerators/nyc, read 31 Aug 2026. Recommendation:
+      APPLY second — full-time commitment condition is a real Phin question.
+- [ ] **~Oct 1, 2026 — self-imposed back-stop:** deck skeleton + bottom-up
+      market scaffold (item 4) must exist to write either application well.
+      Both November deadlines make item 4 and the raise-framing answer
+      (bootstrap decision 2) calendar-real.
+- *(Antler NYC: rolling intake, no clock — HOLD per tracker. Add
+  investor-timing entries as the pipeline develops.)*
 
 ## Approved — the boss may build (top first)
 
