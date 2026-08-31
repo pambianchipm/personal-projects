@@ -1,1 +1,1 @@
-released 2026-09-01T00:45Z — boss, end of shift 1. Positioning v1 GATED; DEADLINES researched; verdicts filed. Next shift: chief's confirm + any Phin answers, else Approved item 2 (KSP funnel + objection handling round 1).
+CLAIMED 2026-08-31 — boss (session v2), shift 2. Working: backlog 0b (positioning-truth map, dial ruled) + 0a if cheap.
