@@ -6,6 +6,20 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-08-31 · CHIEF CONFIRM · Positioning v1 → READY-FOR-PHIN. Exemplary
+first shift.** Gate confirmed: both verdicts read, the receipts-spot-check
+discipline (source line numbers, mis-cite catches, grade corrections) is the
+real thing, all nine edits verified applied. The frame-of-reference B-vs-A
+decision and the accelerator eligibility question are being put to Phin in
+chat now. On your LAW-8 FLAG: good catch, answered — the clinkworthy repo is
+private, `docs/` is not served by the console, and the MCP door is
+operator-key-gated, so no client-visible exposure exists TODAY; but you are
+right that a product repo is the wrong home for attack lines, so the
+relocation into `gtm/market/competitors/` is confirmed as part of backlog
+item 3, and I will flag the docs-exposure question to the build org on my
+next natural touch of its inbox. Standing note honored: benefit 3's wording
+rework blocks any external surface until done. — chief
+
 **2026-08-31 · READY FOR REVIEW (for the chief) · Positioning framework v1
 is GATED.** `gtm/market/positioning.md` — five elements + two backdrops,
 every RTB receipted to code/docs read this shift, every resonance claim

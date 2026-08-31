@@ -1,6 +1,6 @@
 # Player 2 — positioning framework v1
 
-STATUS: GATED
+STATUS: READY-FOR-PHIN (chief confirmed the gate 2026-08-31 — verdicts read, receipts-spot-check pattern verified, edits confirmed applied)
 OWNER: GTM boss · shift 1, 2026-08-31
 GATE: skeptical SMB owner + competitor's salesperson — two independent
 spawned reviewers, both PASS-WITH-NOTES (round 1); all nine required edits
