@@ -1,6 +1,8 @@
 # Player 2 — positioning framework v1
 
-STATUS: READY-FOR-PHIN (chief confirmed the gate 2026-08-31 — verdicts read, receipts-spot-check pattern verified, edits confirmed applied)
+STATUS: PHIN-APPROVED (31 Aug, via chat: "yes to B" — frame of reference B
+adopted as working canon; every UNTESTED label stands until real interviews;
+concept cards still test A vs B as territories)
 OWNER: GTM boss · shift 1, 2026-08-31
 GATE: skeptical SMB owner + competitor's salesperson — two independent
 spawned reviewers, both PASS-WITH-NOTES (round 1); all nine required edits
@@ -72,7 +74,7 @@ Three candidates argued (backlog item 1 names all three):
 | **B. "The marketing employee you subscribe to"** | Matches what it does (done-for-you, not do-it-yourself); anchors to the hire/services band — among SMBs that pay for social at all the dominant band is $500–2,000/mo (Clutch 2025, VERIFIED, with the source's own sampling caveat); entry freelancer packages run roughly $300–1,500/mo (landscape report, directional/unverified — the report itself also cites "$300–500" elsewhere; treat as a range, not a fact). $299 reads cheap in this folder. Matches Dad's founding framing: "replaces the need to hire an ad agency or marketing company" (`gtm/sources/source-dad-notes-2026-08-24.md`) | "Employee" invites accountability expectations a product can't hold (who do I yell at?); possibly a legal/claims exposure — flag for the lawyer brief. New folder = explanation cost |
 | **C. "Growth OS for small business"** | Matches the shipped landing's "marketing runtime/OS" language | Founder-speak. An SMB owner does not shop for an operating system. Likely fails the five-second test |
 
-**Recommended: B, worded as "an AI marketing employee for small businesses."**
+**ADOPTED (Phin, 31 Aug): B, worded as "an AI marketing employee for small businesses."**
 The decisive argument is the price anchor: the folder decides whether $299/mo
 is outrageous (vs tools) or a bargain (vs the services band it undercuts).
 Per Jess p10: "go with the most likely option" and iterate — the deck's own

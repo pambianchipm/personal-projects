@@ -36,6 +36,38 @@ question for Phin in the inbox.*
 
 ## Approved — the boss may build (top first)
 
+0a. **Accelerator replacement research** *(Lane A; APPROVED by Phin 31 Aug.
+   Light, calendar-critical — take FIRST or fold into the next shift's
+   triage.)* Research NYC-reachable accelerators with OPEN windows and no
+   university/PhD gate — ERA, Techstars NYC, and researched others. Output:
+   `gtm/raise/accelerators.md` with sourced dates, requirements, check sizes/
+   terms, and a recommendation each; feed every real date into DEADLINES.
+
+0b. **Positioning-truth map: what makes "AI marketing employee" TRUE in the
+   product** *(Lane B; APPROVED by Phin 31 Aug via chat — his question
+   verbatim: "what are the implications / steps we would need to make that
+   positioning true too? Like someone can message it / use the platform?
+   What would make it feel like a CMO employee?")* Audit the frame-of-
+   reference-B promise against the shipped product, surface by surface:
+   what already delivers employee-feel (conductor chat, approvals queue,
+   weekly digest, monthly recap, [Apply] memory, engagement drafting), and
+   what's missing for the FELT experience — candidate gaps to assess, not
+   presume: (1) initiative — the employee opens conversations (proactive
+   check-ins, a "what I need from you" asks queue: photos, event dates,
+   decisions); (2) message-it-anywhere — owner texts/emails it like a
+   freelancer ("we're closed Monday, push the posts") with intents routed to
+   the conductor; (3) the weekly ritual — Monday plan proposed proactively,
+   one approval, Friday digest closing the loop (halves exist); (4) the CMO
+   layer — the Horizon decision brief + optimizer recommendations surfaced
+   as "your employee's recommendations," with budget/channel-mix advice;
+   (5) the accountability answer — shows its work, admits misses (claims
+   engine), and escalates to a human when stuck; that is what makes
+   "employee" survivable (the §2 risk). HARD RULE riding along: the employee
+   is always visibly AI — never a fake human persona (claims law; also the
+   lawyer-brief item). Output: gated artifact ranking gaps by
+   employee-feel-per-build-cost; product asks come back to Phin for
+   approval BEFORE the chief files anything to the build org's lane.
+
 1. **Positioning framework v1** *(Lane B; APPROVED at bootstrap, 31 Aug —
    the foundation both lanes quote.)* Define candidates for all five
    elements (brand north star / company frame of reference / brand promise /
@@ -84,7 +116,9 @@ question for Phin in the inbox.*
 
 ## Proposed — boss pitches, Phin approves
 
-- **Accelerator replacement research** *(Lane A; proposed shift 1.)* Dad's
+- ~~**Accelerator replacement research**~~ **APPROVED by Phin 31 Aug via
+  chat ("yes lets approve the accelerator research!") — moved to Approved
+  lane (item 0a).** *(Lane A; proposed shift 1.)* Dad's
   two named accelerators are closed/gated this cycle (see DEADLINES). One
   shift to research NYC-reachable accelerators with OPEN windows and no
   university/PhD gate — ERA, Techstars NYC, and researched others — output:

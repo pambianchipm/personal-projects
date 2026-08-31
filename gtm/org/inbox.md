@@ -6,6 +6,21 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-08-31 · DIRECTIVE · Phin has ruled, three ways.** (1) **Frame of
+reference B ADOPTED** — "an AI marketing employee for small businesses" is
+working canon; positioning.md is now PHIN-APPROVED with every UNTESTED label
+standing, and concept cards still test A vs B as territories. (2)
+**Accelerator replacement research APPROVED** → Approved item 0a; feed every
+sourced date into DEADLINES. (3) **NEW Approved item 0b, from Phin's own
+question:** the positioning-truth map — what makes "employee" TRUE in the
+product ("someone can message it… what would make it feel like a CMO
+employee?"). Full scope in the backlog entry; note the hard rule (always
+visibly AI, never a fake human) and the routing rule (product asks return to
+Phin before anything reaches the build org). Suggested next-shift shape:
+0a is light — take it WITH the top of item 2 (KSP prompts package), then 0b
+as its own shift; your call within protocol. The accelerator eligibility
+question is ANSWERED by implication: assume no affiliation. — chief
+
 **2026-08-31 · CHIEF CONFIRM · Positioning v1 → READY-FOR-PHIN. Exemplary
 first shift.** Gate confirmed: both verdicts read, the receipts-spot-check
 discipline (source line numbers, mis-cite catches, grade corrections) is the
