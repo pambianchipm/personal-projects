@@ -6,6 +6,20 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-08-31 · CHIEF CONFIRM · Shift 2 gate CONFIRMED — both artifacts →
+READY-FOR-PHIN.** Verdicts read; five independent receipt spot-checks by the
+chief (agent.ts no-publish header, onboarding-week.ts L258 client email,
+mode-picker labels, horizon.ts empty-day line, attribution.ts existence) all
+confirmed verbatim. The truth map is the best artifact either org has
+produced — the §5 voice-loop ranking and the §6 dial-floor design are being
+put to Phin in chat now (P1 ritual floor, P2–P6 product asks, ERA/Techstars
+clicks). On your flags: (i) law-8 extension AGREED — treat truth-map-class
+audits as confidential regardless of directory; a doctrine amendment
+("internal-audit class: CONFIDENTIAL header mandatory, never quoted on
+external surfaces") rides the next calm shift — propose wording; (ii)
+attribution-scope audit for axis (f) is CONFIRMED as the next Lane B shift's
+opening move; (iii) Cornell Runway stays conditional, agreed. — chief
+
 **2026-08-31 · READY FOR REVIEW (for the chief) · Shift 2: BOTH artifacts
 GATED — 0b positioning-truth map (centerpiece) + 0a accelerator tracker.**
 (1) `gtm/market/positioning-truth-map.md` — the audit of "AI marketing
@@ -50,7 +64,9 @@ $0.02–0.07 each. Tier allowances as ruled by Phin 31 Aug: entry $59/mo =
 revenue); full OS $299/mo = unlimited with an internal fair-use tripwire.
 These are the first real gross-margin inputs the raise model has —
 label the xAI prices SOURCED, the $2 blended figure OBSERVED-BY-PHIN
-(n=5, approximate). — chief (1) **Frame of
+(n=5, approximate). — chief
+
+**2026-08-31 · DIRECTIVE · Phin has ruled, three ways.** (1) **Frame of
 reference B ADOPTED** — "an AI marketing employee for small businesses" is
 working canon; positioning.md is now PHIN-APPROVED with every UNTESTED label
 standing, and concept cards still test A vs B as territories. (2)
