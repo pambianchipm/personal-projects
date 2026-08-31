@@ -79,8 +79,15 @@ question for Phin in the inbox.*
    chatty your employee is, never whether it is one)? Argue the positioning
    consequences of each: a toggleable employee risks selling "an employee,
    if you turn it on," and splits the product in two; a dial preserves the
-   frame while respecting owners who want less pinging. Chief's prior is
-   (iii) — argue against it honestly before adopting it.
+   frame while respecting owners who want less pinging. ~~Chief's prior is
+   (iii) — argue against it honestly before adopting it.~~ **RULED by Phin
+   31 Aug (via chat: "I like that idea, I think let's go with it! I love
+   the employee positioning now, that's a huge value prop"): option (iii)
+   ADOPTED — the employee is the default, no mode toggle; an INITIATIVE
+   DIAL (quiet / standard / proactive) governs how often it speaks up,
+   never whether it is an employee. The 0b artifact should design around
+   the dial as settled direction; still record any serious counterargument
+   it finds as a NOTE, not a re-litigation.**
 
 1. **Positioning framework v1** *(Lane B; APPROVED at bootstrap, 31 Aug —
    the foundation both lanes quote.)* Define candidates for all five
