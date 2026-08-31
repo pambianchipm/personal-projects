@@ -1,1 +1,1 @@
-CLAIMED 2026-08-31 — boss (session v2), shift 2. Working: backlog 0b (positioning-truth map, dial ruled) + 0a if cheap.
+released 2026-08-31 — boss (session v2), end of shift 2. 0b truth map + 0a accelerator tracker both GATED, verdicts filed, DEADLINES carries Nov 2 (ERA) + Nov 18 (Techstars). Next shift: chief confirm + Phin rulings (P1 floor, P2-P6 asks, apply decisions), else Approved item 2 (KSP funnel + objection handling r1).

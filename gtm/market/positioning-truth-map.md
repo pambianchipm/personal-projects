@@ -1,6 +1,15 @@
 # Player 2 — positioning-truth map: what makes "AI marketing employee" TRUE
 
-STATUS: DRAFT → IN-GATE this shift
+CONFIDENTIAL — internal audit; contains deliberate self-indictments that
+are gate-fail material on any external surface (law-8 extension question
+flagged to the chief).
+STATUS: GATED — two independent persona reviewers (skeptical SMB owner,
+competitor's salesperson), both PASS-WITH-NOTES round 1; all 8 required
+edits applied same shift; both spot-checks found ZERO mis-citations across
+23 receipt verifications. Verdicts:
+`gtm/org/reviews/2026-08-31-truth-map-v1-smb-owner.md`,
+`gtm/org/reviews/2026-08-31-truth-map-v1-competitor-salesperson.md`.
+Awaiting chief's confirm → READY-FOR-PHIN.
 OWNER: GTM boss · shift 2, 2026-08-31
 MANDATE: Approved item 0b (Phin, 31 Aug, priority raised) — audit the
 frame-of-reference-B promise (`gtm/market/positioning.md`, PHIN-APPROVED)
@@ -40,16 +49,19 @@ work rhythm you can feel (the week); (d) it brings judgment, not just
 output — recommendations with reasons; (e) it's accountable — shows its
 work, admits misses, asks for help when stuck. These five are the audit
 axes below; they're also exactly the five candidate gaps Phin's mandate
-named. `UNTESTED` that owners weight them this way — the axes come from the
-mandate and from what "employee" means in ordinary usage, not from
-interviews.
+named. The gate added a sixth the mandate omitted: **(f) it proves results
+in OWNER terms** — bookings, customers, dollars, not platform metrics —
+the axis a salon owner names in the first five seconds ("does it fill
+chairs, and can it show me"). Assessed in §3-bis. `UNTESTED` that owners
+weight any of these this way — the axes come from the mandate, ordinary
+usage, and one gate reviewer's persona read, not from interviews.
 
 ## 2. What already delivers employee-feel (receipts, read 31 Aug)
 
 | Surface | What ships today | Receipt |
 |---|---|---|
 | **Conductor chat** | The console home IS a chat with the employee: goal in, campaign threads out, with a per-request mode chip (Auto / Plan / Build). The conductor plans against memory, drafts, schedules — and by construction cannot publish ("there is deliberately NO publish tool — the agent's reach ends at drafts") | `console/app/(app)/home/page.tsx` (thread chat, ModePicker); `console/lib/agent.ts` header |
-| **Approvals queue** | Dedicated approvals surface; approval-in-advance via the Calendar's Auto-post toggle ("the conductor can never flip auto_post, only Phin's UI can") | `console/app/(app)/approvals/`; `console/lib/auto-publish.ts` header |
+| **Approvals queue** | Dedicated approvals surface; approval-in-advance via the Calendar's Auto-post toggle ("the conductor can never flip auto_post, only Phin's UI can"). Against "so posts go out with no per-post click": the toggle IS the click, in advance — same answer positioning.md benefit 2 carries; the two docs agree | `console/app/(app)/approvals/`; `console/lib/auto-publish.ts` header |
 | **Weekly digest** | Composed from "the tables that record what we actually did"; the forward-looking line comes from the claims engine "and nowhere else"; an empty week "is a real state, not a prompt to invent one." Member-visible card on home | `console/lib/digest.ts` header; `console/app/api/digest/route.ts`; `WeeklyDigestCard` on home |
 | **Monthly recap** | Immutable monthly snapshots frozen per channel; recap email composed and sent — **to the operator only** (deliberate: "mailing a client is outbound communication… a decision that is his to make") | `console/lib/claims.ts` (freeze + recap block, ~L354–386) |
 | **[Apply] memory** | A published claim can be applied into agent memory as a standing preference — only a claim the engine actually proved ("Only a published claim can be applied — this one the engine declined to state") | `console/lib/claims-pure.ts` `planClaimApply` |
@@ -58,7 +70,7 @@ interviews.
 | **Optimizers (organic + ads)** | Deterministic nightly recommendations; "it PROPOSES, Phin applies or dismisses"; "no spend change without explicit approval showing the amount" | `console/lib/organic-optimizer.ts`, `console/lib/ad-optimizer.ts` headers |
 | **Honest reporting** | Claims engine: registry whitelist, n floors, FDR correction, max-2 published, suppressed claims persisted WITH reasons | `console/lib/claims.ts` header (gates in `lib/trends.ts`) |
 | **Failure alerting** | "The market's #1 complaint about every competitor is silent publishing failures; we alert proactively instead" | `console/lib/notify.ts` header |
-| **48-hour first week** | Paid signup → first-week calendar generated, adversarially reviewed, saved UNARMED — "every slot lands needing the client's tap" — and the client is emailed "Your first week is ready." The product's ONE existing client-initiated touch, and it's onboarding-only | `console/lib/onboarding-week.ts` header + L258 (`sendEmail(clientEmail, …)`) |
+| **48-hour first week** | Paid signup → **operator promote (one click, `requireOperator`)** → first-week calendar generated, adversarially reviewed, saved UNARMED — "every slot lands needing the client's tap" — and the client is emailed "Your first week is ready." The nightly backstop picks up already-promoted leads only. This is the product's ONE existing **employee-initiated client touch**, and it's onboarding-only. Caveat carried inline (per §8.3): code-shipped and operator-console-verified; no real client has yet received it, and email paths are dark until env is set | `console/lib/onboarding-week.ts` header + L258 (`sendEmail(clientEmail, …)`); promote step: `console/app/api/leads/promote/route.ts`; backstop: `console/app/api/metrics/refresh/route.ts` |
 
 **The audit's headline:** the employee's HANDS and its HONESTY are built.
 What's thin is its VOICE — almost every surface above is pull (the owner
@@ -73,11 +85,13 @@ owner-felt experience, but this is the structural reading of the table.
 **What exists:** all the raw material — Horizon knows the empty days,
 optimizers know what to change, Pulse knows what's new, the digest composer
 knows the week, `sendEmail` can reach "clients, not just the operator"
-(`notify.ts`). **What's missing:** any surface where the employee INITIATES:
+(`notify.ts`). **What's missing:** any ongoing surface where the employee INITIATES:
 no proactive check-in, no "what I need from you" asks queue (photos, event
 dates, a decision on a recommendation), no unprompted "your Tuesday is
-empty, I drafted two options." The one recurring outbound email that exists
-(monthly recap) deliberately goes to the operator, not the client.
+empty, I drafted two options." The precise state: the employee opens
+exactly one conversation, once — the onboarding "Your first week is ready"
+email (§2) — then goes silent; the one recurring outbound email that
+exists (monthly recap) deliberately goes to the operator, not the client.
 **Build read:** composition + delivery infra exist; the build is an asks
 data model + a scheduled outbound touch + dial governance. Medium-low.
 
@@ -132,12 +146,32 @@ path needs a small real mechanism (who is "the human" a client's employee
 escalates to — the operator? support?). This is also the survivability
 answer to positioning.md §2's "who do I yell at" risk.
 
+### §3-bis — Axis 6, results-proof in owner terms (added at the gate)
+
+**What exists:** the honesty machinery proves what it proves — claims
+engine, monthly recap, and attribution machinery is present in the codebase
+(`console/lib/attribution.ts`; also `docs/paid-and-attribution-scope.md`)
+— but its scope was NOT audited this shift, so nothing beyond its existence
+is claimed here. **What's missing (structural read):** the surfaces above
+speak in platform metrics (engagement, claims about arms/channels), not in
+"that reel brought you 4 bookings." Whether the product CAN close that loop
+to bookings/dollars is bounded by attribution reality, which is a build-org
+question, not a positioning assertion. **Why it matters:** an employee that
+initiates beautifully but can't show what its work produced in the owner's
+own unit is "a chatty tool" (the gate's phrase). Rank it honestly: the
+audit cannot cost this gap without the attribution scope read — flagged as
+an open item for the next Lane B shift, and axis (f) goes into the §9
+interview probe unprompted.
+
 ## 4. What this means for the POSITIONING (the claim-side consequences)
 
 - **Claimable today, with receipts:** "you can message it and it acts"
   (console chat), "nothing posts or spends without your click," "it shows
   its work and won't pretend" (claims engine), "your first week is drafted
-  within 48 hours." These are RTB-grade now (§2 table).
+  within 48 hours." These are RTB-grade as product truths enforced in code
+  — delivered today in the operator console only (§8.3; positioning.md
+  §8.2's "operator-console truths"): no client has yet experienced any of
+  them, and client-email paths are dark until env is set.
 - **NOT claimable yet — label as roadmap anywhere it appears:** "it checks
   in with you," "text it like a freelancer," "your Monday plan arrives,"
   "it tells you when it's stuck." Law 2: any external surface using these
@@ -195,9 +229,12 @@ touches only.
   positioning quietly degrades to tool-with-digest — the tuning of standard
   IS the positioning, and should be treated as a launch decision, not a
   constant in code. (3) A competitor can frame the dial as "even they let
-  you mute their 'employee'" — answer exists (you can ask a human employee
-  to batch updates too; you can't mute the approvals), file it to the
-  objection bank (backlog item 2).
+  you mute their 'employee'" — two-layer answer for the objection bank
+  (backlog item 2): the invariant layer, which holds regardless of any
+  ruling — the approval gates cannot be muted at any dial setting, and you
+  can ask a human employee to batch updates too — and the ritual-floor
+  layer ("even quiet reports weekly"), which is CONTINGENT ON P1 being
+  approved and must be re-filed if P1 is rejected.
 
 ## 7. Product asks — PROPOSED, awaiting Phin (routing rule: nothing goes to
 the build org until he approves)
@@ -206,10 +243,21 @@ the build org until he approves)
   Friday digest (the §6 floor). One yes/no; everything below inherits it.
 - **P2 — The weekly ritual** (rank 1): Friday digest email send path +
   Monday "your week, one tap" proposal email with a one-tap approve action.
-  Uses existing composers, `sendEmail`, and the approval model.
-- **P3 — Asks queue + check-ins** (rank 2): a `asks` data model (photo
+  Uses existing composers, `sendEmail`, and the approval model. **Miss
+  path (must be in the spec):** if the Monday tap doesn't arrive by day's
+  end — one reminder, then the week holds as drafts (nothing publishes
+  unapproved; slots already covered by the owner's standing Auto-post
+  approval-in-advance proceed as approved, since that toggle IS the click
+  — positioning.md benefit 2). Friday's digest states an unapproved week
+  factually, never guilt-toned: the employee works around a busy boss.
+- **P3 — Asks queue + check-ins** (rank 2): an `asks` data model (photo
   requests, event dates, pending decisions), surfaced in console + woven
-  into ritual emails; dial-governed cadence.
+  into ritual emails; dial-governed cadence. **Anti-chore rules (must be
+  in the spec):** a cap on simultaneous open asks; every ask has an expiry
+  and a proceed-without behavior ("no photo came, so I used your best past
+  post"); an unanswered ask never blocks the week and never re-nags beyond
+  the dial setting. The employee doesn't stand at the owner's chair
+  holding a clipboard.
 - **P4 — CMO voice pass** (rank 3): recommendations/decision-brief surfaces
   composed in the employee's first-person voice, always visibly AI; one new
   composed channel-mix counsel block over existing optimizer + claims data.
@@ -241,9 +289,11 @@ the build org until he approves)
 
 ## 9. What tests this next
 
-- Interview probe (into item 5's kit): describe the five axes as moments
+- Interview probe (into item 5's kit): describe the six axes as moments
   ("it emails you Monday with the week planned…") and ask which one makes
-  it feel like staff vs software — before showing any concept card.
+  it feel like staff vs software — before showing any concept card. Probe
+  axis (f), results-proof in owner terms, UNPROMPTED first: does the owner
+  name "show me bookings/dollars" before any of the voice-loop axes?
 - The dial's "standard" tuning: test reaction to sample cadences (2
   touches/week vs 5) rather than asking in the abstract.
 - "Who do I yell at": test whether §3.5's escalation answer actually

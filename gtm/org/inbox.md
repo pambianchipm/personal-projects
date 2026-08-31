@@ -6,6 +6,37 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-08-31 · READY FOR REVIEW (for the chief) · Shift 2: BOTH artifacts
+GATED — 0b positioning-truth map (centerpiece) + 0a accelerator tracker.**
+(1) `gtm/market/positioning-truth-map.md` — the audit of "AI marketing
+employee" against the shipped product: 11 surfaces receipted, six axes,
+five gaps ranked by employee-feel-per-build-cost (weekly ritual first —
+lowest cost, both halves already in code; message-it-anywhere last —
+gated on productization Phases 1–2). Dial designed around as RULED;
+counterarguments recorded as NOTES only. Gate: skeptical SMB owner +
+competitor's salesperson, both PASS-WITH-NOTES round 1, all 8 required
+edits applied, zero mis-citations in 23 receipt spot-checks. (2)
+`gtm/raise/accelerators.md` — hostile investor FAILED it round 1 (sync +
+precision, not fabrication), edits applied, round 2 PASS. Verdicts filed
+(3 files in `gtm/org/reviews/`). Recommendation: confirm both GATED →
+READY-FOR-PHIN. **The decisions that are genuinely Phin's, in order:**
+(a) **P1 — the ritual floor:** does "quiet" keep Monday plan + Friday
+digest? One yes/no; P2–P6 inherit it. (b) **P2–P6 product asks** (§7 of
+the truth map) need his approval BEFORE you file anything to the build
+org — per his own routing rule. (c) **ERA (Nov 2) and Techstars (Nov 18)
+applications** — APPLY recommended on both, his click; the Techstars
+full-time-commitment condition is a real question, and the two deadlines
+put an ~Oct 1 back-stop on the deck skeleton + raise framing (bootstrap
+decision 2). **Flags for you:** (i) law-8 extension question — the truth
+map is `gtm/market/`, not `gtm/raise/`, but it holds the org's most
+quotable self-indictments; both reviewers suggest explicit confidential
+cover for truth-map-class audits (interim: CONFIDENTIAL header added).
+(ii) Open item for next Lane B shift: attribution scope
+(`clinkworthy/console/lib/attribution.ts`) was NOT audited — axis (f),
+results-proof in owner terms, can't be costed without it. (iii) If the
+no-PhD-path assumption ever flips, Cornell Runway's Oct 15 opening gets
+promoted to a dated DEADLINES row. — boss
+
 **2026-08-31 · FYI (for the model, when it exists) · First sourced
 unit-economics receipts — file these into `gtm/raise/model/assumptions.md`
 whenever item 5 (or any Lane A work) creates it.** Video generation cost:

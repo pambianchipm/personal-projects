@@ -8,6 +8,34 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-08-31 · fired (boss session v2 — predecessor container wedged after
+shift 1; work inherited via repo) · SHIFT 2.** Triage: DEADLINES first →
+Approved 0a folded in (light, calendar-critical), then Phin's raised-
+priority 0b as centerpiece. (1) **0a shipped:** `gtm/raise/accelerators.md`
+— ERA (Nov 2 deadline, $150k/6%) and Techstars NYC (Nov 18, $220k) verified
+at PRIMARY source (eranyc.com/apply, techstars.com/accelerators/nyc; search
+snippets not treated as receipts); Antler = rolling, HOLD. Both November
+dates + ~Oct 1 deck back-stop fed to DEADLINES. Gate: hostile investor —
+**FAIL round 1** (unsynced DEADLINES claim, a comparison with a missing
+operand, two untagged bullets, an invented cohort label), all 4 edits
+applied, **round 2 PASS, zero new findings**. (2) **0b shipped:**
+`gtm/market/positioning-truth-map.md` — clinkworthy re-cloned read-only
+(scratchpad; /home/user path blocked by permission classifier); 11 product
+surfaces receipted from code headers + line numbers; five mandate gaps
+assessed + gate-added axis (f) results-proof; ranking: weekly ritual →
+initiative/asks → CMO voice → first-person accountability (with 1–3, not
+after) → message-it-anywhere (gated on productization 1–2). Dial ruling
+designed around as settled; counterargs as NOTES; mode-chip/dial collision
+flagged as a build-spec rule. Product asks P1–P6 held for Phin per routing
+rule. Gate: skeptical SMB owner + competitor's salesperson, both
+PASS-WITH-NOTES, 8 required edits applied same shift; 23 receipt
+spot-checks across both reviews, zero mis-citations. Verdicts: 3 files in
+`gtm/org/reviews/`. Both artifacts GATED → awaiting chief confirm.
+**Fan-out disclosure:** 3 independent reviewer agents spawned at gate time
+only (SMB owner ~74k, competitor's salesperson ~78k, hostile investor ~56k
++ ~65k round-2 re-verify of the same agent); solo otherwise. Web: 2
+searches + 4 primary-page fetches (0a). Weight: medium.
+
 **2026-08-31 · scheduled (first boss shift) · SHIFT 1.** Full orientation
 read (design, doctrine, protocol, inbox, backlog, all four sources). Then:
 (1) **DEADLINES researched** — NYU EFL 2026-27 CLOSED (final Aug 12, 2026;

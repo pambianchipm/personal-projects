@@ -1,6 +1,10 @@
 # Player 2 — accelerator tracker (replacement pipeline)
 
-STATUS: DRAFT → IN-GATE this shift (persona: hostile investor, receipts audit)
+STATUS: GATED (round 2) — hostile-investor receipts audit: FAIL round 1
+(4 edits: DEADLINES sync, missing comparison operand, source tags, invented
+cohort labels), all applied same shift; round 2 PASS, zero new findings.
+Verdict: `gtm/org/reviews/2026-08-31-accelerators-v1-hostile-investor.md`.
+Awaiting chief's confirm → READY-FOR-PHIN.
 OWNER: GTM boss · shift 2, 2026-08-31
 SCOPE: Approved item 0a — NYC-reachable accelerators with OPEN windows and no
 university/PhD gate, replacing Dad's two named programs (both closed/gated
@@ -18,15 +22,16 @@ for small businesses) can actually apply to this cycle, with sourced dates.
 
 ### 1. ERA — Entrepreneurs Roundtable Accelerator (NYC)
 
-- **Deadline: Nov 2, 2026** · program starts Jan 11, 2027 (Winter 2027,
-  four months). Source: eranyc.com/apply, read 31 Aug 2026.
+- **Deadline: Nov 2, 2026** · program starts Jan 11, 2027, four months.
+  Source: eranyc.com/apply, read 31 Aug 2026.
 - **Terms: $150,000 on a post-money SAFE for 6%.** (same page)
 - **Gates:** none stated on the apply page — no university/PhD/stage gate
   found. NYC-native program.
 - **Fit read:** the classic NYC generalist accelerator; SMB SaaS is squarely
-  in scope. The 6% is the steepest dilution-per-dollar of the three here
-  (~$2.5M implied post-money) — standard accelerator math, but Phin should
-  price it consciously.
+  in scope. The 6% is the steepest dilution-per-dollar of the two priced
+  deals here (~$2.5M implied post-money; Antler publishes no equity
+  percentage on the pages read, so its dilution is uncomputable) — standard
+  accelerator math, but Phin should price it consciously.
 - **Recommendation: APPLY.** Best deadline-to-effort ratio; the application
   itself will force the deck skeleton (backlog item 4) into existence, which
   is the right forcing function even if the answer is no.
@@ -37,16 +42,18 @@ for small businesses) can actually apply to this cycle, with sourced dates.
   Mar 8, 2027 · Demo Day Jun 3, 2027. Source: techstars.com/accelerators/nyc,
   read 31 Aug 2026.
 - **Terms: $220,000** — $200k uncapped MFN SAFE + $20k convertible for 5%
-  common stock. (same page)
+  common stock. (same page) Because the $200k SAFE is uncapped, total
+  dilution exceeds the stated 5% by an amount unknowable today — the terms
+  comparison with ERA is day-one-components only.
 - **Gates:** no university gate; full-time commitment required if accepted;
   NYC residence not required at application. Selection bar is framed around
-  "$1B+ annual revenue" markets — the bottom-up market story (item 4's
-  scaffold) must be ready before this application, not after.
-- **Fit read:** stronger brand + better terms than ERA, materially more
-  competitive. The full-time-commitment condition is a real question for
-  Phin, not a formality.
-- **Recommendation: APPLY, second.** Two-week gap after ERA's deadline means
-  one application arc feeds both.
+  "$1B+ annual revenue" markets. (same page) The bottom-up market story
+  (item 4's scaffold) must be ready before this application, not after.
+- **Fit read:** stronger brand + better day-one terms than ERA, materially
+  more competitive. The full-time-commitment condition is a real question
+  for Phin, not a formality.
+- **Recommendation: APPLY, second.** The ~2-week gap (Nov 2 → Nov 18, 16
+  days) after ERA's deadline means one application arc feeds both.
 
 ## Rolling — no clock, different animal
 
@@ -61,7 +68,8 @@ for small businesses) can actually apply to this cycle, with sourced dates.
   Techstars — the published range is what their page says, the mechanics of
   WHEN it's committed are `UNVERIFIED` from this read.
 - **Gates:** at least one co-founder must already hold unrestricted US work
-  authorization (no visa sponsorship). No university gate.
+  authorization (no visa sponsorship). No university gate. (Source:
+  antler.co/location/us, read 31 Aug 2026.)
 - **Fit read:** Antler leans toward forming teams pre-idea; a founder
   arriving with a working product is a nonstandard entry. Worth one
   conversation precisely because there is no deadline to protect.
@@ -75,12 +83,13 @@ for small businesses) can actually apply to this cycle, with sourced dates.
 - **Cornell Runway** — opens Oct 15, 2026, PhD-gated; only live IF a PhD
   co-founder path materializes (assume no, per chief 31 Aug).
 
-## The calendar this creates (fed to backlog DEADLINES)
+## The calendar this creates (fed to backlog DEADLINES — this tracker is
+the source of truth; backlog rows cite it)
 
 | Date | What |
 |---|---|
-| **Nov 2, 2026** | ERA Winter 2027 application deadline |
-| **Nov 18, 2026** | Techstars NYC Spring 2027 final deadline |
+| **Nov 2, 2026** | ERA application deadline (program starts Jan 11, 2027) |
+| **Nov 18, 2026** | Techstars NYC final deadline (program starts Mar 8, 2027) |
 | ~Oct 1, 2026 | Self-imposed: deck skeleton + bottom-up market scaffold (item 4) must exist to write either application well |
 
 **The load-bearing implication for the backlog:** both real deadlines land
