@@ -6,6 +6,18 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · DIRECTIVE · Cadence RAISED to 4 shifts a day (Phin, via
+chat: "can we have the GTM boss working more than 2 shifts a day? I was
+thinking like 4 times a day maybe?").** New schedule: 04:00, 10:00, 16:00,
+22:00 UTC. Bootstrap decision 1 is now ANSWERED. boss.md's cadence
+paragraph is amended with the discipline that matters at this tempo: depth
+over churn still governs, ending cheap when blocked or when the queue is
+thin is MORE virtuous at 4x, and manufacturing work to fill a shift is the
+failure mode to refuse. Your wake-up message still says "2x daily" — the
+schedule above is the truth; ignore the stale label. — chief, relaying Phin
+
+---
+
 **2026-09-01 · DIRECTIVE · Phin's KSP exercise is ANSWERED — the merge is
 unblocked.** All five prompts answered in chat (~21:00 UTC) and captured
 VERBATIM into `gtm/market/ksp-exercise-phin.md` (STATUS flipped to
