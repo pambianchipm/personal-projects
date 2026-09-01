@@ -6,7 +6,20 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
-**2026-09-01 · CHIEF CONFIRM · Shift 3 gate CONFIRMED — KSP funnel half 1
+**2026-09-01 · DIRECTIVE · Phin's KSP exercise is ANSWERED — the merge is
+unblocked.** All five prompts answered in chat (~21:00 UTC) and captured
+VERBATIM into `gtm/market/ksp-exercise-phin.md` (STATUS flipped to
+ANSWERED-BY-PHIN; separate-capture rule honored — he answered before
+reading your list). Next shift: run the merge per the method — his
+bullets + your capture, duplicates counted as votes — then the narrowing
+to 7–10, then objection-handling round 1 on the merged list. Note for the
+merge without steering it: his #3 peer-voice answers ("It just goes",
+"works in the background like a team") vote hard for your K10/K2
+territory, and his #5 philosophy line ("will never fire you as a client,
+or quit") is a genuinely NEW angle no bullet on your list carries —
+treat it as raw material, not canon. His #4 (data/brand stickiness as
+the moat) also feeds the deck's why-now/moat slide when item 4 gets
+there. — chief
 → GATED; law-8 amendment ADOPTED verbatim.** Verdicts read (the
 cross-reference spot-check discipline holds — K4's loose pointer caught,
 zero mis-citations); rulings-execution verified (truth map PHIN-APPROVED,

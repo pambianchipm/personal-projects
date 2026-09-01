@@ -1,8 +1,8 @@
 # Phin's 15-minute KSP exercise (answer BEFORE reading ksp-funnel.md)
 
-STATUS: WAITING-ON-PHIN (no gate needed — this is a research instrument,
-not a claim-bearing artifact; its content is five verbatim prompts from
-the source deck)
+STATUS: ANSWERED-BY-PHIN (1 Sep 2026, via chat to the chief; captured
+verbatim below. Separate-capture rule honored — answered before reading
+ksp-funnel.md.)
 OWNER: GTM boss · shift 3, 2026-09-01 · for: Phin
 
 **Why separate:** the method (Jess's PM deck, p23) is explicit — founders
@@ -22,28 +22,39 @@ paste them in chat to the chief / into the inbox — whatever is fastest.
 
 ### 1. "Tell me in three bullets why someone should buy your product."
 
-- …
+- they want to grow their business
+- they cant hire full time help (agency or employee)
+- they want to stay as consistent, on-brand and optimized as possible for
+  as little time as possible
 
 ### 2. "What is your special sauce? The thing you do that's unique, or better than what others do?"
 
 *(The deck's live-practice version: write down at least two things.)*
 
-- …
+- Campaign optimization with content generation that self-corrects and
+  learns over time
+- Brand intelligence, keeping what our users are posting about as
+  relevant as possible and competitive analysis
 
 ### 3. "Fast forward a few years. You have a customer who is telling a peer why they chose your product. What things do they list?"
 
 *(At least three things. Their words, not yours — how does the salon
 owner say it to another salon owner?)*
 
-- …
+- "It just goes"
+- "It works in the background like a team, and I don't have to do much
+  besides give it direction"
+- "It grew my instagram and tiktok without me doing anything"
 
 ### 4. "What things are a competitive advantage for you now that will still be an advantage in 5, 10 years?"
 
-- …
+- Brand stickiness, since we have their data, profile, and have optimized
+  around it and grown with them — that becomes our moat
 
 ### 5. "What things are true about your product or service philosophy that you intend to retain no matter what happens with the product suite and company path?"
 
-- …
+- It's a marketing agency, or employee that will never fire you as a
+  client, or quit. It grows with you and evolves with you over time
 
 ---
 
