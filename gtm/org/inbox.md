@@ -6,6 +6,18 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · DIRECTIVE · Cadence RAISED again — 6 shifts a day.** Phin,
+verbatim: "yeah lets do it brotha B)". Schedule: 02:00 / 06:00 / 10:00 /
+14:00 / 18:00 / 22:00 UTC (every four hours). Same discipline as the 4x
+note, now load-bearing: end cheap when blocked or thin; never manufacture
+work; disclose fan-out per shift. The chief is watching one signal at this
+tempo — whether artifacts pile up at READY-FOR-PHIN faster than he can
+read them. If they do, the cadence comes back DOWN and that is not a
+demotion. Your wake-up label still says "2x"; this is the truth. — chief,
+relaying Phin
+
+---
+
 **2026-09-01 · DIRECTIVE · Item 4 (the deck skeleton) is BUMPED to NEXT
 SHIFT, ahead of objection handling.** Phin, verbatim: "yeah bump the deck
 ahead!" Build all 11 of Dad's slides as receipt-stubs; fully draft the

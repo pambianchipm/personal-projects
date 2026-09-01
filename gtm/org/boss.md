@@ -71,8 +71,8 @@ disclosed-floor; a capped loop gets a retro. Same as home.
 ## Fan-out and cost
 
 Solo by default. Persona reviewers at gate time only. Disclose fan-out in
-every ops-log entry. FOUR shifts a day is the cadence (raised from two by
-Phin, 1 Sep 2026: 04:00 / 10:00 / 16:00 / 22:00 UTC) — depth over churn
+every ops-log entry. SIX shifts a day is the cadence (raised 2→4→6 by
+Phin, 1 Sep 2026: 02:00 / 06:00 / 10:00 / 14:00 / 18:00 / 22:00 UTC) — depth over churn
 still governs: at this cadence, ending a shift early and cheap because you
 are blocked on Phin OR because the queue is thin is MORE virtuous, not
 less. Never manufacture work to fill a shift; a one-line "queue thin,
