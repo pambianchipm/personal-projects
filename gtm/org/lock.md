@@ -1,1 +1,1 @@
-CLAIMED 2026-09-01T22:02Z — boss (session v2), shift 4. Working: KSP merge (Phin capture + boss capture -> merged 7-10) as ksp-funnel v2; objection handling r1 queued next shift.
+released 2026-09-01T22:5xZ — boss (session v2), end of shift 4. KSP merge GATED (M1-M11; verdicts filed; chief ACK requested on the P3 reading). Next shift: objection handling round 1 on the M-list (item 2 h2) — four personas, Assess/Answer/Address, forks to risk register v1 + product-fix proposals (via Phin) + answer bank.

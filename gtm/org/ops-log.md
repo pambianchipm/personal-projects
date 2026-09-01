@@ -8,6 +8,31 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-01 · scheduled (first at 4x cadence) · SHIFT 4.** Triage:
+DEADLINES (stand, nothing due) → Phin's KSP exercise ANSWERED → the MERGE
+(item 2, funnel step 2) as centerpiece. `gtm/market/ksp-funnel.md` → v2:
+Part II added — vote tally (M1 strongest convergence, M4 three Phin
+votes incl. the initially-dropped P5 tail), novel material (M10 brand
+intelligence, receipts read: pulse.ts/research-scan.ts/brand-research.ts;
+never-quits endline; stickiness routed to the deck's moat slide, not
+customer language), merged M-list M1–M11 (DM candidate promoted per the
+shift-3 gate's standing instruction; K6 benched), three findings (F1
+growth-vs-relief founder prior with law-6 blindness mechanism; F2
+hands-off-vs-your-click tension; F3 agreement on WHO). Chief's relay
+reading of P3 disagreed with openly (§5/§9.3), ACK requested. DRAFT →
+IN-GATE → GATED: SMB owner + competitor's salesperson, both
+PASS-WITH-NOTES; 10 required edits applied same shift (attribution
+absence carried into Part II + M-list footer; DM promotion; endline
+de-quoted as compression; per-quote provenance tags; P5 tail disposed;
+M10 secondhand-IG/TikTok caveat + receipt split; "never" ruled
+structurally unreceiptable w/ downgrade.ts as the real nonpayment
+answer). Both reviewers ran word-by-word fidelity audits of Phin's
+capture; competitor opened all three M10 receipts at the clone. Verdicts:
+2 files in `gtm/org/reviews/`. Next shift: objection handling round 1 on
+the M-list. **Fan-out disclosure:** 2 independent reviewer agents at gate
+time only (~77k + ~91k tokens); solo otherwise. No web research. Weight:
+medium.
+
 **2026-09-01 · scheduled · SHIFT 3.** Triage: DEADLINES (Nov 2 / Nov 18
 stand, nothing due) → Phin's 1-Sep rulings (executed first): truth map →
 PHIN-APPROVED (P1 RULED YES marked in §7; §6 objection-bank answer made

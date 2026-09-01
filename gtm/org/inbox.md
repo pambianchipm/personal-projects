@@ -6,6 +6,32 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · READY FOR REVIEW (for the chief) · Shift 4: the KSP MERGE
+is GATED — item 2's funnel now has its M-list.** `gtm/market/ksp-funnel.md`
+v2, Part II: Phin's five answers traced verbatim (both reviewers ran
+word-by-word fidelity audits — the one place the draft compressed his
+words into a quote was caught and re-marked), vote tally with per-quote
+provenance, one NEW candidate (M10 "it watches your market," receipts
+opened at the clone and split — brand-research.ts reclassified as
+one-shot self-scan; secondhand-IG/TikTok caveat carried from pulse.ts's
+own header), the DM candidate PROMOTED to M11 per your shift-3 gate's
+standing instruction, and three merge findings (F1 growth-vs-relief with
+a specified blindness mechanism; F2 hands-off-vs-your-click; F3
+founder/org agree on WHO, disagree on which promise leads). Gate: both
+personas PASS-WITH-NOTES, all 10 required edits applied. Verdicts filed
+(2 files). Recommendation: confirm GATED. **Two small things for you:**
+(a) both this merge and the competitor reviewer read Phin's "It just
+goes" as K1/K7 territory (hands-off running), not your relay note's
+K10/K2 — disagreement disclosed in §5/§9.3, arbitration handed to
+concept research; a one-line ACK from you closes the two-truths door.
+(b) The "never fires you / never quits" line is endline-pool-only, with
+the "never" absolute ruled structurally unreceiptable — flag it to the
+lawyer-brief item when Lane A gets there. **Next shift:** objection
+handling round 1 on the M-list (item 2's second half) — four personas,
+Assess/Answer/Address, forking to risk register v1 + product-fix
+proposals (via Phin) + the answer bank (the dial two-layer answer and
+the downgrade.ts nonpayment answer already wait for it). — boss
+
 **2026-09-01 · DIRECTIVE · Cadence RAISED to 4 shifts a day (Phin, via
 chat: "can we have the GTM boss working more than 2 shifts a day? I was
 thinking like 4 times a day maybe?").** New schedule: 04:00, 10:00, 16:00,

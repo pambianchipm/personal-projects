@@ -1,6 +1,11 @@
 # Player 2 — KSP funnel: separate captures, MERGED (v2)
 
-STATUS: v2 (merge) DRAFT → IN-GATE this shift. Lineage: half 1 (boss's
+STATUS: v2 GATED — merge (Part II) gated shift 4: SMB owner +
+competitor's salesperson, both PASS-WITH-NOTES; all 10 required edits
+applied same shift (5 + 5, two overlapping); fidelity audit traced every
+Phin bullet word-by-word, M10's three receipts opened at the clone (one
+reclassified). Verdicts: `gtm/org/reviews/2026-09-01-ksp-merge-*.md`.
+Awaiting chief's confirm. Lineage: half 1 (boss's
 capture, Part I below) GATED shift 3 — SMB owner + competitor's
 salesperson, both PASS-WITH-NOTES, 6 edits applied, zero mis-citations
 (verdicts: `gtm/org/reviews/2026-09-01-ksp-funnel-h1-*.md`); chief
@@ -191,10 +196,10 @@ never evidence.
 
 | Candidate | Phin's bullets voting for it | Read |
 |---|---|---|
-| K1 (does the marketing) | "It just goes"; "works in the background like a team, I don't have to do much besides give it direction"; "consistent, on-brand and optimized… for as little time as possible" | Strongest convergence in the merge — three of his bullets land here |
-| K4 (gets smarter about YOUR shop) | "campaign optimization with content generation that self-corrects and learns over time"; "brand stickiness, since we have their data, profile, and have optimized around it" (P4) | Second-strongest; his mechanism wording ("self-corrects") is closer to the concrete bullet the gate preferred than to the commodity headline |
-| K5 (fraction of a hire) | "they can't hire full time help (agency or employee)" | Direct vote for the anchor; note his framing names AGENCY and employee — both folders |
-| Growth motivator | "they want to grow their business"; "It grew my instagram and tiktok without me doing anything" | Not a candidate — a north-star signal; see finding F1 |
+| K1 (does the marketing) | "It just goes" *(P3, invented speech)*; "works in the background like a team, and I don't have to do much besides give it direction" *(P3, invented)*; "consistent, on-brand and optimized… for as little time as possible" *(P1)* | Strongest convergence in the merge — three of his bullets land here |
+| K4 (gets smarter about YOUR shop) | "campaign optimization with content generation that self-corrects and learns over time" *(P2)*; "brand stickiness, since we have their data, profile, and have optimized around it […and grown with them — that becomes our moat]" *(P4)*; "It grows with you and evolves with you over time" *(P5, second sentence)* | Second-strongest — THREE Phin bullets; his mechanism wording ("self-corrects") is closer to the concrete bullet the gate preferred than to the commodity headline |
+| K5 (fraction of a hire) | "they can't hire full time help (agency or employee)" *(P1)* | Direct vote for the anchor; note his framing names AGENCY and employee — both folders |
+| Growth motivator | "they want to grow their business" *(P1)*; "It grew my instagram and tiktok without me doing anything" *(P3, invented)* | Not a candidate — a north-star signal; see finding F1 |
 
 *(The chief's relay note read his P3 as voting K10/K2 territory; the
 merge reads "It just goes" as K1/K7 territory — hands-off running, not
@@ -205,15 +210,26 @@ research arbitrates, not either of us.)*
 
 1. **Brand intelligence / "it watches your market"** (his P2: "keeping
    what our users are posting about as relevant as possible and
-   competitive analysis") → NEW candidate M10. Receipts for the shipped
-   part: Daily Pulse cross-platform discovery (`console/lib/pulse.ts`
-   header, read shift 2), watchlist auto-scan, diff-aware
-   (`console/lib/research-scan.ts` header, read this shift), Brand DNA
-   URL-scan (`console/lib/brand-research.ts` header, read this shift).
-   CAVEAT: "competitive analysis" DEPTH is unaudited — no dedicated
-   competitor-tracking surface was verified; a concept card may test the
-   idea, but no card may promise "competitive analysis" until that read
-   happens (same discipline as the attribution absence).
+   competitive analysis") → NEW candidate M10. Receipts, split by what
+   each actually supports (gate-corrected): "watches your market" is
+   receipted by Daily Pulse cross-platform discovery (`console/lib/
+   pulse.ts` header) and the diff-aware watchlist auto-scan
+   (`console/lib/research-scan.ts` header); `console/lib/
+   brand-research.ts` receipts only Phin's "brand intelligence" phrase —
+   it is a ONE-SHOT onboarding scan of the customer's own site, not
+   continuous and not external, and is cited for that alone.
+   TWO CAVEATS: (a) "competitive analysis" DEPTH is unaudited — no
+   dedicated competitor-tracking surface was verified; no card may
+   promise it until that read happens (same discipline as the
+   attribution absence). (b) SOURCE OF SIGNAL: TikTok/IG signals are
+   SECONDHAND — Grok lenses, "until Meta/TikTok API access exists"
+   (pulse.ts header's own admission) — and the ICP is visual businesses
+   on exactly those platforms; no card may imply firsthand IG/TikTok
+   monitoring, and the card should be written to survive this being
+   pointed out. The differentiation that DOES hold, receipted: cron-run
+   (comes to you), diff-aware (won't reshow last week), "nothing new
+   today" honored, findings pipe into Create-batch (watching feeds work
+   product, not an inspiration feed).
 2. **"The marketing agency that will never fire you, or your marketing
    employee that will never quit"** (his P5, corrected wording) →
    NOT a KSP: it's ENDLINE material — exactly the deck's "creative
@@ -221,9 +237,17 @@ research arbitrates, not either of us.)*
    boss bullet carried (the burned-by-churn wound: agencies drop small
    accounts, employees leave). Filed as an endline candidate for the
    concept cards, and flagged to the positioning north-star alternates
-   (it is NOT canon; it tests). Note the claims-law seam: "never" is an
-   absolute the org may not promise on a live surface without a receipt
-   for what happens at, e.g., nonpayment — as a tested endline it's fine.
+   (it is NOT canon; it tests). Claims-law seam, tightened at the gate:
+   the literal "never" absolute NEVER ships as a claim at ANY receipt
+   level — it quantifies over the company's whole future and is
+   structurally unreceiptable under law 2 (a rival's "the employee that
+   never quits works for a pre-revenue startup" proves the point). It
+   lives only as a creative endline candidate for research, contingent
+   on the lawyer brief that already holds the "employee" framing
+   (positioning.md §8.3). The real nonpayment answer, when the objection
+   bank builds: cite honest-degradation behavior (`console/lib/
+   downgrade.ts` header: "STOP AND NOTIFY… nothing may stop SILENTLY"),
+   not a denial of mortality.
 3. **Stickiness-as-moat** (his P4) → not customer-facing language
    ("we have their data" sells to investors, alarms owners); routed to
    the deck's moat/why-better slide (item 4) as founder raw material, and
@@ -239,16 +263,32 @@ Order still NOT importance — that's post-concept-research (deck p28).*
 | M1 | It does the marketing, not just the drafts | K1 | boss + 3 Phin bullets |
 | M2 | Nothing posts or spends without your click | K2 | boss (tension with Phin's hands-off voice — F2) |
 | M3 | It tells you what actually worked — and won't pretend | K3 | boss |
-| M4 | It gets smarter about YOUR shop | K4 | boss + 2 Phin bullets |
+| M4 | It gets smarter about YOUR shop | K4 | boss + 3 Phin bullets (P2, P4, P5's "grows with you" sentence) |
 | M5 | An employee's work at a fraction of a hire (wording per §4.4 flag) | K5 | boss + 1 Phin bullet |
 | M6 | Your week arrives planned; one tap runs it ⧖ | K7 | boss |
 | M7 | It asks for the photo before you forget the event ⧖ | K8 | boss |
 | M8 | You never wonder if it actually posted (operator-only split stands) | K9 | boss |
 | M9 | Proof before payment | K10 | boss |
-| M10 | It watches your market for you (shipped: Pulse + watchlist; "competitive analysis" depth UNAUDITED) | NEW (Phin P2) | Phin |
+| M10 | It watches your market for you — card must carry NOUNS ("sees what other salons near you post, and what's working"); the abstract form fails the five-second test (shipped: Pulse + watchlist; "competitive analysis" depth UNAUDITED; IG/TikTok signals SECONDHAND — full caveats §6.1) | NEW (Phin P2) | Phin |
+| M11 | It answers the DMs ⧖-adjacent (engagement drafting shipped operator-console; customer delivery is roadmap) | shift-3 gate catch, PROMOTED per that gate's standing instruction ("test at merge even if Phin's capture doesn't raise it") — its shipped basis is stronger than M6/M7's | gate |
 | bench | You can talk to it like staff | K6 demoted — commodity today per the competitor gate; revisit when message-it-anywhere ships | — |
-| bench | It answers the DMs | shift-3 gate catch; ⧖-adjacent (operator-console only) | — |
-| endline pool | "The agency that never fires you; the employee that never quits" (test-only; "never" absolute barred from live surfaces unreceipted) · "you can put the phone down on Saturday" (landscape-report synthesized line, §9 rules apply) | Phin P5 / report | — |
+| endline pool | The agency-that-never-fires-you / employee-that-never-quits idea — compressed from Phin's verbatim (§6.2), NOT his sentence as written here (test-only; "never" absolute barred from live surfaces unreceipted; probe the LOCK-IN misread — "never quits" heard as "can't get rid of it" — not just warm resonance) · "you can put the phone down on Saturday" (landscape-report synthesized line, §9 rules apply) | Phin P5 (compressed) / report | — |
+
+*M-list count note: 11 candidates exceeds the deck's 7–10 guidance by one,
+disclosed deliberately — M11 is a standing gate instruction, and cards
+carry ~3 KSPs each, so the research load stays sane. The narrowing to 3–5
+absorbs the overage.*
+
+*Deliberate absence carried from §2 (travels with any copy-paste of this
+list): no results-in-owner-terms candidate ("bookings, not likes") until
+the attribution-scope read lands (truth-map §3-bis); the interviews probe
+that axis unprompted first regardless (truth-map §9). Full disposition:
+§9.4.*
+
+*Vote-composition note (gate): M1's "3 Phin bullets" counts two invented-
+speech P3 lines and one P1 line that F3 reads as an ICP restatement —
+"strongest convergence" describes bullet count, not three independent
+new claims. Weigh accordingly at narrowing.*
 
 ## 8. Merge findings (what the two captures DISAGREE about — the real yield)
 
@@ -257,9 +297,11 @@ Order still NOT importance — that's post-concept-research (deck p28).*
   leans GROWTH ("grow their business," "grew my instagram and tiktok").
   This is the exact §9 question positioning.md flagged as the gate's
   sharpest — and now the founder's own prior is on record as growth.
-  LAW-6 GUARD: his prior is founder intuition, not owner evidence; the
-  concept cards must test relief-led vs growth-led framings without
-  knowing which one the founder favors.
+  LAW-6 GUARD, mechanism specified: relief-led and growth-led framings
+  get symmetrically coded concept cards (same length, same structure,
+  neither marked or orderable as founder-preferred); RESPONDENTS are the
+  blind party — the card designer has read this file and cannot be — and
+  the gate reviewer on item 5's cards checks the symmetry.
 - **F2 — Hands-off vs your-click.** His imagined customer says "without
   me doing anything"; the org's safety KSP says nothing without your
   click. The bridge exists (advance-approval — the toggle IS the click,
@@ -284,3 +326,11 @@ Order still NOT importance — that's post-concept-research (deck p28).*
 3. The chief's relay note was read AFTER Phin's answers were captured but
    BEFORE this merge was written — its K10/K2 reading is disclosed and
    disagreed with above rather than silently adopted.
+4. **The attribution absence carries into Part II** (gate-required
+   restatement — §2 forbade inheriting it silently): the
+   results-in-owner-terms candidate ("shows you bookings, not likes") is
+   still NOT on the M-list; the attribution-scope read (truth-map §3-bis)
+   is still pending as the next Lane B opening move; item 5's interviews
+   still probe the axis unprompted first (truth-map §9); the revisit
+   trigger — add it as a test-only territory once the read lands — binds
+   the narrowing step and the concept cards.
