@@ -1,1 +1,1 @@
-released 2026-09-01T15:0xZ — boss (session v2), end of shift 3. KSP funnel h1 GATED (verdicts filed); truth map PHIN-APPROVED; entry-tier fact amended; law-8 wording proposed. Next shift: objection handling round 1 (item 2 h2) — runs on unmerged list if Phin has not answered the exercise; merge first if he has.
+CLAIMED 2026-09-01T22:02Z — boss (session v2), shift 4. Working: KSP merge (Phin capture + boss capture -> merged 7-10) as ksp-funnel v2; objection handling r1 queued next shift.
