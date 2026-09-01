@@ -3,13 +3,16 @@
 CONFIDENTIAL — internal audit; contains deliberate self-indictments that
 are gate-fail material on any external surface (law-8 extension question
 flagged to the chief).
-STATUS: GATED — two independent persona reviewers (skeptical SMB owner,
-competitor's salesperson), both PASS-WITH-NOTES round 1; all 8 required
-edits applied same shift; both spot-checks found ZERO mis-citations across
-23 receipt verifications. Verdicts:
+STATUS: PHIN-APPROVED (1 Sep, via chief relaying Phin: "P1, yes — and love
+P2-5 as well") — P1 ritual floor CONFIRMED (unconditional); P2–P5 approved
+and filed to the build org's backlog as its item 11 (a–d); P6 held for
+productization Phases 1–2 as sequenced here. Gate lineage: two independent
+persona reviewers (skeptical SMB owner, competitor's salesperson), both
+PASS-WITH-NOTES round 1; all 8 required edits applied same shift; zero
+mis-citations across 23 receipt verifications. Verdicts:
 `gtm/org/reviews/2026-08-31-truth-map-v1-smb-owner.md`,
 `gtm/org/reviews/2026-08-31-truth-map-v1-competitor-salesperson.md`.
-Awaiting chief's confirm → READY-FOR-PHIN.
+Chief confirmed READY-FOR-PHIN 31 Aug; Phin ruled 1 Sep.
 OWNER: GTM boss · shift 2, 2026-08-31
 MANDATE: Approved item 0b (Phin, 31 Aug, priority raised) — audit the
 frame-of-reference-B promise (`gtm/market/positioning.md`, PHIN-APPROVED)
@@ -233,14 +236,16 @@ touches only.
   (backlog item 2): the invariant layer, which holds regardless of any
   ruling — the approval gates cannot be muted at any dial setting, and you
   can ask a human employee to batch updates too — and the ritual-floor
-  layer ("even quiet reports weekly"), which is CONTINGENT ON P1 being
-  approved and must be re-filed if P1 is rejected.
+  layer ("even quiet reports weekly") — originally contingent on P1, made
+  UNCONDITIONAL by Phin's 1 Sep ruling (P1: yes). Both layers stand; file
+  both to the objection bank when item 2 builds it.
 
 ## 7. Product asks — PROPOSED, awaiting Phin (routing rule: nothing goes to
 the build org until he approves)
 
 - **P1 — Ritual floor ruling:** confirm that quiet mode keeps Monday plan +
   Friday digest (the §6 floor). One yes/no; everything below inherits it.
+  **RULED YES (Phin, 1 Sep).**
 - **P2 — The weekly ritual** (rank 1): Friday digest email send path +
   Monday "your week, one tap" proposal email with a one-tap approve action.
   Uses existing composers, `sendEmail`, and the approval model. **Miss

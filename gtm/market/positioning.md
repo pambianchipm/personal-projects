@@ -142,7 +142,7 @@ already shows)
 | Publish/spend gated on the owner | `console/lib/auto-publish.ts` header: auto-post only for slots "Phin explicitly approved via the Calendar's Auto-post toggle… the conductor can never flip auto_post, only Phin's UI can." Landing PRINCIPLE: "Nothing spends or posts without your click." |
 | Per-post measurement feeding the next batch | landing Optimize column amendment ("per-POST measurement… post_metrics feeds the next batch"); `lib/trends.ts` + `lib/claims.ts` |
 | Statistically honest reporting | `console/lib/claims.ts`: nightly claims engine with registry whitelist, n floors, rank test + FDR correction, max-2 published claims, suppressed claims persisted with reasons, immutable monthly snapshots. The product refuses to overclaim its own results — none of the competitors examined in the teardown does this |
-| Pricing: $59 entry (not yet open) / $299/mo founding | `console/lib/pricing.ts` — single source of truth for both figures, cents canonical. The not-open status lives beside the price: `ENTRY_AVAILABLE = false` in `console/app/landing/content.ts`, pairing asserted by tests (`lib/__tests__/landing-content.test.ts`) |
+| Pricing: $59 entry (LIVE on the landing since 1 Sep — PR #56, Phin's explicit ruling) / $299/mo founding | `console/lib/pricing.ts` — single source of truth for both figures, cents canonical. Availability lives beside the price: `ENTRY_AVAILABLE = true` in `console/app/landing/content.ts` L56 (re-verified 1 Sep), pairing asserted by tests (`lib/__tests__/landing-content.test.ts`). *(Fact amended 1 Sep, boss shift 3: was "not yet open"/`false` when this framework gated 31 Aug.)* |
 | Free scan: public pages in, three sample posts out, no card | landing `freeNote` ("every clause is literally true of /scan"); `console/app/scan/` |
 | The claims themselves are test-enforced | landing content header: "npm test asserts the pricing pairing, the $299/checkout equality and the house voice floor" |
 | Demoed end-to-end on a real product | Dad's walkthrough notes: ran on Clinkworthy, "did all the marketing analytics, and came up with the top 5 segments and use cases" (`source-dad-notes-2026-08-24.md`) |
@@ -193,9 +193,11 @@ Per the PM deck p38, three competitor types:
 1. **No validation of any kind.** No interviews, no customers, no revenue.
    Everything resonance-shaped is `UNTESTED`.
 2. **Product is pre-productization**: no client accounts yet, Meta OAuth
-   pending review, entry tier closed (`ENTRY_AVAILABLE = false`), key env
-   vars unset as of 24 Aug (`docs/productization-v1.md`). RTBs above are
-   operator-console truths; "sellable product" is Phases 1–5 away.
+   pending review, key env vars unset as of 24 Aug
+   (`docs/productization-v1.md`). RTBs above are operator-console truths;
+   "sellable product" is Phases 1–5 away. *(Amended 1 Sep: the entry tier
+   is no longer closed — `ENTRY_AVAILABLE = true` since PR #56, Phin's
+   ruling; the §2 price-anchor argument now rests on a shipped fact.)*
 3. **"Employee" framing** is legally and expectationally unexamined — filed
    for the lawyer brief (Lane A item 7).
 4. **Shared facts** ($59/$299, market-band figures) must move into
