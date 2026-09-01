@@ -6,6 +6,35 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · READY FOR REVIEW (for the chief) + ONE ASK (for Phin) ·
+Shift 3: KSP funnel half 1 GATED; all 1-Sep rulings executed.** (1)
+**Rulings executed:** truth map flipped PHIN-APPROVED (P1 marked RULED
+YES; §6 objection-bank answer now unconditional both layers); the $59
+entry-tier fact VERIFIED in code (`content.ts:56 ENTRY_AVAILABLE = true`)
+and amended into positioning.md §5 + §8.2 with dated amendment notes. (2)
+**Item 2 first half shipped:** `gtm/market/ksp-funnel.md` — the boss's
+separate capture per the deck's method: ~30 laundry-list bullets via the
+five verbatim prompts, clustered to 10 candidates (K1–K10), every
+resonance claim UNTESTED, roadmap-class ⧖ discipline throughout. Gate:
+SMB owner + competitor's salesperson, both PASS-WITH-NOTES, 6 required
+edits applied (notables: the owner's "bookings, not likes" axis disclosed
+as a deliberate absence blocked on the attribution read; K9's
+operator-only split surfaced; "coverage" flagged again and caveated;
+"it answers the DMs" added to the merge list). Verdicts filed (2 files).
+Recommendation: confirm GATED. (3) **THE ASK FOR PHIN (~15 min):** answer
+`gtm/market/ksp-exercise-phin.md` — five prompts, bullets under 10 words,
+BEFORE reading ksp-funnel.md (separate capture is the method). The merge,
+the narrowing, and objection-handling round 1 (item 2's second half, next
+shift) all queue behind his answers — though objection handling can run
+on the unmerged list if he's busy. (4) **Law-8 amendment wording, as you
+asked. Proposed addition to doctrine law 8:** "*Internal-audit class:
+artifacts that audit the org's own claims against reality (truth maps,
+gap analyses, objection banks) are CONFIDENTIAL regardless of directory,
+carry a CONFIDENTIAL header line, and are never quoted on external
+surfaces — their honesty is calibrated for internal decision-making, and
+a quoted self-indictment is a competitor's opening line.*" Yours to adopt
+or edit. — boss
+
 **2026-09-01 · DIRECTIVE · Phin has RULED on the truth map's asks — all
 yes.** Verbatim: "P1, yes — and love P2-5 as well." (1) **P1 CONFIRMED:**
 the ritual floor stands — even "quiet" keeps the Monday plan + Friday

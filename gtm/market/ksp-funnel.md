@@ -1,6 +1,13 @@
 # Player 2 — KSP funnel, half 1: the boss's separate capture
 
-STATUS: DRAFT → IN-GATE this shift
+STATUS: GATED — two independent persona reviewers (skeptical SMB owner,
+competitor's salesperson), both PASS-WITH-NOTES round 1; all 6 required
+edits applied same shift; 9 cross-reference spot-checks (one direct code
+check on the $59 fact), zero mis-citations. Verdicts:
+`gtm/org/reviews/2026-09-01-ksp-funnel-h1-smb-owner.md`,
+`gtm/org/reviews/2026-09-01-ksp-funnel-h1-competitor-salesperson.md`.
+NEXT: waits on Phin's separate capture (`ksp-exercise-phin.md`) for the
+merge; awaiting chief's confirm meanwhile.
 OWNER: GTM boss · shift 3, 2026-09-01
 METHOD: PM deck pp.21–28 (`gtm/sources/extract-product-marketing.md`) —
 brainstorm a laundry list via the five prompts (bullets under 10 words),
@@ -33,7 +40,7 @@ tests, not claimable on any live surface until shipped.
 ### Prompt 1 — "Tell me in three bullets why someone should buy your product."
 
 - Does your marketing so you can run the shop
-- Costs a fraction of the cheapest human hire
+- Costs a fraction of a typical hire
 - Nothing posts or spends without your OK
 
 ### Prompt 2 — "What is your special sauce? The thing you do that's unique, or better than what others do?"
@@ -48,6 +55,10 @@ tests, not claimable on any live surface until shipped.
 - Shows three posts in your voice before any card
 
 ### Prompt 3 — "Fast forward a few years. You have a customer who is telling a peer why they chose your product. What things do they list?"
+
+*(LAW-1 LABEL ON THE WHOLE SECTION: every bullet below is INVENTED future
+customer speech — the deck's own exercise format. Search directions for
+concept endlines; never evidence, never quotable as an owner's words.)*
 
 - "I put my phone down on Saturday" *(the landscape report's synthesized
   candidate line — a message to TEST, never evidence; positioning.md §9)*
@@ -83,17 +94,23 @@ tests, not claimable on any live surface until shipped.
 narrowing to the final 3–5 (deck p27). Order is NOT yet an importance
 ranking — that's a post-merge, post-concept-research decision (p28).*
 
+*Status-column rule (gate-required): "Shipped" = enforced in code and
+demonstrable in the operator console; no client accounts exist and
+client-email paths are dark (positioning.md §8.2; truth-map §4). NO
+candidate is a live-surface claim until productization — this table is
+test material, and the qualifier travels with any copy-paste of it.*
+
 | # | Candidate KSP (working name) | Cluster it compresses | Status of the underlying capability |
 |---|---|---|---|
 | K1 | **It does the marketing, not just the drafts** | full loop; plan/write/post/learn; "it just handles it" | Shipped (positioning.md §5 rows 1–3) |
 | K2 | **Nothing posts or spends without your click** | approval gates; architecture-level safety; owner's click philosophy | Shipped (§5 row 2; benefit 2's advance-approval answer) |
 | K3 | **It tells you what actually worked — and won't pretend** | claims engine; refuses overclaim; "when something flops, it says so"; empty week honesty | Shipped (§5 row 4; gate's standing note: owner wording, not "statistically honest") |
-| K4 | **It gets smarter about YOUR shop** | outcome memory; every post an experiment; winners/losers; "knows my voice by now" | Shipped (§5 rows 1,3; [Apply] memory) |
-| K5 | **An employee's coverage at a fraction of a hire** | price anchor; "$299 vs the kid I almost hired"; software margins | Shipped fact ($59 live since PR #56; $299 founding; band receipts in positioning.md §2/§4.4) |
+| K4 | **It gets smarter about YOUR shop** | outcome memory; every post an experiment; winners/losers; "knows my voice by now" | Shipped (§5 row 3; [Apply] memory; "winners get budget, losers get cut" → truth-map §2 optimizers row). Gate note: the headline is commodity app-speak — the concrete mechanism bullet tests better than the cluster name |
+| K5 | **An employee's coverage at a fraction of a hire** | price anchor; "$299 vs the kid I almost hired"; software margins | Shipped fact ($59 live since PR #56; $299 founding; band receipts in positioning.md §2/§4.4). STANDING WORDING FLAG (both gates): "coverage" is insurance-speak — owner wording already on file at §4.4 ("does what a $1,000-a-month freelancer does, for $299"); do not launder "coverage" into concept cards. And the coverage HALF of the claim (engagement that never sleeps vs a freelancer) is "a roadmap comparison, not a shipping one" (positioning.md §7, verbatim) — price facts are shipped, coverage parity is not |
 | K6 | **You can talk to it like staff** | conductor chat today; message-it-anywhere later (P6, held) | Chat shipped; "anywhere" roadmap-class — split when testing |
 | K7 | **Your week arrives planned; one tap runs it** ⧖ | Monday ritual; "the Monday email runs my whole week"; works around a busy boss | APPROVED build item 11a — roadmap-class until shipped |
-| K8 | **It asks before you forget** ⧖ | asks queue; photos/dates/decisions; anti-chore rules | APPROVED build item 11b — roadmap-class |
-| K9 | **It never fails silently** | proof-of-post alerting; "I never wonder if posting happened" | Shipped (truth-map §2, notify.ts receipt); the market's #1 competitor complaint inverted |
+| K8 | **It asks for the photo before you forget the event** ⧖ | asks queue; photos/dates/decisions; anti-chore rules | APPROVED build item 11b — roadmap-class (gate note: the name needs its nouns; the compressed version reads as a fortune cookie) |
+| K9 | **You never wonder if it actually posted** | proof-of-post alerting; "never fails silently" as engineer-wording fallback | Alerting shipped OPERATOR-ONLY (truth-map §3 gap 5) — the client-visible "you never wonder" experience is roadmap-class; split when testing, like K6. The market's #1 competitor complaint inverted; customer wording primary per the gate |
 | K10 | **Proof before payment** | free scan; three posts in your voice, no card | Shipped (§5 row 6) |
 
 **Cluster judgments to argue at merge time (not settled here):**
@@ -102,12 +119,36 @@ ranking — that's a post-merge, post-concept-research decision (p28).*
   know WHICH half lands.
 - K3 and K9 may be one trust cluster ("it tells the truth / it never goes
   dark") — kept apart because one is about reporting, one about reliability.
+  The competitor gate adds: also test the FUSED trust cluster
+  (K2+K3+K9 — "you can trust it with the keys," three proof points under
+  one idea) — three separate trust claims are each commodity-adjacent;
+  the fused shape is the hardest to counter.
+- **$59 cuts both ways (competitor gate):** the live entry tier is a fact
+  win but brushes the $12–48 tool band and can reattach the "tool" folder
+  §2 escaped. Merge must decide: does K5 lead with $299-vs-the-band and
+  treat $59 as a footnote, or vice versa?
 - "Always visibly AI" clustered nowhere: it reads as philosophy, not a
   selling point — candidate for the CONTEXT line of concepts, not a KSP.
   Argue at merge.
 - The employee FRAME (prompt 4) is deliberately not a KSP: it's the frame
   of reference (positioning.md §2), and per the deck the KSPs hang under
   it rather than restate it.
+- **DELIBERATE ABSENCE, disclosed (gate-required):** the owner's
+  number-one question — "shows you what it brought you in bookings,
+  customers, dollars" — is NOT a candidate here, because the capability
+  can't be costed until the attribution-scope read (truth-map §3-bis;
+  axis (f)) and must not be claimed before it. It is NOT dropped: the
+  concept-card interviews probe it unprompted first (truth-map §9), and
+  the merge must revisit adding it as a test-only territory once the
+  attribution read lands. The merge and the cards may not inherit this
+  gap silently.
+- **Candidate the boss's capture missed, flagged for the merge note (gate
+  catch): "it answers the DMs."** Engagement/replies — positioning
+  benefit 1 includes replies; the landscape report calls engagement "the
+  step that never batches"; a DM asking "anything Saturday at 2?" is a
+  walk-in being lost. Status: engagement drafting is operator-console
+  capability, not yet customer-deliverable (positioning.md §7 caveat) —
+  ⧖-adjacent. Test at merge even if Phin's capture doesn't raise it.
 
 ## 3. What happens next (the funnel's remaining steps)
 

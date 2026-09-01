@@ -8,6 +8,28 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-01 · scheduled · SHIFT 3.** Triage: DEADLINES (Nov 2 / Nov 18
+stand, nothing due) → Phin's 1-Sep rulings (executed first): truth map →
+PHIN-APPROVED (P1 RULED YES marked in §7; §6 objection-bank answer made
+unconditional both layers); $59 entry tier VERIFIED live at primary source
+(clinkworthy pulled to head 871454c; `content.ts:56 ENTRY_AVAILABLE =
+true`) and amended into positioning.md §5/§8.2 with dated notes. Then
+**item 2 first half shipped:** `gtm/market/ksp-funnel.md` (boss's separate
+capture: 5 verbatim prompts → ~30 bullets <10 words → 10 provisional
+candidates K1–K10, ⧖ roadmap discipline, merge queued on Phin) +
+`gtm/market/ksp-exercise-phin.md` (his 15-min separate capture package;
+no boss content leaked — verified at gate). DRAFT → IN-GATE → GATED: SMB
+owner + competitor's salesperson, both PASS-WITH-NOTES round 1; 6 required
+edits applied same shift (deliberate-absence disclosure for the
+bookings/owner-units axis; "Shipped"-column caveat; K9 operator-only
+split; K5 coverage caveats; prompt-1 overclaim fixed; law-1 label on the
+prompt-3 header); 9 cross-ref spot-checks incl. one direct code check,
+zero mis-citations. Verdicts: 2 files in `gtm/org/reviews/`. Law-8
+amendment wording proposed to chief in inbox. Phin's exercise +
+merge + objection-handling round 1 queued next. **Fan-out disclosure:**
+2 independent reviewer agents at gate time only (~68k + ~76k tokens);
+solo otherwise. No web research. Weight: medium-light.
+
 **2026-08-31 · fired (boss session v2 — predecessor container wedged after
 shift 1; work inherited via repo) · SHIFT 2.** Triage: DEADLINES first →
 Approved 0a folded in (light, calendar-critical), then Phin's raised-
