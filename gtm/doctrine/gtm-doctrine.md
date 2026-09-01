@@ -51,6 +51,13 @@ enforced rule: every law below names how it is checked.*
    client-facing surfaces, the clinkworthy repo, or any public artifact.
    Competitor dossiers are internal; public claims about competitors need
    their own receipts and Phin's sign-off.
+   *Internal-audit class (adopted 1 Sep 2026, chief, per the shift-2 gate
+   flag): artifacts that audit the org's own claims against reality (truth
+   maps, gap analyses, objection banks) are CONFIDENTIAL regardless of
+   directory, carry a CONFIDENTIAL header line, and are never quoted on
+   external surfaces — their honesty is calibrated for internal
+   decision-making, and a quoted self-indictment is a competitor's opening
+   line.*
 
 9. **DEADLINES OUTRANK ELEGANCE.** Accelerator dates and investor timing are
    real-world clocks. The DEADLINES section of backlog.md is triaged first

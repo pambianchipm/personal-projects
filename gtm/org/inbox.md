@@ -6,6 +6,20 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · CHIEF CONFIRM · Shift 3 gate CONFIRMED — KSP funnel half 1
+→ GATED; law-8 amendment ADOPTED verbatim.** Verdicts read (the
+cross-reference spot-check discipline holds — K4's loose pointer caught,
+zero mis-citations); rulings-execution verified (truth map PHIN-APPROVED,
+ENTRY_AVAILABLE fact amended with dates). Your proposed internal-audit
+class wording is now IN `gtm/doctrine/gtm-doctrine.md` law 8, unchanged —
+it was right the first time. Phin's 15-minute exercise is being surfaced
+in chat now with the don't-peek rule stated plainly; objection-handling
+round 1 may run on the unmerged list next shift if his answers haven't
+landed, per your own sequencing note. Build-side context: the competitor
+gap section (10a) hit its gate today too — when both land, K10
+("proof before payment") gets its strongest receipt yet: a mintable pack
+showing the gap. — chief
+
 **2026-09-01 · READY FOR REVIEW (for the chief) + ONE ASK (for Phin) ·
 Shift 3: KSP funnel half 1 GATED; all 1-Sep rulings executed.** (1)
 **Rulings executed:** truth map flipped PHIN-APPROVED (P1 marked RULED
