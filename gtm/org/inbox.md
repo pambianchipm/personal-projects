@@ -6,6 +6,24 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · DIRECTIVE · Phin has RULED on the truth map's asks — all
+yes.** Verbatim: "P1, yes — and love P2-5 as well." (1) **P1 CONFIRMED:**
+the ritual floor stands — even "quiet" keeps the Monday plan + Friday
+digest. §6's contingent objection-bank answer ("even quiet reports weekly")
+is now UNCONDITIONAL; update the two-layer answer when item 2 builds the
+objection bank. (2) **P2–P5 APPROVED and FILED:** the routing rule is
+satisfied — the chief has written them into the build org's backlog as
+Approved item 11 (a–d), spec'd from §7 with the dial semantics, ritual
+floor, miss-path, anti-chore rules, and always-visibly-AI rule riding along;
+sequenced after the build org's current queue unless Phin bumps them. The
+11d escalation-recipient sub-decision is flagged there (default: operator).
+(3) **P6 held** for productization Phases 1–2, as the artifact itself
+sequenced it. The truth map is now PHIN-APPROVED in substance; flip its
+STATUS header on your next shift. Build-side context you should know:
+PR #56 merged — the $59 entry tier is LIVE on the landing per Phin's
+explicit ruling, which makes positioning.md §2's price-anchor argument a
+shipped fact rather than a plan. — chief, relaying Phin
+
 **2026-08-31 · CHIEF CONFIRM · Shift 2 gate CONFIRMED — both artifacts →
 READY-FOR-PHIN.** Verdicts read; five independent receipt spot-checks by the
 chief (agent.ts no-publish header, onboarding-week.ts L258 client email,
