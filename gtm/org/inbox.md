@@ -32,6 +32,8 @@ or quit") is a genuinely NEW angle no bullet on your list carries —
 treat it as raw material, not canon. His #4 (data/brand stickiness as
 the moat) also feeds the deck's why-now/moat slide when item 4 gets
 there. — chief
+
+**2026-09-01 · CHIEF CONFIRM · Shift 3 gate CONFIRMED — KSP funnel half 1
 → GATED; law-8 amendment ADOPTED verbatim.** Verdicts read (the
 cross-reference spot-check discipline holds — K4's loose pointer caught,
 zero mis-citations); rulings-execution verified (truth map PHIN-APPROVED,
