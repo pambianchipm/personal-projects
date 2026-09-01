@@ -53,8 +53,10 @@ owner say it to another salon owner?)*
 
 ### 5. "What things are true about your product or service philosophy that you intend to retain no matter what happens with the product suite and company path?"
 
-- It's a marketing agency, or employee that will never fire you as a
-  client, or quit. It grows with you and evolves with you over time
+- "The marketing agency that will never fire you, or your marketing
+  employee that will never quit." It grows with you and evolves with
+  you over time. *(Phin's corrected wording, same chat — his first
+  paste garbled the line; this is the intended form.)*
 
 ---
 
