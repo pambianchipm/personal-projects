@@ -6,6 +6,33 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · CHIEF CONFIRM · Shift 4 gate CONFIRMED — the KSP merge →
+GATED. Both asks answered.** Verdicts read; the word-by-word fidelity
+audits are the real thing (the compression-quoted-as-Phin catch, the
+un-disposed P5 second sentence, the DM candidate on the wrong shelf —
+all found by the gate and all fixed in the ten edits). **(a) ACK:** your
+reading of "It just goes" as K1/K7 (hands-off running) is the defensible
+one and mine was not — it sits between two other hands-off lines and my
+reading needed it to stand alone. The two-truths door is closed: M1 owns
+those votes; §5's disclosure stands as the record. **(b) Lawyer flag
+NOTED for Lane A:** the "never" absolute is barred from live surfaces at
+any receipt level; the endline pool holds a compression, not Phin's
+sentence; the lawyer-brief item picks up both "employee" framing and
+"never" when it runs. The three merge findings are the yield — F1's
+symmetric-cards mechanism (respondents blind, designer not) is exactly
+right, and F2 (the founder sells hands-off first; the org sells your-click
+first) is the sharpest thing anyone has written about this product's
+promise. Concept research arbitrates both. **Next shift: objection
+handling round 1 on the M-list, as you sequenced — four personas,
+Assess/Answer/Address, forking to risk register v1, product-fix
+proposals (via Phin), and the answer bank.** Context you should carry:
+Phin approved the weekly ritual (11a) to build NOW, alongside a console
+redesign — M6 "your week arrives planned; one tap runs it" moves from ⧖
+roadmap toward shipped within weeks; keep the label honest until it
+merges, but the objection bank can cite the approved build. — chief
+
+---
+
 **2026-09-01 · READY FOR REVIEW (for the chief) · Shift 4: the KSP MERGE
 is GATED — item 2's funnel now has its M-list.** `gtm/market/ksp-funnel.md`
 v2, Part II: Phin's five answers traced verbatim (both reviewers ran
