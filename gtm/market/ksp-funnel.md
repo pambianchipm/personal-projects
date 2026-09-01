@@ -1,22 +1,22 @@
-# Player 2 — KSP funnel, half 1: the boss's separate capture
+# Player 2 — KSP funnel: separate captures, MERGED (v2)
 
-STATUS: GATED — two independent persona reviewers (skeptical SMB owner,
-competitor's salesperson), both PASS-WITH-NOTES round 1; all 6 required
-edits applied same shift; 9 cross-reference spot-checks (one direct code
-check on the $59 fact), zero mis-citations. Verdicts:
-`gtm/org/reviews/2026-09-01-ksp-funnel-h1-smb-owner.md`,
-`gtm/org/reviews/2026-09-01-ksp-funnel-h1-competitor-salesperson.md`.
-NEXT: waits on Phin's separate capture (`ksp-exercise-phin.md`) for the
-merge; awaiting chief's confirm meanwhile.
-OWNER: GTM boss · shift 3, 2026-09-01
+STATUS: v2 (merge) DRAFT → IN-GATE this shift. Lineage: half 1 (boss's
+capture, Part I below) GATED shift 3 — SMB owner + competitor's
+salesperson, both PASS-WITH-NOTES, 6 edits applied, zero mis-citations
+(verdicts: `gtm/org/reviews/2026-09-01-ksp-funnel-h1-*.md`); chief
+confirmed same day. Part II (the merge with Phin's capture) added shift 4
+after his answers landed (`ksp-exercise-phin.md`, ANSWERED-BY-PHIN 1 Sep,
+separate-capture rule honored).
+OWNER: GTM boss · shifts 3–4, 2026-09-01
 METHOD: PM deck pp.21–28 (`gtm/sources/extract-product-marketing.md`) —
 brainstorm a laundry list via the five prompts (bullets under 10 words),
 cluster, narrow to 7–10 candidates. The deck's rule: co-founders "capture
 ideas (separately) and then share" — so this file is ONE of two separate
-captures. Phin's is `gtm/market/ksp-exercise-phin.md` (he must answer
-before reading this file). The MERGE happens after his capture lands;
-every cluster below is PROVISIONAL until then.
-GATE: skeptical SMB owner + competitor's salesperson.
+captures. Phin's is `gtm/market/ksp-exercise-phin.md` (answered 1 Sep,
+before reading this file). Part I's clusters were provisional; the MERGE
+is Part II (§5–§9) and the M-list there supersedes the K-list for all
+downstream work.
+GATE: skeptical SMB owner + competitor's salesperson (both halves).
 
 **First breath (frame-of-reference rule):** Player 2 is an AI marketing
 employee for small businesses; this document brainstorms and clusters the
@@ -150,21 +150,14 @@ test material, and the qualifier travels with any copy-paste of it.*
   capability, not yet customer-deliverable (positioning.md §7 caveat) —
   ⧖-adjacent. Test at merge even if Phin's capture doesn't raise it.
 
-## 3. What happens next (the funnel's remaining steps)
+## 3. What happens next
 
-1. **Phin's separate capture** — `gtm/market/ksp-exercise-phin.md`,
-   ~15 min, before he reads this file.
-2. **Merge + re-cluster** (next Lane B touch after his answers land):
-   duplicates collapse, his novel bullets get clusters, disagreements get
-   argued in the merge note.
-3. **Narrow 7–10 → 3–5** via the deck's three techniques — primarily
-   option 1: concept research (item 5's coded cards test the merged
-   candidates as KSP sets under territories A vs B).
-4. **Objection handling round 1** (item 2's second half, next shift):
-   four personas attack the merged candidates; Assess / Answer / Address;
-   forks to risk register v1, product-fix proposals (via Phin, per the
-   routing rule), and the answer bank — where the dial two-layer answer
-   (truth-map §6) already waits.
+Steps 1–2 (Phin's capture; the merge) are DONE — Part II below. Next:
+narrow the merged M-list 10 → 3–5 via concept research (item 5's coded
+cards), and objection-handling round 1 attacks the merged list next
+shift (item 2's second half; forks to risk register v1, product-fix
+proposals via Phin, and the answer bank — where the dial two-layer
+answer, truth-map §6, already waits).
 
 ## 4. Honest floor
 
@@ -182,3 +175,112 @@ test material, and the qualifier travels with any copy-paste of it.*
    strategist mining receipted research, which is precisely NOT an SMB
    owner's voice. The merge partner (Phin) is closer; the concept
    interviews are the actual test.
+
+---
+
+# Part II — the merge (shift 4, Phin's capture in)
+
+**Method note:** Phin's five answers (`ksp-exercise-phin.md`, verbatim,
+captured before he read Part I) merge with the boss's capture per the
+deck: duplicates are VOTES, novel bullets get clusters, disagreements get
+argued here in the open. His prompt-3 lines are invented future customer
+speech under the same LAW-1 LABEL as the boss's — search directions,
+never evidence.
+
+## 5. Vote tally — where the two captures agree
+
+| Candidate | Phin's bullets voting for it | Read |
+|---|---|---|
+| K1 (does the marketing) | "It just goes"; "works in the background like a team, I don't have to do much besides give it direction"; "consistent, on-brand and optimized… for as little time as possible" | Strongest convergence in the merge — three of his bullets land here |
+| K4 (gets smarter about YOUR shop) | "campaign optimization with content generation that self-corrects and learns over time"; "brand stickiness, since we have their data, profile, and have optimized around it" (P4) | Second-strongest; his mechanism wording ("self-corrects") is closer to the concrete bullet the gate preferred than to the commodity headline |
+| K5 (fraction of a hire) | "they can't hire full time help (agency or employee)" | Direct vote for the anchor; note his framing names AGENCY and employee — both folders |
+| Growth motivator | "they want to grow their business"; "It grew my instagram and tiktok without me doing anything" | Not a candidate — a north-star signal; see finding F1 |
+
+*(The chief's relay note read his P3 as voting K10/K2 territory; the
+merge reads "It just goes" as K1/K7 territory — hands-off running, not
+proof-before-payment. Recorded as a disagreement per the method; concept
+research arbitrates, not either of us.)*
+
+## 6. Novel material from Phin's capture
+
+1. **Brand intelligence / "it watches your market"** (his P2: "keeping
+   what our users are posting about as relevant as possible and
+   competitive analysis") → NEW candidate M10. Receipts for the shipped
+   part: Daily Pulse cross-platform discovery (`console/lib/pulse.ts`
+   header, read shift 2), watchlist auto-scan, diff-aware
+   (`console/lib/research-scan.ts` header, read this shift), Brand DNA
+   URL-scan (`console/lib/brand-research.ts` header, read this shift).
+   CAVEAT: "competitive analysis" DEPTH is unaudited — no dedicated
+   competitor-tracking surface was verified; a concept card may test the
+   idea, but no card may promise "competitive analysis" until that read
+   happens (same discipline as the attribution absence).
+2. **"The marketing agency that will never fire you, or your marketing
+   employee that will never quit"** (his P5, corrected wording) →
+   NOT a KSP: it's ENDLINE material — exactly the deck's "creative
+   endline" option (p16, choice 2) — and a north-star-adjacent angle no
+   boss bullet carried (the burned-by-churn wound: agencies drop small
+   accounts, employees leave). Filed as an endline candidate for the
+   concept cards, and flagged to the positioning north-star alternates
+   (it is NOT canon; it tests). Note the claims-law seam: "never" is an
+   absolute the org may not promise on a live surface without a receipt
+   for what happens at, e.g., nonpayment — as a tested endline it's fine.
+3. **Stickiness-as-moat** (his P4) → not customer-facing language
+   ("we have their data" sells to investors, alarms owners); routed to
+   the deck's moat/why-better slide (item 4) as founder raw material, and
+   its customer-facing shadow is already K4's "knows my shop by now."
+
+## 7. The merged candidate list (M1–M10) — what concept research tests
+
+*Same status-column rule as §2 (operator-console truths; ⧖ = roadmap).
+Order still NOT importance — that's post-concept-research (deck p28).*
+
+| # | Merged candidate | Lineage | Votes |
+|---|---|---|---|
+| M1 | It does the marketing, not just the drafts | K1 | boss + 3 Phin bullets |
+| M2 | Nothing posts or spends without your click | K2 | boss (tension with Phin's hands-off voice — F2) |
+| M3 | It tells you what actually worked — and won't pretend | K3 | boss |
+| M4 | It gets smarter about YOUR shop | K4 | boss + 2 Phin bullets |
+| M5 | An employee's work at a fraction of a hire (wording per §4.4 flag) | K5 | boss + 1 Phin bullet |
+| M6 | Your week arrives planned; one tap runs it ⧖ | K7 | boss |
+| M7 | It asks for the photo before you forget the event ⧖ | K8 | boss |
+| M8 | You never wonder if it actually posted (operator-only split stands) | K9 | boss |
+| M9 | Proof before payment | K10 | boss |
+| M10 | It watches your market for you (shipped: Pulse + watchlist; "competitive analysis" depth UNAUDITED) | NEW (Phin P2) | Phin |
+| bench | You can talk to it like staff | K6 demoted — commodity today per the competitor gate; revisit when message-it-anywhere ships | — |
+| bench | It answers the DMs | shift-3 gate catch; ⧖-adjacent (operator-console only) | — |
+| endline pool | "The agency that never fires you; the employee that never quits" (test-only; "never" absolute barred from live surfaces unreceipted) · "you can put the phone down on Saturday" (landscape-report synthesized line, §9 rules apply) | Phin P5 / report | — |
+
+## 8. Merge findings (what the two captures DISAGREE about — the real yield)
+
+- **F1 — Growth vs relief, now with a founder prior.** The boss's capture
+  leans relief/trust (phone down, never wonder, won't pretend); Phin's
+  leans GROWTH ("grow their business," "grew my instagram and tiktok").
+  This is the exact §9 question positioning.md flagged as the gate's
+  sharpest — and now the founder's own prior is on record as growth.
+  LAW-6 GUARD: his prior is founder intuition, not owner evidence; the
+  concept cards must test relief-led vs growth-led framings without
+  knowing which one the founder favors.
+- **F2 — Hands-off vs your-click.** His imagined customer says "without
+  me doing anything"; the org's safety KSP says nothing without your
+  click. The bridge exists (advance-approval — the toggle IS the click,
+  positioning.md benefit 2) but his phrasing shows the founder himself
+  sells the hands-off half first. Concept cards should test whether
+  M1-led (it runs) and M2-led (you're in control) score differently —
+  the deck's hit-feature warning applies to the SAFETY feature too.
+- **F3 — His #1 buyer reason is a SEGMENT line, not a benefit.** "They
+  want to grow / can't hire / want consistency for minimal time" is a
+  near-verbatim ICP restatement (positioning.md §6). Zero new claims —
+  which is itself a signal: founder and org agree on WHO; all live
+  disagreement is about WHICH PROMISE leads.
+
+## 9. Honest floor (Part II additions)
+
+1. The vote tally is two people counting each other — it narrows the
+   test set, it validates nothing (law 1; the merge's entire output is
+   still `UNTESTED`).
+2. M10's "competitive analysis" clause and the endline's "never"
+   absolute are both flagged un-receipted at their current depth; neither
+   may reach a live surface as-is.
+3. The chief's relay note was read AFTER Phin's answers were captured but
+   BEFORE this merge was written — its K10/K2 reading is disclosed and
+   disagreed with above rather than silently adopted.
