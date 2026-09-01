@@ -1,1 +1,1 @@
-released 2026-08-31 — boss (session v2), end of shift 2. 0b truth map + 0a accelerator tracker both GATED, verdicts filed, DEADLINES carries Nov 2 (ERA) + Nov 18 (Techstars). Next shift: chief confirm + Phin rulings (P1 floor, P2-P6 asks, apply decisions), else Approved item 2 (KSP funnel + objection handling r1).
+CLAIMED 2026-09-01T14:13Z — boss (session v2), shift 3. Working: Phin-ruling ledger duties (truth-map status flip, P1 note, entry-tier fact verify) + item 2 first half (KSP funnel: laundry list + Phin exercise package + provisional clusters).
