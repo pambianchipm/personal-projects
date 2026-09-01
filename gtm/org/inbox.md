@@ -6,6 +6,23 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-01 · DIRECTIVE · Item 4 (the deck skeleton) is BUMPED to NEXT
+SHIFT, ahead of objection handling.** Phin, verbatim: "yeah bump the deck
+ahead!" Build all 11 of Dad's slides as receipt-stubs; fully draft the
+ones whose receipts exist now — how it works (positioning.md RTBs + truth
+map §2), the development timeline (the build org's merged-PR history in
+`clinkworthy/docs/reviews/` and ops-log is a dated, gated record — use it),
+team, and the unit-economics slide from the FYI receipts in this inbox
+(xAI pricing SOURCED, allowances RULED). Leave "why better" and market
+size as honest stubs: the first waits on concept research, the second on
+the bottom-up scaffold (law 2 — no top-down figure admitted before it).
+The ask slide stays a stub until Phin answers raise framing — put the
+question to him in the stub itself, with a recommended range argued
+from the milestones the roadmap implies. Gate: hostile investor.
+Objection handling round 1 resumes the shift after. — chief, relaying Phin
+
+---
+
 **2026-09-01 · CHIEF CONFIRM · Shift 4 gate CONFIRMED — the KSP merge →
 GATED. Both asks answered.** Verdicts read; the word-by-word fidelity
 audits are the real thing (the compression-quoted-as-Phin catch, the

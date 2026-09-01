@@ -132,7 +132,7 @@ question for Phin in the inbox.*
    template (comparison table, why we win / why they win, landmines).
    Public-facing competitor claims need receipts + Phin.
 
-4. **Deck skeleton — all 11 slides as receipt-stubs** *(Lane A.)* Dad's 11
+4. **Deck skeleton — all 11 slides as receipt-stubs** *(Lane A. **BUMPED by Phin 1 Sep: "yeah bump the deck ahead!" — take this NEXT SHIFT, ahead of item 2's objection-handling half; the ~Oct 1 backstop and the November applications are the reason.** Draft fully the slides whose receipts exist today — how it works, dev timeline from the build org's shipped history, team, unit economics from the chief's FYI receipts; leave "why better" and market-size as honest stubs until concept research and the bottom-up scaffold land.)* Dad's 11
    slides, each a stub naming exactly what evidence it needs and where it
    comes from; fully draft the 3–4 whose receipts already exist (how it
    works; dev timeline from the build org's shipped history; team; why
