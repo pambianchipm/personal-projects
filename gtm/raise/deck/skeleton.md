@@ -162,7 +162,35 @@ before the model does; the exit row of this slide waits on comparables
 research. **Anti-claim:** zero revenue today, zero customers — the deck
 says so plainly (the truth map's discipline extends here).
 
-## Slide 9 — Funding ask & use of funds · STUB (the question is the content)
+## Slide 9 — Funding ask & use of funds · DRAFTED (from D10, 2 Sep — CONFIDENTIAL)
+
+**D10 RULED (Phin): salary floor $150,000/yr (A18); runway 12 months
+(A19).** The ask is built from components, each graded — never from a
+round number:
+
+| Component (12 months) | Amount | Grade |
+|---|---|---|
+| Founder salary floor | $150,000 | RULED (A18/A19) |
+| AI COGS at pilot scale (≤10 customer-equivalents: A9 generation + A21 reasoning + founder workspace) | ~$5–10k | PROJECTED (scenario) |
+| Infra/vendors (Vercel, Supabase, Resend, domains) | ~$3–6k | PROJECTED — unpriced, small |
+| Legal (lawyer brief per R12/D5, incorporation, pilot terms) | ~$10–20k | PROJECTED |
+| CAC discovery budget (the first ~100+ paid scans — the model's three measurables) | ~$5–10k | PROJECTED |
+| Contingency ~15% | ~$26–30k | PROJECTED |
+| **Ask range** | **≈ $200k–$250k** | RECOMMENDATION — strategist judgment over the graded rows; the NUMBER is Phin's |
+
+**Anchors, not targets:** A13's real checks ($150k ERA / $220k
+Techstars, uncapped-SAFE caveat carried) put this range exactly at
+institutional-first-money scale — the ask is coherent with the
+accelerator path rather than competing with it. **Milestones bought:**
+productization Phases 1–5 live; first paying non-founder cohort (the
+churn/CAC/retention measurables); the attribution read →
+results-in-owner-terms claimable; interview program complete;
+ERA/Techstars outcomes known. **Instrument: unspecified — Phin's call
+with counsel.**
+
+*(Superseded stub follows for lineage.)*
+
+### Slide 9 — prior STUB (retained for lineage)
 
 **Must prove:** an amount, its milestones, its runway math.
 **Blocked on Phin (bootstrap decision 2), and this stub IS the ask to

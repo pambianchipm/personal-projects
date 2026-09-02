@@ -1,0 +1,58 @@
+# Interview recruiting + the one-page run sheet (per D1: separate list)
+
+STATUS: DRAFT → IN-GATE this shift (salty journalist, with the
+founding-terms letter — both are words that reach real people)
+OWNER: GTM boss · shift 10, 2026-09-02
+LAW 3: Phin sends the message; the org drafts.
+
+## The recruit message (two sentences, no pitch — the kit's bias rules)
+
+> "I'm doing some research on how small-business owners handle their
+> marketing, and I'd love 30 minutes of your honest reactions to a few
+> ideas — nothing to buy, ever; I genuinely just need your opinions.
+> Coffee's on me — would sometime this week work?"
+
+Rules riding along: no product name in the message; if asked "what is
+it?" before the session — "I'll show you everything when we sit down;
+telling you first would spoil your honest first reaction." Note on the
+capture sheet whether they already knew about Player 2 (D1's
+contamination note).
+
+## The run sheet (one page, for Phin's phone)
+
+1. **Bring:** 4 printed cards (M/T/K/R order per the kit's rotation
+   table — check which interview # this is), feature table (2 batches),
+   capture sheet, pen for them.
+2. **Open (1 min):** ground rules verbatim — confidential; brutal
+   honesty helps me, you can't hurt my feelings; the product name on
+   the pages is made up; this is not a sales pitch.
+3. **Their world first (7 min):** how marketing happens today → what
+   they've tried → **THE question, before any card, word-for-word: "If
+   you could know ONE thing about whether your marketing is working,
+   what would you want to know?"** (capture Y/N: did they say bookings/
+   customers/dollars UNPROMPTED, + exact words) → "Imagine the
+   marketing was somehow handled — what's different for you?" (relief
+   words or growth words, verbatim) → the six moments (a–f), which
+   feels like staff vs software.
+4. **Cards (15 min):** read each ALOUD, hand it over: "main idea in
+   your words at the top — circle likes — cross out dislikes —
+   underline anything confusing — score 1–5." Discuss their marks
+   only. After all four: rank them; "what would the top one have to
+   PROVE for you to pay?"; the folder question ("app, or more like
+   hiring someone — does the price change depending?").
+5. **Features (7 min):** batch 1 (rows 1–5), then batch 2 (6–9);
+   matters 1–5 + different 1–5; top three; why.
+6. **Never:** explain or rescue a card (if you slip, mark that card
+   CONTAMINATED); answer an objection mid-session; affirm anything
+   marked (coming) as present — the honest line: "that part's coming —
+   here's what works today."
+7. **Close:** thank them; no pitch; "can I call you again when we've
+   built from what you said?" Staple marked cards to the capture
+   sheet. Photograph everything to the chief same day.
+
+## The list (Phin's side, D1)
+
+5–8 owner-operators (salon / gym-studio / cafe-restaurant / boutique),
+no marketing hire, reachable within a week; separate from the
+scanned-leads pipeline. Date not yet given — the kit and cards are
+print-ready now.

@@ -42,6 +42,12 @@ may state.
 | A15 | SMM tool band (Holo-class) | ~$12–48/mo | DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced; the teardown's own flag carried: SPOT-CHECK before any external use; never load-bearing alone |
 | A16 | SMB SaaS monthly logo churn prior | 3–7%/mo (compounded annual: 31–58%) — scenario BAND, not a claim about Player 2. (The Kalungi page's own "36 to 76%" annual figure matches no consistent annualization method; the compounded figures here are this table's, derivation: 1−(1−m)^12) | DIRECTIONAL — kalungi.com/blog/saas-churn-rate-benchmarks, read 2 Sep 2026 (the page states the band but cites no underlying study — graded accordingly); consistent with the secondary-source consensus surveyed same read. Used ONLY as scenario inputs in model-v1.md; Player 2's own churn is UNKNOWN (zero customers) and replaces this row the day real cohort data exists |
 
+| A17 | Entry refund policy + rate | POLICY RULED (Phin D2): full refund on request, first 30 days. RATE: 5–15%/mo-1 scenario band — PROJECTED (no observation, no source; the chief's "DIRECTIONAL until observed" label noted, but no secondhand source was read, so this table grades it PROJECTED). LTV effect: entry LTV × (1−r), and refunders still consume ~1 month COGS — cells in model-v1 §3a | RULED (policy) + PROJECTED (rate) |
+| A18 | Founder salary floor | $150,000/yr | RULED — Phin D10, 2 Sep (CONFIDENTIAL) |
+| A19 | Target runway | 12 months | RULED — Phin D10, 2 Sep (CONFIDENTIAL) |
+| A20 | Claude (Anthropic) list prices | claude-opus-5: $5/MTok in, $25/MTok out (the model the product defaults across agent.ts/pulse.ts) | SOURCED — Anthropic model/pricing reference read 2 Sep (reference self-dated cached 2026-06-24); RE-VERIFY against the live page before term-sheet use |
+| A21 | Reasoning-layer cost per entry customer | ~$12–38/mo scenario band (light–heavy), NO caching assumed — naive upper bound | DERIVED from code caps (SOURCED) × per-call token sizes (PROJECTED — no metering exists); full derivation `anthropic-bound.md`; closing receipt = Phin's Anthropic invoice ÷ active workspaces |
+
 ## Not yet in this table (and therefore claimable nowhere)
 
 - Market size (any figure) — bottom-up scaffold first (law 2); the deck's

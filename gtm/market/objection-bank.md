@@ -46,11 +46,11 @@ that convergence is the work list.
 |---|---|---|---|
 | O1 | "Show me bookings/dollars, not posts" | SMB#1, Comp#3 | NONE-YET |
 | O2 | "Zero customers, zero interviews — name one user" | SMB#2, Inv#1, Comp#1, Journ#5 | NONE-YET (honest-concession script only) |
-| O3 | "Half of this is 'coming soon' — what am I buying TODAY?" (incl. "$59 live but no client accounts") | SMB#3, Comp#6, Journ#6 | PARTIAL |
+| O3 | "Half of this is 'coming soon' — what am I buying TODAY?" (incl. "$59 live but no client accounts") | SMB#3, Comp#6, Journ#6 | RECEIPTED as of D2 (Phin, 2 Sep): THE $59 SENTENCE — "a planned week of posts every week, drafted for your approval, images included, four videos a month" — plus full refund on request, first 30 days (A17 policy). P-B closed |
 | O4 | Lock-in: "your data is 'our moat'; what do I keep when I leave? what if you die?" | SMB#7, Comp#10, Journ#3, Journ#9 | NONE-YET (portability), PARTIAL (degradation) |
 | O5 | Public AI disclosure: "'visibly AI' — visible to WHOM? Do the posts tell the public?" | Journ#2 (new — no prior artifact covers it) | NONE-YET (policy undecided) |
 | O6 | Accountability/harm: "it posts something wrong under a standing approval — who's liable, who fixes it, who do I yell at?" | SMB#4, Journ#4 | PARTIAL |
-| O7 | Price coherence: "$59 is tool-shelf money / $299 is 10x a tool — pick a story" | SMB#5, Comp#4, Comp#5 | RECEIPTED (price-anchor/folder argument) / PARTIAL (the §4.4 freelancer-PARITY sentence — "roadmap comparison, not a shipping one," positioning.md §7; guard it) |
+| O7 | Price coherence: "$59 is tool-shelf money / $299 is 10x a tool — pick a story" | SMB#5, Comp#4, Comp#5 | RECEIPTED (folder argument + now D2's concrete $59 sentence — the tier has ruled words) / PARTIAL only on the §4.4 freelancer-PARITY sentence (roadmap comparison — guard stands) |
 | O8 | Hands-off vs your-click ("employee or homework?") + dial-as-mute | SMB#6, Comp#7 | RECEIPTED |
 | O9 | "It can't actually see Instagram/TikTok" (M10 secondhand) + OAuth pending | SMB#8, Comp#2, Journ#10, Inv#8 | PARTIAL |
 | O10 | Honesty-costs-money: "so I pay $299 for a month it admits failed?" + "confession engine" spin | SMB#10, Comp#8 | PARTIAL |
@@ -293,7 +293,10 @@ sensitivity). Slide 11 now cites the register.
 - **P-G: token-custody program** (O19/R13) — audit, rotation policy,
   incident plan for the Page tokens that post/spend as customers; a
   build-org item once Phin approves the priority.
-- **P-F (optional): skin-in-game experiment** — bad-month credit or
+- **P-F: PARKED — RULED "not now" (Phin D8, 2 Sep), a deliberate no on
+  the record.** The 30-day refund (D2) partially serves the same trust
+  function; revisit only if interviews surface it hard. Original ask:
+  **skin-in-game experiment** — bad-month credit or
   equivalent; converts the honesty story into money where the owner's
   mouth is. Pricing is his; flagged only because the buyer persona asked
   for exactly this.

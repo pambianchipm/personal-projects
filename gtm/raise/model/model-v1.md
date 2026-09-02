@@ -47,8 +47,9 @@ it can work — under stated assumptions, none yet earned.
 | CAC | UNKNOWN — §3's algebra defines what to measure | PROJECTED illustrations only |
 
 **Named exclusions (unpriced, disclosed):** Anthropic reasoning-layer
-COGS (conductor, Pulse, claims — R5's second vendor; no per-workspace
-metering exists to price it); caption transcription (A5 exclusion);
+COGS — now BOUNDED by scenario (~$12–38/mo entry, A21,
+`anthropic-bound.md`; still excluded from the margin cells below, which
+therefore remain GENERATION-margin upper bounds); caption transcription (A5 exclusion);
 the A7b $0.01 input-image charge on image→video runs (frequency of that
 path unmeasured); which image SKU production actually bills (the pinned
 `grok-2-image` is unpriced on the vendor page — snapshot v2 finding);
@@ -100,6 +101,14 @@ ceiling at every churn row above — barely, at 7%); $10 at 1% → $1,000
 CAC (works nowhere on the entry tier; inside the full-OS ceiling at
 every churn row — barely at 7%, where the ceiling is ~$1,120). The
 first 100 scans' job is to replace this paragraph.
+
+**§3a — Refund drag (A17, policy RULED D2; rate PROJECTED):** entry
+LTV × (1−r), refunders still consuming ~1 month COGS (~$31 mid-band):
+at r = 5% / 10% / 15%, the 7%-churn entry LTV $393 becomes ≈ $372 /
+$351 / $329 (and each refunder costs ~$31 of COGS on $0 net revenue —
+at 10% refunds that's ~$3.10 of extra effective CAC per net customer).
+Material but not structural; the policy's trust value (O10's
+skin-in-the-game ask, partially answered) is UNTESTED.
 
 **Blended-mix scenarios (PROJECTED):** 70/30 entry/full → blended ARPU
 $131, blended margin ≈ $90/mo; 50/50 → ARPU $179, margin ≈ $132/mo.
