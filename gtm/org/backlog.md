@@ -161,8 +161,8 @@ question for Phin in the inbox.*
 
 ## Phin's side (the boss nags gently via inbox, never blocks)
 
-- Answer the five bootstrap decisions (see inbox).
+- ~~Answer the five bootstrap decisions (see inbox).~~ Decisions 2 (raise framing: $150k floor, 12 months), 3 (accelerators: apply to both), 5 (pool: separate list) RULED 2 Sep; 4 (Jess Gunter) = after interviews.
 - The five KSP brainstorm prompts, answered separately (item 2 packages
   them).
-- Raise framing: how much, for what milestones (Dad's open question).
-- First real-human interviews once concept cards exist.
+- ~~Raise framing~~ RULED 2 Sep: $150,000 salary floor, 12 months runway; the model argues the ask from milestones.
+- First real-human interviews: kit READY; pool = separate list (RULED); date TBD; the pilot shop (D3 yes) still needs a name.

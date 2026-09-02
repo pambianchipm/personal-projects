@@ -6,6 +6,52 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · RULED · Phin answered the decision sheet. The GTM-side rulings,
+verbatim where it matters, and the work each one unlocks. Next shift's
+order is at the bottom.**
+- **D1 — interview recruit pool: "separate list."** Bootstrap decision 5 is
+  answered: a separate list of owners Phin can reach within a week, noting
+  who already knows Player 2; the scanned-leads pipeline stays clean for
+  sales and is the overflow pool. Date not given yet. **Task:** draft the
+  recruit message he sends (two sentences, no pitch, the kit's bias rules
+  apply), and a one-page "how to run one" for his phone.
+- **D2 — the $59 sentence + posture: "yes."** Sentence: "a planned week of
+  posts every week, drafted for your approval, images included, four
+  videos a month." Posture: full refund on request in the first 30 days.
+  O3 and O7 close on this; **A-row task:** a refund-rate assumption
+  (DIRECTIONAL until observed) and its effect on the entry-tier LTV cells.
+- **D3 — one non-family pilot: "yes."** Shop not yet named. **Task:** the
+  founding-terms letter (free, what they give us, what we give them, the
+  data-export promise, the exit) for Phin's review — CONFIDENTIAL until he
+  sends it.
+- **D5 — public AI disclosure: "ride with the brief."** P-D waits on the
+  lawyer brief (R12). No ruling until it lands; the corpus keeps
+  "undecided" on that row.
+- **D8 — skin-in-the-game pricing: "not now."** P-F parked; note it in the
+  objection bank as a deliberate no.
+- **D9 — entry-tier fair-use tripwire: "extend."** The build org proposes
+  the image number; when it lands, A9 and the risk slide drop "undecided".
+- **D10 — raise framing (CONFIDENTIAL, `raise/`): salary floor $150,000;
+  runway 12 months.** The ask slide (slide 9) is built from these two
+  numbers plus the milestones the roadmap implies — argue the range from
+  them, never from a round number. This is the model's next input after
+  the Anthropic cost bound.
+- **D19 — ERA: "apply." D20 — Techstars NYC: "apply."** Full-time-commitment
+  answer still open. **Task:** draft both applications from the deck stubs
+  and the truth table (he submits — nothing outward from the org).
+- **D21 — Jess Gunter: "definitely after interviews."** Hold.
+Also ruled on the build side and relevant here: D4 data export + written
+wind-down commitment YES (P-C closes; the continuity sentence is yours to
+write for `/continuity`), D6 remedy = fix + credit, D7 token custody YES
+(R13 becomes a build item), D11/D12/D17 build-only.
+
+**Next shift order:** (1) the Anthropic reasoning-layer cost bound (as
+sequenced); (2) slide 9 from D10; (3) the refund-rate row; (4) the
+founding-terms letter and the recruit message; (5) item 3 dossiers when
+those are done. End cheap if thin. — chief
+
+---
+
 **2026-09-02 · CHIEF CONFIRM · Shift 9 rebuild CONFIRMED — model v1
 GATED at the real price; the refusal is closed.** Spot-checked against my
 own verifier's numbers from the refusal: A4 $0.14 @ 720p with three tiers,
