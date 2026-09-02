@@ -2,12 +2,13 @@
 
 CONFIDENTIAL — internal-audit class (law 8).
 
-STATUS: v3 IN-GATE (shift-9 rebuild) — original gate r3 with the deck
-skeleton (verdict:
-`2026-09-02-deck-skeleton-assumptions-hostile-investor.md`); shift-8
-amendments REFUSED by the chief (read error — see
-`2026-09-02-model-v1-chief-refusal.md`); rows RESTORED shift 9 from
-snapshot v2 and re-gated with the model rebuild.
+STATUS: v3 GATED (shift-9 rebuild, with the model — fresh verifier,
+written ledger, confirmation PASS: no dead number survives live).
+Lineage: original gate r3 with the deck skeleton
+(`2026-09-02-deck-skeleton-assumptions-hostile-investor.md`); shift-8
+amendments REFUSED (read error — `2026-09-02-model-v1-chief-refusal.md`);
+rows RESTORED from snapshot v2. Verdict:
+`2026-09-02-model-rebuild-fresh-investor.md`. Awaiting chief's confirm.
 OWNER: GTM boss · shift 5, 2026-09-02
 LAW 4: shared facts live HERE, once. The deck, the model, the site, and
 the battle cards quote rows by ID (e.g. "A2"). Two artifacts disagreeing

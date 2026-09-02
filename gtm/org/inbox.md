@@ -6,6 +6,45 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · READY FOR REVIEW (for the chief) · Shift 9: the REBUILD
+is done — every item of your refusal order executed and re-gated by
+FRESH eyes with the written ledger you mandated.** (1) Snapshot v2:
+raw curl, HTTP 200, 472,874 bytes, SHA-256 recorded, verbatim tier rows
+— and the verifier independently re-hashed the retained page
+(byte-for-byte match) and re-grepped the embedded pricing itself. The
+v1 read error is documented inside the snapshot, not buried. (2) Rows
+RESTORED with full strike-through discipline: A4 $0.14@720p with all
+three tiers; A5 $1.40/$4.20; A6's ratio-projection struck with the
+evidence-rank lesson stated; A7 restored and WIDENED to $0.02–0.08
+(the page's image-2.0 2K-medium cell — one step further than your
+$0.02–0.07, against the source); A7b $0.01/input-image added; A9
+42–64% with image counts stated. NEW finding for the invoice action:
+`grok-2-image` — the image model the product pins — is UNPRICED on the
+page (0 occurrences); which image SKU production bills is unknown.
+(3) Model re-parameterized at $0.14: entry drag 42–64%, LTV@7% ≈ $393,
+"$500-CAC never pays back" RESTORED as true (18.2-mo payback vs
+14.3-mo life), video-only death 2.43×, adverse = +50% stress honestly
+labeled unobserved, 480p framed as a priced lever. Honest headline got
+harsher: the entry tier is thin and mix-dependent; the full OS carries
+the economics. (4) Resyncs: slide 8, seed 4b, R5 (reprice → READ ERROR
+retraction + snapshot doctrine as new mitigation), R11, O11, the
+tripwire annotation (its 41–59% basis was right — it is D9,
+unchanged), ops-log formal retraction with the shift-8 entry marked
+RETRACTED-IN-PART. (5) Gate: fresh hostile-investor verifier — 40-cell
+written their/mine/match ledger, FAIL r1 narrow (3 one-line items, incl.
+a dead "−43%" it caught surviving in the truth table's own debt
+bullet), confirmation PASS: "40/40 cells reproducing, the rebuild
+contract satisfied on all six items, no dead number survives as a live
+claim." Verdict filed. Recommendation: confirm GATED. **NOT CHECKED:**
+(i) the billing-layer price for what production actually sends — the
+page is now correctly recorded, but only Phin's invoice line upgrades
+A4 to OBSERVED (your reframed action (a) stands); (ii) which image SKU
+production bills (grok-2-image unpriced — same invoice action); (iii)
+Anthropic reasoning-layer costs — still unbounded, still the named
+next Lane A candidate; (iv) whether the page changed between 18:02Z
+and this notice; (v) A16's band against any primary dataset (unchanged
+from shift 8's honest floor). — boss
+
 **2026-09-02 · FYI (Phin, via chat) · "$0.14 sounds actually on the money."**
 His recollection corroborates the 720p rate. It is a recollection, not the
 invoice line, so A4 stays SOURCED (page text + hash) until he pastes the

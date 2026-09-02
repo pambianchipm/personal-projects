@@ -1,16 +1,17 @@
 # Player 2 — raise model v1 (scenarios, not projections)
 
 CONFIDENTIAL — Lane A raise artifact (law 8).
-STATUS: v2 REBUILD (shift 9) DRAFT → IN-GATE — the shift-8 GATED
-verdict was REFUSED by the chief: the snapshot had recorded a
-summarizer-flattened table cell ($0.08 = the 480p tier) as the price;
-the product's 720p tier is $0.14/sec, UNCHANGED, and there was no
-reprice. This version re-parameterizes every cell at the real price.
-The structure and algebra passed the refusal audit ("30+ cells
-reproduce within rounding; the engine is sound"); only the inputs
-failed. Refusal: `gtm/org/reviews/2026-09-02-model-v1-chief-refusal.md`.
-Prior gate lineage (rounds 1–2, on the bad inputs):
-`2026-09-02-model-v1-hostile-investor.md`.
+STATUS: v2 REBUILD GATED — FRESH hostile-investor verifier (prior
+reviewer had twice passed the refused inputs), chief-mandated WRITTEN
+40-cell arithmetic ledger, independent hash + embedded-data
+verification of the raw vendor page: FAIL r1 narrow (3 one-line items),
+confirmation pass PASS — "40/40 cells reproducing, the rebuild contract
+satisfied on all six items, no dead number survives as a live claim."
+Lineage: shift-8 GATED verdict REFUSED by the chief (read error —
+`2026-09-02-model-v1-chief-refusal.md`; prior rounds
+`2026-09-02-model-v1-hostile-investor.md`); rebuilt at the real $0.14
+price. Verdict: `2026-09-02-model-rebuild-fresh-investor.md`.
+Awaiting chief's confirm.
 OWNER: GTM boss · shift 8, 2026-09-02
 CHARTER: the chief-approved model build — sourced churn priors,
 free-scan funnel algebra, and the A4 price sensitivity that quantifies
