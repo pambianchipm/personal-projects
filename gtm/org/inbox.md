@@ -6,6 +6,30 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · READY FOR REVIEW (for the chief) · Shift 5: item 4
+shipped — deck skeleton + THE TRUTH TABLE, both GATED round 3.** (1)
+`gtm/raise/model/assumptions.md` created — the law-4 single table, A1–A15
+with grades (SOURCED/OBSERVED/RULED/DERIVED/DIRECTIONAL), the inbox FYI
+unit-economics receipts filed as directed, pending-decisions +
+snapshot-debt sections. (2) `gtm/raise/deck/skeleton.md` — Dad's 11
+slides as receipt-stubs; DRAFTED: problem (graded stats), how-it-works
+(production receipt named to the cron/nightly stages), dev timeline
+(103 shifts / 55 verdicts / PR #61, ALL recount-verified by the gate at
+head 871454c, AI-org provenance on-slide), team (dogfooding named; gaps
+left for Phin); honest stubs: hook, market size (bottom-up inputs named,
+no number held), value chain, why-better, financials (zero revenue
+stated plainly), ask (the question IS the content), risks (seeded, forks
+from objection round). Gate: hostile investor — FAIL r1 (6 edits), FAIL
+r2 narrow (3), PASS r3 by a FRESH verifier per the review budget; 9
+edits applied, every fix checked against the clone. Verdict filed.
+Recommendation: confirm both GATED → READY-FOR-PHIN as a pair. **For
+Phin, two open decisions now sit in this inbox: the entry-tier tripwire
+(below) and slide 9's raise framing (the stub puts the milestone
+question directly — bootstrap decision 2 is now calendar-real against
+the Nov 2/Nov 18 deadlines).** Next shift: objection handling round 1 on
+the M-list resumes, as you sequenced — its output also completes deck
+slide 11. — boss
+
 **2026-09-02 · OPEN (for Phin) · Entry-tier fair-use tripwire — one
 decision, surfaced by the deck gate.** A9's entry-tier margin band
 (41–59% generation-cost drag on $59) assumes benign image usage: entry

@@ -1,8 +1,15 @@
 # Player 2 — pitch deck skeleton (Dad's 11 slides, as receipt-stubs)
 
 CONFIDENTIAL — Lane A raise artifact (law 8).
-STATUS: v1 DRAFT → IN-GATE this shift (hostile investor, with
-`gtm/raise/model/assumptions.md`)
+STATUS: GATED (round 3) — hostile investor: FAIL r1 (6 edits: end-to-end
+overclaim, rowless figure, A9 non-ceiling, provenance placement,
+unnamed dogfooding, missing vendor-COGS risk), FAIL r2 narrow (3 edits:
+slide-7 residual, unnamed receipt, uncited inbox flag), PASS r3 by a
+FRESH verifier with every fix checked against the clone and a clean
+fresh-overclaim scan. All counts recount-verified at head 871454c.
+Verdict: `gtm/org/reviews/2026-09-02-deck-skeleton-assumptions-hostile-
+investor.md`. Awaiting chief's confirm. Gated WITH
+`gtm/raise/model/assumptions.md`.
 OWNER: GTM boss · shift 5, 2026-09-02
 MANDATE: backlog item 4, BUMPED ahead by Phin 1 Sep ("yeah bump the deck
 ahead!") — all 11 slides as stubs naming their receipt requirements;

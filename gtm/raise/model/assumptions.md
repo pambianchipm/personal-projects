@@ -1,7 +1,10 @@
 # Player 2 raise model — assumptions.md (THE truth table)
 
-STATUS: v1 DRAFT → IN-GATE with the deck skeleton this shift (hostile
-investor audits both together)
+STATUS: GATED (round 3, with the deck skeleton — hostile investor;
+row-by-row audit clean, both DERIVED rows recomputed, A15 added and A9
+corrected at the gate). Verdict:
+`gtm/org/reviews/2026-09-02-deck-skeleton-assumptions-hostile-investor.md`.
+Awaiting chief's confirm.
 OWNER: GTM boss · shift 5, 2026-09-02
 LAW 4: shared facts live HERE, once. The deck, the model, the site, and
 the battle cards quote rows by ID (e.g. "A2"). Two artifacts disagreeing

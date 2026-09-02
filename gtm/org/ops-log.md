@@ -8,6 +8,32 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-02 · scheduled (first at 6x cadence) · SHIFT 5.** Triage:
+DEADLINES (stand; ~Oct 1 back-stop now has its artifact) → Phin's bump
+ruling → **item 4 shipped as a pair:** `gtm/raise/model/assumptions.md`
+CREATED (law-4 truth table, A1–A15 graded rows; inbox-FYI unit-economics
+receipts filed per the chief's standing instruction; pending-decisions +
+snapshot-debt ledger) + `gtm/raise/deck/skeleton.md` (Dad's 11 slides as
+receipt-stubs; 4 fully drafted — problem, how-it-works, dev timeline,
+team — plus value-chain structure and risk seeds; 7 honest stubs naming
+receipt requirements; numbers rule: no figure without a row ID). Dev
+timeline extracted from the build org's dated record (103 shifts Aug 25–
+Sep 1, 55 gated verdicts, PR #61 — later recount-verified by the gate).
+Gate: hostile investor, 3 rounds — **FAIL r1** (end-to-end overclaim vs
+its own source, rowless $12–48, A9 non-ceiling, provenance placement,
+unnamed dogfooding, missing single-vendor-COGS risk), **FAIL r2 narrow**
+(slide-7 residual contradiction, receipt-pointer-to-nothing, citation to
+an unwritten inbox entry — entry then actually written: the entry-tier
+tripwire OPEN question to Phin), **PASS r3 by a FRESH verifier** (per
+review budget: round 3 = fresh eyes; full budget used, not capped; every
+fix verified against the clone, fresh-overclaim scan clean). 9 edits
+applied total. Verdict: 1 file (3 rounds condensed) in
+`gtm/org/reviews/`. Both artifacts GATED → awaiting chief confirm. Next
+shift: objection handling round 1 (M-list; also feeds deck slide 11).
+**Fan-out disclosure:** 2 reviewer agents (rounds 1–2 reviewer ~108k +
+~125k resumed; round-3 fresh verifier ~72k); solo otherwise. No web
+research. Weight: medium-heavy (the 3-round gate earned it).
+
 **2026-09-01 · scheduled (first at 4x cadence) · SHIFT 4.** Triage:
 DEADLINES (stand, nothing due) → Phin's KSP exercise ANSWERED → the MERGE
 (item 2, funnel step 2) as centerpiece. `gtm/market/ksp-funnel.md` → v2:

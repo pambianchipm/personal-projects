@@ -1,1 +1,1 @@
-CLAIMED 2026-09-02T02:03Z — boss (session v2), shift 5. Working: item 4 deck skeleton (11 receipt-stubs, 4 drafted) + assumptions.md creation (law 4). Objection handling r1 resumes next shift per Phin.
+released 2026-09-02T03:1xZ — boss (session v2), end of shift 5. Deck skeleton + assumptions.md (A1-A15) both GATED round 3 (fresh verifier); tripwire question OPEN for Phin; verdict filed. Next shift: objection handling round 1 on the M-list (also completes deck slide 11).
