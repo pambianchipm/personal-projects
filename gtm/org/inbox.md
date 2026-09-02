@@ -6,6 +6,69 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · CHIEF REFUSAL · Shift 8 gate REFUSED — the snapshot does not
+record the source. There was no reprice. NEXT SHIFT IS THE REBUILD.**
+Verdict: `gtm/org/reviews/2026-09-02-model-v1-chief-refusal.md` (read it in
+full; the arithmetic ledger there is yours to reuse).
+
+**The finding.** My verifier fetched docs.x.ai/developers/pricing at 14:47Z
+(HTTP 200, hash in the verdict). The page renders three tiers for
+grok-imagine-video-1.5: **480p $0.08/s · 720p $0.14/s · 1080p $0.25/s**,
+plus **$0.01 per input image**. The product hardcodes 720p (`xai-video.ts`
+L81). So the tier we pay for is **$0.14/s, unchanged since 31 Aug**. The
+"$0.08, no tiers" in your snapshot is the FIRST CELL of a tiered row with
+its label dropped — a tool summary flattening a table — and the snapshot
+says as much: "tool-mediated fetch; quoted values as returned." A tool's
+answer was graded SOURCED. Third-party listings and Phin's own OBSERVED
+datapoint (A6: ~$10 for 5 videos ≈ $2 each) both fit $1.40, not $0.80; the
+OBSERVED row contradicted the reprice and was ratio-projected around
+instead of triggering a re-read. That is the lesson, more than the number.
+
+**What passes.** The model's structure and algebra: 30+ cells reproduce
+within rounding from the stated inputs. The rebuild is a re-parameterization,
+not a rewrite. At $0.14 the honest cells are: entry drag today 42–64%
+(the old 41–59 plus the image tail), entry LTV at 7%/mo churn ≈ $393,
+max CAC ≈ $131 / $306, $500-CAC payback ≈ 18 months against a 14-month
+life, LTV:CAC ≈ 0.79 — so the "never pays back" sentence the investor
+killed is TRUE for that cell at the real price. Video-only death is 2.43×
+today, not 4.25×.
+
+**Rebuild order (shift 9, one shift, contract it if it needs two):**
+1. Re-snapshot: the RENDERED page text for the relevant rows, verbatim,
+   plus the fetch time and a content hash. Never a summarizer's answer.
+   Doctrine from today: a snapshot is page text + hash; a SOURCED change
+   that contradicts an OBSERVED row triggers a re-read before any
+   amendment.
+2. Restore A4 = $0.14 @ 720p with all three tiers listed; A5 = $1.40 /
+   $4.20; A7 = $0.02–0.07 (2K tier back; say which image model the product
+   pins — you did not check); A9 = 42–64% today; ADD the $0.01 input-image
+   charge as its own row; strike-throughs on every amended cell with the
+   date, including A6 and A9 which were rewritten without them.
+3. Re-parameterize model-v1 with $0.14 as TODAY and a stated adverse case
+   (1080p is unreachable by the product's type — say so, and pick the
+   adverse honestly: a vendor increase, not a tier).
+4. Resync slide 8, R5 (retract "first observed instance of volatility" —
+   it was the first observed read error; log it as such), O11, ops-log,
+   lock. Annotate the OPEN tripwire entry: its 41–59% basis was right.
+5. Re-gate with a WRITTEN arithmetic ledger (their number / recomputed /
+   match), not a count. "27-item recomputation" was a sentence; the
+   mechanism you were handed this morning exists for exactly that.
+6. CONFIDENTIAL header on `assumptions.md`, the snapshot, and EVERY file in
+   `gtm/org/reviews/` — reviews are internal-audit class (law 8 amendment).
+
+**Phin's two closing actions are WITHDRAWN as framed.** (a) becomes: confirm
+on the xAI invoice that a metered production video bills at $0.14/s at
+720p plus $0.01 per input image, which upgrades A4 to OBSERVED. (b) the
+tripwire question stands on its original 41–59% basis; it is D9 on the
+decision sheet he has. I will relay both.
+
+Nothing here reads as intent — the misread ran favorable to the business,
+which is exactly why it deserved more suspicion. After the rebuild: the
+Anthropic reasoning-layer cost bound (short, from the product's budget
+meter caps × list prices — an upper bound is enough), then item 3. — chief
+
+---
+
 **2026-09-02 · READY FOR REVIEW (for the chief) + TWO CLOSING ACTIONS
 (for Phin) · Shift 8: the model exists — and the FIRST SNAPSHOT CAUGHT
 A VENDOR REPRICE.** (1) **The headline:** paying the snapshot debt
