@@ -3,7 +3,13 @@
 CONFIDENTIAL — internal-audit class (doctrine law 8): never quoted on
 external surfaces. Press-FACING answers below are drafts for Phin's
 mouth, not publishable text.
-STATUS: DRAFT → IN-GATE this shift (salty journalist + hostile investor)
+STATUS: GATED (round 2) — salty journalist: FAIL r1 (7 edits — guard
+discipline applied to every speakable span; zero strawmen found),
+PASS-WITH-NOTES r2 (2 single-clause edits, applied). Hostile investor
+(Lane A sections): PASS-WITH-NOTES, no bank edits. Verdicts:
+`gtm/org/reviews/2026-09-02-objection-bank-r1-journalist.md`,
+`gtm/org/reviews/2026-09-02-risk-register-v1-hostile-investor.md`.
+Awaiting chief's confirm. Gated WITH `gtm/raise/risk-register.md`.
 OWNER: GTM boss · shift 6, 2026-09-02
 METHOD: PM deck §3 (pp.30–34) — roleplay FINDS objections (law 1: it
 never generates evidence); then Assess → Answer → Address. Four persona
@@ -48,7 +54,8 @@ that convergence is the work list.
 | O8 | Hands-off vs your-click ("employee or homework?") + dial-as-mute | SMB#6, Comp#7 | RECEIPTED |
 | O9 | "It can't actually see Instagram/TikTok" (M10 secondhand) + OAuth pending | SMB#8, Comp#2, Journ#10, Inv#8 | PARTIAL |
 | O10 | Honesty-costs-money: "so I pay $299 for a month it admits failed?" + "confession engine" spin | SMB#10, Comp#8 | PARTIAL |
-| O11 | Unit economics: churn graveyard, CAC vs $59, one-vendor COGS | Inv#3, Inv#4, Inv#7 | NONE-YET (model work, queued) |
+| O11 | Unit economics: churn graveyard, CAC vs $59, two-vendor AI dependence (price AND terms — synced with R5) | Inv#3, Inv#4, Inv#7 | NONE-YET (model work, queued) |
+| O19 | Credential custody: "you hold tokens that post and spend as small businesses — audit? rotation? incident plan?" | investor gate (R13); journalist round-2 note | NONE-YET — pure concession + ask: encryption-at-rest exists, no program; → P-G |
 | O12 | Moat: incumbents bolt on AI; foundation vendors eat the category | Inv#5 | PARTIAL |
 | O13 | Solo founder + "AI all the way down" + evidence independence (Dad + own product) | Inv#6, Inv#9, Journ#8 | PARTIAL |
 | O14 | "Employee" framing ethics + freelancer displacement | Journ#1 | PARTIAL (lawyer brief pending) |
@@ -64,13 +71,13 @@ press/floor-facing draft where one is safe to hold)
 **Internal:** true and known: attribution scope unaudited (truth-map
 §3-bis); surfaces speak platform metrics. Never claim the bookings loop.
 **Holding answer (floor/press):** "Today it tells you what actually
-worked and won't pretend when nothing did (owner language per the
-standing gate note — never 'statistically gated') — and it keeps a
-record of what it declined to claim, with reasons. Bookings-level
+worked and won't pretend when nothing did — and it keeps a record of
+what it declined to claim, with reasons. Bookings-level
 attribution is the next read on our list, and we won't sell it before
-it's real." (Wording note: suppressed claims are PERSISTED — a database
-record, not an owner-visible surface; say "keeps a record," never
-"publishes," until a surface ships.) **Address:** the attribution-scope read is the next Lane B
+it's real." (Stage directions OUTSIDE the quotes: owner language per
+the standing gate note — never "statistically gated"; and suppressed
+claims are PERSISTED — a database record, not an owner-visible surface —
+say "keeps a record," never "publishes," until a surface ships.) **Address:** the attribution-scope read is the next Lane B
 opening move (chief-confirmed); until then O1 stands as the top product
 gap. → R8.
 
@@ -146,10 +153,13 @@ remedy commitment is speakable]. **Address → P-E (Phin):** remedy
 policy (fix + credit shape) and the 11d escalation-recipient decision.
 
 ### O7 — price coherence
-**Internal:** fully receipted — the folder argument (A11 band, §4.4
-owner wording "does what a $1,000-a-month freelancer does, for $299"),
-and $59 = the same employee smaller (same gates, same loop, pricing.ts
-one truth). The unsettled piece is HIERARCHY (lead $299-vs-band, $59 as
+**Internal:** split grade, mirrored from §1 — the FOLDER argument is
+RECEIPTED (A11 band; $59 = the same employee smaller — same gates, same
+loop, pricing.ts one truth); the §4.4 owner wording "does what a
+$1,000-a-month freelancer does, for $299" is PARTIAL/⧖ — it carries a
+coverage-PARITY claim positioning.md §7 calls "a roadmap comparison,
+not a shipping one"; guard it or drop the parity implication when
+spoken. The unsettled piece is HIERARCHY (lead $299-vs-band, $59 as
 footnote, or inverse) — a narrowing-step decision already flagged in the
 funnel. **Floor answer:** "compare it to what it replaces, not what it
 resembles." Plus the honest trade named before they name it: a human
@@ -173,8 +183,10 @@ diff-aware, honored silence, feeds work product) + OAuth status with a
 date (Phin's side). **Never:** "we monitor Instagram" unqualified.
 **Floor answer:** "It reads Reddit firsthand and the rest through AI
 lenses while we pursue platform API access — and unlike a trends tab,
-what it finds lands as drafted work, not homework." (Meta review is
-PENDING — a request, not an outcome; never "until they open.")
+what it finds lands as drafted work, not homework." (Law-4 sync with
+R2: SUBMISSION UNVERIFIED — no submission receipt in corpus; never
+"pending review" until a submission receipt exists, and never "until
+they open.")
 
 ### O10 — honesty costs money
 **Internal:** wording discipline (owner language, never "statistically
@@ -270,8 +282,14 @@ sensitivity). Slide 11 now cites the register.
 - **P-D: public AI-disclosure ruling** — do published posts/replies
   disclose AI to the PUBLIC, or is owner-approved speech the owner's?
   Either is defensible; undecided is not. (O5 — the round's new catch.)
+  RIDER (R12): one answer may be LEGALLY constrained per channel/state
+  (FTC; CA B.O.T. Act) — this ruling should wait on or ride with the
+  lawyer brief, not precede it.
 - **P-E: harm-remedy policy + 11d escalation recipient** — the "we make
   it right" sentence needs content (fix + credit shape).
+- **P-G: token-custody program** (O19/R13) — audit, rotation policy,
+  incident plan for the Page tokens that post/spend as customers; a
+  build-org item once Phin approves the priority.
 - **P-F (optional): skin-in-game experiment** — bad-month credit or
   equivalent; converts the honesty story into money where the owner's
   mouth is. Pricing is his; flagged only because the buyer persona asked

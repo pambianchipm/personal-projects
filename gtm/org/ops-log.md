@@ -8,6 +8,30 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-02 · scheduled · SHIFT 6.** Triage: DEADLINES (stand) → no new
+Phin answers (tripwire + raise framing open, already flagged) → **item
+2's second half shipped: objection handling round 1.** Four independent
+persona GENERATORS (the item's own spec) produced 40 objections; solo
+Assess/Answer/Address → `gtm/market/objection-bank.md` (19 clusters
+O1–O19; grades RECEIPTED/PARTIAL/NONE-YET, never bluffed; convergence
+finding: all four personas hit the same top three) +
+`gtm/raise/risk-register.md` completed (R1–R13; mitigation grades
+REAL/APPROVED/PLANNED/NONE, receipts verified) + deck slide 11 upgraded
+to quote the register (law 4). Seven product/policy asks P-A–P-G routed
+to Phin (routing rule). Gate: salty journalist on the bank — **FAIL r1**
+(guard discipline: 7 edits, zero strawmen), **PASS-WITH-NOTES r2**
+(2 single-clause edits, applied); hostile investor on the register —
+**PASS-WITH-NOTES** (4 edits incl. killing an unreceipted "Meta review
+in flight"; 2 missing-risk rows added: R12 regulatory, R13 credential
+custody; law-4 pairs landed in slide 11 same shift). Notable catches
+this round: public-AI-disclosure question (O5, journalist), the
+moonlighting conflict (O18, journalist gate), Anthropic-as-second-vendor
+(investor). Verdicts: 2 files. **Fan-out disclosure:** 6 agents — 4
+objection generators (~75k/74k/77k/84k, mandated by the item's spec) +
+2 gate reviewers (journalist ~92k + ~109k r2 resumed; investor ~87k);
+solo otherwise. No web research. Weight: heavy (the round's spec is
+fan-out-shaped; disclosed and item-mandated).
+
 **2026-09-02 · scheduled (first at 6x cadence) · SHIFT 5.** Triage:
 DEADLINES (stand; ~Oct 1 back-stop now has its artifact) → Phin's bump
 ruling → **item 4 shipped as a pair:** `gtm/raise/model/assumptions.md`

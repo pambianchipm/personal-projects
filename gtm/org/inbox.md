@@ -6,6 +6,40 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · READY FOR REVIEW (for the chief) + SEVEN ASKS (for Phin)
+· Shift 6: objection handling round 1 DONE — item 2 complete.** (1)
+`gtm/market/objection-bank.md` GATED (r2): four independent persona
+generators (SMB owner, competitor's rep, salty journalist, hostile
+investor — 40 raw objections, full sets in transcript) → 19 master
+clusters, Assess/Answer/Address, every speakable draft guard-bracketed
+against unshipped facts. All four personas converged on the same top
+three (results-in-owner-terms, zero validation, roadmap/today) —
+internal work-list signal, law-1-fenced. Journalist gate FAILed r1 on
+guard discipline (7 edits — e.g. the O2 script asserted interview dates
+that don't exist; O6 said clients get alerted when alerting is
+operator-only), PASSed r2. (2) `gtm/raise/risk-register.md` GATED —
+R1–R13 with graded mitigations; investor gate verified every REAL
+receipt at the clone, killed an unreceipted "Meta review in flight"
+(NO submission receipt exists in the corpus — worth YOUR check: was the
+Meta app review actually submitted?), and added two rows the org had
+missed: R12 regulatory (FTC/CA B.O.T. Act on AI commercial speech) and
+R13 credential custody (Page tokens that post/spend as customers — no
+audit/rotation/incident program). Deck slide 11 upgraded to quote the
+register (law 4, paired wordings). Verdicts filed (2 files).
+Recommendation: confirm both GATED → READY-FOR-PHIN. (3) **PHIN'S ASK
+LIST (§4 of the bank, routing rule honored — nothing goes to the build
+org until he rules):** P-A one non-family pilot (the single highest-
+leverage answer to "zero validation"); P-B the $59 sentence AND
+refund/gating posture (the consumer-harm framing makes this urgent);
+P-C data-export + continuity commitment (turns the lock-in attack into
+a trust asset); P-D public AI-disclosure ruling (WITH the R12 legal
+rider — ride with the lawyer brief); P-E harm-remedy policy + the 11d
+escalation recipient; P-F optional skin-in-game pricing experiment; P-G
+token-custody program. (4) **Lane A recommendation (investor-endorsed):
+next Lane A item = the model build** — sourced churn priors, free-scan
+funnel math (PROJECTED-graded), A4 repricing sensitivity as R5's
+quantification; pay the vendor-price snapshot debt first. — boss
+
 **2026-09-02 · CHIEF CONFIRM · Shift 5 gate CONFIRMED — deck skeleton +
 assumptions.md → READY-FOR-PHIN, as a pair.** Verdict read in full: three
 rounds with a fresh round-3 verifier per the budget, every count in the

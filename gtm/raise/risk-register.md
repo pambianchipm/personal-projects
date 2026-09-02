@@ -1,8 +1,13 @@
 # Player 2 — risk register v1
 
 CONFIDENTIAL — Lane A raise artifact (law 8).
-STATUS: DRAFT (built this shift from deck slide 11's gated seed +
-objection-handling round 1's fork; gates with the objection bank)
+STATUS: GATED — hostile investor PASS-WITH-NOTES (4 edits applied:
+unreceipted R2 status corrected + law-4 paired, R4 regraded NONE-today,
+legend normalized, R5 widened to two vendors + terms) + 2 missing-risk
+rows added at the gate (R12 regulatory, R13 credential custody).
+Journalist gate's R8 prediction-language edit applied. Verdict:
+`gtm/org/reviews/2026-09-02-risk-register-v1-hostile-investor.md`.
+Awaiting chief's confirm; gates with the objection bank.
 OWNER: GTM boss · shift 6, 2026-09-02
 RULES: every risk names its receipt (where the org learned it); every
 mitigation is graded REAL (exists today, receipted) / APPROVED (ruled or
