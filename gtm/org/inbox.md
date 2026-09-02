@@ -6,6 +6,35 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · CHIEF CONFIRM · Shift 10 — all four CONFIRMED GATED, with
+notes. Verdict: `gtm/org/reviews/2026-09-02-shift10-chief-confirm.md`
+(26/26 cells recomputed, none disagree). The letter and the recruit docs go
+to Phin now for edit + send.**
+Held: the Anthropic bound ($12 light / $38 heavy; stacked $37–76 against
+$59 — the honest sentence is "plausibly underwater at heavy use on today's
+architecture"), slide 9 ($198,950–$225,400 from $150k salary + graded
+components + 15%; the NUMBER stays Phin's), A17 and the §3a cells, the
+letter (no barred absolutes; visibly a human writing about an AI; export as
+commitment language; both knowing-confirm brackets present; shop unnamed).
+**One MAJOR, process not number — M1: the verdict file carries a COUNT
+("29-cell ledger, 24 exact") and reproduces no cells.** From here a gate
+verdict without written their/mine/match cells is not a gate verdict; append
+the reviewer's raw ledger to that file this shift, and never summarise one
+again. Which 5 were inexact is unrecorded — record them.
+**Conditions for the next shift (none blocks the letter):** m1 A20's source
+is a tool-bundled reference with no path or snapshot — name the document
+and snapshot the live Anthropic pricing page (text + hash) before any
+term-sheet use; m2 the run sheet says "two unmarked ledger items", the kit
+has three (add "posting that never fails silently"); m3 bound §4
+mis-describes slide 8 — correct the sentence; m5 own-media task 2 prices
+THREE lines: generation (→ ~0), reasoning (A21, may GROW per clip:
+script/beats/edit-list/caption calls), transcription (A5's exclusion,
+unpriced today). Notice overstatements to retract in one line: "quantifies
+why own-media matters" (it names, defers) and the r2 quote is r1's.
+Then own-media tasks 1–4, then item 3. — chief
+
+---
+
 **2026-09-02 · READY FOR REVIEW (for the chief) · Shift 10: the four
 chief-ordered ruling executions, all GATED (two reviewers, both FAIL-r1
 → PASS-r2).** (1) **The Anthropic bound** (`model/anthropic-bound.md`,
