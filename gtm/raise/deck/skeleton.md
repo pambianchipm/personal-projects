@@ -1,0 +1,192 @@
+# Player 2 — pitch deck skeleton (Dad's 11 slides, as receipt-stubs)
+
+CONFIDENTIAL — Lane A raise artifact (law 8).
+STATUS: v1 DRAFT → IN-GATE this shift (hostile investor, with
+`gtm/raise/model/assumptions.md`)
+OWNER: GTM boss · shift 5, 2026-09-02
+MANDATE: backlog item 4, BUMPED ahead by Phin 1 Sep ("yeah bump the deck
+ahead!") — all 11 slides as stubs naming their receipt requirements;
+fully draft those whose receipts exist (how it works, dev timeline, team,
+unit economics); honest stubs for the rest. Slide list is Dad's, verbatim
+order (`gtm/sources/source-dad-notes-2026-08-24.md`).
+NUMBERS RULE (law 4): every figure quotes an assumptions.md row by ID.
+A number without a row ID does not belong on a slide.
+
+**First breath:** Player 2 is an AI marketing employee for small
+businesses. This skeleton is the deck's load-bearing frame: what each
+slide must prove, with what evidence, and how much of it exists today.
+DRAFTED = content below is receipted and usable now. STUB = the slide
+states its receipt requirements and waits; nothing invented to fill it.
+
+---
+
+## Slide 1 — Opening example / hook · STUB
+
+**Must prove:** nothing — must make an investor lean in, in one beat.
+**Receipt requirements:** a TRUE vignette. Candidates on file: (a) Dad's
+walkthrough — the system ran on a real product and "came up with the top
+5 segments and use cases" (source-dad-notes); (b) the free-scan moment —
+a shop's own three posts, in its voice, before any card; (c) the Friday
+digest that refuses to invent a good week. Endline-pool language (KSP
+funnel §7) may inspire the beat but ships nowhere without its gates.
+**Blocked on:** concept research signal (which beat lands) + Phin's
+taste. Do not draft by committee.
+
+## Slide 2 — The problem · DRAFTED (resonance untested, facts sourced)
+
+The owner of a visual small business is the marketer, and the job never
+closes: A14 — 88% of TikTok-active owners report posting burnout (vendor
+survey, ceiling), 42% of SMBs have under an hour a day for ALL marketing.
+The landscape report's core finding: "the job's defining texture is the
+impossibility of closing the loop" — engagement is the step that never
+batches. They can't hire their way out: the services band runs A11
+$500–2,000/mo, and the founding thesis targets shops "too small to hire
+anyone for marketing" (source-dad-notes). `UNTESTED`: that owners
+articulate the pain this way — interviews (item 5) test the words, the
+stats stand either way.
+
+## Slide 3 — How it works · DRAFTED
+
+One loop, five verbs, every one receipted (positioning.md §5; truth-map
+§2): it PLANS a week from a goal (conductor chat; by construction no
+publish tool — "the agent's reach ends at drafts"), WRITES posts,
+replies, videos, ads into one approval queue, POSTS on schedule only
+through the owner's click or standing Auto-post approval ("the conductor
+can never flip auto_post"), READS results per-post into the next batch,
+and REPORTS honestly — a nightly claims engine with statistical floors
+that persists what it REFUSED to claim, with reasons. Safety model in
+one line: nothing posts or spends without the owner's click. Demoed
+end-to-end on a real product (Dad's walkthrough, 24 Aug). Diagram: the
+loop, with the owner's click drawn as the only gate to the outside world.
+
+## Slide 4 — How big the market is · STUB (deliberately)
+
+**Must prove:** the bottom-up arithmetic BEFORE any top-down color
+(law 2 — no top-down figure admitted first).
+**Receipt requirements, named:** (i) a sourced count of US local visual
+SMBs in target verticals (salons, gyms/studios, restaurants/cafes,
+boutiques — Census/NAICS class counts); (ii) a sourced or argued
+serviceable fraction (has social presence, no marketing hire); (iii)
+ARPU from A1/A2 with a stated tier mix; (iv) THEN any analyst TAM as
+color only. **Blocked on:** one research shift for (i)–(ii). No number
+appears on this slide until then.
+
+## Slide 5 — Value chain today, and where we fit · STUB (structure drafted)
+
+**Must prove:** who gets paid for SMB marketing today and which dollars
+Player 2 redirects. Structure on file (positioning.md §7): inaction (the
+real #1) → DIY (Canva + ChatGPT + a nephew) → tool band ($12–48/mo asset
+factories) → freelancer band (A12, directional) → agency band (A11).
+Player 2's seat: does the WORK of the service bands at software cost —
+A2 $299 vs A11 $500–2,000. **Receipt requirements:** the band prices are
+graded (A11 VERIFIED w/ caveat, A12 DIRECTIONAL — say so on the slide);
+Holo teardown prices need a spot-check before external use (its own
+caveat). `UNTESTED`: the framing.
+
+## Slide 6 — Why we're better · HONEST STUB
+
+**Must prove:** better-or-unique vs each alternative class, in evidence.
+**What exists:** the claims-engine differentiation (no competitor in the
+teardown publishes statistically-gated results, and none inverts the
+silent-failure complaint); the M-list (KSP funnel §7) is the candidate
+language. **Blocked on:** concept research (which claims OWNERS repeat)
+and item 3's battle cards (dossier-grade receipts per competitor).
+Writing this slide before those lands is exactly the overclaim the gate
+exists to catch. Note for the draft-when-ready: lead with the fused
+trust cluster candidate (M2+M3+M9) — flagged at the merge gate as the
+hardest shape to counter.
+
+## Slide 7 — Development timeline · DRAFTED
+
+All dates are repository receipts, not recollection:
+- **Aug 19** — operator MCP connector session doc (the console's second
+  door) — `docs/player2-session-2026-08-19.md`.
+- **Aug 24** — productization v1.0 plan (accounts→OAuth→billing→two-
+  persona console→landing, five phases); extend-video tool shipped same
+  day; Dad's external walkthrough — the system ran end-to-end on a real
+  product (`docs/productization-v1.md`; `source-dad-notes-2026-08-24.md`).
+- **Aug 25** — the build org bootstraps (dated ops-log first entry);
+  same day: the statistics engine lands (pure stats: XmR, Wheeler rules,
+  Mann–Whitney + FDR; 40 unit tests, PR #8).
+- **Aug 25 → Sep 1, eight days** — 103 logged build shifts; 55 gated
+  adversarial review verdicts filed in `docs/reviews/` (21 on Aug 28
+  alone); merged-PR record reaches PR #61 (`docs/org/ops-log.md`,
+  `docs/reviews/` — every date auditable).
+- **Sep 1** — $59 entry tier LIVE on the landing (PR #56, A1); weekly-
+  ritual build (11a) approved to start alongside a console redesign.
+**The slide's real claim:** velocity WITH a review gate — the org ships
+through adversarial verdicts, not around them. That is itself diligence
+material: the record is public-to-investors on request.
+`UNVERIFIED-COUNT note: "103 shifts" and "55 verdicts" are file counts
+from the repo at head 871454c — recount before print.`
+
+## Slide 8 — Financial projections & ROI/exit · STUB
+
+**Must prove:** a P&L shape from stated drivers, not hope.
+**What exists:** the COGS floor is real — A4–A10 give per-tier
+generation costs and the entry tier's 41–59% margin drag (A9), which is
+an honest, unusual thing to show an investor and we should. **Blocked
+on:** the model (drivers: tier mix, churn assumption, CAC channel —
+all currently nonexistent because customers are). No projection appears
+before the model does; the exit row of this slide waits on comparables
+research. **Anti-claim:** zero revenue today, zero customers — the deck
+says so plainly (the truth map's discipline extends here).
+
+## Slide 9 — Funding ask & use of funds · STUB (the question is the content)
+
+**Must prove:** an amount, its milestones, its runway math.
+**Blocked on Phin (bootstrap decision 2), and this stub IS the ask to
+him:** the milestone set the roadmap implies is (1) productization
+Phases 1–5 live (accounts, OAuth, billing, client suite, landing), (2)
+first cohort of paying non-founder clients on A1/A2 pricing, (3) the
+attribution read → results-in-owner-terms claimable, (4) ERA/Techstars
+outcomes (A13: $150k/$220k checks are the sourced anchors for what
+institutional first money looks like at this stage). **The question, put
+directly: Phin — how much, against which of those milestones, and what
+runway?** Recommendation shape (strategist judgment, no receipt, labeled
+as such): an accelerator-check-to-small-pre-seed range anchored between
+A13's real numbers and a solo-founder burn — argued properly ONLY once
+he states target runway and whether he draws salary. The slide ships
+with his answer, not before.
+
+## Slide 10 — Team · DRAFTED (thin by honest necessity)
+
+**Phin Pambianchi — founder-operator.** The receipted claim: conceived,
+built, and operates the entire system — product, infrastructure, and the
+AI build organization that ships it through gated adversarial review
+(the Aug 19 → Sep 1 record on slide 7 is his). Runs the operator console
+in production on a real product today. **Advisor (informal): Michael
+Pambianchi** — the deck's own 11-slide structure and founding GTM notes
+are his (source doc on file). **Named relationship (not an advisor
+claim): Jess Gunter** (Spruce Ridge Strategy) — the org's positioning
+method is built on her frameworks; Dad's notes list her under "people to
+talk to"; any stronger wording waits on Phin actually talking to her.
+**GAPS FOR PHIN:** bio lines (background, credentials) are his to state
+— nothing invented here; solo-founder risk is named on slide 11, not
+hidden here.
+
+## Slide 11 — Risks & mitigations · STUB (seeded, forks from objection round)
+
+Seed list, each with its receipt: (1) "employee" framing carries legal/
+expectational exposure — lawyer brief pending (positioning.md §8.3;
+"never" absolute already barred). (2) Platform dependence — Meta OAuth
+still in review; IG/TikTok signals secondhand until API access
+(pulse.ts's own admission). (3) No demand validation — zero interviews,
+zero customers; mitigations are the concept-card pipeline and the free
+scan (positioning.md §8.1). (4) Unit economics at entry tier — A9's
+41–59% drag; mitigation is tier mix + fair-use tripwire (A10). (5) Solo
+founder — mitigation is the demonstrated build-org leverage (slide 7)
+and hiring plan (Dad's "who he will need to hire, when" — unanswered).
+(6) Competitive response — incumbents can copy features; the argued moat
+is outcome memory + the honesty machinery (UNTESTED as a moat).
+**Full version forks from objection-handling round 1 (next shift) — the
+Assess/Answer/Address output IS this slide's evidence.**
+
+---
+
+## Coverage ledger
+
+DRAFTED: 2 (problem), 3 (how it works), 7 (dev timeline), 10 (team) — 
+plus 5's structure and 11's seed. STUBS with named receipts: 1, 4, 5, 6,
+8, 9, 11. Nothing outward without Phin (law 3): this file is internal
+scaffolding; no slide ships anywhere in any form until PHIN-APPROVED.
