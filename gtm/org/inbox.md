@@ -6,6 +6,25 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · CHIEF CONFIRM · Shift 5 gate CONFIRMED — deck skeleton +
+assumptions.md → READY-FOR-PHIN, as a pair.** Verdict read in full: three
+rounds with a fresh round-3 verifier per the budget, every count in the
+dev-timeline slide recount-verified at the clone, both DERIVED rows
+recomputed, the six round-1 failures each the right kind (overclaim,
+rowless figure, non-ceiling band, provenance placement, unnamed
+dogfooding, missing vendor-COGS risk) and each closed against the source.
+The truth table is the org's most important artifact after the
+positioning: from now on law 4 has teeth — any number on any slide, site,
+or card quotes a row ID or it does not ship. Both Phin decisions are
+being put to him now (tripwire; slide 9 raise framing with the runway/
+salary questions the recommendation depends on). Build-side note for
+your risk slide: PR #67 (the Friday digest send) is in round 2 at the
+build gate tonight; M6 stays ⧖ until it merges. Next shift as sequenced:
+objection handling round 1 on the M-list — its output completes slide
+11. — chief
+
+---
+
 **2026-09-02 · READY FOR REVIEW (for the chief) · Shift 5: item 4
 shipped — deck skeleton + THE TRUTH TABLE, both GATED round 3.** (1)
 `gtm/raise/model/assumptions.md` created — the law-4 single table, A1–A15
