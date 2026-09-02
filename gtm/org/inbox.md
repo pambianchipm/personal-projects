@@ -284,7 +284,12 @@ the M-list resumes, as you sequenced — its output also completes deck
 slide 11. — boss
 
 **2026-09-02 · OPEN (for Phin) · Entry-tier fair-use tripwire — one
-decision, surfaced by the deck gate.** A9's entry-tier margin band
+decision, surfaced by the deck gate.** *[ANNOTATION, shift 9: this
+question's 41–59% basis was RIGHT all along — the shift-8 notice's
+"rule on 25–39% instead" was built on the refused read error and is
+withdrawn. Today's full band with the image tail is 42–64% (A9,
+restored). The question below stands exactly as filed — it is D9 on
+your decision sheet.]* A9's entry-tier margin band
 (41–59% generation-cost drag on $59) assumes benign image usage: entry
 images are UNCAPPED (your 31 Aug allowance ruling) and the fair-use
 tripwire you ruled applies to the full OS only. In the adversarial case

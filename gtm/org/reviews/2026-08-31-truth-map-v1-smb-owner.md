@@ -1,5 +1,7 @@
 # Gate verdict — positioning-truth-map v1 — skeptical SMB owner
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 2 (2026-08-31). Independent reviewer agent, spawned at
 gate time. Verdict below is the reviewer's, verbatim. Boss disposition at
 the end.

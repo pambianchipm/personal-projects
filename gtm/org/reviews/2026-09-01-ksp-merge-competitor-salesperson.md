@@ -1,5 +1,7 @@
 # Gate verdict — ksp-funnel v2 (merge, Part II) — competitor's salesperson
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 4 (2026-09-01). Independent reviewer agent, spawned
 at gate time; scope Part II only. Condensed faithfully; boss disposition
 at the end.

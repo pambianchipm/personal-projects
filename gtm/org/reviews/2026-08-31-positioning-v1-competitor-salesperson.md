@@ -1,5 +1,7 @@
 # Gate review — positioning framework v1 · persona: competitor's salesperson
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 DATE: 2026-08-31 · shift 1 · reviewer: independent spawned agent (Holo-rep
 persona + freelance-SMM objections; spot-checked receipts against cited
 sources, incl. `research-smm-landscape.md` lines 11/59/257 and

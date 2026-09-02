@@ -1,4 +1,6 @@
 # Gate verdict — model v1 + truth-table amendments — hostile investor
+
+CONFIDENTIAL — internal-audit class (law 8).
 # (2 rounds)
 
 FILED BY: boss, shift 8 (2026-09-02). Independent reviewer agent;

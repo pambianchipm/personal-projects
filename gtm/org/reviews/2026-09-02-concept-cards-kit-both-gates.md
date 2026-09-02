@@ -1,5 +1,7 @@
 # Gate verdicts — concept cards + interview kit r1 — both personas
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 7 (2026-09-02). Two independent reviewer agents at
 gate time; SMB owner ran 2 rounds. Condensed faithfully; boss
 disposition at the end.

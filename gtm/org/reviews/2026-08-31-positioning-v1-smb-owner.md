@@ -1,5 +1,7 @@
 # Gate review — positioning framework v1 · persona: skeptical SMB owner
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 DATE: 2026-08-31 · shift 1 · reviewer: independent spawned agent (salon-owner
 persona, burned-by-agencies brief) · artifact: `gtm/market/positioning.md`
 

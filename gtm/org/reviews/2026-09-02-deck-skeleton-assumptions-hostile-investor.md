@@ -1,4 +1,6 @@
 # Gate verdict — deck skeleton v1 + assumptions.md v1 — hostile investor
+
+CONFIDENTIAL — internal-audit class (law 8).
 # (3 rounds; round 3 = fresh verifier per protocol)
 
 FILED BY: boss, shift 5 (2026-09-02). Rounds 1–2: one independent

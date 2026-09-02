@@ -1,5 +1,7 @@
 # Gate verdict — ksp-funnel half 1 — skeptical SMB owner
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 3 (2026-09-01). Independent reviewer agent, spawned
 at gate time. Condensed faithfully; boss disposition at the end.
 

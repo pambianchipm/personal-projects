@@ -1,5 +1,7 @@
 # Gate verdict — objection bank r1 — salty journalist (2 rounds)
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 6 (2026-09-02). Independent reviewer agent;
 condensed faithfully; boss disposition at the end.
 

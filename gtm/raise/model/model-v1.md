@@ -1,22 +1,26 @@
 # Player 2 — raise model v1 (scenarios, not projections)
 
 CONFIDENTIAL — Lane A raise artifact (law 8).
-STATUS: GATED (round 2) — hostile investor: FAIL r1 (6 edits — two
-overstated break-even/payback claims killed in favor of honest-and-
-stronger versions, A16 annualization fixed, slide-8 law-4 pair cleared,
-720p billing hedge added), PASS-WITH-NOTES r2 (1 derivation-label fix,
-applied; 27-item arithmetic recomputation, all clean post-edits).
-"The model now says true things all the way down… it answers O11 well
-enough to keep the meeting alive." Verdict:
-`gtm/org/reviews/2026-09-02-model-v1-hostile-investor.md`.
-Awaiting chief's confirm.
+STATUS: v2 REBUILD (shift 9) DRAFT → IN-GATE — the shift-8 GATED
+verdict was REFUSED by the chief: the snapshot had recorded a
+summarizer-flattened table cell ($0.08 = the 480p tier) as the price;
+the product's 720p tier is $0.14/sec, UNCHANGED, and there was no
+reprice. This version re-parameterizes every cell at the real price.
+The structure and algebra passed the refusal audit ("30+ cells
+reproduce within rounding; the engine is sound"); only the inputs
+failed. Refusal: `gtm/org/reviews/2026-09-02-model-v1-chief-refusal.md`.
+Prior gate lineage (rounds 1–2, on the bad inputs):
+`2026-09-02-model-v1-hostile-investor.md`.
 OWNER: GTM boss · shift 8, 2026-09-02
 CHARTER: the chief-approved model build — sourced churn priors,
-free-scan funnel algebra, and the A4 repricing sensitivity that
-quantifies R5's disclosed floor. Snapshot debt paid FIRST
-(`snapshots/2026-09-02-xai-pricing.md`) — and the snapshot immediately
-caught a −43% vendor reprice, so every number here uses the 2 Sep price
-with the 31 Aug price as the ADVERSE scenario.
+free-scan funnel algebra, and the A4 price sensitivity that quantifies
+R5's disclosed floor. Prices from the CORRECTED snapshot v2 (raw fetch
++ hash): the product's 720p tier is $0.14/sec, unchanged since 31 Aug.
+The adverse case is a STRESS ASSUMPTION (a vendor increase — no vendor
+change has actually been observed; shift 8's "reprice" was a read
+error, retracted), because the 1080p tier is unreachable by the
+product's own type (`'720p' | '480p'`). The 480p tier ($0.08) appears
+below as a LEVER the product could pull, not a price it pays.
 LAW 1/2 POSTURE: Player 2 has zero customers. Nothing here is a
 projection OF Player 2 — every table is scenario ALGEBRA over graded
 assumption rows (IDs cited throughout) plus PROJECTED inputs marked as
@@ -36,7 +40,7 @@ it can work — under stated assumptions, none yet earned.
 |---|---|---|
 | ARPU, entry | $59/mo (A1) | SOURCED |
 | ARPU, full OS | $299/mo founding (A2); $499 defined (A3) | SOURCED |
-| Generation COGS | A4/A5/A7 at the 2 Sep price; A9 band | SOURCED/DERIVED |
+| Generation COGS | A4 ($0.14/sec, 720p, RESTORED)/A5/A7/A7b; A9 band 42–64% | SOURCED/DERIVED |
 | Monthly logo churn | 3% / 5% / 7% scenarios (A16 band) | DIRECTIONAL — scenario only |
 | Tier mix | 70/30 and 50/50 entry/full scenarios | PROJECTED (invented; no basis exists) |
 | CAC | UNKNOWN — §3's algebra defines what to measure | PROJECTED illustrations only |
@@ -44,41 +48,43 @@ it can work — under stated assumptions, none yet earned.
 **Named exclusions (unpriced, disclosed):** Anthropic reasoning-layer
 COGS (conductor, Pulse, claims — R5's second vendor; no per-workspace
 metering exists to price it); caption transcription (A5 exclusion);
+the A7b $0.01 input-image charge on image→video runs (frequency of that
+path unmeasured); which image SKU production actually bills (the pinned
+`grok-2-image` is unpriced on the vendor page — snapshot v2 finding);
 infra/Vercel/Supabase; Phin's time. Gross margins below are therefore
 GENERATION-margin, an upper bound on true gross margin — stated on
 every use.
 
 ## 2. Unit economics per tier (generation-margin)
 
-**Entry ($59):** A9 → drag $14.5–22.8/mo today (25–39%);
-generation-margin $36–45/mo (61–75%). Adverse (A4 reversion to $0.14):
-drag 42–64%, margin $21–34. Uncapped-images tail still applies until
-the tripwire ruling (open with Phin).
+**Entry ($59):** A9 → drag $25–38/mo TODAY (42–64%); generation-margin
+$21–34/mo (36–58%), mid ≈ $27.5. Uncapped-images tail still applies
+until the tripwire ruling (open with Phin, on exactly this band — his
+question's original basis was right).
 
 **Full OS ($299):** allowance is unlimited (A10) so COGS is pure usage
 assumption — PROJECTED scenario: a heavy shop at 1 video/day (30/mo ×
-~$1.14 ratio-blended, A6) + 100 images ≈ $37–39/mo → generation-margin
-≈ $260/mo (87%). Adverse price: ≈ $63/mo COGS → margin $236 (79%).
-A daily-video customer is an assumption about behavior nobody has
-observed; it exists to bound the shape, not to claim it.
+A6's OBSERVED ~$2 blended) + images ≈ $63/mo → generation-margin ≈
+$236/mo (79%). A daily-video customer is an assumption about behavior
+nobody has observed; it exists to bound the shape, not to claim it.
 
 ## 3. LTV scenarios and the CAC ceiling (the graveyard math)
 
 LTV = monthly generation-margin ÷ monthly churn. Using mid-band margins
-(entry $41; full OS $260):
+(entry $27.5; full OS $236):
 
 | Churn (A16 scenario) | Entry LTV | Full-OS LTV | Max CAC @ LTV:CAC=3 (entry / full) |
 |---|---|---|---|
-| 3%/mo (33 mo avg life) | ~$1,370 | ~$8,670 | ~$455 / ~$2,890 |
-| 5%/mo (20 mo) | ~$820 | ~$5,200 | ~$275 / ~$1,730 |
-| 7%/mo (14.3 mo) | ~$590 | ~$3,710 | ~$195 / ~$1,240 |
+| 3%/mo (33 mo avg life) | ~$917 | ~$7,870 | ~$306 / ~$2,620 |
+| 5%/mo (20 mo) | ~$550 | ~$4,720 | ~$183 / ~$1,570 |
+| 7%/mo (14.3 mo) | ~$393 | ~$3,370 | ~$131 / ~$1,120 |
 
-Payback months = CAC ÷ monthly margin: e.g. a $200-CAC entry customer
-pays back in ~5 months at mid-band margin; a $500-CAC entry customer at
-7% churn pays back at ~12.2 months of a 14.3-month expected life —
-LTV:CAC ≈ 1.2 against the 3.0 floor, effectively zero return (the SMB
-graveyard, quantified honestly: the money comes back and nothing else
-does). **The investor-facing sentence this table
+Payback months = CAC ÷ monthly margin: a $200-CAC entry customer pays
+back in ~7.3 months at mid-band margin; a $500-CAC entry customer at 7%
+churn NEVER pays back — ~18.2-month payback against a 14.3-month
+expected life, LTV:CAC ≈ 0.79. (The shift-8 gate killed this "never" as
+false; at the REAL price it is true — restored with the refusal's own
+arithmetic.) **The investor-facing sentence this table
 earns:** at tool-band CAC the entry tier works even at bad churn; at
 services-band CAC it only works if the full OS carries the mix — which
 is why tier mix is a driver, not a detail.
@@ -88,13 +94,14 @@ CAC = cost-per-scan ÷ (scan→paid rate × paid→retained-past-month-1
 rate). Three numbers, none of which exists yet. Illustrations
 (PROJECTED, invented — and both silently assume the formula's third
 factor, month-1 retention, at 100%, so both are optimistic by exactly
-that factor): $5 cost/scan at 5% scan→paid → $100 CAC (works everywhere
-above); $10 at 1% → $1,000 CAC (works nowhere on the entry tier). The
-first 100 scans' job is to replace this paragraph.
+that factor): $5 cost/scan at 5% scan→paid → $100 CAC (inside the entry
+ceiling at every churn row above — barely, at 7%); $10 at 1% → $1,000
+CAC (works nowhere on the entry tier, and only at ≤5% churn for the
+full OS). The first 100 scans' job is to replace this paragraph.
 
 **Blended-mix scenarios (PROJECTED):** 70/30 entry/full → blended ARPU
-$131, blended margin ≈ $107/mo; 50/50 → ARPU $179, margin ≈ $150/mo.
-At 5% churn, blended LTV ≈ $2,140 / $3,010 respectively.
+$131, blended margin ≈ $90/mo; 50/50 → ARPU $179, margin ≈ $132/mo.
+At 5% churn, blended LTV ≈ $1,800 / $2,640 respectively.
 
 ## 4. A4 sensitivity — R5's disclosed floor, quantified
 
@@ -103,34 +110,33 @@ function of the per-second price p, on $59:
 
 | p ($/sec) | Video cost/mo | Drag (video-only) | Meaning |
 |---|---|---|---|
-| 0.05 | $8.67 | 15% | today's cheaper model (grok-imagine-video) |
-| **0.08** | **$13.87** | **23.5%** | **today's price for the pinned model (A4)** |
-| 0.14 | $24.27 | 41% | the 31 Aug price — a reversion IS the adverse case |
-| 0.19 | $32.93 | 56% | old band's ceiling territory |
-| 0.32 | $55.46 | 94% | video alone consumes 94% of the tier (4× today) |
-| 0.3404 | $59.00 | 100% | video-only break-even: $0.3404/sec = 4.25× today |
+| 0.08 | $13.87 | 23.5% | the 480p TIER — a lever the product could pull (quality trade-off, Phin's call), not a price it pays |
+| **0.14** | **$24.27** | **41.1%** | **TODAY — the 720p tier the product hardcodes (A4, unchanged since 31 Aug)** |
+| 0.21 | $36.40 | 61.7% | +50% vendor increase — the stated PLANNING ADVERSE (a stress assumption; no vendor change has actually been observed) |
+| 0.28 | $48.53 | 82.3% | 2× today |
+| 0.3404 | $59.00 | 100% | video-only break-even: 2.43× today (+143%) |
 
-Break-even statement (the R5 quantification), three separate thresholds:
-at +75% ($0.14 — a full reversion to the 31 Aug price) drag returns to
-the old band's FLOOR (41%); at +151% (~$0.20) drag exceeds the old
-band's CEILING (59%); video-only death is at +325% ($0.34/sec, 4.25×
-today).
-The full OS survives every row of this table — quantified, not implied:
-at the $0.32 row its scenario COGS ≈ $140 (30 × ~$4.57 ratio-blended —
-plain $3.20 × 1.43, A6 — + ~$3 images) → margin ≈ $159/mo (53%), down
-from 87% but alive.
-The observed volatility between the org's own two reads (−43% in two
-days-of-record) cuts both ways: the same magnitude upward is the
-planning case, and it lands at $0.114–0.14 — inside the survivable
-band. **What this table does NOT cover:** vendor TERMS risk (R5 —
-termination/IP), the unpriced Anthropic layer, and the uncapped image
-tail — those stay disclosed floors.
+Break-even statement (the R5 quantification): the entry tier's
+video-only death sits at **2.43× today's price** (+143%); at the +50%
+planning adverse the drag is ~62% and the tier survives only on tier
+mix; the 480p lever would roughly halve video drag at a quality cost —
+a priced option, not a plan. The 1080p tier ($0.25) is unreachable by
+the product's own type and is NOT the adverse case.
+The full OS survives every row: at the 2× row its scenario COGS ≈ $123
+(30 × $4 blended-est — A6's $2 scaled 2× — + $3 images) → margin ≈
+$176/mo (59%), down from 79% but alive.
+**What this table does NOT cover:** vendor TERMS risk (R5 —
+termination/IP), the unpriced Anthropic layer, the A7b input-image
+charge, and the uncapped image tail — those stay disclosed floors.
 
 ## 5. What the model says back to the deck (slide 8's future content)
 
-1. The business's shape is defensible AT SCENARIO PRIORS: even 7%/mo
-   churn yields entry LTV ≈ 10× monthly price, and generation COGS is
-   survivable at 2× today's vendor price. Nothing about Player 2 is yet
+1. The business's shape is TIGHTER than shift 8 claimed, and still
+   defensible at scenario priors: entry LTV at 7%/mo churn is ~6.7×
+   monthly price (not 10×), the entry tier at today's REAL price runs a
+   42–64% generation drag, and video-only death is 2.43× away (not
+   4.25×). The honest summary: the entry tier is thin and mix-dependent;
+   the full OS carries the economics. Nothing about Player 2 is yet
    evidence for those priors.
 2. The two numbers that decide everything are scan→paid conversion and
    month-1 retention — both measurable with the first real cohort, both
@@ -146,9 +152,11 @@ tail — those stay disclosed floors.
 
 ## 6. Register/ledger effects (this shift)
 
-R5: first observed vendor-price instance recorded (favorable, −43%);
-sensitivity table = the quantification its row called for. R11: the
-"model build" mitigation moves PLANNED → REAL for the
-scenario/sensitivity half (this file shipped); churn/CAC/LTV stay
-UNKNOWN-until-cohort by design. A4/A5/A6/A7/A9 amended with
-strike-throughs and dates; A16 added; snapshot debt PAID.
+R5: the shift-8 "first observed vendor-price instance" is RETRACTED —
+it was the org's first observed READ ERROR (summarizer-flattened table
+cell), logged as such in snapshot v2; the sensitivity table remains the
+quantification R5's row called for, now at the real price. R11:
+scenario/sensitivity half REAL (this file, rebuilt); churn/CAC/LTV stay
+unknown-until-cohort by design. A4/A5/A6/A7/A9 RESTORED with full
+strike-through discipline; A7b (input-image charge) added; A16 stands;
+snapshot debt paid properly (v2: raw fetch + hash + verbatim rows).

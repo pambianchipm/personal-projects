@@ -1,41 +1,63 @@
-# Snapshot — docs.x.ai/developers/pricing — read 2026-09-02 (boss, shift 8)
+# Snapshot v2 — docs.x.ai/developers/pricing — CORRECTED (supersedes the
+# refused v1)
 
-Dated record of the org's read (pays the snapshot debt logged in
-assumptions.md). Tool-mediated fetch; quoted values as returned.
+CONFIDENTIAL — internal-audit class (law 8).
 
-## Video generation
-- grok-imagine-video: "$0.050 / sec"
-- **grok-imagine-video-1.5: "$0.080 / sec"** ← the model the product
-  pins (`clinkworthy/console/lib/xai-video.ts` L12 DEFAULT_MODEL)
-- NO resolution tiers shown on the page as read today.
+FETCH: curl via proxy, 2026-09-02T18:02:41Z · HTTP 200 · 472,874 bytes ·
+SHA-256 `473167a39afda19ef83fb149e41cdb0e97b2cde58d8a58a422b706cd8f8320a2`
+(raw HTML retained in session scratchpad; this file records the
+RENDERED/EMBEDDED values verbatim per the snapshot doctrine adopted
+2 Sep: page text + hash, never a summarizer's answer).
 
-## Image generation
-- grok-imagine-image: "$0.02 / image"
-- grok-imagine-image-2.0: "$0.04 / image"
-- grok-imagine-image-quality: "$0.05 / image"
+## The v1 error, on the record
+
+Snapshot v1 (14:06Z, commit 7b98541) recorded "$0.08/sec, no resolution
+tiers" — a WebFetch summarizer had flattened a tiered table to its first
+cell, and that tool answer was graded SOURCED. The org's own OBSERVED
+row (A6, ~$2/video blended) contradicted the implied reprice and was
+ratio-projected around instead of triggering a re-read. The chief's
+verifier caught it at 14:47Z (refusal verdict:
+`gtm/org/reviews/2026-09-02-model-v1-chief-refusal.md`). There was NO
+reprice. This is the org's first observed READ ERROR — logged as such,
+not as vendor volatility.
+
+## Video generation — grok-imagine-video-1.5 (the model the product
+pins: `xai-video.ts` L12; the product hardcodes 720p, L81)
+
+Page-embedded pricing data, parsed from the fetched HTML (units 1e-10
+USD, converted):
+- 480p: **$0.08/sec**
+- **720p: $0.14/sec** ← the tier the product pays; UNCHANGED since the
+  31 Aug read and identical to the product's code comment (L77)
+- 1080p: $0.25/sec — NOT reachable by the product (`resolution` type is
+  `'720p' | '480p'`)
+- **Input image: $0.01 each** (image→video is a live product path —
+  `imageUrl` is passed; this charge was previously in no row)
+
+Rendered-text confirmation: "$0.14 / sec" present in page HTML for the
+720p cell (grep verbatim).
+
+grok-imagine-video (older model): 480p $0.05 / 720p $0.07 per sec.
+
+## Image generation (embedded data, per-image)
+
+- grok-imagine-image: $0.02 (base)
+- grok-imagine-image-quality: $0.05 (1K) / $0.07 (2K)
+- grok-imagine-image-2.0: $0.04 (1K low) / $0.06 (2K low, 1K medium) /
+  $0.08 (2K medium)
+- **FINDING (new this read): `grok-2-image` — the image model the
+  product's `xai-image.ts` L13 pins as DEFAULT — appears NOWHERE on the
+  pricing page (0 occurrences in 472KB).** Auto-discovery may resolve to
+  a grok-imagine-image model in practice; which image SKU production
+  actually bills is UNKNOWN → folded into Phin's invoice-reconciliation
+  action.
 
 ## Speech to Text
-- "$0.10 / hr (REST), $0.20 / hr (Streaming)"
 
-## DISCREPANCY vs the 31 Aug read (material — R5 in miniature)
+$0.10/hr (REST), $0.20/hr (streaming) — unchanged from v1's record.
 
-The 31 Aug read (chief, inbox FYI; also preserved in the product's own
-code comment, `xai-video.ts` L77: "xAI bills $0.14/sec at 720p") priced
-grok-imagine-video-1.5 at **$0.14/sec at 720p**. Today's page shows
-**$0.08/sec with no resolution tiering**. Either the vendor repriced
-(−43%) or resolution-tiered pricing was removed/changed. Favorable this
-time — and exactly the single-vendor volatility R5 warns about, now
-with its first observed instance.
+## Doctrine (adopted 2 Sep, chief's refusal)
 
-**Open hedge (gate-required): the product HARDCODES the 720p tier in
-its generation requests** (`xai-video.ts` ~L79: `resolution:
-options.resolution || '720p'`) — the exact tier priced $0.14 on 31 Aug.
-If resolution tiering persists at the BILLING layer despite vanishing
-from the marketing page, the effective price for what the product
-actually sends may still be $0.14, making the "adverse scenario" the
-current one. CLOSING ACTION (for Phin): reconcile ONE metered
-production generation against the actual xAI bill — which would also
-upgrade A4 toward OBSERVED. A4/A5/A9 amended this shift with the
-old values struck through, dated; the sensitivity table uses $0.14 as
-its adverse scenario (it is now literally 1.75× today's price, i.e. a
-reversion).
+A snapshot records the page's rendered text (or HTML + hash), never a
+summarizer's answer. Any SOURCED change that contradicts an OBSERVED row
+triggers a re-read before any amendment.

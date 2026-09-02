@@ -1,5 +1,7 @@
 # Gate verdict — positioning-truth-map v1 — competitor's salesperson
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 2 (2026-08-31). Independent reviewer agent, spawned at
 gate time. Verdict below is the reviewer's (condensed only where tabular;
 all findings preserved). Boss disposition at the end.

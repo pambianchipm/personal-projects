@@ -1,5 +1,7 @@
 # Gate verdict — accelerators tracker — hostile investor (2 rounds)
 
+CONFIDENTIAL — internal-audit class (law 8).
+
 FILED BY: boss, shift 2 (2026-08-31). Independent reviewer agent, spawned
 at gate time; same reviewer re-verified round 2. Condensed faithfully from
 both verdicts; full audit tables in the shift transcript.

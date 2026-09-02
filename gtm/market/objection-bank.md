@@ -198,12 +198,14 @@ front door at $0; extending honesty-into-guarantee is his decision, not
 an org promise.
 
 ### O11 — churn / CAC / vendor COGS (investor cluster)
-**Internal:** the scenario/sensitivity half SHIPPED (2 Sep,
+**Internal:** the scenario/sensitivity half SHIPPED and was REBUILT at
+the real vendor price after a chief-refused read error (2 Sep,
 `gtm/raise/model/model-v1.md` — A16 churn scenarios, LTV/CAC-ceiling
-tables, funnel algebra with its three measurables named, the
-three-threshold A4 sensitivity). The VALUES (Player 2's actual churn,
-CAC, LTV) remain unknown-until-cohort by design — the model prices the
-questions the first real cohort answers. The tripwire question (open with Phin) closes
+tables, funnel algebra with its three measurables named, A4 sensitivity
+with video-only death at 2.43×). The honest headline got HARSHER at the
+real price: the entry tier runs 42–64% generation drag and is
+mix-dependent; the full OS carries the economics. The VALUES (Player
+2's actual churn, CAC, LTV) remain unknown-until-cohort by design. The tripwire question (open with Phin) closes
 A9's unbounded top. → R11 rows.
 
 ### O12 — moat
