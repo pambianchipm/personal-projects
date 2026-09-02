@@ -25,12 +25,13 @@ may state.
 | A6 | Blended real cost per video | ~$2 | OBSERVED — Phin's own spend, ~$10 for 5 videos (n=5, approximate; corroborates A4–A5) |
 | A7 | Image generation unit cost | $0.02–0.07 each | SOURCED — same xAI pricing page as A4 |
 | A8 | Entry-tier allowance | 4 videos/week + uncapped images | RULED — Phin, 31 Aug 2026 |
-| A9 | Entry-tier est. generation cost / gross-margin drag | ~$24–35/mo ≈ 41–59% of A1 revenue | DERIVED — A8 × A5/A6 + image usage per A7 (chief's derivation, inbox FYI 31 Aug; ranges carried, not point-estimated) |
+| A9 | Entry-tier est. generation cost / gross-margin drag | ~$24–35/mo ≈ 41–59% of A1 revenue — a VIDEO-ONLY-PLUS-ASSUMED-BENIGN-IMAGES band, NOT a ceiling: entry images are uncapped (A8) and A10's fair-use tripwire is a full-OS ruling, not an entry-tier one, so the upper end is unbounded in the adversarial case. Entry-tier tripwire = undecided, flagged to Phin | DERIVED — A8 × A5/A6 + assumed image usage per A7 (chief's derivation, inbox FYI 31 Aug; ranges carried, not point-estimated; gate-corrected 2 Sep) |
 | A10 | Full-OS allowance | unlimited, internal fair-use tripwire | RULED — Phin, 31 Aug 2026 |
 | A11 | SMB paid-social services band | $500–2,000/mo dominant among SMBs that pay at all | SOURCED (VERIFIED grade in origin doc, with its own sampling caveat) — Clutch 2025 via `clinkworthy/docs/research-smm-landscape.md` |
 | A12 | Freelancer entry packages | roughly $300–1,500/mo | DIRECTIONAL — landscape report; the report itself also cites "$300–500" elsewhere; treat as a range, never load-bearing alone |
 | A13 | Accelerator terms (ERA / Techstars NYC) | $150k post-money SAFE for 6% / $220k ($200k uncapped MFN SAFE + $20k convertible, 5% common) | SOURCED — `gtm/raise/accelerators.md` is the source of truth (primary pages read 31 Aug); quote it, don't restate elsewhere |
 | A14 | Owner burnout / time poverty stats | 88% of TikTok-active owners report posting burnout (Adobe Express n=433, vendor survey — treat as ceiling); 42% of SMBs have <1 hr/day for ALL marketing (Constant Contact 2025) | SOURCED — landscape report, its own editor's grades carried |
+| A15 | SMM tool band (Holo-class) | ~$12–48/mo | DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced; the teardown's own flag carried: SPOT-CHECK before any external use; never load-bearing alone |
 
 ## Not yet in this table (and therefore claimable nowhere)
 
@@ -42,6 +43,15 @@ may state.
   on the attribution-scope read (truth-map §3-bis).
 - Caption-transcription unit cost (A5's exclusion) — price when video COGS
   matters to a decision.
+
+## Pending decisions and snapshot debt
+
+- **Entry-tier fair-use tripwire: UNDECIDED** — A10's ruling covers the
+  full OS only; A9's band is honest only while entry image usage stays
+  benign. Decision flagged to Phin (inbox, 2 Sep).
+- **Vendor-price snapshot debt (gate note):** A4/A7's only receipt is a
+  read-date; snapshot docs.x.ai/developers/pricing to a dated file on the
+  next natural web touch — vendor pages change silently.
 
 ## Change discipline
 

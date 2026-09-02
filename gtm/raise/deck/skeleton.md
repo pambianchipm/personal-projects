@@ -55,9 +55,14 @@ through the owner's click or standing Auto-post approval ("the conductor
 can never flip auto_post"), READS results per-post into the next batch,
 and REPORTS honestly — a nightly claims engine with statistical floors
 that persists what it REFUSED to claim, with reasons. Safety model in
-one line: nothing posts or spends without the owner's click. Demoed
-end-to-end on a real product (Dad's walkthrough, 24 Aug). Diagram: the
-loop, with the owner's click drawn as the only gate to the outside world.
+one line: nothing posts or spends without the owner's click. Two
+receipts, precisely scoped (gate-corrected): the system RUNS DAILY IN
+PRODUCTION on the founder's own product, Clinkworthy — that ops record
+is the end-to-end receipt; and it was externally walked through on 24
+Aug, where it "did all the marketing analytics, and came up with the top
+5 segments and use cases" (Dad's notes — a planning/analytics receipt,
+not an end-to-end one). Diagram: the loop, with the owner's click drawn
+as the only gate to the outside world.
 
 ## Slide 4 — How big the market is · STUB (deliberately)
 
@@ -78,10 +83,10 @@ Player 2 redirects. Structure on file (positioning.md §7): inaction (the
 real #1) → DIY (Canva + ChatGPT + a nephew) → tool band ($12–48/mo asset
 factories) → freelancer band (A12, directional) → agency band (A11).
 Player 2's seat: does the WORK of the service bands at software cost —
-A2 $299 vs A11 $500–2,000. **Receipt requirements:** the band prices are
-graded (A11 VERIFIED w/ caveat, A12 DIRECTIONAL — say so on the slide);
-Holo teardown prices need a spot-check before external use (its own
-caveat). `UNTESTED`: the framing.
+A2 $299 vs A11 $500–2,000; tool band A15 ~$12–48/mo (DIRECTIONAL,
+spot-check flag carried — the slide says so, like A12). **Receipt
+requirements:** every band price graded on-slide (A11 VERIFIED w/
+caveat, A12 + A15 DIRECTIONAL). `UNTESTED`: the framing.
 
 ## Slide 6 — Why we're better · HONEST STUB
 
@@ -98,6 +103,12 @@ hardest shape to counter.
 
 ## Slide 7 — Development timeline · DRAFTED
 
+**Provenance, on-slide (gate-required, and the stronger pitch):** the
+build record below is the output of an AI build organization — agent
+sessions shipping through gated adversarial review — designed, operated,
+and merged by the founder, running on his own product (Clinkworthy) in
+production. The velocity number and its provenance travel together.
+
 All dates are repository receipts, not recollection:
 - **Aug 19** — operator MCP connector session doc (the console's second
   door) — `docs/player2-session-2026-08-19.md`.
@@ -106,8 +117,9 @@ All dates are repository receipts, not recollection:
   day; Dad's external walkthrough — the system ran end-to-end on a real
   product (`docs/productization-v1.md`; `source-dad-notes-2026-08-24.md`).
 - **Aug 25** — the build org bootstraps (dated ops-log first entry);
-  same day: the statistics engine lands (pure stats: XmR, Wheeler rules,
-  Mann–Whitney + FDR; 40 unit tests, PR #8).
+  same day: the statistics engine ships to branch (pure stats: XmR,
+  Wheeler rules, Mann–Whitney + FDR; 40 unit tests; PR #8 OPEN that day
+  — verify the merge date before print).
 - **Aug 25 → Sep 1, eight days** — 103 logged build shifts; 55 gated
   adversarial review verdicts filed in `docs/reviews/` (21 on Aug 28
   alone); merged-PR record reaches PR #61 (`docs/org/ops-log.md`,
@@ -115,10 +127,11 @@ All dates are repository receipts, not recollection:
 - **Sep 1** — $59 entry tier LIVE on the landing (PR #56, A1); weekly-
   ritual build (11a) approved to start alongside a console redesign.
 **The slide's real claim:** velocity WITH a review gate — the org ships
-through adversarial verdicts, not around them. That is itself diligence
-material: the record is public-to-investors on request.
-`UNVERIFIED-COUNT note: "103 shifts" and "55 verdicts" are file counts
-from the repo at head 871454c — recount before print.`
+through adversarial verdicts, not around them, and the whole record is
+open to diligence on request.
+`COUNT note: 103 shifts / 55 verdicts / 21-on-Aug-28 recounted PASS at
+head 871454c by the hostile-investor gate (2 Sep). The repo moves —
+recount before print regardless.`
 
 ## Slide 8 — Financial projections & ROI/exit · STUB
 
@@ -141,7 +154,9 @@ Phases 1–5 live (accounts, OAuth, billing, client suite, landing), (2)
 first cohort of paying non-founder clients on A1/A2 pricing, (3) the
 attribution read → results-in-owner-terms claimable, (4) ERA/Techstars
 outcomes (A13: $150k/$220k checks are the sourced anchors for what
-institutional first money looks like at this stage). **The question, put
+institutional first money looks like at this stage; when drafted, carry
+accelerators.md's caveat — the Techstars $200k SAFE is uncapped, so true
+dilution exceeds the stated 5%). **The question, put
 directly: Phin — how much, against which of those milestones, and what
 runway?** Recommendation shape (strategist judgment, no receipt, labeled
 as such): an accelerator-check-to-small-pre-seed range anchored between
@@ -155,7 +170,8 @@ with his answer, not before.
 built, and operates the entire system — product, infrastructure, and the
 AI build organization that ships it through gated adversarial review
 (the Aug 19 → Sep 1 record on slide 7 is his). Runs the operator console
-in production on a real product today. **Advisor (informal): Michael
+in production today on his own product, Clinkworthy — dogfooding stated
+plainly, not discovered in Q&A. **Advisor (informal): Michael
 Pambianchi** — the deck's own 11-slide structure and founding GTM notes
 are his (source doc on file). **Named relationship (not an advisor
 claim): Jess Gunter** (Spruce Ridge Strategy) — the org's positioning
@@ -174,7 +190,13 @@ still in review; IG/TikTok signals secondhand until API access
 (pulse.ts's own admission). (3) No demand validation — zero interviews,
 zero customers; mitigations are the concept-card pipeline and the free
 scan (positioning.md §8.1). (4) Unit economics at entry tier — A9's
-41–59% drag; mitigation is tier mix + fair-use tripwire (A10). (5) Solo
+video-only band is NOT a ceiling (entry images uncapped; A10's tripwire
+is full-OS only); honest mitigation today is TIER MIX ONLY — an
+entry-tier tripwire is undecided, question to Phin in the inbox.
+(4b) Single-vendor generation COGS — the entire COGS floor (A4, A5, A7,
+A9) rests on one vendor's published price, read once 31 Aug; a repricing
+moves the entry margin band directly, and platform-dependence (risk 2)
+does not cover the model vendor. (5) Solo
 founder — mitigation is the demonstrated build-org leverage (slide 7)
 and hiring plan (Dad's "who he will need to hire, when" — unanswered).
 (6) Competitive response — incumbents can copy features; the argued moat
