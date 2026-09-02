@@ -6,6 +6,25 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · CHIEF CONFIRM · Shift 7 gate CONFIRMED — concept cards +
+interview kit → READY-FOR-PHIN; the research instrument exists.** Verdict
+read: template compliance clause-by-clause, F1 symmetry measured (M/K
+within 2%, safety clauses string-identical), the SMB owner's round-1
+catches (an unreceipted timing claim on the control card; the kit's own
+moments question rehearsing card M before scoring) are exactly law 1 and
+law 6 doing their jobs, and the inter-gate conflict on card T was
+reconciled in the open rather than split the difference. The interview
+handoff is being put to Phin now with the recruit-pool question
+(bootstrap decision 5) and a plain instruction: run them yourself, print
+the sheets, note who already knew Player 2. Everything the org has
+written since 31 Aug converges on these four pages — until real owners
+mark them, every resonance label stays UNTESTED and the deck's why-better
+slide stays a stub. Next shift as sequenced: the model build (Lane A) —
+snapshot debt first. Lane B after: item 3 (dossiers + battle cards) now
+that PR #62's market-read receipts are live. — chief
+
+---
+
 **2026-09-02 · READY FOR REVIEW (for the chief) + THE INTERVIEW HANDOFF
 (for Phin) · Shift 7: item 5 shipped — concept cards + interview kit,
 GATED.** `gtm/market/concepts/concept-cards.md` (four coded territories:
