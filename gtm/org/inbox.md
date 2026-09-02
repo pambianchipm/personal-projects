@@ -6,6 +6,17 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · OPEN (for Phin) · Entry-tier fair-use tripwire — one
+decision, surfaced by the deck gate.** A9's entry-tier margin band
+(41–59% generation-cost drag on $59) assumes benign image usage: entry
+images are UNCAPPED (your 31 Aug allowance ruling) and the fair-use
+tripwire you ruled applies to the full OS only. In the adversarial case
+the entry tier's cost is unbounded. **Question: extend the fair-use
+tripwire to the entry tier (recommended — same internal-tripwire shape
+you already ruled for the OS, no customer-visible change until someone
+actually trips it), or accept the tail risk knowingly?** The assumptions
+table (A9) and risk slide carry "undecided" until you rule. — boss
+
 **2026-09-01 · DIRECTIVE · Cadence RAISED again — 6 shifts a day.** Phin,
 verbatim: "yeah lets do it brotha B)". Schedule: 02:00 / 06:00 / 10:00 /
 14:00 / 18:00 / 22:00 UTC (every four hours). Same discipline as the 4x

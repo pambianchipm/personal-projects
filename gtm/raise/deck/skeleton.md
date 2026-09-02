@@ -56,9 +56,12 @@ can never flip auto_post"), READS results per-post into the next batch,
 and REPORTS honestly — a nightly claims engine with statistical floors
 that persists what it REFUSED to claim, with reasons. Safety model in
 one line: nothing posts or spends without the owner's click. Two
-receipts, precisely scoped (gate-corrected): the system RUNS DAILY IN
-PRODUCTION on the founder's own product, Clinkworthy — that ops record
-is the end-to-end receipt; and it was externally walked through on 24
+receipts, precisely scoped (gate-corrected): the system RUNS IN
+PRODUCTION on the founder's own product, Clinkworthy — named record: the
+hourly production cron (`console/vercel.json` → `/api/metrics/refresh`)
+driving the nightly stages (claims engine, Pulse, optimizers) and the
+immutable monthly snapshots (`claims.ts`) — that is the end-to-end
+receipt; and it was externally walked through on 24
 Aug, where it "did all the marketing analytics, and came up with the top
 5 segments and use cases" (Dad's notes — a planning/analytics receipt,
 not an end-to-end one). Diagram: the loop, with the owner's click drawn
@@ -80,7 +83,7 @@ appears on this slide until then.
 
 **Must prove:** who gets paid for SMB marketing today and which dollars
 Player 2 redirects. Structure on file (positioning.md §7): inaction (the
-real #1) → DIY (Canva + ChatGPT + a nephew) → tool band ($12–48/mo asset
+real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (A15, ~$12–48/mo asset
 factories) → freelancer band (A12, directional) → agency band (A11).
 Player 2's seat: does the WORK of the service bands at software cost —
 A2 $299 vs A11 $500–2,000; tool band A15 ~$12–48/mo (DIRECTIONAL,
@@ -114,8 +117,11 @@ All dates are repository receipts, not recollection:
   door) — `docs/player2-session-2026-08-19.md`.
 - **Aug 24** — productization v1.0 plan (accounts→OAuth→billing→two-
   persona console→landing, five phases); extend-video tool shipped same
-  day; Dad's external walkthrough — the system ran end-to-end on a real
-  product (`docs/productization-v1.md`; `source-dad-notes-2026-08-24.md`).
+  day; Dad's external walkthrough — a planning/analytics receipt (his
+  words: "did all the marketing analytics… top 5 segments and use
+  cases"), same scoping as slide 3; the end-to-end anchor is the
+  production record, not this walkthrough (`docs/productization-v1.md`;
+  `source-dad-notes-2026-08-24.md`).
 - **Aug 25** — the build org bootstraps (dated ops-log first entry);
   same day: the statistics engine ships to branch (pure stats: XmR,
   Wheeler rules, Mann–Whitney + FDR; 40 unit tests; PR #8 OPEN that day
