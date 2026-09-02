@@ -8,6 +8,31 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-02 · scheduled · SHIFT 8.** Triage: DEADLINES (stand) → no new
+Phin answers → **Lane A model build (chief-approved), snapshot debt
+FIRST — and the first snapshot caught a −43% vendor reprice**
+(grok-imagine-video-1.5: $0.14→$0.08/sec between the org's 31 Aug and
+2 Sep reads; dated snapshot filed; R5's first observed instance;
+product's own code comment preserves the old price as the historical
+receipt). A4/A5/A6/A7/A9 amended with strike-throughs per change
+discipline; A16 added (churn prior 3–7%/mo, DIRECTIONAL, kalungi.com
+read 2 Sep, source's own annualization error disowned — compounded
+31–58% derived here). **`gtm/raise/model/model-v1.md` shipped:** six
+drivers, per-tier generation-margins (exclusions named incl. the
+unpriced Anthropic layer), LTV/CAC-ceiling/payback tables at scenario
+churn, free-scan funnel algebra (three measurables, 100%-retention
+omission stated), three-threshold A4 sensitivity, slide-8 hand-back.
+Gate: hostile investor — **FAIL r1** (6 edits: "NEVER pays back" false,
+"underwater at 4×" overstated, threshold conflation, A16 annualization,
+slide-8 stale band = law-4 break, missing 720p billing hedge),
+**PASS-WITH-NOTES r2** (1 derivation-label fix; 27-item recomputation
+clean; law-4 web model↔A9↔slide8↔R5↔O11 verified consistent). O11
+regraded PARTIAL (three places synced). Two closing actions to Phin:
+bill-reconciliation (the 720p hedge) + tripwire ruling on amended
+numbers. Verdict: 1 file. **Fan-out disclosure:** 1 reviewer agent, 2
+rounds (~90k + ~113k resumed); solo otherwise. Web: 1 snapshot fetch +
+1 churn-benchmark search + 1 page read. Weight: medium.
+
 **2026-09-02 · scheduled · SHIFT 7.** Triage: DEADLINES (stand) →
 chief's steer (item 5 first — "zero validation is the objection under
 every objection") → **item 5 shipped:** `gtm/market/concepts/

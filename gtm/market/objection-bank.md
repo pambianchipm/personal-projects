@@ -198,11 +198,12 @@ front door at $0; extending honesty-into-guarantee is his decision, not
 an org promise.
 
 ### O11 — churn / CAC / vendor COGS (investor cluster)
-**Internal:** all three are model work, not rhetoric: sourced SMB-churn
-priors, free-scan funnel math with PROJECTED-graded assumptions,
-break-even sensitivity on A4 repricing (what price move breaks $59).
-Queued as the model's first real build (Lane A next work item,
-recommendation to chief). The tripwire question (open with Phin) closes
+**Internal:** the scenario/sensitivity half SHIPPED (2 Sep,
+`gtm/raise/model/model-v1.md` — A16 churn scenarios, LTV/CAC-ceiling
+tables, funnel algebra with its three measurables named, the
+three-threshold A4 sensitivity). The VALUES (Player 2's actual churn,
+CAC, LTV) remain unknown-until-cohort by design — the model prices the
+questions the first real cohort answers. The tripwire question (open with Phin) closes
 A9's unbounded top. → R11 rows.
 
 ### O12 — moat
@@ -300,7 +301,8 @@ sensitivity). Slide 11 now cites the register.
 1. Objections are AI-persona-generated (law 1): they PREDICT attacks,
    they do not prove which ones real buyers/reporters/investors will
    make, nor their frequency. Real interviews recalibrate this bank.
-2. NONE-YET grades (O1, O2, O4-portability, O5, O11, O16) are floors,
-   not failures — the bank's job is to stop anyone bluffing them.
+2. NONE-YET grades (O1, O2, O4-portability, O5, O16; O11 upgraded to
+   PARTIAL 2 Sep when the scenario model shipped) are floors, not
+   failures — the bank's job is to stop anyone bluffing them.
 3. Press-facing drafts are for Phin's judgment and mouth; law 3 stands —
    nothing here is an external answer until he speaks it.

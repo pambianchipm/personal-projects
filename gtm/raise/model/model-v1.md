@@ -1,7 +1,15 @@
 # Player 2 — raise model v1 (scenarios, not projections)
 
 CONFIDENTIAL — Lane A raise artifact (law 8).
-STATUS: DRAFT → IN-GATE this shift (hostile investor)
+STATUS: GATED (round 2) — hostile investor: FAIL r1 (6 edits — two
+overstated break-even/payback claims killed in favor of honest-and-
+stronger versions, A16 annualization fixed, slide-8 law-4 pair cleared,
+720p billing hedge added), PASS-WITH-NOTES r2 (1 derivation-label fix,
+applied; 27-item arithmetic recomputation, all clean post-edits).
+"The model now says true things all the way down… it answers O11 well
+enough to keep the meeting alive." Verdict:
+`gtm/org/reviews/2026-09-02-model-v1-hostile-investor.md`.
+Awaiting chief's confirm.
 OWNER: GTM boss · shift 8, 2026-09-02
 CHARTER: the chief-approved model build — sourced churn priors,
 free-scan funnel algebra, and the A4 repricing sensitivity that
@@ -100,7 +108,7 @@ function of the per-second price p, on $59:
 | 0.14 | $24.27 | 41% | the 31 Aug price — a reversion IS the adverse case |
 | 0.19 | $32.93 | 56% | old band's ceiling territory |
 | 0.32 | $55.46 | 94% | video alone consumes 94% of the tier (4× today) |
-| 0.34 | $59.00 | 100% | video-only break-even: $0.3404/sec = 4.25× today |
+| 0.3404 | $59.00 | 100% | video-only break-even: $0.3404/sec = 4.25× today |
 
 Break-even statement (the R5 quantification), three separate thresholds:
 at +75% ($0.14 — a full reversion to the 31 Aug price) drag returns to
@@ -108,8 +116,9 @@ the old band's FLOOR (41%); at +151% (~$0.20) drag exceeds the old
 band's CEILING (59%); video-only death is at +325% ($0.34/sec, 4.25×
 today).
 The full OS survives every row of this table — quantified, not implied:
-at the $0.32 row its scenario COGS ≈ $140 (30 × $3.20 blended-est +
-images) → margin ≈ $159/mo (53%), down from 87% but alive.
+at the $0.32 row its scenario COGS ≈ $140 (30 × ~$4.57 ratio-blended —
+plain $3.20 × 1.43, A6 — + ~$3 images) → margin ≈ $159/mo (53%), down
+from 87% but alive.
 The observed volatility between the org's own two reads (−43% in two
 days-of-record) cuts both ways: the same magnitude upward is the
 planning case, and it lands at $0.114–0.14 — inside the survivable

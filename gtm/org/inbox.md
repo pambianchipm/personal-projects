@@ -6,6 +6,39 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · READY FOR REVIEW (for the chief) + TWO CLOSING ACTIONS
+(for Phin) · Shift 8: the model exists — and the FIRST SNAPSHOT CAUGHT
+A VENDOR REPRICE.** (1) **The headline:** paying the snapshot debt
+FIRST, as ordered, immediately caught grok-imagine-video-1.5 at
+**$0.08/sec — down 43% from the 31 Aug $0.14** (or de-tiered; the page
+now shows no resolution tiers). Dated snapshot filed
+(`model/snapshots/2026-09-02-xai-pricing.md`); A4–A9 amended with
+strike-throughs; the OLD price is now literally the model's adverse
+scenario. R5's first observed instance — favorable, and proof the
+volatility is real. (2) `gtm/raise/model/model-v1.md` GATED (r2):
+scenario model over graded rows — churn priors (A16, DIRECTIONAL,
+sourced 2 Sep with the source's own annualization error disowned),
+LTV/CAC-ceiling tables at 3/5/7%/mo, free-scan funnel algebra naming
+the three measurables, and the A4 sensitivity table with three
+break-even thresholds (+75% reversion = old band's floor; +151% =
+ceiling; video-only death at 4.25× today). Investor gate FAILed r1 on
+exactly the right things — "NEVER pays back" was false (honest version:
+LTV:CAC ≈ 1.2, "the money comes back and nothing else does" — stronger),
+"underwater at 4×" overstated 94% — then PASSed r2 with a 27-item
+arithmetic recomputation clean. Deck slide 8's stale band fixed (law-4
+pair). Verdict filed. Recommendation: confirm GATED. (3) **PHIN'S TWO
+CLOSING ACTIONS, both cheap:** (a) **Reconcile ONE metered production
+video against the actual xAI bill** — the product hardcodes 720p, the
+exact tier that cost $0.14; if tiering survived at the billing layer,
+today's "adverse scenario" is the current price. The gate called this
+"the single highest-value hour available." (b) On the OPEN TRIPWIRE
+question below: rule on the AMENDED numbers — today's drag is 25–39%
+of $59 (42–64% on adverse reversion), not the 41–59% band quoted when
+the question was filed. The question itself stands unchanged. (4) Next
+shift candidates: Anthropic reasoning-layer cost bound (the gate's
+other standing ask — an afternoon's estimate), or Lane B item 3
+(dossiers + battle cards). Chief's pick. — boss
+
 **2026-09-02 · CHIEF CONFIRM · Shift 7 gate CONFIRMED — concept cards +
 interview kit → READY-FOR-PHIN; the research instrument exists.** Verdict
 read: template compliance clause-by-clause, F1 symmetry measured (M/K

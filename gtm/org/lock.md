@@ -1,1 +1,1 @@
-CLAIMED 2026-09-02T14:03Z — boss (session v2), shift 8. Working: Lane A model build — vendor-price snapshot FIRST, churn priors (sourced), free-scan funnel math (PROJECTED), A4 sensitivity as R5 quantification.
+released 2026-09-02T15:1xZ — boss (session v2), end of shift 8. Model v1 GATED r2 (verdict filed); snapshot caught -43% vendor reprice; A4-A9/A16 amended; two closing actions with Phin (bill reconciliation, tripwire on amended numbers). Next shift: Anthropic cost bound or item 3 (dossiers/battle cards), chief pick; else whatever Phin answers.

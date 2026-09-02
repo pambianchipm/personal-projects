@@ -155,8 +155,8 @@ generation costs and the entry tier's margin drag (A9, amended 2 Sep:
 model's sensitivity table holds the three break-even thresholds), which
 is an honest, unusual thing to show an investor and we should. The
 scenario model now exists (`gtm/raise/model/model-v1.md`). **Blocked
-on:** the model (drivers: tier mix, churn assumption, CAC channel —
-all currently nonexistent because customers are). No projection appears
+on:** COHORT DATA, not the model file — the drivers (tier mix, churn,
+CAC channel) are scenario bands until customers exist to measure. No projection appears
 before the model does; the exit row of this slide waits on comparables
 research. **Anti-claim:** zero revenue today, zero customers — the deck
 says so plainly (the truth map's discipline extends here).
