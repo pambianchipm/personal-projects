@@ -38,7 +38,11 @@ first real-owner test of that idea.
   to the feature table's "Posting that never fails silently" row (the
   flag reaches the operator today; "so I'd get told?" gets the honest
   line, not a yes); the feature list's items marked (coming) are
-  approved builds, not shipped. The honest line:
+  approved builds, not shipped; and CARD T's brochure claims ("right
+  times," "saving you hours," "never miss a posting day") are
+  tool-typical research stimuli, not receipted Player 2 capabilities —
+  if asked "does Loma really do that?", the honest line applies there
+  too. The honest line:
   "that part's coming — here's what works today." NEVER affirm an
   unshipped capability as present; the cards are research stimuli, not
   promises, and you may say exactly that.
@@ -65,14 +69,19 @@ Get them talking about THEIR world before any stimulus:
    handled. What's different for you?" → capture whether their answer
    is time/relief-shaped ("my Sunday back") or growth-shaped ("more
    people in"). Their words, verbatim. Never say either option first.
-5. The moments question (truth-map §9): "I'll describe a few moments —
-   tell me which, if any, would make this feel like STAFF rather than
-   SOFTWARE: (a) Monday morning an email arrives — your week's
-   marketing, planned; you tap once to approve. (b) It texts you:
-   'anything I should know about the holiday weekend? Send a photo if
-   you have one.' (c) A monthly report that says plainly 'this worked,
-   this didn't.' (d) You message it 'we're closed Monday' and it fixes
-   the week itself." → rank/reactions verbatim.
+5. The moments question (truth-map §9; F1-REBALANCED at the gate so the
+   list rehearses M-flavored and K-flavored content equally — a/c echo
+   card M's material, e/f echo card K's, b/d are neutral): "I'll
+   describe a few moments — tell me which, if any, would make this feel
+   like STAFF rather than SOFTWARE: (a) Monday morning an email arrives
+   — your week's marketing, planned; you tap once to approve. (b) It
+   texts you: 'anything I should know about the holiday weekend? Send a
+   photo if you have one.' (c) A monthly report that says plainly 'this
+   worked, this didn't.' (d) You message it 'we're closed Monday' and it
+   fixes the week itself. (e) It shows you a kind of post that's been
+   working for shops like yours — already drafted for you. (f) It
+   quietly stops running the kind of post that hasn't been working."
+   → rank/reactions verbatim.
 
 ## 2. Concept review (≈15 min)
 
@@ -86,7 +95,8 @@ introduced with enthusiasm. Schedule across interviews:
 | 2 | K · R · M · T |
 | 3 | T · M · R · K |
 | 4 | R · K · T · M |
-| 5+ | repeat cycle |
+| 5 | K · R · M · T (K-led — keeps M/K lead-counts balanced at odd n; gate-ordered) |
+| 6+ | repeat cycle from order 1 |
 
 Per card (deck p20, verbatim ritual): read the card ALOUD, hand it
 over, then: "Write the main idea in your own words at the top. Circle
@@ -117,9 +127,11 @@ in their words.
 
 ## 3. Feature-list review (≈8 min) — deck p20 format
 
-Hand them this table: "Score each 1–5 on how much it MATTERS to you,
-and 1–5 on whether it feels DIFFERENT from what's out there. Then pick
-your top three."
+Share in TWO BATCHES (deck p20: "batches of 3–5" — gate-corrected):
+batch 1 = the first five rows, score and discuss; then batch 2 = the
+last four. "Score each 1–5 on how much it MATTERS to you, and 1–5 on
+whether it feels DIFFERENT from what's out there." After both batches:
+pick the top three across all nine.
 
 | Feature | What it means | Matters 1–5 | Different 1–5 |
 |---|---|---|---|
@@ -152,7 +164,14 @@ Top three: ______ ______ ______ — "why those?"
 ## 5. What happens with the results
 
 Scores aggregate by code letter across interviews (deck p10 — that's
-what the letters are for). The org's merge/narrowing (M-list → final
+what the letters are for). **Hit-feature discipline for the M-vs-K
+read (deck p15, gate-ordered):** use the circle marks to attribute each
+card's score to its MAIN IDEA vs a hit feature — watch especially
+"won't pretend"/"no pretending" and the canon hero line on M, and
+"watches your market" on K; a card winning on a circled feature is not
+its motivator winning. **Contamination rule:** if you catch yourself
+explaining or rescuing a card mid-interview, mark that card's score
+CONTAMINATED on the capture sheet and exclude it from aggregation. The org's merge/narrowing (M-list → final
 3–5 KSPs), the frame A/B decision's first real evidence, F1's
 arbitration, and benefit-wording rewrites all consume these sheets.
 File them (or photos of them) to the chief; the boss folds them in

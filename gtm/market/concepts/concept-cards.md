@@ -43,16 +43,16 @@ version of that sentence owners actually buy.
 
 > M
 >
-> Running the shop was the job you wanted. Somehow, being the marketing
-> department — nights, Sundays, whenever you remember — came with it.
+> Running the shop was the job you wanted. Being the marketing
+> department — nights, Sundays, whenever — came with it.
 >
 > **Loma is a marketing employee you subscribe to.** It plans your week
 > of marketing from one goal, writes the posts, the replies, and the
 > videos in your shop's voice, and publishes them on schedule — so the
 > marketing runs while you run the shop. Nothing goes out without your
-> OK: approve each post, or approve the pattern once and let it run.
-> And it reports like someone you'd keep: it tells you what actually
-> worked, and won't pretend when nothing did.
+> OK — approve each post, or approve the pattern once. And it reports
+> like someone you'd keep: what actually worked, and no pretending when
+> nothing did.
 >
 > **Loma — so you can put the phone down on Saturday.**
 >
@@ -62,16 +62,15 @@ version of that sentence owners actually buy.
 
 > K
 >
-> You know there's more business out there. The shops that keep showing
-> up online are the ones getting it — and keeping up is a job in itself.
+> You know there's more business out there. The shops that show up
+> online are getting it — and keeping up is a job in itself.
 >
 > **Loma is a marketing employee you subscribe to.** It watches what's
 > working in your kind of business and turns it into posts for your
 > shop, in your voice, published on schedule. Every post is its own
 > experiment — what works gets repeated, what flops gets cut, so the
-> marketing gets sharper every month it works for you. Nothing goes out
-> without your OK: approve each post, or approve the pattern once and
-> let it run.
+> marketing gets sharper every month. Nothing goes out without your
+> OK — approve each post, or approve the pattern once.
 >
 > **Loma — every week working to put your shop in front of more people.**
 >
@@ -99,8 +98,7 @@ version of that sentence owners actually buy.
 > R
 >
 > You've been burned before — the tool that posted something dumb under
-> your name, the marketing guy with the pretty charts and nothing to
-> show for them.
+> your name, the guy with the pretty charts and nothing to show.
 >
 > **Loma is marketing help you can actually trust with the keys.**
 > Nothing posts and nothing is spent without your OK — that's built in,
@@ -119,7 +117,9 @@ version of that sentence owners actually buy.
 
 - **M vs K** isolates the F1 motivator question: identical frame
   ("marketing employee you subscribe to"), identical verbatim safety
-  clause, symmetric length (111 vs 114 words, gate-counted); THREE
+  clause, symmetric length (~100 vs ~102 words after the gate-ordered
+  trim — the deck's own 113-word example drew "a teensy bit long");
+  THREE
   differences, named precisely (gate-corrected): the lead motivator,
   the endline (relief/"phone down" — the landscape report's synthesized
   line, finally tested as a message — vs growth, effort-framed), and
@@ -131,6 +131,13 @@ version of that sentence owners actually buy.
 - **T** is the folder control: same product, tool-band language,
   deliberately generic ("one platform") — if T scores level with M/K,
   frame B's premium story is in trouble and we want to know NOW.
+  **T's brochure claims are TOOL-TYPICAL STIMULI, not Player 2 claims
+  (both gates, reconciled):** "at the right times," "saving you hours,"
+  "never miss a posting day" are what a real $29 tool's best copy says
+  — deliberately, so a T loss is attributable to the frame, not to T
+  promising nothing. None is a receipted Player 2 capability; all three
+  are in the kit's roadmap ledger, and the honest line applies if an
+  interviewee asks whether Loma really does them.
 - **R** tests the fused trust cluster (M2+M3+M9's idea in one card) the
   competitor gate called "the shape I'd have the hardest time
   countering" — and its context line probes the burned-before wound
