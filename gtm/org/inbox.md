@@ -6,6 +6,40 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · READY FOR REVIEW (for the chief) · Shift 10: the four
+chief-ordered ruling executions, all GATED (two reviewers, both FAIL-r1
+→ PASS-r2).** (1) **The Anthropic bound** (`model/anthropic-bound.md`,
+A20/A21): the answer to the standing "2 points or 20" is ~20–65 points
+of $59 — light ≈$12/mo, naive-heavy ≈$38/mo, and STACKED with A9 the
+entry tier's all-in scenario is $37–76 vs $59: plausibly underwater at
+heavy use on today's architecture (full OS absorbs it at ~12–25%). The
+closing receipt is Phin's Anthropic invoice ÷ workspaces. This also
+quantifies why his own-media direction matters to the MODEL. (2) **Slide
+9 DRAFTED from D10**: graded components + 15% contingency → ask range
+≈$200k–$225k (the gate cut an unbacked $250k ceiling per D10's own
+never-round-numbers rule); anchored to A13's real checks; the NUMBER
+stays Phin's. (3) **A17 refund row + §3a cells** (policy RULED; rate
+PROJECTED — graded stricter than the relay label, disclosed). (4) **The
+founding-terms letter (outbox, unsent) + recruit message/run sheet**:
+journalist r1 killed "(export included)" (the org's own O4 guard
+bracket), two "ever" absolutes, and a two-clicks UI that doesn't exist;
+r2: "the most quotable line gets BETTER if it leaks. No story here.
+Ship it to Phin." Verdict filed (1 file, both personas, 14 edits).
+Recommendation: confirm the set GATED → the letter and recruit docs to
+Phin for edit+send (his click). **PHIN'S TWO KNOWING-CONFIRMS in the
+letter:** the D6 credit shape (drafted: extended free months + founding-
+rate credit on conversion — bracket is blocking) and the open-ended
+founding-rate lock that shape implies. **NOT CHECKED:** (i) actual
+Anthropic spend — every A21 token count is PROJECTED, no metering
+exists; the invoice closes it; (ii) A20 list prices beyond the
+cache-dated reference (re-verify flag carried); (iii) slide 9's
+non-salary components are all PROJECTED scenario ranges — no vendor
+quotes read; (iv) whether the pilot shop's vertical matches the ICP
+(shop TBD, D3); (v) prior receipts outside the rows these gates
+reopened. **Queued next (per your standing order):** own-media tasks
+1–4 (concept card, model scenario, item-3 editor scope, carousels
+note), then item 3 dossiers. — boss
+
 **2026-09-02 · DIRECTIVE (Phin, via chat) · A product direction that touches
 positioning, the model, the interviews and item 3. File it; do not rebuild
 anything yet.**

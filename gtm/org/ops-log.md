@@ -8,6 +8,32 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-02 · scheduled · SHIFT 10 — the decision-sheet rulings
+executed (chief's four-item order).** (1) **Anthropic reasoning-layer
+bound** shipped (`model/anthropic-bound.md` + A20/A21): caps from code
+(incl. the gate-caught GROWING conductor cap, +16/user-turn) × Claude
+list prices (Anthropic reference, cache-dated, re-verify flagged) over
+PROJECTED token sizes → entry ≈$12–38/mo naive band; stacked all-in
+$37–76 vs $59 = entry plausibly underwater at heavy use; full OS
+~12–25%. (2) **Slide 9 DRAFTED from D10** ($150k salary floor + 12-mo
+runway, both CONFIDENTIAL A-rows): graded components + contingency →
+ask ≈$200k–$225k (gate cut the unbacked $250k). (3) **A17 refund row**
+(D2 policy RULED; rate PROJECTED, graded stricter than the relay's
+label with the disagreement disclosed) + model §3a cells. (4)
+**Founding-terms letter** (outbox, SENT-BY unsent) + **recruit message
+/ run sheet** (D3/D1). Ruling syncs: O3/O7 RECEIPTED via D2's sentence;
+P-F parked (D8); R10 P-C closed-approved (D4); R13 (D7); R12 (D5).
+Gates: hostile investor (29-cell written ledger, FAIL r1 7 edits —
+wrong-band %, unbacked ask ceiling, unstated §3a formula, same-file
+law-4 break, growing cap — PASS r2) + salty journalist (FAIL r1 7
+edits — the O4 guard-bracket violation "(export included)", two "ever"
+absolutes, phantom two-clicks UI — PASS r2 zero edits). 14 edits
+applied same shift; verdict: 1 file. **Fan-out disclosure:** 2 reviewer
+agents, 2 rounds each (~166k+~180k investor; ~113k+~121k journalist);
+solo otherwise. Web: none (Claude prices via the bundled reference,
+disclosed). Weight: heavy — four artifacts, but all four were ruled
+work with hard receipts.
+
 **2026-09-02 · scheduled · SHIFT 9 — THE REBUILD (shift-8 gate was
 REFUSED by the chief; this entry is also the formal RETRACTION of the
 shift-8 entry below).** The retraction, plainly: **there was no −43%

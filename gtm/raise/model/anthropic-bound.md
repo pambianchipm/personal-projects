@@ -1,8 +1,9 @@
 # Anthropic reasoning-layer cost bound (the R5 second-vendor gap, priced)
 
 CONFIDENTIAL — Lane A raise artifact (law 8).
-STATUS: DRAFT → IN-GATE this shift (hostile investor, with slide 9 +
-the new A-rows)
+STATUS: GATED (r2) — hostile investor: FAIL r1 narrow (7 edits, 29-cell
+written ledger), PASS r2 confirmation. Verdict:
+`gtm/org/reviews/2026-09-02-shift10-both-gates.md`. Awaiting chief.
 OWNER: GTM boss · shift 10, 2026-09-02
 CHARTER: the chief-sequenced bound — "from the product's budget meter
 caps × list prices — an upper bound is enough." Answers the standing

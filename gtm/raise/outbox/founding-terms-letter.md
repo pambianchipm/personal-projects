@@ -3,7 +3,12 @@
 CONFIDENTIAL (law 8) — and law 3: this is a QUEUED DRAFT. It goes
 nowhere until Phin edits, addresses, and sends it himself.
 SENT-BY: — (unsent)
-STATUS: DRAFT → IN-GATE this shift (salty journalist — outward-facing)
+STATUS: GATED (r2) — salty journalist: FAIL r1 (7 edits incl. the O4
+guard-bracket violation), PASS r2 zero edits ("No story here. Ship it
+to Phin."). Verdict: `gtm/org/reviews/2026-09-02-shift10-both-gates.md`.
+READY FOR PHIN'S EDIT+SEND once the chief confirms; two knowing-confirm
+items for him: the D6 credit-shape bracket, and the open-ended
+founding-rate lock in the remedy sentence.
 OWNER: GTM boss · shift 10, 2026-09-02 · per D3 (pilot: YES, shop TBD)
 FACT DISCIPLINE: every commitment below maps to a ruled decision (D2
 refund, D4 export+wind-down, D6 remedy) or a shipped capability;

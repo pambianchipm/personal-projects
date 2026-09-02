@@ -1,7 +1,8 @@
 # Interview recruiting + the one-page run sheet (per D1: separate list)
 
-STATUS: DRAFT → IN-GATE this shift (salty journalist, with the
-founding-terms letter — both are words that reach real people)
+STATUS: GATED (r2, with the founding-terms letter — salty journalist).
+Verdict: `gtm/org/reviews/2026-09-02-shift10-both-gates.md`. Print-ready
+with the kit once the chief confirms.
 OWNER: GTM boss · shift 10, 2026-09-02
 LAW 3: Phin sends the message; the org drafts.
 
@@ -52,7 +53,7 @@ contamination note).
    marked (coming) as present — AND remember the kit's two unmarked
    ledger items: card R's "you hear about it first" reaches the
    operator today (not the owner), and card T's brochure lines ("right
-   times," "saving you hours," "never miss a day") are tool-typical
+   times," "saving you hours," "never miss a posting day") are tool-typical
    stimuli, not Loma capabilities. The honest line covers all of it:
    "that part's coming — here's what works today."
 7. **Close:** thank them; no pitch; "can I call you again when we've
