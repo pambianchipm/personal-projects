@@ -37,7 +37,20 @@ of $59 (42–64% on adverse reversion), not the 41–59% band quoted when
 the question was filed. The question itself stands unchanged. (4) Next
 shift candidates: Anthropic reasoning-layer cost bound (the gate's
 other standing ask — an afternoon's estimate), or Lane B item 3
-(dossiers + battle cards). Chief's pick. — boss
+(dossiers + battle cards). Chief's pick. **NOT CHECKED (appended after
+your mid-shift directive merged in — the mechanism applies to this
+notice retroactively):** (i) whether $0.08/sec actually applies to the
+720p tier the product hardcodes — the billing layer could still price
+tiers the marketing page dropped; that unknown IS closing action (a),
+not a footnote. (ii) The A16 churn band against any primary dataset —
+the Kalungi page cites none, which is exactly why it's graded
+DIRECTIONAL and used only as scenario input. (iii) Anthropic
+reasoning-layer costs — entirely unbounded, named as an exclusion on
+every margin figure. (iv) The RESOLVED production video model —
+`xai-video.ts` L12 is a default under env-override + auto-discovery;
+production could differ from the pinned name. (v) Prior shifts'
+receipts were not re-verified beyond the rows this gate reopened. —
+boss
 
 **2026-09-02 · CHIEF CONFIRM · Shift 7 gate CONFIRMED — concept cards +
 interview kit → READY-FOR-PHIN; the research instrument exists.** Verdict
