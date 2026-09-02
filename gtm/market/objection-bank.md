@@ -54,7 +54,7 @@ that convergence is the work list.
 | O8 | Hands-off vs your-click ("employee or homework?") + dial-as-mute | SMB#6, Comp#7 | RECEIPTED |
 | O9 | "It can't actually see Instagram/TikTok" (M10 secondhand) + OAuth pending | SMB#8, Comp#2, Journ#10, Inv#8 | PARTIAL |
 | O10 | Honesty-costs-money: "so I pay $299 for a month it admits failed?" + "confession engine" spin | SMB#10, Comp#8 | PARTIAL |
-| O11 | Unit economics: churn graveyard, CAC vs $59, two-vendor AI dependence (price AND terms — synced with R5) | Inv#3, Inv#4, Inv#7 | NONE-YET (model work, queued) |
+| O11 | Unit economics: churn graveyard, CAC vs $59, two-vendor AI dependence (price AND terms — synced with R5) | Inv#3, Inv#4, Inv#7 | PARTIAL (scenario/sensitivity half shipped — `model-v1.md`, per R11; churn/CAC/LTV VALUES stay unknown-until-cohort) |
 | O19 | Credential custody: "you hold tokens that post and spend as small businesses — audit? rotation? incident plan?" | investor gate (R13); journalist round-2 note | NONE-YET — pure concession + ask: encryption-at-rest exists, no program; → P-G |
 | O12 | Moat: incumbents bolt on AI; foundation vendors eat the category | Inv#5 | PARTIAL |
 | O13 | Solo founder + "AI all the way down" + evidence independence (Dad + own product) | Inv#6, Inv#9, Journ#8 | PARTIAL |

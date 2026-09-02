@@ -67,8 +67,10 @@ LTV = monthly generation-margin ÷ monthly churn. Using mid-band margins
 
 Payback months = CAC ÷ monthly margin: e.g. a $200-CAC entry customer
 pays back in ~5 months at mid-band margin; a $500-CAC entry customer at
-7% churn NEVER pays back (12+ months payback vs 14-month life = the SMB
-graveyard, quantified). **The investor-facing sentence this table
+7% churn pays back at ~12.2 months of a 14.3-month expected life —
+LTV:CAC ≈ 1.2 against the 3.0 floor, effectively zero return (the SMB
+graveyard, quantified honestly: the money comes back and nothing else
+does). **The investor-facing sentence this table
 earns:** at tool-band CAC the entry tier works even at bad churn; at
 services-band CAC it only works if the full OS carries the mix — which
 is why tier mix is a driver, not a detail.
@@ -76,9 +78,11 @@ is why tier mix is a driver, not a detail.
 **The free-scan funnel algebra (what to MEASURE, not what to claim):**
 CAC = cost-per-scan ÷ (scan→paid rate × paid→retained-past-month-1
 rate). Three numbers, none of which exists yet. Illustrations
-(PROJECTED, invented): $5 cost/scan at 5% scan→paid → $100 CAC (works
-everywhere above); $10 at 1% → $1,000 CAC (works nowhere on the entry
-tier). The first 100 scans' job is to replace this paragraph.
+(PROJECTED, invented — and both silently assume the formula's third
+factor, month-1 retention, at 100%, so both are optimistic by exactly
+that factor): $5 cost/scan at 5% scan→paid → $100 CAC (works everywhere
+above); $10 at 1% → $1,000 CAC (works nowhere on the entry tier). The
+first 100 scans' job is to replace this paragraph.
 
 **Blended-mix scenarios (PROJECTED):** 70/30 entry/full → blended ARPU
 $131, blended margin ≈ $107/mo; 50/50 → ARPU $179, margin ≈ $150/mo.
@@ -95,12 +99,17 @@ function of the per-second price p, on $59:
 | **0.08** | **$13.87** | **23.5%** | **today's price for the pinned model (A4)** |
 | 0.14 | $24.27 | 41% | the 31 Aug price — a reversion IS the adverse case |
 | 0.19 | $32.93 | 56% | old band's ceiling territory |
-| 0.32 | $55.46 | 94% | entry tier underwater on video alone (4× today) |
+| 0.32 | $55.46 | 94% | video alone consumes 94% of the tier (4× today) |
+| 0.34 | $59.00 | 100% | video-only break-even: $0.3404/sec = 4.25× today |
 
-Break-even statement (the R5 quantification): the entry tier survives a
-75% price INCREASE from today before video-only drag exceeds the old
-41–59% working band, and dies on video alone only at ~4× today's price.
-The full OS at 87% generation-margin survives every row of this table.
+Break-even statement (the R5 quantification), three separate thresholds:
+at +75% ($0.14 — a full reversion to the 31 Aug price) drag returns to
+the old band's FLOOR (41%); at +151% (~$0.20) drag exceeds the old
+band's CEILING (59%); video-only death is at +325% ($0.34/sec, 4.25×
+today).
+The full OS survives every row of this table — quantified, not implied:
+at the $0.32 row its scenario COGS ≈ $140 (30 × $3.20 blended-est +
+images) → margin ≈ $159/mo (53%), down from 87% but alive.
 The observed volatility between the org's own two reads (−43% in two
 days-of-record) cuts both ways: the same magnitude upward is the
 planning case, and it lands at $0.114–0.14 — inside the survivable

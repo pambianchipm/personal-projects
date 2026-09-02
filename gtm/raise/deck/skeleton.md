@@ -150,8 +150,11 @@ recount before print regardless.`
 
 **Must prove:** a P&L shape from stated drivers, not hope.
 **What exists:** the COGS floor is real — A4–A10 give per-tier
-generation costs and the entry tier's 41–59% margin drag (A9), which is
-an honest, unusual thing to show an investor and we should. **Blocked
+generation costs and the entry tier's margin drag (A9, amended 2 Sep:
+25–39% at today's vendor price; 42–64% on an adverse reversion — the
+model's sensitivity table holds the three break-even thresholds), which
+is an honest, unusual thing to show an investor and we should. The
+scenario model now exists (`gtm/raise/model/model-v1.md`). **Blocked
 on:** the model (drivers: tier mix, churn assumption, CAC channel —
 all currently nonexistent because customers are). No projection appears
 before the model does; the exit row of this slide waits on comparables
@@ -209,11 +212,12 @@ video-only band is NOT a ceiling (entry images uncapped; A10's tripwire
 is full-OS only); honest mitigation today is TIER MIX ONLY — an
 entry-tier tripwire is undecided, question to Phin in the inbox.
 (4b) AI-vendor dependence, price AND terms, two vendors — the COGS
-floor (A4, A5, A7, A9) rests on xAI's published price, read once 31
-Aug, with TERMS (commercial-use/IP of output, termination, revocation)
-unexamined; the reasoning layer runs on a second vendor (Anthropic),
-previously in no risk row (R5, law-4 paired wording). Platform-
-dependence (risk 2) covers neither. (5) Solo
+floor (A4, A5, A7, A9) rests on xAI's published price (two dated reads
+now on file; the 2 Sep snapshot caught a −43% reprice between them —
+R5's first observed instance), with TERMS (commercial-use/IP of output,
+termination, revocation) unexamined; the reasoning layer runs on a
+second vendor (Anthropic), previously in no risk row (R5, law-4 paired
+wording). Platform-dependence (risk 2) covers neither. (5) Solo
 founder — mitigation is the demonstrated build-org leverage (slide 7)
 and hiring plan (Dad's "who he will need to hire, when" — unanswered).
 (6) Competitive response — incumbents can copy features; the argued moat

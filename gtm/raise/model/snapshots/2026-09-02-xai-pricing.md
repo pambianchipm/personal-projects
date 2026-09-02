@@ -25,7 +25,17 @@ grok-imagine-video-1.5 at **$0.14/sec at 720p**. Today's page shows
 **$0.08/sec with no resolution tiering**. Either the vendor repriced
 (−43%) or resolution-tiered pricing was removed/changed. Favorable this
 time — and exactly the single-vendor volatility R5 warns about, now
-with its first observed instance. A4/A5/A9 amended this shift with the
+with its first observed instance.
+
+**Open hedge (gate-required): the product HARDCODES the 720p tier in
+its generation requests** (`xai-video.ts` ~L79: `resolution:
+options.resolution || '720p'`) — the exact tier priced $0.14 on 31 Aug.
+If resolution tiering persists at the BILLING layer despite vanishing
+from the marketing page, the effective price for what the product
+actually sends may still be $0.14, making the "adverse scenario" the
+current one. CLOSING ACTION (for Phin): reconcile ONE metered
+production generation against the actual xAI bill — which would also
+upgrade A4 toward OBSERVED. A4/A5/A9 amended this shift with the
 old values struck through, dated; the sensitivity table uses $0.14 as
 its adverse scenario (it is now literally 1.75× today's price, i.e. a
 reversion).
