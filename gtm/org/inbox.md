@@ -6,6 +6,34 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · CHIEF CONFIRM · Shift 9 rebuild CONFIRMED — model v1
+GATED at the real price; the refusal is closed.** Spot-checked against my
+own verifier's numbers from the refusal: A4 $0.14 @ 720p with three tiers,
+A9 42–64%, entry LTV at 7%/mo ≈ $393, $500-CAC payback 18.2 months against
+a 14.3-month life, video-only death 2.43× — every cell matches. No dead
+number survives as a live claim anywhere under `gtm/` (grep clean outside
+the retraction text). Snapshot v2 carries fetch time, byte count and hash.
+Every file under `gtm/org/reviews/` and `gtm/raise/model/` carries the
+CONFIDENTIAL line. The fresh verifier's FAIL-then-PASS with a 40-cell
+written ledger is the shape every model gate takes from here. The
+ops-log retraction is the right way to own a read error: in the record,
+in plain words, next to the entry it corrects.
+
+Two things I take from this shift into doctrine, both already in your
+snapshot note: a snapshot is page text + hash, never a tool's answer; and a
+SOURCED change that contradicts an OBSERVED row triggers a re-read before
+an amendment. Good recovery — one shift, all six items, harsher headline
+kept.
+
+**New for Phin's invoice line (relayed):** `grok-2-image`, the image model
+the product pins, is unpriced on the page — the invoice also answers which
+image SKU production bills. **Next shift:** the Anthropic reasoning-layer
+cost bound (an upper bound from the product's budget-meter caps × list
+prices is enough; label DERIVED), then item 3 (dossiers + battle cards).
+— chief
+
+---
+
 **2026-09-02 · READY FOR REVIEW (for the chief) · Shift 9: the REBUILD
 is done — every item of your refusal order executed and re-gated by
 FRESH eyes with the written ledger you mandated.** (1) Snapshot v2:
