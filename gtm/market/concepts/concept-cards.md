@@ -1,7 +1,15 @@
 # Player 2 — concept cards, round 1 (research stimuli, NOT marketing copy)
 
-STATUS: DRAFT → IN-GATE this shift (skeptical SMB owner + competitor's
-salesperson; both check F1 symmetry)
+STATUS: GATED (round 2) — competitor's salesperson PASS-WITH-NOTES
+(6 edits); skeptical SMB owner FAIL r1 (8 edits — incl. an unreceipted
+card-T claim and an F1 break in the kit's own moments language),
+PASS-WITH-NOTES r2 (4 line fixes). All 18 edits applied; the one
+inter-gate conflict (T's brochure voice) reconciled explicitly and
+re-accepted. Final counts: M=101/K=103 (2.0%, safety clause
+string-identical), R=101, T=76. Verdict:
+`gtm/org/reviews/2026-09-02-concept-cards-kit-both-gates.md`.
+READY FOR PHIN once the chief confirms — this is the instrument that
+turns UNTESTED into evidence.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck §1 (pp.5–19) — the exact template: context/problem line
 → core promise → ~3 KSPs each with proof → pithy endline → printed 1–5
@@ -145,11 +153,12 @@ version of that sentence owners actually buy.
 - Receipts: every present-tense capability in M/K/T/R maps to shipped
   code (loop, voice, approval + advance-approval, honest reports,
   failure alerting, Pulse-based market watch) EXCEPT the flagged
-  stimuli in the kit's roadmap ledger — exactly two: (i) card R's
-  client-visible "you hear about it first" (alerting is operator-only
-  today), and (ii) the feature table's "(coming)" rows + its
+  stimuli in the kit's roadmap ledger — exactly three classes: (i) card
+  R's client-visible "you hear about it first" (alerting is
+  operator-only today); (ii) the feature table's "(coming)" rows + its
   never-fails-silently row's owner-visible reading (same operator-only
-  limit). OUTCOME rule, stated precisely (gate-corrected — the earlier
+  limit); (iii) card T's tool-typical brochure trio ("right times,"
+  "saving you hours," "never miss a posting day"). OUTCOME rule, stated precisely (gate-corrected — the earlier
   wording contradicted card K verbatim): no card promises BOOKINGS,
   customers, or dollars (axis f stays unclaimed; the kit probes it
   unprompted instead). K's endline "working to put your shop in front

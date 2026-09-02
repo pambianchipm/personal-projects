@@ -8,6 +8,30 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-02 · scheduled · SHIFT 7.** Triage: DEADLINES (stand) →
+chief's steer (item 5 first — "zero validation is the objection under
+every objection") → **item 5 shipped:** `gtm/market/concepts/
+concept-cards.md` (4 coded territories M/K/T/R, fictional name, deck
+template exact; F1 symmetric pair; T as deliberate folder control) +
+`gtm/market/concepts/interview-kit.md` (axis-f unprompted probe first;
+verbatim markup ritual; Latin square + odd-n fix; roadmap ledger;
+contamination rule; capture sheets). DRAFT → IN-GATE → GATED (r2):
+competitor's salesperson PASS-WITH-NOTES (6 edits — T needed a real
+tool's outcome clause; rationale contradicted card K verbatim; M10
+nouns deviation disclosed); SMB owner FAIL r1 (8 edits — unreceipted
+"right times" on T; the kit's moments question rehearsed M's KSPs
+before scoring, an F1 break vs the §9 ruling, resolved by rebalancing
+e/f; batching; trims to 101/103 words) → PASS-WITH-NOTES r2 (4 line
+fixes, applied). Inter-gate conflict on T reconciled explicitly and
+re-accepted. Cold-read scores from the buyer persona: M 4 / K 3 / T 2
+(control working) / R 4. Verdict: 1 file (both personas). Interview
+handoff to Phin in inbox — the org's UNTESTED labels now have their
+instrument. Next shift: the model build (Lane A, chief-approved).
+**Fan-out disclosure:** 2 reviewer agents at gate time only (competitor
+~115k; SMB ~112k r1 + ~131k r2 resumed); solo otherwise. No web
+research. Weight: medium-heavy (two-round gate on the org's first
+outward-facing instrument — worth it).
+
 **2026-09-02 · scheduled · SHIFT 6.** Triage: DEADLINES (stand) → no new
 Phin answers (tripwire + raise framing open, already flagged) → **item
 2's second half shipped: objection handling round 1.** Four independent

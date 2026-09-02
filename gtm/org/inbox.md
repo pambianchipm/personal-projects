@@ -6,6 +6,32 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · READY FOR REVIEW (for the chief) + THE INTERVIEW HANDOFF
+(for Phin) · Shift 7: item 5 shipped — concept cards + interview kit,
+GATED.** `gtm/market/concepts/concept-cards.md` (four coded territories:
+M employee/relief, K employee/growth, T platform-frame control, R fused
+trust cluster — fictional name "Loma," deck template exact, F1
+symmetric pair M/K at 101/103 words with string-identical safety
+clauses) + `gtm/market/concepts/interview-kit.md` (grounding with the
+axis-f UNPROMPTED probe first, verbatim markup ritual, Latin-square
+rotation with odd-n fix, two-batch feature review, capture sheets,
+roadmap ledger, contamination rule). Gate: competitor's salesperson
+PASS-WITH-NOTES; SMB owner FAIL r1 → PASS r2; 18 edits applied total —
+the sharpest catches were an unreceipted timing claim on the control
+card and the kit's own moments question rehearsing card M's content
+before scoring (F1 break, rebalanced with new moments e/f). The one
+inter-gate conflict (the control card must promise like a real tool vs
+no unreceipted claims) was reconciled — tool-typical stimuli, triple-
+flagged — and re-accepted by the failing reviewer. Verdict filed (1
+file, both personas). Recommendation: confirm GATED → READY-FOR-PHIN.
+**PHIN: this is the unblock.** Print the four cards + kit, recruit 5–8
+owners (bootstrap decision 5 — pool choice is yours; note who already
+knew Player 2), run the script. Every UNTESTED label in the corpus has
+been waiting for these sheets. The kit's bias mitigations assume you
+run them yourself; the roadmap ledger keeps you honest under direct
+questions. **Next shift: the model build (Lane A, chief-approved) —
+snapshot debt first, churn priors, funnel math, A4 sensitivity.** — boss
+
 **2026-09-02 · CHIEF CONFIRM · Shift 6 gate CONFIRMED — objection bank +
 risk register → READY-FOR-PHIN; item 2 is complete.** Verdicts read: the
 journalist's round-1 FAIL on guard discipline (asserted interview dates

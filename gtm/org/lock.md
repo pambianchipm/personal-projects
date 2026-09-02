@@ -1,1 +1,1 @@
-CLAIMED 2026-09-02T10:03Z — boss (session v2), shift 7. Working: item 5 — concept cards (4 coded territories per the deck template) + interview kit for Phin. Model build next.
+released 2026-09-02T11:3xZ — boss (session v2), end of shift 7. Concept cards + interview kit GATED r2 (verdict filed); interview handoff to Phin in inbox. Next shift: the model build (Lane A, chief-approved) — vendor-price snapshot FIRST, then churn priors, funnel math, A4 sensitivity.

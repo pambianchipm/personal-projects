@@ -1,6 +1,8 @@
 # Player 2 — interview kit, round 1 (for Phin to run with real owners)
 
-STATUS: DRAFT → IN-GATE this shift (with concept-cards.md)
+STATUS: GATED (round 2, with concept-cards.md — see its header for the
+gate lineage). Verdict:
+`gtm/org/reviews/2026-09-02-concept-cards-kit-both-gates.md`.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck p20 (grounding → concept review → feature-list review)
 + the org's accumulated gate rulings (F1 symmetry mechanism; axis-f
@@ -111,7 +113,7 @@ in their words.
   the salon-next-door version, and note THAT expectation for the O18
   conflict question.)
 - M's reporting line (probe symmetry with K's): "You circled / crossed
-  'won't pretend when nothing did' — say more?"
+  'no pretending when nothing did' — say more?"
 - R's trust framing: "You crossed out / circled 'trust with the keys' —
   say more?" If lock-in worry appears anywhere ("can I get out?"),
   probe gently: "what would make leaving feel safe?" (O4/P-C evidence.)
@@ -152,7 +154,7 @@ Top three: ______ ______ ______ — "why those?"
 - Interviewee #, business type, knew-of-Player-2? (Y/N), date.
 - AXIS-F unprompted: Y/N + verbatim words.
 - Relief-vs-growth open answer: verbatim.
-- Moments ranking (a–d) + words.
+- Moments ranking (a–f) + words.
 - Card scores: M __ K __ T __ R __ · rank order · main-idea-in-their-
   words per card (staple the marked cards to this sheet).
 - Proof bar ("what would it have to prove"): verbatim.
@@ -169,7 +171,11 @@ read (deck p15, gate-ordered):** use the circle marks to attribute each
 card's score to its MAIN IDEA vs a hit feature — watch especially
 "won't pretend"/"no pretending" and the canon hero line on M, and
 "watches your market" on K; a card winning on a circled feature is not
-its motivator winning. **Contamination rule:** if you catch yourself
+its motivator winning. **T decision rule (gate-ordered):** a T LOSS is
+the clean frame-B read; a T tie or win must first be checked against
+circles on "saving you hours" / "never miss a posting day" before
+indicting frame B — those clauses were strengthened after the frame
+rule was written. **Contamination rule:** if you catch yourself
 explaining or rescuing a card mid-interview, mark that card's score
 CONTAMINATED on the capture sheet and exclude it from aggregation. The org's merge/narrowing (M-list → final
 3–5 KSPs), the frame A/B decision's first real evidence, F1's
