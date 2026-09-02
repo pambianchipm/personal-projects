@@ -102,11 +102,13 @@ CAC (works nowhere on the entry tier; inside the full-OS ceiling at
 every churn row — barely at 7%, where the ceiling is ~$1,120). The
 first 100 scans' job is to replace this paragraph.
 
-**§3a — Refund drag (A17, policy RULED D2; rate PROJECTED):** entry
-LTV × (1−r), refunders still consuming ~1 month COGS (~$31 mid-band):
-at r = 5% / 10% / 15%, the 7%-churn entry LTV $393 becomes ≈ $372 /
-$351 / $329 (and each refunder costs ~$31 of COGS on $0 net revenue —
-at 10% refunds that's ~$3.10 of extra effective CAC per net customer).
+**§3a — Refund drag (A17, policy RULED D2; rate PROJECTED):** the
+formula the cells use (gate-corrected to match): expected LTV per
+acquired customer = (1−r) × LTV − r × $31, where $31 is the mid-band
+COGS a refunder consumes on $0 net revenue. At r = 5% / 10% / 15%, the
+7%-churn entry LTV $393 becomes ≈ $372 / $351 / $329. (Equivalently:
+the refunder-COGS term is ~$3.10 per ACQUIRED customer at 10% — already
+netted inside those cells, never to be double-counted as extra CAC.)
 Material but not structural; the policy's trust value (O10's
 skin-in-the-game ask, partially answered) is UNTESTED.
 
@@ -137,8 +139,10 @@ The full OS survives every row: at the 2× row its scenario COGS ≈ $123
 (30 × $4 blended-est — A6's $2 scaled 2× — + $3 images) → margin ≈
 $176/mo (59%), down from 79% but alive.
 **What this table does NOT cover:** vendor TERMS risk (R5 —
-termination/IP), the unpriced Anthropic layer, the A7b input-image
-charge, and the uncapped image tail — those stay disclosed floors.
+termination/IP), the Anthropic layer (now BOUNDED ~$12–38/mo entry,
+A21/`anthropic-bound.md` — still excluded from these margin cells), the
+A7b input-image charge, and the uncapped image tail — the unbounded
+ones stay disclosed floors.
 
 ## 5. What the model says back to the deck (slide 8's future content)
 

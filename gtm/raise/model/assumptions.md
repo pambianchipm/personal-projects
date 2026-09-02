@@ -46,7 +46,7 @@ may state.
 | A18 | Founder salary floor | $150,000/yr | RULED — Phin D10, 2 Sep (CONFIDENTIAL) |
 | A19 | Target runway | 12 months | RULED — Phin D10, 2 Sep (CONFIDENTIAL) |
 | A20 | Claude (Anthropic) list prices | claude-opus-5: $5/MTok in, $25/MTok out (the model the product defaults across agent.ts/pulse.ts) | SOURCED — Anthropic model/pricing reference read 2 Sep (reference self-dated cached 2026-06-24); RE-VERIFY against the live page before term-sheet use |
-| A21 | Reasoning-layer cost per entry customer | ~$12–38/mo scenario band (light–heavy), NO caching assumed — naive upper bound | DERIVED from code caps (SOURCED) × per-call token sizes (PROJECTED — no metering exists); full derivation `anthropic-bound.md`; closing receipt = Phin's Anthropic invoice ÷ active workspaces |
+| A21 | Reasoning-layer cost per entry customer | ~$12–38/mo scenario band (light–heavy), NO caching assumed — naive upper bound | PROJECTED (a DERIVED stack over PROJECTED token sizes; only the caps are SOURCED — the bound's own words: "the entire bound inherits this grade"); full derivation `anthropic-bound.md`; closing receipt = Phin's Anthropic invoice ÷ active workspaces |
 
 ## Not yet in this table (and therefore claimable nowhere)
 

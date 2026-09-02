@@ -19,7 +19,7 @@ that costs per entry customer per month, from the product's own caps.
 | Input | Value | Grade |
 |---|---|---|
 | Claude Opus 5 list price | $5/MTok input · $25/MTok output | SOURCED — Anthropic model/pricing reference read this shift (cache-dated 2026-06-24 in the reference itself; RE-VERIFY against the live pricing page before any term-sheet use — snapshot doctrine applies) → A20 |
-| Conductor cap | ≤32 tool calls/job (`agent.ts` `MAX_TOOL_CALLS`) | SOURCED — code |
+| Conductor cap | 32 tool calls for a job's FIRST turn (`agent.ts` `MAX_TOOL_CALLS`) — DISCLOSURE (gate catch): the cap GROWS by 16 calls per additional user turn (`agent.ts` ~L1081: `MAX_TOOL_CALLS + 16 × (userTurns − 1)`), so this bound's heavy scenario assumes SINGLE-TURN jobs; a chatty multi-turn thread exceeds it | SOURCED — code, both lines |
 | Pulse | 1 synthesis run/day/workspace (daily cron) | SOURCED — code/cron |
 | Outbound drafting cap | ≤20 pending queue; nightly drafting | SOURCED — `outbound.ts` |
 | Per-call token sizes | conductor 8–15K in / 1–1.5K out per call; pulse 10K/2K; drafts 2K/0.3K; review 20K/2K | **PROJECTED — invented, no metering exists**; the entire bound inherits this grade |
@@ -44,7 +44,8 @@ in ($2.40) + 32 × 1.5K = 48K out ($1.20) = $3.60. → A21.
 more.** Stacked with A9's generation drag ($25–38), an entry customer's
 scenario ALL-IN AI COGS is ~$37–76/mo against $59 revenue — the entry
 tier is plausibly UNDERWATER at heavy use on today's architecture. The
-full OS at $299 absorbs the same band easily (~4–13%).
+full OS at $299 absorbs the all-in band at ~12–25% of revenue (the
+reasoning band alone is ~4–13%) — thin-to-fine, never fatal.
 
 Three honesty notes, all load-bearing:
 1. This is a NAIVE upper bound: it assumes every heavy job exhausts its
@@ -62,10 +63,11 @@ Three honesty notes, all load-bearing:
    this bound — scripting/captioning still spend reasoning tokens. The
    own-media scenario (chief task 2) must price BOTH lines when it runs.
 
-## 4. Ledger effects
+## 4. Ledger effects (what actually shipped this shift)
 
 A20 (Claude list prices) and A21 (reasoning-bound band) added to
-assumptions.md. R5's Anthropic sub-exposure moves from "entirely
-unbounded" to "bounded by scenario ($12–38/mo entry, PROJECTED)";
-model-v1's exclusions list updates to cite this bound. Slide 8's
-generation-margin caveat now has a number attached.
+assumptions.md. R5's mitigation row now carries the A21 bound
+(edited this shift, same commit). model-v1's exclusions list cites
+this bound. The number reaches slide 8 BY REFERENCE through model-v1's
+exclusions — the slide itself still says "generation-margin" and points
+here for the gap.

@@ -176,7 +176,7 @@ round number:
 | Legal (lawyer brief per R12/D5, incorporation, pilot terms) | ~$10–20k | PROJECTED |
 | CAC discovery budget (the first ~100+ paid scans — the model's three measurables) | ~$5–10k | PROJECTED |
 | Contingency ~15% | ~$26–30k | PROJECTED |
-| **Ask range** | **≈ $200k–$250k** | RECOMMENDATION — strategist judgment over the graded rows; the NUMBER is Phin's |
+| **Ask range** | **≈ $200k–$225k** (gate-corrected: the sum of the graded rows + 15% contingency — the earlier $250k ceiling carried ~$25k no row backed, breaking D10's own never-from-a-round-number rule) | RECOMMENDATION — strategist judgment over the graded rows; the NUMBER is Phin's, and widening any component honestly widens the range |
 
 **Anchors, not targets:** A13's real checks ($150k ERA / $220k
 Techstars, uncapped-SAFE caveat carried) put this range exactly at
@@ -263,7 +263,7 @@ objection round; coverage ledger below is superseded on this point.)*
 
 ## Coverage ledger
 
-DRAFTED: 2 (problem), 3 (how it works), 7 (dev timeline), 10 (team) — 
-plus 5's structure and 11's seed. STUBS with named receipts: 1, 4, 5, 6,
-8, 9, 11. Nothing outward without Phin (law 3): this file is internal
+DRAFTED: 2 (problem), 3 (how it works), 7 (dev timeline), 9 (ask —
+from D10, 2 Sep), 10 (team), 11 (by reference to the risk register) —
+plus 5's structure. STUBS with named receipts: 1, 4, 5, 6, 8. Nothing outward without Phin (law 3): this file is internal
 scaffolding; no slide ships anywhere in any form until PHIN-APPROVED.
