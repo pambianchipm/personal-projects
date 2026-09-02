@@ -23,7 +23,10 @@ the current state of each answer.
 | R5 | Single-vendor generation COGS: A4/A5/A7/A9 rest on one vendor's price, read once | deck gate r1 edit 6; assumptions.md snapshot-debt note | NONE today beyond monitoring — price-snapshot debt logged; multi-vendor fallback unexamined (disclosed floor) |
 | R6 | Solo founder / key-person | deck slide 10's honest thinness | AI-build-org leverage demonstrated (REAL — the 103-shift gated record); hiring plan (NONE — Dad's "who to hire, when" unanswered) |
 | R7 | Competitive response: incumbents bolt on AI; foundation-model vendors eat the category | deck slide 11 seed 6 | Argued moat: per-shop outcome memory + honesty machinery (REAL as code, UNTESTED as moat); battle cards pending (item 3) |
-| R8 | *(reserved — objection-handling round 1 fork lands here this shift)* | | |
+| R8 | Results-attribution gap: product cannot answer "what did it earn me" in owner terms — all four objection personas ranked it the #1 buyer kill | objection-bank O1; truth-map §3-bis | Attribution-scope read queued as next Lane B opening move (APPROVED-chief); claims-engine honesty as holding answer (REAL); no bookings claim until the read (REAL discipline) |
+| R9 | Comms coherence: $59 tier LIVE while client accounts/OAuth are Phases 1–2 away; and no ruling on whether PUBLISHED posts disclose AI to the public | objection-bank O3/O5 (Journ#6, Journ#2); positioning.md §5-vs-§8.2 | Both routed to Phin as P-B and P-D (PLANNED — decisions, not builds); the now/later split discipline (REAL) covers the rest |
+| R10 | No data-portability or continuity commitment anywhere in the corpus — lock-in attack ("their moat is your data") currently unanswerable | objection-bank O4 (found independently by 3 personas); Phin's own P4 capture routing | downgrade.ts honest-degradation (REAL, partial — answers ghosting, not going-concern); export + wind-down policy proposed as P-C (PLANNED, Phin) |
+| R11 | Model unknowns: churn priors, CAC channel, vendor-repricing sensitivity — LTV currently uncomputable | objection-bank O11 (Inv#3/4/7); deck slide 8's own admission | Model build with sourced priors + A4 sensitivity table recommended as Lane A's next item (PROPOSED); entry tripwire decision open (Phin) |
 
 ## Change discipline
 

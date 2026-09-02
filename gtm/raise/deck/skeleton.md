@@ -214,8 +214,12 @@ founder — mitigation is the demonstrated build-org leverage (slide 7)
 and hiring plan (Dad's "who he will need to hire, when" — unanswered).
 (6) Competitive response — incumbents can copy features; the argued moat
 is outcome memory + the honesty machinery (UNTESTED as a moat).
-**Full version forks from objection-handling round 1 (next shift) — the
-Assess/Answer/Address output IS this slide's evidence.**
+**Full version now exists: this slide quotes
+`gtm/raise/risk-register.md` (R1–R11, built from this seed + the
+four-persona objection round, 2 Sep) — law 4: slide and register may not
+disagree. The objection bank (`gtm/market/objection-bank.md`) holds the
+answers ledger.** *(Slide upgraded STUB → DRAFTED-BY-REFERENCE at the
+objection round; coverage ledger below is superseded on this point.)*
 
 ---
 
