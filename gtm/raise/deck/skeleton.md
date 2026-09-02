@@ -198,27 +198,31 @@ hidden here.
 
 Seed list, each with its receipt: (1) "employee" framing carries legal/
 expectational exposure — lawyer brief pending (positioning.md §8.3;
-"never" absolute already barred). (2) Platform dependence — Meta OAuth
-still in review; IG/TikTok signals secondhand until API access
+"never" absolute already barred). (2) Platform dependence — Meta app
+review required and directed to go in first (productization-v1, 24
+Aug); SUBMISSION UNVERIFIED — no submission receipt in corpus (R2, law-4
+paired wording); IG/TikTok signals secondhand pending API access
 (pulse.ts's own admission). (3) No demand validation — zero interviews,
 zero customers; mitigations are the concept-card pipeline and the free
 scan (positioning.md §8.1). (4) Unit economics at entry tier — A9's
 video-only band is NOT a ceiling (entry images uncapped; A10's tripwire
 is full-OS only); honest mitigation today is TIER MIX ONLY — an
 entry-tier tripwire is undecided, question to Phin in the inbox.
-(4b) Single-vendor generation COGS — the entire COGS floor (A4, A5, A7,
-A9) rests on one vendor's published price, read once 31 Aug; a repricing
-moves the entry margin band directly, and platform-dependence (risk 2)
-does not cover the model vendor. (5) Solo
+(4b) AI-vendor dependence, price AND terms, two vendors — the COGS
+floor (A4, A5, A7, A9) rests on xAI's published price, read once 31
+Aug, with TERMS (commercial-use/IP of output, termination, revocation)
+unexamined; the reasoning layer runs on a second vendor (Anthropic),
+previously in no risk row (R5, law-4 paired wording). Platform-
+dependence (risk 2) covers neither. (5) Solo
 founder — mitigation is the demonstrated build-org leverage (slide 7)
 and hiring plan (Dad's "who he will need to hire, when" — unanswered).
 (6) Competitive response — incumbents can copy features; the argued moat
 is outcome memory + the honesty machinery (UNTESTED as a moat).
 **Full version now exists: this slide quotes
-`gtm/raise/risk-register.md` (R1–R11, built from this seed + the
-four-persona objection round, 2 Sep) — law 4: slide and register may not
-disagree. The objection bank (`gtm/market/objection-bank.md`) holds the
-answers ledger.** *(Slide upgraded STUB → DRAFTED-BY-REFERENCE at the
+`gtm/raise/risk-register.md` (R1–R13, built from this seed + the
+four-persona objection round + the investor gate's diligence scan, 2
+Sep) — law 4: slide and register may not disagree. The objection bank
+(`gtm/market/objection-bank.md`) holds the answers ledger.** *(Slide upgraded STUB → DRAFTED-BY-REFERENCE at the
 objection round; coverage ledger below is superseded on this point.)*
 
 ---

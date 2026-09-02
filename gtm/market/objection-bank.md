@@ -21,18 +21,20 @@ pitch invites, with the current state of every answer.
 
 Answer grades: **RECEIPTED** (answer exists with a named receipt) ·
 **PARTIAL** (honest holding answer; full answer needs a named thing) ·
-**NONE-YET** (no good answer exists; routed to Address). The deck's
-discipline applies: a NONE-YET is never bluffed.
+**NONE-YET** (no good ANSWER exists; routed to Address — a NONE-YET may
+still carry an honest-concession SCRIPT, which is a posture, not an
+answer). The deck's discipline applies: a NONE-YET is never bluffed.
 
 ---
 
 ## §1 Assess — the master clusters, ranked by worrisome-ness
 
-Convergence note (the strongest signal of the round): all four personas
+Convergence note (INTERNAL PRIORITIZATION ONLY — this paragraph never
+travels into any law-4-linked or external artifact; convergence of
+personas is a prediction signal, not evidence): all four personas
 independently landed on the same top three — results-in-owner-terms,
-zero validation, and the roadmap/today split. When the buyer, the rival,
-the reporter, and the investor ask the same question, it is not an
-objection; it is the work list.
+zero validation, and the roadmap/today split. For the org's own queue,
+that convergence is the work list.
 
 | # | Master objection | Raised by | Grade |
 |---|---|---|---|
@@ -42,7 +44,7 @@ objection; it is the work list.
 | O4 | Lock-in: "your data is 'our moat'; what do I keep when I leave? what if you die?" | SMB#7, Comp#10, Journ#3, Journ#9 | NONE-YET (portability), PARTIAL (degradation) |
 | O5 | Public AI disclosure: "'visibly AI' — visible to WHOM? Do the posts tell the public?" | Journ#2 (new — no prior artifact covers it) | NONE-YET (policy undecided) |
 | O6 | Accountability/harm: "it posts something wrong under a standing approval — who's liable, who fixes it, who do I yell at?" | SMB#4, Journ#4 | PARTIAL |
-| O7 | Price coherence: "$59 is tool-shelf money / $299 is 10x a tool — pick a story" | SMB#5, Comp#4, Comp#5 | RECEIPTED (wording unsettled) |
+| O7 | Price coherence: "$59 is tool-shelf money / $299 is 10x a tool — pick a story" | SMB#5, Comp#4, Comp#5 | RECEIPTED (price-anchor/folder argument) / PARTIAL (the §4.4 freelancer-PARITY sentence — "roadmap comparison, not a shipping one," positioning.md §7; guard it) |
 | O8 | Hands-off vs your-click ("employee or homework?") + dial-as-mute | SMB#6, Comp#7 | RECEIPTED |
 | O9 | "It can't actually see Instagram/TikTok" (M10 secondhand) + OAuth pending | SMB#8, Comp#2, Journ#10, Inv#8 | PARTIAL |
 | O10 | Honesty-costs-money: "so I pay $299 for a month it admits failed?" + "confession engine" spin | SMB#10, Comp#8 | PARTIAL |
@@ -53,6 +55,7 @@ objection; it is the work list.
 | O15 | Slop-pipe: "you sell relief from the feed by posting more into it" | Journ#7 | RECEIPTED |
 | O16 | Why-now (no argument exists) + the undecided ask | Inv#9, Inv#10 | NONE-YET (both with Phin / Lane A) |
 | O17 | Effort: "how much of MY time before it saves any?" | SMB#9 | PARTIAL |
+| O18 | Conflict of interest: "your employee moonlights for the salon across the street" — M10 watches the market that includes its own customers, on behalf of its other customers | journalist GATE catch (round-1 miss — no generator raised it) | NONE-YET (round 2: needs a same-market policy — territory exclusivity, disclosure, or a defensible "public posts only" line) |
 
 ## §2 Answer — the bank (top clusters in full; internal first, then the
 press/floor-facing draft where one is safe to hold)
@@ -60,11 +63,14 @@ press/floor-facing draft where one is safe to hold)
 ### O1 — bookings, not likes
 **Internal:** true and known: attribution scope unaudited (truth-map
 §3-bis); surfaces speak platform metrics. Never claim the bookings loop.
-**Holding answer (floor/press):** "Today it proves what it can prove and
-refuses to fake the rest — its reports are statistically gated, and it
-publishes what it DECLINED to claim, with reasons. Bookings-level
+**Holding answer (floor/press):** "Today it tells you what actually
+worked and won't pretend when nothing did (owner language per the
+standing gate note — never 'statistically gated') — and it keeps a
+record of what it declined to claim, with reasons. Bookings-level
 attribution is the next read on our list, and we won't sell it before
-it's real." **Address:** the attribution-scope read is the next Lane B
+it's real." (Wording note: suppressed claims are PERSISTED — a database
+record, not an owner-visible surface; say "keeps a record," never
+"publishes," until a surface ships.) **Address:** the attribution-scope read is the next Lane B
 opening move (chief-confirmed); until then O1 stands as the top product
 gap. → R8.
 
@@ -75,8 +81,13 @@ moves: concession + date + kill-criteria.
 in writing. That's why the scan is free and shows you three posts in
 your own voice before any card, why the founding rate is locked, and
 why nothing posts without your click while we earn trust." For the
-investor: "this raise IS the validation budget; here are the interview
-dates and the kill criteria." **Address:** first real interviews (item
+investor, TODAY's speakable version: "the first interviews are the next
+funded step, and we'll write the kill criteria before the money is
+spent." The stronger version — "here are the interview dates and the
+kill criteria" — is [TRUE ONLY AFTER dates + written kill criteria
+exist as named artifacts; neither does today]. "This raise IS the
+validation budget" is [CONTINGENT on Phin's open raise-vs-bootstrap
+decision (O16) — do not pre-commit his answer]. **Address:** first real interviews (item
 5, Phin's side) and ONE non-family pilot — proposed to Phin as P-A below.
 **Never:** cite Dad's walkthrough as customer validation (it is a
 planning/analytics receipt); never quote prompt-3 invented speech.
@@ -101,8 +112,11 @@ SILENTLY") answers ghosting, not going-concern.
 **Holding answer:** "Your accounts were always yours — your logins, your
 pages. What it learns about your shop makes YOUR results better; if you
 leave, your content and calendar go with you [TRUE ONLY AFTER P-C
-SHIPS — do not say until then], and if we ever wind down, the system is
-built to stop loudly, never silently." **Address → P-C (Phin):** a
+SHIPS — do not say until then], and if we ever wind down, we stop
+loudly with notice, never silently [ALSO gated on P-C: the wind-down
+POLICY doesn't exist; downgrade.ts covers nonpayment/ghosting only, per
+internal note (c) above — the code receipt does not survive the company
+it runs on]." **Address → P-C (Phin):** a
 data-export + continuity commitment (export button, wind-down policy).
 → R8/R10. The moat framing stays investor-only, reconciled as: "the
 moat is that leaving costs the customer real value — which is only a
@@ -124,8 +138,11 @@ harm path is bounded by draft-then-notify and no-spend-without-click;
 alerting exists) and two missing ones (client-visible escalation — 11d
 undecided; a written remedy policy). **Holding answer:** walk the gates
 honestly, then: "if it ever gets one wrong under a standing approval,
-we're notified the same night you are, and we make it right — here's
-how" [the "here's how" NEEDS P-E]. **Address → P-E (Phin):** remedy
+we're alerted the same night" (receipted — notify.ts operator alerting)
+— "you're alerted too" [NEEDS 11d + client email paths live; alerting
+is OPERATOR-ONLY today, truth-map §3 gap 5] — "and we make it right —
+here's how" [the ENTIRE remedy sentence NEEDS P-E; until ruled, no
+remedy commitment is speakable]. **Address → P-E (Phin):** remedy
 policy (fix + credit shape) and the 11d escalation-recipient decision.
 
 ### O7 — price coherence
@@ -155,8 +172,9 @@ honest signal chain + the receipted differentiation (cron-run,
 diff-aware, honored silence, feeds work product) + OAuth status with a
 date (Phin's side). **Never:** "we monitor Instagram" unqualified.
 **Floor answer:** "It reads Reddit firsthand and the rest through AI
-lenses until platform APIs open — and unlike a trends tab, what it finds
-lands as drafted work, not homework."
+lenses while we pursue platform API access — and unlike a trends tab,
+what it finds lands as drafted work, not homework." (Meta review is
+PENDING — a request, not an outcome; never "until they open.")
 
 ### O10 — honesty costs money
 **Internal:** wording discipline (owner language, never "statistically
@@ -204,7 +222,12 @@ frame promises accountability we must actually build (O6).
 **Internal:** receipted counter-mechanisms, by name: house-voice floor
 enforced in code, "nothing new today" honored, empty week never
 invented, per-post measurement culls losers, max-2-claims discipline,
-Horizon capped at 2 fills/night. Plus the concession that
+Horizon capped at 2 fills/night. PRE-ARM (gate note): the reporter's
+opener will be Horizon's own header — "an empty day on the board is a
+defect" — quoted against "silence over noise." The answer: Horizon fills
+with DRAFTS from proven material, capped at 2, never publishes, and
+Pulse's silence rule governs what's NEW, not whether the calendar is
+kept — two different disciplines, both receipted. Have it ready. Plus the concession that
 distinguishability at scale is unproven with zero customers. This is an
 argument the org can win on receipts alone.
 
@@ -216,7 +239,9 @@ it). The ask is Phin's open bootstrap decision — already put to him
 with the milestone frame (deck slide 9). Nothing new to do but wait.
 
 ### O17 — effort
-**Internal:** honest numbers only: 48h first week is real (receipted);
+**Internal:** honest numbers only: the 48h first week is code-shipped
+and operator-verified — no real client has received it and email paths
+are dark until env is set (truth-map §4 caveat, carried inline);
 per-week involvement should be DEMONSTRATED (taps per week), not
 asserted; the photo gap is real until 11b ships and the proceed-without
 rule is the answer ("no photo came; used your best past post").
@@ -233,9 +258,12 @@ sensitivity). Slide 11 now cites the register.
 - **P-A: one non-family pilot** — a real shop (free, founding terms) run
   end-to-end before the raise conversation; answers O2/O13's
   evidence-independence attack. Cheap, high-leverage, needs his people.
-- **P-B: the $59 sentence** — one true sentence on what a stranger's $59
-  buys this month, or gate the tier's purchase until Phase 1 lands. His
-  call; today the landing sells what productization hasn't shipped.
+- **P-B: the $59 sentence AND posture** — one true sentence on what a
+  stranger's $59 buys this month, or gate the tier's purchase until
+  Phase 1 lands — PLUS a refund/gating posture (gate catch: the hard
+  version of this story is consumer-harm — "charges strangers' cards for
+  accounts that don't exist" — not a messaging problem; the posture is
+  the answer, and it's his call).
 - **P-C: data-export + continuity commitment** — export button + written
   wind-down policy ("stops loudly, data leaves with you"). Closes O4;
   turns the lock-in attack into a trust asset.
