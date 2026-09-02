@@ -8,7 +8,47 @@ weight (light/medium/heavy).*
 
 ---
 
-**2026-09-02 · scheduled · SHIFT 8.** Triage: DEADLINES (stand) → no new
+**2026-09-02 · scheduled · SHIFT 9 — THE REBUILD (shift-8 gate was
+REFUSED by the chief; this entry is also the formal RETRACTION of the
+shift-8 entry below).** The retraction, plainly: **there was no −43%
+vendor reprice.** Shift 8's snapshot recorded a WebFetch summarizer's
+flattening of a tiered table — $0.08 is the 480p cell; the 720p tier
+the product hardcodes is $0.14/sec, unchanged since 31 Aug — and that
+tool answer was graded SOURCED; worse, the OBSERVED row (A6) that
+contradicted the "reprice" was ratio-projected around instead of
+triggering a re-read. Chief's refusal:
+`gtm/org/reviews/2026-09-02-model-v1-chief-refusal.md`. The rebuild,
+per its 6-item order: (1) snapshot v2 — raw curl, HTTP 200, 472,874
+bytes, SHA-256 recorded, verbatim tier rows ($0.08/$0.14/$0.25 +
+$0.01/input-image), v1 error on the record inside it; (2) A4/A5/A6/A7/
+A9 RESTORED with full strike-through discipline, A7b added, A7 widened
+to $0.02–0.08 against the source (correcting even the refusal's own
+$0.02–0.07), NEW finding: pinned image model `grok-2-image` is UNPRICED
+on the page (0 occurrences in 472KB) → invoice reconciliation; (3)
+model-v1 re-parameterized at $0.14 (entry drag 42–64%; LTV@7% $393;
+"$500-CAC never pays back" RESTORED as true; video-only death 2.43×;
+adverse = +50% stress, honestly labeled unobserved; 480p = a priced
+lever); (4) slide 8, seed 4b, R5 (reprice→READ-ERROR retraction), R11,
+O11, tripwire annotation (its 41–59% basis was right) all resynced;
+(5) Phin's actions reframed by the chief, honored here; (6)
+CONFIDENTIAL headers on assumptions.md, snapshot, and all review files.
+Gate: FRESH hostile-investor verifier (prior reviewer had passed the
+bad inputs twice) with the chief-mandated WRITTEN LEDGER — 40-cell
+their/mine/match table, independent hash verification of the raw page,
+independent grep of the embedded pricing data — **FAIL r1 narrow**
+(3 one-line items: a dead "−43%" surviving in the truth table's debt
+bullet; a funnel illustration contradicting its own table; this ops-log
+correction), all applied; confirmation pass on the three lines below.
+**Fan-out disclosure:** 1 fresh reviewer agent (~103k) + a diff-confirm
+resume; solo otherwise. Web: 1 raw curl (snapshot v2). Weight: medium.
+**The lesson, priced into doctrine:** a snapshot is page text + hash,
+never a summarizer's answer; OBSERVED outranks a fresh tool-mediated
+read; a favorable surprise deserves MORE suspicion, not less.
+
+**2026-09-02 · scheduled · SHIFT 8** *(RETRACTED IN PART — see the
+shift-9 entry above: the "−43% vendor reprice" this entry reports as
+fact was a read error; the model work described stands only as
+superseded by the rebuild)*.** Triage: DEADLINES (stand) → no new
 Phin answers → **Lane A model build (chief-approved), snapshot debt
 FIRST — and the first snapshot caught a −43% vendor reprice**
 (grok-imagine-video-1.5: $0.14→$0.08/sec between the org's 31 Aug and

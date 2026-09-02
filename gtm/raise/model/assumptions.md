@@ -2,11 +2,12 @@
 
 CONFIDENTIAL — internal-audit class (law 8).
 
-STATUS: GATED (round 3, with the deck skeleton — hostile investor;
-row-by-row audit clean, both DERIVED rows recomputed, A15 added and A9
-corrected at the gate). Verdict:
-`gtm/org/reviews/2026-09-02-deck-skeleton-assumptions-hostile-investor.md`.
-Awaiting chief's confirm.
+STATUS: v3 IN-GATE (shift-9 rebuild) — original gate r3 with the deck
+skeleton (verdict:
+`2026-09-02-deck-skeleton-assumptions-hostile-investor.md`); shift-8
+amendments REFUSED by the chief (read error — see
+`2026-09-02-model-v1-chief-refusal.md`); rows RESTORED shift 9 from
+snapshot v2 and re-gated with the model rebuild.
 OWNER: GTM boss · shift 5, 2026-09-02
 LAW 4: shared facts live HERE, once. The deck, the model, the site, and
 the battle cards quote rows by ID (e.g. "A2"). Two artifacts disagreeing
@@ -56,10 +57,13 @@ may state.
 - **Entry-tier fair-use tripwire: UNDECIDED** — A10's ruling covers the
   full OS only; A9's band is honest only while entry image usage stays
   benign. Decision flagged to Phin (inbox, 2 Sep).
-- **Vendor-price snapshot debt: PAID (2 Sep)** —
-  `snapshots/2026-09-02-xai-pricing.md`. The first snapshot immediately
-  caught a −43% video reprice/de-tier between reads: the debt's whole
-  argument, demonstrated. Re-snapshot on any read that feeds a decision.
+- **Vendor-price snapshot debt: PAID (2 Sep, by snapshot v2 — raw fetch
+  + SHA-256 hash + verbatim rows).** ~~The v1 claim that the snapshot
+  "caught a −43% reprice"~~ is RETRACTED: v1 misrecorded the page (a
+  summarizer flattened the tier table; chief-refused read error — the
+  record lives inside snapshot v2). The 720p price is $0.14, unchanged.
+  Doctrine: page text + hash, never a summarizer's answer; re-snapshot
+  on any read that feeds a decision.
 
 ## Change discipline
 

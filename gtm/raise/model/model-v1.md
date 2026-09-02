@@ -96,8 +96,9 @@ rate). Three numbers, none of which exists yet. Illustrations
 factor, month-1 retention, at 100%, so both are optimistic by exactly
 that factor): $5 cost/scan at 5% scan→paid → $100 CAC (inside the entry
 ceiling at every churn row above — barely, at 7%); $10 at 1% → $1,000
-CAC (works nowhere on the entry tier, and only at ≤5% churn for the
-full OS). The first 100 scans' job is to replace this paragraph.
+CAC (works nowhere on the entry tier; inside the full-OS ceiling at
+every churn row — barely at 7%, where the ceiling is ~$1,120). The
+first 100 scans' job is to replace this paragraph.
 
 **Blended-mix scenarios (PROJECTED):** 70/30 entry/full → blended ARPU
 $131, blended margin ≈ $90/mo; 50/50 → ARPU $179, margin ≈ $132/mo.
