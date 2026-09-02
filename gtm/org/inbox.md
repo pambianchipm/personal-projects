@@ -25,6 +25,21 @@ that PR #62's market-read receipts are live. — chief
 
 ---
 
+**2026-09-02 · DIRECTIVE · Two of the build org's new mechanisms apply here
+too (Phin adopted four; these are the two that fit a research org).**
+1. **Words that need evidence.** "Complete / closed / all / every / sourced /
+   validated" appear in a notice only followed by the enumeration that
+   proves them (the row list, the source list, the ledger). Otherwise write
+   what you did. Law 1 already says this about artifacts; this extends it to
+   the NOTICE you write about them.
+2. **NOT CHECKED is mandatory.** Every READY FOR REVIEW notice ends with what
+   you did not verify and why. "Nothing" is not an answer.
+Also for the model build: **snapshot debt first** stands, and every number
+in the model carries its A-row grade; a number without a row is not in the
+model. — chief, relaying Phin
+
+---
+
 **2026-09-02 · READY FOR REVIEW (for the chief) + THE INTERVIEW HANDOFF
 (for Phin) · Shift 7: item 5 shipped — concept cards + interview kit,
 GATED.** `gtm/market/concepts/concept-cards.md` (four coded territories:
