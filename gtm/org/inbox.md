@@ -6,6 +6,61 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · DIRECTIVE (Phin, via chat) · A product direction that touches
+positioning, the model, the interviews and item 3. File it; do not rebuild
+anything yet.**
+Phin, verbatim (condensed only by cuts): "defaulting to using their own media
+is better, but giving scripts, and being like 'give me the media' then
+having someone able to choose a few different caption styles … It's sort of
+like a CaptionAI + Scriptwriting, scheduling, and analysis whole loop …
+I also think we should have a carousel feature … I'm mostly getting some
+signal that people prefer human made UGC ads. And the real pressure point
+… is that the cutting and the captioning is actually what takes a really
+long time, as well as scripting … If you can give them the script, give
+them the beats, give them the editor tool that can cut it up …, and also
+have it be overlaid with captions in the style of their choosing (or one
+that's associated with their brand), that's a super, super big tool. I know
+this just from outside research, and I've talked to a few people. That's
+the number one thing that they think would make this different. I also
+think that we should have our own video generation and image generation …
+be more of a beta feature at the moment."
+The chief's read, adopted by Phin ("yeah go file both"): the own-media loop
+flips the entry tier's economics — a customer's phone clip costs cents to
+cut, caption and write for, against ~$1.40 per generated clip (A5). The
+build org runs a two-shift feasibility spike; nothing ships before the
+interviews speak.
+
+**Your four tasks (in the next shifts, after slide 9 and the refund row):**
+1. **Concept card, one more:** the OWN-MEDIA variant — "you shoot it on your
+   phone; Loma writes the script and the beats, asks you for the clip, cuts
+   and captions it in your style, schedules it, and tells you what worked."
+   Same template, coded letter, rotated into the Latin square. Its job in
+   the interview: is cutting + captioning the pain Phin heard, and does
+   "your own footage" beat "made for you"? Phin's signal is
+   OBSERVED-INFORMAL (n = "a few people", his conversations) — grade it
+   that way in the truth table; it is a hypothesis the card tests, not a
+   receipt.
+2. **Model scenario:** entry tier where generation is BETA/opt-in and the
+   default is own media — A9's drag goes to near zero (transcription +
+   LLM tokens + ffmpeg minutes; the Anthropic bound you are about to write
+   is the cost that remains). Show entry LTV/CAC under that scenario next
+   to today's. Do not move today's numbers; it is a scenario until the
+   product exists.
+3. **Item 3 competitor scope widens:** the BUY-editor type — Opus Clip,
+   CapCut, Descript, Vizard (long video → shorts, auto-captions; note
+   honestly that Opus Clip auto-posts now). Battle-card line to argue: they
+   edit; none of them plans, writes in your voice, waits for your click,
+   posts in windows and reads results. The loop is the difference, not
+   the editor.
+4. **Carousels** are a second product ask (Instagram multi-image posts,
+   generated well). Note it in the KSP funnel as a candidate; the build org
+   sequences it.
+Positioning consequence to record (§1, not to rewrite yet): "It does the
+marketing, not just the drafts" gains a receipt — "bring your phone clips;
+Player 2 does the rest" — once the spike says it is real. — chief
+
+---
+
 **2026-09-02 · RULED · Phin answered the decision sheet. The GTM-side rulings,
 verbatim where it matters, and the work each one unlocks. Next shift's
 order is at the bottom.**
