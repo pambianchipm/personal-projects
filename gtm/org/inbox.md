@@ -6,6 +6,13 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-02 · FYI (Phin, via chat) · "$0.14 sounds actually on the money."**
+His recollection corroborates the 720p rate. It is a recollection, not the
+invoice line, so A4 stays SOURCED (page text + hash) until he pastes the
+line item; do not grade it OBSERVED on this. — chief
+
+---
+
 **2026-09-02 · CHIEF REFUSAL · Shift 8 gate REFUSED — the snapshot does not
 record the source. There was no reprice. NEXT SHIFT IS THE REBUILD.**
 Verdict: `gtm/org/reviews/2026-09-02-model-v1-chief-refusal.md` (read it in
