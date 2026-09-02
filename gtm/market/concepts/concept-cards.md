@@ -84,8 +84,9 @@ version of that sentence owners actually buy.
 > Keeping up with marketing is a job you didn't sign up for.
 >
 > **Loma is an AI marketing platform.** Its content engine writes your
-> posts, replies, and videos in your brand's voice. Its smart calendar
-> schedules everything at the right times — you approve with one tap.
+> posts, replies, and videos in your brand's voice — saving you hours
+> every week. Its smart calendar schedules everything at the right
+> times, so you never miss a posting day — you approve with one tap.
 > And its performance dashboard shows you which posts worked, all in
 > one place.
 >
@@ -117,10 +118,16 @@ version of that sentence owners actually buy.
 ## Design rationale (internal — never shown to interviewees)
 
 - **M vs K** isolates the F1 motivator question: identical frame
-  ("marketing employee you subscribe to"), identical safety clause,
-  symmetric length; only the lead motivator and endline differ
-  (relief/"phone down" — the landscape report's synthesized line,
-  finally tested as a message — vs growth/"more people").
+  ("marketing employee you subscribe to"), identical verbatim safety
+  clause, symmetric length (111 vs 114 words, gate-counted); THREE
+  differences, named precisely (gate-corrected): the lead motivator,
+  the endline (relief/"phone down" — the landscape report's synthesized
+  line, finally tested as a message — vs growth, effort-framed), and
+  the third KSP (M carries honest-reporting; K carries experiment/
+  learning — each supports its motivator per deck p15). The markup
+  ritual is the hit-feature control: if a card wins on a circled KSP
+  rather than the main idea, the main-idea-in-their-words field shows
+  it.
 - **T** is the folder control: same product, tool-band language,
   deliberately generic ("one platform") — if T scores level with M/K,
   frame B's premium story is in trouble and we want to know NOW.
@@ -130,11 +137,34 @@ version of that sentence owners actually buy.
   directly.
 - Receipts: every present-tense capability in M/K/T/R maps to shipped
   code (loop, voice, approval + advance-approval, honest reports,
-  failure alerting, Pulse-based market watch) EXCEPT two flagged
-  stimuli in the kit's roadmap ledger (client-visible failure alerts in
-  R; nothing else). "In front of more people" / "through the door"
-  claims were deliberately NOT written — no card promises bookings
-  (axis f stays unclaimed; the kit probes it instead).
+  failure alerting, Pulse-based market watch) EXCEPT the flagged
+  stimuli in the kit's roadmap ledger — exactly two: (i) card R's
+  client-visible "you hear about it first" (alerting is operator-only
+  today), and (ii) the feature table's "(coming)" rows + its
+  never-fails-silently row's owner-visible reading (same operator-only
+  limit). OUTCOME rule, stated precisely (gate-corrected — the earlier
+  wording contradicted card K verbatim): no card promises BOOKINGS,
+  customers, or dollars (axis f stays unclaimed; the kit probes it
+  unprompted instead). K's endline "working to put your shop in front
+  of more people" is EFFORT-framed visibility, not an outcome promise —
+  that's the line, and it sits inside it deliberately.
+- **M10 noun-instruction deviation, disclosed (gate-required):** the
+  M-list said the market-watch card "must carry NOUNS"; card K uses the
+  abstract form on purpose — the noun example ("other salons near you")
+  would overclaim unaudited competitor-tracking depth (M10 caveat a) and
+  imply geo-monitoring no receipt backs. The kit's "what do you picture
+  it actually watching?" probe carries the noun test instead, as data
+  rather than claim.
 - Endline pool variants for LATER rounds (not round 1): the
   never-fires-you/never-quits compression (test WITH the lock-in
   misread probe), "it just goes," north-star "backup" language.
+- **Deferred this round, on the record:** F2's M1-led ("it runs") vs
+  M2-led ("you're in control") split is NOT tested by these four — R is
+  trust-led, adjacent but not it. The narrowing step may not read four
+  cards as having covered F2; it queues for round 2.
+- Aggregation cautions (gate): M's endline arrives pre-crafted
+  (synthesized line) while K's was written fresh — weigh endline-driven
+  M wins accordingly; card letters M/K collide with internal M-/K-list
+  numbering — capture sheets say "card M"/"card K" vs "M1"/"K4"; T and
+  R accidentally rhyme with their territories — randomize letters next
+  round.

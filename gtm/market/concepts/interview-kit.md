@@ -34,8 +34,11 @@ first real-owner test of that idea.
   understood them to mean.
 - **Roadmap ledger — memorize this:** if asked directly "does it do X
   today?": card R's "you hear about it first" alerting is built but
-  reaches the operator, not yet the client; the feature list's items
-  marked (coming) are approved builds, not shipped. The honest line:
+  reaches the operator, not yet the client — and the SAME limit applies
+  to the feature table's "Posting that never fails silently" row (the
+  flag reaches the operator today; "so I'd get told?" gets the honest
+  line, not a yes); the feature list's items marked (coming) are
+  approved builds, not shipped. The honest line:
   "that part's coming — here's what works today." NEVER affirm an
   unshipped capability as present; the cards are research stimuli, not
   promises, and you may say exactly that.
@@ -97,6 +100,8 @@ in their words.
   competitor stalking, trends, their own street? Note if they'd want
   the salon-next-door version, and note THAT expectation for the O18
   conflict question.)
+- M's reporting line (probe symmetry with K's): "You circled / crossed
+  'won't pretend when nothing did' — say more?"
 - R's trust framing: "You crossed out / circled 'trust with the keys' —
   say more?" If lock-in worry appears anywhere ("can I get out?"),
   probe gently: "what would make leaving feel safe?" (O4/P-C evidence.)
