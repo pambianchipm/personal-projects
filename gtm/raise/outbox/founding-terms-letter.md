@@ -18,17 +18,19 @@ Hi [NAME],
 I'm Phin — I built Player 2, an AI marketing employee for small
 businesses: it plans a week of posts from one goal, writes them in your
 voice, publishes on your schedule, and tells you honestly what worked.
-Nothing posts and nothing is ever spent without your OK.
+Nothing posts and nothing is spent without your OK.
 
 I'm looking for ONE founding shop to run it for real, free, while we
 learn. Here's the whole deal, plainly:
 
 **What you get:** the full service, free for [3 months] — a planned
 week of posts every week, drafted for your approval, images included,
-and honest monthly reporting. If something we generate ever goes out
-wrong under your standing approval, we fix it and credit you — that's
-policy, not a favor. [PHIN: credit shape per D6 — state it before
-sending.]
+and honest monthly reporting. If something we generate goes out wrong
+under your standing approval, we fix it and make it right — we extend
+your free months, and if you ever join as a paying shop, you start
+with credit at the founding rate. That's policy, not a favor. [PHIN:
+this is the drafted D6 credit shape for a FREE pilot — confirm or
+reshape it, but the sentence may not send with the remedy undefined.]
 
 **What I ask:** your honest reactions (a short call every couple of
 weeks), permission to learn from what works on your accounts, and — if
@@ -36,18 +38,19 @@ it earns it — permission to name you as our first shop. You can say no
 to any of that at any point.
 
 **What you keep, always:** your accounts stay yours — your logins, your
-pages. Everything we make for you is yours. If you leave, your content
-and calendar leave with you (export included), and if we ever shut
-down, we stop loudly with notice and your data goes with you — never
-silently. That's a written commitment, not a vibe.
+pages. Everything we make for you is yours. If you leave, we hand you
+everything — your content and your calendar, in files you can use —
+and if we ever shut down, we stop loudly with notice and your data
+goes with you, never silently. This letter is that commitment, in
+writing.
 
 **The honest part:** you'd be first. The system runs in production
 today on my own product, and you'll see exactly what it does before you
 approve anything — but no other shop has run it yet, and I'd rather
 tell you that than have you find out.
 
-No contract tricks: month-to-month, leave in two clicks, and anything
-you're unsure about, ask me directly — my cell is [PHONE].
+No contract at all: say the word and we stop, same day — and anything
+you're unsure about, ask me directly; my cell is [PHONE].
 
 If you're in — or even just curious — reply and I'll show you what it
 would post for you this week, before you decide anything.

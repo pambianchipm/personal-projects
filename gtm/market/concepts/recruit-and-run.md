@@ -9,8 +9,13 @@ LAW 3: Phin sends the message; the org drafts.
 
 > "I'm doing some research on how small-business owners handle their
 > marketing, and I'd love 30 minutes of your honest reactions to a few
-> ideas — nothing to buy, ever; I genuinely just need your opinions.
+> ideas — nothing to buy; I genuinely just need your opinions.
 > Coffee's on me — would sometime this week work?"
+
+*(Gate rule: "ever" was cut — a barred absolute, and the follow-up call
+in the close must honor what the message promised: if a later call
+carries any offer, it opens by saying so plainly. The research
+conversation itself never converts into a pitch.)*
 
 Rules riding along: no product name in the message; if asked "what is
 it?" before the session — "I'll show you everything when we sit down;
@@ -44,8 +49,12 @@ contamination note).
    matters 1–5 + different 1–5; top three; why.
 6. **Never:** explain or rescue a card (if you slip, mark that card
    CONTAMINATED); answer an objection mid-session; affirm anything
-   marked (coming) as present — the honest line: "that part's coming —
-   here's what works today."
+   marked (coming) as present — AND remember the kit's two unmarked
+   ledger items: card R's "you hear about it first" reaches the
+   operator today (not the owner), and card T's brochure lines ("right
+   times," "saving you hours," "never miss a day") are tool-typical
+   stimuli, not Loma capabilities. The honest line covers all of it:
+   "that part's coming — here's what works today."
 7. **Close:** thank them; no pitch; "can I call you again when we've
    built from what you said?" Staple marked cards to the capture
    sheet. Photograph everything to the chief same day.
