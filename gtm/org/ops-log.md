@@ -8,6 +8,68 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · scheduled · SHIFT 15 — the round-3 fresh verifier on the
+position.** Shift 14's handoff named this the next shift's non-negotiable
+first act, and triage rule (c) agrees: GATE-FAILED artifacts before new work.
+
+**VERDICT: FAIL.** Four gate-blocking findings, 16 required edits, **all
+applied this shift, nothing argued down.** `position-v2-the-hire.md` remains
+**GATE-FAILED and uncascadable.** Verdict + the full 64-row ledger verbatim:
+`reviews/2026-09-03-shift15-position-r3-fresh-verifier.md`.
+
+**Fan-out disclosure:** one fresh verifier (Opus 5) — a receipts auditor, not
+a persona, per the review budget's "round 3 = fresh verifier." It had not seen
+rounds 1 or 2; shift 14's three carry-ins and two standing rules went into its
+brief verbatim. **The ledger was filed BEFORE the edit pass**, per the rule
+shift 14 adopted after breaking it.
+
+**Both carry-ins the handoff flagged as most likely wrong came back CLOSED.**
+The Viktor receipt chain is sound — all four hashes recompute byte-for-byte
+against the raw bytes retained in-repo, and the verifier got there by refusing
+to trust §1a's account of its own repair. The `allowance.ts` custody audit
+found **no fabrication**: 5 quotations byte-exact, plus one elided word, two
+derivations typeset as quotations, and one mis-pointed enforcement test — all
+four fixed with line numbers.
+
+**The four blockers, each re-derived by the boss before acting:**
+1. **§1.6's shippable hero block still contained a sentence §6.2 BARS.** The
+   r2 fix was applied to one of the two places the sentence lives. `grep` →
+   2 hits. **A live path to a false claim on a landing page.** Removed.
+2. **The r2 entry-price correction was itself wrong.** Its ~$72.8/mo assumed
+   seconds-based metering; `xai-video.ts:49/52` clamps every call to ten
+   seconds and both entrypoints meter calls against `allowance.ts:44
+   video: 4`, so a 30 s Reel is a three-call chain and the ceiling is
+   **~$24.27/mo**. **The conclusion — entry pricing UNRESOLVED — survives;
+   its reason does not.**
+3. **§4.0 reported a cost share (63%) as a gross position**, in the paragraph
+   written to fix an over-claim. True gross there is **+37.3%**.
+4. **`channel-readiness.md`, cited as "the authority" for §3.1, does not
+   exist** in the build repo. Re-anchored to code receipts that open (5 of 7
+   grades independently corroborated); **Reddit regraded NOT CHECKED**.
+
+**RETRO FILED — the review budget's three rounds are spent and the protocol
+requires one of a capped loop.** Four causes: (a) corrections that did not
+travel — shift 13 adopted a propagation rule for the competitor artifacts and
+**nobody generalised it**, so the same defect recurred in a file with no
+card/dossier split; (b) a self-critical correction trusted **because** it was
+self-critical — the direction a claim points is not evidence about it;
+(c) three rounds asked persona questions of an artifact whose defects were
+overwhelmingly **citation** defects — the auditor found four blockers in one
+pass; (d) a disclosed floor of 18 items that omitted the shift's most
+consequential finding, which lived only in a parenthetical. *"A finding buried
+in a parenthetical is disclosed to the auditor, not to the reader."*
+
+**Worth recording alongside the FAIL:** the verifier's own line — *"This file
+discloses more against itself than any artifact I have audited"* — and law 1
+handling graded the strongest in the tree. It still failed. Both are true.
+
+**Token weight: heavy.** Three checkpoint pushes. **Next shift's first act:
+a round-4 confirmation that the 16 edits landed** — the boss does not
+self-pass. Untouched and still blocked: three Phin items and five chief items,
+all flagged in the inbox, all in artifacts the boss may not edit.
+
+---
+
 **2026-09-03 · FIRED (on-demand, chief at Phin's request) · SHIFT 14 — THE
 POSITION. GATE-FAILED (round 2, both personas). NOT GATED, NOT CASCADABLE.**
 
