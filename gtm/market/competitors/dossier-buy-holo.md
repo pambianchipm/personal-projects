@@ -33,6 +33,14 @@ the primary snapshot, labelled NOT OBSERVED, or labelled as a statement about
 *us* rather than about them. **No owner has compared the two products in
 front of this org.**
 
+**Correction-propagation rule (both gates, r2 — this is now the failure mode,
+not truthfulness).** Any correction to a shared fact is applied to the
+**battle card FIRST and the dossier second**, never the reverse. Three
+corrections this shift reached this dossier and stopped before the card — the
+revenue-ingest limit, the onboarding concession and the disqualification
+floor. **The card is the instrument someone speaks from; a correction that
+has not reached it has not been made.**
+
 **The rule this file broke twice, now written at the top:** the Weaknesses
 section has failed a gate twice on the same defect — once at shift-12 gate r1
 for upgrading five in-house assertions into "verified against their own
@@ -109,8 +117,11 @@ could reach the primary source.
 - **It does the loop's visible steps.** Generate → schedule → post →
   measure, on a calendar, with a kanban and a per-post hypothesis.
 - **Price.** A15's $12–29 promo against A1's $59 and A2's $299.
-- **Breadth in one subscription** — ads, social, email, SEO sections; Meta,
-  Instagram, TikTok, LinkedIn, Snapchat, YouTube, Klaviyo, Mailchimp named.
+- **Breadth in one subscription** — ads, social, email and SEO sections were
+  seen in the nav. The channel list (Meta, Instagram, TikTok, LinkedIn,
+  Snapchat, YouTube, Klaviyo, Mailchimp) is **their pricing-page copy and a
+  logo strip** — what is observed is that they *print* the names; only one
+  platform selector value, Instagram, appeared in the session.
 - **Onboarding: their pricing page promises** website URL → launch-ready
   content. Whether their first minute actually beats ours is **`UNTESTED`** —
   the only receipt is their own ad copy, against a **"Getting started 2/10"**
@@ -172,8 +183,11 @@ was here was unearned**
   exist yet (no SLA, named owner or response commitment anywhere in the
   repo). `UNTESTED`, and a bet about buyer perception, not a capability. It is our strongest
   ground *by our own reckoning*, which is not the same as by an owner's.
-- **The gate.** Nothing posts or spends without the owner's click. Ours
-  regardless of what they do.
+- **The gate.** Nothing posts or spends without **an approving human's
+  click** — today the *operator's* (`auto-publish.ts`: "only Phin's UI can"
+  arm a slot; `horizon.ts`: "autoPost always false"; `agent.ts`: "Phin
+  approves every dollar"). Whether a self-serve entry buyer holds that click
+  is a product question, not a receipt. Ours regardless of what they do.
 - **The decision layer** — results changing what gets proposed next, and
   organic winners promoting into paid. **Conditional: see the open question.**
 
@@ -254,8 +268,10 @@ prospect behaviour, though the underlying product facts (A36) are OBSERVED.
 - An ecommerce brand that wants volume across ads, social and email at tool
   price, and is content to run its own judgment over the output.
 - Anyone whose success metric genuinely is reach.
-- A buyer content with **email support and no named owner**, and no
-  subscription above ~$50.
+- A buyer content with **email support and no named owner**, and **no
+  subscription above ~$100** — matching Card 3's floor, which is set
+  deliberately above our own $59 entry so the disqualifier can actually fire
+  (law 4: one floor, not two).
 - **Not** a buyer who needs someone accountable, a human-gated spend, or an
   answer to "did it sell." Those are our capabilities, receipted. **That any
   owner segments themselves this way is `UNTESTED` — zero interviews.**
@@ -271,10 +287,19 @@ cadence we never receipted.
 **No replacement line is written here.** The chief sequenced the positioning
 directive *after* this rebuild precisely because the wedge moved; the revised
 position goes back to them with the evidence, and to Phin for any external
-use. What may be said today, internally, is only this: **we are the operated
-tier — a human accountable, every post and every dollar on the owner's click,
-success measured in sales traced to a post rather than followers.** All three
-are statements about us, each with a shipped receipt.
+use. What may be said today, internally, is **one** claim with a shipped receipt:
+**nothing posts and nothing is spent without an approving human's click**
+(`auto-publish.ts`, `horizon.ts`, `agent.ts`). The other two clauses are
+struck from this sentence by this file's own findings, ~110 lines above it:
+**"a human accountable"** has no receipt — no SLA, named owner or response
+commitment exists in the repo; **"sales traced to a post"** is not shipped —
+automatic revenue ingest is marked *future*, the owner logs the sale, and the
+recap totals per channel per month, not per post. **Both are roadmap.
+Neither may be said, internally or otherwise, until it has a receipt.**
+*(Corrected at both gates r2: the previous version of this sentence claimed
+"a shipped receipt" for all three while this same file said two of them had
+none. It was also the file's single most quotable sentence, and the one
+closest to becoming external copy — which is exactly why it failed.)*
 
 ## The wider BUY landscape (unchanged by this snapshot)
 
@@ -305,7 +330,8 @@ priced tier — currently blurs into productized DFY."*
   a paywall, a tier gate, or styling.
 - (iii) **What "Measuring" contains**; the Analytics tab was never opened.
 - (iv) **Whether Holo does revenue attribution.** Only a follower goal was
-  seen. **Absence from four screenshots is not absence from a product.**
+  seen. **Absence from the captured screenshots is not absence from a product** (four
+of the session plus the Learnings capture — five, not four).
 - (v) **Whether anything on their side is human-gated** before posting or
   before ad spend.
 - (vi) **Whether organic winners promote into paid**; Ads and Socials are

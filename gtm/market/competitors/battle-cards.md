@@ -224,22 +224,22 @@ cancellation** and credits expire.
 **Key stats (A15, A34, A35, A36 — all OBSERVED).** List **$20 / $48**, promo
 **$12 / $29**, two plans only, **120 / 350** creatives per month · third-party
 trust **1,048 Trustpilot reviews at 4.4/5** (their self-printed **4,268** is a
-*brand* count and **4.9/5 is not a third-party rating**) · refund is **7 days,
-void on any credit use including a discarded generation**, 5% fee, refundable
-in **90-day expiring credits**, consumer rights waived, re-assessed **every
-renewal**, which Holo **may at its option** pay as non-transferable credits
-expiring in 90 days rather than cash (§4.2 says "may"), under a
-**business-use-only** clause in which the buyer waives statutory cooling-off
-rights **"to the extent permitted by law"** (§2.1/2.2).
+*brand* count and **4.9/5 is not a third-party rating**) · refund is **7 days, void on any credit use including a test or discarded
+generation** (§3.1–3.2), minus a **5% processing fee** (§4.1), which Holo
+**may at its option** pay as non-transferable credits expiring in 90 days
+rather than cash (§4.2 says "may"), assessed **per payment including every
+renewal** (§3.3), under a **business-use-only** clause in which the buyer
+waives statutory cooling-off rights **"to the extent permitted by law"**
+(§2.1/2.2). **Five clauses. All five exactly, or none.**
 
 | | Holo | Player 2 |
 |---|---|---|
 | Price | A15 $20/$48 list, $12/$29 promo | A1 $59 entry · A2 $299 founding rate · A3 $499 standard **(defined, ungated)** |
 | Schedules and posts | **YES — calendar, kanban, "Scheduled on Fri, Sep 4"** (A36) | Yes, in windows, gated on your click |
 | Measures | **YES — a ladder ending in "Measuring", an Analytics tab, a Learnings surface** (A36) | Claims engine + UTMs at publish |
-| What it counts as success | **Followers** — the only goal metric observed ("0 / 1K Followers") | **Someone who booked or bought, traced to a post**, via UTMs at publish. **Limit, say it out loud: this traces click-throughs. Phone and walk-in bookings do not trace.** For a shop whose demand is mostly phone or door, this wedge is materially weaker — `UNTESTED`, and the first thing Phin's interviews must size |
+| What it counts as success | **Followers** — the only goal metric observed ("0 / 1K Followers") | **Someone who booked or bought — and say exactly what ships.** UTMs go on every post at publish (`attribution.ts`, `utm_content` = post id). **Automatic revenue ingest is NOT shipped** (`db/conversions.ts` marks GA4 ingest *future*): **today the owner logs the sale themselves**, and the recap totals it **per channel per month, not per post**. **Never say "traced to a post" as a shipped fact.** Two further limits, out loud: UTMs trace click-throughs only — **phone and walk-in bookings do not trace**; and `COMPARISON_REGISTRY` tests format, daypart, boost and cadence — **no revenue dimension in the engine**. For a shop whose demand arrives by phone or door this wedge is materially weaker — `UNTESTED`, and the first thing Phin's interviews must size |
 | Does a result change what gets made next | **NOT OBSERVED — do not assert either way** | **Partly, and by hand**: a published claim becomes standing memory only when a human presses **[Apply]** (`claims-pure.ts planClaimApply`), and a claim publishes only past n≥5/arm, 7-day maturity, FDR q≤0.05, max 2 per pass (`trends.ts`). Optimizers **propose**; a person applies. **Do not claim this row as a clean win** |
-| Human accountable | **No service tier and no named owner** — two self-serve plans. Support IS sold: a **Support row on their pricing page (Standard email / Priority)**, and a Trustpilot profile **replying to 85% of negative reviews, typically within two weeks.** Whether anything is human-gated: **NOT OBSERVED** | A2 is done-with-you; a person is answerable |
+| Human accountable | **No service tier and no named owner** — two self-serve plans. Support IS sold: a **Support row on their pricing page (Standard email / Priority)**, and a Trustpilot profile **replying to 85% of negative reviews, typically within two weeks.** Support answers **tickets**. **NOT OBSERVED: anyone accountable for the month's results** — and whether anything is human-gated | A2 is done-with-you; a person is answerable |
 | Nothing posts or spends without your OK | **NOT OBSERVED on their side** | Yes — ours regardless |
 | Refund if it doesn't work out | **7 days, dead the moment you generate anything** (A34) | Full refund on request, first 30 days (A17) |
 | Replies to comments and DMs | **NOT CHECKED** — no engagement surface in the nav read, and the nav may be incomplete | Yes — engagement drafting ships, gated on your click |
@@ -247,19 +247,29 @@ rights **"to the extent permitted by law"** (§2.1/2.2).
 | Onboarding speed | **Their pricing-page promise** is website URL → launch-ready content; the captured account's own onboarding checklist reads **"Getting started 2/10."** Neither product's first minute has been timed. `UNTESTED` — **do not concede this in a call** | Not timed either |
 
 **Why we win.** (1) **What success is counted as.** Their observed goal metric
-is followers; ours is someone who booked or bought, traced to a post — "and
-we will show you which one, or tell you we can't tell yet." **Never say "n
-floors" or "FDR correction" to a buyer**; that is the internal receipt
-(`console/lib/claims.ts`). Say it as what we do. (2) **The operated
+is followers; ours is someone who booked or bought — **and today that means you log the
+sale and we total it per channel per month; per-post revenue is roadmap, not
+shipped.** Say the true sentence: "we put a tag on every post, you tell us
+what came in, and we'll tell you what we can see — or tell you we can't tell
+yet." **If the buyer answers "I'm not typing that in every week," that is the
+correct objection and you have no answer today. Log it and move to the
+gate.** **Never say "n floors" or "FDR correction" to a buyer**; that is the
+internal receipt (`console/lib/claims.ts`). (2) **The operated
 tier — and you must be able to say what the human does.** Name the person's
 actual weekly work, their response time, and what the buyer gets when it
 goes wrong. **If you cannot name all three, do not use this argument.**
 That the tier cannot be copied by shipping a page is our strategic bet,
 `UNTESTED`; the dossier grades the underlying tier-definition claim
-UNSOURCED in its own source. **Translate the price before they do:** $299/mo
-is five haircuts, two covers a week, or four PT sessions in the buyer's own
-units — say it in their units first or they will say it in theirs, worse
-(`UNTESTED`, no owner has heard this framing). (3) **The gate**: nothing
+UNSOURCED in its own source. **Translate the price before they do:** $299/mo is five haircuts, two covers
+a week, or four PT sessions in the buyer's own units — say it in their units
+first or they will say it in theirs, worse (`UNTESTED`, no owner has heard
+this framing). **And the one thing that makes the metric real, which is the
+operated tier's actual job:** on A2 the accountable person does the sales
+logging *with* the owner — twenty of our minutes against an hour of theirs,
+and it turns "someone who booked" from a claim into a routine. **`UNTESTED`
+and NOT YET COMMITTED — it is in no SLA, scope doc or price page. Do not
+promise it until it is written down.** Flagged to Phin: the SMB gate says
+this, not the feature list, is what $299 buys. (3) **The gate**: nothing
 posts or spends without your click.
 (4) **Their refund is genuinely hostile and we hold the receipt** (A34).
 
@@ -269,8 +279,10 @@ only tier within 5× of them, and quoting only that comparison hides the
 objection instead of preparing for it. `UNTESTED`: no owner has been asked
 to react to either number. (2) **They do the visible loop too**, and a
 prospect with the product open will see it.
-(3) **1,048 real reviews against our zero customers**, plus an onboarding
-first minute better than ours, plus email and SEO sections we don't have.
+(3) **1,048 real reviews against our zero customers**, plus a **stronger onboarding promise on their pricing page** — website URL →
+launch-ready content — though **neither first minute has been timed and their
+own captured account reads "Getting started 2/10": `UNTESTED`, do not concede
+it in the call** — plus email and SEO sections we don't have.
 
 **Landmines** *(all four survive either answer to the open question. Whether
 any of them lands on a real owner is `UNTESTED` — none has been asked
@@ -286,9 +298,13 @@ outside this building. **Lead with 2.**)*
    dead on a single test generation, 5% fee, 90-day expiring credits.)*
 4. "Who do you talk to when it goes wrong?" **Expect it straight back. Our
    answer, said first and without softening: we have zero customers, you
-   would be the first, and the person you talk to is [named human] at
-   [contact] — that is the whole of the operated tier and it is why it costs
-   what it costs.**
+   would be the first, **and the person you talk to is [NAMED HUMAN — REAL NAME
+   AND NUMBER. This card does not ship with a blank here.]** Know the trade
+   before you open it: **Holo replies to 85% of its negative reviews,
+   typically within two weeks (A35); we have replied to none, because we have
+   had none. This question is an even trade, not a win.** What we have that
+   they do not is a named person — and if you cannot name them, do not ask
+   landmine 4.**
 
 **Four hard rules on this card.**
 - **Never say they don't post, don't measure, don't learn, or "generate then
@@ -310,8 +326,13 @@ they want no human in the loop; **their marketing budget ceiling is under
 ~$100 — deliberately set ABOVE our own $59 entry, because a ~$50 line that
 our cheapest tier clears by nine dollars is a disqualifier that never
 fires**; or **their bookings come mostly by phone and walk-in, where "traced
-to a post" does not trace.** And disqualify yourself out loud on the fact in
-our own table: **we have zero customers and they would be our first.** Holo
+to a post" does not trace.** And disqualify yourself out loud on the fact in our own table: **we have zero
+customers and they would be our first — then say what being first buys them,
+in the same breath, or do not say it at all.** Our own table prices A2 at a
+**$299 founding rate against a $499 standard**: the founding rate locked for
+the life of the account, a named person's direct number, first call on what
+gets built. **Honesty that costs the buyer and returns them nothing is a
+warning, not a disclosure.** `UNTESTED` — no owner has heard either half. Holo
 is the better buy for all of these, and saying so is what makes the rest of
 this card credible.
 
