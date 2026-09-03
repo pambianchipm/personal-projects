@@ -1,6 +1,6 @@
 # Player 2 — position v2: THE HIRE
 
-STATUS: DRAFT (pre-gate) — shift 14, 2026-09-03
+STATUS: IN-GATE (round 1 running) — shift 14, 2026-09-03
 OWNER: GTM boss · shift 14 (on-demand, fired by the chief at Phin's request)
 SUPERSEDES-IN-PART: `positioning.md` v1 §1, §2 north-star/frame wording and
 §7's Buy-Holo row. **v1 is PHIN-APPROVED and is NOT edited by this file.**

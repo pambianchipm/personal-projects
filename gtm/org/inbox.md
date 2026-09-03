@@ -6,6 +6,95 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 14 — THE
+POSITION.** Artifact: `gtm/market/position-v2-the-hire.md`. Personas per
+protocol: **skeptical SMB owner + competitor's salesperson**, two independent
+spawned reviewers, neither of which wrote a word of it. Verdict will be filed
+at `gtm/org/reviews/2026-09-03-shift14-position-v2-both-gates.md` with both
+ledgers verbatim. Status IN-GATE until then.
+
+**What it decides, against your 20:00 order:** the hiring frame is **adopted**
+and the co-op half is **demoted** to Phin's founder line; the two layers are
+adopted with the employee's four properties **reordered** so that *it asks you
+things* leads, because that property is the attribution mechanism and the
+other three are not; the three ruled constraints are restated as copy rules
+with a sayable/not-sayable table the copy orgs can execute; entry **holds
+$59** in the new shape with a **$29 founding-cohort** concession; A2 stays
+waitlisted with $299 recommended as the eventual number on a changed
+argument; and Viktor is snapshotted primary.
+
+**THREE THINGS YOU WILL WANT TO SEE FIRST, and two of them are against you.**
+
+1. **The inversion argument does not hold, and it is yours.** *"Do the work of
+   a full team without hiring one"* exists in exactly one place in this tree:
+   your 20:00 entry, `inbox.md:110`. It is **not** in the primary Holo
+   snapshot, which by its own header outranks every third-party or remembered
+   figure. What the snapshot records is *"Pick your plan. Scale your output
+   with more ads every month."* Graded **UNSOURCED** and **removed from the
+   frame's argument** rather than repaired. Your own 17:55 ruling is the
+   reason: the account is the instrument, and an intermediary quote is not a
+   receipt. **The correction improves the position** — their page sells a
+   volume ladder, so the hiring frame's real power is that it *refuses their
+   unit*, which stands on OBSERVED text. **Action for Phin: one screenshot of
+   the tryholo.ai homepage hero settles it.**
+2. **"Hire" is already the AI-employee category's frame, and the wage anchor
+   pushes DOWN, not up.** OBSERVED on Viktor's own page this shift: *"Hire an
+   AI Employee. Not Another Tool."*, *"One hire. The output of a team."*, and
+   the price they attach to it — *"for the price of lunch"*, *"then $50 a
+   month"*, with the only printed plan card at **$100/mo for 40,000
+   credits**. So the frame is novel **in SMB social marketing** and nowhere
+   else, and a $299 defence built on "cheaper than a hire" is standing on an
+   anchor the category is collapsing. The file claims the narrow version and
+   re-argues $299 on **scope of work product** instead — it publishes to real
+   accounts and spends real ad money, which neither comparable does for a
+   shop.
+3. **Your guardrails-as-differentiator line is downgraded.** Viktor prints
+   *"sensitive actions wait for your approval"* on its own page. Anyone can
+   print that. Ours is *enforced* in `auto-publish.ts` — **and you cannot show
+   a shop owner a code comment.** Guardrails earn the frame the right to say
+   "hire" without recklessness. They do not win the deal, and pricing should
+   not assume they do.
+
+**THE SNAPSHOT PAID FOR ITSELF AGAIN.** Your relayed Viktor read — *"entry
+around $50/mo for 20k credits"* — is off by 2× against the page. `$50` is a
+*from*-price in their `<title>`, meta description and footer CTA; the only
+plan card printed is **$100/mo / 40,000 credits**; `20,000` appears once, in
+an unpriced FAQ question. Receipt:
+`gtm/market/competitors/snapshots/2026-09-03-viktor-pricing.md` — fetch
+2026-09-03T20:20:35Z, HTTP 200, byte counts and SHA-256 for both pages,
+extracted text retained and hashed beside it.
+
+**DOES "LAND CHEAP, EXPAND ON USAGE" TRANSFER?** Mostly no, and their own page
+supplies the sentence that kills it: *"Most solo users find 20K–40K plenty for
+a month."* Their expansion engine is a workspace filling up with delegators;
+an owner-led shop has one. What DOES transfer and I recommend importing: **no
+feature tiering on the metered layer** — every entry buyer gets every shipped
+platform capability, the only difference is the allowance. And what to refuse:
+a credit *unit*. Denominate in images and videos, which an owner recognises,
+not in credits, which is a meter.
+
+**THREE THINGS FOR PHIN, in the file and repeated here:**
+- **Items 31 §4–6** — soft cap never blocks mid-task, show usage not a
+  remaining balance, no expiry inside a paid period — are **your**
+  constraints, not his rulings. They are marked as such wherever used and
+  **he has not ruled on them.** They are cheap, buyer-visible and they are
+  what stops us inheriting the competitor's worst mechanics. Put them to him.
+- **The $29 he wants** is available without repricing the product: a
+  **founding-cohort rate for the first invited alpha**, using item 22's
+  existing `cohort` field. A list-price cut is the version I argue against; a
+  cohort rate is the version that tests his instinct where it does the most
+  good.
+- **"Come hire Player 2" is a verb the product cannot honour** while item 22
+  closes the checkout route. The hero needs *"get in line to hire"* until the
+  door opens. Small, and it is the whole difference between a promise and a
+  claim.
+
+**NOT CHECKED is at the end of the file and it is not short.** Recommendation
+on the chief's confirm: read §1.2 and §1.5 first — they are the two places
+this file contradicts the order it was given. — boss
+
+---
+
 **2026-09-03 20:25 · RULED BY PHIN — THE METERING SPLIT IS THE DECISION, NOT
 A RECOMMENDATION.** *"yeah lets go with that split — file it as the
 decision."* Filed as **build item 31**. **Do NOT argue the shape; price
