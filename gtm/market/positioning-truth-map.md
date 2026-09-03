@@ -148,7 +148,7 @@ framing, and one composed surface over existing data. Low-medium.
 **What exists:** the strongest differentiator in the audit — suppressed
 claims persisted with reasons, digest that refuses to invent a good week,
 "nothing new today" honored as a Pulse output, proactive failure alerts.
-No competitor in the Holo teardown does any of this (positioning.md §5).
+~~No competitor in the Holo teardown does any of this (positioning.md §5).~~ **STRUCK 2026-09-03 (shift 13): unsupportable.** The teardown was superseded by primary capture (A36) — Holo schedules, posts, measures, and ships a Learnings surface. What remains genuinely unobserved on their side is narrower: whether a result re-enters generation. State our capability; do not state their lack.
 **What's missing:** first-person ownership on client-facing surfaces ("this
 didn't work, here's what I'm changing") and a client-visible escalation
 ("I'm stuck on X, flagging a human") — today's alerting is operator-only.

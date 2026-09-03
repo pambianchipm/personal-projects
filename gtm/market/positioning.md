@@ -24,8 +24,10 @@ dollar gated on the owner's click.
 seen or reacted to any of this. Every audience-resonance claim below is
 marked `UNTESTED`. What IS sourced: what the product does (receipts from the
 clinkworthy repo, read 31 Aug), what the market pays (the SMM landscape
-report's verification-graded stats), and what competitors lack (the Holo
-teardown). Resonance gets tested by Phin's interviews (backlog item 5's
+report's verification-graded stats), and what competitors lack (~~the Holo
+teardown~~ — **superseded 2026-09-03 by Phin's primary capture; the teardown
+was wrong about what Holo does, and "what competitors lack" is now the
+weakest category of claim in this file**). Resonance gets tested by Phin's interviews (backlog item 5's
 concept cards), never by this document.
 
 ---
@@ -106,9 +108,15 @@ and learns for your shop — and nothing goes out without your click."
 
 1. **It does the marketing, not just the drafts.** Plans a week from a goal,
    writes posts/replies/videos/ads, publishes on schedule, reads results.
-   The full loop — vs. asset factories that hand you a pile of creatives
-   ("Holo makes assets; Player2 runs marketing" — `competitor-holo.md` BLUF).
-   `UNTESTED` resonance.
+   The full loop. ~~vs. asset factories that hand you a pile of creatives
+   ("Holo makes assets; Player2 runs marketing" — `competitor-holo.md`
+   BLUF).~~ **STRUCK 2026-09-03 (shift 13): that supporting evidence is
+   FALSE.** Phin's primary capture shows Holo scheduling, posting and
+   measuring (A36). This benefit's *statement* may still be true of Player 2;
+   its *contrast* has lost its evidence and *"the full loop"* no longer
+   distinguishes us from Holo. **The re-argument is the chief's sequenced
+   positioning directive, not a boss edit to a PHIN-APPROVED file** — flagged
+   here, not rewritten. `UNTESTED` resonance.
 2. **Nothing posts or spends without your click.** The safety model, stated
    in one line on the landing page and enforced in code. And the click is
    not a per-post chore: the owner can approve in advance (the Calendar's
@@ -174,11 +182,17 @@ Per the PM deck p38, three competitor types:
   assistant, not a planner (46% use it for ideation vs 4% for calendar
   planning — Hootsuite poll via landscape report). Better: Player 2 runs the
   loop end-to-end including the publish, the replies, and the measurement.
-- **Buy** (Holo and the tool band) — Holo teardown, from their own
-  reviewers: no learning loop, no attribution, no ad execution. Better:
-  outcome memory + optimizers + gated ad runs. Caveat carried from the
-  teardown: their prices were third-party-sourced; spot-check before any
-  external use.
+- **Buy** (Holo and the tool band) — **REWRITTEN AT SOURCE 2026-09-03
+  (shift 13). Read `competitors/dossier-buy-holo.md`; the struck text below
+  is FALSE.** ~~Holo teardown, from their own reviewers: no learning loop,
+  no attribution, no ad execution. Better: outcome memory + optimizers +
+  gated ad runs. Caveat: their prices were third-party-sourced; spot-check
+  before any external use.~~ Primary capture (A36) shows Holo schedules,
+  posts, measures and ships a Learnings surface; A15 is now OBSERVED and its
+  spot-check caveat is discharged. What survives as *ours*: revenue traced to
+  a post rather than followers, the operated tier, and the click gate.
+  Whether their learning re-enters their generation is **NOT OBSERVED** and
+  may not be asserted either way.
 - **Buy** (freelancer/agency services band) — parity on done-for-you, better
   on price ($299 vs $500–2,000/mo) and on engagement drafting that never
   sleeps (capability shown in the operator console today; NOT yet

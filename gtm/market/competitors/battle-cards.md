@@ -206,65 +206,78 @@ marketing employee is selling a nanny to someone who likes their kids.
 
 ## Card 3 — BUY: Holo (tryholo.ai)
 
-**Overview.** An AI creative factory: paste a URL → "Brand DNA" scan →
-mass-generated ad creatives, social posts, UGC-style video and email
-campaigns, up to 10 brands. **Holo makes assets; Player 2 runs
-marketing.** Their real threat is not features — it's the price anchor
-for the phrase "AI marketing tool."
+> **⚠ REBUILT 2026-09-03 (shift 13) from Phin's primary capture** —
+> `snapshots/2026-09-03-holo-primary.md`, **OBSERVED**. The previous version
+> of this card was wrong about what Holo does. **Holo schedules, posts and
+> measures.** Every "they stop at the asset" line is struck. IN-GATE.
 
-**Key stats.** Lithuania; ex-ecommerce operators; VC-backed; 4,200+
-Trustpilot reviews · creative-metered (~200–650/mo) · **A15 ~$20–48/mo list — DIRECTIONAL,
-third-party sourced, SPOT-CHECK BEFORE ANY EXTERNAL USE; a
-near-permanent promo column runs ~$12–29** ·
-no free trial; 14-day money-back **voided after 35+ generations**.
+**Overview.** A self-serve AI marketing product for ecommerce-shaped small
+brands: point it at a website, it generates ad creatives, social content and
+emails, then **schedules and posts them on a calendar** and reports on what
+happened. Two plans, no human in the service, cancel anytime.
+
+**Key stats (A15, A34, A35, A36 — all OBSERVED).** List **$20 / $48**, promo
+**$12 / $29**, two plans only, **120 / 350** creatives per month · third-party
+trust **1,048 Trustpilot reviews at 4.4/5** (their self-printed **4,268** is a
+*brand* count and **4.9/5 is not a third-party rating**) · refund is **7 days,
+void on any credit use including a discarded generation**, 5% fee, refundable
+in **90-day expiring credits**, consumer rights waived, re-assessed **every
+renewal**.
 
 | | Holo | Player 2 |
 |---|---|---|
-| Price | A15 ~$20–48/mo list (promo column ~$12–29; see above) | A1 $59 entry · A2 $299 founding rate · **A3 $499 standard** |
-| What you get | Assets, on demand | An operated marketing function |
-| Posts them | **NOT CHECKED** — the 19 Aug teardown does not list posting as a gap, and it DOES list per-brand calendars. Do not assert they cannot post until tryholo.ai is fetched and snapshotted | Yes, in windows, gated on your click |
-| Replies to comments/DMs | No | Engagement drafting under house-voice enforcement; nothing sends unapproved |
-| Tells you what sold | No — their reviewers: "less about granular ad analytics and more about momentum and volume" | Claims engine + UTMs at publish |
-| Gets better on your account | No feedback loop | [Apply] memory, optimizers |
-| Onboarding speed | **URL paste — beats ours today** | Slower; their steal-list entry #1 |
-| Email campaigns | Yes | **No — we don't do email** |
-| Invents testimonials/stats | Advertises generating "testimonials" and "statistics-based hooks" | Constitutionally banned; review layer kills it |
+| Price | A15 $20/$48 list, $12/$29 promo | A1 $59 entry · A2 $299 founding rate · A3 $499 standard |
+| Schedules and posts | **YES — calendar, kanban, "Scheduled on Fri, Sep 4"** (A36) | Yes, in windows, gated on your click |
+| Measures | **YES — a ladder ending in "Measuring", an Analytics tab, a Learnings surface** (A36) | Claims engine + UTMs at publish |
+| What it counts as success | **Followers** — the only goal metric observed ("0 / 1K Followers") | **Sales traced to a post** |
+| Does a result change what gets made next | **NOT OBSERVED — do not assert either way** | Yes — [Apply] memory, optimizers propose |
+| Human accountable | **None — self-serve, no human anywhere in it** | A2 is done-with-you; a person is answerable |
+| Nothing posts or spends without your OK | **NOT OBSERVED on their side** | Yes — ours regardless |
+| Refund if it doesn't work out | **7 days, dead the moment you generate anything** (A34) | Full refund on request, first 30 days (A17) |
+| Third-party reviews | **1,048 at 4.4/5** | **Zero customers** |
+| Onboarding speed | **Website URL → launch-ready content. Still beats ours** | Slower |
 
-**Why we win.** (1) They stop at the asset — no engagement, no
-attribution, no learning; the owner still has the whole job. **Whether
-they post is NOT CHECKED (see the comparison table) — do not say "no
-posting."** (2) The
-quality-pressure difference is a *risk* argument, not a feature argument:
-a tool that manufactures testimonials can put a small business in real
-trouble. (3) Everything they lack is shipped on our side with a code
-receipt, not a roadmap.
+**Why we win.** (1) **What success is counted as.** Their observed goal metric
+is followers; ours is sales traced to a post, with the claims engine's n
+floors and FDR correction behind it. Say it as what we do. (2) **The operated
+tier.** A2's $299 is a *product shape* — a human accountable, work done for
+you — not a longer feature list, and **it cannot be copied by shipping a
+page**. (3) **The gate**: nothing posts or spends without your click.
+(4) **Their refund is genuinely hostile and we hold the receipt** (A34).
 
-**Why they win.** (1) Price anchor — the fight is lost the moment we're
-framed as a tool beside them. (2) Their first minute genuinely beats
-ours. (3) 4,200 reviews against our zero customers, plus email as a
-channel we don't have.
+**Why they win.** (1) **Price** — $12 promo against $59. (2) **They do the
+visible loop too**, and a prospect with the product open will see it.
+(3) **1,048 real reviews against our zero customers**, plus an onboarding
+first minute better than ours, plus email and SEO sections we don't have.
 
-**Resources.** `dossier-buy-holo.md` · `clinkworthy/docs/competitor-holo.md`
-(19 Aug) · landscape report.
+**Landmines** *(all four survive either answer to the open question)*
+1. "When it tells you a post did well — what happens next? Does the next
+   month's plan change on its own, or do you carry that over yourself?"
+2. "What does it count as a win — followers, or someone who booked?"
+3. "If you try it and it isn't for you, what does getting your money back
+   look like?" *(A34: seven days, and dead the moment they generate a single
+   test.)*
+4. "Who do you talk to when it goes wrong?"
 
-**Landmines**
-1. "After it generates the month's assets — what happens between the
-   asset and the customer?" *(Rewritten at gate r2: the old form, "who
-   posts them, and when?", presumed an answer we have no receipt for —
-   a landmine that detonates under the person asking it if Holo does
-   post. This form survives either answer.)*
-2. "At the end of the month, how do you find out which of those 200
-   pieces brought a customer in?"
-3. "If it writes a customer testimonial you never received — who's
-   answerable for that, you or the tool?"
+**Four hard rules on this card.**
+- **Never say they don't post, don't measure, don't learn, or "generate then
+  go silent."** All four are false or unobserved. A prospect will correct you
+  from their own screen.
+- **Never say "they generate, we operate."** That was our sentence until
+  2026-09-03 and their product ladder reads Generate → Scheduled → Posted →
+  Measuring.
+- **The one real open question is whether their learning re-enters their
+  generation** — the decision layer. It is **NOT OBSERVED**. Ask landmine 1;
+  do not answer it for them. Phin's own hands-on read that they *don't* close
+  the loop is UNCONFIRMED, hedged three times by him, and is exactly what we
+  want to hear — which is why it is not on this card.
+- **Absence from a screenshot is not absence from a product.** Four
+  screenshots are not a product tour.
 
-**Card-specific cautions.** Their price is UNVERIFIED (A15) — do not
-quote a Holo number to a prospect without a fresh spot-check. The
-teardown is dated 19 Aug and **NOT re-verified**; if they have shipped
-posting or attribution since, half of "why we win" is gone. Check before
-a live comparison.
-
----
+**Do NOT use this card when** the buyer's success metric genuinely is reach,
+they want no human in the loop, or their budget ceiling is ~$50. Holo is the
+better buy for them and saying so is what makes the rest of this card
+credible.
 
 ## Card 4 — BUY-EDITOR (OpusClip · CapCut · Descript · Vizard)
 
