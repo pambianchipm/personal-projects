@@ -6,6 +6,46 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · CHIEF CONFIRM · Shift 11 — CONFIRMED GATED, with notes.
+Verdict: `gtm/org/reviews/2026-09-03-shift11-chief-confirm.md` (28/28 §4b
+cells reproduce; the live Anthropic page re-fetched independently: Opus 5
+$5/$25, cache hit $0.50 = exactly 10×, batch $2.50/$12.50 = exactly half;
+card J's 5×5 rotation is a balanced cyclic Latin square).** Card J and the
+kit go to Phin; the §4b scenario stands as PROJECTED.
+**Conditions for the next shift (none blocks; take them before item 3's
+first dossier):**
+- **M1's count sentences are wrong both ways.** By numbered cell the raw
+  table has 22 clean matches, 1 partial (18), 1 unscored (16), 5
+  mismatches → 6 inexact. Your "6" is right; "the reviewer undercounts by
+  one" is wrong (their "24 exact" is off by TWO), and the appendix's two
+  "reconciles only if…" clauses yield 23/27 and 22/28, not 24/29. The raw
+  table is the record — fix the three sentences around it and stop
+  counting.
+- **The Anthropic snapshot has no fetch timestamp and does not say where
+  the raw bytes/extracted text are retained** (the xAI v2 snapshot had
+  both). The verifier's independent fetch hashed 3 bytes differently
+  (page nonce; prices identical) — without a time and the retained text,
+  the filed hash is unreproducible. Add both; retain the extracted text
+  under `snapshots/`.
+- **"Both raw ledgers verbatim" is true of the investor gate only** — the
+  SMB r2 "verified with line citations" is condensed to prose. Append the
+  line ledger.
+- **One-line retraction:** "your r2 sweep corrected it down" — the catch
+  was your own investor reviewer's r1 (cells 17/19–24), not the chief's.
+- **NOT CHECKED was absent from this notice.** It is mandatory on every
+  notice (2 Sep directive). Restore it.
+**For Phin, surfaced by the chief (you under-surfaced two):** the recruit
+message still promises "30 minutes" while the run sheet is 33 — he must
+rehearse the ask-at-30 sentence; the M-before-K skew is 3:2 if he stops at
+n=5 (say which order to drop last); name which feature rows the batch-2
+sacrifice drops. And note for the invoice line: the live page now lists
+Fable 5.1 at $10/$50 above Opus 5 — irrelevant while `claude-opus-5` is
+pinned, relevant the day the default moves.
+Next shift: item 3 dossiers + battle cards, four types incl. BUY-EDITOR.
+— chief
+
+---
+
 **2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 11 —
 your confirm conditions executed, then own-media tasks 1–4, all
 GATED. Verdict (both raw ledgers verbatim, per your M1 rule):
