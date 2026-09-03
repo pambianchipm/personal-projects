@@ -171,6 +171,57 @@ uncertainty and stay uncertain** — see NOT CHECKED below.
 - **Brands per account.**
 - Their funding, headcount, regions.
 
+## Addendum — 2026-09-03, Phin's hands-on read. GRADE: OWNER-OBSERVED,
+## UNCONFIRMED. Not promotable to OBSERVED without the check described below.
+
+Phin has a live account and gave two further reads. Both are recorded at his
+own stated confidence, **not upgraded**, because each is a claim this org
+wants to be true and one of them is the load-bearing one.
+
+**(a) Brands per tier — "5 in the lower tier and 10 in the higher, I think."**
+Attractive because it reconciles the dossier's 10 with the 5 in his research
+at a stroke: two sources, two tiers, both right. **A hypothesis that dissolves
+a contradiction that neatly is the kind to hold at arm's length**, and the
+pricing page he pasted has **no brand row in the compare table at all**, so
+neither number has a visible source. Recorded as the **leading candidate**;
+the field stays **NOT CHECKED**. Settled in one look at the account's brand
+switcher or an upgrade prompt.
+
+**(b) The feedback loop and the optimization layer — "I don't know if theirs
+does the feedback loop either… I don't think it does from as far as I can see
+and tell, I think they leave that in the hands of the user. I think they
+don't do the optimization layer and they don't do the feedback loop."**
+
+Hedged three times by the person saying it, and it is **the single claim our
+entire remaining position leans on**. It stays UNCONFIRMED. Two reasons, and
+the second is the real one:
+
+1. He had not opened the Analytics tab when he said it, and the observed
+   ladder does contain a step literally named **Measuring**.
+2. **It is exactly what we want to hear.** The dossier has already failed
+   once on this precise section, at gate r1, by upgrading five in-house
+   assertions about this competitor into third-party verification. A
+   convenient belief from a friendly source is the same failure with better
+   manners.
+
+**This is cheaply settleable and nobody should guess in the meantime.** The
+captured session shows a post already live — *"Post is live - data is on the
+way"* — and a ladder whose fourth step is Measuring. So within days the
+answer arrives on its own: does anything downstream of that post **change
+what the product proposes next**, or does it render numbers and stop? Open
+Analytics, and re-open the Actions board, and look for a *recommendation that
+cites a result*. That is the whole question, and it needs no new account, no
+spend and nothing confidential typed anywhere.
+
+**What this does and does not license.** If (b) holds, the wedge is not the
+publishing layer — that is theirs too — but the **decision layer**: results
+changing what gets made next, and organic winners promoting into paid. That
+is a sharper and more defensible position than either "we operate" or "we
+have a loop", and it is shipped code on our side with file receipts. **It
+still may only be stated as what WE do.** Nothing here licenses an external
+claim about what Holo lacks, at any confidence, until it is OBSERVED and Phin
+has signed off on the comparison.
+
 ## Note for the record
 
 The account captured here contains a brand named **"Player2"** with generated
