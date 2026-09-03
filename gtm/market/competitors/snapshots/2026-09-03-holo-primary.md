@@ -272,6 +272,73 @@ appears, capture it — the row text and whatever it links to. **Does it name a
 next action, or does it name a number?** That single distinction is the
 remaining question, and it is the one the position stands on.
 
+## Addendum 3 — 2026-09-03, ~17:55. A third-party research summary claims the
+## loop DOES close. GRADE: **THIRD-PARTY, UNVERIFIED, CITATION LAYER PARTLY
+## UNRELIABLE.** Raises the prior. Settles nothing. Quotable nowhere.
+
+Phin relayed a research summary (from another assistant) asserting three
+feedback mechanisms in Holo:
+1. **A swipe/selection loop** — saving, editing and rejecting ideas teaches
+   "Brand DNA" the owner's creative preferences; daily recommendations shift
+   "within a week."
+2. **Meta analytics integration** — with live channels connected, CTR and
+   conversion data turn into recommendations, prioritising hooks that convert.
+3. **Adaptation over ideation** — the platform trends toward iterating proven
+   assets rather than generating fresh concepts.
+
+**Why this is NOT promoted to OBSERVED, and the reason is specific.**
+
+**The citation layer contains at least one citation that does not support its
+claim.** Bullet 3 is sourced to a Reddit thread whose own URL slug is
+`/r/analytics/…/2_yoe_data_analyst_here_i_suck_at_data/` — a career/skills
+post, not a Holo discussion. A summary that attaches an unrelated source to a
+claim has a retrieval layer that is not reliable, and that contaminates the
+other citations even where they happen to be right.
+
+**The remaining sources are the exact class this org's snapshot doctrine was
+written against.** An AI-tool comparison page, an AI-review aggregator, a tool
+directory, a LinkedIn promotional post, a blog "Praxistest", and a YouTube
+video. Affiliate and SEO surfaces describing a product they are paid to
+feature, in language that reads like the vendor's own marketing. **The xAI
+incident was exactly this**: a third-party summary flattened a tiered table and
+produced a false 43% reprice that took a verifier to catch.
+
+**The summary's own closing tell:** it appends a note about ServiceNow's
+"Holo" UI framework, i.e. it was not certain which product it had retrieved.
+Some of the corpus behind these claims may describe something else entirely.
+
+**One bullet is partially corroborated from our own history and one is not.**
+The swipe interface is real and predates this summary — the build org's
+backlog carries item 49, *"Swipe variants (the Holo steal)"*, from our own
+teardown. **That the swipe UI exists is not evidence that it trains anything.**
+The "Brand DNA learns from your swipes" mechanism is uncorroborated.
+
+**THE POINT THAT MATTERS MOST, AND IT SURVIVES ALL THREE BULLETS INTACT.**
+Read what these loops are made of: swipe preferences, CTR, "visual hooks
+converting better", iterating proven creative. **Every one is an engagement or
+creative-preference signal.** None is revenue attributed to the shop's actual
+sales. Holo can know an ad got clicks; it cannot know a boutique sold three
+dresses, because it has no conversion ledger in the shop. **Our claim was
+never "we have a loop." It is "we count sales, not signals," and nothing in
+this summary touches it.** The only goal metric ever OBSERVED in that product
+remains **followers**.
+
+**Net effect on the record.** The wide claim — "they do not measure or learn" —
+was already struck in Addendum 2 and stays struck. This raises the prior that
+some loop closes. It does not change what may be asserted, which is nothing
+about them beyond what is OBSERVED. **The narrow question is unchanged and
+still decides the position: does a learning change what the product proposes
+next, and is any of it tied to revenue rather than engagement?**
+
+**PROCESS CONCLUSION, and it is the most useful line in this addendum.** The
+competitive read has moved three times in one afternoon — dossier, then Phin's
+hands-on read, then a research summary — and **the only inputs that have
+settled anything are Phin's own screenshots.** Two boxes cannot reach the
+vendor; intermediaries have produced one 4× error, one false refund term, one
+unrelated citation. **Stop researching this competitor through intermediaries.
+The account is the instrument.** Anything not capturable from it is NOT
+CHECKED, and that is an acceptable state.
+
 ## Note for the record
 
 The account captured here contains a brand named **"Player2"** with generated

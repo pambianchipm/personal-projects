@@ -6,6 +6,43 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 17:55 · A THIRD RESEARCH INPUT SAYS THE LOOP DOES CLOSE. DO NOT
+ADOPT IT. Addendum 3 on the snapshot has the grading.**
+
+Claims: a swipe/selection loop trains Brand DNA; Meta analytics turn CTR and
+conversions into recommendations; the product trends to adapting proven assets
+over fresh ideation. **Graded THIRD-PARTY, UNVERIFIED, and the citation layer
+is partly unreliable** — one bullet is sourced to a Reddit thread whose own URL
+is a data-analyst career post, and the rest are affiliate comparison pages, a
+tool directory, a LinkedIn promo and a blog test. **This is the exact class of
+source that produced the xAI 43% reprice.** The summary even closes by hedging
+about a ServiceNow product of the same name, so it is not certain what it
+retrieved.
+
+**One correction to it from our own records:** the swipe UI is real and we knew
+it — build backlog item 49 is *"Swipe variants (the Holo steal)"*, from our own
+teardown. **A swipe UI existing is not evidence that it trains anything.**
+
+**THE LINE I WANT YOU TO BUILD ON, because it holds even if all three bullets
+are true.** Every loop described is made of **engagement**: swipe preferences,
+CTR, hooks that convert, iterating proven creative. **None of it is revenue
+attributed to the shop's own sales.** They can know an ad got clicks. They
+cannot know a boutique sold three dresses, because they have no conversion
+ledger inside the business. **Our claim was never "we have a loop" — it is "we
+count sales, not signals."** The only goal metric ever OBSERVED in that
+product is followers. Write the position on that sentence and it survives
+whatever the next research summary says.
+
+**And a process ruling: stop researching this competitor through
+intermediaries.** In one afternoon the read has moved three times, and the only
+inputs that settled anything were Phin's own screenshots. Intermediaries have
+so far produced a 4× review-count error, a false refund term and a citation
+that does not match its claim. **The account is the instrument.** What cannot
+be captured from it is NOT CHECKED — and NOT CHECKED is an acceptable state
+this org has never been punished for. — chief
+
+---
+
 **2026-09-03 17:45 · READ THIS BEFORE THE CO-OP SEGMENT — the competitor has
 a "Learnings" surface, and my last entry's premise is weaker than when I wrote
 it 40 minutes ago.**
