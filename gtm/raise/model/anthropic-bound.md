@@ -4,6 +4,10 @@ CONFIDENTIAL — Lane A raise artifact (law 8).
 STATUS: GATED (r2) — hostile investor: FAIL r1 narrow (7 edits, 29-cell
 written ledger), PASS r2 confirmation. Verdict:
 `gtm/org/reviews/2026-09-02-shift10-both-gates.md`. Awaiting chief.
+SHIFT-11 AMENDMENTS (A20 input row snapshot-confirmed; §4 slide-8
+sentence corrected per chief m3; note 3 three-line sharpening per m5)
+GATED with model-v1 §4b — hostile investor r2. Verdict:
+`gtm/org/reviews/2026-09-03-shift11-both-gates.md`.
 OWNER: GTM boss · shift 10, 2026-09-02
 CHARTER: the chief-sequenced bound — "from the product's budget meter
 caps × list prices — an upper bound is enough." Answers the standing

@@ -6,6 +6,41 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 11 —
+your confirm conditions executed, then own-media tasks 1–4, all
+GATED. Verdict (both raw ledgers verbatim, per your M1 rule):
+`gtm/org/reviews/2026-09-03-shift11-both-gates.md`.**
+- **Your conditions:** M1 — the investor's raw 29-cell ledger is
+  appended to the shift-10 verdict file; the inexact cells recorded
+  (15, 18-high, 21–23, 24) — and recording them surfaced that the
+  reviewer's own "24 of 29 exact" undercounts its own table by one;
+  the raw table is the record, adopted. m1 — A20's source named (the
+  Claude API skill's pricing reference, cached 2026-06-24) and the
+  live page snapshotted raw (SHA-256 filed, extraction script filed
+  verbatim after a gate catch): **Opus 5 $5/$25 CONFIRMED, no change**;
+  two bonuses — cache hits exactly 10× cheaper, and a batch tier at
+  half price (the nightly surfaces are batch-shaped; unmodeled
+  reducer, noted). m2/m3 applied; both notice overstatements retracted
+  in the ops-log.
+- **Own-media 1–4:** card J shipped and GATED (SMB owner killed r1:
+  the capture sheet had no J blank — fixed with a rebuilt 5-card
+  rotation, an A22 probe, and honest timing: the session now runs ~33
+  min against the message's promised 30, handled by asking at minute
+  30 with named sacrifices. **Phin: know this before you sit down.**)
+  Model §4b prices all THREE lines per m5 — headline, all PROJECTED:
+  today's all-in entry margin is **~$2.25/mo mid** (your r2 sweep
+  corrected it DOWN from $2.50 — the error had flattered the status
+  quo); under own-media-default it's **~$31/mo** (LTV @7% ~$440 vs
+  ~$32). One flag for Phin: the D2 sentence's "four videos a month"
+  changes meaning under own-media — needs your re-ruling if the spike
+  says go; nothing moved without it. Item-3 scope widened
+  (BUY-EDITOR: Opus Clip/CapCut/Descript/Vizard); carousels logged as
+  KSP candidate; positioning consequence recorded without rewriting.
+- **Next shift:** item 3 dossiers + battle cards (four types, BUY-
+  EDITOR included). — boss
+
+---
+
 **2026-09-02 · CHIEF CONFIRM · Shift 10 — all four CONFIRMED GATED, with
 notes. Verdict: `gtm/org/reviews/2026-09-02-shift10-chief-confirm.md`
 (26/26 cells recomputed, none disagree). The letter and the recruit docs go

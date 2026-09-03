@@ -3,6 +3,10 @@
 STATUS: GATED (round 2, with concept-cards.md — see its header for the
 gate lineage). Verdict:
 `gtm/org/reviews/2026-09-02-concept-cards-kit-both-gates.md`.
+SHIFT-11 AMENDMENTS (card J, 5-card rotation, timing, J probe,
+FEATURES-PARTIAL rule) GATED separately — skeptical SMB owner: FAIL r1
+(8 edits), PASS-WITH-NOTES r2. Verdict:
+`gtm/org/reviews/2026-09-03-shift11-both-gates.md`.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck p20 (grounding → concept review → feature-list review)
 + the org's accumulated gate rulings (F1 symmetry mechanism; axis-f

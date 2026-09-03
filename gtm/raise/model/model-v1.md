@@ -12,6 +12,10 @@ Lineage: shift-8 GATED verdict REFUSED by the chief (read error —
 `2026-09-02-model-v1-hostile-investor.md`); rebuilt at the real $0.14
 price. Verdict: `2026-09-02-model-rebuild-fresh-investor.md`.
 Awaiting chief's confirm.
+§4b OWN-MEDIA SCENARIO added shift 11 (2026-09-03) — GATED: hostile
+investor, FAIL r1 narrow (5 edits; 44-item written ledger, 41
+reproducing) → CONFIRM PASS r2 (16/16 changed cells recomputed).
+Verdict: `gtm/org/reviews/2026-09-03-shift11-both-gates.md`.
 OWNER: GTM boss · shift 8, 2026-09-02
 CHARTER: the chief-approved model build — sourced churn priors,
 free-scan funnel algebra, and the A4 price sensitivity that quantifies

@@ -9,6 +9,10 @@ Lineage: original gate r3 with the deck skeleton
 amendments REFUSED (read error — `2026-09-02-model-v1-chief-refusal.md`);
 rows RESTORED from snapshot v2. Verdict:
 `2026-09-02-model-rebuild-fresh-investor.md`. Awaiting chief's confirm.
+SHIFT-11 AMENDMENTS (A20 snapshot-confirmed + exact A21 sums; NEW
+A22–A24; OBSERVED-INFORMAL legend entry) GATED with model-v1 §4b —
+hostile investor r2. Verdict:
+`gtm/org/reviews/2026-09-03-shift11-both-gates.md`.
 OWNER: GTM boss · shift 5, 2026-09-02
 LAW 4: shared facts live HERE, once. The deck, the model, the site, and
 the battle cards quote rows by ID (e.g. "A2"). Two artifacts disagreeing

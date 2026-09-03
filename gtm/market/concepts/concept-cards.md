@@ -11,7 +11,9 @@ string-identical), R=101, T=76. Verdict:
 READY FOR PHIN once the chief confirms — this is the instrument that
 turns UNTESTED into evidence.
 CARD J ADDED shift 11 (2026-09-03), per Phin's own-media directive —
-gated separately (skeptical SMB owner, shift-11 verdict); the round-1
+GATED separately: skeptical SMB owner, FAIL r1 (8 edits — the killer:
+the capture sheet had no J blank), PASS-WITH-NOTES r2. Verdict:
+`gtm/org/reviews/2026-09-03-shift11-both-gates.md`. The round-1
 GATED stamp above covers M/K/T/R only.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck §1 (pp.5–19) — the exact template: context/problem line

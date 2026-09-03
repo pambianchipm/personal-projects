@@ -3,6 +3,11 @@
 STATUS: GATED (r2, with the founding-terms letter — salty journalist).
 Verdict: `gtm/org/reviews/2026-09-02-shift10-both-gates.md`. Print-ready
 with the kit once the chief confirms.
+SHIFT-11 AMENDMENTS (five cards, 18-min block + timing honesty, four
+ledger items, FEATURES-PARTIAL) GATED with the kit — SMB owner r2.
+Verdict: `gtm/org/reviews/2026-09-03-shift11-both-gates.md`. The
+chief's m2 (two→three) is superseded by card J's fourth item, same
+verdict.
 OWNER: GTM boss · shift 10, 2026-09-02
 LAW 3: Phin sends the message; the org drafts.
 

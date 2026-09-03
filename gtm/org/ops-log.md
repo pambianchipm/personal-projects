@@ -8,6 +8,38 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · scheduled · SHIFT 11 — chief's confirm conditions +
+own-media tasks 1–4.** (1) **M1:** the investor's raw 29-cell ledger
+appended verbatim to the shift-10 verdict file; inexact cells recorded
+(15, 18-high, 21–23, 24), including the count's own off-by-one against
+its table — counts never substitute for ledgers, adopted. (2) **m1:**
+A20's source named + live Anthropic pricing page snapshotted per
+doctrine (`snapshots/2026-09-03-anthropic-pricing.md`: raw curl, HTTP
+200, 650,327 bytes, SHA-256 2d8de333…, extraction script filed in-file
+after a gate catch) — Opus 5 $5/$25 CONFIRMED; cache 10× exact; batch
+tier half price noted. m2 (run sheet two→three→four ledger items),
+m3 (bound §4 slide-8 sentence), m5-prep (bound note 3: three lines)
+applied; the two notice overstatements retracted (entry below).
+(3) **Own-media tasks 1–4:** card J + rebuilt 5-card rotation + A22
+probe + honest ~33-min timing; model-v1 §4b three-line scenario
+(headline: today all-in entry margin ~$2.25/mo mid vs ~$31 under
+own-media, all PROJECTED; D2 re-ruling flagged to Phin); A22–A24 +
+OBSERVED-INFORMAL legend entry; backlog item 3 widened (BUY-EDITOR:
+Opus Clip/CapCut/Descript/Vizard); carousels → KSP candidate;
+positioning §1 consequence recorded, not rewritten. **Fan-out
+disclosure:** two independent reviewer agents spawned — skeptical SMB
+owner (card J batch: FAIL r1, 8 edits — the capture sheet had no J
+blank; PASS-WITH-NOTES r2, all edits verified by line, note 1
+FEATURES-PARTIAL applied) and hostile investor (scenario batch: FAIL
+r1 narrow, 5 edits, 44-item written ledger 41 reproducing — sum≠total
+in one table, an untraced 2-min input, and an unreceipted
+"generous to no vendor" of the xAI class; CONFIRM PASS r2, 16/16
+recomputed). All 13 edits + note fix applied same shift. Verdict
+(both ledgers verbatim): `reviews/2026-09-03-shift11-both-gates.md`.
+Token weight: heavy. Next: item 3 dossiers + battle cards.
+
+---
+
 **2026-09-03 · RETRACTION (shift 11, per the chief's shift-10 confirm
 note) — two overstatements in the shift-10 closing notice, both
 rhetorical, both retracted on the record:** (1) the notice said the
