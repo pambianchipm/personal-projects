@@ -13,7 +13,11 @@ NUMBERS: quoted by reference from `gtm/raise/model/assumptions.md`
 
 **First breath:** Player 2 is an AI marketing employee for small
 businesses. This dossier is on the alternative that beats it most often:
-the owner keeps doing it themselves, badly, for free.
+the owner keeps doing it themselves, in bursts, for free.
+*("Badly" stood here until the SMB gate r1. The reviewer: "the first
+breath is the sneer the file bans" — this same file forbids sneering at
+inaction and calls it a rational response, not a character flaw. Fixed
+to match the battle card's wording and the file's own posture rule.)*
 
 **Validation provenance (law 1):** no real SMB owner has been interviewed
 by this org. Everything below is either a sourced market statistic, a
@@ -30,12 +34,17 @@ competitor is inertia. The most likely alternative? Do nothing."*
 
 For Player 2, INACTION is not an owner who has decided against
 marketing. It is the far more common owner who has decided **for** it,
-repeatedly, and cannot sustain it. The product is not sold against
-apathy; it is sold against a specific, documented failure pattern:
-enthusiasm → batch → drift → silence → guilt → re-enthusiasm.
+repeatedly, and has not sustained it — a pattern, not a verdict on them.
+The product is not sold against apathy; it is sold against a specific
+pattern: enthusiasm → batch → drift → silence → re-enthusiasm. The
+*cadence* of that pattern is sourced (below); the feelings once written
+into it — guilt in particular — are `UNTESTED` and have been taken back
+out. Which feeling actually sits in the silence is a first-order
+interview question.
 
-This is the #1 alternative by volume and the one every other dossier's
-prospect is actually coming from.
+This is the #1 alternative by volume. That every other dossier's
+prospect is coming from it is `UNTESTED` — there are no prospects yet,
+and this org has never spoken to one.
 
 ## Key stats (the "company" here is the owner's own status quo)
 
@@ -67,8 +76,9 @@ prospect is actually coming from.
   cost of starting repeatedly and collects the compounding benefit never.
 - The loop never closes. The landscape report's emotional-core finding:
   the job's defining texture is **"the impossibility of closing the
-  loop"** — the owner cannot tell which post did anything, so effort feels
-  unrewarded, which is what causes the fade.
+  loop"** — the owner cannot tell which post did anything, so effort
+  feels unrewarded, which **we infer** causes the fade. `UNTESTED` — see
+  NOT CHECKED (i); the fade is sourced, the cause is not.
 - Engagement is the step that never batches (landscape §1.8). Whatever the
   owner batches on Sunday, the comments and DMs still arrive Wednesday.
 - Invisible cost. Owner hours are unpriced, so the alternative *looks*
@@ -78,7 +88,13 @@ prospect is actually coming from.
 - The fade is predictable and self-diagnosed. Owners describe it in their
   own words unprompted — which makes it the cheapest thing in the world to
   sell against IF the sentence is theirs, not ours. `UNTESTED`.
-- Guilt is already present. We are not creating a need; we are naming one.
+- Whether guilt, fatigue, or plain indifference is the dominant feeling
+  behind inaction is `UNTESTED` — and the three differ completely in
+  what they would buy. **Do not open on guilt.** *(Gate r1 killed the
+  original bullet, "Guilt is already present. We are not creating a
+  need; we are naming one." The reviewer, in her own seat: "I am not
+  walking around guilty about Instagram. I am tired. If the salesperson
+  opens by naming my guilt, I am done in the first minute.")*
 - The "put the phone down on Saturday" line (landscape report's Appendix A
   synthesis) is, per that report, plausibly the strongest sentence this
   company can say. **It is a hypothesis about resonance, not a finding.**

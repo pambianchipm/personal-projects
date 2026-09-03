@@ -39,7 +39,7 @@ person running it keeps running it.
 | The tool layer | Canva Pro **$18/mo**; CapCut Standard $9.99 / Pro $19.99 (A27); ChatGPT Plus $20; Meta Business Suite free; Buffer from $5/channel | Landscape report [VERIFIED] for Canva/ChatGPT/Buffer; A27 carries CapCut's own re-verify flag |
 | Realistic assembled stack | **$28–55/mo**, or ~$50–75/mo once video is in it | Landscape report Appendix B [directional] |
 | True DIY cost **including labour** | **$500–$1,200/mo** | Landscape report Appendix B, venturemedia.io — single source, directional; the single most important number in this dossier and the least well sourced |
-| How AI is actually used | **46%** of social marketers use ChatGPT for ideation, **39%** for copy, **4%** for calendar planning | Landscape report §1.3, Hootsuite LinkedIn poll [VERIFIED verbatim] |
+| How AI is actually used **by professional SMMs** | **46%** ideation and **4%** calendar planning (§1.3, [VERIFIED verbatim]); **39%** copy (§2.4 / Big Table, [VERIFIED] — *not* §1.3) | Hootsuite LinkedIn poll. **POPULATION CAVEAT (gate r1):** measured on social media *managers* — paid practitioners — not on SMB owners. Applying it to the DIY owner is `UNTESTED` inference and is labelled as such everywhere it appears below |
 | Creation time | ~5 hrs/wk per marketer on creation + approvals | Landscape report §1.5, Sprout/MarketingProfs [VERIFIED] |
 | Batching norm | a month of content in ~7 hours, in 1–2 sittings | Landscape report §1.5, Buffer practitioner writeup [VERIFIED] |
 
@@ -60,11 +60,19 @@ convenient number is how a truth table rots.
 - Modular — swap any part for free, any week.
 
 **Weaknesses**
-- **The 4% number is the whole dossier.** 46% use AI to have ideas; 4%
-  use it to plan the calendar. The assembled stack automates the *making*
-  and leaves the *running* — the deciding, the sequencing, the
-  remembering, the showing up — entirely on a human. That human is the
-  bottleneck, and the bottleneck is the product.
+- **The 4% number is the whole dossier — with its population named.**
+  46% use AI to have ideas; 4% use it to plan the calendar. The
+  assembled stack automates the *making* and leaves the *running* — the
+  deciding, the sequencing, the remembering, the showing up — entirely
+  on a human. That human is the bottleneck, and the bottleneck is the
+  product. **`UNTESTED` as applied to our buyer:** the poll measured
+  professional SMMs, and the same report says of the owner ICP that
+  "they barely buy tools." The *shape* of the finding (AI drafts, humans
+  plan) is what we carry; the percentage is not an owner statistic and
+  must never be quoted to an owner as one. *(Caveat added at the
+  competitor-salesperson gate r1, which called this "the single most
+  load-bearing statistic in this dossier, measured on a population that
+  is not the buyer.")*
 - Nothing in the stack closes the loop. No attribution, no learning: next
   month starts from the same blank page as this month.
 - Engagement still never batches (landscape §1.8).

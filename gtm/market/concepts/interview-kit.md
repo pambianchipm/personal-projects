@@ -123,14 +123,20 @@ across interviews 1–5.)*
 | 4 | R · J · M · T · K |
 | 5 | J · M · T · K · R |
 | 6 | J · R · K · T · M |
-| 7 | M · J · R · K · T |
-| 8 | T · M · J · R · K |
-| 9 | K · T · M · J · R |
+| 7 | K · T · M · J · R |
+| 8 | M · J · R · K · T |
+| 9 | T · M · J · R · K |
 | 10 | R · K · T · M · J |
 | 11+ | repeat from order 1 |
 
 *(Interviews 6–10 are orders 1–5 MIRRORED — each row read
-right-to-left. **CORRECTED shift 12:** this table previously said
+right-to-left — and then **re-sequenced** so the running skew never
+exceeds ±1 (SMB-owner gate r1, shift 12: the mirrored rows in their
+natural order took the running count to +2 after interview 8, while the
+n=5 paragraph below holds a four-interview cut to ±1 — the reviewer's
+own one-line fix is adopted). Re-sequencing rows changes nothing about
+the square: each column still holds all five cards.
+**CORRECTED shift 12:** this table previously said
 "6+ repeat cycle from order 1" and the note below claimed the skew
 "evens at n=10." It does not. Replaying orders 1–5 sends M-before-K
 from 3 to 6 and K-before-M from 2 to 4 — 6:4, the identical 3:2 skew,
@@ -154,6 +160,12 @@ head-to-head under test. Dropping #1 or #5 also balances 2:2 but costs
 M or J its lead, and J is the card your own-media directive exists to
 test. Dropping #2 or #3 makes it worse (3:1). Do not re-order the
 survivors: their sequence is what keeps the running skew at ±1.
+
+*Said honestly (gate r1): on the arithmetic alone, dropping #5 is
+identical to dropping #4 — both give 2:2 and both hold the running skew
+at ±1. #4 wins only because R's lead slot is judged the most expendable
+of the five. That is the org's research-priority call, not a
+computation. `UNTESTED`.*
 
 Per card (deck p20, verbatim ritual): read the card ALOUD, hand it
 over, then: "Write the main idea in your own words at the top. Circle
@@ -206,21 +218,42 @@ in this order: **"Watches your market" · "Replies drafted for you" ·
 "Monday plan email (coming)" · "It asks before you forget (coming)."**
 Read that list before you agree to cut it, because the four are not a
 random tail:
-- Both **(coming)** rows are in it — so cutting batch 2 removes
-  *everything unshipped* from the feature exercise. What survives is a
-  clean read on the shipped product, which is not nothing; but you lose
-  every signal about what to build next.
-- Rows 6 and 9 are the **initiative** rows — the market-watching and
-  the "it asks before you forget" ask-queue. Those are the two that
-  speak to the employee-initiative positioning (backlog 0b gaps 1 and
-  4). Cut batch 2 and the interview says nothing about the dial.
+- Both **(coming)** rows are in it — so cutting batch 2 removes both
+  *labelled* `(coming)` rows. It does **not** remove everything
+  unshipped: row 4, "Posting that never fails silently," stays in
+  batch 1 and carries the §0 roadmap caveat (the flag reaches the
+  operator today, not the client — "so I'd get told?" gets the honest
+  line, not a yes). So batch 1 is a read on the shipped-plus-one-
+  caveated product, and you lose every signal about what to build next.
+  *(Corrected at the SMB gate, shift 12: this bullet claimed batch 1 was
+  "a clean read on the shipped product." The org's own roadmap ledger
+  says otherwise.)*
+- Row 9 ("It asks before you forget") is the asks queue named in
+  **backlog 0b gap 1 / truth-map Gap 1 — Initiative**. Row 6 ("Watches
+  your market") is the recommendation surface of **Gap 4 — the CMO
+  layer**: related, but not an initiative gap. Between them they are the
+  only two rows that touch the employee-initiative-and-judgment
+  positioning. `UNTESTED` — that mapping is the org's, not an owner's.
+  *(Corrected at the SMB gate, shift 12: this bullet called both "the
+  initiative rows" and cited "gaps 1 and 4" as if both were initiative.
+  The org's own backlog and truth map say Gap 4 is the CMO layer.)*
+- Cutting batch 2 does **not** silence the dial entirely — §2's
+  dial-cadence probe is a separate item and survives (it is the *other*
+  named sacrifice). What you lose is the dial's evidence from the
+  feature table. *(Overstatement corrected at the same gate.)*
 - The cut therefore lands hardest on exactly the direction Phin ruled
   in on 31 Aug. It is still the right sacrifice against the markup
   ritual, the ranking, or the folder question — those are the evidence
   of record and are protected. But if you are cutting batch 2 in more
-  than one or two interviews, the fix is a longer session, not a
-  smaller table.
-- If you have ~2 minutes but not 7: score rows 6 and 9 only, mark the
+  than one or two interviews, the design is over-scoped for a 30-minute
+  promise. Choose one: recruit for a 45-minute session and say so in the
+  recruit message, or cut a card. **Do not quietly keep asking owners
+  for three more minutes.** *(Gate r1, in the reviewer's own seat: "You
+  promised me thirty minutes. You already admit it is thirty-three.
+  Nobody in this document asked what I think about forty.")*
+- If you have ~2 minutes but not the ~3–4 that batch 2 needs (§3 is
+  ≈8 min for both batches plus the top-three pick): score rows 6 and 9
+  only, mark the
   sheet FEATURES-PARTIAL anyway, and note which two you kept — a
   partial that names its own gaps aggregates; one that doesn't, can't.
 

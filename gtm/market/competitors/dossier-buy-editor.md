@@ -50,7 +50,7 @@ The four named:
 
 | Vendor | Price | Grade / source |
 |---|---|---|
-| OpusClip | Free $0 (60 credits/mo) · **Starter $15/mo** (150 credits/mo, monthly billing only) · **Pro $29/mo** · Business custom | **A25 — SOURCED.** Live page, raw fetch 3 Sep 12:39:48Z, HTTP 200, 612,498 bytes, hash + retained extraction filed. Confirms the landscape report's 20 Aug figures unchanged |
+| OpusClip | Free $0 (60 credits/mo) · **Starter $15/mo** (150 credits/mo, monthly billing only) · **Pro $29/mo monthly — or $14.50/mo on annual ($174/yr, 3,600 credits)** · Business custom | **A25 — SOURCED.** Live page, raw fetch 3 Sep 12:39:48Z, HTTP 200, 612,498 bytes, hash + retained extraction filed. Confirms the landscape report's 20 Aug figures unchanged |
 | Descript | free tier; **"paid plans from $16/month"** | **A26 — SOURCED-PARTIAL.** Descript's own meta description in the fetched bytes. The tier table is client-rendered and was not obtained |
 | CapCut | Standard $9.99 / Pro $19.99 per mo | **A27 — DIRECTIONAL.** Landscape report [VERIFIED] 20 Aug; live re-fetch 3 Sep returned **HTTP 502**. A dated secondary read, not a fresh receipt |
 | Vizard | **UNKNOWN** | **A28 — NOT CHECKED.** Page renders prices in JavaScript and says so; zero price strings in 213,639 fetched bytes. **No price claim about Vizard may be made anywhere** |
@@ -75,11 +75,11 @@ Claim by claim, against the fetched pages:
 | Clause | Verdict | Receipt |
 |---|---|---|
 | "they edit" | **HOLDS** | All four are editing/repurposing products by their own positioning |
-| "none of them plans" | **HOLDS as far as checked** — no planning/calendar-strategy surface appears on any fetched page | OpusClip's retained extraction lists clipping, captions, reframe, templates, B-roll, scheduler — no planning. NOT CHECKED for Vizard beyond its marketing copy |
+| "none of them plans" | **HOLDS for OpusClip only** — zero occurrences of "calendar" in its retained extraction; NOT CHECKED for Descript and Vizard (extractions not retained) and CapCut (no page fetched — 502) | OpusClip's retained extraction lists clipping, captions, reframe, templates, B-roll, scheduler — no planning. NOT CHECKED for Vizard beyond its marketing copy |
 | "writes in your voice" | **HOLDS, narrowly** — OpusClip generates clip titles, descriptions and hashtags, which is writing; none of the four claims a persistent brand-voice model over an account's history | OpusClip retained extraction: `Clip title & description & hashtag generator` |
-| "waits for your click" | **HOLDS** — none of the four gates publishing on an approval step; that is the point of a scheduler | No approval-queue feature on any fetched page |
+| "waits for your click" | **HOLDS for OpusClip only** — zero occurrences of `approv` in its retained extraction | NOT CHECKED for the other three, per the retention gap in NOT CHECKED (vii) |
 | **"posts in windows"** | **FAILS as a differentiator against OpusClip** | **A25b.** Its page sells `Social scheduler — Schedule a month's posts to all platforms in 10 minutes`, `Post to social media`, `Post to multiple profiles per social platform` |
-| "reads results" | **HOLDS** — no attribution or outcome-measurement surface on any fetched page | NOT CHECKED beyond the pricing pages; none claims it there |
+| "reads results" | **FAILS as an absolute; HOLDS only as "no business-outcome attribution"** | **Corrected at the gate r1 against our own retained extraction**, which ships an Analytics section on the paid tiers: `Analytics\|Clip Analytics\|Real-time trend analysis`. OpusClip measures clip performance. What it does not do is tie a clip to a booking, a cover or a sale — that is the surviving distinction and the only one we may say |
 | "the loop is the difference, not the editor" | **HOLDS, and is the right frame** | It survives precisely because the posting clause was removed from it |
 
 ### Correction (for the chief)
@@ -91,14 +91,20 @@ paid plans — the org must not ship a battle card whose differentiator is
 a feature the competitor advertises on its pricing page. A competitor's
 salesperson would open with it, and be right.
 
-**Amended line, receipted:** *"They cut. One of them even posts. None of
+**Amended line, receipted — DRAFT, NOT CLEARED FOR EXTERNAL USE pending Phin's sign-off (law 8), on the model of the Holo positioning line's fence:** *"They cut. One of them even posts. None of
 them decides what to make this month, waits for your OK, or tells you
 which clip brought anyone in — the loop is the difference, not the
 editor."*
 
-Every clause of that sentence is supported by the table above. **NOT
-CHECKED: which paid tier gates which OpusClip posting row** — so the
-external sentence says "even posts," never a tier.
+Every clause of that sentence is supported by the table above. On the
+tier question: **CHECKED at the gate r1** — the earlier "NOT CHECKED:
+which paid tier gates which posting row" was wrong, and the answer was
+in our own retained extraction the whole time. The **Starter $15** plan
+card lists `Auto post to YouTube Shorts, TikTok, IG Reels, or download`;
+the **Pro** card lists `Social media scheduler` and `6 social account
+connections` under "Everything in Starter plan, plus." **Assume they
+post from $15.** Still NOT CHECKED: the remaining comparison-table
+posting rows, whose columns the flattened text does not align.
 
 ## SWOT (of the category, from the owner's seat)
 
@@ -212,3 +218,17 @@ unserious will read as dishonest to an owner who uses one daily.
 - (vi) Every claim about what owners *want* from this category. A22 is
   OBSERVED-INFORMAL and card J is the instrument that tests it — the
   dossier does not assume its own conclusion.
+- (vii) **Only OpusClip has a retained content receipt.** Descript's and
+  Vizard's extracted text was discarded (no prices in it to retain) and
+  CapCut returned 252 bytes of Bad Gateway. Three of four
+  feature-*absence* findings in the clause table are therefore
+  unauditable, and one was asserted about a page that was never
+  retrieved. Added at the gate r1, which caught the phrase "on any
+  fetched page" doing work no fetch supports.
+- (viii) **The clause table was only checked against the receipt when the
+  gate demanded it, and the receipt disagreed twice** — the Analytics
+  section and the Starter-tier posting row were both in the retained
+  text and both missed, and the Pro annual price ($14.50) sat four
+  characters from a line the snapshot did quote. Standing rule from
+  this gate: an absence claim in this dossier quotes the search that
+  found nothing, or it does not ship.

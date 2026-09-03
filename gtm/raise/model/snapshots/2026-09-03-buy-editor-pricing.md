@@ -37,9 +37,43 @@ Quoted from the retained extraction:
 
 > `Compare all plans|Free|$0|Starter|$15/mo|Pro|$29/mo|Business|Custom`
 
-> `Starter|For individual creators|$|15| USD|/mo |Starter plan only
-> available in monthly|Start your free trial|No credit card required|
-> $15 billed monthly | | |150| credits | |per month`
+> `Starter|For individual creators|$|15| USD|$|15| USD|/mo |Starter plan
+> only available in monthly|Start your free trial|No credit card
+> required|$15 billed monthly | | |150| credits | |per month`
+
+**CORRECTED shift 12 at the competitor-salesperson gate r1.** This block
+quote previously read `…|$|15| USD|/mo |…`, silently dropping one
+`$|15| USD|` repetition. That repetition is the monthly/annual price
+PAIR, and deleting it is exactly why nobody went looking for the annual
+column — where **Pro is $14.50/mo, $174 billed annually** (see the
+Pro/annual block below). A trimmed quote under a SHA-256 is worse than
+no quote: it looks byte-exact and is not. The reviewer's finding,
+verbatim: *"the deletion is exactly the artifact that would have
+prompted someone to look for the annual column."*
+
+**The Pro block, and the annual pricing the first pass missed:**
+
+> `Pro|For professional creators, marketers, & teams|$|29| USD|$|14.5| USD|/mo`
+
+> `$|174| billed |annually| | | |3,600| credits | |per |year|, available instantly`
+
+Header above both tables: `Save up to |50|% with annual billing`.
+
+**The Starter plan card's own feature list — which answers the tier
+question this snapshot had filed as NOT CHECKED:**
+
+> `AI clipping with Virality Score| | |AI animated captions in 20+ languages| | |Auto post to YouTube Shorts, TikTok, IG Reels, or download| | |Powerful editor| | |1 brand template`
+
+and, on Pro, `Social media scheduler` and `6 social account connections`
+under "Everything in Starter plan, plus." **OpusClip auto-posts from
+$15.**
+
+**And the Analytics rows, which refute this org's own "reads results"
+clause:**
+
+> `Analytics|Clip Analytics|-|Real-time trend analysis|-`
+
+> (Pro/Business columns) `Analytics|Clip Analytics|Real-time trend analysis`
 
 > `Free|Free forever|$0 USD|/mo|Create an account| | |60| credits | |
 > per month| | |Up to 1080p rendered clips`
@@ -53,8 +87,11 @@ landscape report's "Opus free/$15/$29 ✓" (20 Aug) against the live page
 "note honestly that Opus Clip auto-posts now." The page carries it, in
 its own words:
 
-> `Social scheduler|Schedule a month's posts to all platforms in
+> `Social scheduler|Schedule a month’s posts to all platforms in
 > 10 minutes`
+> *(apostrophe restored to the file's curly `’` at the gate r1 — it had
+> been normalized to a straight quote in a block quote whose entire
+> evidentiary value is byte-exactness)*
 
 > `Post to social media|Social media scheduler|Post to multiple profiles
 > per social platform|Clip title & description & hashtag generator`
@@ -103,6 +140,22 @@ Not re-fetchable this shift. CapCut's price therefore still rests on
 the landscape report's `Standard $9.99, Pro $19.99/mo ✓ [VERIFIED]`
 (20 Aug 2026) — a real document this org has read, carried at that
 date with a re-verify flag, not a fresh read.
+
+## What this snapshot got wrong, on the record (gate r1)
+
+The fetch discipline was sound and the trap-avoidance was real (the
+Descript React-stream-ID catch below). What failed was **reading the
+file after hashing it.** Three things were in the retained extraction
+and in none of the artifacts built on it: the **$14.50/mo annual Pro
+price**, the **Starter-tier auto-post row** (filed as NOT CHECKED), and
+the **Analytics / Clip Analytics / Real-time trend analysis rows**
+(against which a dossier clause asserted "no attribution or
+outcome-measurement surface"). Every one of the three points the same
+way: the competitor cheaper and stronger than stated.
+
+**Standing rule adopted from this gate:** a snapshot's block quotes are
+copied, never retyped or trimmed; and a claim of *absence* cites the
+search that found nothing (`grep -c`), or it does not ship.
 
 ## Doctrine check
 

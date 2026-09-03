@@ -43,7 +43,7 @@ marketing tool," which is the frame a prospect will try to put us in.
 | Location / team | Lithuania; ex-operators of real ecommerce brands (Sintra, Pulsetto, Burga, Moerie) | Holo teardown, 19 Aug 2026 |
 | Funding | VC-backed (amount not established) | Teardown |
 | Social proof | 4,200+ Trustpilot reviews | Teardown |
-| Price band | **~$12–48/mo** | **A15 — DIRECTIONAL**, third-party sourced, carries a SPOT-CHECK-BEFORE-EXTERNAL-USE flag. Never load-bearing alone |
+| Price band | **~$20–48/mo list** (a near-permanent promo column runs ~$12–29) | **A15 — DIRECTIONAL**, third-party sourced, corroborated independently at $20/$48 by the landscape report Appendix B §2. SPOT-CHECK BEFORE EXTERNAL USE. Never load-bearing alone. **CORRECTED shift 12 at the gate:** this row said ~$12–48, taking the promo floor and the list ceiling from two different columns of the teardown's own table |
 | Metering | Creative-metered (Starter ~200 creatives/mo, Scale ~650); no free trial; 14-day money-back **voided after 35+ generations** | Teardown |
 | Tech | Reviews consistently report OpenAI under the hood + a proprietary "Brand DNA" conditioning layer; marketing claim of training on "10M marketing assets + 19,000 high-performing ads" | Teardown — a fine-tune/template corpus claim, not a foundation-model claim |
 | Positioning | Founders and small teams who want agency-volume creative without an agency | Teardown |
@@ -67,7 +67,7 @@ by every battle card built on this file.
 - Multi-brand from day one.
 - 4,200+ reviews is a trust asset we cannot match at zero customers.
 
-**Weaknesses** *(all verified against their own reviewers in the teardown)*
+**Weaknesses** *(the analytics complaint and the "still developing / desktop-only" line are reviewer-sourced in the teardown; the remaining gaps are the build org's own assertions, written under a heading that reads "our moat," and are `UNTESTED` against any third party. **Corrected at the gate r1** — "all verified against their own reviewers" upgraded five in-house assertions to third-party verification, which is law 1's exact failure mode.)*
 - **No learning loop.** Nothing feeds results back into generation.
 - **No attribution.** Zero "did it sell" story. Their reviewers' words:
   *"less about granular ad analytics and more about momentum and volume."*
@@ -95,15 +95,22 @@ by every battle card built on this file.
   owner's actual question is whether anything sold.
 
 **Threats (to us)**
-- **The anchor.** A15's band sits at roughly a fifth to a twentieth of
-  A2's $299 and well under A1's $59. A prospect who frames Player 2 as
+- **The anchor.** A15's band sits at roughly a sixth to a fifteenth of
+  A2's $299, and its ceiling is ~19% under A1's $59 (not "well under" —
+  $48 against $59). *(Both figures corrected at the gate r1: the old
+  "fifth to a twentieth" was wrong at both ends, in the direction that
+  flattered the argument.)* A prospect who frames Player 2 as
   "a tool next to Holo" has already won the argument.
 - Their onboarding is genuinely better today. A demo that starts with a
   10-minute setup loses to one that starts with a URL paste.
 - 4,200 reviews vs zero customers.
 - If they ship a posting layer, half of this dossier changes. **NOT
   CHECKED whether they have since 19 Aug** — the teardown is two weeks
-  old and was not re-verified this shift.
+  old and was not re-verified this shift. **Sharpened at the gate r1:
+  the teardown does not list posting as a gap at all, and it DOES list
+  "separate Brand DNA + calendars" per brand. We therefore have no
+  receipt that Holo does not post, and must not assert one** (the
+  battle card's "Posts them: No" row is corrected to NOT CHECKED).
 
 ## KSPs (what Holo sells)
 
@@ -151,17 +158,42 @@ cadence is unreceipted. Neither goes on an external surface as written.
 
 Player 2 is not priced against Holo alone. The landscape report's
 verified tool bands: schedulers from $5/channel (Buffer) to $199–399 per
-seat (Sprout); approval tools $39–149 (Planable / HeyOrca / Gain);
-listening starts at $199/mo (Brand24) and is therefore **absent below
-mid-market entirely**. Against that, the services band is A11's
+seat (Sprout); approval tools **$39–399** (Planable $39–59 · HeyOrca
+$59–149/calendar · Gain $99–399); dedicated listening starts at $199/mo
+(Brand24) and is **usually skipped below mid-market**, though Vista
+Social bundles listening at $79/mo. *(Corrected at the gate r1: the
+approval band had been written $39–149 while naming Gain, whose ceiling
+is $399 — a 2.7× understatement pointing the same way as the vacancy
+claim below; and "absent entirely" was an upgrade over the report's own
+"usually skipped," contradicted by a row in the table being quoted.)* Against that, the services band is A11's
 **$500–2,000/mo among SMBs that pay for social at all** — and A11 carries
 its origin document's sampling caveat: it is not 44% of all small
 businesses.
 
-The structural read: there is a **hole between $50 and $500** where
-nothing does the operating. That hole is where A1's $59 and A2's $299
-sit. This is a positioning observation, not a market size — no top-down
-figure is admitted here (law 2).
+**The structural read — RETRACTED AND REPLACED at the gate r1.** What
+this section said: "there is a hole between $50 and $500 where nothing
+does the operating… no top-down figure is admitted here (law 2)." That
+was false against the very document cited, and the law-2 disclaimer
+appended to it was decoration, not a receipt. Appendix B populates the
+band densely: **$99 Social at $99 / $189 / $299 / $389 with 7,200+
+clients**, **Feedbird from $99**, **98 Buck Social / Engage365
+$98–398** (§4); and the AI-agent category at **$27–199/mo** —
+**Sintra $97**, **Apaya $55–183**, **Blotato-class $9–29** (§6). A2's
+$299 sits in the middle of that crowd, not in a vacancy.
+
+What the report actually concludes, and the only version we may state
+(L425, verbatim): *"$299 Founding sits exactly in the gap: above
+productized-DFY quality anchor ($99–400 templated), below
+competent-freelancer floor ($750–1,500), with agency-grade
+capabilities."* That is a **quality** gap between roughly $400 and
+$750 — a materially weaker and narrower claim than a price vacancy, and
+it is the honest one.
+
+The report does name a white space, and it is a tier-definition claim,
+not a price one (§6, verbatim): *"'Done-with-you AI operator'
+(human+AI hybrid) as a distinct priced tier: **UNSOURCED** — currently
+blurs into productized DFY. ← PLAYER2'S WHITE SPACE."* Carried at that
+grade: `UNSOURCED`/`UNTESTED`, never as an empty-market claim.
 
 ## NOT CHECKED
 

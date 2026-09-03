@@ -33,29 +33,38 @@ credible.
 ## Card 1 — INACTION ("we post when we remember")
 
 **Overview.** The owner keeps doing it themselves, in bursts, for free.
-The most common alternative by volume and the one most deals actually
-come from. Not apathy — a rational response to a loop that never closed.
+The most common alternative by volume. That it is where most of *our*
+deals will come from is `UNTESTED` — this org has zero customers and
+zero interviews. Not apathy — our working hypothesis is a rational
+response to a loop that never closed. `UNTESTED`.
 
 **Key stats.** 42% of SMBs have under 1 hr/day for ALL marketing (A14) ·
-63% feel pressure to post daily, 44% actually post weekly · 88% of
+63% feel pressure to post daily, 44% actually post weekly (landscape
+report §2.1, Adobe Express n=433 [VERIFIED, vendor-adjacent]) · 88% of
 TikTok-active owners report burnout (A14, graded a ceiling) · under-10K
-accounts still see 8–15% organic reach.
+accounts still see 8–15% organic reach (landscape report, Socialinsider
+[VERIFIED]).
 
 | | Inaction | Player 2 |
 |---|---|---|
-| Price | $0 cash | A1 $59/mo entry · A2 $299/mo full OS |
+| Price | $0 cash | A1 $59 entry · A2 $299 founding rate · **A3 $499 standard (defined, ungated)** |
 | Who does the work | The owner, when there's a gap | The employee, on a calendar |
 | Consistency | Burst → drift → silence | Horizon Guard: "an empty day on the board is a defect" — fills gaps as DRAFTS, max 2/night |
 | Control | Total | Total — nothing posts or spends without the owner's click |
 | Does it tell you what worked | No | Claims engine: registry whitelist, n floors, FDR correction, suppressed claims kept with reasons |
-| Does it fail silently | Yes | No — proactive failure alerting (`notify.ts`) |
+| Does it fail silently | Yes | No — proactive failure alerting shipped (`notify.ts`); **delivery paths dark until env is set, no client has received one** (NOT CHECKED vii) |
 | Authenticity | **Highest available** | Depends on inputs — we do not win this row |
 
 **Why we win.** (1) Consistency is a system property, not a willpower
 property — theirs depends on a week going well, ours doesn't. (2) The
-loop closes: they cannot tell what worked, and that unclosed loop is the
-documented cause of the fade. (3) The owner keeps the veto — buying us
-costs them no control, which is the objection they were about to raise.
+loop closes: they cannot tell what worked. The fade itself is
+documented; that the unclosed loop *causes* it is our inference, **not
+documented** — `UNTESTED` until Phin's interviews, and it lands as a
+question, never as an assertion. (3) The owner keeps the veto — buying
+us costs them no control. Whether control is even in their top three
+objections is `UNTESTED`; the kit's proof-bar and folder questions are
+built to find out. (Gate r1, in the owner's own words: "my first
+objection is the fifty-nine dollars.")
 
 **Why they win.** (1) It's free, and the cost that makes it not free is
 invisible on the day of the decision. (2) It's unbeatably authentic —
@@ -66,16 +75,32 @@ mode: nothing was promised, so nothing can be broken or blamed.
 landscape report §1, §2.1.
 
 **Landmines** *(questions for the prospect — they answer them, we don't)*
-1. "When you look back at the last three months, which weeks did you
-   post — and what was different about the weeks you didn't?"
+1. "Walk me through the last thing you posted — what was going on that
+   day?" *(Replaced at the SMB gate r1. The original — "which weeks did
+   you post, and what was different about the weeks you didn't" — was
+   two questions welded together: the first unanswerable (nobody
+   remembers which weeks they posted in June), the second an invitation
+   to narrate your own failure to a stranger about to charge you $59.
+   The reviewer's verdict: "I stop being honest right there and start
+   being polite, which is worse than useless to you." Same territory,
+   hands them the story instead of the verdict.)*
 2. "Last time something you posted brought someone in — how did you find
    out it was that post?"
 3. "If you get busy for two weeks starting tomorrow, what happens to the
    account?"
 
-**Do NOT use this card when** the owner already posts consistently and
-enjoys it, or their customers genuinely don't come from social. Say so
-and stop selling — a mis-sold operations subscription churns.
+**Do NOT use this card when** (a) the owner already posts consistently
+and enjoys it; (b) their customers genuinely don't come from social;
+(c) **they cannot supply raw material — no photos, no dates, no offers.
+An owner who will not open the app is buying a subscription to a silent
+employee**; or (d) they're in a genuine seasonal trough with no offer to
+make. Say so and stop selling — a mis-sold operations subscription
+churns. *((c) and (d) added at the SMB gate r1: the dossier flagged (c)
+in bold as "the honest disqualification and it belongs in the battle
+card," and this card had left it out. The reviewer, who is that owner,
+noticed: "You wrote down the one reason not to sell to me, you
+underlined it, you told yourself to move it, and you left it in the
+internal file where I would never see it.")*
 
 ---
 
@@ -86,25 +111,28 @@ someone's spare hours. The most respectable alternative: competent, and
 it works exactly as long as the person running it keeps running it.
 
 **Key stats.** Assembled stack $28–55/mo, ~$50–75 with video · Canva Pro
-$18/mo · CapCut $9.99/$19.99 (A27, re-verify flag) · **46% of social
-marketers use ChatGPT for ideation, 39% for copy, 4% for calendar
-planning** · true DIY cost including labour $500–1,200/mo (single
+$18/mo · CapCut $9.99/$19.99 (A27, re-verify flag) · **46% of professional social
+media managers use ChatGPT for ideation, 4% for calendar planning**
+(39% for copy, from a different section) — **population caveat: this is
+measured on paid SMMs, not on owners; carry the shape, never quote the
+percentage to an owner. `UNTESTED` as applied to our buyer** · true DIY cost including labour $500–1,200/mo (single
 directional source — **do not lead with this**).
 
 | | Build | Player 2 |
 |---|---|---|
-| Price (cash) | $28–75/mo | A1 $59/mo · A2 $299/mo |
+| Price (cash) | $28–75/mo | A1 $59 entry · A2 $299 founding rate · **A3 $499 standard** |
 | Price (owner hours) | The whole job | The inputs only |
 | Who plans the month | A person | The conductor, with the owner's approval |
 | Who remembers | A person | The system |
 | Learns from results | No | [Apply] memory — only a claim the engine actually proved |
-| Silent failures | Yes | No (`notify.ts`) |
+| Silent failures | Yes | No — shipped (`notify.ts`); **delivery paths dark until env is set** (NOT CHECKED vii) |
 | Asset quality | **Excellent — Canva/CapCut are best in class** | Comparable; not our differentiator |
 | Key-person risk | High — nephew leaves, output stops | None |
 
-**Why we win.** (1) **The 4% statistic is the pitch**: AI is already
-doing their *making* and almost none of their *running* — we sell the
-running. (2) Nothing in the stack closes the loop or carries anything
+**Why we win.** (1) **The shape behind the 4% statistic is the pitch**:
+AI is already doing the *making* and almost none of the *running* — we
+sell the running. (Say the shape, not the number: the poll is on
+professional SMMs, `UNTESTED` for owners — gate r1.) (2) Nothing in the stack closes the loop or carries anything
 forward; month 12 starts from the same blank page as month 1. (3) The
 stack fails silently and the operating layer is one busy person.
 
@@ -138,15 +166,16 @@ marketing.** Their real threat is not features — it's the price anchor
 for the phrase "AI marketing tool."
 
 **Key stats.** Lithuania; ex-ecommerce operators; VC-backed; 4,200+
-Trustpilot reviews · creative-metered (~200–650/mo) · **A15 ~$12–48/mo —
-DIRECTIONAL, third-party sourced, SPOT-CHECK BEFORE ANY EXTERNAL USE** ·
+Trustpilot reviews · creative-metered (~200–650/mo) · **A15 ~$20–48/mo list — DIRECTIONAL,
+third-party sourced, SPOT-CHECK BEFORE ANY EXTERNAL USE; a
+near-permanent promo column runs ~$12–29** ·
 no free trial; 14-day money-back **voided after 35+ generations**.
 
 | | Holo | Player 2 |
 |---|---|---|
-| Price | A15 ~$12–48/mo (unverified — see above) | A1 $59 · A2 $299 |
+| Price | A15 ~$20–48/mo list (promo column ~$12–29; see above) | A1 $59 entry · A2 $299 founding rate · **A3 $499 standard** |
 | What you get | Assets, on demand | An operated marketing function |
-| Posts them | No — you export to Ads Manager / by hand | Yes, in windows, gated on your click |
+| Posts them | **NOT CHECKED** — the 19 Aug teardown does not list posting as a gap, and it DOES list per-brand calendars. Do not assert they cannot post until tryholo.ai is fetched and snapshotted | Yes, in windows, gated on your click |
 | Replies to comments/DMs | No | Engagement drafting under house-voice enforcement; nothing sends unapproved |
 | Tells you what sold | No — their reviewers: "less about granular ad analytics and more about momentum and volume" | Claims engine + UTMs at publish |
 | Gets better on your account | No feedback loop | [Apply] memory, optimizers |
@@ -192,21 +221,22 @@ scheduling — no longer only an editor. This is the card most likely to
 be argued back at us, so it is the one written most carefully.
 
 **Key stats.** OpusClip Free $0 / **Starter $15** / **Pro $29** / Business
-custom (**A25 — live-fetched and hashed 3 Sep**) · **OpusClip posts to
-social on paid plans (A25b)** · Descript "from $16/mo" (A26, partial) ·
+custom (**A25 — live-fetched and hashed 3 Sep**; Pro is **$14.50/mo on annual,
+$174/yr**) · **OpusClip auto-posts from the $15 Starter tier (A25b —
+tier gating confirmed in the retained extraction at the gate)** · Descript "from $16/mo" (A26, partial) ·
 CapCut $9.99/$19.99 (A27, 20 Aug read; 3 Sep re-fetch 502'd) · **Vizard
 pricing UNKNOWN (A28) — make no price claim about Vizard.**
 
 | | Buy-editor | Player 2 |
 |---|---|---|
-| Price | A29 ~$0–29/mo where established | A1 $59 · A2 $299 |
+| Price | A29 ~$0–29/mo monthly list; **established paid floor $14.50/mo on annual** (OpusClip Pro, A25) | A1 $59 entry · A2 $299 founding rate · **A3 $499 standard** |
 | Cuts your footage | **Yes — better than us, it's all they do** | Not the argument |
 | Needs footage to exist first | **Yes — all four** | No; the calendar exists either way |
 | Decides what to make this month | No | Yes — conductor plan, owner-approved |
 | Waits for your OK before publishing | No | Yes — every post and every dollar |
 | Posts for you | **OpusClip: yes, paid plans.** Others: not on their pricing pages | Yes, in windows |
 | Replies to comments/DMs | No | Yes, drafted, gated |
-| Tells you what a clip earned | No — "Virality Score" predicts a clip, it doesn't measure a business | Claims engine |
+| Tells you what a clip earned | **Clip Analytics + real-time trend analysis on paid tiers** — clip metrics yes, business outcome no. *(Corrected at the gate: the earlier "No" was refuted by our own retained receipt.)* | Claims engine |
 
 **Why we win.** (1) **They start from footage that doesn't exist yet.**
 The owner with nothing shot this week gets nothing from any of them; the
@@ -218,7 +248,10 @@ owner's question is whether anyone walked in.
 **Why they win.** (1) $0–29 against $59, for a chore the owner can feel.
 (2) It's their real footage — maximum authenticity, no generated-content
 penalty. (3) **OpusClip now spans cut AND publish**, compressing two
-steps into one $15–29 subscription.
+steps into one subscription that starts at $15 — and $14.50/mo on Pro
+annual. (4) It ships **Clip Analytics and real-time trend analysis**, so
+"they can't measure anything" is false; only "they can't tie a clip to a
+booking" survives.
 
 **Resources.** `dossier-buy-editor.md` ·
 `snapshots/2026-09-03-buy-editor-pricing.md` (hashes + retained text).
@@ -231,13 +264,19 @@ steps into one $15–29 subscription.
    afterwards whether that clip brought anyone in?"
 
 **Two hard rules on this card.**
+- **This card's OpusClip line is DRAFT, NOT CLEARED FOR EXTERNAL USE
+  pending Phin's sign-off (law 8)** — same fence as the Holo positioning
+  line.
 - **Never say "they don't post."** OpusClip does, and advertises it. The
   chief's original line contained "posts in windows" as a differentiator;
   the live page killed that clause (dossier §Correction). The amended
-  line: *"They cut. One of them even posts. None of them decides what to
-  make this month, waits for your OK, or tells you which clip brought
-  anyone in — the loop is the difference, not the editor."* Say "even
-  posts," never name a tier — the tier gating is NOT CHECKED.
+  line: *"They cut — and one of them posts, from fifteen dollars. None of
+  them decides what to make this month, waits for your OK, or tells you
+  which clip brought a customer in — the loop is the difference, not the
+  editor."* **Assume they post from $15** (tier gating confirmed at the
+  gate r1; the earlier "never name a tier" rule was written around a gap
+  that did not exist in our own receipt). And say "brought a customer
+  in," not "measures anything" — they do measure clips.
 - **Expect coexistence, don't demand replacement.** The likeliest real
   configuration is Player 2 + CapCut. A card that demands they cancel a
   $10 tool they like will lose the room. `UNTESTED`, and flagged to Phin
