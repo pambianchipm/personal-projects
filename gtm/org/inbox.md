@@ -6,6 +6,95 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 20:00 · THE POSITIONING PHIN WANTS, AND THE THREE THINGS I WOULD
+CHANGE BEFORE IT SHIPS. This supersedes the re-scope below and is your next
+shift's whole job.**
+
+**Phin's structure, his words:** *"we have this platform, this is what it
+does… Then — we have our REAL positioning — which is that we have this
+employee that will live in chats, or wherever you want it to, and that it's
+proactive, touches up with you, and you can still access the platform too."*
+
+His draft hero:
+> **"Come hire Player2. Put your business into co-op mode.** Just sign up
+> here, connect your accounts, tell us about your brand, your products, your
+> business, your competitors, and then Player2 will message you and will be
+> your trusted employee."*
+
+**MY ASSESSMENT, AND I WANT YOURS ADVERSARIALLY — not agreement.**
+
+**"Come hire Player 2" is the strongest line this company has had.** It is a
+**hiring** frame in a category that sells software, it matches the product we
+just specced, and the name finally does work: **Player 2 is the co-op player.**
+Note the competitor's own promise is *"do the work of a full team without
+hiring one."* Ours inverts it directly — **hire one** — and it needs no
+comparative claim to land, which is the constraint I set this afternoon and
+nothing else has satisfied. Test it hard, but test it as a strong candidate.
+
+**CHANGE 1 — the completeness claim has to go. It is the riskiest sentence in
+his message.** *"It has all the features that you'd want when it comes to
+managing and optimizing your social media and ads."* **"All the features you'd
+want" is a claim we cannot keep and anyone can disprove in a minute** by naming
+a feature. It also invites exactly the checklist comparison against tools with
+far more surface than us — the fight his own research said not to take. And we
+are in no position to make completeness claims **today**: the front-door
+inventory found **two false email claims live on the site right now**, plus a
+typed `$299` the price guard never covered. **Describe what it does,
+specifically and in the owner's language. Never claim completeness.** Phin's
+own instinct is right here — *"we have to make sure we 1000% can do everything
+we want to do there"* — so the copy follows the capability, not the other way
+round.
+
+**CHANGE 2 — the hiring frame carries an expectation, and the copy must carry
+it too.** "Hire" is excellent value framing against a wage. It also imports a
+**person's reliability and judgement**. When the employee gets something wrong
+at 8am — and it will — "you hired an employee" makes that worse, not better.
+So the frame ships **with** the guardrails visible, not buried: it is
+**visibly AI**, nothing posts or spends without the owner's yes, and there is
+a spend ceiling. Those are not small print; **they are what makes hiring it
+safe**, and they are a differentiator in their own right.
+
+**CHANGE 3 — DO NOT LET THE ENTRY PRICE DROP ON A LEAN. RESEARCH IT.**
+Phin: *"I really think that if we were to price the entry tier closer to 29
+bucks, it would be better."* Maybe — but:
+- **$29 is exactly the competitor's promo price** (OBSERVED: $12–29 promo,
+  $20–48 list, for 120–350 creatives a month). Matching their number with a
+  **smaller** generation allowance is competing on their axis, at their price,
+  from behind. That is the one move his own research told us not to make.
+- **We do not know what entry COSTS us.** Build item 24 (the cost ledger) is
+  unbuilt, and `ENTRY_WEEKLY_ALLOWANCE` currently has `image: null` — **uncapped
+  image generation.** $29 with uncapped generation could be negative margin
+  and nobody in this org can currently say.
+- The honest framing: in a two-tier structure, **entry's job may not be
+  profit** — it may be to qualify buyers and seed the employee. If that is its
+  job, $29 might be right. **Decide it knowing the number, not before.**
+**Recommend either a time-boxed founding rate, or holding the entry price
+until the cost spike returns.**
+
+**THE RESEARCH PHIN IS ASKING FOR — $200 vs $300 for the employee tier.**
+He names the **"Victor AI" AI-employee model** as a reference. **I have no
+verified knowledge of it — do not take my word or his as a source.** Find it,
+snapshot it per the doctrine, and grade it. More useful than one comparable:
+**find how AI-employee products are actually priced** — per seat, per outcome,
+flat — and what the buyer thinks they are buying. Anchor against a **part-time
+person's wage**, which is what "hire" invites the buyer to compare to, and
+against the services band in A11.
+
+**Deliver: one recommended number for each tier, the reasoning, the strongest
+objection to your own answer, and what would have to be true for you to be
+wrong.** And remember question 5 is already settled — **the employee tier is
+waitlisted, not priced**, so your A2 number is what it becomes when it exists,
+not what goes on the page tomorrow.
+
+**SEQUENCING — and this is a chief's call, not a suggestion.** Phin wants copy,
+branding and positioning redone. **The position lands FIRST, here, in one
+shift.** The front-door boss is mid-flight, item 22 is rebuilding the landing's
+pricing section, and a copy rewrite issued before the position is gated would
+invalidate work in three orgs simultaneously. **Bring me the gated position and
+I will cascade it.** — chief
+
+---
+
 **2026-09-03 19:45 · PHIN HAS PART-ANSWERED THE PRICING QUESTION BELOW.
 A2 IS NOT PRICED — IT IS WAITLISTED.** *"That's why I think gating this as a
 waitlist instead of charging right now is the move. It's a big haul but I
