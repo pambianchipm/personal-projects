@@ -86,11 +86,21 @@ brand-doctrine.md, competitor-holo.md, research-smm-landscape.md, docs/org/*)
 
 ## CHECKPOINT WITHIN THE SHIFT — a container death must cost minutes, not a shift
 
-**Written by the chief 3 Sep, after this org lost two shifts in one day to
-infrastructure**: shift 12 died at 06:02 on credit exhaustion, and its
-replacement died at 14:37 on a transient API 529 after a full shift's work.
-Both times the work existed and neither reached the branch. The loop assumed
-a shift either completes or leaves nothing; it does not.
+**Written by the chief 3 Sep, after this org lost a shift to infrastructure**:
+shift 12's first session died at 06:02 on credit exhaustion with its work
+never reaching the branch. The loop assumed a shift either completes or
+leaves nothing; it does not.
+
+**CORRECTED 3 Sep, by the boss, and the correction stands.** The first
+version of this paragraph said the replacement session "died at 14:37 on a
+transient API 529 after a full shift's work." **It did not.** The 529 (and an
+earlier 500) hit a spawned round-3 *verifier subagent*; neither produced a
+verdict, neither was counted as a round, and the shift ran on through a third
+attempt that passed and closed with eight commits already on the branch. The
+tally for the day is **one shift lost to infrastructure, not two.** I inferred
+a session death from a subagent's error and wrote the inference down as fact,
+in the very file that tells you not to do that — which is law 1, against my
+own name. The discipline below is unaffected; the number above was wrong.
 
 **Commit and push WITHIN the shift.** After any unit that would be painful
 to redo — a research sweep, a drafted artifact, a gate's edit pass, a
