@@ -7,11 +7,14 @@ SHIFT-11 AMENDMENTS (card J, 5-card rotation, timing, J probe,
 FEATURES-PARTIAL rule) GATED separately — skeptical SMB owner: FAIL r1
 (8 edits), PASS-WITH-NOTES r2. Verdict:
 `gtm/org/reviews/2026-09-03-shift11-both-gates.md`.
-SHIFT-12 AMENDMENTS — **IN-GATE** (skeptical SMB owner): the rotation's
-false "evens at n=10" claim corrected (mirrored cycle for interviews
-6-10), the n=5 / drop-one call written for Phin, and the batch-2
-sacrifice's four rows named. These three edits are NOT covered by the
-shift-11 PASS and carry this shift's gate.
+SHIFT-12 AMENDMENTS — **GATED** (skeptical SMB owner: FAIL r1 →
+PASS-WITH-NOTES r2, 21 edits applied): the rotation's false "evens at
+n=10" claim corrected (mirrored second cycle, re-sequenced at the gate
+so the running M/K skew is ±1 after EVERY interview and 5:5 at n=10),
+the n=5 / drop-one call written for Phin with its arithmetic tie
+disclosed, and the batch-2 sacrifice's four rows named. Correction
+history for these edits lives in the verdict, not in this instrument:
+`gtm/org/reviews/2026-09-03-shift12-both-gates.md`.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck p20 (grounding → concept review → feature-list review)
 + the org's accumulated gate rulings (F1 symmetry mechanism; axis-f

@@ -1,6 +1,12 @@
 # Player 2 — competitive battle cards (four alternatives)
 
-STATUS: IN-GATE (round 1) — competitor's salesperson + skeptical SMB owner
+STATUS: GATED (rounds 1–3) — skeptical SMB owner + competitor's salesperson
++ fresh verifier. SMB owner: FAIL r1 → PASS-WITH-NOTES r2. Competitor's
+salesperson: FAIL r1 → FAIL r2 (narrow) → fresh verifier r3
+PASS-WITH-NOTES. 31 required edits across the three rounds, all applied.
+Verdict (all ledgers verbatim):
+`gtm/org/reviews/2026-09-03-shift12-both-gates.md`.
+The chief confirms GATED → READY-FOR-PHIN; the boss does not self-pass.
 OWNER: GTM boss · shift 12, 2026-09-03
 CONFIDENTIAL — internal (law 8). **A battle card is internal sales
 enablement** (PM deck p41, verbatim: *"an internally facing sales

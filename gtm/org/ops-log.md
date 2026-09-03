@@ -8,6 +8,113 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · scheduled (shift 12, RETRY) · chief's shift-11 confirm
+conditions + the two kit notes + item 3 (competitor dossiers + battle
+cards, four types incl. BUY-EDITOR).**
+
+**Session note:** the first shift-12 session died at 06:02Z from weekly
+Fable credit exhaustion, before writing anything — not a crash, no
+partial work in the tree. Phin moved the boss to Opus 5; this session
+reclaimed the stale lock at 12:35Z. The **14:00 wake-up fired at 14:15Z
+while this shift was still in flight** on its own fresh lock; it was
+NOT taken as a new shift — shift 12 finished instead. Shift 13 starts
+at the 18:00 firing.
+
+**(a) The chief's five conditions, all executed.** M1's three count
+sentences fixed — recounted off the verdict column: 22 clean / 1 partial
+(18) / 1 unscored (16) / 5 mismatch → 6 inexact, so the reviewer's "24"
+is off by TWO. **One divergence flagged rather than adopted:** the
+chief's prescribed "23/27" does not reproduce — it counts unscored cell
+16 as exact, against their own headline convention and their own 22/28.
+Under one convention it is 22/27, so the clauses were struck and NO
+replacement count printed. Anthropic snapshot: the shift-11 fetch had no
+recorded time and its bytes died with that session, so it is marked
+unreproducible and superseded rather than retro-timestamped; page
+re-fetched **2026-09-03T12:33:46Z** (650,389 bytes, SHA-256
+`aff8778e…`), extracted text retained beside it and hashed, all cells
+re-read from the retained text unchanged. SMB r2 line ledger appended as
+Appendix B, filed honestly as a **boss re-verification** (the reviewer's
+raw r2 text was not retained) — 13/13 anchors present with citations.
+NOT CHECKED restored to the shift-11 notice.
+
+**(b) The two kit notes for Phin** — and answering them found a defect:
+the kit's "evens at n=10" was **false** under its own repeat rule (6:4,
+the same 3:2 skew). Fixed with a mirrored second cycle, then
+re-sequenced at the gate so the running skew is ±1 after every one of
+the ten interviews, 5:5 at n=10, both cycles valid Latin squares. If
+Phin can only run four, **drop interview #4** (arithmetically tied with
+#5 — the tiebreak is a research-priority judgment and says so). The
+batch-2 sacrifice drops rows 6–9: **both "(coming)" rows and both
+initiative rows** — every signal about the dial.
+
+**(c) Item 3 delivered:** four dossiers (INACTION / BUILD / BUY-Holo /
+BUY-EDITOR) + four battle cards, all **GATED**. Vendor prices fetched
+raw with timestamps and hashes: OpusClip SOURCED (extraction retained),
+Descript DIRECTIONAL, CapCut 502'd, **Vizard UNKNOWN — no price claim
+about it anywhere**. The chief's BUY-EDITOR line lost a clause:
+**OpusClip advertises social scheduling and multi-profile posting**, so
+"posts in windows" cannot be the differentiator; amended line receipted
+clause by clause and fenced pending Phin.
+
+**Truth-table changes this shift (change discipline — downstream
+artifacts named, as the rule requires).** **A15** ~$12–48 → **~$20–48/mo
+list** (the $12 was Holo's promo column; old value struck and dated).
+Downstream citations: `market/positioning.md` L73, `market/ksp-funnel.md`
+L132, `raise/deck/skeleton.md` L93+96 — in all four the restated value
+was **DELETED and the bare row ID kept**, which is subtraction, needs no
+gate, and makes them immune to the next A15 change;
+`market/competitors/{dossier-buy-holo, battle-cards}.md` carry the value
+because they own the claim. **A20** repointed from the unreproducible
+shift-11 fetch to Fetch B. **A25/A25b/A26/A29** corrected (annual
+$14.50 price added; tier gating moved NOT CHECKED → CHECKED; A26
+regraded SOURCED-PARTIAL → **DIRECTIONAL**). **A25–A29 and A30–A33
+opened** — A30–A33 for fifteen figures that were stated in two artifacts
+each under a "quoted by reference" promise with no row behind them.
+
+**RETRACTIONS (this shift's, on the record — history is not edited):**
+1. The shift-11 notice credited the **$2.25** correction to "your r2
+   sweep." **It was not the chief's.** My own hostile-investor reviewer
+   caught it in ROUND 1 — cells 17 and 19–24, sum-of-rows ≠ total,
+   Edit 2 — and r2 rows 4–9 only confirmed it.
+2. The shift-11 notice said "**both raw ledgers verbatim**." True of the
+   investor gate only; the SMB r2 was condensed to prose and its raw
+   text was not retained. Appendix B is a boss re-verification, not the
+   reviewer's ledger, and now says so.
+3. The shift-11 ops-log entry said the count's error was an
+   "**off-by-one**." It is off by **two**.
+4. The kit's "**evens at n=10**" was false, as above.
+
+**Fan-out disclosure.** Two independent persona reviewers spawned at
+gate time (Opus 5), plus one fresh verifier for round 3. **Skeptical SMB
+owner:** Batch A PASS-WITH-NOTES / Batch B **FAIL** r1 → both
+PASS-WITH-NOTES r2, 21 edits. **Competitor's salesperson: FAIL r1 →
+FAIL r2 (narrow)**, 28 edits. **Fresh verifier r3: PASS-WITH-NOTES**, 3
+edits — **this one ran on Sonnet**, a deliberate choice after two prior
+r3 attempts died on API 500 and 529 without producing a verdict
+(neither counted as a round); disclosed because a verifier's model is
+part of what its PASS is worth. **31 edits total across three rounds,
+all applied; nothing argued down.**
+
+**The two findings worth Phin's attention, both self-inflicted:**
+(i) applying the r1 edits wrote a **persona reviewer's first-person
+words, in quotation marks, into the interview kit and battle cards** — a
+simulated owner quoted as an owner, in the one document whose job is to
+hold real owner words. Law 1's exact failure mode; caught at r2, all
+four sites rewritten, full text moved to the verdict. (ii) The r1 commit
+adopted a rule that block quotes are copied never retyped, and **in the
+same commit retyped `|6| social account connections`** with the pipes
+stripped into three files — the rule's wording protected block quotes
+only, which is exactly where the error wasn't. Rule widened; every quote
+re-verified byte-exact.
+
+**Token weight: heavy** (three gate rounds, four vendor fetches, one
+cross-repo clone). **Next shift: the chief's confirm, then backlog item
+4 (deck skeleton) or 0b, per the queue.** Flagged and NOT done: the
+deck's competitive slide still omits the BUY-EDITOR band — the deck is
+GATED, so that is its own gate.
+
+---
+
 **2026-09-03 · scheduled · SHIFT 11 — chief's confirm conditions +
 own-media tasks 1–4.** (1) **M1:** the investor's raw 29-cell ledger
 appended verbatim to the shift-10 verdict file; inexact cells recorded

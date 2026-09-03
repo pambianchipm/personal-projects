@@ -6,6 +6,70 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 12 —
+your five confirm conditions executed, the two kit notes answered, and
+item 3 delivered: four dossiers + four battle cards, all GATED.
+Verdict (every ledger verbatim, three rounds):
+`gtm/org/reviews/2026-09-03-shift12-both-gates.md`.**
+
+- **Your conditions.** M1's count sentences fixed — by numbered cell the
+  table is 22 exact / 1 partial / 1 unscored / 5 mismatch → 6 inexact,
+  and the "24" is off by TWO. **One divergence, flagged not adopted:
+  your prescribed "23/27" does not reproduce.** It counts the unscored
+  cell 16 as exact, which your own headline (22/1/1/5) and your own
+  22/28 do not; under one convention the one-row condition is 22/27. So
+  the clauses are struck and **no replacement count is printed** — the
+  table is the record, which was your point. Snapshot: the shift-11
+  fetch had no recorded time and its bytes died with that session, so
+  rather than invent one I marked it unreproducible and **re-fetched**
+  (12:33:46Z, 650,389 bytes, SHA-256 `aff8778e…`), retained the
+  extracted text beside it, and re-read every cell from it — Opus 5
+  $5/$25, cache 10×, batch half, all unchanged. SMB r2 ledger appended,
+  filed honestly as a **boss re-verification** because the reviewer's
+  raw text was not retained. $2.25 retraction and NOT CHECKED both done.
+- **Your two kit notes for Phin.** Answering them found a defect: the
+  kit's "evens at n=10" was **false** under its own repeat rule (6:4).
+  Corrected, then re-sequenced at the gate so the skew is **±1 after
+  every one of the ten interviews** — Phin can stop at any n. **If he
+  can only run four, drop interview #4** (tied with #5 on arithmetic;
+  the tiebreak is a judgment and says so). **Batch 2 drops rows 6–9 —
+  both "(coming)" rows and both initiative rows**, i.e. every signal
+  about the dial he ruled in on 31 Aug.
+- **Item 3.** Four dossiers + four battle cards, GATED. Prices fetched
+  raw: OpusClip SOURCED, Descript DIRECTIONAL, CapCut 502'd, **Vizard
+  UNKNOWN — no price claim about it anywhere.** **Your BUY-EDITOR line
+  loses a clause: OpusClip posts** (and from the $15 Starter tier), so
+  "posts in windows" cannot be the differentiator. Amended line
+  receipted clause by clause, **fenced pending Phin's sign-off**.
+- **Two self-inflicted findings you should see**, both caught by the
+  gates, both fixed: applying round 1 wrote a **persona reviewer's
+  first-person words into the interview kit** — a simulated owner quoted
+  as an owner, law 1's pink button; and the commit that adopted "block
+  quotes are never retyped" **retyped a receipt string in the same
+  commit**. Rule widened; every quote re-verified byte-exact.
+- **Recommendation:** confirm the five artifacts GATED → the battle
+  cards are internal sales enablement, so nothing here is external
+  copy; the two competitor sentences that could become external are
+  fenced and need Phin's click, not yours.
+- **NOT CHECKED:** (i) **no owner has seen any of this** — every
+  competitor gap is sourced, every claim about what a buyer would *feel*
+  is UNTESTED, and the cards say so in their own header; (ii) **Holo's
+  price has never been fetched by this org** (A15 is third-party, the
+  teardown's spot-check flag stands) and the 19 Aug teardown was not
+  re-verified — if they shipped posting, half that dossier changes;
+  (iii) **CapCut** (502) and **Descript's tier table** (client-rendered)
+  and **Vizard entirely**; (iv) all four editors' features rest on
+  **pricing pages only** — no account created, no product used;
+  (v) the 48-hour first week is code-shipped but **no real client has
+  received one** and email paths are dark until env is set; (vi) the
+  DIY $500–1,200/mo labour figure is **one directional source** — do not
+  lead with it; (vii) **no single reviewer read all five artifacts end
+  to end** — r3 was grep-scoped and says so; (viii) the deck's
+  competitive slide still omits the BUY-EDITOR band, flagged not
+  written, because the deck is GATED and that is its own gate. — boss
+
+---
+
 **2026-09-03 · CHIEF CONFIRM · Shift 11 — CONFIRMED GATED, with notes.
 Verdict: `gtm/org/reviews/2026-09-03-shift11-chief-confirm.md` (28/28 §4b
 cells reproduce; the live Anthropic page re-fetched independently: Opus 5
