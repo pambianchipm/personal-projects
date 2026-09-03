@@ -8,6 +8,117 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · FIRED (on-demand, chief at Phin's request) · SHIFT 14 — THE
+POSITION. GATE-FAILED (round 2, both personas). NOT GATED, NOT CASCADABLE.**
+
+**Deliverable:** `gtm/market/position-v2-the-hire.md` (923 lines) — the hiring
+frame, the two layers, the three ruled constraints as executable copy rules,
+the prices in the fee-plus-allowance shape, and the Viktor model read. Plus a
+primary Viktor snapshot with raw bytes retained.
+
+**Fan-out disclosure:** FOUR persona reviewers (Opus 5), all spawned by the
+boss at gate time, none of which wrote a word of the artifact — skeptical SMB
+owner ×2 (r1, r2) and competitor's salesperson ×2 (r1, r2). **All four
+FAILED.** r1: 15 gate-blocking findings across the two. r2: SMB *"FAIL —
+narrow, one editing pass from a PASS"* (17/20 edits LANDED); salesperson FAIL
+on six. **Round 3 (fresh verifier) NOT RUN — the shift ran past budget at
+round 2, and the order said a clean partial honestly graded beats a complete
+one that is not.** Verdict with all four ledgers:
+`reviews/2026-09-03-shift14-position-v2-both-gates.md` (1,150 lines).
+**Eleven checkpoint pushes during the shift.** Token weight: heavy.
+
+**THE POSITION, in one line:** adopt the hire, demote the co-op, and lead the
+employee's four properties with *hands back finished work* rather than *asks
+you things* — because all three reasons the draft gave for leading with the
+asking were reasons it is good for **us**.
+
+**THREE FINDINGS AGAINST THE ORDER I WAS GIVEN.**
+1. **The chief's inversion argument does not hold, and it is the chief's own.**
+   *"Do the work of a full team without hiring one"* exists in this tree only
+   in the chief's 20:00 inbox entry. It is **not** in the primary Holo
+   snapshot, whose header outranks every remembered figure. Graded UNSOURCED
+   and **cut from the argument rather than repaired**. Both gates called this
+   the best paragraph in the document. **Phin can settle it with one
+   screenshot of the tryholo.ai homepage hero.**
+2. **"Hire" is already the AI-employee category's frame and it anchors DOWN.**
+   OBSERVED: *"Hire an AI Employee. Not Another Tool."*, *"for the price of
+   lunch"*, $50–100/mo. So a $299 defence built on "cheaper than a hire"
+   stands on a collapsing anchor. **A38 opened.**
+3. **The guardrails are a trust device, not a wedge.** Viktor prints an
+   approval promise too; ours is enforced in code, and you cannot show a shop
+   owner a code comment.
+
+**THE SNAPSHOT DOCTRINE PAID FOR ITSELF AGAIN, AND THEN BILLED ME.** The
+chief's relayed Viktor read (*"entry ~$50/mo for 20k credits"*, from two
+direct competitors' blogs) is **off by 2× against the page**: $50 is a
+*from*-price in the `<title>` and footer; the only priced card is **$100/mo
+for 40,000**. **A37 opened.** But my own snapshot was defective: the
+extraction stripped `<script>` and with it the FAQ JSON-LD, so §3 quoted
+answers the retained text did not contain. **EIGHT strings affected** — more
+than the three I first disclosed, more than the six the gate estimated.
+**Closed properly this shift: raw HTML retained in-repo and hashing to the
+recorded fetch values, so the recovery is reproducible; §1's hashes amended in
+the same commit as a new §1a recording the whole sequence, including my own
+incomplete first repair.**
+
+**FOUR THINGS I GOT WRONG AND THE RECORD SHOULD SAY SO.**
+1. **I over-claimed ignorance about cost.** *"No margin claim is possible"* was
+   false against A8 (RULED allowance), A9 and A21. **A39 opened.**
+2. **I aimed the $29 risk at uncapped images.** `allowance.ts` says images are
+   uncapped deliberately (*"$0.02–0.07 each, which is noise"*).
+3. **I mis-cited A5 for a $1.40–2.00 band; $2.00 is A6.** Same mis-citation
+   class I had just corrected at §1.5, in the paragraph rebuilt to fix it.
+4. **I silently dropped A5's $4.20 30-second extend-chain — the number that
+   hurts.** At 30s Reels the same ruled allowance is **~$72.8/mo against
+   $59**. **So the honest recommendation is not "$59 right, $29 wrong" — it is
+   that entry's price is UNRESOLVED until item 24 lands, and $59 is not safe
+   either.** That is materially weaker than what this shift set out to say and
+   it is the correct answer. Selecting the favourable half of a cited row is
+   the exact error I charged my own draft with two sections earlier.
+
+**TWO REVIEWER DEFECTS RECORDED, AND TWO STANDING RULES ADOPTED.**
+- The r1 salesperson charged the file with **fabricating two Viktor
+  quotations** — *"the single worst row in the document"* — and inventing *"no
+  card"*. **All three strings are verbatim; two of the three were sitting in
+  the retained file, findable by one grep.** The r2 reviewer: *"A reviewer who
+  accuses someone of fabricating a quotation owes them a grep first… it burns
+  the one accusation that is supposed to mean something."* **RULE: no
+  fabrication finding without a documented grep of the retained text.**
+- **My own sequencing defect:** the r1 edit pass was committed at `0fac89a`
+  while only one ledger was on the record; the salesperson ledger landed 5
+  minutes later at `c3b243c`. The r2 reviewer read that window and correctly
+  refused to certify the edit pass. Nothing was lost; the ordering was wrong.
+  **RULE: file every ledger before the edit pass, not after.**
+
+**WHAT THE GATES SAY THE POSITION IS NOW WORTH.** The SMB owner's five-second
+test moved from *"no, and I'm not sure what you are"* to *"yes, I'd click"* —
+*"the position absorbed the placeholder and got better than both."* The
+competitor's salesperson lost three of ten bake-off moves, **struck in place
+with their own page cited as the reason**, and concluded: *"the gap between us
+narrowed this round, and it narrowed on the axis I cannot fix with a
+discount… they still lose the two-second glance, and they now win the
+ten-minute conversation."*
+
+**LAW-4 DEFECTS OPENED AND HANDED UP — the boss may not edit gated
+artifacts:** `objection-bank.md` O3 says *"four videos a month"* while A8 and
+`allowance.ts` say **four a week** — **the org's own receipted customer
+sentence undersells the shipped product by 4×**; O4 is stale against D4; A15's
+row contradicts itself (value cell OBSERVED, grade column DIRECTIONAL); there
+is **no channel row** in `assumptions.md`; no row for a $29 cohort rate; and
+the truth map's enforced ad cap reads against §3.2's unbuilt ceiling.
+
+**THREE THINGS FOR PHIN**, all in the inbox notice: the metering constraints
+he has **not** ruled on (and two of the three conflict with shipped code —
+there is no overage today, it is a hard wall, and the counter already shows
+the balance); the **Monday reset**, which may be the wrong boundary for a shop
+whose week peaks Friday–Saturday; and whether he will sign off on the **refund
+contrast**, which both gates independently called our strongest real asset and
+which law 8 currently gags.
+
+**NOT DONE:** round 3. The next shift's first act is that verifier.
+
+---
+
 **2026-09-03 · scheduled · SHIFT 13 — the Holo rebuild.** Triage put this
 above everything: the chief's URGENT entry, on Phin's PRIMARY capture of
 tryholo.ai, superseded in part the dossier and battle cards this org gated

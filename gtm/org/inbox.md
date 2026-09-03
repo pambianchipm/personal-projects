@@ -6,6 +6,95 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · SHIFT 14 CLOSE (boss → chief + Phin) · THE POSITION IS
+**GATE-FAILED**, NOT GATED. DO NOT CASCADE IT YET.**
+
+Both personas failed **both** rounds. All r1 and r2 MUST-FIX edits are applied;
+**round 3 (fresh verifier) was NOT run** — the shift ran past budget at round
+2 and I would rather hand you a partial that is honestly graded. **The next
+shift's first act is that verifier.** Artifact:
+`gtm/market/position-v2-the-hire.md` (STATUS block carries all of this).
+Verdict with all four ledgers verbatim:
+`gtm/org/reviews/2026-09-03-shift14-position-v2-both-gates.md`.
+
+**THE HEADLINE, AND IT IS WORSE FOR MY OWN RECOMMENDATION THAN WHEN I STARTED.**
+I told you entry should hold $59 and not drop to $29. **The recommendation
+against $29 survives; the confidence in $59 does not.** I built reason 1 on
+A5's $1.40 ten-second floor and **silently dropped A5's other number — $4.20
+for a 30-second extend-chain.** At 30-second Reels, which is the format a
+salon actually posts, the same ruled allowance (A8, 4 videos/week) is
+**~$72.8/mo against a $59 price.** So the honest answer to Phin's question is
+**not** "$59 right, $29 wrong". It is: **entry's price is UNRESOLVED until the
+cost ledger lands, and $59 is not safe either.** Selecting the favourable half
+of a cited row is the exact error I charged my own draft with two sections
+earlier, and the salesperson gate caught it.
+
+**THREE THINGS FOR PHIN, and they are the reason this notice exists.**
+1. **He has not ruled on the metering constraints, and TWO OF THE THREE
+   CONTRADICT SHIPPED CODE.** I read `console/lib/allowance.ts` this shift.
+   **There is no overage today** — `checkAllowance` hard-refuses at the cap and
+   the counter says *"4 of 4 videos this week — resets Monday."* And **the
+   product already shows both used and remaining**, so item 31 §5's *"show
+   usage, not a remaining balance"* would be a **regression**. The SMB gate was
+   blunt: *"rationing is how I don't get a surprise — you've decided to hide
+   the number that protects me because you'd rather I use more."*
+   **Recommendation: keep showing both, and put the soft-cap question to Phin
+   as a change to shipped behaviour rather than a description of it.**
+2. **The Monday reset may be the wrong boundary.** A salon's week peaks
+   Friday–Saturday. Burn four videos midweek and you enter the two biggest days
+   with nothing. Nobody has asked which day the reset lands on, or whether
+   top-ups exist today at all — §4.3 names them as the pressure valve and the
+   file cannot say whether they are built.
+3. **The refund contrast is our strongest real asset and law 8 currently gags
+   it.** Both gates said so independently. Ours: 30-day full refund on request
+   (A17, RULED D2). Theirs (A34, OBSERVED): 7 days, void if any credit was
+   used, minus 5%, statutory rights waived, no refund on cancellation. The
+   competitor's own salesperson: *"Right now their own law 8 is doing my
+   defending for me. That is the single most fragile advantage I hold."*
+   **Phin's sign-off is the unlock. Please put it to him.**
+
+**LAW-4 DEFECTS I OPENED AND CANNOT CLOSE — they are yours, because I may not
+edit gated artifacts.**
+- **`objection-bank.md` O3 says "four videos a month". A8 and `allowance.ts`
+  say four a WEEK.** The org's own RECEIPTED customer sentence **undersells the
+  shipped product by 4×.** This is the single most valuable fix on the list —
+  it is the only number a buyer reads.
+- **O4 is stale** against D4 (it says no export commitment exists; Phin ruled
+  one 2 Sep).
+- **A15 contradicts itself** — value cell OBSERVED, grade column DIRECTIONAL
+  *"never load-bearing alone."* I lean on the OBSERVED half.
+- **No channel row in `assumptions.md`**, so §3.1's table — the most
+  operationally load-bearing thing in the file — has no truth-table anchor.
+  Recommend mirroring `channel-readiness.md`'s grades into a row.
+- **No row for a $29 cohort rate**, which my own concession would need.
+
+**TWO REVIEWER DEFECTS, RECORDED, WITH STANDING RULES ADOPTED.** The r1
+salesperson accused the file of **fabricating two Viktor quotations** and
+inventing *"no card"* — *"the single worst row in the document."* **All three
+strings are verbatim, and two of the three were sitting in the retained file,
+findable by one grep.** The r2 reviewer's own words: *"a reviewer who accuses
+someone of fabricating a quotation owes them a grep first… it burns the one
+accusation that is supposed to mean something."* **RULE ADOPTED: no
+fabrication finding without a documented grep.** And against me: **I committed
+the r1 edit pass before both ledgers were filed**, and the r2 reviewer read
+that window and correctly refused to certify anything. **RULE ADOPTED: file
+every ledger before the edit pass.**
+
+**MY SNAPSHOT WAS DEFECTIVE AND IS NOW PROPERLY CLOSED.** The extraction
+stripped `<script>` and with it the FAQ JSON-LD, so the snapshot quoted answers
+its own retained text did not contain — **eight strings, more than the three I
+first disclosed and more than the six the gate estimated.** The first repair
+was itself incomplete (I amended the retained text without updating the
+certifying hashes or retaining the source, so for one commit the receipt
+failed its own verification test). **Both closed: the raw HTML is retained
+in-repo and hashes to the values in the fetch record, so anyone can reproduce
+the extraction; §1's hashes are amended in the same commit as a new §1a that
+records the whole sequence including my bad first fix.**
+
+**YOUR INVERSION ARGUMENT IS STILL UNSOURCED AND STILL CUT.** One screenshot of
+the `tryholo.ai` homepage hero from Phin settles it. It is the cheapest open
+item in the file. — boss
+
 **2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 14 — THE
 POSITION.** Artifact: `gtm/market/position-v2-the-hire.md`. Personas per
 protocol: **skeptical SMB owner + competitor's salesperson**, two independent
