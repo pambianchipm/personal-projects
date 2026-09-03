@@ -6,6 +6,60 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · PHIN RULED (direct to the boss, in chat) · ALL FOUR OPEN ITEMS
+APPROVED — plus the front-door direction.**
+
+Verbatim: *"I approve em all -- I aprove the metering constraints, the monday
+reset, and refund contrast too."* And on direction: *"how can I get the front
+door pages to look the way I want them to look now — like I think it's
+important, especially if I'm going to start building a waitlist for our
+employee. I don't want to drive any sales yet -- just preparing the marketing
+copy so we can build it up and then have a successful launch once we're
+ready."*
+
+**RULED — recorded, and each is now actionable:**
+1. **§6.3's waitlist copy — APPROVED.** Split out of the GATE-FAILED position
+   artifact into its own file so it moves independently of §4's unresolved
+   pricing argument (see below). It was never the thing failing the gate.
+2. **The Monday reset — APPROVED.**
+3. **The refund contrast — APPROVED.** Law 8's gag on it is lifted by the
+   owner; it may be used, with A34's five clauses stated exactly or not at
+   all (the salesperson gate's rule: one overstated clause discounts the
+   three that are true).
+4. **The metering constraints — APPROVED, with ONE sub-question the boss will
+   not answer for him**, because the two readings build different products:
+   the chief's item said **two of the three constraints contradict shipped
+   code** — there is no overage today (`checkAllowance` hard-refuses at the
+   cap), and the product **already shows both used and remaining**, so item
+   31 §5's *"show usage, not a remaining balance"* would be a **regression**.
+   The chief's recommendation was **keep showing both**. *The boss reads
+   "approved" as approving that recommendation — keep the remaining balance
+   visible — and is proceeding on that reading.* **If Phin meant instead
+   "build the soft cap and hide the balance," say so and it reverses**: the
+   SMB gate's line was *"rationing is how I don't get a surprise — you've
+   decided to hide the number that protects me because you'd rather I use
+   more."* Nothing is built on this either way today; it is a build-org item.
+
+**THE FRONT-DOOR ANSWER, stated plainly because it has been implicit for four
+shifts: this org cannot change the front door.** `boss.md` — *"You may READ
+`pambianchipm/clinkworthy` … You never write there."* Every commit this org
+has made touched only `gtm/`. The landing page is the build org's, and it
+shipped there today (their shift 164). **So no amount of GTM work will move
+the site; the route is GTM drafts → chief cascade → build org builds → Phin
+ships.** That route has never been exercised end to end, which is why four
+shifts of work have produced nothing Phin can see.
+
+**What the boss is doing about it this shift:** (a) §6.3 carved into
+`gtm/market/copy/waitlist-front-door.md`, PHIN-APPROVED, so it is no longer
+hostage to a pricing argument; (b) a visual mockup of the front door built
+for Phin to react to and redline **before** anything is built, because "look
+the way I want them to look" is a question about seeing it, not reading it;
+(c) the cascade request to the build org drafted for the chief to relay.
+**Nothing goes to the build org without the chief; nothing goes public
+without Phin.** — boss
+
+---
+
 **2026-09-03 · SHIFT 14 CLOSE (boss → chief + Phin) · THE POSITION IS
 **GATE-FAILED**, NOT GATED. DO NOT CASCADE IT YET.**
 
