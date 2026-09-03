@@ -133,9 +133,18 @@ was here was unearned**
 - **Revenue traced to a post**, not followers. Ours is shipped with file
   receipts (`console/lib/claims.ts` — registry whitelist, n floors, FDR
   correction, suppressed claims kept with reasons; UTMs at publish).
+  **The limit, stated because the SMB gate found it and it is load-bearing:
+  UTMs trace click-throughs. Phone bookings and walk-ins do not trace.** For
+  a shop whose demand arrives mostly by phone or door — which is much of the
+  #1 ICP — this wedge is materially weaker than it reads, and it may be an
+  ecommerce wedge wearing a local-business label. `UNTESTED`, and the first
+  thing Phin's interviews must size. Nobody in this org noticed it because
+  nobody in this org runs a salon (law 6).
 - **The operated tier.** A2's $299 is a *product shape* — a human
-  accountable, work done for you — not a longer feature list. **Holo cannot
-  copy it by shipping a page.** This is now our strongest ground.
+  accountable, work done for you — not a longer feature list. **Our bet is
+  that Holo cannot copy it by shipping a page** — `UNTESTED`, and it is a
+  bet about buyer perception, not a capability receipt. It is our strongest
+  ground *by our own reckoning*, which is not the same as by an owner's.
 - **The gate.** Nothing posts or spends without the owner's click. Ours
   regardless of what they do.
 - **The decision layer** — results changing what gets proposed next, and
@@ -145,7 +154,10 @@ was here was unearned**
 - **The wedge moved and we were four hours from selling the old one.** Any
   deck, card or call script still saying "they generate, we operate" is
   wrong on the facts.
-- Price anchoring is worse than we modelled: $12 promo against $59.
+- Price anchoring is worse than we modelled, and the honest gap is not the
+  one this file kept quoting: **$12 promo against A2's $299 is 25×, against
+  A3's $499 it is 41×.** Only A1's $59 is within 5×. `UNTESTED`: no owner
+  has been asked to react to any of the three numbers.
 - Their Learnings surface, if it populates well, attacks the last
   differentiator we have.
 - **They are dogfooding us.** The captured account contains a brand named
@@ -200,8 +212,9 @@ Learnings surface · library and history.
 
 It is a coherent, cheap, genuinely broad product built by people who have run
 ecommerce brands, and it now covers more of the loop than this org credited it
-with. Anyone who sells against it by calling it a creative factory will be
-corrected by the prospect's own screen.
+with. Anyone who sells against it by calling it a creative factory **risks** being
+corrected by the prospect's own screen — `UNTESTED` as a prediction of
+prospect behaviour, though the underlying product facts (A36) are OBSERVED.
 
 ## Who should pick it
 
@@ -210,7 +223,8 @@ corrected by the prospect's own screen.
 - Anyone whose success metric genuinely is reach.
 - A buyer who wants **no human in the loop** and no subscription above ~$50.
 - **Not** a buyer who needs someone accountable, a human-gated spend, or an
-  answer to "did it sell." Those are our ground — stated as ours.
+  answer to "did it sell." Those are our capabilities, receipted. **That any
+  owner segments themselves this way is `UNTESTED` — zero interviews.**
 
 ## Positioning line — the old one is STRUCK
 

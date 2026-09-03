@@ -108,8 +108,9 @@ documented** — `UNTESTED` until Phin's interviews, and it lands as a
 question, never as an assertion. (3) The owner keeps the veto — buying
 us costs them no control. Whether control is even in their top three
 objections is `UNTESTED`; the kit's proof-bar and folder questions are
-built to find out. (Gate r1, in the owner's own words: "my first
-objection is the fifty-nine dollars.")
+built to find out. (Gate r1, **the gate persona's words — a persona,
+not a customer, not evidence**: "my first objection is the fifty-nine
+dollars.")
 
 **Why they win.** (1) It's free, and the cost that makes it not free is
 invisible on the day of the decision. (2) It's unbeatably authentic —
@@ -229,7 +230,7 @@ renewal**.
 | Price | A15 $20/$48 list, $12/$29 promo | A1 $59 entry · A2 $299 founding rate · A3 $499 standard |
 | Schedules and posts | **YES — calendar, kanban, "Scheduled on Fri, Sep 4"** (A36) | Yes, in windows, gated on your click |
 | Measures | **YES — a ladder ending in "Measuring", an Analytics tab, a Learnings surface** (A36) | Claims engine + UTMs at publish |
-| What it counts as success | **Followers** — the only goal metric observed ("0 / 1K Followers") | **Sales traced to a post** |
+| What it counts as success | **Followers** — the only goal metric observed ("0 / 1K Followers") | **Someone who booked or bought, traced to a post**, via UTMs at publish. **Limit, say it out loud: this traces click-throughs. Phone and walk-in bookings do not trace.** For a shop whose demand is mostly phone or door, this wedge is materially weaker — `UNTESTED`, and the first thing Phin's interviews must size |
 | Does a result change what gets made next | **NOT OBSERVED — do not assert either way** | Yes — [Apply] memory, optimizers propose |
 | Human accountable | **None — self-serve, no human anywhere in it** | A2 is done-with-you; a person is answerable |
 | Nothing posts or spends without your OK | **NOT OBSERVED on their side** | Yes — ours regardless |
@@ -238,26 +239,48 @@ renewal**.
 | Onboarding speed | **Website URL → launch-ready content. Still beats ours** | Slower |
 
 **Why we win.** (1) **What success is counted as.** Their observed goal metric
-is followers; ours is sales traced to a post, with the claims engine's n
-floors and FDR correction behind it. Say it as what we do. (2) **The operated
-tier.** A2's $299 is a *product shape* — a human accountable, work done for
-you — not a longer feature list, and **it cannot be copied by shipping a
-page**. (3) **The gate**: nothing posts or spends without your click.
+is followers; ours is someone who booked or bought, traced to a post — "and
+we will show you which one, or tell you we can't tell yet." **Never say "n
+floors" or "FDR correction" to a buyer**; that is the internal receipt
+(`console/lib/claims.ts`). Say it as what we do. (2) **The operated
+tier — and you must be able to say what the human does.** Name the person's
+actual weekly work, their response time, and what the buyer gets when it
+goes wrong. **If you cannot name all three, do not use this argument.**
+That the tier cannot be copied by shipping a page is our strategic bet,
+`UNTESTED`; the dossier grades the underlying tier-definition claim
+UNSOURCED in its own source. **Translate the price before they do:** $299/mo
+is five haircuts, two covers a week, or four PT sessions in the buyer's own
+units — say it in their units first or they will say it in theirs, worse
+(`UNTESTED`, no owner has heard this framing). (3) **The gate**: nothing
+posts or spends without your click.
 (4) **Their refund is genuinely hostile and we hold the receipt** (A34).
 
-**Why they win.** (1) **Price** — $12 promo against $59. (2) **They do the
-visible loop too**, and a prospect with the product open will see it.
+**Why they win.** (1) **Price — and state the real gap.** $12 promo against
+A2's $299 is **25×**; against A3's $499 it is **41×**. Our $59 entry is the
+only tier within 5× of them, and quoting only that comparison hides the
+objection instead of preparing for it. `UNTESTED`: no owner has been asked
+to react to either number. (2) **They do the visible loop too**, and a
+prospect with the product open will see it.
 (3) **1,048 real reviews against our zero customers**, plus an onboarding
 first minute better than ours, plus email and SEO sections we don't have.
 
-**Landmines** *(all four survive either answer to the open question)*
+**Landmines** *(all four survive either answer to the open question. Whether
+any of them lands on a real owner is `UNTESTED` — none has been asked
+outside this building. **Lead with 2.**)*
 1. "When it tells you a post did well — what happens next? Does the next
    month's plan change on its own, or do you carry that over yourself?"
 2. "What does it count as a win — followers, or someone who booked?"
-3. "If you try it and it isn't for you, what does getting your money back
-   look like?" *(A34: seven days, and dead the moment they generate a single
-   test.)*
-4. "Who do you talk to when it goes wrong?"
+3. **Use only when the buyer is comparing a tier above ~$100 — or skip it.**
+   On a $12 subscription this reads as a setup and the money at stake is
+   under thirteen dollars. Where it belongs is on *our* price: "You're being
+   asked for $299. Ours is a full refund on request, first 30 days (A17) —
+   ask them the same question." *(A34 is the internal receipt: seven days,
+   dead on a single test generation, 5% fee, 90-day expiring credits.)*
+4. "Who do you talk to when it goes wrong?" **Expect it straight back. Our
+   answer, said first and without softening: we have zero customers, you
+   would be the first, and the person you talk to is [named human] at
+   [contact] — that is the whole of the operated tier and it is why it costs
+   what it costs.**
 
 **Four hard rules on this card.**
 - **Never say they don't post, don't measure, don't learn, or "generate then
@@ -274,10 +297,15 @@ first minute better than ours, plus email and SEO sections we don't have.
 - **Absence from a screenshot is not absence from a product.** Four
   screenshots are not a product tour.
 
-**Do NOT use this card when** the buyer's success metric genuinely is reach,
-they want no human in the loop, or their budget ceiling is ~$50. Holo is the
-better buy for them and saying so is what makes the rest of this card
-credible.
+**Do NOT use this card when** the buyer's success metric genuinely is reach;
+they want no human in the loop; **their marketing budget ceiling is under
+~$100 — deliberately set ABOVE our own $59 entry, because a ~$50 line that
+our cheapest tier clears by nine dollars is a disqualifier that never
+fires**; or **their bookings come mostly by phone and walk-in, where "traced
+to a post" does not trace.** And disqualify yourself out loud on the fact in
+our own table: **we have zero customers and they would be our first.** Holo
+is the better buy for all of these, and saying so is what makes the rest of
+this card credible.
 
 ## Card 4 — BUY-EDITOR (OpusClip · CapCut · Descript · Vizard)
 
@@ -366,8 +394,9 @@ citing findings, and should know the difference.
 ## NOT CHECKED (across all four cards)
 
 - (i) Every resonance claim — no owner has seen any of this.
-- (ii) Holo's current price (A15, spot-check flag) and whether the 19 Aug
-  teardown is still current.
+- (ii) **RETIRED 2026-09-03** — A15 is now **OBSERVED** from Phin's primary
+  snapshot (§1). The 19 Aug teardown is superseded and has now been wrong
+  twice (refund terms, Trustpilot count).
 - (iii) CapCut pricing (A27, 502 on re-fetch); Descript's tier table
   (A26); **Vizard entirely** (A28).
 - (iv) **RETIRED at gate r1** — the tier gating was in our own retained
