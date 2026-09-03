@@ -77,7 +77,14 @@ against $29 survives; the confidence in $59 does not.** I built reason 1 on
 A5's $1.40 ten-second floor and **silently dropped A5's other number — $4.20
 for a 30-second extend-chain.** At 30-second Reels, which is the format a
 salon actually posts, the same ruled allowance (A8, 4 videos/week) is
-**~$72.8/mo against a $59 price.** So the honest answer to Phin's question is
+~~**~$72.8/mo against a $59 price.**~~ **SUPERSEDED at the round-3 gate
+(2026-09-03): the meter counts CALLS clamped to ten seconds** —
+`xai-video.ts:49,52` and both entrypoints at `:208,:217` meter against
+`allowance.ts:44 video: 4`, so a 30-second Reel is a three-call chain and the
+shipped ceiling is **~$24.27/mo**, not $72.80. **The conclusion survives, the
+reason does not:** entry pricing is UNRESOLVED because A21's reasoning layer
+is PROJECTED and unmeasured and A39's top end exceeds the price — not because
+video is underwater. So the honest answer to Phin's question is
 **not** "$59 right, $29 wrong". It is: **entry's price is UNRESOLVED until the
 cost ledger lands, and $59 is not safe either.** Selecting the favourable half
 of a cited row is the exact error I charged my own draft with two sections
@@ -119,7 +126,10 @@ edit gated artifacts.**
   *"never load-bearing alone."* I lean on the OBSERVED half.
 - **No channel row in `assumptions.md`**, so §3.1's table — the most
   operationally load-bearing thing in the file — has no truth-table anchor.
-  Recommend mirroring `channel-readiness.md`'s grades into a row.
+  Recommend mirroring **§3.1's code receipts'** grades into a row — **NOT
+  `channel-readiness.md`, which does not exist**
+  (`find /home/user/clinkworthy -iname '*channel*readiness*'` → zero results,
+  round-3 and round-4 gates both).
 - **No row for a $29 cohort rate**, which my own concession would need.
 
 **TWO REVIEWER DEFECTS, RECORDED, WITH STANDING RULES ADOPTED.** The r1
