@@ -7,9 +7,22 @@ file, and only through the chief's cascade.** A quoted self-indictment is a
 competitor's opening line. *(Header added at the salesperson gate r1, which
 was right that the cascade vehicle had no confidentiality line on it.)*
 
-STATUS: IN-GATE (round 2) — shift 14, 2026-09-03. **GATE-FAILED round 1 on
-BOTH personas**; all round-1 MUST-FIX edits applied below, plus two
-boss-found corrections the gates did not catch.
+STATUS: **GATE-FAILED (round 2, both personas)** — shift 14, 2026-09-03.
+Round-1 and round-2 MUST-FIX edits applied below; **round 3 (fresh verifier)
+is REQUIRED and was NOT RUN this shift** — the shift ran out of budget and
+this file is handed over honestly graded rather than passed. It is **not
+GATED and may not be cascaded.**
+
+**PROCESS DEFECT, RECORDED AGAINST THE BOSS (found by the salesperson gate
+r2).** The round-1 edit pass was committed at `0fac89a` while **only one of
+the two round-1 ledgers was on the record** — the salesperson ledger was
+filed 5 minutes later at `c3b243c`. For those 5 minutes this header asserted
+"both ledgers verbatim" and that was not true, and the r2 reviewer read the
+tree in that window and correctly refused to certify the edit pass. **Both
+ledgers are on the record now** (the review file carries the 85-row
+salesperson ledger, its RECEIPT AUDIT A–L and its 28-row truth-table diff).
+**The rule this breaks is the org's own: file the receipt before you act on
+it.** Nothing was lost; the ordering was wrong.
 OWNER: GTM boss · shift 14 (on-demand, fired by the chief at Phin's request)
 SUPERSEDES-IN-PART: `positioning.md` v1 §1, §2 wording and §7's Buy rows.
 **v1 is PHIN-APPROVED and is NOT edited by this file.**
@@ -175,9 +188,18 @@ labelled "durable", breaking §2.4's own rule.*
 > **Hire Player 2.**
 > The AI marketing employee for your shop. It writes your posts, publishes
 > them, runs your ads, and tells you what worked.
-> **Nothing goes out, and nothing gets spent, until you say yes.**
-> *Coming: it works where you already text, hands back finished video, and a
-> reply is how you approve it.*
+> **Nothing goes out, and nothing gets spent, without your approval — per
+> post, or armed in advance for the slots you choose.**
+> *Coming: it comes to you in the chat apps you already use, hands back
+> finished video, and a reply is how you approve it.*
+
+*(Corrected at gate r2, both personas. The r1 rewrite left two of this file's
+own bans inside the block: the approval qualifier was missing — which §1.6's
+own bullet calls "not optional" — and* "where you already text" *is the exact
+phrase §6.2 bars as an iMessage paraphrase, while §2.4 claimed it had already
+been fixed. §2.4's claim was true of §6.3 and false of §1.6. **A "Fixed" note
+that isn't is the thing this org audits other people for**, and it sat in the
+sentence announcing the rule.)*
 
 **What copy may say TODAY:**
 
@@ -215,7 +237,7 @@ file.** On the page it is a **frame device, not a differentiator.**
 **What may actually differentiate is the refund**, and it is a different
 claim: ours is a **30-day full refund on request** (A17, RULED D2); the same
 snapshot records theirs as **7 days, void if any credit was used, minus 5%,
-statutory rights waived, and no refund on cancellation** (A34, §7.1).
+statutory rights waived, and no refund on cancellation** (A34; their policy §3.x for the window, §4.1 for the 5%, §2.1/2.2 for the waiver, §7.1 for cancellation — *the r1 version pinned the whole compound claim to §7.1, which covers only the last clause*).
 **Stating that contrast externally needs its own receipt and Phin's sign-off
 (law 8). It is not licensed here.**
 
@@ -263,8 +285,11 @@ Ranked as the buyer experiences them:
    OBSERVED-INFORMAL and **never citable externally as market research**.
 2. **A REPLY IS THE APPROVAL — no app to open.** Phin's ruling. The gate
    called *"no app to open"* the strongest four words in the document.
-3. **IT LIVES WHERE YOU ALREADY ARE.** In copy, name **two** surfaces the
-   owner uses — text and WhatsApp — not five. *(Slack, Telegram and the
+3. **IT LIVES WHERE YOU ALREADY ARE.** In copy, name **two** surfaces, not
+   five — and per §6.2 they may not be "text" or any iMessage paraphrase
+   while iMessage is unreachable. Use **WhatsApp and Slack**, or the neutral
+   *"the chat apps you already use."* *(Corrected at r2: the r1 wording said
+   "text and WhatsApp", instructing copy to do the thing §6.2 bars.)* *(Slack, Telegram and the
    MCP/assistant surface are INTERNAL vocabulary and may not cross to copy.)*
 4. **IT ASKS YOU THINGS.** *"Did anyone come in about the reel?"* — a question
    answerable in one tap. **Every example question in copy must be answerable
@@ -331,11 +356,16 @@ flags it investigate-before-promising.
 
 *(New at r1, from the SMB gate.)* Positioning v1 §7 lists three competitor
 types: inaction, DIY, and buy. **For an owner who has already tried, the real
-alternative is none of them: it is the last person who took their money.** The
-gate's own history — *"$400 a month for four months, a folder of Canva files,
-no new clients"* — is the anchor that actually governs the purchase, and this
+alternative is none of them: it is the last person who took their money.** This
 document argued against agencies, tools and a Slack AI employee without ever
 addressing it.
+
+*(Provenance, stated at r2 because law 1 is absolute: the SMB gate's "$400 a
+month for four months, a folder of Canva files" is a* ***roleplay persona's
+invented biography and is not evidence of anything***. *It is what made the org
+notice the category, not what establishes it exists. Whether burned-buyer
+memory governs this purchase is* `UNTESTED` *and is the strongest first-order
+interview question this shift produced.)*
 
 **The answer we already hold is the 30-day full refund (A17, RULED D2), and it
 is currently a footnote inside a competitor contrast.** It is not a footnote.
@@ -414,11 +444,14 @@ metered. The employee never is."* as customer-facing:
 **What copy uses instead, and it is the sentence the draft already identified
 as the mitigation:**
 
-> **"We never charge you for talking to your employee."**
+> **"You're only ever charged for images and video — never for the thinking."**
 
 Plain, in the owner's words, and a **written commitment** rather than an
-adjective. The slogan stays **internal only**, as an argument about our
-ladder.
+adjective. *(Corrected at r2: the r1 wording was* "we never charge you for
+talking to your employee" *— which asserts a channel to talk on, and §2.4
+grades all four employee properties 0-of-4 shipped. The commitment survives
+the correction; the implied surface does not.)* The slogan stays **internal
+only**, as an argument about our ladder.
 
 ---
 
@@ -439,12 +472,23 @@ What the table actually holds:
 | **A8** entry allowance | **4 videos/week + uncapped images** | **RULED** (Phin, 31 Aug) |
 | **A9** entry generation cost | **~$25–38/mo = 42–64% of A1** | **DERIVED** |
 | **A21** reasoning-layer cost per entry customer | **~$12–38/mo**, naive upper bound, no caching | **PROJECTED** |
-| Combined per-entry-customer band | **~$37–76/mo against a $59 price** | DERIVED + PROJECTED |
+| **A39** combined per-entry-customer band | **~$37–76/mo against a $59 price** | DERIVED + PROJECTED |
 
-**So entry today runs between comfortable and underwater depending on
-scenario, and the org can say that.** What item 24 blocks is an **OBSERVED
-per-unit cost**, and therefore any *margin claim*; it does not block quoting
-A8 and A9. **The allowance is not blank — it is ruled.**
+**Quote A39; do not restate the band** — that row exists for this and says so
+in terms. *(Corrected at r2: the r1 version restated the band in a table and
+never cited A39, committing the law-4 defect A39 was opened to close.)*
+
+**So on this org's own table, entry's gross position ranges from roughly 63%
+down to negative depending on scenario** — stated as arithmetic, not as a
+verdict. *(Corrected at r2: the r1 version called the good end "comfortable",
+a flat business judgement about a band that excludes support, Stripe and every
+fixed cost, sitting one section above a paragraph correctly labelling a softer
+claim `UNTESTED`.)* **A21 is PROJECTED and PROJECTED never leaves this org**,
+so none of this reaches an external artifact.
+
+What item 24 blocks is an **OBSERVED per-unit cost**, and therefore any
+*margin claim*; it does not block quoting A8 and A9. **The allowance is not
+blank — it is ruled.**
 
 **And the second boss-found correction:** the draft's headline risk was
 *"uncapped image generation could be unbounded negative margin."*
@@ -471,11 +515,31 @@ undersells, which is the rarer and more embarrassing direction. **Law 4 fails
 
 **Four reasons, strongest first — reason 1 rebuilt on §4.0's arithmetic.**
 
-1. **At $29, entry is below its own generation cost, and Phin has already done
-   this arithmetic once.** The ruled allowance is 4 videos/week ≈ 17.3/month;
-   at A5's $1.40–2.00 a clip that is **~$24–35/mo of video generation alone**,
-   before images, before the reasoning layer (A21 $12–38), before Stripe,
-   before support. `allowance.ts` records Phin cutting 8 videos/week to 4 for
+1. **At $29, entry is negative on every scenario in the truth table (A39) —
+   and Phin has already done this arithmetic once.** The ruled allowance is 4
+   videos/week ≈ 17.3/month; at **A5's $1.40 plain-10s floor rising to A6's
+   $2.00 observed blended rate** that is **~$24–35/mo of video generation
+   alone**, before images, before the reasoning layer (A21 $12–38), before
+   Stripe, before support.
+
+   *(Three corrections at gate r2, and the third cuts against my own
+   recommendation.* **(a)** *The r1 version attributed the whole $1.40–2.00
+   band to A5;* ***$2.00 is A6***, *the observed blended rate — the same
+   mis-citation class this file had just corrected at §1.5, repeated in the
+   paragraph rebuilt to fix it.* **(b)** *The r1 headline* "at $29, entry is
+   below its own generation cost" *is* ***false at the floor*** *— A9's floor
+   is $24.27–25 and $29 exceeds it. The true and stronger claim is A39's:
+   negative on every scenario once the reasoning layer and fees are in.*
+   **(c)** ***A5's other number was silently dropped, and it is the one that
+   hurts:*** *A5 prices a* ***30-second extend-chain at $4.20***. *At
+   30-second Reels — the format a salon actually posts — the same ruled
+   allowance is* ***~$72.8/mo against a $59 price***. *So on a plausible read
+   of the org's own row,* ***$59 is underwater too***, *and quoting only the
+   10-second floor is exactly the selective-column error this file charges the
+   draft with at §4.1.2. This does not change the recommendation against $29;
+   it does mean* ***$59 is not safe either, and the honest statement is that
+   entry's price is unresolved until item 24 lands*** *— not that $59 is right
+   and $29 is wrong.)* `allowance.ts` records Phin cutting 8 videos/week to 4 for
    exactly this reason: *"8 a week was $48–69/month of generation against $59
    of revenue — **underwater on a heavy user, which is not a plan, it is a
    leak**."* **The $29 question is that same arithmetic with the price
@@ -751,9 +815,21 @@ could parse — inside the block designed to leave the building.)*
 
 > Player 2 is an AI marketing employee for your shop. It writes your posts,
 > publishes them to Instagram and Facebook, runs your Meta ads, and tells you
-> what worked. **We never charge you for talking to your employee.** And
-> nothing goes out, and nothing gets spent, without your approval — given per
-> post, or armed in advance for the slots you choose.
+> what worked. **You're only ever charged for images and video — never for the
+> thinking.** And nothing goes out, and nothing gets spent, without your
+> approval — given per post, or armed in advance for the slots you choose.
+> **If it doesn't work, you get your money back for thirty days, just by
+> asking.**
+
+*(Two corrections at gate r2.* **(a)** *"We never charge you for talking to
+your employee" was licensed as sayable today while §6.2 bars* "anything
+implying the employee is available today" *— and there is no surface to talk
+to it on; §2.4 grades all four properties 0-of-4 shipped. The SMB gate: "the
+file swapped a sentence I couldn't parse for a sentence I* ***can*** *parse
+that isn't true yet — that's a worse trade, because I'd believe this one."
+The replacement states the metering split without asserting a channel.*
+**(b)** *The refund is promoted out of a footnote — what §2.5 argues for and
+what the r1 version argued for and then did not do.)*
 
 ### 6.2 Sayable / not sayable
 
@@ -761,13 +837,15 @@ could parse — inside the block designed to leave the building.)*
 |---|---|
 | "Posts, replies and runs ads on Instagram and Facebook today. TikTok and Google Ads are coming." | "Every channel" · "all the features you'd want" · any platform count · TikTok/Google Ads logos as live · **X or Reddit named at all** (X PARTIAL, Reddit BLOCKED) |
 | "Nothing goes out and nothing gets spent without your approval — per post, or armed in advance for the slots you choose." (SHIPPED, enforced) | The same claim **without** the armed-in-advance qualifier |
-| "Your ad budget is yours, set by you, and separate from the subscription." *(verify before shipping)* | "There is a spend ceiling." (RULED, unbuilt) |
-| "$59/mo (`pricing.ts`, `ENTRY_CENTS = 5900`)." | Any typed price literal · any A2 price · **the phrase "founding rate" applied to $59 — A2 owns that term** · "from $59" |
-| "We never charge you for talking to your employee." | "The platform is metered. The employee never is." (INTERNAL only) · "unlimited" as a bare adjective |
+| — | **"Your ad budget is yours, set by you, and separate from the subscription." — NOT SAYABLE UNTIL VERIFIED.** *(Moved out of the ship column at r2. No receipt exists in `assumptions.md` or the objection bank. The SMB gate: "Law 2 is not 'receipts, or a note asking someone to get one.'" It is the best sentence added this shift and it cannot ship on a parenthetical.)* |
+| — | **"Runs your Meta ads" paired with "armed in advance" — NOT SAYABLE as a pair.** *(New hole opened by the r1 honesty edit, found by the salesperson gate r2: we now say we run the ad account AND that approvals can be armed in advance, while §3.2 records the owner-facing spend ceiling as RULED and **UNBUILT**. "They'll run your ad account, you can pre-approve in advance, and the cap hasn't been built" is a true sentence assembled entirely from our own table. Ship the ceiling, or do not pair the claims.)* |
+| "$59/mo, quoted from `pricing.ts` (`ENTRY_CENTS = 5900`)." | Any price **not sourced to `pricing.ts`** · any typed price literal in another artifact · any A2 price · **the phrase "founding rate" applied to $59 — A2 owns that term** · "from $59" |
+| "You're only ever charged for images and video — never for the thinking." | "We never charge you for **talking to** your employee" (implies a channel that does not exist — §2.4) · "The platform is metered. The employee never is." (INTERNAL only) · "unlimited" as a bare adjective |
 | "A 30-day full refund, on request." (A17, RULED D2) | "Your data leaves with you." (RULED D4, **UNBUILT**; bank O4 bars it until P-C ships) |
 | "Hire it — and fire it whenever you like. Monthly, cancel anytime." *(reassurance, NOT a differentiator — the competitor prints it too)* | Framing cancel-anytime as something nobody else offers |
 | "Coming: your employee messages you where you already are." (no date) | Anything implying the employee is available today · **iMessage — including by paraphrase ("where you already text")** |
-| — | **Anything about who the AI discloses itself to.** Bank O5 is **NONE-YET**, P-D unruled: nobody has decided whether a published post or a public comment reply discloses AI to the customer's public. **Nothing on AI disclosure ships until Phin rules.** |
+| **The seller's holding line for "will my clients know a robot wrote it?":** *"That's a policy we're finishing and I won't guess at it — I'll get you the written answer before you sign."* | **Anything about who the AI discloses itself to.** Bank O5 is **NONE-YET**, P-D unruled. **Nothing on AI disclosure ships until Phin rules.** |
+| **"A 30-day full refund, on request."** (A17, RULED D2) — and per §2.5 it belongs **near the price, not in a footnote** | — |
 | — | Any comparative claim about Holo or Viktor, including any claim about what they lack (law 8; needs its own receipt + Phin) |
 | — | INTERNAL vocabulary: "MCP surface", "best-of-N", "re-rolls", "generation allowance", "the metering split", "kind not quantity" |
 
@@ -810,6 +888,36 @@ my email for it."*
    undersells); O4 stale against D4; no channel row in `assumptions.md`; no
    row for a $29 cohort rate; the truth map's ad-cap vs §3.2's ceiling.
 10. **This file does not edit `positioning.md`**, which is PHIN-APPROVED.
-11. **Round-1 gate defects are recorded in place**, not quietly repaired:
-    every `STRUCK AT GATE r1` and `Corrected at r1` marker above is a claim
-    this file made and lost.
+11. **Gate defects are recorded in place**, not quietly repaired: every
+    `STRUCK AT GATE r1` / `Corrected at r2` marker above is a claim this file
+    made and lost.
+12. **The Viktor receipt was defective for most of this shift**, and the first
+    repair was itself incomplete — it amended the retained text without
+    updating the certifying hashes or retaining the source. **Both are now
+    closed** (raw HTML retained in-repo and hashing to the recorded values;
+    §1 amended in the same commit as §1a). **Eight quoted strings were
+    affected, not the three the r1 gate named** — and two of that three were
+    present all along.
+13. **The round-1 edit pass was committed before both ledgers were on the
+    record** (see STATUS). Ordering defect, not a loss.
+14. **Round 3 was not run.** Both personas FAILED round 2. The edits above are
+    applied but **unverified by any reviewer** — the state doctrine law 7
+    exists to forbid shipping from. **This file is not GATED.**
+15. **`allowance.ts` quotations carry no line numbers and no retained
+    excerpt**, and they now carry §4.0, §4.1 and §4.4. Same chain-of-custody
+    class as the Viktor defect, one page later — flagged, not closed.
+16. **A15's own row contradicts itself** in `assumptions.md`: the value cell
+    says OBSERVED, the grade column still says DIRECTIONAL, *never
+    load-bearing alone*. This file leans on the OBSERVED half. **Chief's to
+    repair.**
+17. **The Monday reset may be the wrong boundary for a service business** (SMB
+    gate r2): a salon peaks Friday–Saturday, and an allowance resetting Monday
+    can leave the two biggest days empty. **And the file never states whether
+    top-ups exist today**, while §4.3 names them as the pressure valve. Both
+    are product questions for Phin.
+18. **The seller has no answer to "how are you different from the $12 one?"**
+    Comparison is barred (law 8), cancel-anytime is demoted to reassurance,
+    and the refund contrast is unlicensed. A **sales** problem created by
+    correct **truth** rules — the chief's to resolve, most likely by getting
+    Phin's sign-off on the refund contrast, which both gates independently
+    called our strongest real asset.
