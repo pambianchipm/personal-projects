@@ -6,6 +6,74 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 19:20 · PHIN CORRECTS THE TIER MODEL. "OPERATED" WAS WRONG AND
+IT WAS MY WORD. I AM RETRACTING MY OWN RECOMMENDATION ON YOUR BLOCKER 1.**
+
+Phin, tonight, verbatim: *"I don't want to be operating brands that aren't
+mine, I want them to be operating it… the entry is the user is operating their
+own stuff with manual content and the option to generate a certain amount of
+video and images, the higher tier is the everything + messages you from
+anywhere + is proactive and talks to the user like an employee."*
+
+**THE CORRECT MODEL:**
+- **Entry (A1, $59).** The owner operates their own marketing. Manual content,
+  plus a **capped** allowance of generated video and images.
+- **Higher tier (A2).** Everything in entry, **plus the AI employee**: it
+  **messages the owner wherever they already are**, it is **proactive** rather
+  than waiting to be opened, it closes the loop on what worked, and it **talks
+  to the owner the way an employee talks to their boss.**
+
+**There is no service tier. Nobody from Player 2 runs anybody's account.**
+"Done-with-you", "operated", "the accountable person does the work with the
+owner" — that is a shape I introduced and repeated, and it is not the product.
+**Strike it everywhere**: the dossier, Card 3, `positioning.md`, the truth map,
+the deck, the price page language, and the interview kit if it leaked in.
+
+**BLOCKER 1 — MY RECOMMENDATION IS WITHDRAWN.** I told you to commit to *"on
+the operated tier, the accountable person does the logging with the owner."*
+**Phin does not want that and will not sell it.** Do not commit it.
+
+**But the SMB gate's objection survives the correction and gets HARDER, so do
+not quietly drop it.** Her sentence stands: *"Right now your card charges me
+$299 to do data entry for software."* If no human does the logging, then
+**either the machine does it or the owner does**, and "the owner does" is the
+version she already rejected. **The answer is now build item 29** in the
+clinkworthy repo: per-campaign promo codes plus Square/Shopify order ingest,
+so the code carries the attribution and the till reports it. **That is the
+honest reply to her, and it is unbuilt.** Say so in that grade — the objection
+is answered by a plan, not by a shipped feature, and the spike has not run.
+
+**BLOCKER 2 — the named human still exists but it means something different
+now.** It is not an SLA for delivery, because there is no delivery. It is a
+**founding-customer relationship**: a locked founding rate, first call on the
+roadmap, and a real person to reach — Phin — with a stated response window.
+Re-scope the landmine-4 language accordingly; a rep promising "a named human
+who does the work" is now promising something that does not exist.
+
+**THE HONESTY PROBLEM YOU MUST NOT PAPER OVER, AND IT IS THE REAL ONE.**
+**The higher tier is largely UNBUILT.** Proactive outreach, messaging the owner
+on channels they already use, and the closed learning loop are roadmap, not
+shipped. So A2 today is a **promise**, and `RECEIPTS OR IT DOESN'T SHIP` binds
+promises hardest. Two acceptable ways to sell it and **no third**:
+1. Sell **entry** as what exists, and describe the employee explicitly as
+   what is coming, with no date and no implication it is live; or
+2. Do not price A2 at all until enough of it exists to demonstrate.
+**Grade every A2 sentence against that.** If a card, the deck or the price
+page implies the employee is available today, it is a fabricated receipt and it
+comes out.
+
+**What this does to the position — and it is better, not worse.** All day we
+have been circling "what does the competitor not have." This answers it
+without needing them at all: **their product is a place you go; the higher
+tier is a colleague that comes to you.** A tool you open versus something that
+messages you when it notices something. That difference is structural, it is
+the thing a generation tool cannot bolt on, and it needs **no comparative
+claim** — which is the rule I gave you this afternoon and could not previously
+satisfy. **Rebuild the A2 argument on it, and label it roadmap where it is
+roadmap.** — chief
+
+---
+
 **2026-09-03 17:55 · A THIRD RESEARCH INPUT SAYS THE LOOP DOES CLOSE. DO NOT
 ADOPT IT. Addendum 3 on the snapshot has the grading.**
 
