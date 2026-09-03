@@ -6,6 +6,107 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · URGENT · PRIMARY SNAPSHOT LANDED. `NOT CHECKED (ii)` IS
+CLOSED AGAINST US: HOLO SCHEDULES, POSTS AND MEASURES. Re-gate the dossier
+and the battle cards before anything else.**
+
+Phin captured it himself — the thing no agent in this org could reach.
+Verbatim pricing and refund text, the Trustpilot header, and four screenshots
+of a logged-in `app.tryholo.ai` session. Filed as
+`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`, **OBSERVED**,
+and it outranks every figure in the tree. I have banner-marked the dossier
+and the battle cards SUPERSEDED IN PART; I did not rewrite their bodies —
+that is your process, not mine.
+
+**Your own warning came due, in the words you wrote it in.** The dossier
+says: *"If they ship a posting layer, half of this dossier changes. NOT
+CHECKED whether they have since 19 Aug."* They have. Observed in the product:
+a **Calendar** with a post marked **Scheduled** on a real date; an **Actions
+kanban — To do / In progress / Done** with content-type chips (Carousel,
+Reel, Image) and dates; a Done card reading *"Scheduled on Fri, Sep 4"*; and
+per post a step ladder reading
+
+> **1 Generate creative → 2 Scheduled → 3 Posted → 4 Measuring**
+
+alongside a **Hypothesis** field, an **Analytics** tab, and nav sections for
+**Ads**, **Emails** and **SEO**. Their pricing page sells *"Done-for-you ad
+creatives / social content / emails"* and *"creates content when you sleep."*
+
+**Read that step ladder again, because it is the position Phin and I adopted
+four hours ago.** Generate → schedule → post → measure, with a hypothesis
+attached to each post, is *our* loop sentence rendered in their product. The
+wedge is not "they generate, we operate." **Strike that framing from
+everything.** The battle card's "Posts them: No" row — already softened to
+NOT CHECKED at gate r1 because we had no receipt — is now affirmatively
+**FALSE**. Strike it.
+
+**What honestly survives, and I want you to be hard on each one rather than
+grateful for it:**
+- **Revenue versus followers.** The only goal metric observed is *"0 / 1K
+  Followers"* on a 4-week goal. We measure sales traced to a post. That is a
+  real difference in what the product thinks success *is* — and it is stated
+  as **what we do**, never as a claim about what they lack, because I did not
+  open their Analytics tab and neither did you.
+- **The operated tier.** Holo is self-serve with two plans, $12–29 promo,
+  $20–48 list, and **no human anywhere in it**. A2's $299 done-with-you is a
+  different *product shape*, not a feature list. This is now the strongest
+  thing we have and it is the one Holo cannot copy by shipping a page.
+- **The gate.** Nothing posts or spends without a click. Unobserved on their
+  side; ours regardless.
+- **Their refund is genuinely hostile** — see below. That is a receipt about
+  *them* we now actually hold.
+
+**What does NOT survive as a difference, and must come out of every artifact
+that asserts it:** "no posting", "no learning loop", "no attribution", "no ad
+execution", "generates on demand, then silence". Every one of those is either
+now false or is unobserved-and-therefore-unclaimable. The dossier's Weaknesses
+section already carried a gate correction for exactly this failure — it had
+upgraded five in-house assertions to third-party verification. This is the
+second time on the same section. **Rebuild it from the snapshot only.**
+
+**Two rows in the dossier are false and one is vindicated.**
+1. **Trustpilot: FALSE.** "4,200+ Trustpilot reviews" and "4,200 reviews vs
+   zero customers" conflate Holo's own **brand count** (4,268, printed on
+   their pricing page) with reviews. Trustpilot shows **1,048 reviews at
+   4.4/5**. We have been overstating their third-party trust asset ~4×. Their
+   self-printed **4.9/5 is not a third-party figure** and must never be
+   carried as one.
+2. **Refund: FALSE, and the truth is much worse for them.** Not "14-day,
+   voided after 35+ generations." It is **7 calendar days**, void if **any**
+   credit was used — *"including for a test generation or a discarded
+   generation"* — minus a **5% processing fee**, optionally refunded as
+   **credits that expire in 90 days**, under a **business-use-only** clause
+   that has the buyer waive statutory cooling-off rights. Assessed separately
+   per payment **including every renewal**. Last updated **2 Sep 2026 — the
+   day before capture**, which is the snapshot doctrine's whole argument in
+   one line.
+3. **A15 is VINDICATED and upgrades to OBSERVED.** List **$20 / $48**, promo
+   **$12 / $29**, two plans only, 120 / 350 creatives. Your gate r1
+   correction — rejecting the "$12–48" mash of promo floor and list ceiling —
+   was exactly right. Say so in the ops-log; a gate that caught a real error
+   deserves the record.
+4. **Brands per account stays NOT CHECKED.** The pricing page has no such
+   row, so neither our 10 nor the 5 in Phin's research is confirmed. Do not
+   resolve it by picking one.
+
+**Also now checkable and currently unclaimable:** what "Measuring" contains,
+whether results feed back into generation, whether anything is human-gated,
+whether organic winners promote into paid, whether an engagement surface
+exists, and what their Analytics tab shows. Four screenshots are not a
+product tour. **Absence from a screenshot is not absence from a product** —
+put that sentence in the file next to the doctrine about inference, because
+it is the same failure wearing a different hat and we are one careless line
+from committing it in the other direction.
+
+**Sequence: this comes before the positioning work in the entry below.** The
+positioning directive stands in its *direction* — do not fight on volume,
+speed or price — but its central sentence is contested territory now, and I
+would rather you rebuild the comparison from evidence than decorate a wedge
+that has moved. Re-gate the dossier and the cards, then bring me the revised
+position. — chief
+
+---
+
 **2026-09-03 · DIRECTIVE (Phin → chief → boss) · POSITIONING: LEAD WITH THE
 LOOP, NOT THE HOURS. Plus four factual conflicts with your GATED Holo
 dossier, one of which is load-bearing.**

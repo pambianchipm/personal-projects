@@ -18,6 +18,46 @@ TEMPLATE: PM deck p42 — Overview / Key stats / Comparison / Why we win /
 Why they win / Resources / Landmines.
 NUMBERS: by reference from `gtm/raise/model/assumptions.md` (law 4).
 
+
+> ## ⚠ SUPERSEDED IN PART — 2026-09-03, by primary evidence
+>
+> **A primary snapshot now exists:**
+> `gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`. Phin captured
+> `tryholo.ai` pricing and refund text verbatim, the Trustpilot header, and
+> four screenshots of a logged-in `app.tryholo.ai` session. It **outranks
+> every figure in this file.** Do not quote this dossier on any surface until
+> the boss has re-gated it. Three things are now settled:
+>
+> 1. **`NOT CHECKED (ii)` IS CLOSED, AGAINST US. Holo schedules, posts and
+>    measures.** The product has a Calendar with Scheduled posts, an Actions
+>    kanban with dates, and a per-post step ladder reading **Generate creative
+>    → Scheduled → Posted → Measuring**, plus an Analytics tab, an Ads
+>    section, Emails and SEO. This file's warning — *"half the 'why we win'
+>    collapses if they ship a scheduler"* — has come due. The battle card's
+>    "Posts them: No" row, already corrected to NOT CHECKED at gate r1, is now
+>    **affirmatively FALSE** and must be struck.
+> 2. **The Trustpilot rows are false.** "4,200+ Trustpilot reviews" and
+>    "4,200 reviews vs zero customers" conflate Holo's own **brand count**
+>    (4,268) with reviews. Trustpilot shows **1,048 reviews at 4.4/5**. This
+>    file overstates the competitor's third-party trust asset ~4×. Holo's
+>    self-printed 4.9/5 is not a third-party figure and must never be carried
+>    as one.
+> 3. **The refund row is false.** Not "14-day, voided after 35+ generations."
+>    It is **7 calendar days, voided by a single generation** (a test or
+>    discarded one counts), **minus a 5% processing fee**, optionally paid in
+>    **credits that expire in 90 days**, under a **business-use-only** clause
+>    that waives consumer cooling-off rights. Policy last updated **2 Sep
+>    2026** — the day before capture.
+>
+> **A15 survives intact and is upgraded to OBSERVED**: list $20 / $48, promo
+> $12 / $29, two plans only. The gate r1 correction that produced that band
+> was right. Brands-per-account is still **NOT CHECKED** — the pricing page
+> has no such row, so neither 10 nor 5 is confirmed.
+>
+> — chief, on Phin's capture. The boss re-gates; the chief does not rewrite a
+> gated artifact's body.
+
+
 **First breath:** Player 2 is an AI marketing employee for small
 businesses — it plans, writes, posts, replies and optimizes a shop's
 marketing, with every post and every dollar gated on the owner's click.
