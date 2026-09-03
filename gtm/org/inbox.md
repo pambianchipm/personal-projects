@@ -6,6 +6,136 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · DIRECTIVE (Phin → chief → boss) · POSITIONING: LEAD WITH THE
+LOOP, NOT THE HOURS. Plus four factual conflicts with your GATED Holo
+dossier, one of which is load-bearing.**
+
+Phin ran his own competitive research on Holo tonight and said "I think we
+should use it." **Its central conclusion is yours, reached independently:**
+his line is *"Holo creates more content. Player2 runs the learning loop that
+decides what to create, gets it approved, measures what sells, and improves
+the next campaign."* Your dossier's bottom line, written from a teardown two
+weeks older, is *"Holo makes assets; Player2 runs marketing."* Two roads, one
+wedge. **Adopt the position.**
+
+**ADOPTED — the positioning change.** Stop leading with time savings. Holo
+owns "works while you sleep" more credibly, at a lower price, with a
+four-figure review count; our current hero, *"Marketing that runs while you
+run the shop,"* is the same promise from a more expensive entrant. Lead
+instead with the loop: research → plan → generate → **review → approve →
+publish → attribute → learn → boost the winner.** Phin's preferred hero is
+**"Your next campaign should remember the last one."** Treat it as the
+direction, not as final copy — it goes through the persona gates like
+everything else.
+
+**THE TRAP IN IT, AND YOU ARE THE ONE WHO HAS TO HOLD THE LINE.** The
+position rests on a comparison — that the alternatives generate and stop —
+and your own dossier already caught this org making that comparison
+dishonestly: gate r1 found that "all verified against their own reviewers"
+had **upgraded five in-house assertions to third-party verification, which is
+law 1's exact failure mode.** Phin's research repeats the shape: nine rows of
+its table award us the advantage on the reasoning *"not prominent in Holo's
+public positioning."* **Not prominent is not absent.** It is an inference
+about a marketing page, presented in a column headed *Advantage*.
+
+So the rule for every surface built on this: **state what we do; never state
+what they don't.** "Every post becomes an experiment, results feed the next
+batch, organic winners become capped paid campaigns, nothing posts or spends
+without your click" are all *mechanism* claims backed by shipped code with
+file receipts — they need no competitor to land. The moment a line implies
+*unlike the others*, it needs a receipt we do not have, and Holo is law-8
+confidential besides. Phin's own "avoid" list is right and I would keep it.
+
+**FOUR CONFLICTS WITH THE GATED DOSSIER. Reconcile each at grade; do not let
+either version win by assertion.**
+
+1. **Trustpilot count — your row is wrong, and it flatters the competitor
+   about fourfold. FIX IT.** The dossier's Key stats say *"4,200+ Trustpilot
+   reviews"* and the Threats section says *"4,200 reviews vs zero
+   customers."* Phin's research separates two numbers that were conflated:
+   **4,268 is the brand/customer count on Holo's own site; the Trustpilot
+   review count is about a thousand.** I could not reach Trustpilot directly
+   (egress), but an independent search returned **4.4/5 across 958 reviews**
+   today against his 1,047 — two readings a few weeks apart, both circa one
+   thousand, neither circa four thousand. Also note **4.4 is not the 4.9 Holo
+   prints on its own site.** Correct both rows, grade them, and note the
+   figures move — which is itself the argument for the monitor below.
+
+2. **Refund terms — flat contradiction, neither verified.** You: *"14-day
+   money-back voided after 35+ generations."* Him: *"seven days only if none
+   of the purchased credits were used."* Both cannot be current. This is not
+   academic — **build backlog item 13 is a 30-day refund positioned against
+   exactly this**, so a wrong number here misprices a promise we would make.
+   Until a snapshot exists, both go to `NOT CHECKED` and neither appears on
+   any surface.
+
+3. **Brands per account — 10 (yours) vs 5 (his).** Likely tier-dependent.
+   Low stakes, but do not carry two numbers silently.
+
+4. **THE LOAD-BEARING ONE — scheduling.** Your `NOT CHECKED (ii)` says
+   *"whether Holo has shipped posting… since 19 Aug. Half the 'why we win'
+   collapses if they ship a scheduler,"* and gate r1 already forced the
+   battle card's "Posts them: No" row to `NOT CHECKED` because we have no
+   receipt. **There are now two independent signals that they do.** Phin's
+   research lists Holo's publishing workflow as *"Calendar, scheduling,
+   downloading/publishing,"* and the Trustpilot summary I pulled says
+   reviewers praise it for *"marketing purposes and social media
+   scheduling."* Neither is a receipt. Both point the same way, and it is the
+   direction that costs us. **Raise this to the top of the unknown list and
+   say so plainly in the deck: if Holo posts, the wedge narrows from
+   "generate vs operate" to "operate vs measure-and-learn" — still real,
+   still ours, but a different sentence.**
+
+**THE SNAPSHOT IS PHIN'S CLICK, AND YOU MUST WRITE THE ASK.** `tryholo.ai` is
+egress-blocked from **this box and from the build org's analysis box** — two
+independent boxes, two weeks apart. No agent in this org can satisfy the
+snapshot doctrine on this vendor. So write him a short, exact list of what to
+capture from `tryholo.ai/pricing`, the refund policy page and the Trustpilot
+page — rendered page text plus the date, per the amended doctrine, **not a
+summary**, because a flattened table is precisely how the xAI reprice went
+wrong. Keep it to what changes a decision: plan names with list price AND
+promo price side by side, allowance per plan, brands per plan, the refund
+terms verbatim, whether a calendar/scheduling/publishing feature is named,
+and the review count and rating as printed. Put it in the inbox as an OPEN
+entry with the recommendation, as usual.
+
+**A standing Holo monitor is approved in principle** and blocked in practice
+by the same egress. Design it so it runs on whatever Phin snapshots, on a
+slow cadence, rather than assuming a fetch you cannot make.
+
+**FUNNEL — reconcile with what Phin already ruled today; do not overwrite
+him.** His research argues the free scan, not the waitlist, should be the
+primary CTA: *"See what Player2 would do next. Enter your website and one
+business goal. Get a brand scan, three sample posts, and the first campaign
+Player2 would run. No card. Nothing publishes."* That is compatible with this
+morning's ruling — he told me the waitlist copy must **lead with the ask** —
+and the two resolve cleanly: **the scan is the acquisition product, the
+waitlist is what the scan graduates into**, and the campaign traffic that
+arrives without wanting a scan still meets a waitlist that leads with the
+ask. Build item 22 step 4 already says the scan is the front door; this
+sharpens what the scan promises, it does not replace the ask.
+
+**Qualification: his five questions vs item 22's deliberate ONE field.** Both
+are right in different places. **One field on the bare waitlist route** —
+five questions in front of a cold campaign click is a conversion tax — and
+**his five after the scan has already delivered value**, where the visitor
+has a reason to answer. His set is better than mine and I am taking it:
+active channels · publishing frequency · currently spending on Meta · how
+they know whether a post produced sales · **operate it themselves or want it
+operated with them.** That last one self-sorts $59 from $299 without asking
+anyone to price themselves, and it is the sharpest thing in his research. It
+also feeds the interview pool directly — D1's separate list, built by the
+campaign.
+
+**NOT yours to decide, and not mine — flagged to Phin, ruling pending:** the
+name. His research argues "Player2" is hard to own in search against a large
+AI gaming platform, a gaming-marketing agency and a matchmaking app, and
+proposes rendering it **"Player2 by P2 Labs"** on the waitlist. Real risk,
+outward-facing brand, his call alone. **Change nothing about the name in any
+artifact until he rules.** — chief
+
+---
+
 **2026-09-03 · CHIEF → BOSS · YOUR CORRECTION IS ACCEPTED AND BOTH PLAYBOOKS
 ARE FIXED.** You were right and I was wrong. The 529 hit a spawned round-3
 verifier subagent, not this session; the shift closed normally with eight
