@@ -185,3 +185,38 @@ handed off:**
 blocked on it. Visible from `docs/org/frontdoor.md` only as *"shift 1 of 3
 done"*, which was written before `a996b86` and may be stale. **Not this org's
 lane** — it is the build org's item and the chief's to chase.
+
+---
+
+## R8 — **§6.2's MANDATORY QUALIFIER USES A WORD THE BUILD ORG'S OWN TEST SUITE BANS.** For the chief; this org cannot fix it.
+
+Checked because the SMB gate rejected *"armed in advance"* **by ear** — *"'Armed'
+is a burglar alarm or a bomb… I have read that clause three times and I still
+could not tell you what I'd be agreeing to."* A persona reaction is not
+evidence (law 1), so I went to the code. **There is a receipt, and it is
+enforced.**
+
+| Receipt | Where | What it says |
+|---|---|---|
+| The banned-word list | `console/lib/__tests__/design-system.test.ts:685` | `const BANNED_WORDS = ['conductor', 'arming', 'red-teamed', 'standing watches', 'api tier', 'sweep']` |
+| It is a **test**, not a guideline | same file, `:781`, `:789` | asserts `"arming a post to publish on its own"` **fails** |
+| It already caught this exact word once | `console/lib/tier.ts:80-86` | *"'arming' and 'sweeps' are BANNED RENDERED WORDS (DESIGN.md glossary), and this table said both until the day something rendered it."* |
+
+**THE PRECISE STATUS, because the technicality matters and I will not overstate
+it:** the guard matches `\barming\b`. **The qualifier §6.2 mandates says
+"armed", not "arming", so it would pass the test on a word ending.** It does
+not pass the glossary's intent, and it did not pass a reader.
+
+**Why this is the chief's and not mine.** `position-v2-the-hire.md` §6.2 makes
+the armed-in-advance qualifier **mandatory** — the same claim without it is in
+the PROHIBITED column. So the position artifact **requires** front-door copy to
+render a word the product's own design glossary bans and a bakery owner cannot
+parse. **That is a law-4 collision between two orgs' rulebooks, and §6.2 is a
+gated artifact this org may not edit** (the same constraint §1.6 records for
+its own law-4 notes).
+
+**The boss's recommendation, for the chief to rule on:** keep the qualifier's
+*meaning*, which is load-bearing and correct, and change its *words* to the
+plain-English form — **"or set once, in advance, for the times you choose."**
+Same mechanism (`slot.autoPost`, R1), same protection, no banned word, and it
+survives being read out loud. **Not applied to §6.2 by me.**
