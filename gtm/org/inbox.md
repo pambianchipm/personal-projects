@@ -6,6 +6,74 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · PHIN'S RULING + A SEGMENT THAT MAY BE BETTER THAN THE FIGHT.**
+
+**RULED (Phin, 3 Sep):** the launch creative may be produced in the
+competitor's tool and **is not disclosed by default**. He will disclose it
+**selectively**, in campaigns aimed at people already using a generation tool,
+with a co-op framing in his own voice: *"I didn't know what I should lean into
+more — that's where Player 2 comes in. Playing co-op is better, because now I
+know where I should be crafting my creative."* His call, recorded, not
+relitigated.
+
+**THE LINE, AND IT IS THE ONLY THING I WANT HELD.** Not volunteering your
+toolchain is discretion — nobody ships a bill of materials with an ad, and
+silence is not a claim. **What is barred is any surface that says or implies
+Player 2 *generated* an asset it did not generate.** No "made with Player 2"
+over an imported creative, no case study attributing an outside asset to our
+generation, no before/after that implies our pipeline produced it. Silence is
+fine; a false attribution is a fabricated receipt, and this org kills those
+when other people make them. **Build item 26 puts a `source` label on every
+asset internally**, which is what lets us stay quiet outside and honest
+inside at the same time.
+
+**The founder story is allowed BECAUSE IT IS TRUE, and it stays allowed only
+while it is.** He genuinely uses the tool and genuinely does not know what to
+lean into. Told as lived experience it is legitimate and good. **Constructed
+after the fact it is an invented testimonial**, which the constitution bans
+and which we attack the competitor for. Keep it first-person, keep it real,
+and if the facts change, change the story.
+
+**NOW THE PART WORTH YOUR SHIFT — this reframes the whole afternoon.** We
+spent today discovering the competitor is stronger than the dossier believed:
+it schedules, posts, measures, does ads, email and SEO, at $12–29. Every hour
+of that was spent asking how we beat it. **Phin's instinct points at a
+different question: what if a chunk of the market does not need us to replace
+it?**
+
+**Draft the segment: OWNERS ALREADY USING A GENERATION TOOL.** They have
+solved volume. They are drowning in output and have no idea which of it
+deserves the next dollar. The pitch is not "switch" — it is *"keep making
+creative wherever you make it; we run the campaign and tell you what
+worked."* Note the name does the work for free: **Player 2 is the co-op
+player.** That is not a slogan I am inventing to be cute — it is the product's
+actual shape, and it is the one framing where the competitor's strength is an
+input to us rather than a threat.
+
+**Do NOT run at this uncritically. Three things to size honestly:**
+1. **An "on top of your tool" product gets priced like an add-on**, and add-ons
+   do not hold $299. The resolution is probably that this is a **wedge**, not
+   the position: enter as co-op, expand to operated. Say which you think it is
+   and why, with the model's numbers, not vibes.
+2. **The competitor also schedules and measures**, so "we run the campaign"
+   is thinner against *their* users than against someone using nothing. What
+   survives is the decision layer — which creative earns the next dollar, and
+   revenue rather than followers. That is exactly the read Phin gave and it is
+   **UNCONFIRMED**; it is graded that way in the snapshot addendum and it must
+   not firm up just because the strategy would be nicer if it were true.
+3. **Sizing is unknown.** How many owners run a generation tool and no
+   measurement? We have no number. This is interview territory — it is a
+   sharp card for the kit, and a good one, because it is falsifiable in a
+   twenty-minute call.
+
+**Deliverable for the next shift:** the segment written up like the others —
+who they are, what they already pay for, what they lack, the co-op message,
+the honest objection ("why not just use the tool I have?"), and the sizing
+question flagged UNSOURCED until an interview touches it. Bring it with the
+re-gated dossier; they inform each other. — chief
+
+---
+
 **2026-09-03 · URGENT · PRIMARY SNAPSHOT LANDED. `NOT CHECKED (ii)` IS
 CLOSED AGAINST US: HOLO SCHEDULES, POSTS AND MEASURES. Re-gate the dossier
 and the battle cards before anything else.**
