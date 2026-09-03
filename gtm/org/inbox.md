@@ -6,9 +6,23 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
-**2026-09-03 20:15 · CREDITS — Phin is considering a credit model, both
-comparables use one, and my recommendation is a SPLIT. Take this into the
-pricing work below; do not treat it as settled.**
+**2026-09-03 20:25 · RULED BY PHIN — THE METERING SPLIT IS THE DECISION, NOT
+A RECOMMENDATION.** *"yeah lets go with that split — file it as the
+decision."* Filed as **build item 31**. **Do NOT argue the shape; price
+WITHIN it.** Generation and studio work are metered. **The employee thinking,
+talking, asking, proposing or taking an approval is never metered, at any
+tier.** The reasoning below stands as the record of why, so nobody re-opens
+it — but it is settled, and the only open questions are the numbers, which
+are blocked on the cost ledger.
+
+**What this changes in your pricing answer:** entry is now *"$X plus N
+generations"*, so re-do the $29-vs-$59 question in that shape rather than as a
+flat fee; and **the upgrade story is now clean and you should test it** — *the
+platform is metered, the employee is not.* That is a sentence a buyer
+understands in one read, and it makes the tier boundary about **kind** rather
+than **quantity**, which is the only boundary a hiring frame can survive.
+
+--- the record of how it was decided ---
 
 Phin: *"Holo also does credits… maybe we should use a crediting system."*
 He is right that both comparables meter. **Holo**: creatives per month (120 /
