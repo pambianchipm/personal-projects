@@ -124,10 +124,18 @@ question for Phin in the inbox.*
    register v1 (Lane A), product-fix proposals (chief relays to build org),
    and the answer bank.
 
-3. **Competitor dossiers + battle cards** *(Lane B.)* Three competitor
+3. **Competitor dossiers + battle cards** *(Lane B. SCOPE WIDENED
+   shift 11 per the chief's own-media task 3.)* FOUR competitor
    types, cut for Player 2: INACTION ("we post when we remember" — the real
    #1), BUILD (DIY: Canva + ChatGPT + a nephew), BUY (Holo — import the
-   teardown from clinkworthy docs — + the SMM-landscape recon). Dossier per
+   teardown from clinkworthy docs — + the SMM-landscape recon), and
+   **BUY-EDITOR** (the own-media cutters: Opus Clip, CapCut, Descript,
+   Vizard — long video → shorts, auto-captions; note honestly that
+   Opus Clip auto-posts now). Battle-card line to argue for BUY-EDITOR
+   (the chief's, to be receipted per-claim at dossier time): they edit;
+   none of them plans, writes in your voice, waits for your click,
+   posts in windows and reads results — the loop is the difference,
+   not the editor. Dossier per
    the template (SWOT, KSPs, who should pick it), battle card per the
    template (comparison table, why we win / why they win, landmines).
    Public-facing competitor claims need receipts + Phin.

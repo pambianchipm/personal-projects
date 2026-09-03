@@ -279,6 +279,15 @@ disclosed deliberately — M11 is a standing gate instruction, and cards
 carry ~3 KSPs each, so the research load stays sane. The narrowing to 3–5
 absorbs the overage.*
 
+*Added shift 11 (Phin's own-media directive, task 4) — CANDIDATE, not
+promoted to the M-list:* **carousels ⧖** ("Instagram multi-image posts,
+generated well") is a second product ask from the same directive —
+logged here as a KSP candidate awaiting the build org's sequencing;
+unbuilt, untested, no card carries it this round. And the directive's
+own-media loop itself (cut + caption your footage — card J tests it) is
+a candidate KSP territory in the same state: ⧖ entirely, A22-graded
+demand signal only.
+
 *Deliberate absence carried from §2 (travels with any copy-paste of this
 list): no results-in-owner-terms candidate ("bookings, not likes") until
 the attribution-scope read lands (truth-map §3-bis); the interviews probe

@@ -59,6 +59,14 @@ chairs, and can it show me"). Assessed in §3-bis. `UNTESTED` that owners
 weight any of these this way — the axes come from the mandate, ordinary
 usage, and one gate reviewer's persona read, not from interviews.
 
+*Recorded shift 11 (chief's instruction with Phin's own-media
+directive — record, do NOT rewrite yet):* "It does the marketing, not
+just the drafts" (M1) gains a candidate receipt — "bring your phone
+clips; Player 2 does the rest" — IF AND ONLY IF the build org's
+feasibility spike says the own-media loop is real. Until then this
+line changes nothing above; it sits here so the rewrite, when earned,
+has its paper trail.
+
 ## 2. What already delivers employee-feel (receipts, read 31 Aug)
 
 | Surface | What ships today | Receipt |

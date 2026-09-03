@@ -44,7 +44,12 @@ first real-owner test of that idea.
   times," "saving you hours," "never miss a posting day") are
   tool-typical research stimuli, not receipted Player 2 capabilities —
   if asked "does Loma really do that?", the honest line applies there
-  too. The honest line:
+  too; and (added shift 11) **card J's own-media loop is ENTIRELY a
+  research stimulus** — script/beats/shot-direction, clip intake,
+  cutting, style-captioning: none of it is shipped (feasibility spike
+  queued; only J's safety clause, scheduling, and honest reporting map
+  to live code). If asked "can it really cut my clips?" — the honest
+  line, never a yes. The honest line:
   "that part's coming — here's what works today." NEVER affirm an
   unshipped capability as present; the cards are research stimuli, not
   promises, and you may say exactly that.
@@ -91,14 +96,24 @@ Get them talking about THEIR world before any stimulus:
 lead/follow each other in the same order, and neither is ever
 introduced with enthusiasm. Schedule across interviews:
 
+*(Rotation REBUILT shift 11 — card J added per Phin's own-media
+directive; the old 4-card schedule is superseded. Cyclic 5×5 square:
+each card leads exactly once and sits in each position exactly once
+across interviews 1–5.)*
+
 | Interview | Order |
 |---|---|
-| 1 | M · T · K · R |
-| 2 | K · R · M · T |
-| 3 | T · M · R · K |
-| 4 | R · K · T · M |
-| 5 | K · R · M · T (K-led — keeps M/K lead-counts balanced at odd n; gate-ordered) |
+| 1 | M · T · K · R · J |
+| 2 | T · K · R · J · M |
+| 3 | K · R · J · M · T |
+| 4 | R · J · M · T · K |
+| 5 | J · M · T · K · R |
 | 6+ | repeat cycle from order 1 |
+
+F1 note at five cards: within-pair, M precedes K in interviews 1, 4, 5
+and K precedes M in 2, 3 — a 3:2 imbalance inherent at odd n (same
+class as the gate's old n=5 note); it evens at n=10. Neither M nor K
+is ever introduced with enthusiasm — unchanged.
 
 Per card (deck p20, verbatim ritual): read the card ALOUD, hand it
 over, then: "Write the main idea in your own words at the top. Circle

@@ -144,6 +144,62 @@ A21/`anthropic-bound.md` — still excluded from these margin cells), the
 A7b input-image charge, and the uncapped image tail — the unbounded
 ones stay disclosed floors.
 
+## 4b. Own-media entry scenario (chief task 2, shift 11) — generation as BETA, default = their footage
+
+**SCENARIO ONLY (Phin's 2-Sep directive; feasibility spike not yet
+run; nothing here moves the tables above — today's numbers stand).**
+Per the chief's m5: THREE lines priced, not two.
+
+| Line | Today (default = generated) | Own-media scenario | Basis |
+|---|---|---|---|
+| 1. Generation | A9 drag $25–38/mo | **≈ $0 default** (video + image generation BETA/opt-in; when used, priced per A4/A7 exactly as today) | A9 flips off, not down |
+| 2. Reasoning | A21 $12.15–38.35 | **$13.19–41.95 — it GROWS**: A21 + A24's per-clip add. Written out: light = $12.15 + 4 clips × 4 calls × $0.065 (8K in $0.04 + 1K out $0.025) = $12.15 + $1.04 = $13.19; heavy = $38.35 + 8 × 4 × $0.1125 (15K in $0.075 + 1.5K out $0.0375) = $38.35 + $3.60 = $41.95 | A21 + A24 (both PROJECTED) |
+| 3. Transcription | excluded (A5's exclusion, unpriced) | **$0.40–0.80/mo ceiling**: A23's ≤$0.05/min stress ceiling × 2 min raw footage/clip × 4–8 clips = 8–16 min/mo | A23 (PROJECTED ceiling) |
+| **Scenario entry AI COGS** | all-in $37–76/mo | **≈ $13.6–42.8/mo** (13.19+0.40 to 41.95+0.80) | — |
+
+(ffmpeg/cut-render compute rides the infra exclusion, named not priced,
+like all infra in §1.)
+
+**Entry LTV/CAC, scenario next to today — ALL-IN basis on both sides**
+(the §3 table above is GENERATION-margin and is NOT the comparator;
+comparing §3's $393 to this scenario would mix bases):
+
+| | All-in margin mid | LTV @7% / 5% / 3% churn | Max CAC @3:1, 7% churn |
+|---|---|---|---|
+| TODAY, all-in ($59 − mid $56.50 of $37–76) | ≈ $2.50/mo | ~$36 / ~$50 / ~$83 | ~$12 |
+| OWN-MEDIA scenario ($59 − mid $28.17 of $13.59–42.75) | ≈ $30.83/mo | **~$440 / ~$617 / ~$1,028** | **~$147** |
+
+Arithmetic shown: mid COGS today (37+76)/2 = 56.50 → margin 2.50;
+scenario (13.59+42.75)/2 = 28.17 → margin 30.83; LTV = margin ÷ churn
+(30.83/0.07 = 440.4); CAC ceiling = LTV/3.
+
+**What the comparison says, honestly:** own-media doesn't trim the
+entry tier's costs — it deletes the dominant line. On the all-in
+basis the entry tier TODAY is scenario-break-even (~$2.50/mo mid, and
+underwater at heavy use per the bound); under own-media its all-in
+margin (~$31 mid) lands where today's GENERATION-margin sits (~$27.5)
+— i.e., the margin the deck currently calls an upper bound becomes
+approximately the real margin, and the reasoning layer becomes the
+cost of goods. That is why the bound's invoice receipt matters more
+under own-media, not less.
+
+**Three honesty flags, load-bearing:**
+1. Every scenario cell is PROJECTED (A23/A24 invented; A21 inherited);
+   the demand side rests on A22, OBSERVED-INFORMAL — a hypothesis card
+   J tests. No cell here reaches an external surface, period, until
+   the spike prices the loop and the interviews speak.
+2. The D2 entry-tier sentence ("four videos a month") is RULED for
+   TODAY'S product. This scenario quietly changes what those four
+   videos ARE (cut from the owner's footage, not generated). If the
+   product goes this way, D2's sentence needs a re-ruling from Phin —
+   flagged, not assumed.
+3. The scenario assumes own-media clips REPLACE generated videos 1:1
+   at the same cadence (4–8/mo). If owners send more footage because
+   it's their own (plausible per A22), lines 2 and 3 scale linearly
+   per clip — each extra monthly clip costs ~$0.36–0.55 (A24's
+   $0.26–0.45 + A23's 2 min × $0.05 = $0.10), written here so nobody
+   discovers it later.
+
 ## 5. What the model says back to the deck (slide 8's future content)
 
 1. The business's shape is TIGHTER than shift 8 claimed, and still

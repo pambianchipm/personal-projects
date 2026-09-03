@@ -10,6 +10,9 @@ string-identical), R=101, T=76. Verdict:
 `gtm/org/reviews/2026-09-02-concept-cards-kit-both-gates.md`.
 READY FOR PHIN once the chief confirms — this is the instrument that
 turns UNTESTED into evidence.
+CARD J ADDED shift 11 (2026-09-03), per Phin's own-media directive —
+gated separately (skeptical SMB owner, shift-11 verdict); the round-1
+GATED stamp above covers M/K/T/R only.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck §1 (pp.5–19) — the exact template: context/problem line
 → core promise → ~3 KSPs each with proof → pithy endline → printed 1–5
@@ -36,8 +39,8 @@ version of that sentence owners actually buy.
 - Arial (or system sans), ~12pt, one card per page, generous margins.
 - The code letter goes top-right, nothing else identifies the card.
 - The 1–5 scale prints at the bottom of every page.
-- Fictional name **"Loma"** on all four cards; tell the interviewee up
-  front the name is fictional (deck p13).
+- Fictional name **"Loma"** on all five cards (J added shift 11); tell
+  the interviewee up front the name is fictional (deck p13).
 - Cards M and K are the F1 symmetric pair: SAME structure, SAME length
   (±10%), same number of KSPs, neither ever described as preferred.
   Rotate presentation order per the kit's schedule.
@@ -119,6 +122,25 @@ version of that sentence owners actually buy.
 >
 > 1  2  3  4  5
 
+## Card J — territory: EMPLOYEE frame, OWN-MEDIA loop (added shift 11, per Phin's 2-Sep directive; NOT yet gate-covered by the round-1 verdict — gated separately, shift-11 verdict)
+
+> J
+>
+> Filming isn't the hard part — your phone is full of clips. It's the
+> cutting, the captions, the "what do I even say" that eats your
+> nights.
+>
+> **Loma is a marketing employee that works with YOUR footage.** It
+> writes the script and the beats and tells you exactly what to shoot.
+> You send the clip; it cuts it, captions it in your style, and turns
+> it into the week's posts, published on schedule. Nothing goes out
+> without your OK. And it tells you honestly what worked, so next
+> week's script is smarter.
+>
+> **Loma — you shoot it; it does the rest.**
+>
+> 1  2  3  4  5
+
 ---
 
 ## Design rationale (internal — never shown to interviewees)
@@ -184,3 +206,21 @@ version of that sentence owners actually buy.
   numbering — capture sheets say "card M"/"card K" vs "M1"/"K4"; T and
   R accidentally rhyme with their territories — randomize letters next
   round.
+- **Card J (added shift 11, per Phin's own-media directive):** its
+  interview job is two questions — is cutting + captioning the real
+  pain (Phin's outside-research signal, graded OBSERVED-INFORMAL in
+  A22: n = "a few people," his conversations — a hypothesis the card
+  tests, not a receipt), and does "your own footage" beat "made for
+  you" (J vs M/K head-to-head in the ranking step)? **The ENTIRE J
+  loop is a research stimulus for UNSHIPPED capability** — script/
+  beats/shot-direction, clip intake, cutting, style-captioning: none
+  of it exists in the product today (a two-shift feasibility spike is
+  queued; nothing ships before the interviews speak). Only the
+  safety clause, scheduling, and honest reporting map to shipped code.
+  Card J is therefore the kit roadmap ledger's fourth item, same
+  honest-line treatment as card T's brochure trio. Letter "J" chosen
+  against the gate's collision caution: no internal J-numbering
+  exists, and it doesn't rhyme with its territory. J is NOT part of
+  the M/K F1 pair (~97 words, inside the M/K band, but no symmetry
+  obligation). Ranking-step note: with five cards, "rank them" still
+  works; the folder question stays about the set.

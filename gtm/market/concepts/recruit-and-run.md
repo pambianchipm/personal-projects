@@ -26,9 +26,9 @@ contamination note).
 
 ## The run sheet (one page, for Phin's phone)
 
-1. **Bring:** 4 printed cards (M/T/K/R order per the kit's rotation
-   table — check which interview # this is), feature table (2 batches),
-   capture sheet, pen for them.
+1. **Bring:** 5 printed cards (M/T/K/R/J — J added shift 11; order per
+   the kit's rebuilt rotation table — check which interview # this is),
+   feature table (2 batches), capture sheet, pen for them.
 2. **Open (1 min):** ground rules verbatim — confidential; brutal
    honesty helps me, you can't hurt my feelings; the product name on
    the pages is made up; this is not a sales pitch.
@@ -43,22 +43,24 @@ contamination note).
 4. **Cards (15 min):** read each ALOUD, hand it over: "main idea in
    your words at the top — circle likes — cross out dislikes —
    underline anything confusing — score 1–5." Discuss their marks
-   only. After all four: rank them; "what would the top one have to
+   only. After all five: rank them; "what would the top one have to
    PROVE for you to pay?"; the folder question ("app, or more like
    hiring someone — does the price change depending?").
 5. **Features (7 min):** batch 1 (rows 1–5), then batch 2 (6–9);
    matters 1–5 + different 1–5; top three; why.
 6. **Never:** explain or rescue a card (if you slip, mark that card
    CONTAMINATED); answer an objection mid-session; affirm anything
-   marked (coming) as present — AND remember the kit's three unmarked
-   ledger items *(was "two," corrected shift 11 per the chief — the kit
-   carries three)*: card R's "you hear about it first" reaches the
-   operator today (not the owner); the feature table's "posting that
-   never fails silently" row has the SAME limit (the flag reaches the
-   operator, so "so I'd get told?" gets the honest line, not a yes);
-   and card T's brochure lines ("right times," "saving you hours,"
-   "never miss a posting day") are tool-typical stimuli, not Loma
-   capabilities. The honest line covers all of it:
+   marked (coming) as present — AND remember the kit's FOUR unmarked
+   ledger items *(was "two"; corrected to three shift 11 per the chief's
+   m2, then card J added a fourth the same shift)*: card R's "you hear
+   about it first" reaches the operator today (not the owner); the
+   feature table's "posting that never fails silently" row has the SAME
+   limit (the flag reaches the operator, so "so I'd get told?" gets the
+   honest line, not a yes); card T's brochure lines ("right times,"
+   "saving you hours," "never miss a posting day") are tool-typical
+   stimuli, not Loma capabilities; and card J's own-media loop
+   (script/beats, clip intake, cutting, style captions) is entirely
+   unshipped — a research stimulus. The honest line covers all of it:
    "that part's coming — here's what works today."
 7. **Close:** thank them; no pitch; "can I call you again when we've
    built from what you said?" Staple marked cards to the capture
