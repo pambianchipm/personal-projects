@@ -160,7 +160,10 @@ Share in TWO BATCHES (deck p20: "batches of 3–5" — gate-corrected):
 batch 1 = the first five rows, score and discuss; then batch 2 = the
 last four. "Score each 1–5 on how much it MATTERS to you, and 1–5 on
 whether it feels DIFFERENT from what's out there." After both batches:
-pick the top three across all nine.
+pick the top three across all nine. If batch 2 was cut (the timing
+sacrifice): top three is across batch 1 only; mark the capture sheet
+FEATURES-PARTIAL, and aggregate batch-2 rows only over interviews
+that scored them.
 
 | Feature | What it means | Matters 1–5 | Different 1–5 |
 |---|---|---|---|

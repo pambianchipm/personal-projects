@@ -154,8 +154,8 @@ Per the chief's m5: THREE lines priced, not two.
 |---|---|---|---|
 | 1. Generation | A9 drag $25–38/mo | **≈ $0 default** (video + image generation BETA/opt-in; when used, priced per A4/A7 exactly as today) | A9 flips off, not down |
 | 2. Reasoning | A21 $12.15–38.35 | **$13.19–41.95 — it GROWS**: A21 + A24's per-clip add. Written out: light = $12.15 + 4 clips × 4 calls × $0.065 (8K in $0.04 + 1K out $0.025) = $12.15 + $1.04 = $13.19; heavy = $38.35 + 8 × 4 × $0.1125 (15K in $0.075 + 1.5K out $0.0375) = $38.35 + $3.60 = $41.95 | A21 + A24 (both PROJECTED) |
-| 3. Transcription | excluded (A5's exclusion, unpriced) | **$0.40–0.80/mo ceiling**: A23's ≤$0.05/min stress ceiling × 2 min raw footage/clip × 4–8 clips = 8–16 min/mo | A23 (PROJECTED ceiling) |
-| **Scenario entry AI COGS** | all-in $37–76/mo | **≈ $13.6–42.8/mo** (13.19+0.40 to 41.95+0.80) | — |
+| 3. Transcription | excluded (A5's exclusion, unpriced) | **$0.40–0.80/mo under the stress assumption**: A23's ≤$0.05/min × A23's assumed 2 min raw footage/clip × 4–8 clips = 8–16 min/mo (whether $0.05 is a ceiling is unverified — A23) | A23 (PROJECTED stress assumption, both inputs) |
+| **Scenario entry AI COGS** | all-in **$37.15–76.35/mo** (sum of the rows above; quoted as ~$37–76 in the bound and the A21 stack — the rounding lives there, the sum lives here) | **≈ $13.6–42.8/mo** (13.19+0.40 to 41.95+0.80) | — |
 
 (ffmpeg/cut-render compute rides the infra exclusion, named not priced,
 like all infra in §1.)
@@ -166,16 +166,22 @@ comparing §3's $393 to this scenario would mix bases):
 
 | | All-in margin mid | LTV @7% / 5% / 3% churn | Max CAC @3:1, 7% churn |
 |---|---|---|---|
-| TODAY, all-in ($59 − mid $56.50 of $37–76) | ≈ $2.50/mo | ~$36 / ~$50 / ~$83 | ~$12 |
+| TODAY, all-in ($59 − mid $56.75 of $37.15–76.35) | ≈ $2.25/mo | ~$32 / ~$45 / ~$75 | ~$11 |
 | OWN-MEDIA scenario ($59 − mid $28.17 of $13.59–42.75) | ≈ $30.83/mo | **~$440 / ~$617 / ~$1,028** | **~$147** |
 
-Arithmetic shown: mid COGS today (37+76)/2 = 56.50 → margin 2.50;
-scenario (13.59+42.75)/2 = 28.17 → margin 30.83; LTV = margin ÷ churn
-(30.83/0.07 = 440.4); CAC ceiling = LTV/3.
+Arithmetic shown, unrounded component ends on BOTH sides
+(gate-corrected — the first draft mixed a rounded today-band with
+unrounded scenario ends): mid COGS today (37.15+76.35)/2 = 56.75 →
+margin 2.25; scenario (13.59+42.75)/2 = 28.17 → margin 30.83; LTV =
+margin ÷ churn (2.25/0.07 = 32.1; 30.83/0.07 = 440.4); CAC ceiling =
+LTV/3. Pairing disclosure (both mids): band ends pair light-with-light
+and heavy-with-heavy, so each MID silently assumes the two cost lines
+co-move — the envelope ends are honest extremes; the mids are a
+symmetry assumption, stated.
 
 **What the comparison says, honestly:** own-media doesn't trim the
 entry tier's costs — it deletes the dominant line. On the all-in
-basis the entry tier TODAY is scenario-break-even (~$2.50/mo mid, and
+basis the entry tier TODAY is scenario-break-even (~$2.25/mo mid, and
 underwater at heavy use per the bound); under own-media its all-in
 margin (~$31 mid) lands where today's GENERATION-margin sits (~$27.5)
 — i.e., the margin the deck currently calls an upper bound becomes

@@ -15,9 +15,26 @@ summarizer's answer (adopted shift 9 after the xAI read error).
   `https://platform.claude.com/docs/en/about-claude/pricing`
 - SHA-256 of the raw HTML:
   `2d8de3327a2c72d7a33752c7a30ccf0cd40cfa302c47f8224624f9abcf7b65c4`
-- Text extracted locally from the raw HTML by tag-stripping (script in
-  this shift's ops record); the quoted cells below are read from that
-  extraction of the SAME hashed bytes, not from any summarizer.
+- Text extracted locally from the raw HTML by tag-stripping — the
+  quoted cells below are read from that extraction of the SAME hashed
+  bytes, not from any summarizer. The script, filed here verbatim
+  (gate-corrected: the first draft pointed at an ops record that was
+  never filed):
+
+  ```python
+  import re, html
+  t = open('anthropic-pricing.html', encoding='utf-8',
+           errors='replace').read()
+  t2 = re.sub(r'<script[\s\S]*?</script>|<style[\s\S]*?</style>', '', t)
+  t2 = re.sub(r'<[^>]+>', '|', t2)
+  t2 = html.unescape(t2)
+  t2 = re.sub(r'\|+', '|', t2)
+  t2 = re.sub(r'\s+', ' ', t2)
+  # pricing-table header + rows located by literal search:
+  print(t2[t2.find('Base input')-120:])   # header context
+  for m in re.finditer(r'Claude Opus 5\|', t2):
+      print(t2[m.start():m.start()+140])  # Opus 5 rows (base + batch)
+  ```
 
 ## A20 source naming (the m1 ask)
 

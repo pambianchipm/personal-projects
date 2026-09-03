@@ -50,7 +50,9 @@ contamination note).
    PROVE for you to pay?"; the folder question ("app, or more like
    hiring someone — does the price change depending?").
 5. **Features (7 min):** batch 1 (rows 1–5), then batch 2 (6–9);
-   matters 1–5 + different 1–5; top three; why.
+   matters 1–5 + different 1–5; top three; why. (If batch 2 was the
+   timing sacrifice: top three across batch 1 only; mark the sheet
+   FEATURES-PARTIAL.)
 6. **Never:** explain or rescue a card (if you slip, mark that card
    CONTAMINATED); answer an objection mid-session; affirm anything
    marked (coming) as present — AND remember the kit's FOUR unmarked
