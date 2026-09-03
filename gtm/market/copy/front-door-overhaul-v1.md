@@ -1,19 +1,31 @@
-# Front door — THE COPY OVERHAUL (v2, round-2 edits applied)
+# Front door — THE COPY OVERHAUL (v3, round-3 edits applied)
 
-STATUS: **GATE-FAILED (round 1) → ROUND-2 EDITS APPLIED, NOT RE-VERIFIED.**
-**All three personas returned FAIL.** Every MUST-FIX below is applied and
-marked; **no fresh verifier has run against v2, so nothing here is GATED and
-nothing may cascade.** The next shift's first act is that verifier.
-OWNER: GTM boss · shift 15 continuation, 2026-09-03
-GATES: skeptical SMB owner · competitor's salesperson · salty journalist.
-Verdicts, all verbatim: `gtm/org/reviews/2026-09-03-shift15-front-door-overhaul-three-gates.md`
-BRIEF: the chief's directive at the top of `gtm/org/inbox.md`, 2026-09-04.
-CODE RECEIPTS: `gtm/market/copy/front-door-overhaul-receipts.md` (R1–R8).
+STATUS: **GATE-FAILED (round 3) → ROUND-3 EDITS APPLIED, NOT RE-VERIFIED.**
+**THE REVIEW BUDGET IS NOW SPENT** (3 rounds, `boss.md`), so there is no
+round-4 gate to lean on. **Nothing here is GATED and nothing may cascade.**
+A capped loop gets a retro — it is §8.
+OWNER: GTM boss · shift 16, 2026-09-03
+GATES: r1 — skeptical SMB owner · competitor's salesperson · salty journalist,
+all three FAIL. r3 — **fresh verifier, run blind**, FAIL: 14 MUST-FIX,
+10 SHOULD-FIX. Verdicts verbatim:
+`gtm/org/reviews/2026-09-03-shift15-front-door-overhaul-three-gates.md` and
+`gtm/org/reviews/2026-09-03-shift16-front-door-overhaul-r3-fresh-verifier.md`
+BRIEF: the chief's directive in `gtm/org/inbox.md`, 2026-09-04.
+RULED: **Phin picked HERO A** — *"yeah A is def the move."* **B and C are
+CLOSED** and stay below as the record of what was tested, not as live options.
+**The r3 gate did not know that** and was not told; that is why its verdict on
+A is worth anything.
+CODE RECEIPTS: `gtm/market/copy/front-door-overhaul-receipts.md` (R1–R9).
+**Re-verified at `clinkworthy@ebac7d1`** this shift — a FRESHER commit than the
+receipts' `a996b86`, which is not an object in the read-only clone, so drift
+was assessed **by content, never by diff**.
 SUPERSEDES, where they differ: `MARKETING.md` COPY v3's waitlist block;
 `content.ts` `HERO`, `PROOF_STRIP`, `PLATFORM.title`+kicker, `HOW.title`+kicker,
-`BUILT_FOR.title`+kicker, the closing CTA, `META.title`, `META.description`,
-`opengraph-image.tsx`. *(Scope corrected at r1 — the v1 header listed five
-targets and the file changed nine. Salesperson SHOULD-FIX 5.)*
+`BUILT_FOR.title`+kicker, `META.title`, `META.description`,
+`opengraph-image.tsx`. *(Scope corrected again at r3: the v2 header listed "the
+closing CTA" as a `content.ts` target. **`content.ts` has no closing-CTA string
+at all** — `grep -n "CTA" console/app/landing/content.ts` returns nothing. See
+§4.)*
 DOES NOT SUPERSEDE: `gtm/market/copy/waitlist-front-door.md` (PHIN-APPROVED).
 
 **THE LICENCE THIS FILE STANDS ON IS ITSELF GATE-FAILED, and v1 did not say
@@ -23,6 +35,27 @@ GATE-FAILED and may not be cascaded.** Its §6.2 table is the most-tested part
 of it and the boss is using it as the ban list because it is the only one that
 exists; **that is a choice, not a warrant.** *(Journalist MUST-FIX 9. It was
 the disclosure that mattered most and it was the one that was missing.)*
+**And this shift deviates from §6.2's MANDATORY qualifier in the open — see §5.**
+
+**WHAT ROUND 3 FOUND, and it is the reason this file is still not GATED.**
+The fresh verifier re-ran the strike list cold and **confirmed 25 in 10,
+exactly** — the corrections it was sent to attack held on the thing they were
+made for. It failed the file on something else: **thirteen of its fourteen
+MUST-FIX are claims the file makes ABOUT ITS OWN CORRECTIONS that are not
+true.** *"All four are fixed"* (two were open). *"Now true; grep-checked"* (a
+grep cannot check tense). *"The ONLY approval claim on the page"* (three).
+*"The copy no longer implies a cadence"* (the staged Tuesday was still there).
+*"Moved not rewritten"* — of copy an owner approved, **from which a whole
+clause had been deleted and nowhere recorded.**
+
+**THE FINDING OF THIS SHIFT, and it is against the gate rather than the
+draft.** The verifier's own remedy for its best catch — the 275-character meta
+description that truncates before its qualifier — **was a 152-character line
+reading *"Nothing posts or spends without your click"*: the unqualified form
+§6.2 bars, affirmatively false against armed posting, and `PRINCIPLE` verbatim.
+The correction to the correction carried the same defect as the correction.**
+That is **four rounds running**. It is now the most reliable fact this org
+knows about itself, and §8 is what to do about it.
 
 **First breath (law 5):** Player2 is an **AI marketing employee** for a small
 business. It happens to come with a platform. This file is the front door's
@@ -156,7 +189,9 @@ band — §5.** One safety sentence, stated once, is also the fix for the
 salesperson's law-4-inside-one-artifact finding (v1 had four different
 statements of the safety model).
 
-### HERO A — "Come hire Player2." *(recommended; all three gates agreed)*
+### HERO A — "Come hire Player2." — **RULED. This is the hero.**
+
+**Phin, 2026-09-04: *"yeah A is def the move."*** B and C below are CLOSED.
 
 > **Kicker** YOUR NEXT HIRE
 >
@@ -166,25 +201,72 @@ statements of the safety model).
 > to Instagram and Facebook, runs your Meta ads, and tells you which ones moved
 > units.
 >
-> **Primary CTA** Start with a free scan · **Secondary** Watch it work
+> **Primary CTA** Start with a free scan · **Secondary** Watch it work a week
 
-**Every gate named this the answer.** The salesperson: *"genuinely unattackable
-as a sentence… my frame is a volume ladder; this refuses my unit and I have no
-counter."* **It is Phin's line, kept, and the file says so plainly** — the
-journalist's note that recommending the founder's own sentence is *"a thin
-claim to an overhaul"* is fair and is not argued with.
+**Every gate named this the answer, and the r3 verifier — which was never told
+Phin had picked it — did not attack the line itself.** The salesperson:
+*"genuinely unattackable as a sentence… my frame is a volume ladder; this
+refuses my unit and I have no counter."*
 
-**Four r1 corrections inside this block:** the approval clause is gone; the
-kicker is no longer a three-part all-caps triad (**the device, not the nouns,
-was what read as a platform** — journalist SHOULD-FIX 1) and no longer opens on
-"HIRING", which one gate misread as a job ad; *"moved anything"* is restored to
-**"moved units"**, which is the live copy and is more specific, not less
-(journalist SHOULD-FIX 2); and **"Watch it work a week" loses "a week"** — the
-tour is six demos and the extra word was an unsourced claim about it
-(salesperson SHOULD-FIX 8). **The CTA order is also restored** — v1 silently
+**THE JOURNALIST'S DISSENT STAYS ON THE PAGE, per the chief's ruling, because
+it is still true of the winner.** Of Hero B: *"the only line in the document
+written by someone who has met a shop owner… fight harder for this one."*
+**A is the founder's own sentence, and recommending it was, in the
+journalist's words, "a thin claim to an overhaul."** That is not argued with.
+**A won on being UNATTACKABLE, not on being the best-observed sentence** —
+and the next rewrite should know which of those two this page bought.
+
+**FOUR r1 CORRECTIONS INSIDE THIS BLOCK, unchanged:** the approval clause is
+gone; the kicker is no longer a three-part all-caps triad (**the device, not
+the nouns, was what read as a platform** — journalist SHOULD-FIX 1) and no
+longer opens on "HIRING", which one gate misread as a job ad; *"moved
+anything"* is restored to **"moved units"**, which is the live copy
+(`content.ts:120,154`); and **the CTA order is restored** — v1 silently
 promoted the tour above the scan, a conversion change it never flagged.
 
-### HERO B — "You've been doing two jobs."
+**ONE r1 CORRECTION REVERSED AT r3 — *"a week"* comes back.** v2 deleted it as
+*"an unsourced claim about the tour — the tour is six demos."* **The shipped
+tour says otherwise:** `console/app/tour/page.tsx:162` renders **"Watch one
+week go out."** and `:10` describes *"one week of Player2."* **"Six demos" is a
+SPEC line** (`MARKETING.md:219`) **the file never cited**, and the journalist
+had already checked the shipped page and written *"The promise is honoured.
+Nobody checked; I did."* **v2 overruled a gate's verified check with an
+uncited spec number and recorded no split.** *(r3 MUST-FIX 13.)* **NOT
+CHECKED: whether `/tour` contains six discrete scenes** — nobody has
+enumerated `tour-engine.tsx`. **Either way the deletion was unsafe**, because
+the string a visitor clicks says "one week".
+
+**TWO THINGS TRUE OF THE RULED HERO THAT ARE NOT FIXED, and Phin should see
+both rather than have them tidied away.**
+
+1. **"Tells you which ones moved units" is CONDITIONAL and the hero states it
+   flat.** Engagement read-back is unconditional and shipped (`meta.ts:420-427`
+   likes+comments; `:465-471` likes+comments+shares). **Unit attribution is
+   not.** `claims-pure.ts:386-389` traces revenue **only from conversions the
+   owner tags**, and says so out loud when it cannot:
+   *"No conversions tagged to this channel this month — log sales to trace
+   revenue."* / *"At least $X traced this month — walk-ins not counted."*
+   **The product is more careful in-app than this hero is on the front door.**
+   The phrase is live copy (`content.ts:154`) and is not new, so it is not
+   struck — **but it is the least defensible clause in a ruled line, and the
+   §4 header states the same idea in its unconditionally-true form ("tells you
+   what worked"). If one of the two shortens, it should be this one.**
+   **For Phin, because it is his ruled sub and not the boss's to rewrite.**
+2. **The hero asserts availability in the strings that travel alone.**
+   `position-v2` §1.6's "may say TODAY" block is a **four-line unit** whose
+   fourth line is *"**Coming:** your employee messages you where you already
+   are. **Join the waitlist for early access.**"* **HERO A and `META.title`
+   lift lines 1–2 and drop line 4.** §6.2 PROHIBITED: *"anything implying the
+   employee is available today."* *(r3 MUST-FIX 10, 43.)* **`META.description`
+   is fixed in §4. The HERO is NOT** — a kicker reading YOUR NEXT HIRE over
+   *"Come hire Player2"* says the door is open, and **the only thing that says
+   otherwise is small type under a form in a lower band** *(r3 MUST-FIX 44:
+   the salesperson's assembly is still half-standing)*. **Recommendation for
+   the chief, NOT applied because it edits a ruled line: the kicker becomes
+   `YOUR NEXT HIRE · JOINING SOON`, or the hero band carries the waitlist
+   signal.** Unresolved, and it is the largest live defect on the page.
+
+### HERO B — "You've been doing two jobs." — **CLOSED. Kept as the record.**
 
 > **Kicker** YOUR SECOND JOB
 >
@@ -207,9 +289,13 @@ missing half as a reason to demote this hero. *(Journalist SHOULD-FIX 6.)*
 line here, and the salesperson graded it **claim-safe**.
 
 **"writes every post" → "writes the posts"**: *"every"* was the nearest thing
-in any hero to a completeness adjective.
+in any hero to a completeness adjective. *(r3 SHOULD-FIX 5: the three surfaces
+said "the posts" / "the week's posts" / "your posts". **Settled on the ruled
+hero's form — "the week's posts" — everywhere it appears, including
+`META.description`.** B's own line is left as it was written, because B is
+closed and this block is a record of what was tested.)*
 
-### HERO C — REPLACED. The v1 version contradicted a Phin ruling.
+### HERO C — **CLOSED. Kept as the record.** (v1's version contradicted a Phin ruling and was withdrawn at r1.)
 
 **v1's Hero C was "Somebody else is doing your marketing on Tuesday." It is
 withdrawn, not defended.** `position-v2` §0's ruled ledger: **"There is no
@@ -264,74 +350,123 @@ $59/mo"* violates **two** §6.2 bans — *"founding rate" applied to $59* (A2 ow
 that term) and *"from $59"*. **Live in a ruled spec.** Carried to the chief as
 a standing correction, **true independent of anything Phin said this week.**
 
-### 3.1 THE REWRITE (round-2)
+### 3.1 THE REWRITE (round-3) — Phin's original complaint, answered
+
+**This is the surface Phin actually objected to** (*"the CTA join waitlist is
+way too like honest reading… I want it to exude excitement… omg I CANT
+WAIT"*), and **r2 did not answer him.** r2's H2 — *"Get in line for your
+Player2."* — is the line the SMB gate called *"plain, **a bit cold**, and
+completely true."* **Cold is the complaint.** The gate graded it safe; nobody
+graded it against the brief.
 
 > **Kicker** THE EMPLOYEE
 >
-> ## H2 — Get in line for your Player2.
+> ## H2 — Come hire it before it's built.
 >
-> **Sub:** Your employee will message you on a Tuesday morning — *"the reel
-> from Saturday is still going. Want one more like it this week?"* — in the
-> chat apps you already use. **You answer the way you answer anyone, and that
-> reply is what posts it.** No app to open.
-> **We're building it now.**
+> **Sub:** Your Player2 will message you in the chat apps you already use —
+> *"the reel from Saturday is still going. Want one more like it this week?"*
+> — and it will post when you reply. It'll write the week, publish to
+> Instagram and Facebook, run your Meta ads, and answer the comments
+> underneath them. And when it can trace a sale back to a post, it'll tell you
+> which post. When it can't, it'll tell you that too. **No app to open.**
 >
 > **Form:** email · **"What do you sell, and how do you post today?"**
 > *(placeholder: "Neighborhood bakery — my daughter posts when she remembers."*
-> **Both carried unchanged from `MARKETING.md:182–184` — not new writing.**)
+> **Both carried unchanged from `MARKETING.md:182–184` — not new writing**,
+> verified verbatim at the r3 gate.)
 >
 > **CTA:** Get in line
 >
-> **Under the form, in small type — the PHIN-APPROVED block, moved not
-> rewritten:** *The employee isn't built yet. We're not taking money for it.
-> No date, because we don't have one.*
+> **Under the form, in small type:** *The employee isn't built yet. We're not
+> taking money for it. No date, because we don't have one.*
 
-**EIGHT r1 CORRECTIONS, each traced to the gate that forced it:**
+#### EVERY CLAUSE, AND WHAT BACKS IT
 
-1. **H2 → alternate 1.** *"Get first pick"* is **withdrawn**. Both the SMB
-   owner and the salesperson identified it as the ordering promise
-   `waitlist-front-door.md` already struck once — *"you'll be first"* — **coming
-   back by synonym**, and the salesperson added the second defect: **there is
-   nothing to pick.** One product, one tier. v1's defence was circular.
-   *(Journalist preferred alt 2, "The employee is next"; **the SMB owner killed
-   it** — "'next' is a date wearing a disguise" — and on a line about a
-   dateless waitlist the owner's read wins. **Recorded as a live disagreement
-   between two gates, not resolved by picking the flattering one.**)*
-2. **"It asks what actually sold. It puts more behind what did." — DELETED.**
-   Three separate kills: **present-tense employee** (§6.2 bars it, and v1's own
-   §6 falsely claimed there was none); **it is §2.2's missing fact (c)**, the
-   payback sentence, printed as though it existed; and **it rebuilt the
-   ad-spend attack inside the waitlist panel** — *"it puts more money behind
-   whatever you told it worked… what's the cap?"* — which is worse than the
-   assembly §5 was built to prevent, because §5 was watching the hero.
-   *(All three gates.)*
-3. **The Tuesday question is disambiguated.** v1's *"want me to run that again
-   tonight?"* is ambiguous between an organic re-post and a **paid boost** —
-   *"the attack surface, not a defence."* The replacement asks for **one more
-   post**, which is unambiguously organic.
-4. **"that reply is the approval" → "that reply is what posts it."** v1's
-   wording collided head-on with §5's *"spend always waits for a click"* — *"is
-   a text message a click? Pick one."* The new wording says exactly what the
-   reply does (**it posts**) and cannot be read as authorising spend.
-5. **"We're building it now, and the waitlist is who we build it with." —
-   SECOND CLAUSE DELETED.** The journalist: *"describes a design-partner
-   program: a relationship, a cadence, someone reading your reply and coming
-   back. There is no mechanism"* — and the email path is BLOCKED on Resend.
-   **"We're building it now" is the whole true sentence and it survives alone.**
-6. **The under-form line is DELETED and replaced by the approved block.** v1's
-   *"Tell us what would make it worth hiring and it goes on the list of what it
-   does"* was, in the salesperson's grading, **the biggest unbacked promise in
-   the file** — a feature commitment on a backlog that is Phin's, made to every
-   stranger who types in a box. **And "we read every one of these" has no read
-   path**, because what the form does on submit is unbuilt.
-7. **"No app to open" restored.** Phin's ruling; the gate that saw it called it
-   *"the strongest four words in the document."* **Cited as a ruling, not as
-   persona praise** — see correction 8.
-8. **Persona reactions are no longer used as arguments anywhere in this file.**
-   v1 cited gate approval three times as a reason to keep or move copy while
-   §7 said personas are not evidence. *(Journalist MUST-FIX 11. Law 1.)*
-   **Phin's approval is evidence and is cited as such; a persona liking a line
-   is not and is now cited only as a finding, never as a warrant.**
+| Clause | Backing |
+|---|---|
+| "message you in the chat apps you already use" | **PHIN-APPROVED verbatim** (`waitlist-front-door.md`) |
+| "it will post when you reply" | **PHIN-APPROVED verbatim**, tense restored — see correction 2 |
+| "write the week" *(no count)* | R6 — `grok.ts:587` *"4 distinct content-batch briefs for this week"*; `MARKETING.md` Entry *"A week planned from one sentence"* (TRUTH) |
+| "publish to Instagram and Facebook" | `docs/channel-readiness.md` — both **SHIPPED** |
+| "run your Meta ads" | `docs/channel-readiness.md` — **SHIPPED** |
+| **"answer the comments underneath them"** | **R9 — `meta.ts:359` (IG reply), `:372` (FB reply), both graded SHIPPED.** *(NEW. A shipped capability no copy on this property has ever used.)* |
+| "when it can trace a sale back to a post… when it can't, it'll tell you that too" | **R10 — `claims-pure.ts:386-389`, the two branches verbatim** |
+| "No app to open." | Phin's ruling |
+
+#### WHAT CHANGED FROM r2, AND WHY
+
+1. **H2: "Get in line for your Player2." → "Come hire it before it's built."**
+   **This is the shift's answer to Phin, and it is the chief's diagnosis
+   executed rather than described.** The old copy apologised for the employee
+   being unbuilt (*"in alpha"*, *"a few at a time"*, *"nothing to pay to
+   join"*); r2 stopped apologising but went quiet. **This takes the same fact
+   and makes it the invitation.** It rhymes with the ruled hero, and **it is
+   STRONGER on the standing constraint than r2 was**: *"before it's built"*
+   **states** the door is shut, where *"get in line"* only implies it.
+2. **The approved clause's TENSE is restored.** r2 wrote *"You answer the way
+   you answer anyone, and **that reply is what posts it**"* — present tense,
+   indicative, asserting an unbuilt mechanism as fact, **inside the panel
+   whose whole licence is the future tense.** The owner's own approved
+   construction is *"and **post when you reply**"*, governed by *"will"*.
+   **r2's correction fixed the spend collision and left the tense worse than
+   the sentence it edited.** *(r3 MUST-FIX 7, ledger 37.)*
+3. **"on a Tuesday morning" is DELETED.** r2 kept the staged Tuesday **and
+   simultaneously claimed to have removed it** — *"the copy no longer implies
+   an answer… v1's version implied a cadence by staging a Tuesday."* The
+   Tuesday was still two paragraphs above. **The illustrative message
+   survives; the recurring day does not**, so no cadence is implied by
+   staging. *(r3 MUST-FIX 8, ledger 38.)*
+4. **"answer the comments underneath them" is ADDED.** Shipped on both
+   channels since before this org existed, and named in `channel-readiness.md`
+   as the thing *"Instagram in particular goes further than most competitors'
+   'generate and download'"* on. **No copy has ever used it.**
+5. **The traced-sale pair is ADDED, and it is the most on-brief sentence in
+   the file.** It is not a hedge — **it is a behaviour, stated with
+   certainty**, and the behaviour is that the employee refuses to invent a
+   number. *"Excitement is SPECIFICITY plus CERTAINTY"* is the rule the
+   directive gave; this is the only line on the page that gets its excitement
+   from being **more** rigorous rather than less.
+
+#### THE PHIN-APPROVED BLOCK — WHAT WAS ACTUALLY DONE TO IT
+
+**r2 said the block was "moved not rewritten" and "is not overwritten." Both
+were false.** *(r3 MUST-FIX 6, ledger 36.)* The approved block is **five**
+clauses; r2 printed **three**, dismembered clause 2 into its sub, and
+**deleted clause 4 outright without recording it.**
+
+**Clause 4 is: *"Join the waitlist and we'll come to you when it's ready."***
+
+**It stays deleted, and here is the reason, stated instead of hidden:** it
+promises an outbound send, and **the email path is BLOCKED on Resend** — the
+only mail module in `console/lib/` is `digest-email.ts`, and R5 establishes
+there is no lead-facing mailer. **Shipping an owner-approved sentence we
+cannot honour is worse than declining to ship it.** **But this is a decision
+about copy an owner approved, so it is the chief's to confirm, not the boss's
+to take silently** — which is exactly what r2 did.
+
+**Clause 2 is reassembled honestly rather than dismembered:** its *"ask what
+actually sold"* is **not** the phrase r1 killed. r1 killed *"It asks what
+actually sold. It puts more behind what did."* — **present tense, plus an
+autonomous-ad-spend clause.** The **future-tense asking** is approved copy and
+was never the defect. This file's §3.1 correction 2 (r1) should not be read as
+overruling `waitlist-front-door.md`; it did not, and the r3 rewrite states the
+same idea in the branch the claims engine actually ships.
+
+### 3.1a THE LIVE OBJECTION AGAINST THE NEW H2 — recorded, not answered
+
+**"Come hire it before it's built" can be read as a RESERVATION** — that
+signing up secures you the employee. That is the same family as the ordering
+promise `waitlist-front-door.md` struck once already (*"you'll be first"*).
+**Mitigation, and it is partial:** the approved under-form block sets the real
+promise and sits directly beneath. **`UNTESTED`: that a reader takes the H2 as
+an invitation rather than a guarantee. Zero owners have read it.**
+
+**REFUSED, each against the ban it hits:**
+- *"Get first pick"* / *"Be one of the first shops"* — ordering promise,
+  struck once already.
+- *"The employee is next."* — implies a schedule (SMB veto at r1).
+- *"Hire it now. It starts when it's finished."* — *"hire it now"* implies the
+  door is open. §6.2 bars it outright.
 
 **WHAT THE PANEL STILL DOES NOT SAY, and the reader will ask:** how often it
 messages you, and what happens if you are busy that Tuesday. **§2.2 records
@@ -342,12 +477,17 @@ same as closing it, and it is not closed.**
 
 ### 3.2 THE H2 ALTERNATES, with the gates' split recorded
 
-1. **"Get in line for your Player2."** — **taken.** SMB: *"Plain, a bit cold,
-   and completely true… this is the one I'd sign."*
-2. *"The employee is next. Get in line."* — journalist's pick, **SMB's veto**:
-   implies a schedule we do not have.
-3. *"Be one of the first shops with a Player2."* — same ordering promise,
-   quieter. **Refused for the same reason as "first pick."**
+1. **"Come hire it before it's built."** — **TAKEN at r3.** Answers the brief;
+   states the closed door in the H2 itself. Live objection in §3.1a.
+2. *"Get in line for your Player2."* — **r2's pick, now the alternate.** SMB:
+   *"Plain, a bit cold, and completely true… this is the one I'd sign."*
+   **Kept as the safe fallback**: if the chief judges the reservation risk in
+   alternate 1 unacceptable, this is the line to fall back to, and it costs
+   the brief rather than the truth.
+3. *"The employee is next. Get in line."* — journalist's pick, **SMB's veto**:
+   implies a schedule we do not have. **Closed.**
+4. *"Be one of the first shops with a Player2."* — ordering promise, quieter.
+   **Refused for the same reason as "first pick." Closed.**
 
 ### 3.3 THE PRICE LINE — deleted, replaced by nothing
 
@@ -359,8 +499,10 @@ surface, quoted from `pricing.ts`, exactly as today.**
 **The SMB owner's objection to deleting "Nothing to pay to join" is recorded
 and NOT adopted:** he said moving *"we're not taking money for it"* into small
 type **buries the strongest sentence in the corpus.** **The counter, and it is
-the brief:** that sentence is reassurance, and reassurance at the top of a panel
-is the defensiveness Phin killed. **It is under the form, where a reader
+the brief:** that sentence is reassurance, and — **`UNTESTED`, and this is the
+maxim doing its single most load-bearing piece of work in the file, which is
+why r2 leaving it unlabelled here mattered (r3 ledger 45)** — reassurance at
+the top of a panel is the defensiveness Phin killed. **It is under the form, where a reader
 looking for the catch will find it.** *(v1 called this "same words, different
 altitude" — the journalist correctly named that phrase as itself hollow. It
 means: move it down the page.)*
