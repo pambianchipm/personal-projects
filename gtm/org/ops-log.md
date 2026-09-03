@@ -8,6 +8,24 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · RETRACTION (shift 11, per the chief's shift-10 confirm
+note) — two overstatements in the shift-10 closing notice, both
+rhetorical, both retracted on the record:** (1) the notice said the
+Anthropic bound "quantifies why own-media matters to the MODEL" — it
+did not; it NAMED the effect and deferred the quantification to chief
+task 2 (which shift 11 now runs, three lines priced per m5). (2) The
+notice attributed to the journalist's round 2 the quote about the most
+quotable line getting better if it leaks — that phrase ("the rare line
+that gets STRONGER if it leaks") is from ROUND 1; round 2's actual
+words were only "No story here. Ship it to Phin." The shift-10 entry
+below stands as written (history is not edited); this entry corrects
+it. Related, same confirm note: the shift-10 verdict file carried a
+ledger COUNT instead of the ledger — the raw 29-cell table is now
+appended there verbatim (M1) and the rule is adopted: counts never
+substitute for ledgers.
+
+---
+
 **2026-09-02 · scheduled · SHIFT 10 — the decision-sheet rulings
 executed (chief's four-item order).** (1) **Anthropic reasoning-layer
 bound** shipped (`model/anthropic-bound.md` + A20/A21): caps from code
