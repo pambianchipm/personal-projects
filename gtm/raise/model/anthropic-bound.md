@@ -19,7 +19,7 @@ that costs per entry customer per month, from the product's own caps.
 
 | Input | Value | Grade |
 |---|---|---|
-| Claude Opus 5 list price | $5/MTok input · $25/MTok output | SOURCED — Anthropic model/pricing reference read this shift (cache-dated 2026-06-24 in the reference itself; RE-VERIFY against the live pricing page before any term-sheet use — snapshot doctrine applies) → A20 |
+| Claude Opus 5 list price | $5/MTok input · $25/MTok output | SOURCED — originally the Claude API skill's model/pricing reference (cache-dated 2026-06-24); CONFIRMED unchanged against the live pricing page 3 Sep 2026, raw fetch + SHA-256: `snapshots/2026-09-03-anthropic-pricing.md` (the RE-VERIFY flag is satisfied) → A20 |
 | Conductor cap | 32 tool calls for a job's FIRST turn (`agent.ts` `MAX_TOOL_CALLS`) — DISCLOSURE (gate catch): the cap GROWS by 16 calls per additional user turn (`agent.ts` ~L1081: `MAX_TOOL_CALLS + 16 × (userTurns − 1)`), so this bound's heavy scenario assumes SINGLE-TURN jobs; a chatty multi-turn thread exceeds it | SOURCED — code, both lines |
 | Pulse | 1 synthesis run/day/workspace (daily cron) | SOURCED — code/cron |
 | Outbound drafting cap | ≤20 pending queue; nightly drafting | SOURCED — `outbound.ts` |
@@ -61,14 +61,23 @@ Three honesty notes, all load-bearing:
 3. This bound is exactly why Phin's own-media direction (inbox, 2 Sep)
    and the entry-generation-as-beta scenario matter to the MODEL, not
    just the product: own-media flips A9 toward zero but does NOT flip
-   this bound — scripting/captioning still spend reasoning tokens. The
-   own-media scenario (chief task 2) must price BOTH lines when it runs.
+   this bound — and *(sharpened shift 11 per the chief's m5)* the
+   reasoning line can GROW under own-media: each clip plausibly adds
+   script, beat-selection, edit-list, and caption-style calls that
+   don't exist in the generate-from-prompt flow. Own-media also adds a
+   THIRD line this bound excludes entirely: transcription (A5's
+   exclusion — unpriced today). The own-media scenario (chief task 2)
+   must price all THREE lines when it runs: generation (→~0),
+   reasoning (may grow per clip), transcription (new).
 
 ## 4. Ledger effects (what actually shipped this shift)
 
 A20 (Claude list prices) and A21 (reasoning-bound band) added to
 assumptions.md. R5's mitigation row now carries the A21 bound
 (edited this shift, same commit). model-v1's exclusions list cites
-this bound. The number reaches slide 8 BY REFERENCE through model-v1's
-exclusions — the slide itself still says "generation-margin" and points
-here for the gap.
+this bound. The number reaches slide 8 BY REFERENCE ONLY: slide 8
+points to model-v1, and model-v1 §1's exclusions list cites this bound —
+the slide's own text names neither "generation-margin" nor this file.
+*(Sentence corrected shift 11 per the chief's m3; the earlier version
+claimed slide-8 text that isn't there. Whether slide 8 should carry a
+direct pointer is Phin's call — it is his STUB.)*

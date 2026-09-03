@@ -50,11 +50,15 @@ contamination note).
    matters 1–5 + different 1–5; top three; why.
 6. **Never:** explain or rescue a card (if you slip, mark that card
    CONTAMINATED); answer an objection mid-session; affirm anything
-   marked (coming) as present — AND remember the kit's two unmarked
-   ledger items: card R's "you hear about it first" reaches the
-   operator today (not the owner), and card T's brochure lines ("right
-   times," "saving you hours," "never miss a posting day") are tool-typical
-   stimuli, not Loma capabilities. The honest line covers all of it:
+   marked (coming) as present — AND remember the kit's three unmarked
+   ledger items *(was "two," corrected shift 11 per the chief — the kit
+   carries three)*: card R's "you hear about it first" reaches the
+   operator today (not the owner); the feature table's "posting that
+   never fails silently" row has the SAME limit (the flag reaches the
+   operator, so "so I'd get told?" gets the honest line, not a yes);
+   and card T's brochure lines ("right times," "saving you hours,"
+   "never miss a posting day") are tool-typical stimuli, not Loma
+   capabilities. The honest line covers all of it:
    "that part's coming — here's what works today."
 7. **Close:** thank them; no pitch; "can I call you again when we've
    built from what you said?" Staple marked cards to the capture
