@@ -354,3 +354,27 @@ Language
 2026 viktor.com.
 All rights reserved.
 Get Started for Free
+
+===== AMENDMENT 2026-09-03, same fetch, same raw bytes =====
+The first extraction stripped <script> blocks, which removed the page's
+FAQPage JSON-LD -- i.e. the FAQ ANSWERS. The snapshot .md quoted those
+answers, so it quoted strings this retained file did not contain. Caught at
+the competitor-salesperson gate r1. Recovered below from the SAME raw bytes
+(hashes in the snapshot's fetch record are unchanged); nothing re-fetched.
+===== FAQ (JSON-LD), verbatim =====
+
+Q: What work can I delegate to Viktor?
+A: Delegate recurring work and one-off projects: morning briefings, reports, dashboard updates, CRM hygiene, ad audits, outbound research, apps, and code. Viktor works across 3,200+ tools and delivers the finished output in Slack or Microsoft Teams.
+
+Q: How quickly can my team start?
+A: Install Viktor in Slack or Microsoft Teams, connect your tools through OAuth, and delegate the first task in minutes. You do not have to build a workflow or train your team on a new app.
+
+Q: How much does an AI employee cost?
+A: Viktor starts free with $100 in credits, every feature, and every integration. No credit card is required. Paid plans start at $50 per month for the whole workspace, not per seat.
+
+Q: Can my whole team share one AI employee?
+A: Yes. Viktor works in shared Slack or Microsoft Teams channels, keeps context for the team, and lets anyone delegate work. One hire can support every department.
+
+Q: Is Viktor secure?
+A: Viktor is SOC 2 compliant, encrypts data in transit and at rest, and never trains on your data. Each team gets an isolated compute environment, and sensitive actions wait for your approval.
+

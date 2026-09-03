@@ -350,3 +350,36 @@ Language
 2026 viktor.com.
 All rights reserved.
 Get Started for Free
+
+===== AMENDMENT 2026-09-03, same fetch, same raw bytes =====
+The first extraction stripped <script> blocks, which removed the page's
+FAQPage JSON-LD -- i.e. the FAQ ANSWERS. The snapshot .md quoted those
+answers, so it quoted strings this retained file did not contain. Caught at
+the competitor-salesperson gate r1. Recovered below from the SAME raw bytes
+(hashes in the snapshot's fetch record are unchanged); nothing re-fetched.
+===== FAQ (JSON-LD), verbatim =====
+
+Q: Is the free trial really free?
+A: $100 in credits, no credit card required. Use them however you want. When they're gone, pick a plan.
+
+Q: What can I do with 20,000 credits?
+A: Roughly 40-200 tasks depending on complexity. A quick Slack question might cost 50-100 credits. A deep research report or multi-step automation might use 500-2,000. Most solo users find 20K-40K plenty for a month.
+
+Q: Can I change plans anytime?
+A: Yes. You can move up or down as your workspace usage changes.
+
+Q: Do unused credits roll over?
+A: Yes. Unused monthly plan credits now roll over for one month, so your balance keeps working for you instead of disappearing at the end of each billing cycle. Free trial and bonus credits never expire â they stay in your account permanently.
+
+Q: Is there a per-seat charge?
+A: No. Viktor pricing is workspace-based. Your team shares the same workspace credits.
+
+Q: Do I get access to all features on every plan?
+A: Yes. Every plan includes all integrations, all capabilities, Viktor Spaces, scheduled tasks. Everything. The only difference is how many credits you get.
+
+Q: How do I get the most out of my credits?
+A: Start with recurring workflows and tasks that already have clear inputs and outputs. Viktor is most efficient when he can reuse context and repeat useful work.
+
+Q: Do you offer a nonprofit discount?
+A: Yes. Registered nonprofits get 15% off every monthly plan, forever. Apply with your EIN or registry number and we verify it within 1 business day.
+
