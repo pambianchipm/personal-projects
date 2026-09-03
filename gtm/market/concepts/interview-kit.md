@@ -26,7 +26,12 @@ first real-owner test of that idea.
   bootstrap decision 5 (still open — scanned-leads pipeline vs separate
   list; your call, but leads who KNOW Player 2 exists are slightly
   contaminated for the frame test; note who knew).
-- **Session:** ~30 min. Print the four cards + this kit's sheets.
+- **Session:** ~30 min as promised in the recruit message; with five
+  cards (J added shift 11) the honest running total is ~33 — at the
+  30-minute mark, ask ("I promised you 30 — OK to take three more
+  minutes?"); if no, the dial-cadence probe and feature batch 2 are
+  the named sacrifices, NEVER the markup ritual, ranking, or folder
+  question. Print the five cards + this kit's sheets.
 - **The bias warning, honestly (deck p20):** the method recommends a
   neutral interviewer because founders hear what they hope. You're
   running these yourself, so the mitigations are mandatory: read cards
@@ -90,7 +95,7 @@ Get them talking about THEIR world before any stimulus:
    quietly stops running the kind of post that hasn't been working."
    → rank/reactions verbatim.
 
-## 2. Concept review (≈15 min)
+## 2. Concept review (≈18 min — was 15 at four cards; extended shift 11 for card J)
 
 **Rotation (F1 symmetry — mandatory):** M and K must not always
 lead/follow each other in the same order, and neither is ever
@@ -132,7 +137,14 @@ in their words.
 - R's trust framing: "You crossed out / circled 'trust with the keys' —
   say more?" If lock-in worry appears anywhere ("can I get out?"),
   probe gently: "what would make leaving feel safe?" (O4/P-C evidence.)
-- After the last card: "Rank the four. What would the top one have to
+- J's own-media claim (the A22 test — after the markup, never before):
+  "You circled / crossed 'the cutting, the captions' — is that how it
+  actually goes for you? What's on your phone right now?" (Capture
+  verbatim whether footage EXISTS and whether cutting/captioning/
+  scripting is named as the pain unprompted. Expect "cuts it HOW?" on
+  this card more than any other — the standard deflection applies:
+  "great question — what would YOU want it to do?")
+- After the last card: "Rank the five. What would the top one have to
   PROVE for you to pay for it?" (their proof bar, verbatim — feeds the
   RTB ordering.)
 - Frame check, last: "Some people would call this an app, some would
@@ -170,8 +182,8 @@ Top three: ______ ______ ______ — "why those?"
 - AXIS-F unprompted: Y/N + verbatim words.
 - Relief-vs-growth open answer: verbatim.
 - Moments ranking (a–f) + words.
-- Card scores: M __ K __ T __ R __ · rank order · main-idea-in-their-
-  words per card (staple the marked cards to this sheet).
+- Card scores: M __ K __ T __ R __ J __ · rank order · main-idea-in-
+  their-words per card (staple the marked cards to this sheet).
 - Proof bar ("what would it have to prove"): verbatim.
 - Folder answer (app vs hire) + price reaction: verbatim.
 - Lock-in signals, M10 expectations, dial cadence: verbatim if raised.
@@ -190,7 +202,12 @@ its motivator winning. **T decision rule (gate-ordered):** a T LOSS is
 the clean frame-B read; a T tie or win must first be checked against
 circles on "saving you hours" / "never miss a posting day" before
 indicting frame B — those clauses were strengthened after the frame
-rule was written. **Contamination rule:** if you catch yourself
+rule was written. **J hit-feature rule (shift 11):** J carries two
+shipped hitchhikers — the safety clause and honest reporting; a J
+score driven by circles on "Nothing goes out without your OK" or
+"tells you honestly what worked" is NOT the own-media idea winning —
+attribute via the circles and the main-idea field, same as M-vs-K.
+**Contamination rule:** if you catch yourself
 explaining or rescuing a card mid-interview, mark that card's score
 CONTAMINATED on the capture sheet and exclude it from aggregation. The org's merge/narrowing (M-list → final
 3–5 KSPs), the frame A/B decision's first real evidence, F1's

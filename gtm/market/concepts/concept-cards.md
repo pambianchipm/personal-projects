@@ -20,16 +20,18 @@ scale. Bland font (Arial), one page each, random non-grade code letters
 (no A/B/C/D/F — deck p10), one FICTIONAL product name held constant so
 the name never gets scored (deck p13). "Positioning concepts ARE
 designed for research… AREN'T actual marketing copy" (p6).
-TERRITORIES: the four cards test the org's live questions — frame B vs
-frame A (positioning §9), relief-led vs growth-led (merge F1, with the
-symmetry mechanism), and the fused trust cluster (merge-gate catch).
+TERRITORIES: the original four cards (round-1 gate) test the org's
+live questions — frame B vs frame A (positioning §9), relief-led vs
+growth-led (merge F1, with the symmetry mechanism), and the fused
+trust cluster (merge-gate catch); card J (shift 11) adds the own-media
+loop territory (A22's hypothesis).
 LAW 1: these cards GENERATE evidence only when real owners react to
 them. Nothing in them is a claim on any live surface; the interview
 kit's roadmap ledger marks the few elements that are research stimuli
 for unshipped capability.
 
 **First breath:** Player 2 is an AI marketing employee for small
-businesses; these four coded cards are the instrument that tests which
+businesses; these five coded cards are the instrument that tests which
 version of that sentence owners actually buy.
 
 ---
@@ -197,8 +199,9 @@ version of that sentence owners actually buy.
   never-fires-you/never-quits compression (test WITH the lock-in
   misread probe), "it just goes," north-star "backup" language.
 - **Deferred this round, on the record:** F2's M1-led ("it runs") vs
-  M2-led ("you're in control") split is NOT tested by these four — R is
-  trust-led, adjacent but not it. The narrowing step may not read four
+  M2-led ("you're in control") split is NOT tested by these five — R is
+  trust-led, adjacent but not it, and J is own-media-led, not F2-led
+  either. The narrowing step may not read five
   cards as having covered F2; it queues for round 2.
 - Aggregation cautions (gate): M's endline arrives pre-crafted
   (synthesized line) while K's was written fresh — weigh endline-driven

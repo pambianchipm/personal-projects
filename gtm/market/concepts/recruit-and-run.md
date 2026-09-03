@@ -40,7 +40,10 @@ contamination note).
    marketing was somehow handled — what's different for you?" (relief
    words or growth words, verbatim) → the six moments (a–f), which
    feels like staff vs software.
-4. **Cards (15 min):** read each ALOUD, hand it over: "main idea in
+4. **Cards (18 min — five cards; at the 30-min mark ask for the extra
+   three minutes, and if they're tight, cut dial-cadence and feature
+   batch 2, never the markup/ranking/folder):** read each ALOUD, hand
+   it over: "main idea in
    your words at the top — circle likes — cross out dislikes —
    underline anything confusing — score 1–5." Discuss their marks
    only. After all five: rank them; "what would the top one have to
@@ -59,8 +62,8 @@ contamination note).
    honest line, not a yes); card T's brochure lines ("right times,"
    "saving you hours," "never miss a posting day") are tool-typical
    stimuli, not Loma capabilities; and card J's own-media loop
-   (script/beats, clip intake, cutting, style captions) is entirely
-   unshipped — a research stimulus. The honest line covers all of it:
+   (script/beats, shot direction, clip intake, cutting, style
+   captions) is entirely unshipped — a research stimulus. The honest line covers all of it:
    "that part's coming — here's what works today."
 7. **Close:** thank them; no pitch; "can I call you again when we've
    built from what you said?" Staple marked cards to the capture
