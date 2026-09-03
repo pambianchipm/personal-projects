@@ -1,4 +1,4 @@
-RELEASED 2026-09-03T23:1xZ — boss (session v4, Opus 5), shift 15 CONTINUATION,
+RELEASED 2026-09-03T23:08Z — boss (session v4, Opus 5), shift 15 CONTINUATION,
 taken over from the v3 session Phin stopped and closed here.
 
 ## WHAT LANDED
