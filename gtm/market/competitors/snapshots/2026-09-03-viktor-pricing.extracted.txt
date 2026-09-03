@@ -1,0 +1,352 @@
+Viktor Pricing: Free to Start, Plans From $50/Month
+Product
+Product
+See what Viktor is and how it works
+Integrations
+Connect your existing stack
+Security
+Protect data at any scale
+Changelog
+Everything we shipped
+Solutions
+By industry
+Agencies
+Cut overhead per client
+Ecommerce
+Operate across store and campaigns
+Nonprofits
+Run the back office with less overhead
+SaaS
+Ship the work around the roadmap
+By size
+Startups
+Built for multiplayer
+Business
+Multiply your team capacity
+Enterprise
+Drive performance at scale
+By function
+Use Cases
+Explore work by team and function
+Customer Success
+Prep, risk, and renewal work
+Customers
+Case Studies
+Measured customer outcomes
+Wall of Love
+Unfiltered user reactions
+Resources
+Docs
+Guides and API reference
+Help Center
+Answers and product support
+Blog
+Product news and insights
+Research
+How we build agents
+Case Studies
+Measured customer outcomes
+Changelog
+Everything we shipped
+Academy
+Courses and walkthroughs
+Pricing
+Book a Demo
+Get Started for Free
+Start free
+We'll front you
+$100.
+Put Viktor to work.
+Start free with $100 in credits.
+No credit card, no sales call.
+Upgrade when you're ready.
+Get Started for Free
+Free
+Your first $100 of work is on us.
+$0
+/ month
+up to
+$100
+in free credits
+Get Started for Free
+No credit card, no sales call
+Every feature, every integration. Nothing locked
+Lives in Slack and Microsoft Teams
+Works across 3,200+ tools
+Free credits never expire
+Most popular
+Team
+One AI employee your whole team shares.
+$100
+/ month
+40,000 credits monthly
+Get Started for Free
+Everything in Free, plus:
+40,000 shared credits monthly, scale up anytime as your usage grows
+Shared across your whole workspace
+Unused credits roll over to next month
+Top up on demand when a big project hits
+Auto-topups with monthly spend cap
+Enterprise
+Every team. Controls your CISO will actually sign.
+Custom
+Get tailored pricing for your enterprise needs
+Book a Demo
+Everything in Team, plus:
+Per-user spend cap
+Volume credit pricing with discounts
+Invoicing and custom billing terms
+Security review support and a ready-to-sign DPA
+Dedicated onboarding, training, and tailored controls
+Credits power everything
+Viktor does:
+Outreach, Integrations, Pipeline, Automations, Reports, Code, Organization, Ads
+Outreach
+Integrations
+Pipeline
+Automations
+Reports
+Code
+Organization
+Ads
+Outreach
+Integrations
+Pipeline
+Automations
+Reports
+Code
+Organization
+Ads
+Outreach
+Integrations
+Pipeline
+Automations
+Reports
+Code
+Organization
+Ads
+Quick Tasks
+100-300 credits
+Slack summary + CRM follow-up
+Sarah
+9:14 AM
+@Viktor
+summarize yesterday's #sales thread and flag anything I need to follow up on
+⏳
+1
+Viktor
+App
+9:15 AM
+3 deals discussed. Two on track — Acme closes Friday, Bloom signed. One needs you: DataSync went silent after the demo. I drafted a follow-up in HubSpot, want me to send it?
+❤️
+4
+👀
+1
+Complex Workflows
+500-1,500 credits
+Website change -> ready to review
+Mike
+11:32 AM
+@Viktor
+the pricing page still says "$99/mo" on the starter tier. It should be "$79/mo". Can you update it?
+⏳
+1
+Viktor
+App
+11:38 AM
+Done ✅ Updated the pricing page — Starter tier now shows $79/mo. Preview is ready for your review:
+acme.com/pricing-preview
+✅
+2
+🚀
+1
+Full Projects
+2,000-5,000
+credits
+deal-desk.acme.com
+Discount requests
+HubSpot + Stripe · live
+Open requests
+7
+Approved today
+3
+Avg. discount
+12%
+Deal
+Amount
+Status
+Acme Corp
+$48k
+Pending
+Bloom
+$22k
+Approved
+V
+Viktor
+approved Bloom · posted to #revenue
+Lisa
+9:14 AM
+@Viktor
+build us an internal deal-desk app — reps submit discount requests, it pulls live deal data from HubSpot and Stripe, managers approve right in Slack
+⏳
+1
+Viktor
+App
+11:52 AM
+Shipped ✅ Live at
+deal-desk.acme.com
+— connected HubSpot + Stripe, approvals post to #revenue. 14 reps invited.
+🚀
+5
+🔥
+3
+How credits work
+Credits map to real model usage.
+Smart caching brings them down.
+Pay for what your AI employee does
+Every credit reflects the model work done across Anthropic, OpenAI, and others. No per-seat licenses, no minimums, no surprise platform tiers as you scale.
+Smart caching cuts your bill
+Viktor caches context and reuses results across tasks. Repeated workflows cost fewer credits than calling the models fresh every time.
+Automations scale with frequency
+Scheduled automations run on credits too. Frequency matters.
+Your whole team gets an analyst, an ops lead, and an engineer. For the price of lunch.
+Get Started for Free
+FAQ
+Is the free trial really free?
+$100 in credits, no credit card required. Use them however you want. When they're gone, pick a plan.
+What can I do with 20,000 credits?
+Can I change plans anytime?
+Do unused credits roll over?
+Is there a per-seat charge?
+Do I get access to all features on every plan?
+How do I get the most out of my credits?
+Do you offer a nonprofit discount?
+Show All
+8
+Questions
+4.9
+on G2
+G2 rating:
+4.9
+out of 5 stars
+One hire.
+The output of a team.
+Viktor works nights, remembers every decision, and connects to 3,200 tools. Start free with $100 in credits, then $50 a month.
+Get Started For Free
+See all plans
+AI employee resume
+Product
+Integrations
+Security
+Pricing
+Changelog
+FAQ
+Solutions
+Agencies
+Ecommerce
+Nonprofits
+SaaS
+Startups
+Business
+Enterprise
+Use Cases
+Customer Success
+Customers
+Case Studies
+Wall of Love
+Resources
+Docs
+Help Center
+Blog
+Research
+Academy
+Compare
+vs ChatGPT
+vs OpenClaw
+vs Claude Tag
+vs Tasklet
+vs Lindy Teammate
+vs Grok Bot
+vs Superhuman Go
+Company
+About
+Careers
+Brand
+Ways to Earn with Viktor
+Contact Sales
+AI employee resume
+Product
+Integrations
+Security
+Pricing
+Changelog
+FAQ
+Solutions
+Agencies
+Ecommerce
+Nonprofits
+SaaS
+Startups
+Business
+Enterprise
+Use Cases
+Customer Success
+Customers
+Case Studies
+Wall of Love
+Resources
+Docs
+Help Center
+Blog
+Research
+Academy
+Compare
+vs ChatGPT
+vs OpenClaw
+vs Claude Tag
+vs Tasklet
+vs Lindy Teammate
+vs Grok Bot
+vs Superhuman Go
+Company
+About
+Careers
+Brand
+Ways to Earn with Viktor
+Contact Sales
+Terms of Service
+Privacy Policy
+Legal
+Impressum
+Language
+🇨🇿 čeština
+🇩🇰 dansk
+🇩🇪 Deutsch (DE)
+🇺🇸 English (US)
+🌎 español (Latinoamérica)
+🇪🇸 español (España)
+🇵🇭 Filipino
+🇫🇷 français (FR)
+🇮🇩 Indonesia
+🇮🇹 italiano (IT)
+🇲🇾 Melayu
+🇳🇱 Nederlands (NL)
+🇳🇴 norsk bokmål (NO)
+🇵🇱 polski
+🇧🇷 português (BR)
+🇷🇴 română
+🇫🇮 suomi
+🇸🇪 svenska
+🇹🇷 Türkçe
+🇮🇱 עברית
+🇸🇦 العربية (SA)
+🇮🇷 فارسی
+🇮🇳 हिन्दी
+🇧🇩 বাংলা
+🇹🇭 ไทย
+🇰🇷 한국어
+🇨🇳 中文 (CN)
+🇯🇵 日本語
+2026 viktor.com.
+All rights reserved.
+Get Started for Free
