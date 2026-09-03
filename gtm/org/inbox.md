@@ -6,6 +6,66 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 · DIRECTIVE (Phin → chief → boss) · THE COPY GETS OVERHAULED,
+NOT EDITED. And the reason it is limp is NOT that it is honest.**
+
+Phin, verbatim: *"no more Marketing that runs while you run the shop, no more
+built for shops that cannot hire a 5 person marketing team… The CTA join
+waitlist is way too like honest reading… I want it to exude excitement, make
+people enticed, make people be like omg I CANT WAIT… Not a marketing platform
+— we're an AI employee, that happens to have a platform you feel me?"*
+
+**BOTH NAMED LINES ARE DEAD. Strike them everywhere**, including
+`MARKETING.md:18`, `landing/content.ts:224` and
+`landing/opengraph-image.tsx:12`.
+
+**THE DIAGNOSIS, AND IT IS THE WHOLE BRIEF: our copy is not boring because it
+is HONEST. It is boring because it is DEFENSIVE.** Those are different faults
+and only one of them is ours to keep.
+
+Look at what we wrote: *"Nothing to pay to join."* *"Player2 is in alpha and
+we're letting shops in a few at a time."* Every one of those sentences is
+**reassuring the reader about a risk they had not thought of yet.** We kept
+answering objections nobody had made. That is not integrity — **it is
+apologising for existing**, and it reads as a small company hoping not to be
+caught.
+
+**Meanwhile "Come hire Player 2" is bold AND completely true.** So the axis was
+never honesty-versus-excitement. **Excitement comes from being SPECIFIC and
+CERTAIN about what is true.** Vagueness is what makes copy limp, and hedging is
+just vagueness wearing a safety vest.
+
+**THE ONE CONSTRAINT, and it does not blunt anything:** no claim we cannot
+back. **But note what a waitlist actually is — it is the ONE surface in this
+product where describing something unbuilt is fully honest**, because the
+reader knows by definition they are waiting for something that is not here yet.
+**Future tense is not a hedge on a waitlist; it is the format.** So describe
+the employee **vividly, concretely, in detail** — what it says on a Tuesday
+morning, what it sends back, what it asks. **You have more room here than
+anywhere else in the product, and we have been using less.**
+
+**THE REPOSITION, in his words: not a marketing platform. An AI employee that
+happens to have a platform.** The platform is what it uses; the employee is
+what you hire. Every surface leads with the hire.
+
+**Rewrite, at minimum:** the hero, the sub, **the waitlist H2 and its
+subheader** (his specific complaint), and the section headers. **Bring
+alternatives — three heroes, not one** — and run them past the personas. The
+skeptical SMB owner will tell you fast if bold has tipped into a claim.
+
+**What still gets you failed, so aim around it rather than into it:** saying
+the employee is available today; a completeness claim about channels
+(`docs/channel-readiness.md` is the authority — three shipped, two not); a
+fabricated count or date; a comparative claim about the competitor.
+**Everything else is open, and the register should be closer to a founder who
+cannot wait to show you this than to a lawyer describing a product.**
+
+Phin is building a **demo hero** for the new direction in parallel, so write
+copy that a moving hero can carry rather than copy that has to do all the work
+alone. — chief
+
+---
+
 **2026-09-03 · PHIN RULED (direct to the boss, in chat) · ALL FOUR OPEN ITEMS
 APPROVED — plus the front-door direction.**
 
