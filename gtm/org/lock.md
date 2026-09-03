@@ -1,29 +1,59 @@
-CLAIMED 2026-09-03T22:45Z — boss (session v4, Opus 5), shift 15 CONTINUATION **TAKEN OVER**.
+RELEASED 2026-09-03T23:1xZ — boss (session v4, Opus 5), shift 15 CONTINUATION,
+taken over from the v3 session Phin stopped and closed here.
 
-**Takeover, stated plainly.** The previous claim (session v3, 23:05Z stamp —
-clock skew between containers, it is the same day and inside 2.5h) was held by
-a session Phin stopped mid-work. Its work landed: commits `bc6fbf1` and
-`5871282` are on the branch and the round-4 confirmation it ran is filed at
-`gtm/org/reviews/2026-09-03-shift15-position-r3-fresh-verifier.md`. **I am not
-restarting it and I am not re-running it.** This claim continues the shift on
-the NEW job the chief filed on top of it (`533f50a`).
+## WHAT LANDED
 
-RUNNING: **the copy overhaul.** Not an edit pass. Per the chief's directive at
-the top of `inbox.md`: strike "Marketing that runs while you run the shop" and
-"built for shops that cannot hire a 5-person marketing team" everywhere; rewrite
-hero (THREE candidates), sub, section headers, and the waitlist H2 + subheader;
-reposition from marketing platform to **AI employee that happens to have a
-platform**; register = a founder who cannot wait to show you this.
+The chief's **copy overhaul** — an overhaul, not an edit pass. Three heroes,
+a rewritten waitlist H2 and sub, rewritten section headers, and a corrected
+strike list. **Everything is on the branch and pushed** (nine commits this
+shift, checkpointed throughout, not one push at the end).
 
-THE INSTRUCTION THAT MATTERS THIS TIME: **the fault is DEFENSIVENESS, not
-honesty.** "Nothing to pay to join" and "we're letting shops in a few at a
-time" answer objections nobody raised. Excitement comes from being SPECIFIC and
-CERTAIN about what is true. A waitlist is the one surface where future tense is
-the format, not a hedge — so describe the employee vividly.
+- `gtm/market/copy/front-door-overhaul-v1.md` — **GATE-FAILED (r1), round-2
+  edits applied, NOT RE-VERIFIED.** Nothing cascades.
+- `gtm/market/copy/front-door-overhaul-receipts.md` — CONFIDENTIAL. R1–R8, read
+  from `clinkworthy@a996b86` **source**, not from artifacts.
+- `gtm/org/reviews/2026-09-03-shift15-front-door-overhaul-three-gates.md` —
+  three verdicts **verbatim** + disposition.
+- Ops-log and inbox notice written. `waitlist-front-door.md` **untouched** —
+  PHIN-APPROVED copy is not overwritten by a gate-failed draft.
 
-INHERITED DISCIPLINE, carried forward from the v3 claim because it applies to
-any edit inside a file this org has been editing for four shifts: **grep for
-EVERY instance, not the first** — the two struck lines live in at least three
-files and this artifact family has a demonstrated history of fixes landing in
-one place and not the other. Every strike is closed by a grep count in the
-ledger.
+## THE NEXT SHIFT'S FIRST ACT — non-negotiable, same as last time
+
+**A FRESH VERIFIER on `front-door-overhaul-v1.md` v2.** Three personas failed
+v1; the corrections are applied and **nobody has read them.**
+
+**THE ONE INSTRUCTION THAT MATTERS, and it now has two proofs instead of one:**
+
+**This org's defects land in its CORRECTIONS, not in its drafts.** Three of
+round 3's four blockers on `position-v2-the-hire.md` were defects in previous
+corrections. **And this shift added the cleanest example yet:** the boss wrote
+*"grep for EVERY instance, not the first"* into the lock at 22:45, and by 23:00
+had filed a strike table that **credited a grep with finding a line the grep is
+structurally incapable of matching** — `content.ts`'s hero is two string
+literals and the pattern spanned both. **Two gates found it; the author did
+not.** Assume v2's corrections carry the same shape of defect until a fresh
+reader proves otherwise.
+
+**And when you grep: a grep is a floor, not a proof.** One known instance
+(`NOTES.md:76`) matches **no contiguous pattern at all** because the sentence is
+broken by slashes. Counts go in the ledger **with the pattern that produced
+them**, so the next reader can see what the pattern could not see.
+
+## THE THREE THINGS BLOCKED ON A HUMAN, in priority order
+
+1. **PHIN: pick a hero** (or reject all three). Recommendation: **"Come hire
+   Player2."** — his own line; all three gates named it the answer.
+2. **PHIN: should the $59 entry tier be de-emphasised?** Open three shifts, not
+   assumed either way. Recommendation: **leave entry alone.**
+3. **CHIEF: six findings that are true independent of the directive**, listed
+   in the inbox notice with receipts. **`MARKETING.md:44` is the urgent one** —
+   it names **X and Reddit** as Entry features in a live ruled spec, and §6.2
+   bars both named at all.
+
+## WHAT THIS ORG STILL CANNOT DO
+
+**It cannot change the front door.** Every commit touched only `gtm/`. The
+route is unchanged and has still never been exercised end to end: **GTM drafts
+→ chief cascade → build org builds → Phin ships.** Five shifts of copy work now
+sit at the first arrow. **If the next shift wants one thing to move, it is that
+arrow — not another artifact.**

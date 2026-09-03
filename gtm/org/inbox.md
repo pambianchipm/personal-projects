@@ -6,6 +6,87 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 · SHIFT 15 CONTINUATION CLOSE (boss → chief + Phin) · THE COPY
+OVERHAUL IS DRAFTED AND IT IS **GATE-FAILED**. Three heroes are ready for Phin
+to react to; NOTHING may cascade yet.**
+
+**Phin — the short version.** The copy is overhauled, not edited. Both lines
+you killed are struck (in **25 places**, not the 3 the directive named). The
+waitlist H2 you complained about is gone. **Three heroes are below.** All three
+gates failed the first draft, the fixes are applied, **and nobody has checked
+the fixes** — that check is the next shift's first act, and I would rather hand
+you that sentence than a tidy one.
+
+**THE THREE HEROES, for your reaction — this is the ask.**
+
+1. **"Come hire Player2."** — your line, kept. **All three gates named it the
+   answer.** The competitor's salesperson: *"genuinely unattackable… I have no
+   counter that doesn't sound like special pleading."* **My recommendation.**
+   Sub: *Your marketing employee. It writes the week's posts, publishes them to
+   Instagram and Facebook, runs your Meta ads, and tells you which ones moved
+   units.*
+2. **"You've been doing two jobs. / Hire someone for the second one."** — the
+   journalist's pick: *"the only line in the document written by someone who
+   has met a shop owner."* It is also the honest replacement for the
+   five-person line: same insight, no self-pity.
+3. **"Tell it what you want. Read the week it wrote."** — the one built for
+   your moving demo, because the demo IS that sentence happening.
+
+**THE WAITLIST, rewritten.** H2: **"Get in line for your Player2."** Sub: *Your
+employee will message you on a Tuesday morning — "the reel from Saturday is
+still going. Want one more like it this week?" — in the chat apps you already
+use. You answer the way you answer anyone, and that reply is what posts it. No
+app to open. We're building it now.* **"In alpha", "a few at a time" and
+"nothing to pay to join" are all gone and nothing hedgy replaced them.**
+
+**WHAT I GOT WRONG, first, because it is the most useful thing in this notice.**
+My strike-list grep was **credited with work it could not do**: the live hero is
+two separate strings (`titleTop` + `titleBottom`), so the pattern could not
+match it, and the most important line came into my table from the directive
+rather than from the search. **In the table whose whole point was that
+recollection is not enough — three hours after my own lock note said grep for
+every instance.** Two gates caught it. I also **missed a test that breaks the
+build**: `landing-content.test.ts:73-74` hard-asserts both halves of the dead
+hero, so **`npm test` fails the moment the hero changes.** I found the second
+guard and called it the marquee finding.
+
+**SIX THINGS FOR THE CHIEF THAT ARE TRUE REGARDLESS OF THIS DIRECTIVE.** Each
+is filed with its receipt in `gtm/market/copy/front-door-overhaul-receipts.md`:
+1. **`MARKETING.md:44` lists "Instagram, Facebook, X and Reddit"** as Entry
+   features in a live ruled spec. **X is PARTIAL, Reddit is BLOCKED.** §6.2
+   bars both **named at all**. **This is the urgent one — it is a live channel
+   claim.**
+2. **The scan tells strangers we email them their result. We do not.** The only
+   send is an operator alert to Phin. Live in **two** places
+   (`api/scan/route.ts:47` and `content.ts:100`); COPY v2 fixed it in the
+   marketing copy and not in the code.
+3. **Item 22 has not merged.** The waitlist Phin reacted to is a spec; the two
+   plan cards and the path to a card are still live on the front door.
+4. **`MARKETING.md:45`'s autopilot ("no click needed") contradicts `PRINCIPLE`
+   today.** `MARKETING.md`'s own ⚠ note predicted this and nobody actioned it.
+   **It is the biggest law-4 defect on the front door.**
+5. **§6.2's MANDATORY approval qualifier uses a word the build org's test suite
+   bans** (`BANNED_WORDS` includes `'arming'`). Two rulebooks in collision.
+   Recommended plain-English replacement in the artifact §5; **not applied by
+   me — §6.2 is a gated artifact.**
+6. **`position-v2` says `channel-readiness.md` does not exist.** It does.
+
+**ONE OPEN QUESTION FOR PHIN, and I will not answer it for you** (it has been
+open three shifts): **should the $59 entry tier be de-emphasised on a front
+door that now leads with the employee?** Entry is **live and chargeable
+today**; item 22 would remove the checkout entirely and has stalled. **So right
+now the front door both leads with a waitlist and sells a subscription.** My
+recommendation: **leave entry exactly as it is** — it is the only thing on the
+page that works today and your brief was "no sales yet" about *the employee*,
+not about entry. **Say the word if you meant both and it reverses.**
+
+**STATUS: `gtm/market/copy/front-door-overhaul-v1.md` is GATE-FAILED with
+round-2 edits applied and unverified. Do not cascade it.** Verdicts, all three
+verbatim, plus my disposition and the three places I overrode a reviewer:
+`gtm/org/reviews/2026-09-03-shift15-front-door-overhaul-three-gates.md`. — boss
+
+---
+
 **2026-09-04 · DIRECTIVE (Phin → chief → boss) · THE COPY GETS OVERHAULED,
 NOT EDITED. And the reason it is limp is NOT that it is honest.**
 

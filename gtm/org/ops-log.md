@@ -8,6 +8,87 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · ON-DEMAND (chief's directive, session restarted after Phin
+stopped the previous one) · SHIFT 15 CONTINUATION — THE COPY OVERHAUL.
+Three gates, three FAILs, round-2 edits applied, NOT re-verified.**
+
+**Lock TAKEN OVER, not restarted.** The v3 session's claim was fresh and its
+work was on the branch (`bc6fbf1`, `5871282`); it was stopped mid-shift by
+Phin, not lost. This session continued it on the NEW job the chief stacked on
+top (`533f50a`) and said so in the lock. **The round-4 confirmation the
+previous claim was running was NOT re-run** — it is filed and it stands.
+
+**WHAT RAN:** the chief's copy-overhaul directive. Not an edit pass. Rewrote
+the hero (**three candidates**), sub, section headers, and the waitlist H2 and
+subheader; repositioned from marketing platform to **AI employee that happens
+to have a platform**; struck both lines Phin killed.
+
+**ARTIFACTS:**
+- `gtm/market/copy/front-door-overhaul-v1.md` — **NEW.** DRAFT → IN-GATE →
+  **GATE-FAILED (r1)** → **round-2 edits applied, UNVERIFIED.** Not GATED.
+  **Nothing may cascade.**
+- `gtm/market/copy/front-door-overhaul-receipts.md` — **NEW, CONFIDENTIAL.**
+  R1–R8, read from `clinkworthy@a996b86` source, not from artifacts.
+- `gtm/org/reviews/2026-09-03-shift15-front-door-overhaul-three-gates.md` —
+  **NEW.** Three verdicts verbatim + disposition.
+- `gtm/market/copy/waitlist-front-door.md` — **UNTOUCHED.** PHIN-APPROVED copy
+  is not overwritten by a gate-failed draft; its relocation is a recommendation.
+
+**FAN-OUT DISCLOSURE — three reviewer subagents, spawned in parallel, one
+round each. All three independent; none was the author.**
+- **Skeptical SMB owner** — **FAIL**, 11 MUST-FIX.
+- **Competitor's salesperson** — **FAIL**, 10 MUST-FIX.
+- **Salty journalist** — **FAIL**, 11 MUST-FIX. *(Added this shift. The
+  previous copy rounds ran only two personas; `boss.md` requires the journalist
+  on anything public-facing and the front door is the most public surface the
+  org has. It found the most.)*
+
+**THE TWO FINDINGS THAT WERE ABOUT THE BOSS, NOT THE COPY, and they are the
+entry:**
+1. **The strike-list grep was credited with work it could not do.** The pattern
+   could not match `content.ts`'s split `titleTop`/`titleBottom`, so the one
+   line the whole directive is about was carried in **by recollection** — in
+   the table whose stated purpose was that recollection is not enough, three
+   hours after this shift's own lock said *grep for EVERY instance*. Two gates
+   found it independently. **Corrected: 25 instances in 10 files, not 14 in 8.**
+2. **A build-breaking test was missed.** `landing-content.test.ts:73-74`
+   hard-asserts both halves of the dead hero; `npm test` fails the moment the
+   hero changes. The boss found the *second* guard (`render.mjs:88`), called it
+   the marquee finding, **and pointed its dependency at the wrong file.**
+
+**FINDINGS FOR THE CHIEF THAT ARE TRUE INDEPENDENT OF THIS DIRECTIVE** (detail
+in the receipts file and §7):
+- **R5:** the scan route and `content.ts` both tell a stranger their scan
+  result is emailed to them. **Nothing emails it to them.** COPY v2 fixed this
+  in the marketing copy and not in the code — the same one-place-not-the-other
+  failure, live on the front door.
+- **R7:** **item 22 has not merged.** The waitlist Phin complained about is a
+  spec, not a page; the two plan cards and the checkout are still up.
+- **R8:** §6.2's **mandatory** approval qualifier uses "armed", and
+  `design-system.test.ts` **BANNED_WORDS** lists `'arming'`, enforced by test.
+  A law-4 collision between two orgs' rulebooks.
+- **`MARKETING.md:44`** lists **"Instagram, Facebook, X and Reddit"** as Entry
+  features in a live ruled spec. X is PARTIAL, Reddit is BLOCKED. §6.2 bars
+  both named at all. **Urgent.**
+- **`MARKETING.md:45`** sells autopilot as *"no click needed"*, contradicting
+  `PRINCIPLE` today. `MARKETING.md`'s own ⚠ anticipated it; nobody actioned it.
+- **`position-v2` §3.1/§7(20) assert `channel-readiness.md` does not exist.**
+  It does, and it grades Reddit BLOCKED, not NOT CHECKED.
+- **`MARKETING.md:179`'s "Founding rate from $59/mo"** breaches two §6.2 bans.
+
+**BUDGET:** one round of three personas, plus the correction pass. **Stopped
+there deliberately.** A second round run by the session that wrote the
+corrections is the weakest available check, and this org's history is that the
+defects land **in the corrections** — three of round 3's four blockers on
+`position-v2` were defects in previous corrections. **A fresh verifier is the
+next shift's first act.**
+
+**TOKEN WEIGHT: heavy.** Three parallel reviewers on a long artifact, plus a
+source read of a second repo. **Eight checkpoint pushes during the shift**, not
+one at the end.
+
+---
+
 **2026-09-03 · scheduled · SHIFT 15 — the round-3 fresh verifier on the
 position.** Shift 14's handoff named this the next shift's non-negotiable
 first act, and triage rule (c) agrees: GATE-FAILED artifacts before new work.
