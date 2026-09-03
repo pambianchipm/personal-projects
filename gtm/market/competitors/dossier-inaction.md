@@ -92,17 +92,24 @@ and this org has never spoken to one.
   behind inaction is `UNTESTED` — and the three differ completely in
   what they would buy. **Do not open on guilt.** *(Gate r1 killed the
   original bullet, "Guilt is already present. We are not creating a
-  need; we are naming one." The reviewer, in her own seat: "I am not
-  walking around guilty about Instagram. I am tired. If the salesperson
-  opens by naming my guilt, I am done in the first minute.")*
+  need; we are naming one." The gate persona's stated objection (a
+  persona, not a customer — not evidence): that guilt is the wrong
+  premise, and fatigue and indifference would buy differently. Full
+  text in the shift-12 verdict.)*
 - The "put the phone down on Saturday" line (landscape report's Appendix A
   synthesis) is, per that report, plausibly the strongest sentence this
   company can say. **It is a hypothesis about resonance, not a finding.**
 
 **Threats (to us)**
-- INACTION costs $0 and has no switching cost. Against A1's $59/mo the
-  owner is not comparing features; they are comparing $59 against a
-  number they believe is zero.
+- INACTION costs $0 and has no switching cost. Against **A1 $59 entry /
+  A2 $299 founding / A3 $499 standard**, the owner is not comparing
+  features; they are comparing our price against a number they believe
+  is zero. The gap is not one number — at A3 it is roughly eight times
+  the entry figure this bullet was originally written against, and
+  whether the objection scales with it is `UNTESTED`. *(A3 sync, gate
+  r2: the battle cards had been given all three prices and this dossier
+  was still reasoning off $59 alone — law 4 between two artifacts filed
+  the same shift.)*
 - It cannot be "lost" — it is always available, and re-defaulting to it is
   what churn IS for this segment.
 - Its authenticity advantage is real and permanent. Any Player 2 output
@@ -130,8 +137,13 @@ of owners it is genuinely sufficient in a good month.
 It is honest. Nothing is exaggerated, nothing is automated into
 blandness, and the owner never has to explain to a customer why their
 Instagram sounds like someone else. Any pitch that sneers at this loses
-the room. **The right posture is: inaction is a rational response to a
-loop that never closed, not a character flaw.**
+the room. **The right posture is: treat inaction as rational, not as a
+character flaw.** *Why* it is rational — our hypothesis is a loop that
+never closed — is `UNTESTED`; see NOT CHECKED (i). The posture does not
+depend on the cause being right. *(Fourth causal site, labelled at gate
+r2: three had been labelled and this one missed — and this is the one
+that tells a salesperson what to believe about the owner's inner life
+before they walk in. Law 1 says everywhere it appears.)*
 
 ## Who should pick it (said plainly, and we should mean it)
 

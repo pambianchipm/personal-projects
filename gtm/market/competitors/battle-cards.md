@@ -81,9 +81,10 @@ landscape report §1, §2.1.
    two questions welded together: the first unanswerable (nobody
    remembers which weeks they posted in June), the second an invitation
    to narrate your own failure to a stranger about to charge you $59.
-   The reviewer's verdict: "I stop being honest right there and start
-   being polite, which is worse than useless to you." Same territory,
-   hands them the story instead of the verdict.)*
+   The gate persona's stated objection (a persona, not a customer — not
+   evidence) was that the question converts a research subject into a
+   defendant. Full text in the shift-12 verdict. Same territory, hands
+   them the story instead of the verdict.)*
 2. "Last time something you posted brought someone in — how did you find
    out it was that post?"
 3. "If you get busy for two weeks starting tomorrow, what happens to the
@@ -97,10 +98,9 @@ employee**; or (d) they're in a genuine seasonal trough with no offer to
 make. Say so and stop selling — a mis-sold operations subscription
 churns. *((c) and (d) added at the SMB gate r1: the dossier flagged (c)
 in bold as "the honest disqualification and it belongs in the battle
-card," and this card had left it out. The reviewer, who is that owner,
-noticed: "You wrote down the one reason not to sell to me, you
-underlined it, you told yourself to move it, and you left it in the
-internal file where I would never see it.")*
+card," and this card had left it out. Flagged by the gate persona — a
+persona, not a customer, and not evidence. Full text in the shift-12
+verdict.)*
 
 ---
 

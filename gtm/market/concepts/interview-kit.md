@@ -40,7 +40,10 @@ first real-owner test of that idea.
   30-minute mark, ask ("I promised you 30 — OK to take three more
   minutes?"); if no, the dial-cadence probe and feature batch 2 are
   the named sacrifices, NEVER the markup ritual, ranking, or folder
-  question. Print the five cards + this kit's sheets.
+  question. **If you are making this three-minute ask in more than one
+  or two interviews, the design is over-scoped — fix the session length
+  in the recruit message, not in the room (see §3's batch-2 note).**
+  Print the five cards + this kit's sheets.
 - **The bias warning, honestly (deck p20):** the method recommends a
   neutral interviewer because founders hear what they hope. You're
   running these yourself, so the mitigations are mandatory: read cards
@@ -130,12 +133,14 @@ across interviews 1–5.)*
 | 11+ | repeat from order 1 |
 
 *(Interviews 6–10 are orders 1–5 MIRRORED — each row read
-right-to-left — and then **re-sequenced** so the running skew never
-exceeds ±1 (SMB-owner gate r1, shift 12: the mirrored rows in their
-natural order took the running count to +2 after interview 8, while the
-n=5 paragraph below holds a four-interview cut to ±1 — the reviewer's
-own one-line fix is adopted). Re-sequencing rows changes nothing about
-the square: each column still holds all five cards.
+right-to-left — and then **re-sequenced**. The mapping is
+**6 = reverse(1), 7 = reverse(4), 8 = reverse(2), 9 = reverse(3),
+10 = reverse(5)** — check it that way, not row-for-row. Re-sequencing
+rows changes nothing about the square: each column still holds all five
+cards. **The point of the re-sequence: the running M/K skew is ±1 after
+EVERY one of the ten interviews (+1, 0, −1, 0, +1, 0, −1, 0, +1, 0), so
+you can stop at any n without a lopsided read** — the natural mirror
+order reached +2 at interview 8.
 **CORRECTED shift 12:** this table previously said
 "6+ repeat cycle from order 1" and the note below claimed the skew
 "evens at n=10." It does not. Replaying orders 1–5 sends M-before-K
@@ -213,7 +218,10 @@ FEATURES-PARTIAL, and aggregate batch-2 rows only over interviews
 that scored them.
 
 **What batch 2 actually costs you, named (Phin — the chief asked which
-rows the sacrifice drops).** Batch 2 is rows 6–9 of the table below,
+rows the sacrifice drops).** *(Corrected at the SMB-owner gate, shift 12
+— three claims; rotation re-sequenced at the same gate. Reasoning and
+the reviewer's ledger live in `gtm/org/reviews/2026-09-03-shift12-both-gates.md`,
+not here: this page is an instrument, not a changelog.)* Batch 2 is rows 6–9 of the table below,
 in this order: **"Watches your market" · "Replies drafted for you" ·
 "Monday plan email (coming)" · "It asks before you forget (coming)."**
 Read that list before you agree to cut it, because the four are not a
@@ -225,22 +233,16 @@ random tail:
   operator today, not the client — "so I'd get told?" gets the honest
   line, not a yes). So batch 1 is a read on the shipped-plus-one-
   caveated product, and you lose every signal about what to build next.
-  *(Corrected at the SMB gate, shift 12: this bullet claimed batch 1 was
-  "a clean read on the shipped product." The org's own roadmap ledger
-  says otherwise.)*
 - Row 9 ("It asks before you forget") is the asks queue named in
   **backlog 0b gap 1 / truth-map Gap 1 — Initiative**. Row 6 ("Watches
   your market") is the recommendation surface of **Gap 4 — the CMO
   layer**: related, but not an initiative gap. Between them they are the
   only two rows that touch the employee-initiative-and-judgment
   positioning. `UNTESTED` — that mapping is the org's, not an owner's.
-  *(Corrected at the SMB gate, shift 12: this bullet called both "the
-  initiative rows" and cited "gaps 1 and 4" as if both were initiative.
-  The org's own backlog and truth map say Gap 4 is the CMO layer.)*
 - Cutting batch 2 does **not** silence the dial entirely — §2's
   dial-cadence probe is a separate item and survives (it is the *other*
   named sacrifice). What you lose is the dial's evidence from the
-  feature table. *(Overstatement corrected at the same gate.)*
+  feature table.
 - The cut therefore lands hardest on exactly the direction Phin ruled
   in on 31 Aug. It is still the right sacrifice against the markup
   ritual, the ranking, or the folder question — those are the evidence
@@ -248,9 +250,7 @@ random tail:
   than one or two interviews, the design is over-scoped for a 30-minute
   promise. Choose one: recruit for a 45-minute session and say so in the
   recruit message, or cut a card. **Do not quietly keep asking owners
-  for three more minutes.** *(Gate r1, in the reviewer's own seat: "You
-  promised me thirty minutes. You already admit it is thirty-three.
-  Nobody in this document asked what I think about forty.")*
+  for three more minutes.**
 - If you have ~2 minutes but not the ~3–4 that batch 2 needs (§3 is
   ≈8 min for both batches plus the top-three pick): score rows 6 and 9
   only, mark the

@@ -172,3 +172,108 @@ I will start with what is good, because it is real: "Authenticity — highest av
 **#3 sits in between.** *"If you get busy for two weeks starting tomorrow, what happens to the account?"* I would answer it — "nothing, it just sits there" — because it is true and it does not cost me anything. But I can see the trap forming while you are still saying it, and I would answer it in a slightly flatter voice than I answered #2. It is an honest question with a visible mechanism. Keep it, but never run it first.
 
 **What I would replace #1 with, if you want the same information without the guilt tax:** *"Walk me through the last thing you posted — what was going on that day?"* Same territory, answerable, and it hands me the story instead of the verdict.
+
+---
+
+### Round 2 — Batch A PASS-WITH-NOTES · Batch B FAIL → **PASS-WITH-NOTES**
+
+Same reviewer, re-derived the rotation from the printed table without
+consulting its round-1 numbers. All 15 r1 edits CONFIRMED (two graded
+"confirmed — exceeded"). Six further edits required (16–21), all applied
+same shift.
+
+**The reviewer's r2 arithmetic, reproduced and independently
+re-verified by the boss before acceptance:**
+
+| Check | Reviewer | Boss re-derivation | Verdict |
+|---|---|---|---|
+| Mirror mapping | 6←1, 7←4, 8←2, 9←3, 10←5, each source used once | `row[t] == reversed(row[s])` true for all five pairs | MATCH |
+| Running skew, all ten | +1, 0, −1, 0, +1, 0, −1, 0, +1, 0 | identical sequence; max \|skew\| = 1 | MATCH |
+| n=10 balance | M-first {1,4,5,8,9}=5 · K-first {2,3,6,7,10}=5 | 5:5 | MATCH |
+| Latin square, rows 6–10 | all five columns distinct | confirmed | MATCH |
+| Leads / last-slot over ten | each card leads twice, sits last twice | confirmed | MATCH |
+
+**The reviewer's stronger property, adopted into the kit:** the skew is
+±1 after *every* interview, not merely at the endpoint — so Phin can
+stop at any n without a lopsided read. The kit now states this.
+
+#### The three r2 findings that were not mine to argue with
+
+**(1) Law-1 hazard, created by the fixes themselves — the most important
+finding of this shift.** In applying the r1 edits, the boss wrote the
+persona reviewer's first-person words, in quotation marks, into the
+**interview kit** and the **battle cards**: *"You promised me thirty
+minutes…"*, *"The reviewer, who is that owner, noticed…"*, *"The
+reviewer, in her own seat…"*, *"The reviewer's verdict…"*. The reviewer's
+own objection, and it is exactly right:
+
+> "I am an agent in a costume. This kit's own header says LAW 6: you are
+> not your customer… The org has now written a simulated owner's
+> verbatim first-person quote into the document whose entire purpose is
+> to be the clean vessel for real owner words. In six weeks someone
+> greps this repo for owner quotes and finds mine sitting in quotation
+> marks inside the interview kit."
+
+And on the battle-card site: *"'The reviewer, who is that owner' … states,
+in a sales-enablement asset a person will read before a real meeting,
+that the reviewer IS the customer. Six words from a pink button."*
+
+Correct on the doctrine and correct on the mechanism. Law 1 bars
+roleplay output from becoming evidence; a first-person persona quote
+sitting inside an instrument is precisely how roleplay becomes a
+citation later. **All four sites rewritten to "the gate persona's stated
+objection (a persona, not a customer — not evidence)", with the full
+text living here, in the verdict file, which is what this directory is
+for.** No first-person persona quote remains in any instrument —
+verified by grep.
+
+**(2) The fourth causal site.** Three sites of "the unclosed loop causes
+the fade" were labelled `UNTESTED` in r1; the fourth — under "What's
+great about it," the sentence that tells a salesperson what to believe
+about the owner's inner life — was missed. Labelled.
+
+**(3) Law 4 between two same-shift artifacts.** The competitor-salesperson
+gate had added A3 ($499 standard) to all four battle-card price rows;
+`dossier-inaction.md`'s threat analysis was still reasoning off A1's $59
+alone. The reviewer: *"if $499 is the real number then the whole '$59
+against a number they believe is zero' argument is eight times too small
+and I am a different customer than this file thinks."* Synced.
+
+#### Correction history relocated OUT of the interview kit (r2 edit 19)
+
+The reviewer's verdict on the kit's usability, which the boss accepts in
+full: *"Picture the actual moment: I am in the chair, you are at minute
+thirty-one, you have four minutes and a decision to make… What is on the
+page is forty lines, of which about twelve are the org explaining to
+itself what it got wrong at a gate last week… You have written a very
+good changelog and left it inside the kit."*
+
+The kit now carries one pointer line to this file. The removed
+annotations, preserved here as the record:
+
+- **Batch-2 unshipped bullet.** Previously claimed cutting batch 2 left
+  "a clean read on the shipped product." False: row 4 ("Posting that
+  never fails silently") stays in batch 1 and carries §0's operator-only
+  caveat. Now reads "shipped-plus-one-caveated."
+- **Gap citation.** Previously called rows 6 and 9 "the initiative rows"
+  and cited "backlog 0b gaps 1 and 4" as though both were initiative
+  gaps. The org's own backlog and truth map say Gap 1 is Initiative and
+  Gap 4 is the CMO layer. Row 9 → gap 1; row 6 → gap 4.
+- **Dial overstatement.** "Cut batch 2 and the interview says nothing
+  about the dial" — overstated; §2's dial-cadence probe is a separate,
+  surviving sacrifice.
+- **The session-length demand.** Previously "the fix is a longer
+  session, not a smaller table" — the org's convenience placed on the
+  owner's calendar, in the paragraph about what to cut. Replaced with
+  the two honest options, and routed back to §0 (r2 edit 21) where the
+  three-minute ask is actually scripted.
+- **Rotation.** The mirrored cycle in its natural order reached +2 at
+  interview 8, breaching the ±1 standard the same file holds a
+  four-interview cut to. Re-sequenced 6←1, 7←4, 8←2, 9←3, 10←5.
+
+#### Boss disposition — gate 1
+
+All 21 edits applied. Batch A and Batch B both stand at
+PASS-WITH-NOTES. **Not marked GATED by the boss** — the chief confirms.
+The r2 note the boss is NOT acting on unilaterally: nothing. Every
+required edit was accepted; none was argued down.
