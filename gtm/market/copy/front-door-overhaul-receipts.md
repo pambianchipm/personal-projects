@@ -141,3 +141,47 @@ briefs; `MARKETING.md`'s tour prototype draws a **7-day strip**, and A8 rules
 which artifact you read — **a law-4 hazard, flagged for the chief** — and the
 header avoids all of it by naming the period and not the quantity. **Any copy
 that puts a number next to "a week" needs that disagreement settled first.**
+
+---
+
+## R7 — **THE WAITLIST PHIN COMPLAINED ABOUT IS NOT ON THE INTERNET. It is a spec.**
+
+Checked because the overhaul's §3 rewrites "the live version" and I wanted to
+know what "live" meant. **It is not live.**
+
+- `git log origin/main --oneline | grep -i "item 22\|waitlist"` on
+  `pambianchipm/clinkworthy` @ `a996b86` → **no commits.**
+- `grep -i waitlist console/app/landing/*.tsx` → **no matches.** The landing
+  page has no waitlist section, no waitlist form, and no waitlist copy.
+- What IS rendered at `#pricing` today: `console/app/landing/page.tsx:187-202`
+  renders `PRICING.kicker`, `PRICING.title` and **both tier cards with live
+  prices**, and `ENTRY_AVAILABLE = true` (`content.ts:56`).
+
+**So: item 22 — the waitlist gate, which `docs/org/frontdoor.md` describes as
+"mid-flight, shift 1 of 3 done" — has not merged. The two plan cards are still
+up and the path to a card is still open.**
+
+**Three consequences, and the second is the one that changes how this shift is
+handed off:**
+
+1. **Phin was reacting to `MARKETING.md` COPY v3, not to a page.** His words
+   were *"the CTA join waitlist is way too like honest reading"* — that H2
+   exists only in the copy spec. **Nothing needs to be un-shipped**; the
+   overhaul lands in a section that has not been built yet, which is the
+   cheapest possible moment to change it.
+2. **The overhaul's §3 therefore rewrites a SPEC, and its §1 strike list
+   rewrites LIVE code.** Those are two different cascade requests with two
+   different urgencies, and this org has been treating the front door as one
+   thing. **The strike list is the urgent half** — the dead lines Phin killed
+   are on the internet right now; the waitlist H2 is not.
+3. **`waitlist-front-door.md`'s constraint 3 gets sharper.** It records entry
+   as LIVE at $59 and asks, unanswered, whether Phin wants it de-emphasised.
+   **The real question is bigger: item 22 would remove the checkout entirely,
+   and it is stalled.** Until it lands, the front door both leads with a
+   waitlist and sells a subscription. **Still not asked of Phin. Still not
+   assumed either way.**
+
+**NOT CHECKED:** why item 22 stalled, and whether the front-door boss is
+blocked on it. Visible from `docs/org/frontdoor.md` only as *"shift 1 of 3
+done"*, which was written before `a996b86` and may be stale. **Not this org's
+lane** — it is the build org's item and the chief's to chase.
