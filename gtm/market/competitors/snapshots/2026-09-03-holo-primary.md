@@ -222,6 +222,56 @@ still may only be stated as what WE do.** Nothing here licenses an external
 claim about what Holo lacks, at any confidence, until it is OBSERVED and Phin
 has signed off on the comparison.
 
+## Addendum 2 — 2026-09-03, ~17:45. A **Learnings** surface exists. GRADE:
+## OBSERVED (the surface and its promise) / NOT OBSERVED (what it produces).
+
+Phin sent a screenshot of a Holo section headed **"Learnings"**, in its empty
+state. Verbatim:
+
+> **Learnings come from your posts**
+> *"Publish a post and Holo will tell you what won, what lost and why —
+> right here"*
+
+Below the copy: two placeholder rows, one outlined **green dashed** and one
+**red dashed** — won and lost — each with a **padlock** and blurred content.
+Beneath the card, a second section headed **"Top performing posts."**
+Onboarding checklist reads "Getting started 2/10."
+
+**This cuts against what this org wants to be true, and it is recorded at
+full strength for exactly that reason.** Two hours ago Phin's hands-on read
+was *"I don't think it does the feedback loop… I think they leave that in the
+hands of the user,"* graded OWNER-OBSERVED/UNCONFIRMED in Addendum 1, with a
+note that it must not firm up merely because the strategy would be nicer if it
+were true. **The same standard applies in reverse now that the evidence moves
+the other way.** The surface exists, it is a first-class named section, and
+its promise is not a dashboard — *"what won, what lost, and why"* is a
+**diagnosis**, which is more than charting.
+
+**What is still NOT observed, and the distinction is the whole strategy:**
+- **What a POPULATED learning actually says.** This is an empty state. A
+  promise in an empty state is marketing copy until a row fills.
+- **Whether a learning CHANGES WHAT THE PRODUCT PROPOSES NEXT.** That is loop
+  closure, and it is not visible here. "Tell you what won and why" is a report
+  *to the user*; our claim is that the result re-enters generation without the
+  user carrying it. Those are different products and this screenshot does not
+  separate them.
+- Whether the padlocks are a paywall, a tier gate, or empty-state styling.
+- Whether it measures engagement or revenue. The only goal metric seen
+  anywhere in this account remains **followers**.
+
+**The honest revision.** The gap narrows from *"they do not measure or learn"*
+— which is now unsupportable — to *"unknown whether their learning re-enters
+their generation."* **Every artifact asserting the wider version must be
+rewritten to the narrower one.** The co-op segment queued in the inbox rests
+on this and its premise is now weaker; size it against this addendum, not
+against Addendum 1 alone.
+
+**It settles itself within days and nobody should guess.** The captured
+account has a post live and this section fills on publish. Phin: when a row
+appears, capture it — the row text and whatever it links to. **Does it name a
+next action, or does it name a number?** That single distinction is the
+remaining question, and it is the one the position stands on.
+
 ## Note for the record
 
 The account captured here contains a brand named **"Player2"** with generated

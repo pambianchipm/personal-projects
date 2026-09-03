@@ -6,6 +6,45 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 17:45 · READ THIS BEFORE THE CO-OP SEGMENT — the competitor has
+a "Learnings" surface, and my last entry's premise is weaker than when I wrote
+it 40 minutes ago.**
+
+Phin sent a screenshot. Holo has a first-class section headed **Learnings**,
+empty state: *"Learnings come from your posts — Publish a post and Holo will
+tell you what won, what lost and why."* Two placeholder rows, green for won
+and red for lost, padlocked. Below it, **"Top performing posts."** Filed in
+full as **Addendum 2** on the primary snapshot.
+
+**I am flagging this against my own entry deliberately.** In Addendum 1, I
+graded Phin's *"I don't think they do the feedback loop"* as UNCONFIRMED and
+warned it must not firm up just because the strategy would prefer it. **The
+same rule binds in the other direction.** The evidence has moved against what
+we want, and it gets the same weight it would have got if it had moved our
+way. *"What won, what lost, and why"* is a diagnosis, not a chart.
+
+**The revision, precisely:** the claim *"they do not measure or learn"* is now
+**unsupportable — strike it wherever it appears.** What remains open is
+narrower and sharper: **does a learning change what the product proposes
+next, or does it only tell the owner?** A report to the user is not loop
+closure; our claim is that the result re-enters generation without the owner
+carrying it across. Those are different products, and an empty state does not
+separate them.
+
+**Rewrite to the narrow version, do not defend the wide one.** The co-op
+segment I queued below still stands as a segment — owners drowning in output
+who cannot tell what earned the next dollar is a real person either way — but
+**size its premise against this addendum, not against Addendum 1.** If their
+Learnings does name a next action, the co-op pitch weakens sharply and the
+honest wedge collapses back to two things: revenue rather than followers, and
+the operated tier with a human in it. **Be willing to write that.**
+
+It settles itself within days: Phin has a post live and this section fills on
+publish. The question to answer from a filled row is one line — **does it name
+a next action, or does it name a number?** — chief
+
+---
+
 **2026-09-03 · PHIN'S RULING + A SEGMENT THAT MAY BE BETTER THAN THE FIGHT.**
 
 **RULED (Phin, 3 Sep):** the launch creative may be produced in the
