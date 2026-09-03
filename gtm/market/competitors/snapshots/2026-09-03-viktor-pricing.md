@@ -23,18 +23,50 @@ material place** (see §5).
 | HTTP | 200 | 200 |
 | Raw bytes | 360,375 | 378,418 |
 | SHA-256 (raw HTML) | `4bc28025bdb80bf66be6e420cae6920f9d25ff6e1fdd1b55d1f30f7c68869881` | `4d074e56692038bdcee5330f8dfd2bb3e332f4a1abb144168ccd26f999cb7f09` |
+| Retained RAW HTML | `2026-09-03-viktor-pricing.raw.html` | `2026-09-03-viktor-hire.raw.html` |
 | Retained extracted text | `2026-09-03-viktor-pricing.extracted.txt` | `2026-09-03-viktor-hire.extracted.txt` |
-| SHA-256 (extracted) | `1176ffec1b49a965059bad218135531e834b23dd93dba49dfd266cc19f6869c3` | `9fcaf4a96b4f36be65c66ffcfe54655895f62ef785fe0691c0303a29600c658c` |
+| SHA-256 (extracted), **AMENDED 2026-09-03** | `349f17eca7f911f27a59bbde23cf76dfbc49536fa04967ff2f2c88425b833566` | `209d09907caf43b624ab83a3384cd57839c3b9d74fcee557cd4031fa00bbbcaf` |
+| ~~SHA-256 (extracted), as first recorded~~ | ~~`1176ffec…`~~ | ~~`9fcaf4a9…`~~ |
 
 Method: `curl -L`, script/style stripped, tags to newlines, entities
-unescaped, blank lines dropped. **The raw HTML was not retained** (it is a
-Next.js payload of ~360KB per page and the org has no store for it); the
-extracted text is retained and hashed, and the raw hashes above let a future
-fetch be diffed against this one. Every cell below is quoted from the
-retained text, not from memory. *(This is the A20 pattern: the receipt is a
-recorded fetch with retained, hashed text — not a summary.)*
+unescaped, blank lines dropped. Every cell below is quoted from the retained
+text, not from memory.
 
-**Limit of the method, stated up front:** the plan card's credit-bundle
+## 1a. AMENDMENT 2026-09-03 — the receipt was defective and is now complete
+
+**Caught at the competitor-salesperson gate (round 1 by a wrong diagnosis,
+round 2 precisely). Recorded here because a receipt that is quietly repaired
+is not a receipt.**
+
+**What was wrong.** The extraction stripped `<script>` blocks, and with them
+the page's **FAQPage JSON-LD — every FAQ answer.** §3 below then quoted those
+answers under a heading promising *"verbatim from the retained text"* while
+the retained text did not contain them. **Eight quoted strings were affected**,
+audited string-by-string against the pre-amendment file
+(`git show 1b601a6`): *"Viktor pricing is workspace-based…"*, *"roll over for
+one month"*, *"Free trial and bonus credits never expire"*, *"The only
+difference is how many credits you get"*, *"Most solo users find 20K–40K
+plenty for a month"*, *"Roughly 40-200 tasks…"*, *"sensitive actions wait for
+your approval"*, and *"One hire can support every department"*. Those eight
+carry A37's no-feature-tiering grade, §5.2 and both legs of §5.3 in the
+position, and §2.3's approvals row. **The three strings the r1 gate happened
+to name were not the scope; two of those three were present all along.**
+
+**What was NOT wrong, and the record must say so:** every string is real and
+verbatim on the page. The r1 charge of fabrication was mistaken.
+
+**The fix, and why it is now reproducible by a second reader.** The raw HTML
+is **retained in this directory** and hashes to the values recorded above —
+`4bc28025…` and `4d074e56…`, unchanged since the fetch. The JSON-LD was
+recovered **from those retained bytes, nothing re-fetched**, appended to each
+`.extracted.txt` under a dated amendment block, and the extracted hashes in
+§1 updated in the same commit. **Anyone can now re-run the extraction against
+the retained raw file and reproduce both hashes.** The earlier version of this
+amendment did not retain the raw bytes and did not update §1's hashes, so the
+receipt failed its own verification test for one commit; that is recorded
+rather than erased.
+
+**Limit of the method, still standing:** the plan card's credit-bundle
 selector is a client-side listbox. The bytes contain only its **default**
 option. Any figure for another bundle is NOT OBSERVED here, whatever a blog
 says.
@@ -62,6 +94,8 @@ appears on the page once, in an FAQ question, with no price attached.** Record
 it as PLAUSIBLE-UNCONFIRMED, not as a plan.
 
 ## 3. Terms, verbatim from the retained text
+
+*(Eight of the strings below are FAQ answers recovered by the §1a amendment. They are verbatim from the retained raw HTML and are now in the retained extracted text.)*
 
 - **No seats.** `Is there a per-seat charge?` → *"No. Viktor pricing is
   workspace-based. Your team shares the same workspace credits."* Plan card:
