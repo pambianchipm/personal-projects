@@ -8,6 +8,85 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-03 · scheduled · SHIFT 13 — the Holo rebuild.** Triage put this
+above everything: the chief's URGENT entry, on Phin's PRIMARY capture of
+tryholo.ai, superseded in part the dossier and battle cards this org gated
+four hours earlier.
+
+**What was wrong, and it was wrong in our favour.** The shift-12 dossier's
+organising sentence — *"Holo makes assets; Player 2 runs marketing"* — is
+FALSE. Holo schedules, posts, and ships a Learnings surface promising *"what
+won, what lost and why."* Their product ladder reads **Generate → Scheduled →
+Posted → Measuring**. Five asserted absences struck: no posting, no learning
+loop, no attribution, no ad execution, generates-then-silence. Two inherited
+figures were false: **"4,200+ Trustpilot reviews"** was Holo's self-printed
+BRAND count (real third-party figure: **1,048 at 4.4/5** — we overstated
+their trust asset ~4× in their favour), and the refund is **7 days, void on
+any credit use**, not "14 days after 35+ generations". **A15 was vindicated
+and upgraded to OBSERVED** — the shift-12 gate's rejection of the $12–48
+promo/list mash was exactly right.
+
+**Truth table:** A15 → OBSERVED; **A34** (refund terms), **A35** (trust
+figures), **A36** (their observed surfaces) opened. Snapshot debt (a) marked
+PAID, with the standing note that only Phin can refresh it — tryholo.ai is
+egress-blocked from every box in this org.
+
+**Four now-false Holo claims struck in PHIN-APPROVED and GATED files**
+(`positioning.md` benefit-1 contrast and its Buy bullet; the truth map's "no
+competitor does any of this") — **struck in place with dated pointers, not
+rewritten.** The re-argument is the chief's sequenced positioning directive,
+not a boss edit to Phin's approved file.
+
+**Fan-out disclosure:** two persona reviewers (Opus 5) — competitor's
+salesperson in Holo's seat, skeptical SMB owner. **Both FAILED r1; the
+salesperson FAILED r2 as well. 39 required edits, all applied, nothing
+argued down.** No fresh verifier: both r2 verdicts converged on one diagnosis
+and named their own residuals, so a third round would have re-derived what
+both had written. Verdict:
+`reviews/2026-09-03-shift13-holo-rebuild-both-gates.md`.
+
+**The gates' verdict on this org, and it is the entry that matters:** *"You
+do not have a truthfulness problem any more. You have a propagation problem,
+and on a sales instrument that is the same thing arriving one meeting
+later."* Three corrections reached the dossier and stopped before the battle
+card. **Standing rule adopted, written into both artifacts: corrections go to
+the CARD first, the dossier second — a correction that has not reached the
+card has not been made.**
+
+**What the gates found in OUR claims, not theirs:**
+1. **"No human anywhere in it" was FALSE.** Holo sells a Support row and
+   replies to 85% of negative reviews — both sitting in the snapshot table
+   this org transcribed itself. The absence rule at the top of the dossier,
+   broken by the dossier. Third instance of that defect class across two
+   shifts; a reviewer found it every time.
+2. **"Revenue traced to a post, shipped with file receipts" was a roadmap
+   inside a receipt.** UTMs at publish are real; automatic revenue ingest is
+   marked *future*, the owner types the sale, the recap totals per channel
+   per month, and `COMPARISON_REGISTRY` has no revenue dimension.
+3. **The positioning line claimed "a shipped receipt" for all three of its
+   clauses** while the same file said two had none. Only the click gate is
+   shipped.
+4. **The loop row was rigged** — their observed surface scored NOT OBSERVED,
+   our [Apply] button (a human click) scored Yes.
+5. **The refund fix was APPENDED, not substituted**, so the card stated the
+   credits term twice, wrong version first. Graded "worse than r1".
+
+**For Phin, and it is the shift's most important output:** the SMB owner
+**inverted the wedge.** Told the owner must log their own sales, "someone who
+booked" is worth LESS to her than followers — Square already tells her who
+came in; what she never had was the line to the post, and now she draws it
+herself. Her fix, from our own file: **on the operated tier, the accountable
+person does the logging with her** — twenty of our minutes against an hour of
+hers. She says that, not the feature list, is what $299 buys. **NOT YET
+COMMITTED — in no SLA, scope doc or price page.** A pricing/scope decision.
+
+**Token weight: heavy.** Eight checkpoint pushes, per the chief's new
+discipline. **Not done, deliberately:** the positioning directive — the chief
+sequenced it after this rebuild and its central sentence is contested; and
+the deck's competitive slide, still GATED and still omitting BUY-EDITOR.
+
+---
+
 **2026-09-03 · scheduled (shift 12, RETRY) · chief's shift-11 confirm
 conditions + the two kit notes + item 3 (competitor dossiers + battle
 cards, four types incl. BUY-EDITOR).**

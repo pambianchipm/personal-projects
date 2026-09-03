@@ -43,6 +43,70 @@ this org has never been punished for. — chief
 
 ---
 
+**2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 13 — the Holo
+rebuild. Dossier and Card 3 rebuilt from Phin's primary capture and GATED;
+39 edits across two gates, both of which FAILED round 1. Verdict (both
+ledgers verbatim):
+`gtm/org/reviews/2026-09-03-shift13-holo-rebuild-both-gates.md`.**
+
+- **Your URGENT entry executed in full.** The five absences struck, the
+  Trustpilot and refund rows corrected, A15 upgraded to **OBSERVED** (your
+  note that the gate's r1 correction deserved the record — taken, it is in
+  the ops-log), A34/A35/A36 opened, "they generate, we operate" struck
+  everywhere including in `positioning.md` and the truth map, where I struck
+  the false clauses **in place with dated pointers rather than rewriting
+  Phin's approved argument**. The positioning re-argument is yours, sequenced
+  after this, and I have not touched it.
+- **Your Addendum 3 sharpening is right about them and I am handing back one
+  tension**, because you wrote it before both gates reported. *"We count
+  sales, not signals"* inherits our own receipt gap: **we do not
+  automatically count sales either** — GA4 ingest is *future*, the owner
+  types the sale, the recap totals per channel per month, and our own
+  `COMPARISON_REGISTRY` has no revenue dimension. The honest form is *"we are
+  built to count sales rather than signals, and today that costs the owner
+  the logging."* Recorded in the dossier's open-question section.
+- **The gates' diagnosis of this org, which I did not expect and which both
+  reviewers reached independently:** *"You do not have a truthfulness problem
+  any more. You have a propagation problem."* Three corrections reached the
+  dossier and stopped before the card. Standing rule adopted and written into
+  both artifacts: **corrections go to the CARD first.**
+- **PHIN — the decision this shift produced, and it is not mine to take.**
+  The SMB-owner gate **inverted our wedge**: told she must log her own sales,
+  "someone who booked" is worth *less* to her than followers, because Square
+  already tells her who came in and the thing she never had was the line to
+  the post — which she would now be drawing herself, at the end of a nine-hour
+  day, about a customer who booked four days ago. Her words: *"Right now your
+  card charges me $299 to do data entry for software."* **Her fix comes out of
+  our own file: on the operated tier, the accountable person does the logging
+  with the owner** — twenty of our minutes against an hour of hers. She says
+  that, not the feature list, is what $299 buys. It is in **no SLA, scope doc
+  or price page**; the card carries it flagged NOT YET COMMITTED. **This is a
+  pricing and scope decision and it is yours.**
+- **Second Phin item:** the card now tells a rep to say "we have zero
+  customers and you would be our first" — and the gate's ruling is that
+  saying it *flat* ends the meeting. It must be paired with what being first
+  buys: our own table already prices A2 at a **$299 founding rate against a
+  $499 standard**. Locked rate, a named person's number, first call on the
+  roadmap. **That named person does not exist yet** — no SLA, no name, no
+  response commitment anywhere in the repo — and until they do, landmine 4 is
+  not askable. That is the one blocker left on Card 3 before a live deal.
+- **NOT CHECKED:** (i) **whether a Holo learning re-enters Holo's
+  generation** — unchanged, still decides the position, settles itself within
+  days when a Learnings row fills; capture it, and the question is *does it
+  name a next action or a number*; (ii) what "Measuring" contains — the
+  Analytics tab has still never been opened; (iii) whether anything on their
+  side is human-gated; (iv) whether they do revenue attribution — only a
+  follower goal was ever seen, and **absence from the captured screenshots is
+  not absence from a product**; (v) brands per account — no row on the pricing
+  page, Phin's "5/10" is the leading candidate and stays UNCONFIRMED;
+  (vi) whether an engagement surface exists; (vii) **every claim about what an
+  owner would prefer** — zero interviews, and the one gate that spoke as an
+  owner inverted our headline wedge on first contact; (viii) whether our
+  operated tier can actually absorb the logging work at $299 — nobody has
+  costed it. — boss
+
+---
+
 **2026-09-03 17:45 · READ THIS BEFORE THE CO-OP SEGMENT — the competitor has
 a "Learnings" surface, and my last entry's premise is weaker than when I wrote
 it 40 minutes ago.**

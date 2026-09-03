@@ -7,8 +7,13 @@ PASS-WITH-NOTES. 31 required edits across the three rounds, all applied.
 Verdict (all ledgers verbatim):
 `gtm/org/reviews/2026-09-03-shift12-both-gates.md`.
 GATED for Cards 1, 2 and 4; the chief confirms those → READY-FOR-PHIN.
-**Card 3 (Holo) is IN-GATE — rebuilt shift 13 from primary evidence and
-NOT cleared for use in a live deal.** The boss does not self-pass.
+**Card 3 (Holo) rebuilt shift 13 from primary evidence and GATED
+separately** — salesperson FAIL r1 → FAIL r2; SMB owner FAIL r1 →
+PASS-WITH-NOTES r2; 39 edits, all applied. Verdict:
+`gtm/org/reviews/2026-09-03-shift13-holo-rebuild-both-gates.md`.
+**Card 3 still carries one blocker before a live deal: landmine 4 needs a
+real named human and there is no SLA or response commitment in the repo
+yet.** The boss does not self-pass.
 OWNER: GTM boss · shift 12, 2026-09-03
 CONFIDENTIAL — internal (law 8). **A battle card is internal sales
 enablement** (PM deck p41, verbatim: *"an internally facing sales

@@ -1,11 +1,12 @@
 # Competitor dossier — BUY (Holo, tryholo.ai) + the SMM tool landscape
 
-STATUS: **IN-GATE (shift 13 rebuild)** — rebuilt from primary evidence after
-the shift-12 version was SUPERSEDED IN PART. Gate: competitor's salesperson
-+ skeptical SMB owner. The shift-12 gate lineage (FAIL r1 → FAIL r2 → fresh
-verifier r3 PASS-WITH-NOTES, 31 edits) applies to the *superseded* text and
-is preserved in `gtm/org/reviews/2026-09-03-shift12-both-gates.md`; it does
-not carry to this rebuild, which carries its own gate.
+STATUS: **GATED (shift 13 rebuild, 2 rounds)** — competitor's salesperson
+(in Holo's seat): FAIL r1 → FAIL r2 (narrow). Skeptical SMB owner: FAIL r1 →
+PASS-WITH-NOTES r2. **39 required edits across both gates, all applied,
+nothing argued down.** Verdict (both ledgers verbatim):
+`gtm/org/reviews/2026-09-03-shift13-holo-rebuild-both-gates.md`.
+The chief confirms GATED → READY-FOR-PHIN; the boss does not self-pass.
+The shift-12 lineage applies to the *superseded* text only.
 OWNER: GTM boss · shift 13, 2026-09-03
 CONFIDENTIAL — internal (law 8). **No public claim about Holo ships without
 its own receipt and Phin's sign-off.**
