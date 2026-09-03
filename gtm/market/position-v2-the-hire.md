@@ -2,16 +2,44 @@
 
 CONFIDENTIAL — internal-audit class (doctrine law 8). This file quotes two
 CONFIDENTIAL competitor snapshots verbatim and carries self-indictments about
-what is unbuilt. **Only §6.2's left-hand column and §6.3's draft leave this
-file, and only through the chief's cascade.** A quoted self-indictment is a
+what is unbuilt. **Only §6.2's left-hand column and §6.3's draft leave this file, and only
+through the chief's cascade.** **AMENDED at the round-3 gate:** three other
+blocks are written as shippable copy and sat outside that boundary — §1.6
+("What copy may say TODAY"), §3.1's single platform sentence, and §6.1 ("The
+position, in one paragraph"). They are **inside the licence as of this
+amendment**, and they are subject to §6.2's prohibitions — which is how a
+barred sentence came to be sitting in §1.6's hero block until r3 removed it. A quoted self-indictment is a
 competitor's opening line. *(Header added at the salesperson gate r1, which
 was right that the cascade vehicle had no confidentiality line on it.)*
 
-STATUS: **GATE-FAILED (round 2, both personas)** — shift 14, 2026-09-03.
-Round-1 and round-2 MUST-FIX edits applied below; **round 3 (fresh verifier)
-is REQUIRED and was NOT RUN this shift** — the shift ran out of budget and
-this file is handed over honestly graded rather than passed. It is **not
-GATED and may not be cascaded.**
+STATUS: **GATE-FAILED (round 3, fresh verifier)** — shift 15, 2026-09-03.
+Round 3 RAN and **FAILED** with four gate-blocking findings; **all 16 required
+edits are applied below.** The review budget's three rounds are now spent, so
+per the protocol **this capped loop gets a retro** — filed with the verdict.
+It is **not GATED and may not be cascaded**, and the boss does not self-pass:
+a round-4 confirmation that the 16 edits landed is the next shift's first act.
+
+**What round 3 closed, and it matters:** the Viktor receipt chain is **sound**
+— all four hashes recompute byte-for-byte against the raw bytes retained
+in-repo, and the verifier says so having refused to trust §1a's account of
+itself. The `allowance.ts` custody audit is **complete**: nothing fabricated,
+5 quotations byte-exact, and the three defects (one elided word, two
+derivations typeset as quotations, one mis-pointed enforcement test) are
+fixed with line numbers.
+
+**What round 3 found that three prior rounds did not:**
+1. **§1.6's hero block still shipped a sentence §6.2 bars** — the r2 fix was
+   applied in one of the two places the sentence lives. A live path to a
+   false claim on a landing page. Removed.
+2. **The r2 entry-price correction was itself wrong.** Its ~$72.8/mo figure
+   assumed seconds-based metering; the shipped meter counts CALLS clamped to
+   ten seconds, so the ceiling is ~$24.27/mo. **The conclusion — entry
+   pricing is UNRESOLVED — survives; its stated reason does not.**
+3. **§4.0 reported a cost share (63%) as a gross position**, in the paragraph
+   written to fix an over-claim. True gross there is +37.3%.
+4. **`channel-readiness.md`, cited as "the authority" for §3.1, does not
+   exist.** Re-anchored to code receipts that open; the Reddit row is now
+   NOT CHECKED.
 
 **PROCESS DEFECT, RECORDED AGAINST THE BOSS (found by the salesperson gate
 r2).** The round-1 edit pass was committed at `0fac89a` while **only one of
@@ -141,7 +169,8 @@ snapshot question, not a claim.
    fire it. Co-op is peer. The frame is being adopted *for* its
    accountability; co-op softens exactly that.
 3. **"Come hire" is a verb the product will not honour** once build item 22
-   closes the checkout route (`WAITLIST_ONLY`, default ON). **Correction at
+   closes the checkout route (the waitlist gate item 22 specifies — **not in the codebase today**:
+`grep -rn 'WAITLIST_ONLY'` returns nothing). **Correction at
    gate r1: item 22 is APPROVED, not shipped — A1 records entry as LIVE today
    (`ENTRY_AVAILABLE = true`, PR #56).** The draft wrote as though the door
    were already closed. The door is open now and closes when item 22 ships;
@@ -206,8 +235,7 @@ sentence announcing the rule.)*
 > **Hire Player 2.**
 > The AI marketing employee for your shop. It writes your posts, publishes
 > them to Instagram and Facebook, runs your Meta ads, and tells you what
-> worked. **Your ad budget is yours, set by you, and separate from the
-> subscription.**
+> worked.
 > **Nothing goes out, and nothing gets spent, without your approval — per
 > post, or armed in advance for the slots you choose.**
 > *Coming: your employee messages you where you already are. Join the
@@ -257,7 +285,9 @@ gated artifact — the chief updates it, not the boss.**
 
 ### 2.1 Layer 1 — the platform (what it does)
 
-Per `channel-readiness.md`: publishes to **Instagram** (image, Reel, Story) and
+Per the code receipts below (**`channel-readiness.md` DOES NOT EXIST** — see
+§3.1; `find` returns nothing and `docs/` has no such file): publishes to
+**Instagram** (image, Reel, Story) and
 **Facebook** (post, video), reads metrics back from both, **replies to
 comments** on both, and runs **Meta ads** capped and human-gated. Approvals in
 one queue; auto-publish only on slots the owner armed.
@@ -338,7 +368,10 @@ recklessness. They do not win the deal.
 ### 2.4 THE HONESTY PROBLEM
 
 **Of the four properties above, zero ship today.** Email exists
-(`lib/notify.ts`), gated by a `CRON_SECRET` Phin has not confirmed. Everything
+(`lib/notify.ts`), gated by `RESEND_API_KEY` + `ALERT_EMAIL` (`notify.ts:38`), with the cron
+caller additionally behind `CRON_SECRET` (`api/metrics/refresh/route.ts:20`)
+— **D13 and D14, both still with Phin**. It is an **alerting** path, not a
+client channel *(gate r3: the wrong env gate was named)*. Everything
 else is build item 30, phases 2–5, **unbuilt**. iMessage may be unreachable at
 all — no open API, Apple's Messages for Business approval-gated — and item 30
 flags it investigate-before-promising.
@@ -376,7 +409,24 @@ first-order interview question.
 
 ## 3. THE THREE ALREADY-RULED CONSTRAINTS
 
-### 3.1 No completeness claim. `channel-readiness.md` is the authority.
+### 3.1 No completeness claim. **The named authority does not exist — grades now rest on code.**
+
+> **ROUND-3 GATE, GATE-BLOCKING AND REPAIRED HERE.** This section cited
+> `channel-readiness.md` as "the authority." **That file is not in the build
+> repo**: `find /home/user/clinkworthy -iname '*channel*readiness*'` returns
+> nothing, and `docs/` carries `channel-analytics-design.md`, not it. Round 2
+> could not open it because the repo was absent; round 3 had the repo and the
+> file is still absent. The grades below are therefore re-anchored to receipts
+> that open — and 5 of 7 were independently corroborated by the verifier:
+> `console/lib/channel-data.ts:22` (`SHELL_PLATFORMS = ['tiktok']`),
+> `console/app/api/channels/route.ts:4` ("Honest shells (TikTok) are listed,
+> never hidden"), `console/lib/grok.ts:408` (Google Ads exists only as a
+> prompt-side label — nothing calls Google), and `console/lib/x-oauth.ts` +
+> `auto-publish.ts` (X publish ships; X engagement is tier-gated → PARTIAL).
+> **The Reddit row is regraded `NOT CHECKED`** — no credential-blocking
+> receipt could be opened either way; code treats Reddit as a copy-paste
+> channel, the same class as TikTok. **A table that governs what three orgs
+> may print about channels may not ship on a citation nobody can open.**
 
 | Platform | Grade |
 |---|---|
@@ -406,7 +456,8 @@ that bars counts. The defensible form is the sentence itself, not arithmetic.
 **LAW-4 GAP, opened at gate r1 and not closable by me:** `assumptions.md`
 carries **no channel row**, so the most operationally load-bearing table in
 this file has no anchor in the truth table. **Recommend the chief mirror
-`channel-readiness.md`'s grades into a new assumptions row.**
+these code receipts' grades into a new assumptions row — **not**
+`channel-readiness.md`, which does not exist.**
 
 ### 3.2 The hiring frame ships with its guardrails visible
 
@@ -478,9 +529,15 @@ What the table actually holds:
 in terms. *(Corrected at r2: the r1 version restated the band in a table and
 never cited A39, committing the law-4 defect A39 was opened to close.)*
 
-**So on this org's own table, entry's gross position ranges from roughly 63%
-down to negative depending on scenario** — stated as arithmetic, not as a
-verdict. *(Corrected at r2: the r1 version called the good end "comfortable",
+**So on this org's own table, entry's COST runs from roughly 63% of price to
+over 100% of it — a gross position of about +37% at the good end and roughly
+−29% at the bad end** — stated as arithmetic, not as a verdict.
+*(CORRECTED at the round-3 gate: this sentence previously read "entry's gross
+position ranges from roughly 63% down to negative." 63% is the COST share
+($37/$59); the gross position there is +37.3%. A paragraph written to fix an
+over-claim reported a cost ratio as a margin and flattered the good end by
+~26 points.)*
+*(Corrected at r2: the r1 version called the good end "comfortable",
 a flat business judgement about a band that excludes support, Stripe and every
 fixed cost, sitting one section above a paragraph correctly labelling a softer
 claim `UNTESTED`.)* **A21 is PROJECTED and PROJECTED never leaves this org**,
@@ -493,14 +550,18 @@ blank — it is ruled.**
 **And the second boss-found correction:** the draft's headline risk was
 *"uncapped image generation could be unbounded negative margin."*
 `allowance.ts` states why images are uncapped, in Phin's own reasoning:
-*"$0.02–0.07 each, which is noise, and capping the volume format would make
+*"$0.02–0.07 each (`allowance.ts:35–37`; **A7 widened the band to $0.02–0.08**
+on 2 Sep — quote A7 for the price, this quote only for the reasoning), which
+is noise, and capping the volume format would make
 the plan feel like a trial."* A9 prices the image tail at ~$0.6–3/mo. **The
 image exposure is small and considered. The real number is the video
 allowance**, and that changes §4.1's argument from a shrug into arithmetic.
 
-### 4.1 Entry (A1): HOLD $59. Do not drop to $29.
+### 4.1 Entry (A1): $29 is refused. **$59 is NOT established** — entry pricing is UNRESOLVED until item 24 lands.
 
-**Recommendation:** entry stays **$59/mo**. State it in the ruled shape by
+**Recommendation:** do **not** drop to $29; hold $59 as the *status quo*, not
+as a defended number. **Entry pricing is UNRESOLVED** (see (c) below) and is
+closed only by item 24's OBSERVED per-unit ledger. State it in the ruled shape by
 quoting **A8** — *"a planned week of posts every week, drafted for your
 approval, images included, and four videos a week"* — not with a blank.
 
@@ -530,19 +591,31 @@ undersells, which is the rarer and more embarrassing direction. **Law 4 fails
    below its own generation cost" *is* ***false at the floor*** *— A9's floor
    is $24.27–25 and $29 exceeds it. The true and stronger claim is A39's:
    negative on every scenario once the reasoning layer and fees are in.*
-   **(c)** ***A5's other number was silently dropped, and it is the one that
-   hurts:*** *A5 prices a* ***30-second extend-chain at $4.20***. *At
-   30-second Reels — the format a salon actually posts — the same ruled
-   allowance is* ***~$72.8/mo against a $59 price***. *So on a plausible read
-   of the org's own row,* ***$59 is underwater too***, *and quoting only the
-   10-second floor is exactly the selective-column error this file charges the
-   draft with at §4.1.2. This does not change the recommendation against $29;
-   it does mean* ***$59 is not safe either, and the honest statement is that
-   entry's price is unresolved until item 24 lands*** *— not that $59 is right
-   and $29 is wrong.)* `allowance.ts` records Phin cutting 8 videos/week to 4 for
-   exactly this reason: *"8 a week was $48–69/month of generation against $59
-   of revenue — **underwater on a heavy user, which is not a plan, it is a
-   leak**."* **The $29 question is that same arithmetic with the price
+   **(c)** ***A5's other number was silently dropped — and the r2 correction
+   that restored it was ITSELF wrong, caught at the round-3 gate.*** *A5
+   prices a* ***30-second extend-chain at $4.20***, *and r2 multiplied that by
+   the monthly allowance to reach* ~~***~$72.8/mo against a $59 price***~~.
+   ***That premise is false against shipped code: the meter counts CALLS, not
+   seconds.*** `xai-video.ts:49` *sets* `MAX_VIDEO_SECONDS = 10`*;* `:52`
+   `clampDuration` *caps every call at ten seconds; and both* `generateVideo`
+   *(`:208`) and* `extendVideo` *(`:217`) run inside*
+   `meterGeneration(…, 'video', …)`*, against* `allowance.ts:44` `video: 4`
+   *per week with* `:100` `allowed: used < limit`*. So a 30-second Reel is a*
+   ***three-call chain consuming three of the four weekly units***, *not a
+   $4.20 line item stacked on top of the allowance. The shipped ceiling on
+   entry video generation is* ***~$24.27/mo*** *(17.33 × $1.40) — A9's
+   "floor" is in fact its ceiling under today's code.* ***The conclusion
+   survives; its reason does not.*** *Entry pricing is still* ***UNRESOLVED***
+   *— not because video is underwater, but because A21's reasoning layer
+   ($12–38) is PROJECTED and unmeasured and A39's top end still exceeds the
+   price. It is closed by item 24's OBSERVED per-unit ledger and by nothing
+   else, and* ***$59 is a hold, not a defended number.***)*
+
+   `allowance.ts` records Phin cutting 8 videos/week to 4 for
+   exactly this reason: *"8 **videos** a week was $48–69/month of generation against $59 of revenue —
+**underwater on a heavy user, which is not a plan, it is a leak**."*
+(`allowance.ts:32–34`; the word "videos" was silently elided at r1 — restored
+at the round-3 gate) **The $29 question is that same arithmetic with the price
    halved.** Either the price holds or the allowance is cut — and cutting the
    allowance to fit $29 makes the tier a trial, which is the thing Phin
    rejected when he set it.
@@ -671,20 +744,25 @@ the employee. Mitigation is §3.3's written commitment.
 **AND ALL THREE MEET SHIPPED CODE, WHICH THE DRAFT DID NOT CHECK.** Read from
 `console/lib/allowance.ts` this shift:
 - **There is no overage today.** `checkAllowance` returns `allowed: used <
-  limit` — a **hard refusal** at the cap, with the counter reading *"4 of 4
-  videos this week — resets Monday."* So *"never block mid-task, allow the
+  limit` — a **hard refusal** at the cap, with the counter **rendering** "4 of 4 videos this week — resets Monday" — a
+**derivation, not a quotation**: `counterLabel` (`allowance.ts:121`) plus
+`counterLines` (`:144`) at `video: 4`. The file's own examples still use the
+**stale 8-cap** (`:114`, `:116`) So *"never block mid-task, allow the
   overage"* is a **change to shipped behaviour, not a description of it**, and
   the honest answer to the SMB gate's *"does overage cost money?"* is:
   **today there is no overage at all — you are blocked until Monday.**
-- **"Show usage, not a remaining balance" would be a REGRESSION.** The shipped
-  `counterLabel` already renders *"3 of 4 videos this week"* and
+- **"Show usage, not a remaining balance" would be a REGRESSION.** The shipped `counterLabel` already renders "3 of 4 videos this week" — again
+a **derivation** from `allowance.ts:121` at `video: 4`, not a string in the
+file (its example reads `3 of 8`, `:114`) and
   `AllowanceVerdict` carries `remaining`. The SMB gate asked for both and
   rejected hiding the balance in the sharpest terms in either ledger:
   *"rationing is how I don't get a surprise… you've decided to hide the number
   that protects me because you'd rather I use more."* **Recommend to Phin:
   keep showing both. Rationing is this buyer's budgeting, not a bug.**
 - **No expiry inside a paid period** — cheap, buyer-visible, and genuinely
-  differentiated (A34: Holo's credits expire at cycle end, top-ups at 90 days;
+  differentiated (`snapshots/2026-09-03-holo-primary.md` §7.1 — **A34's row does not carry the
+cycle-end/top-up detail**, round-3 gate: Holo's credits expire at cycle end,
+top-ups at 90 days;
   Viktor rolls over one month). **Recommend Phin rule it.**
 
 `allowance.ts` also carries a law worth quoting into the copy rules:
@@ -741,14 +819,18 @@ The chief carried, THIRD-PARTY from two direct competitors' blogs:
 **Three of four hold. The fourth is off by 2× in the anchor a buyer sees.**
 
 **Corrected at gate r1:** the draft said *"the only plan card the page prints
-is $100/month."* **The page prints three cards** — Free `$0/month`, Team
+is $100/month."* **(A37 — the Viktor pricing model; cited by row ID per law 4, round-3 gate.)**
+**The page prints three cards** — Free `$0/month`, Team
 `$100/month` for `40,000 credits monthly`, Enterprise `Custom`. **Team is the
 only priced, purchasable card**, and 40,000 is the **client-side listbox's
 default**; other bundles are `NOT OBSERVED`. **The draft converted an
 unobserved listbox into a non-existent product line**, in the section
 celebrating reading OBSERVED rows correctly.
 
-**Also corrected:** *"`20,000` appears once."* It appears once as `20,000` (an
+**Also corrected:** *"`20,000` appears once."* **It now appears TWICE** as `20,000` in the
+retained text (round-3 gate) — the visible FAQ heading and the same question
+inside the §1a JSON-LD amendment, one question duplicated by the repair —
+and once (an
 unpriced FAQ question) and again as `20K` in the FAQ answer *"Most solo users
 find 20K–40K plenty for a month"* — the line §5.3 then leans on. **Neither
 carries a price**, which was the point; the count was wrong.
@@ -758,9 +840,13 @@ and both footer CTAs. Both figures imply $2.50/1,000.
 
 ### 5.2 The model, as printed
 
-No seats. Rollover one month; free and bonus credits never expire. **No
-feature tiering at all** — *"The only difference is how many credits you
-get."* **Everything metered**, including scheduled automations. Task costs
+No seats. Rollover one month; free and bonus credits never expire. **They CLAIM no feature tiering** — *"The only difference is how many credits
+you get."* **Their own plan cards contradict it** (round-3 gate): Team adds
+`Top up on demand when a big project hits`, `Auto-topups with monthly spend
+cap`, `Shared across your whole workspace`; Enterprise adds `Per-user spend
+cap`, `Volume credit pricing with discounts`, `Invoicing and custom billing
+terms`. **Read it as their positioning, not as an observed property** — and
+anything §5.3 imports from it imports a claim, not a fact. **Everything metered**, including scheduled automations. Task costs
 published: quick 100–300, complex 500–1,500, projects 2,000–5,000. Free tier:
 *"up to $100 in free credits"*, *"No credit card, no sales call."*
 
@@ -915,6 +1001,24 @@ my email for it."*
     can leave the two biggest days empty. **And the file never states whether
     top-ups exist today**, while §4.3 names them as the pressure valve. Both
     are product questions for Phin.
+19. **ENTRY PRICING IS UNRESOLVED.** $29 is refused on A39; **$59 is not
+    established either.** A9 is DERIVED, A21 is PROJECTED, and no OBSERVED
+    per-unit cost exists until item 24. §4.1 is a **hold**, not a defence.
+    *(Round-3 gate: this — the most consequential open item of shift 14 —
+    was disclosed only inside a parenthetical in a sub-point and appeared
+    nowhere in this floor. A finding buried in a parenthetical is disclosed
+    to the auditor, not to the reader.)*
+20. **`channel-readiness.md`, cited as "the authority" for §3.1, does not
+    exist** in the build repo. §3.1's grades are re-anchored to code receipts
+    that open (5 of 7 corroborated); **the Reddit grade is now NOT CHECKED**.
+21. **A37 and A38 are never cited by row ID** anywhere in this file, though
+    every Viktor figure it states lives in them. The file routes around the
+    truth table to the snapshot — law-4 form defect, flagged not yet fixed.
+22. **Viktor's "no feature tiering at all" is the SELLER'S claim, not an
+    observed property** — their own plan cards add top-ups, spend caps,
+    volume pricing and invoicing. §5.2 carried it as fact and §5.3 imported
+    it into a recommendation.
+
 18. **The seller has no answer to "how are you different from the $12 one?"**
     Comparison is barred (law 8), cancel-anytime is demoted to reassurance,
     and the refund contrast is unlicensed. A **sales** problem created by
