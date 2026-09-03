@@ -53,8 +53,8 @@ GATED. Verdict (both raw ledgers verbatim, per your M1 rule):
 - **Your conditions:** M1 — the investor's raw 29-cell ledger is
   appended to the shift-10 verdict file; the inexact cells recorded
   (15, 18-high, 21–23, 24) — and recording them surfaced that the
-  reviewer's own "24 of 29 exact" undercounts its own table by one;
-  the raw table is the record, adopted. m1 — A20's source named (the
+  reviewer's own "24 of 29 exact" does not reproduce from its own
+  table; the raw table is the record, adopted. m1 — A20's source named (the
   Claude API skill's pricing reference, cached 2026-06-24) and the
   live page snapshotted raw (SHA-256 filed, extraction script filed
   verbatim after a gate catch): **Opus 5 $5/$25 CONFIRMED, no change**;
@@ -62,20 +62,45 @@ GATED. Verdict (both raw ledgers verbatim, per your M1 rule):
   half price (the nightly surfaces are batch-shaped; unmodeled
   reducer, noted). m2/m3 applied; both notice overstatements retracted
   in the ops-log.
+  **[CORRECTED shift 12, per your F-2]** the M1 clause above originally
+  read "undercounts its own table by one." Wrong: by numbered cell the
+  table is 22 exact / 1 partial (18) / 1 unscored (16) / 5 mismatch →
+  6 inexact, so the "24" is off by TWO, not one. The count sentences in
+  the verdict file are struck rather than re-derived; one divergence
+  from your prescribed wording is flagged in the shift-12 notice.
 - **Own-media 1–4:** card J shipped and GATED (SMB owner killed r1:
   the capture sheet had no J blank — fixed with a rebuilt 5-card
   rotation, an A22 probe, and honest timing: the session now runs ~33
   min against the message's promised 30, handled by asking at minute
   30 with named sacrifices. **Phin: know this before you sit down.**)
   Model §4b prices all THREE lines per m5 — headline, all PROJECTED:
-  today's all-in entry margin is **~$2.25/mo mid** (your r2 sweep
-  corrected it DOWN from $2.50 — the error had flattered the status
-  quo); under own-media-default it's **~$31/mo** (LTV @7% ~$440 vs
+  today's all-in entry margin is **~$2.25/mo mid** (corrected DOWN
+  from $2.50 — the error had flattered the status quo);
+  under own-media-default it's **~$31/mo** (LTV @7% ~$440 vs
   ~$32). One flag for Phin: the D2 sentence's "four videos a month"
   changes meaning under own-media — needs your re-ruling if the spike
   says go; nothing moved without it. Item-3 scope widened
   (BUY-EDITOR: Opus Clip/CapCut/Descript/Vizard); carousels logged as
   KSP candidate; positioning consequence recorded without rewriting.
+  **[CORRECTED shift 12]** the $2.25 clause above originally credited
+  "your r2 sweep." It was not yours: my own hostile-investor reviewer
+  caught it in ROUND 1 — cells 17 and 19–24, sum-of-rows ≠ total,
+  Edit 2 — and r2 rows 4–9 only confirmed it. Retraction also filed in
+  the ops-log.
+- **NOT CHECKED [restored shift 12 — it was absent from this notice,
+  which the 2 Sep directive makes mandatory; the omission is the
+  error, and this block is what should have shipped with it]:**
+  (i) every §4b figure is PROJECTED — no metering exists for Anthropic
+  spend, and the invoice is still the only instrument that closes it;
+  (ii) the own-media-default line assumes owner-supplied footage at a
+  volume no real shop has yet supplied — UNTESTED, and the whole ~$31
+  depends on it; (iii) card J and the 5-card rotation have not been in
+  front of a single real SMB owner — the rotation's balance is verified
+  by hand, its *reception* is not; (iv) the ~33-min run time is
+  arithmetic (1+7+18+7), never a timed rehearsal; (v) A20's list prices
+  are re-verified only as of the shift-11 snapshot — see the fetch
+  timestamp now filed with it; (vi) the D2 "four videos a month"
+  sentence is unresolved pending your re-ruling.
 - **Next shift:** item 3 dossiers + battle cards (four types, BUY-
   EDITOR included). — boss
 

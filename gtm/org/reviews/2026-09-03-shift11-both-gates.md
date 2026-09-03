@@ -225,3 +225,60 @@ quo). Both reviewers' r1 catches are the doctrine working: the SMB
 owner's capture-sheet blank (evidence-of-record integrity) and the
 investor's sum-vs-total + "generous to no vendor" (the xAI-class
 unreceipted market claim, caught before it aged a day).
+
+---
+
+## APPENDIX B (added shift 12, 2026-09-03, per the chief's shift-11 confirm condition 3): the SMB r2 verification, as a line ledger
+
+*The chief's condition, verbatim: "'Both raw ledgers verbatim' is true
+of the investor gate only — the SMB r2 'verified with line citations'
+is condensed to prose. Append the line ledger."*
+
+**Provenance, stated before the table, because it changes what this
+is.** The SMB reviewer's round-2 output was condensed to prose in the
+body above and **its raw text was not retained**; that session is gone.
+So this appendix cannot be, and is not presented as, the reviewer's
+verbatim ledger — filing a reconstruction under the reviewer's name
+would be exactly the simulated validation law 1 bars. What follows is a
+**boss re-verification, performed shift 12 against current file text**,
+with the line citations the record should have carried. It is evidence
+that the eight edits are IN the files; it is **not** a second gate, and
+it does not re-confer the PASS — the PASS stands on the r2 that
+actually happened. The shift-11 notice's "both raw ledgers verbatim"
+was therefore an overstatement; retracted in the ops-log this shift.
+
+Files as of commit-time this shift: `gtm/market/concepts/interview-kit.md`
+(KIT), `concept-cards.md` (CC), `recruit-and-run.md` (RUN).
+
+| # | Edit required (r1) | Cite | Current file text | Verdict |
+|---|---|---|---|---|
+| 1 | Session line: print FIVE cards, not four | KIT L38 | "Print the five cards + this kit's sheets." | PRESENT |
+| 2 | Capture sheet must have a J blank | KIT L192 | "Card scores: M __ K __ T __ R __ J __ · rank order · main-idea-in-their-words per card" | PRESENT — J blank exists |
+| 3 | "Rank the four." -> "Rank the five." | KIT L151 | "After the last card: 'Rank the five. What would the top one have to PROVE for you to pay for it?'" | PRESENT |
+| 4a | A J probe must exist, after the markup | KIT L144-150 | "J's own-media claim (the A22 test - after the markup, never before): 'You circled / crossed "the cutting, the captions" - is that how it actually goes for you? What's on your phone right now?'" | PRESENT - and carries the A22 capture instruction |
+| 4b | Section 5 J hit-feature rule (shipped hitchhikers) | KIT L212-215 | "**J hit-feature rule (shift 11):** J carries two shipped hitchhikers - the safety clause and honest reporting; a J score driven by circles on 'Nothing goes out without your OK' or 'tells you honestly what worked' is NOT the own-media idea winning" | PRESENT |
+| 5 | First breath: "these four coded cards" -> five | CC L35-37 | "Player 2 is an AI marketing employee for small businesses; these five coded cards are the instrument..." | PRESENT - and law 5's first breath still names the category |
+| 6 | TERRITORIES scoped to original four + J | CC L25 | "TERRITORIES: the original four cards (round-1 gate) test the org's live questions..." | PRESENT |
+| 7a | Concept block extended for the fifth card | KIT L102 | "## 2. Concept review (~18 min - was 15 at four cards; extended shift 11 for card J)" | PRESENT |
+| 7b | Honest total + ask-at-30 + named sacrifices + protected steps | KIT L33-38 | "~30 min as promised in the recruit message; with five cards (J added shift 11) the honest running total is ~33 - at the 30-minute mark, ask... if no, the dial-cadence probe and feature batch 2 are the named sacrifices, NEVER the markup ritual, ranking, or folder question." | PRESENT - all four elements |
+| 7c | Same, mirrored in the run sheet | RUN L48-50 | "**Cards (18 min - five cards; at the 30-min mark ask for the extra three minutes, and if they're tight, cut dial-cadence and feature batch 2, never the markup/ranking/folder):**" | PRESENT - consistent with KIT |
+| 7d | Run-sheet arithmetic sums to the stated total | RUN steps 3-5 blocks | 1 + 7 + 18 + 7 = 33 | REPRODUCES - matches KIT's "~33" |
+| 8 | Deferred-F2 bullet updated to five cards | CC L203-207 | "F2's... split is NOT tested by these five - R is trust-led, adjacent but not it, and J is own-media-led, not F2-led either." | PRESENT |
+| nit | Run sheet's J list gains "shot direction" | RUN L72 | "card J's own-media loop (script/beats, shot direction, clip intake, cutting, style captions) is entirely unshipped" | PRESENT - and labelled unshipped |
+| note 1 | FEATURES-PARTIAL rule in BOTH files | KIT L167-170 / RUN L57-60 | KIT: "If batch 2 was cut (the timing sacrifice): top three is across batch 1 only; mark the capture sheet FEATURES-PARTIAL, and aggregate batch-2 rows only over interviews that scored them." RUN: "(If batch 2 was the timing sacrifice: top three across batch 1 only; mark the sheet FEATURES-PARTIAL.)" | PRESENT in both |
+
+**Re-verification result: 13 of 13 anchors present in current file
+text.** No edit was claimed and not shipped.
+
+**One thing this re-verification found that the r2 prose did not — and
+it is a defect, not a confirmation.** KIT L120-123 states the M/K
+rotation skew "evens at n=10." Under the table's own repeat rule
+(L118: "6+ repeat cycle from order 1") it does not: interviews 6-10
+replay orders 1-5, so M-before-K goes 3 to 6 and K-before-M 2 to 4.
+That is 6:4 — the same 3:2 skew, not even. Recomputed this shift; the
+claim is false as written and is corrected in the kit (with the
+mirrored second cycle that actually does even it) as a shift-12 edit,
+re-gated with this shift's batch. Recorded here because it belongs to
+this artifact's gate history: **the r1 note "rotation square verified
+sound by hand" was right about the Latin-square property and wrong
+about the n=10 claim riding alongside it.**

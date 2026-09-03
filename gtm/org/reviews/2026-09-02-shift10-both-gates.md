@@ -10,12 +10,15 @@ disposition at the end.
 
 ## Hostile investor — anthropic-bound + slide 9 + A17–A21 + syncs
 
-**Round 1 — FAIL (7 edits).** 29-cell written ledger, 24 exact: every
+**Round 1 — FAIL (7 edits).** The reviewer's raw 29-cell ledger is
+appended verbatim below (APPENDIX); that table is the record, and no
+count in this paragraph substitutes for it. Reproducing cleanly: every
 per-surface cost in the bound, the stacked $37–76 all-in band, the
 "plausibly underwater at heavy use" verb ("decisively underwater at the
 heavy scenario; 'plausibly' honestly hedges the PROJECTED inputs"), the
 contingency row, refunder COGS, and the cap receipts all reproduced.
-The five failures: the full-OS "~4–13%" attached to the wrong band
+The failures the ledger caught (read them off the table's verdict
+column, not off a total): the full-OS "~4–13%" attached to the wrong band
 (all-in is ~12–25% of $299); slide 9's $250k ceiling carried ~$25k no
 graded row backed (breaking D10's own never-from-a-round-number rule);
 §3a's cells came from an unstated (more conservative) formula and the
@@ -138,15 +141,45 @@ carried a MATCH-on-the-constant with a disclosure failure (the cap
 grows per user turn — edit 6), which was an edit but not a numeric
 mismatch.
 
-Recorded honestly: that is SIX mismatch verdicts against the r1
-summary's "24 of 29 reproduce exactly" (= 5 inexact). The count
-reconciles with the table only if cells 21–23 are scored as one row
-(as the ledger prints them) or if cell 16 (no their-number, no
-verdict) is excluded from the 29. The raw table above is the
-authoritative record; the count was already wrong the moment it was
-made — which is itself the strongest possible case for the chief's
+Recorded honestly, by numbered cell, off the verdict column above:
+**22 clean MATCH** (including cell 25's MATCH-on-the-constant),
+**1 partial** (18 — low MATCH, high MISMATCH), **1 unscored** (16 — no
+their-number, no verdict), and **5 outright MISMATCH** (15, 21, 22, 23,
+24). Inexact = **6**.
+
+No scoring of this table yields the r1 summary's "24 of 29 reproduce
+exactly." Exact-by-cell is 22, so that "24" is off by two. The two
+reconciliation conditions this paragraph once offered do not rescue it
+and are **struck**: under the scoring convention used above — exact
+means a clean MATCH, and the unscored cell is neither exact nor
+inexact — scoring 21–23 as a single row gives 22 clean of 27 rows, and
+excluding cell 16 gives 22 clean of 28 cells. Neither is 24 of 29.
+No further count is offered in their place. The raw table above is the
+authoritative record; every count written around it has been wrong, in
+both directions, which is the strongest possible case for the chief's
 rule. Adopted: **verdict files carry the reviewer's ledger verbatim;
-counts never substitute for it.** All six cells' underlying errors
-were fixed same-shift and verified in the r2 confirmation pass (bands
-re-anchored; ceiling brought to $225k; §3a's formula written out;
-$3.10 parenthetical corrected; cap growth disclosed).
+counts never substitute for it** — and this paragraph stops counting
+here. All six inexact cells' underlying errors were fixed same-shift
+and verified in the r2 confirmation pass (bands re-anchored; ceiling
+brought to $225k; §3a's formula written out; $3.10 parenthetical
+corrected; cap growth disclosed).
+
+*(Corrected shift 12, 2026-09-03, per the chief's shift-11 confirm F-2.
+What this paragraph said before: that six mismatches stood against a
+count that "reconciles with the table only if" 21–23 are one row or 16
+is excluded. Both conditions were arithmetically false, and the "24"
+they were trying to rescue is off by two rather than one. The table
+itself is untouched — it was always the record.)*
+
+*(One divergence from the chief's F-2, flagged to them rather than
+silently adopted — inbox, shift 12. F-2 prescribes writing "23/27" for
+the one-row condition. That figure does not reproduce here: it counts
+the unscored cell 16 as exact, whereas the same note's headline
+(22 exact / 1 partial / 1 unscored / 5 mismatch) and its other figure
+(22 of 28) both treat unscored as neither. Under one convention held
+throughout, the one-row condition is 22 of 27. Rather than print a
+fourth count I cannot reproduce into the file this rule exists to
+protect, the clauses are struck and no replacement count is given. The
+chief's substance — no scoring yields 24/29; the "24" is off by two;
+the table is the record — is adopted in full and is unaffected by the
+divergence.)*

@@ -7,6 +7,11 @@ SHIFT-11 AMENDMENTS (card J, 5-card rotation, timing, J probe,
 FEATURES-PARTIAL rule) GATED separately — skeptical SMB owner: FAIL r1
 (8 edits), PASS-WITH-NOTES r2. Verdict:
 `gtm/org/reviews/2026-09-03-shift11-both-gates.md`.
+SHIFT-12 AMENDMENTS — **IN-GATE** (skeptical SMB owner): the rotation's
+false "evens at n=10" claim corrected (mirrored cycle for interviews
+6-10), the n=5 / drop-one call written for Phin, and the batch-2
+sacrifice's four rows named. These three edits are NOT covered by the
+shift-11 PASS and carry this shift's gate.
 OWNER: GTM boss · shift 7, 2026-09-02
 METHOD: PM deck p20 (grounding → concept review → feature-list review)
 + the org's accumulated gate rulings (F1 symmetry mechanism; axis-f
@@ -117,12 +122,38 @@ across interviews 1–5.)*
 | 3 | K · R · J · M · T |
 | 4 | R · J · M · T · K |
 | 5 | J · M · T · K · R |
-| 6+ | repeat cycle from order 1 |
+| 6 | J · R · K · T · M |
+| 7 | M · J · R · K · T |
+| 8 | T · M · J · R · K |
+| 9 | K · T · M · J · R |
+| 10 | R · K · T · M · J |
+| 11+ | repeat from order 1 |
+
+*(Interviews 6–10 are orders 1–5 MIRRORED — each row read
+right-to-left. **CORRECTED shift 12:** this table previously said
+"6+ repeat cycle from order 1" and the note below claimed the skew
+"evens at n=10." It does not. Replaying orders 1–5 sends M-before-K
+from 3 to 6 and K-before-M from 2 to 4 — 6:4, the identical 3:2 skew,
+just bigger. Recomputed and corrected: mirroring flips every within-
+pair order, so n=10 lands at exactly 5:5. Each card still leads once
+per five-interview cycle.)*
 
 F1 note at five cards: within-pair, M precedes K in interviews 1, 4, 5
 and K precedes M in 2, 3 — a 3:2 imbalance inherent at odd n (same
-class as the gate's old n=5 note); it evens at n=10. Neither M nor K
-is ever introduced with enthusiasm — unchanged.
+class as the gate's old n=5 note). It is BALANCED after interviews 2
+and 4, and at 5:5 after 10 with the mirrored cycle above. Neither M nor
+K is ever introduced with enthusiasm — unchanged.
+
+**If you stop at n=5 (Phin — the chief asked for this call).** Run the
+printed order 1→5 and accept 3:2; the skew is unavoidable at odd n and
+±1 is as good as it gets. **If you can only run FOUR, drop interview
+#4 (R · J · M · T · K).** That is the one cut that both balances M:K
+at 2:2 *and* keeps M, K, T and J each leading exactly once — only R
+loses its lead slot, and R is the trust-framed adjacent card, not the
+head-to-head under test. Dropping #1 or #5 also balances 2:2 but costs
+M or J its lead, and J is the card your own-media directive exists to
+test. Dropping #2 or #3 makes it worse (3:1). Do not re-order the
+survivors: their sequence is what keeps the running skew at ±1.
 
 Per card (deck p20, verbatim ritual): read the card ALOUD, hand it
 over, then: "Write the main idea in your own words at the top. Circle
@@ -168,6 +199,30 @@ pick the top three across all nine. If batch 2 was cut (the timing
 sacrifice): top three is across batch 1 only; mark the capture sheet
 FEATURES-PARTIAL, and aggregate batch-2 rows only over interviews
 that scored them.
+
+**What batch 2 actually costs you, named (Phin — the chief asked which
+rows the sacrifice drops).** Batch 2 is rows 6–9 of the table below,
+in this order: **"Watches your market" · "Replies drafted for you" ·
+"Monday plan email (coming)" · "It asks before you forget (coming)."**
+Read that list before you agree to cut it, because the four are not a
+random tail:
+- Both **(coming)** rows are in it — so cutting batch 2 removes
+  *everything unshipped* from the feature exercise. What survives is a
+  clean read on the shipped product, which is not nothing; but you lose
+  every signal about what to build next.
+- Rows 6 and 9 are the **initiative** rows — the market-watching and
+  the "it asks before you forget" ask-queue. Those are the two that
+  speak to the employee-initiative positioning (backlog 0b gaps 1 and
+  4). Cut batch 2 and the interview says nothing about the dial.
+- The cut therefore lands hardest on exactly the direction Phin ruled
+  in on 31 Aug. It is still the right sacrifice against the markup
+  ritual, the ranking, or the folder question — those are the evidence
+  of record and are protected. But if you are cutting batch 2 in more
+  than one or two interviews, the fix is a longer session, not a
+  smaller table.
+- If you have ~2 minutes but not 7: score rows 6 and 9 only, mark the
+  sheet FEATURES-PARTIAL anyway, and note which two you kept — a
+  partial that names its own gaps aggregates; one that doesn't, can't.
 
 | Feature | What it means | Matters 1–5 | Different 1–5 |
 |---|---|---|---|
