@@ -378,3 +378,90 @@ All 28 edits applied. **Not marked GATED by the boss** — round 3 is
 running with a fresh verifier, and the chief confirms. Residuals the
 boss is NOT closing on its own: whether the residual set is at
 disclosed-floor is exactly the question put to the fresh verifier.
+
+---
+
+## Round 3 — FRESH VERIFIER (per the review budget: "round 3 = fresh verifier")
+
+**VERDICT: PASS-WITH-NOTES.** 3 required edits, all applied.
+
+**Process note, on the record.** Two prior attempts at this round died on
+server-side API errors (HTTP 500, then 529) before producing any
+verdict — neither was a gate result and neither is counted as a round.
+The third attempt ran to completion. It was scoped tighter than the
+first two (six named grep patterns + quote extraction + the twelve cited
+assumption rows) to survive the overload, and it says so in its own
+scope note. **Fan-out disclosure: this verifier ran on Sonnet**, not
+Opus like the two persona reviewers — a deliberate choice after the
+overloads, disclosed because the org discloses fan-out and because a
+verifier's model is part of how much its PASS is worth.
+
+### The verifier's raw output, verbatim
+
+**Scope note:** I did not read any file end-to-end; all findings are grep-derived with line numbers, cross-checked against the ground-truth receipt (`2026-09-03-opusclip-pricing.extracted.txt`, confirmed single-line/20,546 bytes, so `grep -F` containment was used instead of line-numbered matches within that file). I did not check every prose sentence in all 246+325+212+169+183+182+122 lines — I ran the six named greps, quote-extracted from the four named artifacts, ran the two named absence-greps, and diffed figures citing the twelve named assumption rows. Anything outside that footprint is UNSCORED.
+
+| # | Cell | Theirs (quoted) | Mine (grep/derivation) | Verdict |
+|---|---|---|---|---|
+| 1 | CHECK1(a) posting denial | battle-cards.md:179 `NOT CHECKED — …DIRECTIONAL`, :281 `Never say "they don't post."` | `grep -rn "no posting\|don't post\|do not post\|cannot post"` → only these two hits, both already corrected | MATCH |
+| 2 | CHECK1(b) outcome-reading denial | dossier-buy-holo.md:72 "No attribution", dossier-build.md:76 "No attribution", battle-cards.md:256/264, buy-editor-pricing.md:157 | `grep -rni "outcome reading\|can't measure\|cannot measure\|no attribution"` → all six hits scoped to "no *attribution*" or "can't tie to a booking," none deny OpusClip measures anything | MATCH |
+| 3 | CHECK1(c) tier-gating instruction | dossier-buy-editor.md:101, battle-cards.md:288, buy-editor-pricing.md:105 | `grep -rn "never name a tier\|which paid tier\|paid tiers gate"` → all three are retrospective ("was wrong," "was written around a gap that did not exist"), none are live instructions | MATCH |
+| 4 | CHECK1(d) $15–29/annual floor | dossier-buy-editor.md:53,57,120,174,243; battle-cards.md:231,239,258,262; buy-editor-pricing.md:48,56,82,154; assumptions.md:62,67 | `grep -rn '\$15–29\|\$0–29\|14\.50\|14\.5'` → every band cell carries the $14.50 annual floor alongside it | MATCH |
+| 5 | CHECK1(e) Holo band | dossier-buy-holo.md:46, battle-cards.md:170,177, assumptions.md:51 | `grep -rn '12–48\|20–48'` → all instances state $20–48 list with $12–29 explicitly marked promo column; no bare $12–48 survives outside the struck-through correction note in assumptions.md:51 (`~~~$12–48/mo~~`) | MATCH |
+| 6 | CHECK1(f) 4-vendor planning/approval absence | dossier-buy-editor.md:78,129,132; battle-cards.md:250 | `grep -rn "No planning\|no planning\|approval gate"` → every instance scoped "for OpusClip only... NOT CHECKED for Descript, Vizard, CapCut" | MATCH |
+| 7–18 | Quote fidelity, twelve strings (plan strip, Pro/annual block, $174 annual, "Save up to 50%", Starter feature block, `\|6\| social account connections\|Everything in Starter plan, plus:`, both Analytics rows, `Clip title & description & hashtag generator`, the curly-apostrophe `Social scheduler` line, `Post to social media`, `Post to multiple profiles per social platform`, the three Starter/Pro posting strings) | as written in snapshot + dossier | `grep -qF` (and a Python `in` test for the curly `’`) → **all found, byte-exact** | MATCH |
+| 19 | Quote: assumptions.md:62 (A25) `` `Pro\|…\|$\|29\| USD\|$\|14.5\| USD\|/mo` `` — note the **`…` ellipsis mid-string** | as shown | `grep -qF` (literal ellipsis-bearing string) against ground truth → **not found**; the true string has no ellipsis — this is a trimmed quote presented with backticks as a verbatim copy | **MISMATCH** |
+| 20 | Quote: assumptions.md:62 `` `$\|174\| billed \|annually` `` | as shown | `grep -qF` → found | MATCH |
+| 21 | CHECK3: `calendar` count in ground truth | claimed "zero occurrences" | `grep -o -i "calendar" $GT \| wc -l` → 0 | MATCH |
+| 22 | CHECK3: `approv` count in ground truth | claimed "zero occurrences" | `grep -o -i "approv" $GT \| wc -l` → 0 | MATCH |
+| 23 | CHECK3: Descript/Vizard/CapCut absence claims | — | `grep -in "Descript\|Vizard\|CapCut"` across all 7 files, filtered for unhedged assertions → none found; every instance carries "NOT CHECKED / not retained / 502 / UNKNOWN" | MATCH |
+| 24 | CHECK4 A14: 88%/42% | battle-cards.md:41,43; dossier-inaction.md:53,56 | vs assumptions.md:50 (A14) | MATCH |
+| 25 | CHECK4 A30: 63/44/18/8–15%/43%/6hrs | battle-cards.md:42,45; dossier-inaction.md:54,55,57,59 | vs assumptions.md:68 (A30) | MATCH |
+| 26 | CHECK4 A31: $28–55, $50–75, $500–1,200 | battle-cards.md:112,119,321; dossier-build.md:40,101,103,158 | vs assumptions.md:69 (A31) | MATCH |
+| 27 | CHECK4 A32: 46/4/39% | battle-cards.md:114-116; dossier-build.md:42,64 | vs assumptions.md:70 (A32) | MATCH |
+| 28 | CHECK4 A33: Canva $18, ChatGPT $20, Buffer $5, Sprout $199-399, Planable $39-59, HeyOrca $59-149, Gain $99-399, Brand24 $199, Vista Social $79 | dossier-buy-holo.md:161-164; dossier-build.md:39,47,161; battle-cards.md:113 | vs assumptions.md:71 (A33) — all match, including the disclosed Canva $18-vs-$15 contradiction carried consistently in both citing files | MATCH |
+| 29 | CHECK4 A26 grade label: dossier-buy-editor.md:54 states **"A26 — SOURCED-PARTIAL."** as the current grade | as shown | assumptions.md:64 (A26): "**DIRECTIONAL — regraded at gate r2** (was SOURCED-PARTIAL)"; buy-editor-pricing.md:118 confirms the regrade. dossier-buy-editor.md:54 was never updated — it still asserts the retired grade as fact | **MISMATCH** |
+| 30 | CHECK4 A26 grade, secondary citation | battle-cards.md:233 `Descript "from $16/mo" (A26, partial)` | Ambiguous shorthand — could mean "partial receipt" (accurate in spirit) or echo the retired "SOURCED-PARTIAL" label (stale) | PARTIAL |
+| 31 | CHECK4 A25/A25b/A27/A28/A29 | throughout | Values covered in rows 4, 18 — all consistent | MATCH |
+
+**VERDICT: PASS-WITH-NOTES.** *"The six named cell-vs-sentence patterns
+from the round's core diagnosis … are **completely clean** — every one
+of the 13 prior fixes has propagated to every sentence I checked, with
+no surviving uncorrected twin. Quote fidelity is byte-exact in 18 of 19
+tested strings. However, I found the exact same failure class recurring
+in two places the round's checklist didn't name directly: (1)
+`assumptions.md`'s own A25 row uses an ellipsis inside a backtick-quoted
+string presented as copied-from-receipt, which breaks byte-exactness
+under the shift's own 'never retyped or trimmed' rule; (2)
+`dossier-buy-editor.md:54` still asserts A26's retired grade
+'SOURCED-PARTIAL' as current fact … a textbook case of the fix landing
+on the assumptions-table cell and not on the dossier's own cell three
+files away."*
+
+**Disclosed floor? "Not quite."** Verbatim: *"`dossier-buy-editor.md:54`
+presents Descript's $16/mo figure under the grade 'SOURCED-PARTIAL' — a
+stronger epistemic claim than the receipts support … A reader of the
+dossier alone, without cross-checking assumptions.md, would believe this
+number carries more weight than it does. That single cell is the
+residual 'settled but not supported' claim; everything else I checked
+discloses its own uncertainty correctly."*
+
+### Boss disposition — round 3
+
+All three edits applied. The restored A25 quote re-verified byte-exact
+against the retained extraction; A26 now reads DIRECTIONAL at all three
+sites (truth table, snapshot, dossier) plus the battle card's shorthand.
+**With those applied, the verifier's own residual — the single
+"settled but not supported" cell — is closed, and the set is at
+disclosed floor by its stated test.** The boss does not claim that on
+its own authority: the verifier named the condition, and the condition
+is now met on the record.
+
+**Both gates stand at PASS-WITH-NOTES. The five artifacts are marked
+GATED. The chief confirms — not the boss.**
+
+**What the round-3 verifier did NOT check, carried forward:** a full
+prose read of all ~1,439 lines (it grep-targeted six patterns, the
+quotes, and twelve rows); `dossier-inaction.md` and `dossier-buy-holo.md`
+beyond those patterns; internal cross-references and "law N" citations.
+The two persona gates covered those files in r1/r2, but no single
+reviewer has read every line of all five artifacts end to end.

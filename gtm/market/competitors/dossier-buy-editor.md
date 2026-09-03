@@ -51,7 +51,7 @@ The four named:
 | Vendor | Price | Grade / source |
 |---|---|---|
 | OpusClip | Free $0 (60 credits/mo) · **Starter $15/mo** (150 credits/mo, monthly billing only) · **Pro $29/mo monthly — or $14.50/mo on annual ($174/yr, 3,600 credits)** · Business custom | **A25 — SOURCED.** Live page, raw fetch 3 Sep 12:39:48Z, HTTP 200, 612,498 bytes, hash + retained extraction filed. Confirms the landscape report's 20 Aug figures unchanged |
-| Descript | free tier; **"paid plans from $16/month"** | **A26 — SOURCED-PARTIAL.** Descript's own meta description in the fetched bytes. The tier table is client-rendered and was not obtained |
+| Descript | free tier; **"paid plans from $16/month"** | **A26 — DIRECTIONAL** (regraded at gate r2: the meta-description string was recorded at fetch time, but Descript's extraction was NOT retained, so it cannot be re-checked against anything). Descript's own meta description in the fetched bytes. The tier table is client-rendered and was not obtained |
 | CapCut | Standard $9.99 / Pro $19.99 per mo | **A27 — DIRECTIONAL.** Landscape report [VERIFIED] 20 Aug; live re-fetch 3 Sep returned **HTTP 502**. A dated secondary read, not a fresh receipt |
 | Vizard | **UNKNOWN** | **A28 — NOT CHECKED.** Page renders prices in JavaScript and says so; zero price strings in 213,639 fetched bytes. **No price claim about Vizard may be made anywhere** |
 | Category band | ~$0–29/mo **at monthly list** across the three with established prices, with an **established paid floor of $14.50/mo on annual** (A29) | DERIVED from A25/A26/A27 only. Not a market claim |

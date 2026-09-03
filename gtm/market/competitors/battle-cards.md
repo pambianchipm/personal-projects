@@ -230,7 +230,7 @@ be argued back at us, so it is the one written most carefully.
 **Key stats.** OpusClip Free $0 / **Starter $15** / **Pro $29** / Business
 custom (**A25 — live-fetched and hashed 3 Sep**; Pro is **$14.50/mo on annual,
 $174/yr**) · **OpusClip auto-posts from the $15 Starter tier (A25b —
-tier gating confirmed in the retained extraction at the gate)** · Descript "from $16/mo" (A26, partial) ·
+tier gating confirmed in the retained extraction at the gate)** · Descript "from $16/mo" (A26, DIRECTIONAL — extraction not retained) ·
 CapCut $9.99/$19.99 (A27, 20 Aug read; 3 Sep re-fetch 502'd) · **Vizard
 pricing UNKNOWN (A28) — make no price claim about Vizard.**
 
