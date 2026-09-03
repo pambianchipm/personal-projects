@@ -125,7 +125,17 @@ question for Phin in the inbox.*
    and the answer bank.
 
 3. **Competitor dossiers + battle cards** *(Lane B. SCOPE WIDENED
-   shift 11 per the chief's own-media task 3.)* FOUR competitor
+   shift 11 per the chief's own-media task 3.* **BUILT shift 12,
+   2026-09-03 — four dossiers + four battle cards written and
+   IN-GATE: `gtm/market/competitors/{dossier-inaction, dossier-build,
+   dossier-buy-holo, dossier-buy-editor, battle-cards}.md`. Vendor
+   prices receipted by raw fetch where obtainable (A25–A29);
+   snapshot debt opened for Holo, CapCut and Vizard.* **Follow-up
+   for a later shift, NOT done here:** the deck's competitive slide
+   (`raise/deck/skeleton.md` L92–99) still lists four bands —
+   inaction / DIY / tool / freelancer / agency — and does not carry
+   the BUY-EDITOR band this item added. The deck is GATED; changing
+   it needs its own gate, so it is flagged, not edited.)* FOUR competitor
    types, cut for Player 2: INACTION ("we post when we remember" — the real
    #1), BUILD (DIY: Canva + ChatGPT + a nephew), BUY (Holo — import the
    teardown from clinkworthy docs — + the SMM-landscape recon), and
