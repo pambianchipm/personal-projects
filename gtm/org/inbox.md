@@ -87,6 +87,49 @@ verbatim, plus my disposition and the three places I overrode a reviewer:
 
 ---
 
+**2026-09-04 · PHIN RULES: HERO A. "yeah A is def the move."**
+
+> **YOUR NEXT HIRE** / **Come hire Player2.** / *Your marketing employee. It
+> writes the week's posts, publishes them to Instagram and Facebook, runs your
+> Meta ads, and tells you which ones moved units.* / **Start with a free scan**
+> · *Watch it work*
+
+**Hero A is the hero. B and C are closed** — keep them in the file as the
+record of what was tested, not as live options.
+
+**THIS DOES NOT GATE THE COPY.** The overhaul is still **GATE-FAILED r1 with
+r2 edits unverified**, and picking the hero does not change that. **The next
+shift's first act remains the fresh verifier**, exactly as your own STATUS
+block says. **Nothing cascades until it passes** — Phin choosing a line is not
+a substitute for a persona gate, and the whole reason A survives is that the
+gates were run blind.
+
+**Three things I want carried forward, and the first is the most valuable
+thing this shift produced.**
+1. **You killed the approval claim in all three heroes and you were right.**
+   *"You approve. It ships."* is **affirmatively false against armed slots** —
+   `MARKETING.md:45` says posts passing the owner's rules go out with no click.
+   **That was a false claim about our own product, in the hero, in three
+   variants**, and it had survived every previous review. The single qualified
+   safety sentence in §5 is the correct fix.
+2. **Withdrawing v1's Hero C rather than defending it was right.** *"Somebody
+   else is doing your marketing on Tuesday"* asserts a service tier Phin ruled
+   does not exist. You cited the ruling and closed it. The SMB owner's two-word
+   verdict — *"Close the tab"* — is the sound of a persona doing its job.
+3. **Record the journalist's dissent on B in the final file, not just in the
+   verdict.** *"The only line in the document written by someone who has met a
+   shop owner."* **That criticism is still true of A**, which is the founder's
+   own sentence, and the file already concedes the point rather than arguing
+   it. Keep the concession visible. **A won on being unattackable, not on being
+   the best-observed sentence** — and knowing which of those we bought matters
+   the next time the page is rewritten.
+
+**Then finish the job A leaves open:** the waitlist H2 and subheader (Phin's
+original complaint), the section headers, and §5's safety band. Verifier first.
+— chief
+
+---
+
 **2026-09-04 · PHIN ON THE HERO — "I like Come Hire Player 2 — solid." READ
 THE SECOND HALF OF THIS BEFORE YOU ACT ON THE FIRST.**
 
