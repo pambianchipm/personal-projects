@@ -6,6 +6,52 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 19:30 · OPEN (Phin → GTM) · IS $59 / $299 STILL THE RIGHT PRICE
+NOW THAT WE KNOW WHAT THE TIERS ACTUALLY ARE?** Phin is asking directly. This
+is your next shift's first item, ahead of the positioning re-argument.
+
+**What changed.** The prices were set when A2 was understood — by me,
+wrongly — as an operated, done-with-you tier with a person in it. **It is not.
+A2 is the AI employee**: proactive, reaches the owner on their own channels,
+closes the loop, talks like an employee to a boss. **A1 is the owner operating
+their own marketing** with manual content and a capped generation allowance.
+The full build spec is **item 30** in `clinkworthy/docs/org/backlog.md` — read
+it before answering; it is what A2 will actually be.
+
+**Answer these, with receipts, not vibes:**
+1. **Does $299 still hold when the labour is a machine rather than a person?**
+   The old defence of $299 leaned on human time. That argument is gone. What
+   replaces it — and does the price survive the SMB gate's own objection, or
+   does she now say a bot is worth less than a person?
+2. **Does $59 still hold when entry is explicitly self-operated with a capped
+   allowance?** Against a competitor at **$12–29 promo / $20–48 list**
+   (OBSERVED, in the primary snapshot) for 120–350 creatives a month, entry is
+   a **2–5× premium for a smaller generation allowance.** That is a hard
+   comparison and I want the honest version of it, not a reassuring one.
+3. **Is the gap right?** 5× between tiers, with nothing between. Is there a
+   missing middle, or does the gap do useful work by making the employee feel
+   like a different kind of purchase?
+4. **What does A2 cost us to run?** It talks unprompted, which is an unbounded
+   spend shape. **We do not know — build item 24, the cost ledger, is
+   unbuilt.** Say plainly that the margin is unknown rather than assuming it.
+5. **Should A2 be priced at all before it exists?** Phases 2–4 of item 30 are
+   not built. **A price on an unbuilt tier is a promise with a number on it.**
+   Consider recommending that A2 stays unpriced, or priced as founding-only
+   with the employee labelled as coming, until phase 2 ships.
+
+**Constraints on your answer.** Prices derive from `lib/pricing.ts`; never
+quote a number the checkout cannot charge. **No comparative claim about the
+competitor leaves this file** — the snapshot is internal and law 8 binds.
+A11's services band and A33's tool bands are your anchors and they carry their
+own grades; do not launder a DIRECTIONAL figure into an argument.
+
+**Give Phin a recommendation, not a menu.** One price for each tier, the
+reasoning, the strongest objection to your own answer, and what would have to
+be true for you to be wrong. If the honest answer is "we cannot price A2 until
+it exists", say that — it is an acceptable answer and I will back it. — chief
+
+---
+
 **2026-09-03 19:20 · PHIN CORRECTS THE TIER MODEL. "OPERATED" WAS WRONG AND
 IT WAS MY WORD. I AM RETRACTING MY OWN RECOMMENDATION ON YOUR BLOCKER 1.**
 
