@@ -6,6 +6,73 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 20:15 · CREDITS — Phin is considering a credit model, both
+comparables use one, and my recommendation is a SPLIT. Take this into the
+pricing work below; do not treat it as settled.**
+
+Phin: *"Holo also does credits… maybe we should use a crediting system."*
+He is right that both comparables meter. **Holo**: creatives per month (120 /
+350 OBSERVED), with credits that **expire at the end of the billing cycle**,
+top-ups that **expire in 90 days**, and a refund voided by **a single
+generation**. **Viktor** (THIRD-PARTY, UNVERIFIED — two of the sources are
+direct competitors' blogs, snapshot it before use): credit-based, **no per-seat
+fee**, entry around **$50/mo for 20k credits**, credits mapped to model usage.
+
+**THE CASE FOR IS REAL AND I AM NOT DISMISSING IT.** It caps the exposure we
+cannot currently see (`ENTRY_WEEKLY_ALLOWANCE` has `image: null` — **uncapped**
+image generation on the cheapest tier); it is the model this category's buyers
+already understand; it aligns price with a genuinely variable COGS; it expands
+revenue without a price rise; and it is the only sane way to bound a tier whose
+employee edits video on request.
+
+**MY RECOMMENDATION: METER THE METAL, NEVER THE MIND.**
+- **Metered:** generation and studio work — images, video, cuts, captions,
+  re-rolls. Real marginal cost, buyers already accept it being counted,
+  top-ups are normal here.
+- **NEVER metered, at any tier:** the employee **thinking, talking, asking,
+  proposing, analysing, or taking an approval.** Unlimited, always.
+
+**Three reasons, and the first is the one that decides it.**
+1. **Credits fight the hiring frame head-on.** *"Come hire Player 2"* and
+   *"you have 340 credits left"* are opposite emotional registers. **The moment
+   an owner hesitates before asking their employee a question, we have broken
+   the thing we sold them.** You do not meter a colleague. A competitor can
+   meter freely because their product **is** generation — the count is the
+   value. Ours is judgement, and metering judgement is perverse.
+2. **It would punish exactly the behaviour the product depends on.** Our loop
+   needs volume of attempts — best-of-N generation, proactive proposals, the
+   employee asking *"how did the discount do?"* If each of those spends a
+   credit, the owner rations the product and **the loop starves.** The
+   questions are our attribution mechanism; charging for them is charging the
+   customer to give us data.
+3. **The ugly mechanics of credit systems are downstream of the model, and we
+   just built a position on honesty.** Expiring credits, a refund voided by one
+   generation, top-ups that die in 90 days — that is the worst part of the
+   competitor's product and it is not incidental, it is what metering pressures
+   you into. **Adopt the shape and we inherit the pressure.** If we meter
+   generation, say now that our credits do not expire within a paid period,
+   and hold it.
+
+**And a constraint on timing that is not negotiable: we cannot set credit
+NUMBERS yet.** A credit is a promise about a unit cost, and **build item 24 —
+the cost ledger — is unbuilt.** Nobody in this org can state what one image or
+one video costs us. **Decide the SHAPE now; set the NUMBERS after the ledger
+lands.** Anything else is guessing with a decimal point on it.
+
+**Fold into your pricing answer, and answer these too:**
+- Does entry become *"$X + N generations a month"*, and does that change your
+  view of the $29 vs $59 question below?
+- **Does a metered entry tier make the employee tier easier or harder to
+  sell?** My instinct is easier — "the platform is metered, the employee is
+  not" is a clean upgrade story — but argue it.
+- What is the **soft-cap behaviour**? My strong view: **never block an owner
+  mid-task.** Allow the overage, tell them plainly afterwards. A shop owner at
+  11pm hitting a wall is churn, and it is the exact opposite of an employee.
+
+Give Phin one recommendation with the strongest objection to it attached. — chief
+
+---
+
 **2026-09-03 20:00 · THE POSITIONING PHIN WANTS, AND THE THREE THINGS I WOULD
 CHANGE BEFORE IT SHIPS. This supersedes the re-scope below and is your next
 shift's whole job.**
