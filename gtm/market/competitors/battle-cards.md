@@ -6,7 +6,9 @@ salesperson: FAIL r1 → FAIL r2 (narrow) → fresh verifier r3
 PASS-WITH-NOTES. 31 required edits across the three rounds, all applied.
 Verdict (all ledgers verbatim):
 `gtm/org/reviews/2026-09-03-shift12-both-gates.md`.
-The chief confirms GATED → READY-FOR-PHIN; the boss does not self-pass.
+GATED for Cards 1, 2 and 4; the chief confirms those → READY-FOR-PHIN.
+**Card 3 (Holo) is IN-GATE — rebuilt shift 13 from primary evidence and
+NOT cleared for use in a live deal.** The boss does not self-pass.
 OWNER: GTM boss · shift 12, 2026-09-03
 CONFIDENTIAL — internal (law 8). **A battle card is internal sales
 enablement** (PM deck p41, verbatim: *"an internally facing sales
@@ -25,7 +27,7 @@ NUMBERS: by reference from `gtm/raise/model/assumptions.md` (law 4).
 > `gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`. Phin captured
 > `tryholo.ai` pricing and refund text verbatim, the Trustpilot header, and
 > four screenshots of a logged-in `app.tryholo.ai` session. It **outranks
-> every figure in this file.** Do not quote this dossier on any surface until
+> every figure in this file.** Do not quote these cards on any surface until
 > the boss has re-gated it. Three things are now settled:
 >
 > 1. **`NOT CHECKED (ii)` IS CLOSED, AGAINST US. Holo schedules, posts and
@@ -214,8 +216,10 @@ marketing employee is selling a nanny to someone who likes their kids.
 
 **Overview.** A self-serve AI marketing product for ecommerce-shaped small
 brands: point it at a website, it generates ad creatives, social content and
-emails, then **schedules and posts them on a calendar** and reports on what
-happened. Two plans, no human in the service, cancel anytime.
+emails, then **schedules and posts them on a calendar** and carries a **Measuring
+step, an Analytics tab and a Learnings surface** — what those produce is
+**NOT OBSERVED**. Two plans. They market "cancel anytime"; §7.1 gives **no money back on
+cancellation** and credits expire.
 
 **Key stats (A15, A34, A35, A36 — all OBSERVED).** List **$20 / $48**, promo
 **$12 / $29**, two plans only, **120 / 350** creatives per month · third-party
@@ -223,20 +227,24 @@ trust **1,048 Trustpilot reviews at 4.4/5** (their self-printed **4,268** is a
 *brand* count and **4.9/5 is not a third-party rating**) · refund is **7 days,
 void on any credit use including a discarded generation**, 5% fee, refundable
 in **90-day expiring credits**, consumer rights waived, re-assessed **every
-renewal**.
+renewal**, which Holo **may at its option** pay as non-transferable credits
+expiring in 90 days rather than cash (§4.2 says "may"), under a
+**business-use-only** clause in which the buyer waives statutory cooling-off
+rights **"to the extent permitted by law"** (§2.1/2.2).
 
 | | Holo | Player 2 |
 |---|---|---|
-| Price | A15 $20/$48 list, $12/$29 promo | A1 $59 entry · A2 $299 founding rate · A3 $499 standard |
+| Price | A15 $20/$48 list, $12/$29 promo | A1 $59 entry · A2 $299 founding rate · A3 $499 standard **(defined, ungated)** |
 | Schedules and posts | **YES — calendar, kanban, "Scheduled on Fri, Sep 4"** (A36) | Yes, in windows, gated on your click |
 | Measures | **YES — a ladder ending in "Measuring", an Analytics tab, a Learnings surface** (A36) | Claims engine + UTMs at publish |
 | What it counts as success | **Followers** — the only goal metric observed ("0 / 1K Followers") | **Someone who booked or bought, traced to a post**, via UTMs at publish. **Limit, say it out loud: this traces click-throughs. Phone and walk-in bookings do not trace.** For a shop whose demand is mostly phone or door, this wedge is materially weaker — `UNTESTED`, and the first thing Phin's interviews must size |
-| Does a result change what gets made next | **NOT OBSERVED — do not assert either way** | Yes — [Apply] memory, optimizers propose |
-| Human accountable | **None — self-serve, no human anywhere in it** | A2 is done-with-you; a person is answerable |
+| Does a result change what gets made next | **NOT OBSERVED — do not assert either way** | **Partly, and by hand**: a published claim becomes standing memory only when a human presses **[Apply]** (`claims-pure.ts planClaimApply`), and a claim publishes only past n≥5/arm, 7-day maturity, FDR q≤0.05, max 2 per pass (`trends.ts`). Optimizers **propose**; a person applies. **Do not claim this row as a clean win** |
+| Human accountable | **No service tier and no named owner** — two self-serve plans. Support IS sold: a **Support row on their pricing page (Standard email / Priority)**, and a Trustpilot profile **replying to 85% of negative reviews, typically within two weeks.** Whether anything is human-gated: **NOT OBSERVED** | A2 is done-with-you; a person is answerable |
 | Nothing posts or spends without your OK | **NOT OBSERVED on their side** | Yes — ours regardless |
 | Refund if it doesn't work out | **7 days, dead the moment you generate anything** (A34) | Full refund on request, first 30 days (A17) |
+| Replies to comments and DMs | **NOT CHECKED** — no engagement surface in the nav read, and the nav may be incomplete | Yes — engagement drafting ships, gated on your click |
 | Third-party reviews | **1,048 at 4.4/5** | **Zero customers** |
-| Onboarding speed | **Website URL → launch-ready content. Still beats ours** | Slower |
+| Onboarding speed | **Their pricing-page promise** is website URL → launch-ready content; the captured account's own onboarding checklist reads **"Getting started 2/10."** Neither product's first minute has been timed. `UNTESTED` — **do not concede this in a call** | Not timed either |
 
 **Why we win.** (1) **What success is counted as.** Their observed goal metric
 is followers; ours is someone who booked or bought, traced to a post — "and

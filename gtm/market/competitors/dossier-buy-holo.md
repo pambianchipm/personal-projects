@@ -72,8 +72,10 @@ either **false** or **unobserved-and-therefore-unclaimable**.
 
 Holo is a self-serve AI marketing product for ecommerce-shaped small brands.
 Point it at a website; it builds a brand profile and generates ad creatives,
-social content and emails, then schedules and posts them on a calendar and
-reports on what happened. Two plans, no human in the service, cancel anytime.
+social content and emails, then schedules and posts them on a calendar and carries a **Measuring step,
+an Analytics tab and a Learnings surface** — what those produce is **NOT
+OBSERVED**. Two plans, email support. They market "cancel anytime"; §7.1
+gives no money back on cancellation and credits expire.
 
 ## Key stats — all OBSERVED unless marked
 
@@ -87,7 +89,7 @@ reports on what happened. Two plans, no human in the service, cancel anytime.
 | Concurrent generations | 2 / 6 | OBSERVED |
 | **Third-party trust** | **1,048 Trustpilot reviews · 4.4/5** | **A35 — OBSERVED.** Claimed profile, invites customers to review, replies to 85% of negative reviews |
 | **Self-printed counts** | **4,268 brands** · **4.9/5** creator rating · 1.2M+ ads created | **A35 — OBSERVED as self-printed.** These are Holo's numbers about Holo. **4,268 is a BRAND count, not a review count, and 4.9 is not a third-party rating** |
-| **Refund** | **7 calendar days, void if ANY credit was used** — including a test or discarded generation — minus a **5% processing fee**, optionally paid as **credits that expire in 90 days**, assessed per payment **including every renewal**, under a **business-use-only clause waiving statutory cooling-off rights** | **A34 — OBSERVED**, refund policy verbatim, **last updated 2 Sep 2026 — the day before capture** |
+| **Refund** | **7 calendar days, void if ANY credit was used** — including a test or discarded generation — minus a **5% processing fee**, which Holo **may at its option** pay as non-transferable **credits expiring in 90 days** rather than cash (§4.2 says "may"), assessed per payment **including every renewal**, under a **business-use-only clause** in which the buyer waives statutory cooling-off rights **"to the extent permitted by law"** | **A34 — OBSERVED**, refund policy verbatim, **last updated 2 Sep 2026 — the day before capture** |
 | Entity | Holo AI Inc., Dover, Delaware, USA | OBSERVED |
 | Team / funding / headcount | Lithuanian founders, ex-operators of real ecommerce brands; VC-backed | **DIRECTIONAL** — 19 Aug teardown, not re-verified. Amount, headcount, regions **NOT CHECKED** |
 | Brands per account | **NOT CHECKED** | The compare table has **no brand row**. Neither the teardown's "10" nor the "5" in Phin's research is confirmed. Phin's "5 lower / 10 higher, I think" is the **leading candidate**, held at arm's length — a hypothesis that dissolves a contradiction that neatly earns more scrutiny, not less |
@@ -109,8 +111,11 @@ could reach the primary source.
 - **Price.** A15's $12–29 promo against A1's $59 and A2's $299.
 - **Breadth in one subscription** — ads, social, email, SEO sections; Meta,
   Instagram, TikTok, LinkedIn, Snapchat, YouTube, Klaviyo, Mailchimp named.
-- **Onboarding still beats ours.** Point it at a website, get launch-ready
-  content. Our first minute is slower and this remains true.
+- **Onboarding: their pricing page promises** website URL → launch-ready
+  content. Whether their first minute actually beats ours is **`UNTESTED`** —
+  the only receipt is their own ad copy, against a **"Getting started 2/10"**
+  checklist in the same capture. *(The shift-13 draft conceded this outright
+  on their marketing copy; the gate caught it.)*
 - **A named Learnings surface** promising *"what won, what lost and why"* —
   a diagnosis, not just a chart.
 - **1,048 real third-party reviews at 4.4/5** against our zero customers.
@@ -118,21 +123,41 @@ could reach the primary source.
 **Weaknesses — and this section is deliberately short, because most of what
 was here was unearned**
 - **Their refund policy is genuinely hostile, and this is a receipt we hold**
-  (A34): seven days, killed by a single test generation, 5% fee, refundable
-  in expiring credits, consumer rights waived, re-assessed at every renewal.
+  (A34): seven days, killed by a single test generation, 5% fee,
+  **optionally** refundable in expiring credits rather than cash (§4.2 says
+  "may"), consumer rights waived **so far as law allows** — the buyer being
+  contractually a business — re-assessed at every renewal. **Say all five
+  clauses exactly or none: one overstated clause lets them correct you and
+  discount the three that are devastating and true.**
   It is the one thing in this file that is unambiguously bad for their buyer
   and fully evidenced.
 - **The only goal metric observed anywhere is followers** ("0 / 1K
   Followers" on a 4-week goal). Reach, not revenue. Stated as an observation
   about what was on screen — **not** as a claim that they cannot do revenue.
-- Self-serve with **no human anywhere in it**. Not a defect; a shape.
+- Self-serve: **no service tier is sold and no owner is named.** But support
+  IS sold — a **Support row on the pricing page (Standard email / Priority)**
+  — and their Trustpilot profile **replies to 85% of negative reviews,
+  typically within two weeks.** *(Corrected at the salesperson gate r1: this
+  file said "no human anywhere in it" with that Support row sitting in the
+  pricing table it had itself transcribed — the absence rule at the top of
+  this file, broken by this file.)* Not a defect; a shape.
 - Reviewer-reported (19 Aug, **not re-verified**): video "still developing,"
   desktop-only, outputs need editing.
 
 **Opportunities (for us) — all stated as what WE do**
-- **Revenue traced to a post**, not followers. Ours is shipped with file
-  receipts (`console/lib/claims.ts` — registry whitelist, n floors, FDR
-  correction, suppressed claims kept with reasons; UTMs at publish).
+- **Every post carries its own UTMs at publish** — SHIPPED,
+  `console/lib/attribution.ts` (`utm_content` = the post id) — and the
+  nightly claims engine states only findings clearing a registry whitelist,
+  n>=5/arm, 7-day maturity and an FDR gate, keeping suppressed rows with
+  reasons (`trends.ts`, `claims.ts`). **NOT shipped, and never to be
+  implied: automatic revenue ingest.** `db/conversions.ts` marks GA4 ingest
+  *"future"*; the client-facing sentence is *"log sales to trace revenue"*
+  (`claims-pure.ts`). **Today the owner types the sale**, and the recap
+  totals it per channel per month, **not per post**. And
+  `COMPARISON_REGISTRY` holds format, daypart-bucket, boost and cadence-week
+  — **no revenue dimension**: the engine tests engagement. *(Salesperson
+  gate r1: "revenue traced to a post, shipped with file receipts" was a
+  roadmap inside a receipt.)*
   **The limit, stated because the SMB gate found it and it is load-bearing:
   UTMs trace click-throughs. Phone bookings and walk-ins do not trace.** For
   a shop whose demand arrives mostly by phone or door — which is much of the
@@ -141,9 +166,11 @@ was here was unearned**
   thing Phin's interviews must size. Nobody in this org noticed it because
   nobody in this org runs a salon (law 6).
 - **The operated tier.** A2's $299 is a *product shape* — a human
-  accountable, work done for you — not a longer feature list. **Our bet is
-  that Holo cannot copy it by shipping a page** — `UNTESTED`, and it is a
-  bet about buyer perception, not a capability receipt. It is our strongest
+  accountable, work done for you — not a longer feature list. A competitor could price a service tier
+  tomorrow; what they cannot ship in a page is **a named person who answers
+  for the month's results** — and that needs its own receipt, which does not
+  exist yet (no SLA, named owner or response commitment anywhere in the
+  repo). `UNTESTED`, and a bet about buyer perception, not a capability. It is our strongest
   ground *by our own reckoning*, which is not the same as by an owner's.
 - **The gate.** Nothing posts or spends without the owner's click. Ours
   regardless of what they do.
@@ -170,9 +197,15 @@ was here was unearned**
 **Does a Holo learning re-enter Holo's generation, or does it stop at the
 user?**
 
-*"Tell you what won and why"* is a report **to the user**. Our claim is that
-the result re-enters generation **without the user carrying it**. Those are
-different products, and no evidence in hand separates them.
+*"Tell you what won and why"* is a report **to the user**. Our claim, stated
+so it survives contact with our own product: once a finding is applied it
+**persists into every later generation without being re-remembered**
+(`memory-context.ts` feeds every generate/review run) — one click, not a
+monthly act of memory. **And it IS a click: a human presses [Apply]**
+(`claims-pure.ts planClaimApply`). Anyone who says our loop closes itself
+will be shown that button. That is still a different product from a report
+which stops at the screen — but no evidence in hand separates them, and the
+gap is narrower than this org has been saying.
 
 - Phin's hands-on read — *"I don't think it does the feedback loop… I think
   they leave that in the hands of the user"* — is **OWNER-OBSERVED,
@@ -221,7 +254,8 @@ prospect behaviour, though the underlying product facts (A36) are OBSERVED.
 - An ecommerce brand that wants volume across ads, social and email at tool
   price, and is content to run its own judgment over the output.
 - Anyone whose success metric genuinely is reach.
-- A buyer who wants **no human in the loop** and no subscription above ~$50.
+- A buyer content with **email support and no named owner**, and no
+  subscription above ~$50.
 - **Not** a buyer who needs someone accountable, a human-gated spend, or an
   answer to "did it sell." Those are our capabilities, receipted. **That any
   owner segments themselves this way is `UNTESTED` — zero interviews.**
@@ -251,9 +285,11 @@ usually skipped below mid-market, though Vista Social bundles it at $79/mo.
 Services band is **A11** — $500–2,000/mo among SMBs that pay for social at
 all, carrying its origin document's sampling caveat.
 
-The $50–500 band is **not** a vacancy — productized DFY ($99 Social
-$99–389 with 7,200+ clients; Feedbird from $99; 98 Buck Social $98–398) and
-the AI-agent category ($27–199/mo) both sell there. The report's own
+The $50–500 band is **not** a vacancy — productized DFY and the AI-agent
+category both sell there. **Their individual prices are deliberately not
+restated here: none has a row in `assumptions.md`, and law 2/4 says a number
+lives once, in the table** (salesperson gate r1; inherited from shift 12,
+fixed by subtraction). Read them in the landscape report Appendix B §4/§6. The report's own
 conclusion is the one we may state: *"$299 Founding sits exactly in the gap:
 above productized-DFY quality anchor ($99–400 templated), below
 competent-freelancer floor ($750–1,500), with agency-grade capabilities."*
