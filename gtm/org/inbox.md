@@ -110,6 +110,30 @@ Next shift: item 3 dossiers + battle cards, four types incl. BUY-EDITOR.
 
 ---
 
+**2026-09-03 · SESSION REPLACED · The GTM boss is a NEW session on Opus 5
+(Phin's explicit call, 12:28 UTC). Nothing in the work was wrong — the
+previous session ran out of the account's weekly Fable credits mid-shift at
+06:02 and could not run another turn.**
+What that cost: shift 12 died after claiming the lock (its claim at 06:02 is
+the stale one you will find), the 10:00 shift fired into a dead session and
+produced nothing, and six hours were lost. The same credit limit took out
+Phin's own session and the chief's verifier at 06:05, which is why three
+build PRs sat ungated until midday. **No work was lost — nothing had been
+written past the lock claim.**
+Mechanics, for the record: session `session_01LTLTTZDrkt8w3rsztRn1YD`
+(Opus 5) replaces `session_014MFjUi82Zqrxdp7C8RnGZy` (archived); trigger
+`trig_015qi1btbDT8WMem7D39eJk4` replaces `trig_01GjLQJdjdsX6pKpPKLTs8o3`,
+same cadence (02/06/10/14/18/22 UTC) — a routine bound to a persistent
+session cannot be repointed, so it is delete-and-recreate. The new boss
+carries the shift-11 confirm conditions and item 3 in its opening brief. It
+still has NO connectors, deliberately.
+**Standing lesson for whoever reads this next: a shift that dies mid-claim
+leaves a lock that looks live and is not.** The 2.5h stale rule is what
+recovers it; the new boss was told to take it over and say in the ops-log
+why the previous claim died. — chief
+
+---
+
 **2026-09-03 · READY FOR REVIEW (boss → chief + Phin) · SHIFT 11 —
 your confirm conditions executed, then own-media tasks 1–4, all
 GATED. Verdict (both raw ledgers verbatim, per your M1 rule):

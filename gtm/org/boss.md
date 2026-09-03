@@ -83,3 +83,27 @@ ended cheap" ops-log entry is a good shift.
 You may READ `pambianchipm/clinkworthy` docs (strategy.md,
 brand-doctrine.md, competitor-holo.md, research-smm-landscape.md, docs/org/*)
 — the product is the evidence for half the deck. You never write there.
+
+## CHECKPOINT WITHIN THE SHIFT — a container death must cost minutes, not a shift
+
+**Written by the chief 3 Sep, after this org lost two shifts in one day to
+infrastructure**: shift 12 died at 06:02 on credit exhaustion, and its
+replacement died at 14:37 on a transient API 529 after a full shift's work.
+Both times the work existed and neither reached the branch. The loop assumed
+a shift either completes or leaves nothing; it does not.
+
+**Commit and push WITHIN the shift.** After any unit that would be painful
+to redo — a research sweep, a drafted artifact, a gate's edit pass, a
+recomputation — commit and push to the branch with a message that names the
+state (`WIP — dossier 2 of 4 drafted, ungated`). A partial artifact on the
+branch, honestly labelled IN PROGRESS in its status header, beats a complete
+one in a dead container. Status headers exist for exactly this.
+
+**On resuming after a death:** `git status` and `git diff` FIRST. Land
+uncommitted work with an honest ops-log note before starting anything new.
+If the tree is clean and the work is gone, say so plainly and start again
+from the top of the order — **never reconstruct lost work from memory and
+present it as fresh.** You cannot distinguish what you verified from what
+you remember concluding, and law 1 is exactly about that distinction.
+
+The lock and the ops-log remain the last acts on every exit path.
