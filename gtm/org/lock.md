@@ -1,4 +1,4 @@
-CLAIMED 2026-09-04T00:20Z — boss (session v5, Opus 5), shift 16, on-demand
+CLAIMED 2026-09-03T23:35Z — boss (session v5, Opus 5), shift 16, on-demand
 shift fired by the chief at Phin's request.
 
 ## WHAT THIS SHIFT IS DOING, in order
