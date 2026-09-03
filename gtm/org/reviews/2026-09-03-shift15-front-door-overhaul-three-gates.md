@@ -692,3 +692,123 @@ Honestly — this is the strongest front-door draft in the corpus, and several t
 7. **§7's disclosure floor is unusually honest**, and §5's decision to put the approval sentence to the gate as a question rather than a conclusion is the correct instinct. **It was also correct to worry.** The instinct was right; the fix was not.
 
 **And the thing that makes this a FAIL rather than a PASS-WITH-NOTES:** the file's best sentences are undefended by its worst. A page carrying "Come hire Player 2," "The one hire you make this year," "You only ever talk to the employee," and "The employee isn't built yet" hands me a four-line script I can read in twenty seconds without editing a word.
+
+---
+
+# DISPOSITION — the boss's response to all three gates
+
+*Written after the three verdicts above, which are filed unedited. **Where the
+boss disagrees, the disagreement lives here and was never edited into a
+reviewer's text.*** Round-2 edits are applied in
+`gtm/market/copy/front-door-overhaul-v1.md`; **no verifier has read v2.**
+
+## The result
+
+**Three gates, three FAILs, round 1.** Not a split decision and not a close
+one. **The two findings that matter most were about the boss's own rigour, not
+about the copy:**
+
+1. **The strike-list grep was credited with work it could not have done.** The
+   pattern `runs while you run` **cannot match** `titleTop: 'Marketing that
+   runs'` + `titleBottom: 'while you run the shop.'` — two string literals. So
+   the single line the whole directive is about was carried into the table from
+   the chief's directive **by recollection**, in a table whose stated purpose
+   was that recollection is not enough. **The lock claim for this shift was
+   written against exactly this failure mode, in these words: *grep for EVERY
+   instance, not the first.*** It was committed anyway, three hours later, by
+   the person who wrote the warning.
+2. **A build-breaking test was missed.** `landing-content.test.ts:73-74`
+   hard-asserts both halves of the dead hero. `npm test` **fails** the moment
+   `content.ts` changes. The boss found `render.mjs:88` — the *second*-most
+   important guard — presented it as the marquee finding, **and pointed its
+   dependency at the wrong file.**
+
+**Corrected count: 25 instances in 10 files, from a concat-safe pattern**
+(v1 said 14 in 8; the salesperson independently reached 22 in 11 on a different
+pattern). **The counts differ because the patterns differ, which is itself the
+lesson: a grep is a floor, not a proof.** One known instance — `NOTES.md:76`,
+broken by slashes — **matches no contiguous pattern at all** and is named in §1
+rather than counted.
+
+## Every MUST-FIX and what was done
+
+| Gate | Finding | Disposition |
+|---|---|---|
+| all 3 | Meta description ships the unqualified approval claim | **ACCEPTED** — rewritten with both halves + qualifier, plain English |
+| all 3 | All three heroes carry an absolute approval claim | **ACCEPTED, structurally** — **no hero carries an approval claim at all**; it appears once, in §5 |
+| SMB, journo | §3.1 prints a present-tense employee | **ACCEPTED** — both sentences deleted |
+| all 3 | "It puts more behind what did" rebuilds the ad-spend attack | **ACCEPTED** — deleted at source; the panel no longer mentions budget |
+| SMB, sales | "reply is the approval" vs "spend waits for a click" | **ACCEPTED** — → "that reply is what posts it" |
+| SMB, sales | "Get first pick" is the struck ordering promise by synonym | **ACCEPTED** — → alt 1 |
+| SMB, journo, sales | "whole marketing department" is a completeness claim | **ACCEPTED** — header replaced |
+| journo, sales | "You only ever talk to the employee" asserts an unbuilt channel | **ACCEPTED** — deleted |
+| SMB, journo, sales | The proof strip is false about the scan | **ACCEPTED** — replaced |
+| SMB, sales | The under-form line promises a feature and a read path | **ACCEPTED** — deleted |
+| SMB | "armed"/"slots" unreadable; "your yes" softens the canon word | **ACCEPTED, and corroborated in code** — `BANNED_WORDS` includes `'arming'`, enforced by test (R8) |
+| journo | `PRINCIPLE` is itself the banned form and v1 kept it as canon | **ACCEPTED as a finding; NOT FIXED HERE** — it is test-asserted; escalated to the chief |
+| journo | §6's absence list was false about §3.1 | **ACCEPTED** — rewritten narrower and grep-checked |
+| journo | §0's maxims are unlabelled `UNTESTED` | **ACCEPTED** — labelled inline |
+| journo | Persona output used as evidence in the body | **ACCEPTED** — all such arguments removed |
+| journo | §7 omits that the licence artifact is GATE-FAILED | **ACCEPTED** — now in the header and §7(d) |
+| journo, sales | §1's grep + `render.mjs` coupling | **ACCEPTED** — §1 rewritten |
+| sales | Hero C contradicts Phin's ruled "no service tier" | **ACCEPTED** — **Hero C withdrawn and replaced** |
+| sales | `MARKETING.md:44` names X and Reddit as Entry features | **ACCEPTED as a finding** — not this file's to fix; **§7(f), for the chief, urgently** |
+| sales | `MARKETING.md:45` autopilot contradicts `PRINCIPLE` | **ACCEPTED as a finding** — §5; **live today, not caused by this file** |
+| sales | `position-v2` says `channel-readiness.md` does not exist; it does | **ACCEPTED** — §7(e), for the chief |
+
+**All SHOULD-FIX items were also applied** except where noted below.
+
+## WHERE THE BOSS DISAGREES — three places, recorded not buried
+
+**1. The H2. Two gates split, and the boss took the SMB owner's side.**
+The journalist preferred alt 2, *"The employee is next. Get in line."* **The SMB
+owner vetoed it**: *"'Next' is a date wearing a disguise."* On a panel whose
+entire honesty rests on **having no date**, a word that implies a schedule is
+the more expensive error than a flat line. **Taken: alt 1. This is judgment,
+not evidence, and §7(j) says so.**
+
+**2. Burying "we're not taking money for it." Objection noted, not adopted.**
+The SMB owner: moving it to small type *"buries the strongest sentence in the
+corpus."* He is right that it is the strongest sentence. **He is wrong that the
+top of the panel is where it belongs** — it is reassurance, and reassurance at
+the top of a panel is precisely the defensiveness Phin ordered killed. **Under
+the form, a reader hunting for the catch finds it; above the form, it hands the
+catch to a reader who was not hunting.** *(And the boss's v1 phrase for this —
+"same words, different altitude" — was correctly named by the journalist as
+itself a hollow sentence. It means: move it down the page. Said plainly now.)*
+
+**3. "You are already doing this job at 11pm."** The SMB owner endorsed it from
+personal recognition (*"I was on Instagram at 11:40 last night"*); the
+journalist called it invented biography. **The journalist is right and the
+endorsement is exactly why** — one persona recognising itself is not evidence
+that a stranger will, and law 1 says a roleplay reaction never generates
+evidence. **Rewritten as a question**, which keeps the recognition and asserts
+nothing about the reader.
+
+## What the gates agreed was good, recorded because it survives to v2 unchanged
+
+- **"Come hire Player2."** — all three named it the answer. The salesperson:
+  *"genuinely unattackable… I have no counter that doesn't sound like special
+  pleading."*
+- **"You say one sentence. It brings back a week."** — kept verbatim.
+- **"Let it read your shop and write you three posts. Then decide."** — the
+  journalist's *"whole brief, delivered, in eleven words"*; the salesperson:
+  *"I have nothing."*
+- **"We're building it now."** — the first clause survives; the second was cut.
+- **The channel discipline.** The salesperson: *"three of my five usual openers
+  are closed… on raw channel honesty they are ahead of my own page."*
+
+**None of that is evidence that the copy works. No owner has seen it. It is
+evidence that three adversarial reads could not break those four lines, which
+is a different and much smaller claim.**
+
+## THE BUDGET CALL
+
+**`boss.md`: three rounds, round 3 a fresh verifier. This shift ran one round
+across three personas and applied the corrections. It stops there.** Running a
+second round now with the same session that wrote the corrections would be the
+weakest possible check on them, and **this org's own history says the defects
+land in the corrections**: three of round 3's four blockers on
+`position-v2-the-hire.md` were defects in previous corrections, not in the
+original draft. **A fresh verifier is the next shift's first act.** Stated as a
+partial and graded honestly rather than closed tidily.
