@@ -54,7 +54,7 @@ may state.
 | A17 | Entry refund policy + rate | POLICY RULED (Phin D2): full refund on request, first 30 days. RATE: 5–15%/mo-1 scenario band — PROJECTED (no observation, no source; the chief's "DIRECTIONAL until observed" label noted, but no secondhand source was read, so this table grades it PROJECTED). LTV effect: entry LTV × (1−r), and refunders still consume ~1 month COGS — cells in model-v1 §3a | RULED (policy) + PROJECTED (rate) |
 | A18 | Founder salary floor | $150,000/yr | RULED — Phin D10, 2 Sep (CONFIDENTIAL) |
 | A19 | Target runway | 12 months | RULED — Phin D10, 2 Sep (CONFIDENTIAL) |
-| A20 | Claude (Anthropic) list prices | claude-opus-5: $5/MTok in, $25/MTok out (the model the product defaults across agent.ts/pulse.ts); cache hits $0.50/MTok (10× under base input); batch tier $2.50/$12.50 | SOURCED — originally the Claude API skill's model/pricing reference (cached, self-dated 2026-06-24), read 2 Sep; CONFIRMED against the live page 3 Sep, raw fetch + hash: `snapshots/2026-09-03-anthropic-pricing.md` (HTTP 200, 650,327 bytes, SHA-256 2d8de333…). ~~RE-VERIFY flag~~ satisfied 3 Sep by that snapshot |
+| A20 | Claude (Anthropic) list prices | claude-opus-5: $5/MTok in, $25/MTok out (the model the product defaults across agent.ts/pulse.ts); cache hits $0.50/MTok (10× under base input); batch tier $2.50/$12.50 | SOURCED — originally the Claude API skill's model/pricing reference (cached, self-dated 2026-06-24), read 2 Sep; CONFIRMED against the live page 3 Sep, raw fetch + hash: `snapshots/2026-09-03-anthropic-pricing.md`. ~~Fetch A (shift 11, 650,327 bytes, SHA-256 2d8de333…)~~ is retained as history but is NOT the receipt: its fetch time was never recorded and its raw bytes were not retained, so it is unreproducible (chief's shift-11 confirm condition 2). **The receipt is Fetch B, shift 12: 2026-09-03T12:33:46Z, HTTP 200, 650,389 bytes, SHA-256 aff8778e…, with the extracted text retained and hashed beside it** — every cell re-read from that retained text, unchanged. ~~RE-VERIFY flag~~ satisfied 3 Sep by Fetch B. Note (not modelled): the live table now lists Fable 5.1 at $10/$50 above Opus 5 — irrelevant while `claude-opus-5` is pinned in code, relevant the day the default moves |
 | A21 | Reasoning-layer cost per entry customer | ~$12–38/mo scenario band (light–heavy; exact component sums $12.15 / $38.35 — carried here so consumers quote the row, not a fresh recomputation), NO caching assumed — naive upper bound | PROJECTED (a DERIVED stack over PROJECTED token sizes; the caps and list prices are SOURCED — the bound's own words: "the entire bound inherits this grade"); full derivation `anthropic-bound.md`; closing receipt = Phin's Anthropic invoice ÷ active workspaces |
 | A22 | Own-media demand signal | "Cutting + captioning (and scripting) is the #1 time sink; owners prefer human-made/UGC footage over generated" | OBSERVED-INFORMAL — Phin's outside research + "I've talked to a few people" (directive, 2 Sep). A hypothesis card J TESTS, not a receipt; NEVER cite externally as market research; upgrade path = interview capture sheets |
 | A23 | Transcription cost (own-media scenario) | ≤$0.05/min stress ASSUMPTION (A5's named exclusion, still unpriced in the live model) + assumed raw footage 2 min/clip — both PROJECTED, invented | PROJECTED — invented; no vendor chosen, no page read, so whether $0.05/min is a ceiling is UNVERIFIED until a vendor page is read (gate-corrected: "generous to no vendor" was an unreceipted market claim — struck). Exists so the line is priced (chief m5: three lines); closing receipt = vendor choice + raw snapshot at feasibility-spike time |
@@ -89,6 +89,26 @@ may state.
   record lives inside snapshot v2). The 720p price is $0.14, unchanged.
   Doctrine: page text + hash, never a summarizer's answer; re-snapshot
   on any read that feeds a decision.
+
+- **Competitor-price snapshot debt (opened shift 12, 3 Sep):** three
+  rows are short of a fresh first-party receipt and each is flagged
+  where it is used. (a) **A15 (Holo)** — tryholo.ai has never been
+  fetched by this org; the teardown's own "spot-check before quoting to
+  a prospect" instruction stands, and the teardown itself is dated
+  19 Aug and unre-verified. (b) **A27 (CapCut)** — the 3 Sep live
+  re-fetch returned HTTP 502; the row is a 20 Aug secondary read until
+  a fetch succeeds. (c) **A28 (Vizard)** — pricing is client-rendered
+  and was not obtained; the row holds no figure, and no Vizard price
+  may be stated anywhere until one is. Pay (a) before any external
+  Holo comparison; (b) and (c) before either vendor's number appears
+  on a surface Phin sends.
+- **Snapshot doctrine amended shift 12 (from the Anthropic Fetch-A
+  gap):** a raw-HTML SHA-256 is a **fetch-identity** receipt, not a
+  content receipt — the same page hashes differently on every fetch
+  where a nonce is present (Anthropic differed by 62 bytes between two
+  fetches, 3 bytes against a third). Every page snapshot from here
+  records a **UTC fetch time** and retains the **extracted text** in
+  `snapshots/`, which is what a later read is diffed against.
 
 ## Change discipline
 
