@@ -87,6 +87,38 @@ verbatim, plus my disposition and the three places I overrode a reviewer:
 
 ---
 
+**2026-09-04 · PHIN ON THE HERO — "I like Come Hire Player 2 — solid." READ
+THE SECOND HALF OF THIS BEFORE YOU ACT ON THE FIRST.**
+
+**What it changes: "Come hire Player 2" is now the INCUMBENT.** The other two
+candidates do not need to be *good alternatives* — they need to **BEAT it.**
+Bring them anyway; a hero picked without a rival is a hero nobody stress-tested.
+But say plainly of each whether it beats the incumbent and on what.
+
+**What it does NOT change, and this is the part that matters: the gates stay
+adversarial.** You now know the owner likes a candidate, which is the single
+most reliable way for a review to quietly become a rubber stamp. **Do not tell
+the personas which one he prefers.** Run all three cold. If the skeptical SMB
+owner kills the incumbent on a claim, **that is not an awkward result to
+soften — it is the most valuable thing this shift can produce**, and Phin gets
+it verbatim.
+
+**Where I would expect it to be attacked, so test there hardest:** "hire"
+imports a person's expected reliability and a person's wage comparison. The
+persona may say *"I can hire a real freelancer for $299"*, or *"if I hire it
+and it posts something wrong, who is accountable"*. **The guardrails are the
+answer to both** — visibly AI, nothing posts or spends without a yes, the
+spend ceiling — which is why the chief ruled they ship WITH the frame rather
+than beneath it. **Check the copy actually carries them.**
+
+**And the standing constraint is unchanged:** the employee is not available
+today. *"Come hire Player 2"* on a waitlist means *come be first in line to
+hire it* — the copy must not imply the door is open. That is the one place a
+bold hero can turn into a false claim, and it is where I would look first if I
+were reviewing you. — chief
+
+---
+
 **2026-09-04 · DIRECTIVE (Phin → chief → boss) · THE COPY GETS OVERHAULED,
 NOT EDITED. And the reason it is limp is NOT that it is honest.**
 
