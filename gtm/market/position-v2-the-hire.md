@@ -12,7 +12,8 @@ barred sentence came to be sitting in §1.6's hero block until r3 removed it. A 
 competitor's opening line. *(Header added at the salesperson gate r1, which
 was right that the cascade vehicle had no confidentiality line on it.)*
 
-STATUS: **GATE-FAILED (round 3, fresh verifier)** — shift 15, 2026-09-03.
+STATUS: **GATE-FAILED (round 4, confirmation)** — shift 15 continuation,
+2026-09-03.
 Round 3 RAN and **FAILED** with four gate-blocking findings; **all 16 required
 edits are applied below.** The review budget's three rounds are now spent, so
 per the protocol **this capped loop gets a retro** — filed with the verdict.
@@ -26,6 +27,21 @@ itself. The `allowance.ts` custody audit is **complete**: nothing fabricated,
 5 quotations byte-exact, and the three defects (one elided word, two
 derivations typeset as quotations, one mis-pointed enforcement test) are
 fixed with line numbers.
+
+**ROUND 4 (confirmation) — FAIL.** Of round 3's 16 edits: **9 landed
+cleanly, 5 partially or in one place only, 2 not at all**, and **the edit
+pass introduced five new defects, four of them inside the disclosed floor
+itself** (items 14, 15 and 21 asserted the opposite of what the same pass had
+just done; item 18 was orphaned after 22). All are repaired above. Round 4
+also found the Reddit regrade had reached three narrative sites and **none of
+the three that state the grade** — including §6.2's cascade column, which is
+licensed to leave this file — and that r3 had grepped for the barred
+ad-budget *sentence* while a *paraphrase* of it survived in §1.6 carrying the
+same insufficient footnote. **Round 4's own verdict on the pattern:** *"until
+a correction is closed by a grep count rather than by an author's
+recollection, round 5 will find the same shape of defect that rounds 1
+through 4 did."* Every edit in this pass was closed with a grep count, and
+the counts are in the shift's verdict file.
 
 **What round 3 found that three prior rounds did not:**
 1. **§1.6's hero block still shipped a sentence §6.2 bars** — the r2 fix was
@@ -242,10 +258,13 @@ sentence announcing the rule.)*
 > waitlist for early access.*
 
 Three r1 changes inside that block, each from a gate finding:
-- **The ad-budget sentence is new.** The SMB gate stopped on *"nothing gets
-  spent"* and asked *"spent on what? whose money?"* — and the draft never once
-  said the ad budget is the owner's, separate, and set by them. **Verify it is
-  true before it ships.**
+- **The ad-budget sentence was added at r1 and REMOVED at r3.** The SMB gate
+  stopped on *"nothing gets spent"* and asked *"spent on what? whose money?"* —
+  a real question that remains **UNANSWERED**. The answer is **barred by §6.2**
+  until a receipt exists, and **no paraphrase of it may sit in this block**.
+  *(Round 4: r3 grepped for the sentence; nobody grepped for the claim, so this
+  bullet kept restating it — and kept the "verify before it ships" footnote
+  §6.2 had already ruled insufficient.)*
 - **The approval qualifier is new and is not optional.** The truth map records
   the mechanism: *"approval-in-advance via the Calendar's Auto-post toggle…
   the toggle IS the click, in advance."* An unqualified *"nothing goes out
@@ -434,7 +453,7 @@ first-order interview question.
 | Facebook — post/video, metrics, comment replies, Meta ads | **SHIPPED** |
 | Meta ads — spend + results, capped and human-gated | **SHIPPED** |
 | X | **PARTIAL — verify before claiming** |
-| Reddit | **BLOCKED on credentials** |
+| Reddit | **NOT CHECKED** — no credential-blocking receipt opens either way; code lists it under `MEASURED_PLATFORMS` (`channel-data.ts:20`), which is evidence against "blocked" |
 | TikTok | **SHELL ONLY** — no OAuth, no publish, no metrics, no comments |
 | Google Ads | **LABEL ONLY** — nothing talks to Google |
 
@@ -447,8 +466,9 @@ first-order interview question.
 count, any TikTok or Google Ads logo presented as live. **A logo is a claim.**
 
 **Two r1 additions.** (a) **X and Reddit are named nowhere in copy** — X is
-PARTIAL and unverified, Reddit is BLOCKED on credentials; a buyer who asks
-about X gets *"not yet"*, and the seller needs that line in hand. (b) **The
+PARTIAL and unverified, **Reddit is NOT CHECKED** (regraded at the round-3
+gate; round 4 found the regrade had reached the narrative and not the table);
+a buyer who asks about either gets *"not yet"*, and the seller needs that line in hand. (b) **The
 draft's "3 of 5 real" is struck** — it reached 3 by counting Meta ads as a
 platform while the copy sentence names two, and it is a count in a section
 that bars counts. The defensible form is the sentence itself, not arithmetic.
@@ -766,7 +786,8 @@ top-ups at 90 days;
   Viktor rolls over one month). **Recommend Phin rule it.**
 
 `allowance.ts` also carries a law worth quoting into the copy rules:
-**"COUNT, NEVER COST. No function here returns, formats, or accepts a price"**,
+**"COUNT, NEVER COST. No function here returns, formats, or accepts a price"**
+(`allowance.ts:9`, byte-exact),
 enforced by a build-failing test. The meter is a **count**. That is a real
 receipt for *"we never charge you for talking to your employee."*
 
@@ -835,7 +856,8 @@ unpriced FAQ question) and again as `20K` in the FAQ answer *"Most solo users
 find 20K–40K plenty for a month"* — the line §5.3 then leans on. **Neither
 carries a price**, which was the point; the count was wrong.
 
-`$50/mo` remains an OBSERVED *from*-claim in their `<title>`, meta description
+The **$50 from-price** remains an OBSERVED claim in their `<title>`, meta
+description
 and both footer CTAs. Both figures imply $2.50/1,000.
 
 ### 5.2 The model, as printed
@@ -873,7 +895,8 @@ published: quick 100–300, complex 500–1,500, projects 2,000–5,000. Free ti
    **works** — no churn, retention, ARPU or conversion. **We can observe that
    they run it. We cannot observe that it pays.**
 
-**What DOES transfer, and I recommend importing it: no feature tiering on the
+**What I recommend importing — as OUR design choice, not as an observed
+property of theirs (round-4 gate): no feature tiering on the
 metered layer.** Every entry buyer gets every shipped platform capability; the
 only difference is the allowance. A page a one-person business reads in five
 seconds, and it removes the feature-checklist comparison.
@@ -921,7 +944,7 @@ what the r1 version argued for and then did not do.)*
 
 | May say today | **PROHIBITED** |
 |---|---|
-| "Posts, replies and runs ads on Instagram and Facebook today. TikTok and Google Ads are coming." | "Every channel" · "all the features you'd want" · any platform count · TikTok/Google Ads logos as live · **X or Reddit named at all** (X PARTIAL, Reddit BLOCKED) |
+| "Posts, replies and runs ads on Instagram and Facebook today. TikTok and Google Ads are coming." | "Every channel" · "all the features you'd want" · any platform count · TikTok/Google Ads logos as live · **X or Reddit named at all** (X PARTIAL, Reddit **NOT CHECKED**) |
 | "Nothing goes out and nothing gets spent without your approval — per post, or armed in advance for the slots you choose." (SHIPPED, enforced) | The same claim **without** the armed-in-advance qualifier |
 | — | **"Your ad budget is yours, set by you, and separate from the subscription." — NOT SAYABLE UNTIL VERIFIED.** *(Moved out of the ship column at r2. No receipt exists in `assumptions.md` or the objection bank. The SMB gate: "Law 2 is not 'receipts, or a note asking someone to get one.'" It is the best sentence added this shift and it cannot ship on a parenthetical.)* |
 | — | **"Runs your Meta ads" paired with "armed in advance" — NOT SAYABLE as a pair.** *(New hole opened by the r1 honesty edit, found by the salesperson gate r2: we now say we run the ad account AND that approvals can be armed in advance, while §3.2 records the owner-facing spend ceiling as RULED and **UNBUILT**. "They'll run your ad account, you can pre-approve in advance, and the cap hasn't been built" is a true sentence assembled entirely from our own table. Ship the ceiling, or do not pair the claims.)* |
@@ -986,12 +1009,21 @@ my email for it."*
     present all along.
 13. **The round-1 edit pass was committed before both ledgers were on the
     record** (see STATUS). Ordering defect, not a loss.
-14. **Round 3 was not run.** Both personas FAILED round 2. The edits above are
-    applied but **unverified by any reviewer** — the state doctrine law 7
-    exists to forbid shipping from. **This file is not GATED.**
-15. **`allowance.ts` quotations carry no line numbers and no retained
-    excerpt**, and they now carry §4.0, §4.1 and §4.4. Same chain-of-custody
-    class as the Viktor defect, one page later — flagged, not closed.
+14. **Round 3 RAN and FAILED** (fresh verifier, shift 15): four gate-blocking
+    findings, 16 required edits. **Round 4 confirmed 9 landed cleanly, 5
+    partially, 2 not at all**, and found five defects the edit pass itself
+    introduced — four of them in this list. **This file is not GATED.**
+    *(Corrected at the round-4 gate. This item previously read "Round 3 was
+    not run… unverified by any reviewer" — the exact opposite of the file's
+    own STATUS header ten lines up. The edit pass updated the header and left
+    the floor item asserting the reverse.)*
+15. **`allowance.ts` quotations NOW CARRY line numbers** — `:32–34`, `:35–37`,
+    `:44`, `:100`, `:121`, `:144`, added at the round-3 gate. **No retained
+    excerpt exists**, so the custody class is **narrowed, not closed**, and
+    one receipt in §4.4 was uncited until round 4 supplied it.
+    *(Corrected at the round-4 gate. This item previously said the quotations
+    "carry no line numbers" — falsified by the same pass that was supposed to
+    close it.)*
 16. **A15's own row contradicts itself** in `assumptions.md`: the value cell
     says OBSERVED, the grade column still says DIRECTIONAL, *never
     load-bearing alone*. This file leans on the OBSERVED half. **Chief's to
@@ -1001,6 +1033,12 @@ my email for it."*
     can leave the two biggest days empty. **And the file never states whether
     top-ups exist today**, while §4.3 names them as the pressure valve. Both
     are product questions for Phin.
+18. **The seller has no answer to "how are you different from the $12 one?"**
+    Comparison is barred (law 8), cancel-anytime is demoted to reassurance,
+    and the refund contrast is unlicensed. A **sales** problem created by
+    correct **truth** rules — the chief's to resolve, most likely by getting
+    Phin's sign-off on the refund contrast, which both gates independently
+    called our strongest real asset.
 19. **ENTRY PRICING IS UNRESOLVED.** $29 is refused on A39; **$59 is not
     established either.** A9 is DERIVED, A21 is PROJECTED, and no OBSERVED
     per-unit cost exists until item 24. §4.1 is a **hold**, not a defence.
@@ -1011,17 +1049,12 @@ my email for it."*
 20. **`channel-readiness.md`, cited as "the authority" for §3.1, does not
     exist** in the build repo. §3.1's grades are re-anchored to code receipts
     that open (5 of 7 corroborated); **the Reddit grade is now NOT CHECKED**.
-21. **A37 and A38 are never cited by row ID** anywhere in this file, though
-    every Viktor figure it states lives in them. The file routes around the
-    truth table to the snapshot — law-4 form defect, flagged not yet fixed.
+21. **A37 IS now cited by row ID** (§5.1, round-3 gate); **A38 still is not**,
+    though §1.3 and §1.5 state its facts. Half-closed.
+    *(Corrected at the round-4 gate. This item previously said A37 and A38 are
+    "never cited by row ID… flagged not yet fixed" — while the same pass that
+    left it standing had cited A37 forty lines earlier and credited the gate.)*
 22. **Viktor's "no feature tiering at all" is the SELLER'S claim, not an
     observed property** — their own plan cards add top-ups, spend caps,
     volume pricing and invoicing. §5.2 carried it as fact and §5.3 imported
     it into a recommendation.
-
-18. **The seller has no answer to "how are you different from the $12 one?"**
-    Comparison is barred (law 8), cancel-anytime is demoted to reassurance,
-    and the refund contrast is unlicensed. A **sales** problem created by
-    correct **truth** rules — the chief's to resolve, most likely by getting
-    Phin's sign-off on the refund contrast, which both gates independently
-    called our strongest real asset.
