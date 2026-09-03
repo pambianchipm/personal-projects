@@ -120,3 +120,24 @@ in **two** places, not one.
 the front-door boss's territory (`docs/org/frontdoor.md` FILE-NOT-EDIT list).
 **It goes to the chief as a cascade item on its own, and it is true regardless
 of anything Phin ruled this week.**
+
+---
+
+## R6 — "It brings back a week" (§4's How-it-works header) — BACKED, and by the safest possible route
+
+The header *"You say one sentence. It brings back a week."* is not a new claim.
+**`MARKETING.md` COPY v2 already ships "A week planned from one sentence" as an
+Entry feature, tagged TRUTH** against `lib/tier.ts`'s entry capability set.
+The overhaul's header is that ruled line in the active voice.
+
+Traced one level further this shift, so it rests on code and not only on the
+ruling: `console/lib/grok.ts:587` — the generation prompt asks for
+*"4 distinct content-batch briefs for **this week**"*. **A week is the unit the
+generator actually works in.**
+
+**The header states NO COUNT, deliberately.** The shipped unit is 4 batch
+briefs; `MARKETING.md`'s tour prototype draws a **7-day strip**, and A8 rules
+**4 videos a week**. Three different numbers attach to "a week" depending on
+which artifact you read — **a law-4 hazard, flagged for the chief** — and the
+header avoids all of it by naming the period and not the quantity. **Any copy
+that puts a number next to "a week" needs that disagreement settled first.**
