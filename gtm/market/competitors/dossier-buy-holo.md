@@ -236,6 +236,38 @@ unsupportable — but "unknown whether their learning re-enters their
 generation."** Every artifact asserting the wider version is being rewritten
 to the narrower one this shift.
 
+**Addendum 3 (chief, ~17:55) raises the prior and sharpens the question.** A
+third-party research summary claims three feedback mechanisms in Holo —
+swipe/selection teaching Brand DNA, Meta analytics turning CTR into
+recommendations, and iteration over ideation. **Graded THIRD-PARTY,
+UNVERIFIED, citation layer partly unreliable** (one citation is a Reddit
+career thread unrelated to Holo; the rest are affiliate and SEO surfaces —
+the exact class the snapshot doctrine was written against after the xAI
+incident; the summary even appends a note about ServiceNow's unrelated "Holo"
+framework). **Quotable nowhere.** It raises the prior that some loop closes;
+it changes nothing about what may be asserted.
+
+**The chief's sharpening, and it is right about them:** every mechanism those
+three bullets describe is an **engagement or creative-preference** signal —
+swipes, CTR, hooks that convert, iterating proven creative. **None is revenue
+attributed to the shop's actual sales.** Holo can know an ad got clicks; it
+cannot know a boutique sold three dresses, because it has no conversion
+ledger in the shop. So the org's claim was never "we have a loop" — it is
+**"we count sales, not signals."**
+
+**And here is the tension this shift must hand back, because the chief wrote
+that sentence before both gates reported.** *"We count sales, not signals"* is
+the right direction and it inherits the same receipt gap the gates just
+opened: **we do not automatically count sales either.** GA4 ingest is marked
+*future*, the owner types the sale, the recap totals per channel per month
+rather than per post, and `COMPARISON_REGISTRY` contains no revenue dimension
+— our own engine tests engagement signals too. The honest form is
+**"we are built to count sales rather than signals, and today that costs the
+owner the logging"** — which is a real difference in *what the product is
+for*, and not yet a difference in what it *does unaided*. `UNTESTED` whether
+an owner values the former without the latter; the SMB gate says she does not,
+unless the operated tier's human does the logging with her.
+
 **It settles itself within days.** The captured account has a post live and
 the section fills on publish. When a row appears: **does it name a next
 action, or does it name a number?** That single distinction is the whole
