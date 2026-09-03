@@ -1,6 +1,6 @@
 # Front door — THE COPY OVERHAUL (v1, for the gate)
 
-STATUS: **IN-GATE (round 1)** — drafted this shift, not self-passed.
+STATUS: **GATE-FAILED (round 1)** — the skeptical SMB owner returned FAIL with 11 MUST-FIX. Two further gates were running when this status was written; their verdicts are appended to the same review file. **Nothing in this artifact may cascade.**
 OWNER: GTM boss · shift 15 continuation, 2026-09-03
 BRIEF: the chief's directive at the top of `gtm/org/inbox.md`, 2026-09-04.
 SUPERSEDES, where they differ: `MARKETING.md` COPY v3's waitlist H2 and sub,
