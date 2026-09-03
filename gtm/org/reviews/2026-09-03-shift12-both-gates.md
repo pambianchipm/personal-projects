@@ -277,3 +277,104 @@ All 21 edits applied. Batch A and Batch B both stand at
 PASS-WITH-NOTES. **Not marked GATED by the boss** — the chief confirms.
 The r2 note the boss is NOT acting on unilaterally: nothing. Every
 required edit was accepted; none was argued down.
+
+---
+
+## Gate 2 — competitor's salesperson — four dossiers + battle cards
+
+**VERDICT: FAIL (round 1) → FAIL, narrow (round 2).** 15 + 13 = 28
+required edits, all applied. Round 3 sent to a FRESH verifier per the
+review budget.
+
+### Round 1 — FAIL. The reviewer's raw output is long; its ledger is
+reproduced in full below, followed by the boss's independent
+re-derivation of every load-bearing cell BEFORE acceptance.
+
+**Boss re-verification of the r1 findings (done before any edit was
+applied — a reviewer is not taken at face value):**
+
+| Finding | Reviewer's claim | Boss re-derivation | Accepted? |
+|---|---|---|---|
+| A15 band wrong | teardown says $20–48; $12 is the promo column | teardown L7 "a **$20–48/mo** price anchor"; table L29 `Starter \| ~$20 \| ~$12` under headers List / "Promo" (near-permanent); landscape Appendix B L367 "Starter $20 … Scale $48" | YES |
+| Ratio wrong | "sixth to a fifteenth", not "fifth to a twentieth" | 299/48 = 6.23; 299/20 = 14.95; (59−48)/59 = 18.6% | YES |
+| The "$50–500 hole" is false | Appendix B populates it | L378–381 `$99 Social $99/$189/$299/$389, 7,200+ clients`; `Feedbird from $99`; `98 Buck Social $98–398`; L390–393 `Sintra $97`, `Apaya $55–183`, category `$27–199`. Report's own synthesis L425 is a QUALITY gap, not a vacancy | YES |
+| OpusClip ships analytics | our own receipt says so | `grep -F "Analytics\|Clip Analytics\|Real-time trend analysis"` → present, 2 occurrences | YES |
+| Pro is $14.50 annual | in the trimmed block quote | `Pro\|…\|$\|29\| USD\|$\|14.5\| USD\|/mo` and `$\|174\| billed \|annually` → both present | YES |
+| Tier gating was knowable | Starter card names it | `AI clipping with Virality Score\|…\|Auto post to YouTube Shorts, TikTok, IG Reels, or download` → present in the Starter block | YES |
+| Approval band understated | $39–399, not $39–149 | landscape §1.6 L37: Planable $39–59, **Gain $99–399**, HeyOrca $59–149 | YES |
+| 4% is the wrong population | measured on SMMs | §1.3 L34 "46% of **SMMs**"; 39% is at §2.4 L111 / Big Table L131, NOT §1.3 | YES |
+| A3 missing | $499 in none of the five | `grep '\$499\|A3' gtm/market/competitors/` → zero hits | YES |
+| Snapshot quote not verbatim | a `$\|15\| USD\|` pair was deleted | file reads `Starter\|For individual creators\|$\|15\| USD\|$\|15\| USD\|/mo` | YES |
+
+**Nothing was argued down.** Every r1 and r2 finding reproduced.
+
+### Round 2 — FAIL, narrow. The diagnosis, verbatim:
+
+> "Every remaining defect is the same defect wearing a different hat:
+> **the fix landed on the cell and not on the sentence.** You corrected
+> 'reads results' in the clause table and left 'No outcome reading'
+> standing in the SWOT forty-eight lines down. You corrected 'Posts
+> them' to NOT CHECKED and left 'no posting' standing in Why-we-win
+> eight lines down — and Why-we-win is the only part of a battle card a
+> human being memorizes."
+
+And the finding the boss most deserved:
+
+> "You adopted a standing rule that block quotes are copied and never
+> retyped, and in the same commit you retyped `|6| social account
+> connections` into `6 social account connections` — stripping the
+> pipes — in the snapshot, the dossier and the truth table, while the
+> rule's own wording protects block quotes only, which is precisely
+> where the error isn't."
+
+Verified: `grep -F "6 social account connections"` against the retained
+extraction → **0 occurrences**. The receipt reads
+`|6| social account connections|Everything in Starter plan, plus:`.
+Fixed in all three files and the rule widened to cover every quotation,
+block or inline, in this file and in every artifact citing it.
+
+### Standing on the two artifacts the boss edited outside its lane
+
+The r2 reviewer was asked directly whether the A15 downstream sync into
+`positioning.md` (PHIN-APPROVED) and `deck/skeleton.md` (GATED) was the
+boss's call to make. Their answer, accepted in full:
+
+- **positioning.md — right call, over-executed.** What Phin approved is
+  frame-of-reference B; the edited cell sits in the *against* column of
+  frame A, an option he rejected. Correcting the number there does not
+  touch what he approved, and leaving it stale would have put a
+  PHIN-APPROVED file in open law-4 disagreement with the truth table.
+  But the *narrative* appended ("synced shift 12 — was ~$12–48 until…")
+  was new content in an approved artifact and was not what law 4
+  required.
+- **deck/skeleton.md — MISMATCH.** The deck is gated *as a pair with*
+  assumptions.md, so a stale value there fails both — something had to
+  happen. But the slide's real defect was that it restated the value at
+  all, when its own NUMBERS RULE says a figure quotes a row by ID. The
+  minimal, standing-safe fix was **subtraction**: delete the value,
+  keep the ID. Instead the boss wrote in a new value plus three new
+  sentences, one of which declared the deck out of bounds for new
+  content — while being new content added to the deck.
+
+**Both corrected at r3-prep: every restated A15 value outside the truth
+table and the two competitor artifacts that own the claim has been
+DELETED, leaving the bare row ID** (`deck/skeleton.md` ×2,
+`positioning.md`, `ksp-funnel.md`). Those artifacts are now immune to
+the next A15 change. The narrative moved here and to the ops-log.
+
+### Rowless shared facts — the reviewer's own carried error, and the fix
+
+The r2 reviewer flagged that they had scored this eight times in r1 and
+written no edit for it: fifteen figures were stated in two artifacts
+each, under headers promising quotation by reference, with **no row in
+assumptions.md at all**. Rows **A30** (owner cadence + reach stats),
+**A31** (DIY stack cost), **A32** (AI use by SMMs, carrying the
+population caveat), and **A33** (SMM tool-category bands) were opened
+this shift and every citing artifact now quotes them by ID.
+
+### Boss disposition — gate 2
+
+All 28 edits applied. **Not marked GATED by the boss** — round 3 is
+running with a fresh verifier, and the chief confirms. Residuals the
+boss is NOT closing on its own: whether the residual set is at
+disclosed-floor is exactly the question put to the fresh verifier.

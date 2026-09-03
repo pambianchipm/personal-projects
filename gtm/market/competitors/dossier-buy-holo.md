@@ -157,11 +157,11 @@ cadence is unreceipted. Neither goes on an external surface as written.
 ## The wider BUY landscape (context, so the dossier isn't a single vendor)
 
 Player 2 is not priced against Holo alone. The landscape report's
-verified tool bands: schedulers from $5/channel (Buffer) to $199–399 per
-seat (Sprout); approval tools **$39–399** (Planable $39–59 · HeyOrca
-$59–149/calendar · Gain $99–399); dedicated listening starts at $199/mo
-(Brand24) and is **usually skipped below mid-market**, though Vista
-Social bundles listening at $79/mo. *(Corrected at the gate r1: the
+verified tool bands, all now carried in **A33**: schedulers from
+$5/channel (Buffer) to $199–399 per seat (Sprout); approval tools
+**$39–399** (Planable $39–59 · HeyOrca $59–149/calendar · Gain
+$99–399); dedicated listening from $199/mo (Brand24), **usually skipped
+below mid-market**, though Vista Social bundles it at $79/mo. *(Corrected at the gate r1: the
 approval band had been written $39–149 while naming Gain, whose ceiling
 is $399 — a 2.7× understatement pointing the same way as the vacancy
 claim below; and "absent entirely" was an upgrade over the report's own

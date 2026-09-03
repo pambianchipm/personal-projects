@@ -64,8 +64,8 @@ question this snapshot had filed as NOT CHECKED:**
 
 > `AI clipping with Virality Score| | |AI animated captions in 20+ languages| | |Auto post to YouTube Shorts, TikTok, IG Reels, or download| | |Powerful editor| | |1 brand template`
 
-and, on Pro, `Social media scheduler` and `6 social account connections`
-under "Everything in Starter plan, plus." **OpusClip auto-posts from
+and, on Pro, `Social media scheduler` and
+`|6| social account connections|Everything in Starter plan, plus:` **OpusClip auto-posts from
 $15.**
 
 **And the Analytics rows, which refute this org's own "reads results"
@@ -79,7 +79,8 @@ clause:**
 > per month| | |Up to 1080p rendered clips`
 
 So: **Free $0 (60 credits/mo) · Starter $15/mo (150 credits/mo, monthly
-billing only) · Pro $29/mo · Business custom.** This CONFIRMS the
+billing only) · Pro $29/mo monthly or $14.50/mo on annual ($174/yr,
+3,600 credits) · Business custom.** This CONFIRMS the
 landscape report's "Opus free/$15/$29 ✓" (20 Aug) against the live page
 14 days later, no change.
 
@@ -96,12 +97,13 @@ its own words:
 > `Post to social media|Social media scheduler|Post to multiple profiles
 > per social platform|Clip title & description & hashtag generator`
 
-The comparison table shows `-` against the Free column for the posting
-rows, so posting is a paid-tier feature. **NOT CHECKED: exactly which
-paid tiers gate which posting row** — the flattened text does not align
-columns reliably enough to say, and no account was created. Any
-battle-card sentence must therefore say "on its paid plans," never name
-a tier.
+The comparison table's columns do not align reliably in the flattened
+text, so per-row gating is not readable there. **The PLAN CARDS are
+readable and answer it** — see the Starter block above: auto-post ships
+at Starter $15, the full scheduler at Pro. NOT CHECKED: the remaining
+comparison-table posting rows. *(Corrected at r2: this paragraph
+previously said "never name a tier," thirty-five lines from the block
+that names the tier, under one hash.)*
 
 ### Descript — PARTIAL. One first-party figure, no tier table
 
@@ -111,9 +113,12 @@ served in the HTML:
 
 > `Descript pricing starts free, with paid plans from $16/month.`
 
-That is a first-party claim in hashed bytes and is usable as "from
-$16/mo, per Descript's own page 3 Sep." **NOT CHECKED: the plan tiers,
-what each includes, annual-vs-monthly.**
+That is a first-party claim recorded at fetch time. **But its
+extraction was not retained, so it cannot be re-checked against
+anything** — a presence claim with no surviving receipt. A26 is
+regraded **DIRECTIONAL** accordingly (r2). **NOT CHECKED: the plan
+tiers, what each includes, annual-vs-monthly — and the $16 string
+itself, after the fact.**
 
 **A trap this fetch caught, recorded because the next reader will hit
 it.** A naive grep of the raw HTML returns `$12`, `$18`, `$14` as well.
@@ -153,9 +158,20 @@ the **Analytics / Clip Analytics / Real-time trend analysis rows**
 outcome-measurement surface"). Every one of the three points the same
 way: the competitor cheaper and stronger than stated.
 
-**Standing rule adopted from this gate:** a snapshot's block quotes are
-copied, never retyped or trimmed; and a claim of *absence* cites the
-search that found nothing (`grep -c`), or it does not ship.
+**Standing rules adopted from this gate:**
+1. **Every quotation from a receipt — block or inline, in this file and
+   in every artifact that cites it — is copied, never retyped or
+   trimmed.** Widened at r2, which caught the r1 fix retyping
+   `|6| social account connections` (pipes stripped) into three files in
+   the very commit that adopted the narrower "block quotes" version of
+   this rule. The hole in a rule is where the next error goes.
+2. **Block quotes wrapped for width join with NO inserted whitespace**;
+   a quote that cannot be wrapped that way goes on one line.
+3. **A claim of *absence* cites the search that found nothing**
+   (`grep -c`), or it does not ship.
+4. **A claim of *presence* needs a retained receipt too.** Added at r2:
+   the Descript quote below is a presence claim with no retained
+   extraction behind it, and it was graded SOURCED on that basis.
 
 ## Doctrine check
 

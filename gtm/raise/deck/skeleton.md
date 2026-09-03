@@ -90,16 +90,11 @@ appears on this slide until then.
 
 **Must prove:** who gets paid for SMB marketing today and which dollars
 Player 2 redirects. Structure on file (positioning.md §7): inaction (the
-real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (A15, ~$20–48/mo asset
+real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (A15, asset
 factories) → freelancer band (A12, directional) → agency band (A11).
 Player 2's seat: does the WORK of the service bands at software cost —
-A2 $299 vs A11 $500–2,000; tool band A15 ~$20–48/mo list (DIRECTIONAL,
-spot-check flag carried — the slide says so, like A12). **A15 row-change
-sync, shift 12:** the band was ~$12–48 until the competitor gate found
-$12 was Holo's promo column, not its list floor; both citations on this
-slide synced, no other slide content touched. **This slide also still
-omits the BUY-EDITOR band added by backlog item 3 — flagged, not
-written, because the deck is GATED and that is its own gate.** **Receipt
+A2 $299 vs A11 $500–2,000; tool band A15 (DIRECTIONAL,
+spot-check flag carried — the slide says so, like A12). **Receipt
 requirements:** every band price graded on-slide (A11 VERIFIED w/
 caveat, A12 + A15 DIRECTIONAL). `UNTESTED`: the framing.
 

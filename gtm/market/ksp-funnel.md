@@ -129,7 +129,7 @@ test material, and the qualifier travels with any copy-paste of it.*
   one idea) — three separate trust claims are each commodity-adjacent;
   the fused shape is the hardest to counter.
 - **$59 cuts both ways (competitor gate):** the live entry tier is a fact
-  win but brushes the $20–48 tool band (A15, synced shift 12) and can reattach the "tool" folder
+  win but brushes the A15 tool band and can reattach the "tool" folder
   §2 escaped. Merge must decide: does K5 lead with $299-vs-the-band and
   treat $59 as a footnote, or vice versa?
 - "Always visibly AI" clustered nowhere: it reads as philosophy, not a

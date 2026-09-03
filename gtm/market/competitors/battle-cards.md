@@ -38,12 +38,11 @@ deals will come from is `UNTESTED` — this org has zero customers and
 zero interviews. Not apathy — our working hypothesis is a rational
 response to a loop that never closed. `UNTESTED`.
 
-**Key stats.** 42% of SMBs have under 1 hr/day for ALL marketing (A14) ·
-63% feel pressure to post daily, 44% actually post weekly (landscape
-report §2.1, Adobe Express n=433 [VERIFIED, vendor-adjacent]) · 88% of
-TikTok-active owners report burnout (A14, graded a ceiling) · under-10K
-accounts still see 8–15% organic reach (landscape report, Socialinsider
-[VERIFIED]).
+**Key stats.** 42% of SMBs have under 1 hr/day for ALL marketing (**A14**)
+· 63% feel pressure to post daily, 44% actually post weekly (**A30** —
+Adobe Express n=433 [VERIFIED, vendor-adjacent]) · 88% of TikTok-active
+owners report burnout (**A14**, graded a ceiling) · under-10K accounts
+still see 8–15% organic reach (**A30** — Socialinsider [VERIFIED]).
 
 | | Inaction | Player 2 |
 |---|---|---|
@@ -110,13 +109,15 @@ verdict.)*
 someone's spare hours. The most respectable alternative: competent, and
 it works exactly as long as the person running it keeps running it.
 
-**Key stats.** Assembled stack $28–55/mo, ~$50–75 with video · Canva Pro
-$18/mo · CapCut $9.99/$19.99 (A27, re-verify flag) · **46% of professional social
+**Key stats.** Assembled stack $28–55/mo, ~$50–75 with video (**A31**) ·
+Canva Pro $18/mo, ChatGPT Plus $20, Buffer from $5/ch (**A33**) · CapCut
+$9.99/$19.99 (**A27**, re-verify flag) · **46% of professional social
 media managers use ChatGPT for ideation, 4% for calendar planning**
-(39% for copy, from a different section) — **population caveat: this is
+(**A32**; 39% for copy, from a different section) — **population caveat:
 measured on paid SMMs, not on owners; carry the shape, never quote the
-percentage to an owner. `UNTESTED` as applied to our buyer** · true DIY cost including labour $500–1,200/mo (single
-directional source — **do not lead with this**).
+percentage to an owner. `UNTESTED` as applied to our buyer** · true DIY
+cost including labour $500–1,200/mo (**A31** — single directional
+source, **do not lead with this**).
 
 | | Build | Player 2 |
 |---|---|---|
@@ -183,8 +184,10 @@ no free trial; 14-day money-back **voided after 35+ generations**.
 | Email campaigns | Yes | **No — we don't do email** |
 | Invents testimonials/stats | Advertises generating "testimonials" and "statistics-based hooks" | Constitutionally banned; review layer kills it |
 
-**Why we win.** (1) They stop at the asset — no posting, no engagement,
-no attribution, no learning; the owner still has the whole job. (2) The
+**Why we win.** (1) They stop at the asset — no engagement, no
+attribution, no learning; the owner still has the whole job. **Whether
+they post is NOT CHECKED (see the comparison table) — do not say "no
+posting."** (2) The
 quality-pressure difference is a *risk* argument, not a feature argument:
 a tool that manufactures testimonials can put a small business in real
 trouble. (3) Everything they lack is shipped on our side with a code
@@ -199,7 +202,11 @@ channel we don't have.
 (19 Aug) · landscape report.
 
 **Landmines**
-1. "After it generates the month's assets — who posts them, and when?"
+1. "After it generates the month's assets — what happens between the
+   asset and the customer?" *(Rewritten at gate r2: the old form, "who
+   posts them, and when?", presumed an answer we have no receipt for —
+   a landmine that detonates under the person asking it if Holo does
+   post. This form survives either answer.)*
 2. "At the end of the month, how do you find out which of those 200
    pieces brought a customer in?"
 3. "If it writes a customer testimonial you never received — who's
@@ -240,12 +247,16 @@ pricing UNKNOWN (A28) — make no price claim about Vizard.**
 
 **Why we win.** (1) **They start from footage that doesn't exist yet.**
 The owner with nothing shot this week gets nothing from any of them; the
-employee still has a month planned. (2) No approval gate — fine for a
-creator, a real exposure for a business whose owner is answerable for
-what goes out. (3) A virality score is a prediction about a clip; the
-owner's question is whether anyone walked in.
+employee still has a month planned. (2) No approval gate found (zero
+`approv` in OpusClip's retained extraction; NOT CHECKED for the other
+three) — fine for a creator, a real exposure for a business whose owner
+is answerable for what goes out. (3) A virality score is a prediction
+about a clip; the owner's question is whether anyone walked in — and
+note they DO measure clips, so the line is "what did it bring in,"
+never "they can't measure anything."
 
-**Why they win.** (1) $0–29 against $59, for a chore the owner can feel.
+**Why they win.** (1) $0–29 against $59 — and $14.50/mo if they take
+Pro annual — for a chore the owner can feel.
 (2) It's their real footage — maximum authenticity, no generated-content
 penalty. (3) **OpusClip now spans cut AND publish**, compressing two
 steps into one subscription that starts at $15 — and $14.50/mo on Pro
@@ -300,7 +311,10 @@ citing findings, and should know the difference.
   teardown is still current.
 - (iii) CapCut pricing (A27, 502 on re-fetch); Descript's tier table
   (A26); **Vizard entirely** (A28).
-- (iv) Which OpusClip paid tier gates which posting feature (A25b).
+- (iv) **RETIRED at gate r1** — the tier gating was in our own retained
+  extraction: auto-post at Starter $15, full scheduler at Pro. Still
+  NOT CHECKED: the remaining comparison-table posting rows, whose
+  columns the flattened text does not align.
 - (v) All four editors' feature sets rest on **pricing pages only** — no
   account created, no product used. Absence from a pricing page is weak
   evidence of absence from a product.

@@ -54,7 +54,7 @@ The four named:
 | Descript | free tier; **"paid plans from $16/month"** | **A26 — SOURCED-PARTIAL.** Descript's own meta description in the fetched bytes. The tier table is client-rendered and was not obtained |
 | CapCut | Standard $9.99 / Pro $19.99 per mo | **A27 — DIRECTIONAL.** Landscape report [VERIFIED] 20 Aug; live re-fetch 3 Sep returned **HTTP 502**. A dated secondary read, not a fresh receipt |
 | Vizard | **UNKNOWN** | **A28 — NOT CHECKED.** Page renders prices in JavaScript and says so; zero price strings in 213,639 fetched bytes. **No price claim about Vizard may be made anywhere** |
-| Category band | ~$0–29/mo across the three with established prices (A29) | DERIVED from A25/A26/A27 only. Not a market claim |
+| Category band | ~$0–29/mo **at monthly list** across the three with established prices, with an **established paid floor of $14.50/mo on annual** (A29) | DERIVED from A25/A26/A27 only. Not a market claim |
 
 **A fabrication this shift nearly produced, recorded as a warning.** A
 grep of Descript's raw HTML returns `$12`, `$18` and `$14`. They are
@@ -78,7 +78,7 @@ Claim by claim, against the fetched pages:
 | "none of them plans" | **HOLDS for OpusClip only** — zero occurrences of "calendar" in its retained extraction; NOT CHECKED for Descript and Vizard (extractions not retained) and CapCut (no page fetched — 502) | OpusClip's retained extraction lists clipping, captions, reframe, templates, B-roll, scheduler — no planning. NOT CHECKED for Vizard beyond its marketing copy |
 | "writes in your voice" | **HOLDS, narrowly** — OpusClip generates clip titles, descriptions and hashtags, which is writing; none of the four claims a persistent brand-voice model over an account's history | OpusClip retained extraction: `Clip title & description & hashtag generator` |
 | "waits for your click" | **HOLDS for OpusClip only** — zero occurrences of `approv` in its retained extraction | NOT CHECKED for the other three, per the retention gap in NOT CHECKED (vii) |
-| **"posts in windows"** | **FAILS as a differentiator against OpusClip** | **A25b.** Its page sells `Social scheduler — Schedule a month's posts to all platforms in 10 minutes`, `Post to social media`, `Post to multiple profiles per social platform` |
+| **"posts in windows"** | **FAILS as a differentiator against OpusClip** | **A25b.** Its page sells `Social scheduler|Schedule a month’s posts to all platforms in 10 minutes`, `Post to social media`, `Post to multiple profiles per social platform` |
 | "reads results" | **FAILS as an absolute; HOLDS only as "no business-outcome attribution"** | **Corrected at the gate r1 against our own retained extraction**, which ships an Analytics section on the paid tiers: `Analytics\|Clip Analytics\|Real-time trend analysis`. OpusClip measures clip performance. What it does not do is tie a clip to a booking, a cover or a sale — that is the surviving distinction and the only one we may say |
 | "the loop is the difference, not the editor" | **HOLDS, and is the right frame** | It survives precisely because the posting clause was removed from it |
 
@@ -101,8 +101,9 @@ tier question: **CHECKED at the gate r1** — the earlier "NOT CHECKED:
 which paid tier gates which posting row" was wrong, and the answer was
 in our own retained extraction the whole time. The **Starter $15** plan
 card lists `Auto post to YouTube Shorts, TikTok, IG Reels, or download`;
-the **Pro** card lists `Social media scheduler` and `6 social account
-connections` under "Everything in Starter plan, plus." **Assume they
+the **Pro** card lists `Social media scheduler` and
+`|6| social account connections` under "Everything in Starter plan,
+plus:". **Assume they
 post from $15.** Still NOT CHECKED: the remaining comparison-table
 posting rows, whose columns the flattened text does not align.
 
@@ -115,7 +116,8 @@ posting rows, whose columns the flattened text does not align.
   "AI-generated" penalty.
 - Instant, obvious value: one long video becomes ten posts today.
 - OpusClip specifically now spans cut **and** publish, compressing two
-  steps of the workflow into one $15–29 subscription.
+  steps of the workflow into one subscription that starts at $15
+  monthly — $14.50/mo on Pro annual.
 - Enormous distribution and iteration speed (CapCut sits inside the
   TikTok ecosystem).
 
@@ -124,11 +126,18 @@ posting rows, whose columns the flattened text does not align.
   the owner already shot something long. The salon owner with no footage
   gets nothing from any of them. This is the category's structural gap
   and it is where the marketing employee actually lives.
-- No planning. Nothing decides what the month should contain.
-- No approval gate — appropriate for a creator, a real problem for a
-  business where the owner is liable for what goes out.
-- No outcome reading. Virality Score is a *prediction* about a clip, not
-  a measurement of what a business got.
+- No planning surface found — zero occurrences of "calendar" in
+  OpusClip's retained extraction. NOT CHECKED for Descript, Vizard and
+  CapCut (no retained text; CapCut 502'd).
+- No approval gate found — zero occurrences of `approv` in OpusClip's
+  retained extraction; NOT CHECKED for the other three. Appropriate for
+  a creator, a real problem for a business where the owner is liable
+  for what goes out.
+- No **business-outcome** reading. OpusClip ships Clip Analytics and
+  real-time trend analysis on paid tiers (retained extraction; see the
+  clause table) — it measures clips. What none of them measures is what
+  the *business* got. Virality Score is a *prediction* about a clip;
+  that is a separate and weaker point. NOT CHECKED for the other three.
 - No engagement. Comments and DMs are untouched.
 - Credit metering makes cost lumpy and usage-anxious.
 
@@ -162,7 +171,7 @@ posting rows, whose columns the flattened text does not align.
 
 1. **Ten posts out of one video, today.**
 2. **It's your real footage** — nothing generated, nothing fake.
-3. **$0–29/mo.**
+3. **$0–29/mo at monthly list; $14.50/mo is the real paid floor.**
 4. (OpusClip) **and it'll post them for you.**
 
 ## Primary features
@@ -210,7 +219,10 @@ unserious will read as dishonest to an owner who uses one daily.
 - (ii) **CapCut pricing** — 20 Aug secondary read; 3 Sep fetch 502'd
   (A27).
 - (iii) **Descript's tier table** — client-rendered, not obtained (A26).
-- (iv) **Which OpusClip paid tiers gate which posting feature** (A25b).
+- (iv) **RETIRED at the gate r1** — the tier gating WAS in our own
+  retained extraction: auto-post at Starter $15, full scheduler at Pro.
+  Still NOT CHECKED: the remaining comparison-table posting rows, whose
+  columns the flattened text does not align.
 - (v) Feature claims for all four rest on **pricing pages only**. No
   account was created, no product was used. A pricing page is a marketing
   document; absence of a feature there is weak evidence of absence in the

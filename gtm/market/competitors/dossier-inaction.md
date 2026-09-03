@@ -51,12 +51,12 @@ and this org has never spoken to one.
 | Stat | Figure | Grade / source |
 |---|---|---|
 | Time available | 42% of SMBs have **under 1 hour a day for ALL marketing** | A14 — Constant Contact 2025, via the landscape report |
-| Felt pressure | **63%** feel pressure to post daily; the felt ideal is 7×/week | Landscape report §2.1, Adobe Express n=433 [VERIFIED, vendor-adjacent] |
-| Actual cadence | **44% post weekly**, 18% daily | Same source — the gap between 7×/wk ideal and 1×/wk actual IS the market |
+| Felt pressure | **63%** feel pressure to post daily; the felt ideal is 7×/week | **A30** — landscape §2.1, Adobe Express n=433 [VERIFIED, vendor-adjacent] |
+| Actual cadence | **44% post weekly**, 18% daily | **A30** — 44% at §2.1, 18% at §1.7. The gap between 7×/wk ideal and 1×/wk actual IS the market |
 | Burnout | **88%** of TikTok-active owners report posting burnout | A14 — Adobe Express n=433; graded a **ceiling** (vendor survey), and carried as one |
-| Hours spent | 43% spend ~6 hrs/wk on social | Landscape report — figure real but the survey is **stale/undated**; never load-bearing alone |
+| Hours spent | 43% spend ~6 hrs/wk on social | **A30** — figure real but the survey is **stale/undated**; never load-bearing alone |
 | Fade pattern | "part-time job on top of running a gym — most start strong and **fade by week six**" | Landscape report §2.1, fitnessghlsnapshot.com — **anecdotal**, quoted as texture, never as evidence |
-| What it costs them | Reach for accounts under 10K followers is **8–15%**, 3–4× the big-account average | Landscape report, Socialinsider [VERIFIED] — i.e. the small account that *does* post is not shouting into a void |
+| What it costs them | Reach for accounts under 10K followers is **8–15%**, 3–4× the big-account average | **A30** — Socialinsider [VERIFIED]. The small account that *does* post is not shouting into a void |
 | Price of the alternative | **$0/mo** | Definitional |
 
 ## SWOT (of inaction, from the owner's seat)
