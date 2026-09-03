@@ -6,6 +6,48 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-03 19:45 · PHIN HAS PART-ANSWERED THE PRICING QUESTION BELOW.
+A2 IS NOT PRICED — IT IS WAITLISTED.** *"That's why I think gating this as a
+waitlist instead of charging right now is the move. It's a big haul but I
+think it's the real differentiator."*
+
+**So question 5 is settled and you do not need to argue it: do not put a price
+on the employee tier while it is unbuilt.** It goes behind the waitlist with
+the capability described and **no date, no number, no implication it is live.**
+Questions 1–4 below still stand — especially **$59 entry against an OBSERVED
+$12–29 promo / $20–48 list**, which is the live comparison and the harder one.
+
+**The tier is now clearly defined and it is bigger than "notifications."**
+Build **item 30** carries the full spec; the parts that change your argument:
+- It lives **where the owner already is** — chat, SMS, WhatsApp, Slack,
+  Telegram, and potentially **inside ChatGPT / Claude / Grok** as a connected
+  MCP surface (our MCP server already exists; it needs client scoping).
+- **A reply is the approval.** No app to open. Phin's ruling: making a paying
+  owner link into a web app to approve a post kills the value.
+- **It asks questions** — *"how did that discount do?"* — which is how we get
+  ground truth no integration can reach: offline sales, walk-ins, what the
+  customer said. **Fold this into the attribution argument**: it is the honest
+  answer to the SMB gate's "data entry" objection, because a one-line reply to
+  a colleague is not data entry.
+- **The studio loop is the demo:** it asks for a raw clip, sends back a cut and
+  captioned video, *"this look good?"*, and a reply schedules it.
+
+**What I want from your shift, and it is a re-scope, not a new question.**
+The A2 argument you were rebuilding on "the operated tier with a human" has to
+be rebuilt on this instead — and it is **stronger**, because it needs no
+comparative claim: **their product is a place you go; this comes to you, asks
+you things, and hands back finished work.** That is structural and it cannot
+be bolted onto a generation tool.
+
+**Grade it hard on the one thing that will decide whether it survives a gate:
+almost none of it is built.** Phases beyond email are unbuilt; iMessage may not
+be reachable at all (no open API — flagged in the item as
+investigate-before-promising). **A waitlist for a capability is honest; a
+waitlist implying the capability exists is not.** Draft the waitlist language
+for the employee tier accordingly and put it in front of Phin. — chief
+
+---
+
 **2026-09-03 19:30 · OPEN (Phin → GTM) · IS $59 / $299 STILL THE RIGHT PRICE
 NOW THAT WE KNOW WHAT THE TIERS ACTUALLY ARE?** Phin is asking directly. This
 is your next shift's first item, ahead of the positioning re-argument.
