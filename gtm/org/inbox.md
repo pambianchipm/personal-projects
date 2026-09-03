@@ -134,6 +134,55 @@ Next shift: item 3 dossiers + battle cards, four types incl. BUY-EDITOR.
 
 ---
 
+**2026-09-03 · DIRECTIVE (Phin ruled) · THE FUNNEL CHANGES SHAPE: pricing and
+self-serve signup come OFF the landing; an invite-gated WAITLIST goes on.
+This touches the model, the deck, the objection bank and the interview pool.
+Do NOT rebuild anything yet — read this, then take it in the order below
+after your current shift's work.**
+Phin, verbatim: *"instead of displaying our pricing and letting people set up
+accounts, we should have people sign up for a waitlist. That way, we can gate
+alpha users, beta users, etc., because I'm gonna start the social media
+campaigning."* Approved with the chief's amendments: **the price STAYS
+VISIBLE** as "founding rate from $59/mo when you're invited" (a waitlist with
+no price cannot tell him who would pay), one qualifying question at signup,
+and the scan remains the front door. Build org item 22; landing copy is
+`clinkworthy` `docs/design/redesign-2026-09/MARKETING.md` COPY v3.
+
+**Your four tasks, in this order:**
+1. **The funnel algebra gains a stage.** `model-v1.md`'s free-scan funnel
+   goes scan → **waitlist** → invite → paid. The three measurables you named
+   become four, and **invite-acceptance is now the conversion that matters** —
+   a rate nobody has observed. Grade it PROJECTED and say so on the slide.
+   The old scan→paid rate is not this; do not silently reuse it.
+2. **A21/A9 are UNAFFECTED but A-something new is needed:** the cost of a
+   waitlist signup who is never invited (a scan's worth of Anthropic +
+   transcription tokens for someone who may never pay). Cheap per head,
+   unbounded in a campaign — **and Phin is about to drive paid-ish volume at
+   it.** Price it, and say what number of signups makes the scan's own cost a
+   line item worth watching.
+3. **O3 and O7 change, and one of them CLOSES.** "What am I buying today"
+   (O3) softens hard: nobody buys until invited, so the hard version of D2 —
+   a stranger's card charged for something not fully there — **is gone as a
+   live risk.** Say so plainly in the bank; it is the strongest argument for
+   the change. But a NEW objection arrives: *"a waitlist for software that
+   already works is a growth trick"* — assess it honestly, because for us it
+   is true that the product works and true that we are gating it. The honest
+   answer is capacity and care, not scarcity; if the bank cannot make that
+   answer without spin, say THAT.
+4. **The interview pool question is answered by this.** Phin's D1 answer was
+   "a separate list"; the waitlist IS that list, built by the campaign, with
+   a qualifying answer attached to every name. Rewrite the recruit plan
+   accordingly — and note the bias it introduces: a waitlist recruit has
+   already opted in to the pitch, which is NOT the cold SMB owner the concept
+   cards were designed for. **Both pools now exist; say which questions each
+   one can answer.** That distinction is worth more than either pool.
+**Deck consequence:** waitlist size becomes a traction metric, which means
+slide 8 and the ask slide gain a number that grows on its own. Do not put a
+target on it. And **no fabricated counts anywhere** — "join 400 shops" is
+barred until 400 is true. — chief
+
+---
+
 **2026-09-03 · SESSION REPLACED · The GTM boss is a NEW session on Opus 5
 (Phin's explicit call, 12:28 UTC). Nothing in the work was wrong — the
 previous session ran out of the account's weekly Fable credits mid-shift at
