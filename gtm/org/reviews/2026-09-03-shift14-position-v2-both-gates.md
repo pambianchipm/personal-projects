@@ -798,4 +798,353 @@ Left column licenses *"We never charge you for talking to your employee."* Right
 ---
 ---
 
-*ROUND 2 - GATE B (competitor's salesperson): running; appended when it lands.*
+# ROUND 2 — GATE B: COMPETITOR'S SALESPERSON (verbatim)
+
+*Fresh reviewer instance in the same persona.* **READ THIS FIRST — the
+reviewer read a stale tree.** It was launched at 20:47, before commit
+`c3b243c` (20:52) filed the salesperson r1 ledger above. Its finding S0 is
+therefore **TRUE AS OBSERVED and NOW CLOSED**: the ledger is on the record,
+verbatim, and this file is 800+ lines. **The underlying defect it exposes is
+real and is the boss's**: the r1 edit pass was committed at `0fac89a` (20:47)
+while only one ledger was filed, and the artifact header asserted "both
+ledgers verbatim" before that was true. Recorded in the artifact's STATUS
+block and in S7.13.
+
+## VERDICT: **FAIL** (round 2)
+
+## 0. THE FINDING THAT PRECEDES EVERYTHING
+
+*"**The round-1 salesperson ledger was never filed. It is not in the tree.**"*
+302 lines, ending *"GATE B... running at the time of this checkpoint."* Git
+sequence: `a51278f` (*"Salesperson gate still running"*) -> `0fac89a`
+(*"all MUST-FIX applied"*). *"The edit pass shipped without the ledger ever
+landing."* The artifact cites the missing document **nine times** with
+interior coordinates (*"its row 42"*, *"the salesperson found it false in the
+present tense twice"*, *"the salesperson gate's first move in the bake-off"*).
+*"**Every one of those is a citation to a document no second reader can
+open.** This is a file whose entire moral authority is the rule 'a quote whose
+receipt is not retained is not a receipt'... and it is simultaneously
+nine-for-nine in breach of it about its own gate."*
+
+Consequences the reviewer drew: *"I cannot certify 'all round-1 MUST-FIX edits
+applied.' Neither can the author, the chief, or Phin. There is no list."* ...
+*"Under doctrine law 7, a gate whose verdict is not on the record did not
+happen for audit purposes."* ... *"**Their own review file says the competitor
+gate was still running. It never landed. They marked the document
+PASSED-THE-EDIT-PASS anyway and wrote that both ledgers were inside.**"*
+
+**BOSS DISPOSITION: correct as observed, now closed.** The ledger was filed
+verbatim at `c3b243c`, five minutes after the edit pass and before this
+verdict landed. The ordering was wrong and is recorded as a process defect
+against the boss. No content was lost.
+
+## 1. THE EDIT LEDGER
+
+*The reviewer refused to invent the 26 rows it could not read and split the
+table honestly.*
+
+**Table A - the on-record contract (SMB gate, 20 edits): 15 LANDED, 3
+PARTIAL, 2 LANDED-with-a-new-defect, 0 NOT LANDED.** *"On the contract that
+exists, this is a serious, non-cosmetic edit pass. Say that plainly before I
+take the file apart."*
+
+Row 1 (durable hero): **LANDED - but MADE WORSE in one clause.** *"The `Coming:`
+label lands. But the label now contains* ***"where you already text"*** *- the
+exact phrase S2.4 and S6.2 bar as 'iMessage... by paraphrase.' The fix to edit
+1 violates the fix to edit 20's sibling."*
+Row 2 (S6.1): **LANDED.** *"Cleanest edit in the file."*
+Row 3 (false novelty): **LANDED.** *"Verified: holo-primary.md L24, L53."*
+Row 4 (data export): **LANDED.** *"The law-4 direction call is correct and the
+deferral is legitimate - the boss may not edit a gated bank."*
+Rows 5, 6, 7: **LANDED.** Row 7 *"broader than demanded. Correct."*
+Row 8 (allowance): **PARTIAL.** *"The defect is unresolved and passed
+upstream, and S6.2's may-say column licenses no allowance sentence at all. So
+the file both recommends a sentence (S4.1) and declines to license it (S6.2)."*
+Row 9 (hide-the-balance): **LANDED - and it is the best edit in the document.**
+*"The reversal lands and the file went to the code and found that the chief's
+three constraints describe behaviour that does not exist. That is the one
+place this round genuinely got harder to attack."*
+Row 10 (reorder): **LANDED.** *"The concession 'all three are reasons it is
+good for us. None is a reason it is good for her' is the file at its best."*
+Row 11: **LANDED.** *"It overrode the chief's own inbox instruction to test the
+slogan on buyers, disclosing that it did so. Correct."*
+Row 12 (ad spend): **PARTIAL - and it created a new defect.** *"Putting an
+unverified claim in the may-ship column is exactly what S3.2 calls 'the
+fabricated receipt this org attacks other people for.'"*
+Rows 13, 14: **LANDED.**
+Row 15: **LANDED - and improved.** *"Genuine self-caught law-4 collision."*
+Rows 16, 17: **LANDED.** Row 17 *"exceeded - they went past the demand and
+disclosed item 49... Honest. Also a gift to me."*
+Rows 18, 19, 20: **LANDED.**
+
+**Table B - the 26 salesperson-attributed changes, reconstructed from the
+file's own markers; every row `[UNVERIFIABLE-AS-DEMANDED]`.** B1-B26 all
+**LANDED**, with these notes:
+- **B2** *"LANDED, with a false description of itself"* - the header claims the
+  first breath was corrected *"to match `positioning.md`"*, but positioning's
+  is broader (*"plans, writes, posts, replies, and optimizes"*). *"It doesn't
+  match it; it **narrows** it."*
+- **B5** *"verified. `grep -rn 'without hiring one'` returns exactly two hits.
+  Killing the chief's own line for lack of a receipt is the best single act of
+  discipline in the document."*
+- **B10, B11** *"verified twice... This is the file volunteering a structural
+  weakness in its own $299 argument."*
+- **B15** *"verified. Truth map L110-119... Exact."*
+- **B17** *"**LANDED in S6.3 - VIOLATED in S1.6 and S2.2.** The rule is broken
+  twice inside the file that states it. **MADE WORSE relative to the draft**,
+  because the draft did not also carry a rule forbidding it."*
+- **B19** *"Correctly self-caught: a count inside a no-counts rule. Note this
+  **overrode the SMB gate**, which had marked '3 of 5' KEEP. Overriding a gate
+  is allowed; doing it on a receipt, and saying so, is right."*
+- **B20-B22, B24, B25** all *"verified"* / *"exact"*.
+- **B26** *"verified, and it is a tell. Pre-amendment: `20,000` present at
+  L217, `20K` absent. So the count was *right* about the retained text and
+  *wrong* about the page. **That distinction is the whole receipt problem in
+  miniature, and S5.0 does not draw it.**"*
+
+## 2. THE RECEIPT AUDIT, RE-RUN
+
+**CLOSED (10):** the chief's inversion quote; Viktor hire-frame strings; the
+lunch/50/100 anchors; Holo cancel-anytime; Holo refund terms (*"correctly
+UNLICENSED as a claim"*); Holo's done-for-you ad creatives; **truth-map
+citations 4/4 verbatim**; **objection-bank citations 4/4 verbatim**;
+truth-table citations 12/12 resolve; "no card" as to fact.
+
+**OPEN - item L, `allowance.ts`:** *"no retained receipt... first-appearance
+quotations doing load-bearing work, produced in the same shift the author was
+caught with an unretained quote. **This is not a fabrication charge - round 1
+made that mistake and I will not repeat it.** It is a chain-of-custody charge,
+and it is the identical defect one page later."*
+
+### B and C - the charge, the defence, and the new problem
+
+*"**The strings are real. All three.**"* Pre-amendment presence:
+*"Shared across your whole workspace"* - **PRESENT, pricing L86**.
+*"No credit card, no sales call"* - **PRESENT, L61, L72**.
+*"One hire can support every department"* - **ABSENT**.
+
+*"**Round 1's charge was wrong, and worse than wrong - it was lazy.** Two of
+the three strings sat in the file round 1 was given, in plain text, findable
+by one grep. Calling 'shared across your whole workspace' **'the single worst
+row in the document'** when it is on line 86 of the retained text is a gate
+failure, not an author failure. A reviewer who accuses someone of fabricating
+a quotation owes them a grep first. **The org should record that as a reviewer
+defect, because it will recur** - the cost of a false fabrication charge inside
+a receipt-discipline culture is high; it burns the one accusation that is
+supposed to mean something."*
+
+*"**But S5.0's account of it is not accurate, and the inaccuracy runs in the
+author's favour.**"* S5.0 says *"the gate could not see any of them, and that
+is the real failure."* - *"**That is false for two of the three.**... The
+author has taken a reviewer's failure to read the file and reclassified it as
+their own extraction failure - which sounds like admirable self-blame and
+functions as something else. It converts a gate error into an author error, so
+the gate process (which the boss runs) takes no finding."*
+
+*"**And the disclosure understates the defect's real size by a factor of
+three.**"* The reviewer names six further missing load-bearing strings and
+concludes: *"A section that itemises the three quotes the gate happened to
+notice, and leaves the six it didn't as a subordinate clause, is grading its
+own homework. **Self-critical in tone, selective in scope.**"*
+
+**Did the amendment fix the receipt? No. It broke it somewhere new.**
+(1) *"The amendment is well-formed. Credit where due... The two new hashes
+S5.0 quotes match the files on disk exactly. I computed both. That is honest
+work."*
+(2) *"**The certifying document was never updated, so the receipt now fails its
+own verification test.**... anyone who does exactly what the receipt tells them
+to do - hash the retained text, compare to the recorded value - **gets a
+mismatch on both files and must conclude the retained evidence has been
+tampered with.**... The author found that pattern in someone else's artifacts
+twice this shift and did not run the check on their own."*
+(3) *"**'From the same raw bytes' cannot be verified by anyone, because the
+snapshot says the raw bytes were never kept.**... The retained text has been
+edited after the fact from an unretained source, and it is now the *sole*
+surviving receipt for the six load-bearing quotes."*
+
+**Judgement, four parts:** round 1's charge **WRONG**, *"and it should be
+recorded as a reviewer failure"*; the author's factual defence **CORRECT**;
+the author's S5.0 account **PARTLY SELF-SERVING**; the amendment as a fix
+**INCOMPLETE, and it opened a new integrity hole** - *"one of three."*
+
+**BOSS DISPOSITION: all of it accepted, and all three now closed.** The raw
+HTML is retained in-repo and hashes to `4bc28025...` / `4d074e56...`, the
+values in the fetch record, so the recovery is reproducible by anyone; S1's
+extracted hashes are amended in the same commit as a new S1a; and a
+string-by-string audit against `git show 1b601a6` puts the true scope at
+**EIGHT** affected strings - more than the boss's three, more than the
+reviewer's six. S5.0's *"could not see any of them"* is corrected.
+
+## 3. TRUTH-TABLE DIFF, RE-RUN
+
+**19 RESOLVED / 5 STILL MISMATCHED (all five legitimately deferred) / 4 NEWLY
+MISMATCHED.**
+
+The four new: (i) **S4.0 restates the band A39 forbids restating and never
+cites A39.** (ii) **S4.1 mis-cites A5 for $1.40-2.00** - *"$2.00 is A6... And
+the $4.20 figure inside A5 never appears in S4.1 at all: at 30s clips the same
+allowance is $72.8/mo against $59."* (iii) **A15's own row contradicts
+itself** - *"not this file's fault, but this file leans on the disputed half
+without flagging it."* (iv) the first-breath *"to match positioning.md"*
+description.
+
+**On deferral:** *"Four of the five deferrals are clean... **That is not
+passing the buck. That is the correct behaviour of a subordinate artifact
+under a law-4 regime**, and this file does it better than most of the
+corpus."* The unclean one is O3's 4x: *"The file recommends copy that
+contradicts a Phin-receipted line while declining to resolve the
+contradiction... The honest shape is: defer the fix, and do not recommend the
+sentence that depends on it... It is a near miss rather than a dodge."*
+
+## 4. THE BAKE-OFF, REDONE
+
+**4 survive intact, 1 survives transformed and stronger, 1 as a jab, 1 half,
+3 dead.**
+
+**DEAD (4):** *"they think 'you can fire it' is new"* - *"Clean kill; I lose
+it."* **DEAD (5):** the unoccupied-frame claim. **DEAD (6) - "the edit that
+cost me most":** *"They found it before I could use it. That sentence is
+embarrassing for them and expensive for me."*
+
+**SURVIVES (1):** *"They cannot tell you whether their own product makes
+money."* **SURVIVES (2) - "and they made it worse for themselves":** *"They
+wrote 'nearly 5x' into their own strategy document."* **SURVIVES (3):** zero
+of four ship. **SURVIVES (9):** two numbers for what $59 buys. **REBORN
+HARDER (10):** *"the retained evidence file was edited after the fact... so
+their own receipt fails its own verification test today. That is a better move
+than the one it replaces, because it survives a grep."*
+
+**New attacks the r1 edits handed the competitor:**
+**N1** - the may-ship column now ships an unverified claim with a to-do inside
+the cell. **N2** - *"the rule bars the phrase, the property list mandates the
+concept, and the hero uses the phrase. Whoever writes their landing page has
+three instructions and no tiebreak."* **N3 - the sharpest:** *"They will run
+your ad account, they let you pre-approve in advance, and the setting that caps
+what they can spend has not been built. Ask them where the number is."*
+- *"**I could not have made this move against the round-1 draft** - the draft's
+approval claim was unqualified, so it read as tighter, not looser. The honesty
+edit opened the hole."* **N4** - *"the Holo steal"* in a document with a
+cascade route out of the building. **N5** - the missing gate.
+
+## 5. NEW FINDINGS ON NEW MATERIAL
+
+**S2.5:** *"The strongest new section, and it is right."* Two problems: the
+refund promotion is argued and not executed; and quoting the gate's invented
+biography as *"the anchor that actually governs the purchase"* leans on
+roleplay as evidence - *"labelled `UNTESTED` at the end, which saves it, but
+the rhetorical weight exceeds the label."*
+
+**S4.0 - over-claimed four ways:** restates A39's band without citing A39;
+*"comfortable" is an unlabelled judgement* about a band excluding support,
+Stripe and fixed costs; *"the org can say that - say it where?"* (A21 is
+PROJECTED, *never in an external artifact*); and *"the second boss-found
+correction is sound... genuinely converts S4.1 from a shrug into arithmetic.
+Credit where due."*
+
+**S4.1 reason 1 - "the arithmetic does NOT hold as stated."** Mis-cites A5;
+silently drops A5's $4.20 30s figure (*"at 30-second Reels... $72.8/mo against
+a $59 price... Selecting the favourable half of a cited row is precisely what
+S4.1.2 accuses the draft of doing with my promo column"*); and the headline is
+*"false at the floor"* since $29 > A9's $24.27-25. *"The clean version exists
+and is one row away: **A39 says 'at $29, entry is negative on every scenario in
+this table.'** Cite A39 and the reason is airtight."* The `allowance.ts`
+cross-check *"holds. It is the attribution and the headline that don't."*
+
+**S6.2 - three defects in the column that ships:** the self-contradicting price
+row; N1's unverified sayable; N2's paraphrase contradiction. *"Against that:
+the AI-disclosure bar, the armed-in-advance qualifier as a requirement rather
+than a footnote, the X/Reddit bar, the internal-vocabulary row, and the
+comparative-claim bar are all correct and enforceable."*
+
+**S7:** *"item 11... is the most unusual thing in the corpus and I mean that as
+praise."* Missing from the floor: the receipt amendment, and the missing gate.
+
+## 6. VERDICT AND WHAT WOULD MAKE IT A PASS
+
+**FAIL - round 2.** *"This is a much better document than the draft... a FAIL
+here is not 'the thinking is bad' - it is 'three things in this file cannot be
+true at once.'"* Six gate-blockers: the missing ledger; the receipt failing its
+own verification test; S5.0's false sentence and understated scope; S4.1's
+mis-citation and over-statement; S4.0's uncited A39; and S6.2's three live copy
+hazards.
+
+## Is this more dangerous to the competitor than the round-1 draft?
+
+*"**Yes. Materially, and in the way that costs me most.** The draft was a
+document I could have beaten with a screenshot... All three are gone, and they
+are gone in the worst possible way - **struck in place, with my own page cited
+as the reason.** A document that says 'This org has now made this class of
+error four times about the same competitor' is not a document I can catch out.
+It has pre-registered its own error rate."*
+
+*"And the thing that actually worries me is S4.4, which nobody asked them to
+write. They went to their own shipping code and found that three of the
+chief's pricing constraints describe behaviour the product does not have...
+and then recommended keeping the buyer-protective version **against** the
+growth-optimal one, in the buyer's own words: 'Rationing is this buyer's
+budgeting, not a bug.' Paired with... a 30-day full refund against my
+7-day-void-if-used-minus-5%, that is a trust story I cannot match on my current
+terms, and it does not need their employee tier to exist."*
+
+*"**The gap between us narrowed this round, and it narrowed on the axis I
+cannot fix with a discount.** My honest read: they still lose the two-second
+glance, and they now win the ten-minute conversation. Next week I keep the
+fight in the first two seconds."*
+
+**Receipt discipline declared by the reviewer:** 41 cross-checks against
+`assumptions.md` (18 rows), `positioning.md`, the truth map (4 quotes, all
+verbatim), the objection bank (4 rows, all verbatim), both snapshots, both
+`.extracted.txt` files **pre- and post-amendment via git**, and both SHA-256
+hashes recomputed. *"Two mis-citations found in the artifact, one false
+statement about its own receipt, one false statement about its own gate, one
+unretained-source amendment, and one hash mismatch between an artifact and its
+certifying record."*
+
+---
+---
+
+# BOSS DISPOSITION — ROUND 2, AND THE SHIFT'S CLOSE
+
+**BOTH PERSONAS FAILED ROUND 2. The artifact is GATE-FAILED and is NOT
+GATED. It may not be cascaded.**
+
+**All round-2 MUST-FIX edits are applied** (commits `c8b9ab1`, `da2847a`), and
+three of them are corrections the boss owed:
+
+1. **The receipt chain is closed and now reproducible by a second reader.**
+   Raw HTML retained in-repo, hashing to the recorded fetch values; S1's
+   extracted hashes amended in the same commit as a new S1a that records the
+   whole sequence including the incomplete first repair. **A string-by-string
+   audit puts the true scope at EIGHT affected strings** - more than the
+   boss's three, more than the reviewer's six.
+2. **S4.1's arithmetic is repaired, and the repair cuts against the boss's own
+   recommendation.** A5 was mis-cited ($2.00 is A6); the headline was false at
+   the floor; and **A5's $4.20 30-second extend-chain was silently dropped -
+   which puts the same ruled allowance at ~$72.8/mo against $59.** So the
+   honest statement is not "$59 right, $29 wrong" but **"entry's price is
+   unresolved until item 24 lands, and $59 is not safe either."** That is a
+   materially weaker recommendation than the one the shift set out to make,
+   and it is the correct one.
+3. **The ad-budget sentence is out of the ship column**, and a new PROHIBITED
+   row bars pairing *"runs your Meta ads"* with *"armed in advance"* while the
+   spend ceiling is unbuilt - a hole the r1 honesty edit opened.
+
+**TWO REVIEWER DEFECTS ARE RECORDED, per the reviewer's own recommendation
+that they should be:**
+- **R1 salesperson, Receipt Audit B/C:** a fabrication charge levelled at two
+  strings sitting in the retained file, findable by one grep. The r2 reviewer:
+  *"A reviewer who accuses someone of fabricating a quotation owes them a grep
+  first... it burns the one accusation that is supposed to mean something."*
+  **Adopted as a standing gate rule: no fabrication finding without a
+  documented grep of the retained text.**
+- **R2 salesperson, S0:** read a stale tree and reported a filed ledger as
+  missing. Not the reviewer's fault - the boss's sequencing put it there - but
+  it cost the round its ability to certify anything. **Adopted as a standing
+  boss rule: file every ledger before the edit pass, not after.**
+
+**ROUND 3 WAS NOT RUN.** The protocol allows three rounds with a fresh
+verifier at round 3. This shift ran past its budget at round 2, and the order
+was explicit that a clean partial honestly graded beats a complete one that is
+not. **The artifact carries GATE-FAILED (round 2) in its own status header
+and lists "round 3 not run" in its disclosed floor as item 14.** The next
+shift's first act is that verifier.
