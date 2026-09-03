@@ -79,3 +79,44 @@ and the tooling stops finding the landing page. Same commit or it breaks.
   behaviour without addressing this**, and none of mine does.
 - Meta App Review status. Unknown to this org, and everything in R2 rests on it
   for any account that is not ours (`docs/channel-readiness.md`).
+
+---
+
+## R5 — **A LIVE DEFECT ON THE FRONT DOOR, found while checking R2.** Not mine to fix; filed for the chief.
+
+**`console/app/api/scan/route.ts:47` tells a stranger their scan result will be
+emailed to them. Nothing emails it to them.**
+
+> `{ error: 'Enter a real email — the scan result also goes there.' }`
+
+**Traced, not assumed:**
+- The only send in the whole route is at `:99-109`: `sendAlert(...)`, commented
+  in the source as **"Operator alert — best-effort (needs RESEND configured)"**,
+  and its payload is addressed to the operator — it *contains* the lead's email
+  as a field rather than going to it.
+- The scan result itself is **returned in the JSON response** (`:114+`) and
+  rendered on screen. There is no second delivery.
+- `console/lib/` has exactly one mail module, `digest-email.ts`. There is no
+  scan-result mailer.
+
+**Why this is a real finding and not a nit: THIS EXACT DEFECT WAS ALREADY
+FIXED ONCE, IN A DIFFERENT FILE.** `MARKETING.md` COPY v2 changed the hero
+disclaimer for it and tagged the reason inline — *"(TRUTH — nothing emails the
+result to the lead; the alert goes to Phin)"* — replacing *"that is where the
+result goes"* with *"so we can follow up on what it found."*
+
+**The fix landed in the marketing copy and not in the route's own error
+string.** That is precisely the failure mode this shift's lock claim was
+written against: *fixes land in one of two places, so grep for every instance,
+not the first.* It held for the two dead hero lines and it held here.
+
+**Note the live `content.ts` HERO.freeNote still carries the OLD wording too** —
+`content.ts:100-101`: *"We ask for an email because that is where the result
+goes."* COPY v2's correction is **specced and unshipped**. So the claim is live
+in **two** places, not one.
+
+**Not this org's to fix** (`boss.md`: read clinkworthy, never write there), and
+**out of scope of the copy overhaul** — it is in `app/api/`, which is not even
+the front-door boss's territory (`docs/org/frontdoor.md` FILE-NOT-EDIT list).
+**It goes to the chief as a cascade item on its own, and it is true regardless
+of anything Phin ruled this week.**
