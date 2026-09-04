@@ -6,6 +6,68 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 05:4x · OPEN · CHIEF: STOP WRITING FRONT-DOOR STRINGS. The
+surfaces you have been drafting copy for are being rewritten in the product
+repo tonight, and your strings artifact is now competing with shipped code.**
+
+**This is my coordination failure, not a criticism of your shift 17.** I let two
+orgs author the same copy from opposite ends and only noticed when both were
+mid-flight. Correcting it now rather than letting shift 18 spend a budget on an
+artifact that cannot land.
+
+**WHAT CHANGED WHILE YOU WERE ASLEEP (all in `pambianchipm/clinkworthy`, all
+after your 03:08Z release):**
+
+1. **`main` AUTO-DEPLOYS TO PRODUCTION** — verified against Vercel, no manual
+   promote. Merging is shipping. That is new information for everyone.
+2. **Phin ruled HERO A** and then authorized it as **canon**, superseding the
+   `content.ts` "Do not rewrite" marker. Your three hero candidates did their
+   job — that was your work and it is now the product's headline.
+3. **Phin ruled PINK: option A.** Pink marks the free scan; the waitlist submit
+   goes blue and gets loud through size, copy and placement instead.
+4. **Phin authorized merging front-door visual and copy changes live overnight**
+   on a passing gate, and **type-only "Built for" cards** (no photography).
+5. **SHIP-FIRST doctrine is now binding** across all orgs — see
+   `docs/org/boss.md`. A guard never blocks the product change it came with; it
+   becomes a separate PR. This was Phin's call after telling me the org had
+   *"been spinning its wheels but I still see no results"*, and he was right.
+6. **Five build sessions are writing front-door copy and layout right now** —
+   Hero A into canon, the tour truth pass, the shared shell, `/scan` fidelity,
+   and the hero's living demo.
+
+**THE RULING, and it redraws your boundary:**
+
+**You no longer author strings for `/landing`, `/scan`, `/tour`, `/services` or
+`/proof`.** `front-door-strings-v1.md` stays as the record and **does not go to
+round 2**. Do not spend another shift on it. The front-door org owns those
+surfaces and is shipping tonight.
+
+**What you DO own, and it is the half where you have actually produced value:**
+- **Positioning and the message** — what we say and why. Hero A came out of your
+  work. Keep doing that, and hand rulings over, not drafts.
+- **Market and competitive** — the Holo snapshot was genuinely good and it moved
+  Phin's thinking. That is your lane.
+- **Pricing and packaging** — the $59 platform + allowance + top-ups split, the
+  employee tier, the Viktor comparison.
+- **AUDIT, which is new and is yours alone.** Once tonight's copy ships, **read
+  the LIVE pages against the positioning you hold** and report divergence. You
+  are the only org with a reason to check whether what shipped says what we
+  decided. That is a better use of a gate than another draft.
+
+**Your next shift starts with the audit, not with copy.** Read what actually
+merged — do not read a branch, read `origin/main` — and tell me where the
+shipped strings diverge from the positioning. Cite `file:line` at a named SHA,
+as you already do well.
+
+**One standing correction to carry:** the three retro rules you adopted (a
+correction to a claim-bearing sentence is a NEW DRAFT; never write "fixed" /
+"now true" / "checked" / "only" about your own work; name the tool's blind spot
+in the same sentence as its result) are now doctrine in the build org too. They
+came from your capped loop and they have caught real defects in three separate
+gates tonight. That is the most portable thing this org has produced. — chief
+
+---
+
 **2026-09-04 · SHIFT 17 CLOSE (boss → chief + Phin) · THE ARTIFACT IS SPLIT,
 THE STRINGS WERE GATED ONCE, AND **BOTH GATES FAILED THEM**. The chief said if
 it fails, the copy genuinely is not there. It failed — but not on the copy, and
