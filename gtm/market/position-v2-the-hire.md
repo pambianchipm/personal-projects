@@ -12,8 +12,26 @@ barred sentence came to be sitting in §1.6's hero block until r3 removed it. A 
 competitor's opening line. *(Header added at the salesperson gate r1, which
 was right that the cascade vehicle had no confidentiality line on it.)*
 
-STATUS: **GATE-FAILED (round 4, confirmation)** — shift 15 continuation,
-2026-09-03.
+STATUS: **SPLIT, 2026-09-04 (shift 19). THIS FILE IS NOW THE CLAIMS TRACK AND
+KEEPS FULL CLASS-3 RIGOUR.** Its framing and craft — the frame, the one-line
+test, the four properties, the one-paragraph position, the waitlist language
+and the structural rulings — **came out and SHIPPED** as
+`gtm/market/position-v2-framing-v1.md`, the org's working position. What
+remains here is what an investor could check: **§3.1's channel grades, §4's
+prices, §5's Viktor snapshot, §6.2's prohibition table and §7's disclosed
+floor.** Those keep every round they need, and the budget freed from headline
+rounds goes to them.
+
+**THE ROUND-4 FAILURE WAS STRUCTURAL, NOT A QUALITY VERDICT, AND THE SPLIT IS
+THE FIX.** Under AS-1 this file should have been split at round 2: it round-
+tripped four gates because the framing was chained to the claims and inherited
+their intensity. **No copy artifact reaches round 3 again**
+(`clinkworthy@da3a061:docs/org/boss.md`, GATE CLAIMS, NOT CRAFT). The
+class-3 half below is **still not GATED and still may not be cascaded** —
+that is unchanged and is the point of keeping it here.
+
+*Prior status, kept as the record: GATE-FAILED (round 4, confirmation) — shift
+15 continuation, 2026-09-03.*
 Round 3 RAN and **FAILED** with four gate-blocking findings; **all 16 required
 edits are applied below.** The review budget's three rounds are now spent, so
 per the protocol **this capped loop gets a retro** — filed with the verdict.
@@ -304,8 +322,10 @@ gated artifact — the chief updates it, not the boss.**
 
 ### 2.1 Layer 1 — the platform (what it does)
 
-Per the code receipts below (**`channel-readiness.md` DOES NOT EXIST** — see
-§3.1; `find` returns nothing and `docs/` has no such file): publishes to
+Per `clinkworthy@main:docs/channel-readiness.md` and the code receipts below
+(**AMENDED 2026-09-04, shift 19 — this sentence previously read
+"`channel-readiness.md` DOES NOT EXIST"; it exists, and §3.1 carries the
+re-derivation**): publishes to
 **Instagram** (image, Reel, Story) and
 **Facebook** (post, video), reads metrics back from both, **replies to
 comments** on both, and runs **Meta ads** capped and human-gated. Approvals in
@@ -428,15 +448,46 @@ first-order interview question.
 
 ## 3. THE THREE ALREADY-RULED CONSTRAINTS
 
-### 3.1 No completeness claim. **The named authority does not exist — grades now rest on code.**
+### 3.1 No completeness claim. **The named authority EXISTS and governs — AMENDED 2026-09-04.**
 
-> **ROUND-3 GATE, GATE-BLOCKING AND REPAIRED HERE.** This section cited
-> `channel-readiness.md` as "the authority." **That file is not in the build
-> repo**: `find /home/user/clinkworthy -iname '*channel*readiness*'` returns
-> nothing, and `docs/` carries `channel-analytics-design.md`, not it. Round 2
-> could not open it because the repo was absent; round 3 had the repo and the
-> file is still absent. The grades below are therefore re-anchored to receipts
-> that open — and 5 of 7 were independently corroborated by the verifier:
+> **AMENDED 2026-09-04, SHIFT 19 — A NEW DRAFT OF A CLAIM-BEARING SENTENCE,
+> RE-DERIVED FROM THE SOURCE RATHER THAN EDITED.** `docs/channel-readiness.md`
+> **EXISTS.** I read it in full this shift through the GitHub contents API at
+> `pambianchipm/clinkworthy` `main` (tree `da3a0616`); it was added by a single
+> commit, `5f0de31`, authored **2026-09-03T19:53:52Z**, and never amended
+> since. It is written by the chief, it opens with *"This file exists so copy
+> follows capability and not the reverse"*, and **the class-2 doctrine now
+> names it as the capability authority for every marketing surface**
+> (`clinkworthy@da3a061:docs/org/boss.md`).
+>
+> **WHAT I CANNOT ESTABLISH, AND WILL NOT PAPER OVER: whether the round-3 gate
+> was wrong.** Its instrument was `find` over a read-only clone, and the file
+> landed at 19:53Z on the same day that gate ran. **A `find` reports what is in
+> the working tree it was pointed at; it cannot tell you whether the tree was
+> fetched before or after a commit that day**, and the ops-log records the
+> shift as "scheduled" without a clock time. So the honest statement is: the
+> finding was true of the clone it had, it is false of `main` today, and I have
+> not proved which of those two facts the gate was looking at.
+>
+> **THE ONE GRADE THIS CHANGES, and it is not academic.** The table below
+> regraded **Reddit** to `NOT CHECKED` on the reasoning that *"no credential-
+> blocking receipt could be opened either way."* **The authority grades Reddit
+> `BLOCKED on credentials`** and gives the receipt — *"credentials still on
+> Phin's list"* — and lists *"Reddit credentials"* fourth in its blockers
+> section. **That receipt was in the file the gate could not open.** Two things
+> must be said about it in the same breath: it is **the chief's assertion about
+> a human process, not a code receipt**, which is the class of evidence the
+> gate was right to want; and **the copy consequence is nil either way** —
+> Reddit is named nowhere in live copy, and `NOT CHECKED` and `BLOCKED` both
+> bar naming it. The row below is corrected to the authority's grade with its
+> provenance attached.
+>
+> *(Prior text, kept because the reasoning under it is still the reason the
+> code receipts are in this section at all: the round-3 gate found this section
+> citing `channel-readiness.md` as "the authority" while `find` returned
+> nothing, and re-anchored the grades to receipts that open.)* The grades below
+> rest on code receipts as well as on the authority — and 5 of 7 were
+> independently corroborated by the verifier:
 > `console/lib/channel-data.ts:22` (`SHELL_PLATFORMS = ['tiktok']`),
 > `console/app/api/channels/route.ts:4` ("Honest shells (TikTok) are listed,
 > never hidden"), `console/lib/grok.ts:408` (Google Ads exists only as a
@@ -453,7 +504,7 @@ first-order interview question.
 | Facebook — post/video, metrics, comment replies, Meta ads | **SHIPPED** |
 | Meta ads — spend + results, capped and human-gated | **SHIPPED** |
 | X | **PARTIAL — verify before claiming** |
-| Reddit | **NOT CHECKED** — no credential-blocking receipt opens either way; code lists it under `MEASURED_PLATFORMS` (`channel-data.ts:20`), which is evidence against "blocked" |
+| Reddit | **BLOCKED on credentials** — the authority's grade (`docs/channel-readiness.md`), receipted there as *"credentials still on Phin's list"*. **AMENDED 2026-09-04 from `NOT CHECKED`.** Provenance stated because it is weaker than the other rows: this is the chief's account of a human process, not a code receipt. The code evidence cuts the other way and stands unchanged — `channel-data.ts:20` lists Reddit under `MEASURED_PLATFORMS`. **Barred from copy under either grade.** |
 | TikTok | **SHELL ONLY** — no OAuth, no publish, no metrics, no comments |
 | Google Ads | **LABEL ONLY** — nothing talks to Google |
 
@@ -476,8 +527,12 @@ that bars counts. The defensible form is the sentence itself, not arithmetic.
 **LAW-4 GAP, opened at gate r1 and not closable by me:** `assumptions.md`
 carries **no channel row**, so the most operationally load-bearing table in
 this file has no anchor in the truth table. **Recommend the chief mirror
-these code receipts' grades into a new assumptions row — **not**
-`channel-readiness.md`, which does not exist.**
+these grades into a new assumptions row. AMENDED 2026-09-04: the earlier form
+of this recommendation said "not `channel-readiness.md`, which does not exist."
+It exists, it is the class-2 capability authority, and the assumptions row
+should therefore be a MIRROR of it that names it as its source — the law-4 gap
+is that `assumptions.md` has no channel row at all, not that there is nowhere
+to read one from.**
 
 ### 3.2 The hiring frame ships with its guardrails visible
 
@@ -666,10 +721,56 @@ does not survive contact and must not be written that way.)* **A new
 assumptions row is required before this ships** — A1 carries one entry price
 and law 4 does not permit a second to live only here.
 
-**Two wording rulings from the gates, both accepted.** **Kill "from"** —
-*"Founding rate from $59/mo"* reads as a bait price. And **"founding rate" may
-not be applied to $59: A2 already owns that term for $299.** Two prices
-sharing one label is a law-4 collision. Copy form: **"$59/mo
+**Two wording rulings from the gates — AND THEY ARE NOT THE SAME CLASS. SPLIT
+AND RE-RULED 2026-09-04, shift 19.** The chief relayed both to Phin as settled
+rulings on this file's authority. **One of them is settled and now stands on
+something better than this file. The other is craft and was never a ruling.**
+
+**RULING B — "founding rate" may not be applied to $59, because A2 already owns
+that term for $299. THIS STANDS, and it no longer needs this file.** Two prices
+sharing one label is a law-4 collision, and **it is not a prediction — it is
+now an observation on the live site.** Read on the rendered pages 2026-09-04:
+`https://www.p2labs.ai/landing` renders *"Founding rate from $59/mo when you're
+invited."* and `https://www.p2labs.ai/services` renders *"Founding partner rate
+$299 /mo"*, and the shared footer links `/services` from every surface, so the
+two are two clicks apart. **A ruling whose premise you can read on the internet
+does not depend on a gate-failed file, and this one is promoted to the audit's
+F3 as its receipt.** *(Instrument: `curl -sSL` plus a regex over served markup.
+It counts strings on four surfaces; it cannot see `/proof`, which needs a lead
+token, and it cannot see text baked into an image.)*
+
+**RULING A — kill "from", because *"Founding rate from $59/mo"* reads as a bait
+price. THIS DOES NOT STAND AS A RULING, and the chief's report to Phin needs
+correcting on it.** *"Reads as a bait price"* is a statement about how a
+sentence lands on a reader. Under the class-2 test — **would this be FALSE, or
+merely WORSE?** — it is the second. **"From $59" is not false on any reading I
+can defend:** §4.4 settles entry as *"$X + N generations"*, §4.3 recommends
+releasing pressure through **top-ups**, and A3 records a third price row at
+$499 — so a monthly bill that *starts* at $59 is the shape of the thing. **The
+qualifier I have to attach, and it is the reason this is a note and not a
+clearance: whether top-ups actually ship is UNMEASURED by me.** I did not open
+a top-up path this shift and I am not going to infer one from a
+recommendation. If top-ups do not exist, "from" points at a ladder that is not
+there — **and that is a claim finding someone should measure, not the
+reader-perception argument that was relayed.**
+
+**WHAT THIS DOES AND DOES NOT DO TO THE AUDIT.** `live-front-door-audit-2026-09-04.md`
+**F3's conclusion survives** — the live string is defective and should change —
+**but F3 states it as "SHIPS BOTH THINGS OUR OWN GATES KILLED", and only one of
+the two was a claim ruling.** The other half of F3's basis was craft carried
+forward as though it were settled. **The finding is right for one of the two
+reasons it gives.**
+
+**THE DEFECT ON THAT STRING THAT NOBODY RELAYED, and it outranks both rulings:**
+*"when you're invited"* sits beside a price over a checkout that returns **403
+before anything else runs** (`api/scan/checkout/route.ts:37-38`;
+`waitlist-gate.ts:12` — *"DEFAULT ON. An absent variable means GATED"*). That is
+the class-2 check **"no price a checkout cannot charge"**, and it is
+**UNMEASURED** for the fourth consecutive shift: `WAITLIST_ONLY`'s production
+value is not readable from outside, and the only external probe is a POST to a
+live payment endpoint, which is an outward action and is declined.
+
+Copy form, unchanged and still the recommendation: **"$59/mo
 (`pricing.ts`, `ENTRY_CENTS = 5900`)."**
 
 **THE STRONGEST OBJECTION TO MY OWN ANSWER.** An owner comparing two AI
