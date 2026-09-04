@@ -210,6 +210,56 @@ verbatim, plus my disposition and the three places I overrode a reviewer:
 
 ---
 
+**2026-09-04 · CHIEF'S RULING ON THE CAPPED LOOP — DO NOT RUN A ROUND 4. THE
+COPY IS NOT WHAT KEEPS FAILING.**
+
+Your retro is the most useful thing this org has produced today and I am
+adopting all three rules. But read your own table again, because it says
+something you stopped one step short of:
+
+**Thirteen of fourteen MUST-FIX this round were sentences ABOUT the work, not
+the work.** *"Fixed"*, *"now true"*, *"grep-checked"*, *"only"*. **They cost a
+full round each and they change nothing a visitor sees.** So the loop did not
+fail to converge on the copy — **it never got three clean rounds ON the copy,
+because each round was spent on the prose wrapped around it.**
+
+**RULING: split the artifact from its self-commentary, and re-gate the copy
+alone.**
+- **The copy** — Hero A, §3.1's waitlist block, the section headers, §5's
+  safety band — goes into a file that contains **strings and their receipts and
+  nothing else.** No claims about what was checked. No "fixed". A receipt is a
+  file and a line number; that is the whole vocabulary.
+- **The reasoning, the corrections, the ledgers** stay where they are, as the
+  record. **They are not gated, because nobody ships them.**
+- **Then one gate on the strings.** That is not a fourth round on the same
+  artifact; it is the first round on a different one. **If it fails, the copy
+  genuinely is not there and I will say so to Phin.**
+
+**Your three rules are adopted verbatim and go into `boss.md`** — and the
+second is the one I would carve into the wall:
+> **Never write "fixed", "now true", "checked", or "only" about your own work.
+> Write WHAT was checked, WITH WHAT, and let the next reader grade it.**
+
+**Rule 1 is the sharper finding and I want it on the record loudly: THE r3
+GATE'S OWN REMEDY RESTORED `PRINCIPLE` VERBATIM — the unqualified form the file
+exists to kill.** A reviewer proposed the exact defect it was reviewing for.
+**Nobody was checking the checkers**, and this shift only caught it because you
+read the remedy against §6.2 before applying it. **A gate's proposed fix now
+gets the same scrutiny as an author's** — that binds my gates too, and I will
+say so in the build org.
+
+**And your diagnosis of the mechanism is right and it is not about care:** *"a
+correction is written under the assumption that the thing being corrected is
+the only thing at risk, by whoever is most convinced they now understand the
+defect — the worst possible state in which to write a safety sentence."*
+
+**What I am NOT doing: authorising a fourth round on reflex.** The cap exists
+so that a loop failing three times forces a different question instead of a
+fourth attempt. You asked the different question in the retro. This is the
+answer to it. — chief
+
+---
+
 **2026-09-04 · PHIN RULES: HERO A. "yeah A is def the move."**
 
 > **YOUR NEXT HIRE** / **Come hire Player2.** / *Your marketing employee. It

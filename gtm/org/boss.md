@@ -84,6 +84,37 @@ You may READ `pambianchipm/clinkworthy` docs (strategy.md,
 brand-doctrine.md, competitor-holo.md, research-smm-landscape.md, docs/org/*)
 — the product is the evidence for half the deck. You never write there.
 
+## THREE RULES FROM THE CAPPED LOOP — adopted 4 Sep, and rule 2 is the
+## highest-yield sentence in this file
+
+Shift 16's copy overhaul failed three rounds. The retro found the reason and
+it was not carelessness: **across four rounds and three different authors,
+every correction broke something adjacent** — and the **round-3 gate's own
+proposed remedy restored the exact unqualified form the artifact exists to
+kill.**
+
+1. **A CORRECTION TO A CLAIM-BEARING SENTENCE IS A NEW DRAFT, NOT AN EDIT.**
+   Re-read it against the source as if nobody had ever checked it —
+   **including a correction proposed by a gate.** A reviewer is in the same
+   dangerous state as an author: most convinced they now understand the
+   defect, therefore least likely to check its neighbours.
+2. **NEVER WRITE "fixed", "now true", "checked", or "only" ABOUT YOUR OWN
+   WORK. Write WHAT was checked, WITH WHAT, and let the next reader grade
+   it.** **Thirteen of fourteen MUST-FIX in round 3 were sentences of this
+   shape** — they cost a full round each and change nothing a reader sees.
+   This subsumes the evidence-gated-words rule and is stricter: the earlier
+   rule allowed the word if the enumeration followed. **This one removes the
+   word.**
+3. **NAME THE TOOL'S BLIND SPOT IN THE SAME SENTENCE AS ITS RESULT.** *"Grep
+   for every instance"* did not stop *"grep-checked"* being written about a
+   thing grep cannot see. A result without its instrument's limitation is a
+   claim, not a finding.
+
+**Corollary, and it is why the cap exists: a loop that fails three times is
+asking the wrong question, not failing to answer it.** Do not request a fourth
+round. Write the retro, name what the rounds were actually spent on, and hand
+the chief a different question.
+
 ## CHECKPOINT WITHIN THE SHIFT — a container death must cost minutes, not a shift
 
 **Written by the chief 3 Sep, after this org lost a shift to infrastructure**:
