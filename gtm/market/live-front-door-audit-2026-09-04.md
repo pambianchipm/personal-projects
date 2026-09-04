@@ -2,7 +2,11 @@
 
 STATUS: **DRAFT, ungated.** Findings only; nothing here changes a file in the
 product repo and nothing here is a ruling.
-OWNER: GTM boss · shift 18, 2026-09-04, 14:45Z–
+**AMENDED shift 19, 2026-09-04 — §6 adds two live claim findings (M1, M2) that
+this audit missed**, found by re-reading the two closed copy files against the
+pages. Sections 0-5 are unchanged and were read at `clinkworthy@851fad4`; §6
+was read at `main@95db0ce` and says so.
+OWNER: GTM boss · shift 18, 2026-09-04, 14:45Z– (§6: shift 19)
 BRIEF: the chief's ruling, `gtm/org/inbox.md` 2026-09-04 05:4x — *"read the LIVE
 pages against the positioning you hold and report divergence."*
 POSITIONING HELD AGAINST: `gtm/market/position-v2-the-hire.md` (§2.1, §2.2,
@@ -689,3 +693,138 @@ and it should survive whatever is decided about the button.
 - It did not measure type, colour, contrast, or the hero demo's timing.
 - **It did not exercise `POST /api/scan/checkout`**, which is the one
   measurement that would answer the three-shift-old `WAITLIST_ONLY` question.
+
+---
+
+## 6. ADDENDUM — SHIFT 19, 2026-09-04. TWO LIVE CLAIM FINDINGS THIS AUDIT MISSED, FOUND BY RE-READING THE TWO CLOSED COPY FILES AGAINST THE PAGES.
+
+**WHY THIS SECTION EXISTS.** The chief's shift-19 brief closed
+`front-door-strings-v1.md` and `front-door-overhaul-v1.md` as superseded and
+asked for one thing before they were filed away: *"confirm nothing else in
+those two files is a live claim finding that the audit missed."* Two things
+were. Both are recommendations to the front-door org. **I did not write, edit
+or propose a replacement string for either, and I did not write to
+`pambianchipm/clinkworthy`.**
+
+**THE INSTRUMENT, AND WHAT IT CANNOT SEE.** `curl -sSL` against
+`https://p2labs.ai/{landing,scan,tour,services}` on 2026-09-04 — all four
+returned **HTTP 308 to `www.`, then 200** (the shift-18 read did not follow the
+redirect chain and is unaffected; the bodies match). Source read through the
+**GitHub contents API** at `clinkworthy` `main@95db0ce` (tree
+`da3a0616`). **That API returns file content without line numbers, so the two
+findings below cite an export path and the exact string rather than a line I
+did not count** — a structural citation I can defend, in place of a number I
+would be guessing. `/proof` still never rendered: it needs a lead id and a
+token, so this addendum is blind to it exactly as §0 was.
+
+---
+
+### M1 — (a) `Drafts for every channel` IS LIVE ON `/landing`, AND IT IS A STRING BOTH §3.1 AND §6.2 BAR BY NAME.
+
+**Live**, `https://www.p2labs.ai/landing`, step 02 of the HOW band:
+
+> **Write** — *"Drafts for **every channel** — posts, replies, videos, ads —
+> waiting in one queue."*
+
+**Source:** `console/app/landing/content.ts`, `HOW.steps[1].body`, at
+`main@95db0ce`.
+
+**The bar, quoted from this org's own files.** `position-v2-the-hire.md:465`:
+*"**Barred:** 'every channel', 'all the features you'd want', any platform
+count, any TikTok or Google Ads logo presented as live. **A logo is a
+claim.**"* And §6.2's PROHIBITED column carries `"Every channel"` as its first
+entry, on the same row as the completeness claims.
+
+**Is it FALSE or merely WORSE — the class-2 test.** **False.**
+`docs/channel-readiness.md` (read this shift at `main`) grades TikTok **SHELL
+ONLY** — *"No OAuth, no publish, no metrics, no comments"* — Google Ads **LABEL
+ONLY** — *"nothing talks to Google"* — Reddit **BLOCKED on credentials**, and X
+**PARTIAL**. Three of the seven rows in the authority's own table cannot receive
+a draft that goes anywhere. **The narrow reading that saves it is real and I
+will state it rather than hide it:** the sentence is about *drafting*, and
+`lib/types.ts:3`'s `Channel` union does include Google Ads, so the generator may
+literally emit a draft for a channel we cannot publish to. **That reading does
+not rescue the string**, because step 03 immediately below it says *"You click.
+Then it ships"* — the page supplies the publish frame itself, two lines down,
+and the org already ruled this exact phrase unrecoverable in a buyer's five
+seconds rather than arguable.
+
+**WHY THE SHIPPED GUARD CANNOT SEE IT, and this is the finding under the
+finding.** `content.ts`'s own comment above `HERO.sub` describes the guard:
+*"`lib/__tests__/killed-phrases.test.ts` reads the GRADES OUT OF
+`docs/channel-readiness.md` and fails **by channel name** if a below-SHIPPED one
+appears in rendered front-door copy — so the doc and the page cannot drift apart
+silently."* **A completeness claim names no channel.** `every channel` asserts
+all seven rows while matching none of them, so a name-matching sweep is
+structurally blind to the one form of the claim that covers every row at once.
+**That is also why my own shift-18 sweep missed it:** F8 swept for the channel
+*names* — TikTok, X, Reddit, Google Ads — got zero, and recorded the channel
+grades as clean. Zero platform names and a completeness claim are the same
+result to that instrument.
+
+**Grade: (b) over-claim, live.** **Recommendation, to the front-door org, not a
+string from me:** the barred phrase is in a slot whose own code comment
+(*"Amendment 3 again: the queue holds posts, replies, videos and ads"*) defends
+the **list** and never mentions the quantifier — the quantifier arrived
+un-argued. And the guard gap is worth more than the fix: **`killed-phrases`
+should carry the completeness phrases as literals** alongside its
+name-derived rows, or the next one lands the same way.
+
+---
+
+### M2 — (a) THE HERO SHIPPED WITHOUT THE AVAILABILITY QUALIFIER. §6.2's *"anything implying the employee is available today"* IS LIVE, AND `front-door-strings-v1.md` OPEN 1 IS THE FINDING THAT OUTLIVED ITS FILE.
+
+**Live**, `https://www.p2labs.ai/landing`, the hero block, read 2026-09-04:
+
+> **YOUR NEXT HIRE**
+> **Come hire Player2.**
+> *Your marketing employee. It writes the week's posts, publishes them to
+> Instagram and Facebook, runs your Meta ads, and tells you which ones moved
+> units.*
+
+**Source:** `console/app/landing/content.ts`, `HERO.kicker` / `HERO.title` /
+`HERO.sub`, at `main@95db0ce`.
+
+**The bar.** `position-v2-the-hire.md` §6.2 PROHIBITED: ***"Anything implying
+the employee is available today."*** The sayable form on the same row is
+*"Coming: your employee messages you where you already are"* — **no date.**
+
+**What shipped against it.** The kicker is the bare `YOUR NEXT HIRE`. **The
+qualifier both gates converged on — `YOUR NEXT HIRE · NOT BUILT YET`, built
+from the PHIN-APPROVED words at `waitlist-front-door.md:22` (*"The employee
+isn't built yet."*) — is not on the page.** The hero is imperative and present
+tense throughout, and **the only availability disclosure on `/landing` is in the
+EARLY ACCESS band far below the fold** (*"Player2 is in alpha and we're letting
+shops in a few at a time"*). §4.2 settles the employee tier as **WAITLISTED,
+NOT PRICED**. So the page opens by telling a stranger to hire a thing that,
+by this org's own settled ruling, cannot be hired.
+
+**Is it FALSE or merely WORSE.** **False, and it is not close.** *"Come hire
+Player2"* over four present-tense capability clauses is an availability claim,
+and `runs your Meta ads` is additionally above the entry tier's entitlement
+(`tier.ts:46` — `entry` holds no `ads`; F5 covers that half). **The narrow
+defence, stated because it is the strongest one against me:** the entry tier is
+`ENTRY_AVAILABLE = true` and — per shift 18's correction of its own brief —
+genuinely does publish by hand (`lib/db/scheduled.ts:77-78`). So *some* product
+is buyable-in-principle and *does* write and publish. **That defends the two
+middle clauses of the sub. It does not defend the H1**, which sells the
+employee, which is the waitlisted tier.
+
+**WHAT I DID NOT MEASURE, AND IT IS THE SAME GAP FOR THE FOURTH SHIFT.**
+Whether a stranger with a card can complete a purchase in production is
+**UNMEASURED**. `waitlist-gate.ts:12` (*"DEFAULT ON. An absent variable means
+GATED"*) and `api/scan/checkout/route.ts:37-38` (403 before anything else runs)
+say the door is shut, but `WAITLIST_ONLY`'s production value is not readable
+from outside, and **the one external probe is a POST to a live payment
+endpoint, which is an outward action — declined again this shift**, as in
+shift 18. If the gate is ON, the hero's defect is strictly worse than stated
+here, not better.
+
+**Grade: (a) breach of a settled prohibition, live.** **Recommendation, to the
+front-door org:** the remedy is a kicker-slot qualifier and not a rewrite of
+Phin's ruled H1 — Hero A is canon and this finding does not touch it. **What is
+mine to say plainly: shift 17 raised this to Phin on 2026-09-04 as *"THE HERO
+STILL SAYS THE DOOR IS OPEN"*, the shipped hero took the H1 and left the
+qualifier, and my own shift-18 live audit did not re-check it against the
+page.** F1 asked whether the employee frame was *outnumbered* and never asked
+whether it was *true*. That is the miss, and it is mine.

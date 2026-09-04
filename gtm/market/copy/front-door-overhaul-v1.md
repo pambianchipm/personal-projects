@@ -1,9 +1,38 @@
 # Front door — THE COPY OVERHAUL (v3, round-3 edits applied)
 
-STATUS: **GATE-FAILED (round 3) → ROUND-3 EDITS APPLIED, NOT RE-VERIFIED.**
-**THE REVIEW BUDGET IS NOW SPENT** (3 rounds, `boss.md`), so there is no
-round-4 gate to lean on. **Nothing here is GATED and nothing may cascade.**
-A capped loop gets a retro — it is §8.
+STATUS: **CLOSED — SUPERSEDED BY SHIPPED COPY.** 2026-09-04, shift 19, under
+the GATE CLAIMS, NOT CRAFT doctrine (`clinkworthy@da3a061:docs/org/boss.md`).
+**This file is not open work, not awaiting a round 4, and not a live copy
+source.** Its contents below are UNCHANGED from the round-3 edit pass and are
+kept as the record of what was tested; the header is the only thing this shift
+touched. §8's retro stands and is now the most useful part of it.
+
+> **WHAT SURVIVED.** One thing: **HERO A**, drafted here as one of three
+> candidates and carried into `front-door-strings-v1.md` §1. Phin ruled it and
+> then authorized it as canon, and it is live — `kicker: 'YOUR NEXT HIRE'` /
+> `title: 'Come hire Player2.'` on `https://www.p2labs.ai/landing`, read
+> 2026-09-04, sourced at `console/app/landing/content.ts` (`HERO`),
+> `clinkworthy` `main@95db0ce`. **B and C were closed by that ruling and stay
+> below as the record of what was tested, not as options.**
+>
+> **WHAT DID NOT SURVIVE: every other string, every section rewrite, and the
+> §5 safety-band replacement.** None of it reached the site. The front-door org
+> rewrote `/landing`, `/scan`, `/tour` and `/services` in the product repo on
+> 3–4 Sep and shipped them; `main` auto-deploys, so merging was shipping.
+> **WHERE THE SHIPPED STRINGS ACTUALLY LIVE:**
+> `console/app/landing/content.ts`, `console/app/landing/tour-copy.ts`,
+> `console/app/services/page.tsx`, with `docs/channel-readiness.md` and
+> `docs/design/redesign-2026-09/MARKETING.md` governing them — all in
+> `pambianchipm/clinkworthy`, **which this org reads and never writes.**
+>
+> **THE LICENCE PROBLEM THIS FILE DISCLOSED IS NOW SETTLED FROM THE OTHER
+> END.** This file stood on `position-v2-the-hire.md` §6.2 while saying so in
+> its own header, and it was right to flag that as a choice rather than a
+> warrant. The ban list is no longer the front door's governing authority:
+> `docs/channel-readiness.md` **exists** and is named by the class-2 doctrine
+> as the capability authority, and `content.ts`'s own comments cite it above
+> `HERO.sub`. §6.2's other prohibitions are re-examined in
+> `gtm/market/position-v2-framing-v1.md` §4 rather than here.
 OWNER: GTM boss · shift 16, 2026-09-03T23:35Z–2026-09-04T00:05Z (the shift crossed midnight UTC)
 GATES: r1 — skeptical SMB owner · competitor's salesperson · salty journalist,
 all three FAIL. r3 — **fresh verifier, run blind**, FAIL: 14 MUST-FIX,

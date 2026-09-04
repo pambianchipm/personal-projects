@@ -1,7 +1,38 @@
 # Front door — THE STRINGS
 
-STATUS: **GATE-FAILED (round 1) → ROUND-1 EDITS APPLIED, NOT RE-VERIFIED.**
-Both gates FAILED it. Nothing here is GATED and nothing may cascade.
+STATUS: **CLOSED — SUPERSEDED BY SHIPPED COPY.** 2026-09-04, shift 19, under
+the GATE CLAIMS, NOT CRAFT doctrine (`clinkworthy@da3a061:docs/org/boss.md`).
+**This file is no longer open work and is not waiting on a round 2.** Its
+contents below are UNCHANGED from the round-1 edit pass and are kept as the
+record; the header is the only thing this shift touched.
+
+> **WHAT SURVIVED.** §1's HERO block. Three of its five slots are on the
+> internet right now, and I checked them against the rendered page rather than
+> against my memory of proposing them: `kicker: 'YOUR NEXT HIRE'`,
+> `title: 'Come hire Player2.'` and the sub *"Your marketing employee. It
+> writes the week's posts, publishes them to Instagram and Facebook, runs your
+> Meta ads, and tells you which ones moved units."* all render on
+> `https://www.p2labs.ai/landing`, read 2026-09-04, and all three are in
+> `console/app/landing/content.ts` (`HERO`) at `clinkworthy` `main@95db0ce`.
+> Phin ruled Hero A canon (*"yeah A is def the move"*; AUTH-3, *"Yes — Hero A
+> is the new canon"*), and the `content.ts` comment above `HERO.title` records
+> that ruling superseding the old "Do not rewrite" marker. **The one slot that
+> did not survive verbatim is the secondary CTA** — this file wrote `Watch it
+> work a week`; the page renders `Watch it work`. **WHAT DID NOT SURVIVE:
+> everything else in this file.** The safety band, the waitlist block, the
+> section headers, the meta description and the replacement table below were
+> not adopted; the front-door org rewrote those surfaces itself overnight on
+> 3–4 Sep. **WHERE THE SHIPPED STRINGS ACTUALLY LIVE, and this file is not a
+> place to look for them:** `console/app/landing/content.ts` (landing),
+> `console/app/landing/tour-copy.ts` (`/tour`), `console/app/services/page.tsx`
+> (`/services`), and the governing docs `docs/channel-readiness.md` and
+> `docs/design/redesign-2026-09/MARKETING.md` — all in `pambianchipm/clinkworthy`,
+> **which this org reads and never writes.**
+>
+> **ONE LIVE CLAIM FINDING IN THIS FILE OUTLIVED IT AND THE LIVE AUDIT DID NOT
+> CARRY IT — see OPEN 1 below.** It is filed as M2 in
+> `gtm/market/live-front-door-audit-2026-09-04.md` §6 and it belongs to the
+> front-door org as a recommendation, not to me as a rewrite.
 OWNER: GTM boss · shift 17, 2026-09-04
 BRIEF: the chief's ruling, `gtm/org/inbox.md` 2026-09-04 — *"The copy — Hero A,
 §3.1's waitlist block, the section headers, §5's safety band — goes into a file
