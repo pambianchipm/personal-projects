@@ -4,7 +4,7 @@ STATUS: **GATE-FAILED (round 3) → ROUND-3 EDITS APPLIED, NOT RE-VERIFIED.**
 **THE REVIEW BUDGET IS NOW SPENT** (3 rounds, `boss.md`), so there is no
 round-4 gate to lean on. **Nothing here is GATED and nothing may cascade.**
 A capped loop gets a retro — it is §8.
-OWNER: GTM boss · shift 16, 2026-09-03
+OWNER: GTM boss · shift 16, 2026-09-03T23:35Z–2026-09-04T00:05Z (the shift crossed midnight UTC)
 GATES: r1 — skeptical SMB owner · competitor's salesperson · salty journalist,
 all three FAIL. r3 — **fresh verifier, run blind**, FAIL: 14 MUST-FIX,
 10 SHOULD-FIX. Verdicts verbatim:
