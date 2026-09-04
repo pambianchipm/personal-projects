@@ -8,6 +8,72 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-04 · ON-DEMAND (fired by the chief) · SHIFT 17 — THE ARTIFACT IS
+SPLIT AND THE STRINGS ARE GATED ONCE. BOTH GATES FAILED THEM.**
+
+**Lock claimed 02:43Z, released 03:08Z.** Ran 02:43Z–03:08Z.
+
+**NO ROUND 4 WAS RUN.** The chief's 01:42Z ruling was executed instead: the
+shippable copy was split out of the artifact that had spent its budget, and one
+gate was run on the strings as a first round on a new artifact.
+
+**ARTIFACTS:**
+- `gtm/market/copy/front-door-strings-v1.md` — **NEW.** DRAFT → IN-GATE →
+  **GATE-FAILED (round 1)**, edits applied, **not re-verified.** Strings and
+  file:line receipts. Nothing may cascade.
+- `gtm/market/copy/front-door-overhaul-v1.md` — **UNTOUCHED.** It is the record.
+- `gtm/market/copy/front-door-overhaul-receipts.md` — new shift-17 section:
+  every R1–R11 line number re-read at `clinkworthy@9b5b484`, the strike list
+  re-run cold, the six standing items re-read, and PR #98 recorded.
+- `gtm/market/copy/waitlist-front-door.md` — **UNTOUCHED**, and the clause the
+  previous artifact marked DELETED is now marked **HELD** pending the chief.
+- `gtm/org/reviews/2026-09-04-shift17-front-door-strings-r1-fresh-verifier.md`,
+  `…-r1-smb-owner.md`, `…-r1-disposition.md` — **NEW.** Both verdicts verbatim,
+  the disposition filed separately from both.
+
+**FAN-OUT DISCLOSURE — TWO reviewer subagents, one round, both Opus 5, both
+independent of the author, spawned in parallel and unaware of each other.**
+- **Fresh verifier — FAIL.** 8 MUST-FIX, 8 SHOULD-FIX, a receipt audit of ~78
+  citations (71 held exactly; 4 drifted; 2 wrong; 9 load-bearing receipts
+  missing).
+- **Skeptical SMB owner — FAIL.** 5 MUST-FIX, 9 SHOULD-FIX.
+- **NOT BLIND, and the disclosure matters because the last round's was.** The
+  artifact's header carries Phin's ruling on Hero A. Deleting it to stage
+  blindness would have been staging, so both gates saw it. **They failed the
+  hero anyway, independently, by different routes** — the verifier through
+  §6.2's availability row, the owner by reading it in five seconds and
+  concluding he could buy it today.
+- **No reviewer ran `npm test`.** No dependencies in the clone. Neither did the
+  boss.
+
+**A SECOND REPO WAS ATTACHED AND CLONED THIS SHIFT.**
+`pambianchipm/clinkworthy` at `/home/user/clinkworthy`, read-only use, per
+`boss.md`'s cross-repo read licence. Every receipt in the new artifact was read
+from it at `9b5b484` rather than carried forward from `ebac7d1`.
+
+**TOKEN WEIGHT: medium.** Two reviewer subagents, one full clone, one new
+artifact, three review files, no third round.
+
+**WHAT THIS SHIFT FOUND THAT NOBODY HAD ASKED FOR:**
+1. **Item 22 merged.** The waitlist is live. The previous shift's R7 — *"the
+   waitlist Phin complained about is a spec, not a page"* — no longer holds.
+2. **`WAITLIST_ONLY` defaults ON and `POST /api/scan/checkout` refuses before
+   anything else runs.** `ENTRY_AVAILABLE = true` is not a statement that a
+   stranger with a card can pay.
+3. **`tier.ts:46`** — entry buys neither `ads` nor `arm_auto_publish`, so two
+   claims the copy makes describe an `os` entitlement while the live price
+   string beside them quotes entry.
+4. **PR #98's COPY v4 bans the CTA item 22 shipped.** Flagged to Phin, not
+   resolved here.
+
+**AND THE ONE THAT IS ABOUT THIS ORG:** the boss's own standing remedy for the
+largest defect on the page — `YOUR NEXT HIRE · JOINING SOON` — was killed by
+**both** gates independently for asserting a timeframe against a PHIN-APPROVED
+line that says there is no date. **The rule that caught a gate last round
+caught the author this round.**
+
+---
+
 **2026-09-04 · ON-DEMAND (fired by the chief at Phin's request) · SHIFT 16 —
 THE R3 FRESH VERIFIER. It FAILED the copy overhaul. The review budget is now
 SPENT and the artifact gets a retro instead of a round 4.**

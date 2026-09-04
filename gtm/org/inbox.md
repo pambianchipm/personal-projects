@@ -6,6 +6,135 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 · SHIFT 17 CLOSE (boss → chief + Phin) · THE ARTIFACT IS SPLIT,
+THE STRINGS WERE GATED ONCE, AND **BOTH GATES FAILED THEM**. The chief said if
+it fails, the copy genuinely is not there. It failed — but not on the copy, and
+the difference matters.**
+
+**PHIN — FOUR THINGS, and the first is the same one-word fix you were handed at
+00:05, now with a better word and two independent reasons.**
+
+1. **THE HERO STILL SAYS THE DOOR IS OPEN.** Both gates failed it, neither
+   knowing the other's finding. The bakery owner, in five seconds: *"I thought:
+   this is a robot that does my social, it's live, I can start tonight. I was
+   wrong. It doesn't exist. Nothing in the hero told me that."*
+   **AND THEY BOTH KILLED MY OWN PROPOSED FIX.** I recommended `YOUR NEXT HIRE
+   · JOINING SOON`. Both said the same thing: **"soon" is a timeframe, and your
+   own approved line says *"No date, because we don't have one."*** **My remedy
+   for the biggest defect on the page carried a defect.**
+   **The replacement, and it is built from your own approved words: `YOUR NEXT
+   HIRE · NOT BUILT YET`.** The owner's independent version was `YOUR NEXT HIRE
+   · STILL BEING BUILT`. **Still your ruled line, still not applied by me.**
+2. **"Tells you which ones moved units" — the owner's reaction, verbatim,
+   because it is the sharpest sentence either gate produced:** *"Moved units
+   means it tells me which post sold croissants. That's the whole dream… Now
+   you tell me it only knows if I log the sales myself. I don't log sales.
+   Nobody with eleven staff at 6am logs sales against Instagram posts. So the
+   feature I got excited about is a feature I will never actually have, and I
+   would only find that out after I'd paid."* **His proposed rewrite:** *"…and
+   tells you which ones people reacted to — and which ones sold, if you log
+   your sales."* **Your ruled sub. Yours to take or leave.**
+3. **ITEM 22 MERGED. THE WAITLIST IS LIVE.** The thing you complained about is
+   no longer a spec — *"in alpha"*, *"a few at a time"* and *"Nothing to pay to
+   join"* are on the internet right now (`content.ts:219`, `:226`).
+   **And so is a price line our own ban list bars twice**: *"Founding rate from
+   $59/mo when you're invited."* (`content.ts:225`) — §6.2 bars *"founding
+   rate"* applied to $59 **and** bars *"from $59"*.
+4. **NOTHING CAN BE BOUGHT TODAY, AS FAR AS THE CODE GOES.**
+   `waitlist-gate.ts:12` — *"DEFAULT ON. An absent variable means GATED"* — and
+   `api/scan/checkout/route.ts:37-38` returns a 403 before anything else runs.
+   **So `ENTRY_AVAILABLE = true` is a flag in `content.ts`, not a statement
+   that a stranger with a card can pay.** **NOT CHECKED: what `WAITLIST_ONLY`
+   is set to in your production environment — I cannot read it.** If it is on,
+   the three-shift-old question *"should entry be de-emphasised?"* has been
+   answered by a deploy rather than by you.
+
+**PHIN — THE ONE THAT IS ONLY YOURS: TWO COPY SOURCES NOW DISAGREE ON YOUR OWN
+CTA, AND I AM NOT RESOLVING IT.**
+
+**PR #98** (`auto/fd-employee-positioning`, **draft, open, gate-FAILED by the
+chief**) writes a COPY v4 whose shared-shell rules say, at `:352-353` of its
+own `MARKETING.md`: ***"Do not use 'Start free,' 'Join the waitlist,' or 'See
+the console' as the dominant action"***, naming **Get early access** instead.
+**`Join the waitlist` is the live form CTA shipped by item 22**
+(`content.ts:233`).
+
+**MY RECOMMENDATION — the shipped CTA stands and COPY v4 changes, not the other
+way round. Three reasons, and you can check all three:**
+1. **COPY v4 contradicts itself in the same file.** At `:168-172` it still
+   carries your words as the ruling for that section — *"I would change the
+   copy around to be more like join the waitlist for early access!"* — and at
+   `:352` it bans the phrase. **The ban was not written against your ruling; it
+   was written without noticing it.**
+2. **#98 is a draft and it is gate-failed; item 22 is merged.** A banned string
+   that shipped beats a ban that has not.
+3. **COPY v4's trust line is `"Nothing posts or spends without your approval."`
+   (`:339`)** — the unqualified form our ban list bars, with *"click"* softened
+   to *"approval"*, which is the exact loosening an SMB reader rejected on the
+   record. **A copy source carrying that sentence should not be the one
+   overruling a shipped CTA.**
+**It is your call and I have not touched either file.**
+
+**CHIEF — FIVE, and the first is the finding of the round.**
+
+1. **A GATE'S PROPOSED REMEDY RESTORED THE UNQUALIFIED APPROVAL CLAIM AGAIN.**
+   The SMB gate's replacement safety band opens *"Nothing posts and nothing
+   spends without your click."* — `PRINCIPLE` in different words, the form
+   §6.2 bars. **Five rounds, five authors, one shape, and the second
+   consecutive round in which it arrived inside a proposed FIX.** Declined; the
+   finding behind it taken in full (he could not parse the old band on one
+   reading and named the clause). **Your rule 1 now has a symmetric record: it
+   caught a gate last round and it caught me this round.**
+2. **THE BEST CATCH IN EITHER VERDICT IS AN ENTITLEMENT ONE, AND IT BITES MORE
+   THAN COPY.** *"Runs your Meta ads"* and the advance-posting clause were
+   receipted to `channel-readiness.md` — a **platform** grade that says nothing
+   about who is entitled. **`tier.ts:46`: `entry` buys neither `ads` nor
+   `arm_auto_publish`; `:79` says outright *"an entry tenant cannot arm."***
+   **So the front door describes an `os` capability directly above a live price
+   string quoting the entry number.** Yours.
+3. **THE DELETED PHIN-APPROVED CLAUSE IS NOW MARKED HELD, NOT DELETED.** The
+   verifier's point is correct and I had missed it: the file's own header says
+   it does not supersede `waitlist-front-door.md`, and striking an approved
+   clause on that file's authority *is* superseding it. **The reason not to
+   print it got stronger**, though: `api/waitlist/route.ts:31-34`, the header
+   of the shipped route that receives the form — *"Nothing here sends email.
+   That is the standing rule."* **Still your confirmation, not my deletion.**
+4. **§6.2's DEVIATION IS STILL OPEN AND THE BAND CHANGED SHAPE.** It now reads:
+   *"You choose how each post goes out: click it live yourself, or switch it on
+   once and let it go out on its own. Ads are different — nothing spends until
+   you click the button that shows you the budget, campaign by campaign."*
+   **It makes no unqualified approval claim at all**, and it is what
+   `MARKETING.md:47`'s own ⚠ note prescribes: *"If autopilot posts without a
+   click, the 'nothing posts' promise elsewhere must soften to 'nothing
+   spends'."* **Still an override of a MANDATORY clause in a gated artifact.
+   Yours.**
+5. **THREE SMALLER RULINGS:** the 30-day refund is sayable under §6.2 and
+   appears in no string (the verifier is right that a burned owner is handed
+   nothing); the hero sub and the Platform header carry the same four verbs
+   twice and **the two gates recommend cutting different halves**; and the
+   chief's brief for this shift bars completeness claims about channels while
+   §6.2 licenses one — **I did not pick between them.**
+
+**WHAT I WILL NOT DRESS UP.** The chief's ruling said that if the strings gate
+failed, the copy genuinely is not there. **The strings failed, and I do not
+read it that way, so here is the evidence rather than my opinion.** Of the
+verifier's 8 MUST-FIX, **one is about a string a visitor reads** (the meta
+description's scope) and **one is a string that was reordered from its ruled
+form** (the footer tagline). **The other six are missing receipts, a wrong line
+number, an uncounted claim, an unread entitlement, and a defect in a remedy.**
+The receipt audit ran ~78 citations and **71 held exactly**. The owner gate
+failed on **two strings and a price hole**, not on the writing — and it named
+the free scan the strongest asset on the page. **My read: the strings are close
+and the RECEIPTS were thin, which is the opposite of the last three rounds and
+is the first useful signal this loop has produced.** Yours to overrule.
+
+**STATUS: `gtm/market/copy/front-door-strings-v1.md` is GATE-FAILED (round 1)
+with edits applied and unverified. Do not cascade it.** Two verdicts verbatim
+plus a disposition recording seven declined remedies, all three in
+`gtm/org/reviews/2026-09-04-shift17-front-door-strings-r1-*`. — boss
+
+---
+
 **2026-09-04 · READY FOR REVIEW (for the chief) · Shift 17 · THE STRINGS ARE
 SPLIT OUT AND ARE IN-GATE.** `gtm/market/copy/front-door-strings-v1.md` —
 DRAFT, round 1. Hero A as ruled, the waitlist block, the section headers, one
