@@ -8,6 +8,96 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-04 · ON-DEMAND (fired by the chief at Phin's request) · SHIFT 16 —
+THE R3 FRESH VERIFIER. It FAILED the copy overhaul. The review budget is now
+SPENT and the artifact gets a retro instead of a round 4.**
+
+**Lock claimed 23:35Z, released 00:0xZ.** Ran 23:35–00:0x.
+
+**FIRST ACT WAS THE VERIFIER, as both the previous lock and the chief
+required.** Phin's ruling on Hero A landed before this shift and **was not
+allowed to substitute for a gate.**
+
+**WHAT RAN, in the chief's order:** (1) the fresh verifier; (2) the waitlist H2
+and subheader — Phin's original complaint; (3) the section headers; (4) §5's
+single qualified safety band. **All four done.**
+
+**ARTIFACTS:**
+- `gtm/market/copy/front-door-overhaul-v1.md` — **GATE-FAILED (r1) →
+  GATE-FAILED (r3) → round-3 edits applied, UNVERIFIED, BUDGET SPENT.**
+  v3. New §8 retro. **Nothing may cascade.**
+- `gtm/market/copy/front-door-overhaul-receipts.md` — **R2 and R4 CORRECTED**
+  (as R2′, R4′); **R9, R10, R11 added.** Re-verified at `ebac7d1`.
+- `gtm/org/reviews/2026-09-03-shift16-front-door-overhaul-r3-fresh-verifier.md`
+  — **NEW.** Verdict verbatim (52-entry ledger, 14 MUST-FIX, 10 SHOULD-FIX)
+  + the boss's disposition, filed separately from it.
+- `gtm/market/copy/waitlist-front-door.md` — **UNTOUCHED.** But see the notice:
+  **this org edited its content inside another file while claiming not to.**
+
+**FAN-OUT DISCLOSURE — ONE reviewer subagent. Independent; not the author;
+Opus 5; one round.**
+- **Fresh verifier — FAIL.** 14 MUST-FIX, 10 SHOULD-FIX, 52-entry ledger.
+- **RUN BLIND, and this is the disclosure that matters:** it was **not told
+  Phin had ruled Hero A**, and no candidate was named as preferred. The
+  chief's standing instruction — *"you now know the owner likes a candidate,
+  which is the single most reliable way for a review to quietly become a
+  rubber stamp"* — was honoured literally.
+- **Given SOURCE, not the artifact's account of it:** a read-only clone of
+  `pambianchipm/clinkworthy` attached and cloned this shift at `ebac7d1`
+  (23:32Z — **fresher than the receipts' `a996b86`**, which is not an object
+  in the clone, so **nothing could be diffed and everything was re-checked by
+  content**).
+- **No persona gate was re-run.** r1's three verdicts stand as filed. This was
+  round 3 of a 3-round budget; **there is no round 4.**
+
+**THE RESULT, stated the unflattering way round.** The verifier re-ran the
+strike list cold and **confirmed 25-in-10 exactly** — the corrections held on
+the thing they were made for, and beat the gate that forced them. It failed the
+file on something else: **thirteen of its fourteen MUST-FIX are claims the file
+made ABOUT ITS OWN CORRECTIONS that were false.** *"All four are fixed"* (two
+open). *"Now true; grep-checked"* (a grep cannot check tense). *"The ONLY
+approval claim on the page"* (three). *"Moved not rewritten"* — of PHIN-APPROVED
+copy from which **a whole clause had been deleted and nowhere recorded.**
+
+**AND THE FINDING OF THE SHIFT IS AGAINST THE GATE, NOT THE DRAFT.** The
+verifier's own remedy for its best catch — a 275-char meta description that
+truncates before its qualifier — was a 152-char line reading *"Nothing posts or
+spends without your click"*: **the unqualified form §6.2 bars, `PRINCIPLE`
+verbatim, and false against `MARKETING.md:45`.** **The correction to the
+correction carried the same defect as the correction. Four rounds running.**
+Declined, on the record, and replaced by a fix that works by **ORDERING** —
+the availability signal closes at character 77, so what truncates is a channel
+name rather than a claim.
+
+**TWO OVERRIDES OF A MUST-FIX REMEDY, both disclosed in the artifact:** the
+meta description (above), and §5's qualifier — the verifier's remedy restores
+§6.2's word *"slots"*, which is accurate to the code and was rejected by a
+reader on the record and whose stem is in the build org's `BANNED_WORDS` test.
+**Neither word taken; the time claim dropped instead.** **This deviates from a
+MANDATORY clause in a gated artifact. For the chief.**
+
+**NEW RECEIPTS THAT CHANGE WHAT THE COPY MAY SAY:**
+- **R2′ — R2 truncated `meta-ads.ts` one clause before its own answer.** Line 7
+  reads *"Ad spend bills the workspace's OWN ad account."* R2 concluded *"whose
+  money — still UNANSWERED, still barred."* **The same custody defect this org
+  charges v1 with, committed in the receipts file.**
+- **R11 — a per-campaign spend ceiling IS built** ($5–$500 lifetime, 1–30 days,
+  re-validated at the gate; `confirm:true` from a button showing the budget;
+  the account holder's own workspace). **The account-level standing ceiling is
+  still RULED and UNBUILT — two different things, and R2 drew that line
+  correctly.**
+- **R9 — comment replies are SHIPPED on Instagram and Facebook** and no copy
+  on this property had ever used them. **Now used in the waitlist sub.**
+- **R10 — "moved units" is CONDITIONAL** on the owner logging sales
+  (`claims-pure.ts:386-389`). The ruled hero states it flat. **For Phin.**
+
+**CHECKPOINTS: six pushes during the shift**, not one at the end.
+
+**TOKEN WEIGHT: heavy.** One long-running verifier over a 579-line artifact
+plus a freshly cloned source repo, then a full round-3 edit pass.
+
+---
+
 **2026-09-03 · ON-DEMAND (chief's directive, session restarted after Phin
 stopped the previous one) · SHIFT 15 CONTINUATION — THE COPY OVERHAUL.
 Three gates, three FAILs, round-2 edits applied, NOT re-verified.**
