@@ -358,3 +358,97 @@ the result"* claim in two places (`api/scan/route.ts:47`, `content.ts` the
 `freeNote`** (`content.ts` ~`:99`) — *"it takes an email because that is where
 the result is sent."* **The receipt that exists to prove "grep for every
 instance, not the first" found two of three.**
+
+---
+
+## RE-READ AT `9b5b484` (main, 2026-09-04T02:30Z) — shift 17
+
+Read from a **fresh full clone** of `pambianchipm/clinkworthy` at
+`/home/user/clinkworthy`, not from the earlier read-only clone. `ebac7d1` is
+not an object in this clone either, so nothing was diffed: every row below was
+re-read by content. **The line numbers in R1–R11 above are `ebac7d1` numbers
+and are superseded by `gtm/market/copy/front-door-strings-v1.md`, which carries
+`9b5b484` numbers.**
+
+### R7 IS OVERTAKEN BY EVENTS — **ITEM 22 HAS MERGED. THE WAITLIST IS LIVE.**
+
+R7 established that the waitlist Phin complained about was a spec. It is now
+shipped code on `main`:
+
+| What | Where |
+|---|---|
+| The section renders | `console/app/landing/page.tsx:192` (`<section id="waitlist">`), H2 `:195`, form `:205` |
+| H2 | `console/app/landing/content.ts:218` — `'Join the waitlist for early access.'` |
+| Sub | `:219` — *"Player2 is in alpha and we're letting shops in a few at a time…"* |
+| Price + note | `:225`, `:226` — *"Founding rate from $59/mo when you're invited."* · *"Nothing to pay to join."* |
+| Form CTA | `:233` — `'Join the waitlist'` |
+| The two plan cards | **gone** — the comment at `page.tsx:186-191` records the removal |
+| The gate | `console/lib/waitlist-gate.ts:32-36` — `waitlistOnly()`, **default ON**; `WAITLIST_REFUSAL` at `:43-46`; the checkout route refuses under it (`console/app/api/scan/checkout/route.ts:28`) |
+| `ENTRY_AVAILABLE` | `console/app/landing/content.ts:56` — still `true` |
+| Phin's canon line | moved from `PRICING.title` to `WAITLIST.closer`, `content.ts:259`; the assertion followed it, `console/lib/__tests__/landing-content.test.ts:85-86` |
+
+**So the three strings shift 16 rewrote as spec are now live strings, and the
+three defensive clauses the chief's directive named are on the internet**:
+*"in alpha"*, *"a few at a time"*, *"Nothing to pay to join"*.
+
+### A RECEIPT R5 AND THE OVERHAUL BOTH WANTED AND NEITHER HAD
+
+`console/app/api/waitlist/route.ts:31-34`, the header of the route that
+receives the waitlist form: *"**Nothing here sends email.** That is the
+standing rule and it is also the reason the landing's H2 ships as 'Join the
+waitlist for early access.' without 'and updates'."* This is the build org
+stating the constraint in the shipped route, which is a stronger receipt for
+deleting the owner's *"we'll come to you"* clause than the absence-of-a-mailer
+argument the overhaul used.
+
+### THE STRIKE LIST, RE-RUN COLD AT `9b5b484`
+
+```
+grep -rnE "Marketing that runs|marketing that runs|while you run the shop|cannot hire a 5|five-person|5-person|hire a five" . --exclude-dir=.git
+```
+
+**→ 25 instances in 10 files.** Same count as the r3 run at `ebac7d1`, on a
+commit two shifts newer. **The instrument's blind spot is unchanged and is why
+the count is a floor:** the pattern cannot match a string split across two
+literals, and it cannot match
+`docs/design/redesign-2026-09/screenshots/marketing/NOTES.md:76`, which breaks
+the line on slashes.
+
+`9b5b484` line numbers for the shipping rows: `content.ts:85`, `:86`, `:107`,
+`:163`, `:275`; `opengraph-image.tsx:12`, `:90`, `:91`;
+`landing-content.test.ts:76`, `:77`; `render.mjs:88`.
+
+### R11 HOLDS, WITH DRIFT
+
+`console/app/api/ads/launch/route.ts` — the gate comment `:11-14`; the refusal
+`:21-23`; `getActiveWorkspace()` `:25`; the workspace check `:30-31`; the caps
+`:36-41` (`budgetCents < 500 || > 50000`, `days < 1 || > 30`).
+
+### THE SIX STANDING ITEMS, RE-READ
+
+| Item | State at `9b5b484` |
+|---|---|
+| `MARKETING.md` names X and Reddit as Entry features | **LIVE** — `docs/design/redesign-2026-09/MARKETING.md:44`. `docs/channel-readiness.md:16` grades X PARTIAL, `:17` Reddit BLOCKED |
+| `MARKETING.md`'s autopilot contradicts `PRINCIPLE` | **LIVE** — `MARKETING.md:45`, against `content.ts:184`. The file's own note is `:46` |
+| The scan tells strangers we email them the result | **LIVE** — `console/app/landing/content.ts:100-101` (doc comment) and `:104` (*"that is where the result goes"*) |
+| Item 22 has not merged | **CLOSED — it merged.** See above |
+| `position-v2` says `channel-readiness.md` does not exist | `docs/channel-readiness.md` is present at `9b5b484` |
+| `/scan` H1 lacks the brand name | **LIVE** — `console/app/scan/page.tsx:302`, *"See your business the way our system does."* The specs disagree: `MARKETING.md:50` and `:118`, `FRONTDOOR-PLAN.md:480`, `Player2 Marketing.dc.html:145` and `:159`, `NOTES.md:122` and `:149` |
+| Footer tagline ruled at COPY v2, not shipped | **LIVE in two pages** — `console/app/scan/page.tsx:681` (not `:629`) and `console/app/scan/welcome/page.tsx:194` |
+
+### PR #98 — A SECOND COPY SOURCE, AND IT BANS A SHIPPED STRING
+
+`pambianchipm/clinkworthy` **PR #98** (`auto/fd-employee-positioning`, head
+`2e85137`, **draft, open**, gate-failed by the chief at `9b5b484`) writes COPY
+v4 into `docs/design/redesign-2026-09/MARKETING.md`. **Line numbers below are in
+the PR head's version of that file** (`git show pr98:docs/design/redesign-2026-09/MARKETING.md`),
+not in main's. At its `:352-353`:
+
+> *"Do not use 'Start free,' 'Join the waitlist,' or 'See the console' as the
+> dominant action in the new direction."*
+
+with `:349` naming **Get early access** as the waitlist action. **`Join the
+waitlist` is the live form CTA at `console/app/landing/content.ts:233`**,
+shipped by item 22. COPY v4's trust line, `:339` in the same PR-head file, is *"Nothing posts or spends
+without your approval."* — the unqualified form `position-v2` §6.2 bars, with
+*"click"* softened to *"approval"*.
