@@ -8,6 +8,57 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-04 · on-demand (chief-fired) · SHIFT 20 — SLIDE 4, THE BOTTOM-UP
+MARKET SIZE.** Chief's brief: build gap G2 off public, citable establishment
+counts; label the serviceable fraction **ARGUED on the slide, not in a
+footnote**; grade every figure in the truth table; nothing outward; public
+sources only; no new vendor/key/account/trial; never print a price.
+
+**WHAT RAN.**
+- `gtm/raise/model/snapshots/2026-09-04-census-establishment-counts.md` —
+  **NEW. RAW CAPTURE.** CBP 2023, SUSB 2022, NES 2023 US bulk files, each with
+  fetch time, HTTP status, byte count and SHA-256; plus the CBP record layout.
+- `gtm/raise/deck/slide-04-market-size-v1.md` — **NEW. DRAFT, ungated.** The
+  slide, the seven-step funnel with a grade per step, the fraction's argument
+  in full with a halve/double sensitivity, the nonemployer exclusion sized, why
+  no dollar figure exists, and a ranked "what to distrust".
+- `gtm/raise/model/assumptions.md` — **A40–A46 added**, plus a new **ARGUED**
+  grade in the legend, plus the market-size bullet in "Not yet in this table"
+  struck and superseded. **Header marks all shift-20 amendments UNGATED.**
+- `gtm/raise/deck/gap-list-2026-09-04.md` — **G2 STRUCK** with the artifact
+  path and a narrower-than-it-looks note (G11 stands); **G16 OPENED.**
+- `gtm/org/inbox.md` — shift-20 close with what could not be sourced.
+
+**FAN-OUT: none. Solo.** No persona reviewer was spawned; **the slide and rows
+A40–A46 have NOT been gated** and say so in their own headers (law 7). **Token
+weight: medium.**
+
+**THE JUDGEMENT CALL WORTH REVERSING.** A45's basis is A30's *"44% post
+weekly"*, and **this table describes that survey's population two different
+ways — A14 "TikTok-active owners", A30 "owners"**. Resolving it needs
+`clinkworthy/docs/research-smm-landscape.md`, which I may read and did not
+clone. **I judged that the label ARGUED is correct either way and that
+resolving it changes which end of the range is central, not the grade.** It is
+flagged to the chief as reversible.
+
+**WHAT THIS SHIFT LEARNED, AND IT IS ABOUT THE SHAPE OF A BOTTOM-UP MODEL.**
+The brief warned that the serviceable *fraction* is where a bottom-up model
+becomes a top-down one, and that warning was right but not the largest thing.
+**Two structural choices moved the answer more than the fraction did, and
+neither is a fraction at all — they are definitions.** (1) **Locations vs
+owners:** counting establishments rather than firms overstates the base by
+**38.6%**, and by more than double in apparel where **56.5% of locations belong
+to multi-location firms**. (2) **Employer vs nonemployer:** personal-care
+nonemployers alone are **1.87×** the whole employer-firm base, at **18.2×** the
+employer count in barbering and **0.2×** in food. **The generalisation worth
+carrying: in a bottom-up model the arguable step is not only the multiplier you
+apply, it is the noun you are counting.** A reader auditing only the fractions
+would have passed a model that was already 2× adrift on its unit. **Both are
+now their own rows in the funnel so the choice is visible rather than
+inherited** — and the second is filed as G16, a one-line Phin ruling.
+
+---
+
 **2026-09-04 · on-demand (chief-fired) · SHIFT 19 — THE DOCTRINE SPLIT.** The
 first shift run under **GATE CLAIMS, NOT CRAFT** (`clinkworthy@da3a061:docs/org/boss.md`,
 Phin's ruling): copy gets one pass against a closed list and ships; claims and

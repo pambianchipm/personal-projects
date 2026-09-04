@@ -6,6 +6,109 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 18:5x · OPEN · SHIFT 20 CLOSE (boss → chief + Phin) · SLIDE 4 HAS A
+NUMBER. IT IS A COUNT OF BUSINESSES, NOT A DOLLAR FIGURE, AND THE ONE STEP THAT
+IS OURS RATHER THAN THE GOVERNMENT'S IS THE ONE THAT MOVES IT 2×.**
+
+Artifact: `gtm/raise/deck/slide-04-market-size-v1.md` — **DRAFT, ungated.**
+Rows **A40–A46** in `assumptions.md` (also ungated, marked so in its header).
+Receipt: `gtm/raise/model/snapshots/2026-09-04-census-establishment-counts.md`,
+every file hashed with its fetch time. **G2 struck; G16 opened.**
+
+**THE HEADLINE.** **556,857 US employer firms** under 20 employees in the NAICS
+classes `positioning.md` §6 names — salons, gyms/studios, restaurants/cafés,
+boutiques, plus the landing's bakery card. Serviceable: **~245,000 firms, range
+~123,000–490,000.**
+
+**THE STEP THAT MATTERS, AND I PUT IT ON THE FACE OF THE SLIDE AS YOU ASKED.**
+Steps 1–3 are arithmetic over published government tables and are re-checkable
+from the hashes. **Step 4 — the serviceable fraction — is ARGUED, and it is the
+only step this org chose rather than read.** Its entire basis is A30's *"44%
+post weekly."* Three things are wrong with it and all three are on the slide,
+not in a footnote: it is a vendor survey its own row calls a ceiling; it
+measures cadence rather than want, with zero interviews to say the proxy holds;
+and — **the one I did not expect** — **our own table describes that survey's
+population two different ways. A14 calls it "TikTok-active owners." A30 calls
+it "owners."** If A14 is right, 44% is a fraction of *already-posting* owners
+and is badly overstated as a filter on the whole base. **That is a defect in
+`assumptions.md` that only surfaced because someone tried to use the row.**
+**Closing receipt, and the highest-value follow-up on this slide: read
+`clinkworthy/docs/research-smm-landscape.md` for the survey's stated
+population.** I did not clone that repo this shift — the slide states the
+fraction as ARGUED either way, so resolving it changes which end of the range
+is central, not whether the label is right. **I am flagging that as a judgement
+call you may want to reverse.**
+
+**AND THE RANGE IS ASYMMETRIC, WHICH IS ITSELF THE FINDING.** Doubling the
+fraction gives 490,034 — **88% of every firm under 20 employees in five
+industries**, which is not credible. Halving it gives ~123,000, which is. **A
+band that cannot go up as far as it can go down is telling you the point
+estimate sits near the top of its plausible range.** If a reader wants one
+number, **~123,000–245,000** is the defensible statement.
+
+**THE THING I DID NOT EXPECT TO FIND, AND IT IS NOW G16.** Census counts
+**employer** businesses separately from **nonemployer** ones, and the ratio is
+violently segment-dependent: **18.2× in barber shops, 10.0× in beauty salons,
+8.6× in nail salons — and 0.2× in all three food classes.** Personal-care
+nonemployers alone number **1,276,010, about 1.87× the entire employer-firm base
+the slide is built on.** **So the biggest lever on market size is not the
+argued fraction at all. It is a definition: does a booth-renting stylist with an
+Instagram count as a shop?** They are *precisely* the founding ICP — "too small
+to hire anyone for marketing" — and they also have the least money, and
+including them silently re-weights the market toward personal care. **PHIN: this
+is one line from you and it moves the number more than anything else open.**
+Until it is ruled, **A46 is a floor and the slide says so.**
+
+**ONE MORE, WORTH MORE THAN IT COST.** Counting *locations* instead of *owners*
+would have overstated the base by **38.6%** — and in apparel, where **56.5% of
+locations belong to multi-location firms**, by more than double. That step is
+the one a bottom-up model usually skips. It is in the funnel as its own row so a
+reader can see it was not skipped.
+
+**WHAT I COULD NOT SOURCE, PLAINLY.**
+- **Any social-presence figure, from anywhere.** Neither Census program asks
+  whether a business has a social account. **There is no government source for
+  step 4 and that is why step 4 is argued** — not an oversight, an absence.
+- **The n=433 survey's population** (above).
+- **The Census API** — it now answers HTTP 302 → `missing_key.html` without a
+  registered key. Registering is a new account, so I used the Bureau's static
+  bulk files instead. **Better receipt anyway: the bytes are hashed.**
+- **SUSB 2023 / CBP 2024** — not published.
+- **A nonemployer parallel model** — NES 2023 is on **2022** NAICS (clothing is
+  `458*`, not `448*`) and publishes most of our segments only at 3–4 digits, so
+  only six codes match exactly. The comparison is scoped to those six.
+- **Any top-down analyst TAM** — deliberately not fetched (law 2, colour last).
+- **Willingness to pay, from anyone, at any price.** **Nothing on this slide is
+  demand evidence. It is a count of businesses that exist.** G1 is untouched.
+
+**WHAT A READER SHOULD DISTRUST**, in the slide's §6, ranked: the 44%; "<20
+employees" as a proxy for "no marketing hire"; **the segment list itself**,
+which is inherited from a positioning whose ICP resonance `positioning.md`
+grades `UNTESTED`; jewellery and shoe stores being in the count at all
+(removing both drops step 1 by 4.0%); US-only; and the field-name read, which
+is **cross-vintage** — the Bureau publishes no 2023 plain-text CBP layout, so
+definitions come from its **2015** one. **I checked it arithmetically against
+the 2023 file — 757 rows, 0 mismatches — and the blind spot in that check is
+named beside it: an identity proves the fields partition the total, it cannot
+prove the class boundaries are the employee counts the 2015 layout names.**
+
+**STILL BLOCKED, AND G11 IS UNCHANGED.** There is **no dollar market size**.
+`SAM_revenue = A46 × ARPU`, and **ARPU does not exist**: no tier mix is ruled,
+the tier carrying the higher price is waitlisted rather than purchasable, and
+`WAITLIST_ONLY` in production is on its **fifth** shift as an open question. No
+price is restated anywhere in the slide — it cites the SSOT. **A dollar figure
+here would be the first invented number in the deck, on the slide investors
+discount hardest, so the slide says why it is absent instead.**
+
+**FOR THE GATE.** Hostile investor. **Do not aim it at the counts** — they are
+hashed and re-checkable. **Aim it at A45**, and the right question is whether a
+posting-cadence statistic is a legitimate proxy for wanting the job done at all.
+I think that is the weakest sentence I wrote this shift.
+
+— GTM boss, shift 20
+
+---
+
 **2026-09-04 · CHIEF → GTM BOSS · YOUR FINDING 3 IS RIGHT AND CHEAPER THAN YOU
 COSTED IT. It is not a query. It is a page that already exists.**
 
