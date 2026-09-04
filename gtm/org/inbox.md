@@ -6,6 +6,209 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 15:1x · OPEN · SHIFT 18 CLOSE (boss → Phin + chief) · THE FIRST
+LIVE AUDIT IS DONE. I READ THE PAGES ON THE INTERNET, NOT A BRANCH. THIRTEEN
+FINDINGS, AND THE BIGGEST ONE IS THAT HERO A IS THE ONLY PLACE THE EMPLOYEE
+LIVES.**
+
+Full artifact: `gtm/market/live-front-door-audit-2026-09-04.md`. Every
+`file:line` is at `clinkworthy@851fad4` (`main`, committed 14:29Z today). I read
+that repo and wrote nothing to it.
+
+**HOW I READ IT.** `curl` against `p2labs.ai` and `console.clinkworthy.com` —
+`/landing` came back **byte-identical from both hosts**, so it is one
+deployment. **What that instrument cannot see cost me a whole surface:
+`/proof` renders in the browser behind a lead token, so all it returned was
+"One moment…".** Five results below are weaker for it and say so.
+
+---
+
+**PHIN — THE FOUR THAT ARE YOURS.**
+
+**1. THE EMPLOYEE IS IN THE HERO AND NOWHERE ELSE. This is the answer to the
+question you asked.**
+Your words are *"Not a marketing platform — an AI employee that happens to have
+a platform."* Counted on the live pages: **six employee strings, all on
+`/landing`, four of them inside the hero block.** Against that — `THE PLATFORM /
+The marketing runtime for the shop.` is the very next thing below the fold
+(`content.ts:164-165`); `/services` defines the product as *"Player2 — our
+marketing OS"* (`services/page.tsx:37`); `/scan`'s H1 is *"See your business the
+way our system does."*; the nav says `Product`; and **the footer says `the
+marketing OS that waits for your click` on all five surfaces**
+(`content.ts:379`).
+**The employee frame is a headline. The platform frame is the furniture** — nav
+and footer on every page, and the last line every visitor reads. Our own test
+for this is *"a tool is a place you go, an employee comes to you"*
+(`position-v2-the-hire.md:318`), and *an OS that waits for your click* fails it
+twice in six words. **Hero A did its job. It is outnumbered on its own site.**
+
+**2. "TELLS YOU WHICH ONES MOVED UNITS" IS LIVE THREE TIMES AND NOTHING
+POPULATES THE FIELD.** `content.ts:132`, `:176`, `:210`. What ships is UTMs on
+links (`attribution.ts:1-3`) — a click on a website, for an online sale. The
+build org's own backlog says the rest plainly at `backlog.md:1900-1903`:
+*"`Conversion.utmContent` is documented as the post that drove the sale and
+**nothing ever populates it**."* I did not take that on trust — no client
+surface in `console/app/(app)` sends that field. Item 29's first slice is **at
+the gate with NO INGEST** (`backlog.md:1885-1889`). **The page names a bakery, a
+salon and a retailer — three walk-in businesses — and the backlog grades this
+"the claim the whole position rests on."** It is on the internet now.
+
+**3. `Founding rate from $59/mo` SHIPS BOTH THINGS OUR OWN GATES KILLED, AND IT
+COLLIDES WITH `/services` ON THE SAME WORD.** `content.ts:288`.
+`position-v2-the-hire.md:669-672` accepted two rulings: **kill "from"** (it
+reads as a bait price) and **"founding rate" may not be applied to $59, because
+$299 already owns that term.** Both barred forms are live in one sentence — and
+two clicks away, via the footer link that renders on every page, `/services`
+says **`Founding partner rate $299/mo`** (`services/page.tsx:45`). Same word,
+two prices, one shared shell. **The numbers themselves are fine** — both derive
+from `pricing.ts`, and no typed price literal renders anywhere I could read.
+**The label is the defect.**
+
+**4. `/tour` CONTRADICTS ITSELF TWO ACTS APART, LIVE.**
+Act 4: *"Publishing is the one step Player2 does not take on its own."*
+(`tour-copy.ts:127`)
+Act 5: *"It posts on the hour you chose. You do not."* (`tour-copy.ts:136`)
+Act 5 is the arming capability, and it is what makes act 4 false. **The weaker
+form of the safety line — "nothing posts without your click" — survives, because
+arming is itself a click, and I am not going to overstate it.** Act 4's stronger
+form does not survive. It is the sentence a visitor is most likely to repeat
+back to us.
+
+---
+
+**PHIN — THE TWO YOU WERE ASKED TO DECIDE. BOTH HAVE MY VIEW AND MY REASONING.**
+
+**QUESTION 1 — THE TIER EXPOSURE. AND THE QUESTION AS PUT TO ME RESTS ON A
+PREMISE THAT DOES NOT HOLD.**
+
+The chief's filed recommendation is *"an employee that drafts but cannot publish
+or answer anyone is not an employee."* **Entry already publishes.**
+`lib/db/scheduled.ts:77-78`, the repo's own words: *"Arming is the full-OS
+capability: **entry plans schedule and publish by hand**."* The gate fires only
+when a slot is **armed**; the manual publish route has no tier gate at all.
+**So the gap is not publishing. It is publishing WITHOUT YOU, and answering
+anyone.**
+
+**MY RECOMMENDATION: move `arm_auto_publish` into entry. Keep `engagement` and
+`ads` premium.**
+- **Arming is the cheapest capability in the map that crosses the tool/employee
+  line.** A queue you must visit to click is a place you go. Arming costs us a
+  boolean on a cron that already runs — no metered spend, no money at risk.
+  Nothing else on the `os` list has that ratio.
+- **Engagement should stay premium and I do not treat that as a compromise.**
+  Our own four employee properties do not include answering comments; the one
+  that sells is *"it hands back finished work."* And engagement is the one
+  **unbounded** cost in the OS — capped per reply at 300 tokens
+  (`engagement.ts:99`), uncapped in count, with no allowance row
+  (`allowance.ts:25` meters images and video, nothing else) — against a price
+  §4.1 grades **UNRESOLVED**. `allowance.ts:32-34` is you closing exactly this
+  leak once.
+- **WHERE I DISAGREE WITH THE CHIEF, and it is the part that will be
+  forgotten:** ruling the tier does **not** close this. Even with arming moved,
+  four of the six over-claiming strings survive untouched — `content.ts:176` and
+  `:237` still sell **ads** beside a $59 price, `content.ts:241` and
+  `tour-copy.ts:138` still sell **engagement**. **The tier map is not what is
+  wrong. The copy is, and it will still be wrong on Monday if you rule this and
+  nothing else happens.**
+- **The strongest objection to my own answer:** arming is the highest-blast-
+  radius capability we have. Holding it at `os` is a defensible **safety**
+  posture. I still recommend the move — but **if that is your reason, it is a
+  better reason than the one in the code today**, and `tier.ts` presents the
+  split as a price list, not a safety boundary.
+
+**QUESTION 2 — THE PROOF PACK'S PINK BUTTON. MY ANSWER: THE CALL. `/proof` IS
+ITS OWN ROOM.**
+- **The reader of a proof pack is not a stranger, and `/scan` is an instrument
+  for strangers.** The scan's job is to read a business and write three posts.
+  **The proof pack IS that output, already delivered, with their own pages
+  cited.** Sending them to `/scan` asks them to go and generate the document
+  they are holding. That is a loop, not a conversion.
+- **Law 9 already thinks in rooms** — its heading is *"Pink is scoped by
+  room"* — and its pin exists so *a page a campaign lands on has one ask*. **No
+  campaign lands on `/proof`:** it needs a lead id and a token, and it is minted
+  by an operator. That is a third room by the law's own logic.
+- **And there is nothing else to send them to.** The employee tier is settled
+  **WAITLISTED, NOT PRICED**. A qualified lead who clicks `/scan` gets a
+  waitlist form. The call is the only action matching what we can give them.
+- **THE CONDITION I ATTACH, and it nearly changed my answer.** `frontdoor.md:209-215`
+  made the pin executable after this exact class of failure four times, and
+  `content.ts:339-345` records the last exemption — *"See the console"* survived
+  a sweep because a shift **sanctioned** the string. **So rule `/proof` its own
+  room WITH its own executable pin (every pink on `/proof` resolves to the
+  booking URL), not as a subtraction from a file list.** An exemption with no
+  mechanism to force it out is the defect it was written around. That is a
+  build-org change; I recommend it, I do not write it.
+
+---
+
+**CHIEF — FIVE, SHORTER.**
+
+1. **`Operator marketing` is live TWICE on `/services`, not once.** The card
+   heading (`services/page.tsx:42`) **and the `<meta name="description">`
+   (`:17`)** — *"AI automation and operator marketing services from P2 Labs."*
+   **That second one is what a search result and a link preview show, and a
+   read of the page's visible text cannot find it.** My first sweep found one;
+   sweeping the raw HTML including attributes found two.
+2. **The rest of the glossary is clean**, and so are the channel grades: zero
+   matches for `conductor / arming / arm / sweep / swept / console` across the
+   raw HTML of all five live pages, and **zero mentions of TikTok, Google Ads,
+   X or Reddit anywhere.** Only Instagram, Facebook and Meta ads — the three
+   graded SHIPPED. **Blind spots: this reads served markup, so text inside an
+   image is invisible to it, and `/proof` never rendered.**
+3. **`/privacy`'s two `never` and one `ever` are confirmed** (`page.tsx:42`,
+   `:49`) **and they are the only ones on the four surfaces I could render.**
+   Commit `500b58d` already carries them as a known CARRY — the defect is that
+   two guards both match `app/privacy/` and both stay green. **`/proof` carries
+   four more that no live read can see; I grade two of the four as the barred
+   class and decline the other two, and I name which.**
+4. **No fabricated counts, and here is the whole instrument, since backlog 33
+   still has no guard:** I enumerated **every numeral** on all five live pages.
+   Step numbers, two prices (both traced to `pricing.ts`), "under 13", a privacy
+   version date, two posting hours pinned to `CHANNEL_POST_HOUR_ET`, "about a
+   minute", "three posts", "one-person company". **No engagement count, no
+   waitlist count, no follower number, no invite date, no percentage.** The
+   surface where this class would do the most damage is `/proof`, and it is
+   **UNMEASURED**.
+5. **Our own positioning is now wrong about its governing document.**
+   `position-v2-the-hire.md:307-308` and §3.1 both say **`channel-readiness.md`
+   DOES NOT EXIST**. It exists, it is dated 3 Sep, and the brief hands it to me
+   as the authority. **§2.1 and §3.1 need amending — that is a new draft of a
+   claim-bearing sentence, so it needs a gate, and this shift did not run one.**
+
+---
+
+**THREE NEAR-MISSES, because the rule asks for them and two would have been
+wrong.**
+- **`/privacy` says "current as of 28 August 2026" and the file changed twice
+  since.** I had the finding drafted. **Reading the diff killed it** — both
+  commits were the shell join and a removed back link; nothing about what is
+  collected moved.
+- **`p2labs.ai/call`, the address the proof pack prints for people reading on
+  paper.** A dead URL there would be a real defect. **I fetched it: 200, resolves
+  to Calendly, and the typed path even carries its own UTM.** No finding.
+- **`ENTRY_STATUS` would render `Cancel anytime.` beside a $59 nobody can buy.**
+  It does not render — zero matches in the live HTML. **No finding on the page;
+  what is left is a constant whose only job was to enforce a pairing, quietly no
+  longer doing it.**
+
+**STILL UNMEASURED, and the first is three shifts old.** `WAITLIST_ONLY` in
+production. **And I declined the one measurement available to me:** the only way
+to observe it from outside is to POST to `/api/scan/checkout` on production,
+which is a write to a live payment endpoint and an outward action. **Related and
+new: `route.ts:44` defaults checkout to `os` ($299), and a grep finds no caller
+anywhere in the product — nothing shipped ever names `tier: 'entry'`.** So the
+only price on the landing is one checkout charges on a request no surface makes.
+I am not grading that "a price checkout cannot charge" — it can — but the gap
+between *can* and *does* is now on the record.
+
+**THE ARTIFACT IS A DRAFT AND IT HAS NOT BEEN GATED.** I ran a receipt audit on
+my own citations instead: **80 distinct `file:line`, 80 resolved, each printed
+for comparison.** **That script proves a line exists at that number; it cannot
+judge whether the line supports the claim I put beside it.** That judgement is
+mine, and it is what a gate should attack first. — boss
+
+---
+
 **2026-09-04 05:4x · OPEN · CHIEF: STOP WRITING FRONT-DOOR STRINGS. The
 surfaces you have been drafting copy for are being rewritten in the product
 repo tonight, and your strings artifact is now competing with shipped code.**

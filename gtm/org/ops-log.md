@@ -8,6 +8,73 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-04 · on-demand (chief-fired) · SHIFT 18 — THE FIRST LIVE AUDIT.**
+The chief's 05:4x ruling removed front-door string authorship from this org and
+gave it the audit lane. Executed: **no round 2 on the strings, no draft of any
+live string, no write to the product repo.**
+
+**Read the LIVE product, not a branch.** `curl` against `p2labs.ai` and
+`console.clinkworthy.com` for all six front-door URLs — all 200; `/landing`
+**byte-identical across both hosts** (md5 `d588c20e…`), so two hostnames, one
+deployment. Second instrument: `pambianchipm/clinkworthy@851fad4` (`origin/main`,
+14:29Z), cloned depth 1 and deepened to 200 for one history question. **The
+instrument's blind spot cost a whole surface: `/proof` renders client-side behind
+a lead token and returned only "One moment…", so five results are source-read and
+labelled UNMEASURED as rendered.**
+
+**Shipped:** `gtm/market/live-front-door-audit-2026-09-04.md` — **DRAFT,
+ungated.** 13 findings graded (a) positioning breach / (b) claim outruns ship /
+(c) positioning now wrong, plus the two recommendations Phin decides.
+
+**The four that matter.** (F1) **The employee frame is six strings, all on
+`/landing`, four inside the hero — while the platform frame holds the nav and the
+footer on all five surfaces.** Hero A won and is outnumbered on its own site.
+(F2) *"moved units"* ships three times and `Conversion.utmContent` is never
+populated; item 29a is at the gate with NO INGEST. (F3) `Founding rate from
+$59/mo` renders **both** forms this org's gates killed, and collides with
+`/services`' `Founding partner rate $299/mo` on the same word. (F6) `/tour`
+contradicts itself two acts apart — *"Publishing is the one step Player2 does not
+take on its own"* against *"It posts on the hour you chose. You do not."*
+
+**THE PREMISE CORRECTION THAT MOVED RECOMMENDATION 1, and it is the shift's best
+work.** The brief carried the chief's reasoning that entry *"cannot publish."*
+**`lib/db/scheduled.ts:77-78` says otherwise in the repo's own words — "entry
+plans schedule and publish by hand"** — the gate fires only on **arming**, and
+the manual publish route carries no tier gate. Recommendation filed: **move
+`arm_auto_publish` to entry, hold `engagement` and `ads` premium**, with the
+disagreement stated plainly — **ruling the tier does not close the divergence,
+because four of six over-claiming strings survive it.** Recommendation 2: **the
+proof pack's action is the call and `/proof` is its own room — conditional on
+shipping its own executable pin**, because `content.ts:339-345` records what the
+last unmechanised exemption cost.
+
+**Clean results, stated with their instruments.** Zero banned-glossary hits
+beyond `/services` (which has **two**, not one — the second is the
+`<meta name="description">`, invisible to a read of visible text). Zero
+sub-SHIPPED channel names anywhere. Every numeral on all five pages enumerated;
+no fabricated count, waitlist number or invite date on any surface I could
+render. All pink on all five live surfaces resolves to `/scan`; the waitlist
+submit is blue. **Each of those carries its blind spot in the same sentence.**
+
+**Three near-misses reported, two of which would have been wrong findings** —
+the `/privacy` date (killed by reading the diff), `p2labs.ai/call` (fetched, 200),
+and `ENTRY_STATUS` (does not render).
+
+**Receipt audit on my own document, since it was not gated:** 80 distinct
+`file:line`, **80 resolved, each printed for comparison against the claim beside
+it.** **The script proves a line exists at that number; it cannot judge whether
+the line supports the claim — that judgement is unreviewed and is what a gate
+should attack first.**
+
+**Fan-out disclosure: NONE. Solo shift, no reviewer agents spawned** — the
+artifact is a divergence report, not a claim-bearing draft seeking GATED, and the
+chief's ruling was that an audit is *"a better use of a gate than another
+draft."* Web: 10 live-page fetches (0 writes, 0 submissions, nothing outward).
+**One measurement deliberately declined:** `WAITLIST_ONLY` is observable from
+outside only by POSTing to a live payment endpoint, which is an outward action.
+Weight: medium. Commits pushed throughout, not one at the end.
+
+
 **2026-09-04 · ON-DEMAND (fired by the chief) · SHIFT 17 — THE ARTIFACT IS
 SPLIT AND THE STRINGS ARE GATED ONCE. BOTH GATES FAILED THEM.**
 

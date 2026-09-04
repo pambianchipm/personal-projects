@@ -44,6 +44,16 @@ nothing to it.
 **Where the two instruments disagreed, the live page won.** They did not
 disagree: every string I traced from source appears in the live HTML.
 
+**(3) THE RECEIPT AUDIT ON THIS DOCUMENT ITSELF.** Every `file:line` below was
+re-resolved cold by a script after the draft was written: **80 distinct
+citations, 80 resolved, and each printed the line it points at for comparison
+against the claim beside it.** **The blind spot is the important half — the
+script proves a line EXISTS at that number; it cannot judge whether the line
+supports the claim I attached to it.** That judgement is mine throughout, and it
+is what a gate should attack first. Six citations point at
+`gtm/market/position-v2-the-hire.md` in this repo rather than at the product
+tree, and are verified the same way.
+
 ---
 
 ## 1. WHAT SHIPPED — the chief's list, held against the tree and the pages
