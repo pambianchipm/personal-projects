@@ -8,6 +8,69 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-04 · on-demand (chief-fired) · SHIFT 19 — THE DOCTRINE SPLIT.** The
+first shift run under **GATE CLAIMS, NOT CRAFT** (`clinkworthy@da3a061:docs/org/boss.md`,
+Phin's ruling): copy gets one pass against a closed list and ships; claims and
+research keep full rigour and take the freed budget.
+
+**THREE JOBS, ALL LANDED.**
+
+1. **`front-door-strings-v1.md` and `front-door-overhaul-v1.md` → CLOSED —
+   SUPERSEDED BY SHIPPED COPY.** Headers only; contents untouched, because they
+   are the record now. **The confirm step found two live claim findings the
+   shift-18 audit missed**, filed as **M1** and **M2** in
+   `live-front-door-audit-2026-09-04.md` §6 (status amended to note the
+   addendum). M1: `Drafts for every channel` is live and barred by name, past a
+   guard that matches **by channel name** — which a completeness claim never
+   supplies, and which is why my own sweep missed it too. M2: the hero shipped
+   without the availability qualifier over a tier settled WAITLISTED, NOT
+   PRICED. Both are recommendations to the front-door org; **no string
+   authored, nothing written to the product repo.**
+2. **`position-v2-the-hire.md` SPLIT along the class line.** Framing ships as
+   **`gtm/market/position-v2-framing-v1.md` — NEW, STATUS SHIPPED**, class 2,
+   one pass recorded in its §8 with the one sentence that pass held back (the
+   `never`/`ever` metering line — a ruled ban list against a ruled doctrine,
+   handed to the chief rather than decided). The claims track stays in the
+   original at full rigour, still ungated and uncascadable. **F11 corrected as a
+   NEW DRAFT:** `docs/channel-readiness.md` exists (commit `5f0de31`,
+   2026-09-03T19:53:52Z); whether the round-3 gate was wrong is **not
+   established and not papered over**; Reddit regraded to the authority's
+   `BLOCKED` with its provenance attached. **Closed with a grep count.**
+   **The two cited passages re-ruled:** `:318` STANDS and is promoted (both
+   shift-14 personas said KEEP; it is a definition, not a claim). `:669-672`
+   SPLITS — the founding-rate collision stands and is now an observation on the
+   live site; **"kill from" does not stand, and the chief's report to Phin needs
+   correcting on it.**
+3. **`gtm/raise/deck/gap-list-2026-09-04.md` — NEW, DRAFT, ungated.** 15 gaps,
+   four tiers, cost-to-close each, ranked by what it costs the round. Tier 1 is
+   no demand evidence, an empty slide 4, and **the live waitlist and scan tables
+   nobody in this org has counted** — the only path to an OBSERVED demand number
+   that exists today, and nearly free.
+
+**FAN-OUT DISCLOSURE: NONE. Solo, and deliberately.** No persona reviewer was
+spawned. Under the new doctrine the copy artifacts were **closed, not gated**,
+and the framing file took the **class-2 one-pass** which the boss runs — that
+pass is recorded with its own blind spot named (a pattern search finds a barred
+word; it cannot find a barred claim phrased in words on no list). **The gap
+list is class 3 and is UNGATED — it should get a gate, and it did not get one
+this shift.**
+
+**CROSS-REPO:** `pambianchipm/clinkworthy` was **not attached to this session**
+despite the brief stating it was; attached **read-only**, read via the GitHub
+contents API (`docs/org/boss.md`, `docs/channel-readiness.md`,
+`console/app/landing/content.ts`), **written to never.** Live pages read with
+`curl -sSL` against `p2labs.ai` — all four surfaces **308 → 200**; the shift-18
+read did not follow the redirect and is unaffected.
+
+**NEAR-MISS, recorded because the rule asks:** the first barred-form sweep
+reported six hits for `ever` and the true count is zero — the pattern had no
+left word-boundary and was matching the ends of *however*, *whatever* and
+*never*. **A finding was nearly filed on a regex defect.**
+
+**Token weight: medium.** Four commits, pushed within the shift.
+
+---
+
 **2026-09-04 · on-demand (chief-fired) · SHIFT 18 — THE FIRST LIVE AUDIT.**
 The chief's 05:4x ruling removed front-door string authorship from this org and
 gave it the audit lane. Executed: **no round 2 on the strings, no draft of any

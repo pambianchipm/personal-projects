@@ -6,6 +6,223 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 16:xx · OPEN · SHIFT 19 CLOSE (boss → Phin + chief) · THE DECK
+GAP LIST IS DONE, AND THE BIGGEST CHEAP WIN IS THAT OUR OWN WAITLIST HAS BEEN
+COLLECTING ANSWERS FOR DAYS AND NOBODY HERE HAS COUNTED THEM.**
+
+Full artifact: `gtm/raise/deck/gap-list-2026-09-04.md` — 15 gaps, four tiers,
+cost-to-close on each, ranked by **what it costs the round** rather than by what
+it costs us to close.
+
+---
+
+**PHIN — THE DECK. YOU SAID CLAIMS AND RESEARCH MATTER MOST HERE, SO THIS IS
+FIRST AND THE REST IS SHORT.**
+
+**WHAT WE HOLD IS GOOD AND IT IS ALL ABOUT US, NOT ABOUT A CUSTOMER.** Your Holo
+capture is the strongest research asset this org has — it has now corrected the
+old teardown twice, including a competitor trust figure we had overstated **4×
+in their favour**. The Viktor capture caught a relayed price that was **2× wrong
+on the anchor a buyer actually sees**. The truth table records its own
+retractions in the open, which is an asset in a diligence read, not an
+embarrassment. **What we do not have is a single number that came from a
+customer.**
+
+**THE THREE THAT COST THE ROUND.**
+
+**1. NO DEMAND EVIDENCE OF ANY KIND — zero customers, zero interviews.** The
+nearest thing we hold is your *"I've talked to a few people"*, which the table
+grades OBSERVED-INFORMAL with the instruction, in the row itself, **never cite
+it externally as market research.** This org cannot close this one: it has no
+way to reach an owner. **The unit is N conversations and the first N matters
+most.**
+
+**2. SLIDE 4 IS EMPTY. There is no market-size figure anywhere in this org**,
+because law 2 bars a top-down one and nobody has built the bottom-up scaffold.
+**This is the biggest hole we can actually fill ourselves** — US Census/NAICS
+class counts for salons, gyms, cafés and boutiques are public and citable.
+**Recommendation: give this the next research shift.** The honest risk in it is
+that the "serviceable fraction" is where a bottom-up model quietly becomes a
+top-down one, and it must be labelled as *argued* on the slide.
+
+**3. THE ONE I MOST WANT YOU TO SEE, AND I DO NOT THINK ANYONE HAS NAMED IT.**
+The waitlist form is **live on the internet right now** — I read it on
+`p2labs.ai/landing` this shift — and `/scan` is live and takes an email. **So
+two tables have been filling up: waitlist signups with their free-text answer
+to "What do you sell, and how do you post today?", and scan runs.** Nineteen
+shifts of demand statements in this org have all been *reasoned*. **There is a
+real one sitting in a database and nobody here has read it.** It is not
+traction and I will not dress it up as traction — but *"N shops asked to be let
+in, and here is what they said they sell"* is the difference between a deck that
+asserts a market and one that shows it, and those free-text answers are
+interview material that arrived without anyone running an interview.
+**Cost: one query, by someone with database access. This org has none.**
+**The condition, said now rather than after: if the number is small it is
+evidence of nothing, and it must then not go on a slide at all.** A count is
+citable in one direction only. Ask for it knowing that.
+
+**AND THE CHEAPEST HIGH-VALUE CLOSE ON THE WHOLE LIST: your Anthropic
+invoice.** Half our cost-per-customer band is a guess — the table says entry
+runs **~$37–76/mo against a $59 price**, so between comfortable and underwater,
+and *which* depends almost entirely on the guessed half. The row names its own
+closing receipt: **your invoice ÷ active workspaces.** The same document also
+tells us which image SKU we are actually billed for, which is currently unknown.
+**A hostile investor goes at that number before anything else on the slide,
+because it is the one place we have published a band that includes
+"underwater."**
+
+**THREE MORE THAT ONLY YOU CAN ANSWER, one line each.**
+- **Has Meta App Review been submitted?** `channel-readiness.md` calls it
+  blocker #1 and says *"status unknown to the org."* Instagram and Facebook are
+  the only two channels the deck may name, and **whether we may run them for a
+  customer who is not you is unknown to us.**
+- **Is `WAITLIST_ONLY` set in production?** Fourth shift asking. The table says
+  the $59 tier is "LIVE"; the code says checkout 403s before anything runs.
+  *"The price renders"* and *"a stranger with a card can pay it"* are different
+  claims and the slide would make the second. **The only outside route to the
+  answer is a POST to a live payment endpoint, which is an outward action, and
+  I have declined it twice.**
+- **The Holo refund contrast.** We hold a receipt that theirs is **7 days, void
+  if any credit was used, minus 5%, with statutory cooling-off waived**, against
+  our **30 days, full, on request**. **My recommendation is that we never name
+  them:** state what we do and let the reader do the comparison. It is most of
+  the value and none of the risk, and it needs no ruling.
+
+---
+
+**CHIEF — YOUR TWO JOBS, AND ONE OF YOUR TWO CITED RULINGS DOES NOT STAND.**
+
+**JOB 1 — BOTH COPY FILES ARE CLOSED.** `front-door-strings-v1.md` and
+`front-door-overhaul-v1.md` now read **CLOSED — SUPERSEDED BY SHIPPED COPY**,
+contents untouched. Each header records what survived — **Hero A's kicker, H1
+and sub, which I checked against the rendered page and against `content.ts` at
+`main@95db0ce` rather than against my memory of proposing them; the one slot
+that did not survive verbatim is the secondary CTA** — what did not, and where
+the shipped strings actually live.
+
+**AND THE CONFIRM STEP YOU ASKED FOR FOUND TWO LIVE CLAIM FINDINGS MY OWN AUDIT
+MISSED.** Both filed as M1 and M2 in the audit's new §6, both recommendations to
+the front-door org, no string authored by me.
+
+- **M1 — `Drafts for every channel` is live on `/landing`.** It is barred **by
+  name** in two places in our own positioning. **The shipped guard cannot see
+  it:** `killed-phrases.test.ts` reads the grades out of `channel-readiness.md`
+  and fails **by channel name** — and a completeness claim names no channel. It
+  asserts all seven rows while matching none. **That is also exactly why my
+  shift-18 sweep missed it:** I swept for TikTok, X, Reddit and Google Ads, got
+  zero, and wrote the channels down as clean. **Zero platform names and a
+  completeness claim are the same result to that instrument.** Worth more than
+  the fix: the guard should carry the completeness phrases as literals.
+- **M2 — the hero shipped without the availability qualifier.** §6.2 bars
+  *"anything implying the employee is available today"*; the live kicker is the
+  bare `YOUR NEXT HIRE`, the qualifier both gates converged on is not on the
+  page, and the only availability disclosure is far below the fold. The employee
+  tier is settled **WAITLISTED, NOT PRICED**. **Shift 17 raised this to Phin;
+  the shipped hero took the H1 and left the qualifier; and my shift-18 audit did
+  not re-check it. F1 asked whether the employee frame was outnumbered and never
+  asked whether it was true. That miss is mine.**
+
+**JOB 2 — THE SPLIT IS DONE, AND HERE IS THE PLAIN ANSWER YOU ASKED FOR.**
+The framing half **ships** as `gtm/market/position-v2-framing-v1.md` — the
+org's working position, class 2, one pass against the closed list, recorded in
+its §8 with the one sentence that pass held back. `position-v2-the-hire.md`
+keeps the claims and full rigour.
+
+**On the two passages you relayed to Phin as settled rulings — they are not the
+same class, and you need to correct one of them.**
+
+- **`:318`, *"a tool is a place you go, an employee comes to you"* — STANDS.
+  PROMOTE, and it is now §2 of the framing file.** It was never a gate-blocking
+  finding; **both shift-14 personas reached it independently and both said
+  KEEP** — the SMB owner called it *"the only clever thing here that survived my
+  five seconds"*, the salesperson *"best sentence in the file."* The one
+  objection was a missing `UNTESTED` label, since repaired. **And it is not a
+  claim at all** — it asserts nothing about a competitor, a price or a
+  capability, so the FALSE-or-WORSE test cannot be run on it. It is a definition
+  we chose. **Your report to Phin was sound in substance; the authority was
+  mis-stated, and promoting it out of the failed file fixes that.** I carried
+  the objection with it: the same gate wrote *"today it describes a product that
+  is a place you go — the employee is 0-of-4,"* which the live audit later
+  measured. **A test you only quote when you pass is not a test.**
+
+- **`:669-672` — SPLIT. One stands, one does not.**
+  **The "founding rate" collision STANDS and no longer needs the failed file.**
+  Two prices sharing one label is a law-4 collision and **it is now an
+  observation, not a prediction**: `/landing` renders *"Founding rate from
+  $59/mo"* and `/services` renders *"Founding partner rate $299/mo"*, both read
+  on the rendered pages this shift, two clicks apart through the shared footer.
+  **Promoted onto that observation as F3's receipt.**
+  **"Kill from" DOES NOT STAND, and this is the correction your report to Phin
+  needs.** *"Reads as a bait price"* is how a sentence lands on a reader.
+  Under FALSE-or-WORSE it is **worse, not false** — §4.4 settles entry as
+  *"$X + N generations"*, §4.3 recommends top-ups and A3 records a $499 row, so
+  a bill that *starts* at $59 is the shape of the thing. **The qualifier I must
+  attach: whether top-ups actually ship is UNMEASURED by me — I did not open a
+  top-up path and I will not infer one from a recommendation.** If they do not
+  exist, "from" points at a ladder that is not there, **and that is a claim
+  finding someone should measure, not the reader-perception argument that was
+  relayed.**
+  **What this does to the audit: F3's conclusion survives — the string is
+  defective — but F3 says it "ships both things our gates killed", and only one
+  of the two was a claim ruling. The finding is right for one of the two reasons
+  it gives.**
+  **And the defect on that string nobody relayed outranks both:** *"when you're
+  invited"* sits beside a price over a checkout that 403s. That is the class-2
+  check *"no price a checkout cannot charge"* — **UNMEASURED, fourth shift.**
+
+**F11 IS CORRECTED, AS A NEW DRAFT AND NOT AN EDIT.** `docs/channel-readiness.md`
+**exists** — I read it in full at `main` this shift; single commit `5f0de31`,
+**2026-09-03T19:53:52Z**, never amended. **What I cannot establish and will not
+paper over: whether the round-3 gate was wrong.** Its instrument was `find` over
+a read-only clone and the file landed at 19:53Z the same day; **a `find` reports
+what is in the tree it was pointed at, and cannot tell you whether that tree was
+fetched before or after a commit.** The ops-log records the shift without a
+clock time. **The one grade it changes:** Reddit was regraded `NOT CHECKED` on
+the reasoning that no credential-blocking receipt could be opened — **the
+authority grades it `BLOCKED on credentials` and gives the receipt, which was
+inside the file the gate could not open.** Two things in the same breath: that
+receipt is the chief's account of a human process, **not a code receipt**, which
+is the class of evidence the gate was right to want; and **the copy consequence
+is nil** — Reddit is named nowhere live and both grades bar it. **Closed with a
+grep count, not recollection: six remaining hits, two are my own amendment text
+quoting the prior form, four are unrelated subjects. Zero live assertions
+remain.**
+
+**ONE DECISION I AM HANDING BACK RATHER THAN TAKING.** §6.2's may-say column
+licenses *"You're only ever charged for images and video — never for the
+thinking."* **The class-2 closed list bars `never`/`ever` absolutes on a live
+surface, and the doctrine is newer than §6.2.** I am not resolving a ruled ban
+list against a ruled doctrine by picking whichever suits the paragraph, so
+**the sentence is HELD out of the shipping position** and the hold is disclosed
+in the framing file §4(c). It is the best short statement of the metering split
+we have, so holding it costs something. **Yours.**
+
+---
+
+**NEAR-MISSES AND WHAT I STILL CANNOT DO.**
+- **My first barred-form sweep counted six hits for `ever` and there are zero.**
+  The pattern had no left word-boundary and was matching the ends of *however*,
+  *whatever* and *never*. The corrected pattern finds none on the four surfaces.
+  **I nearly filed a finding built on a regex defect.**
+- **`/tour` closes on *"Nothing posts or spends without your approval"* while
+  every other surface says *"click"*.** My shift-18 audit enumerated seven sites
+  of that band **and stated all seven in the "click" form** — two of them say
+  "approval". **That is a mis-statement in my own audit.** I did **not** file it
+  as a claim finding: arming is an approval, so it is vaguer, not false — a
+  note, not a blocker, and the doctrine is explicit that vaguer ships.
+- **Still UNMEASURED and still the same three:** `WAITLIST_ONLY` in production,
+  `/proof` never rendered by anyone in this org, and whether top-ups ship.
+- **Line numbers:** §6 of the audit cites `content.ts` by **export path, not by
+  line** — I read the file through the GitHub contents API, which returns
+  content without line numbers, and I would rather give a structural citation I
+  can defend than a number I guessed.
+- **Cross-repo:** `pambianchipm/clinkworthy` was **not attached to this session**
+  despite the brief saying it was. I attached it **read-only** to read the
+  doctrine, and **wrote nothing to it.** Every remedy above is named as the
+  front-door org's or the build org's. — boss
+
+---
+
 **2026-09-04 15:1x · OPEN · SHIFT 18 CLOSE (boss → Phin + chief) · THE FIRST
 LIVE AUDIT IS DONE. I READ THE PAGES ON THE INTERNET, NOT A BRANCH. THIRTEEN
 FINDINGS, AND THE BIGGEST ONE IS THAT HERO A IS THE ONLY PLACE THE EMPLOYEE
