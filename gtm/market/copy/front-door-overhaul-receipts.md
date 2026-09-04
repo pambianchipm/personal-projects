@@ -1,9 +1,16 @@
 # Receipts read from source this shift, for the copy overhaul
 
 CONFIDENTIAL (law 8, internal-audit class — this file audits our own claims).
-OWNER: GTM boss · shift 15 continuation, 2026-09-03.
-Read from `pambianchipm/clinkworthy` @ `a996b86`, read-only clone. Every row
-names the file and line. **This is a code read, not an artifact quote** — which
+OWNER: GTM boss · shift 15 continuation, 2026-09-03; **corrected and extended
+at shift 16's r3 gate, 2026-09-03.**
+Read from `pambianchipm/clinkworthy` @ `a996b86`, read-only clone.
+**RE-VERIFIED at `ebac7d1` (2026-09-03T23:32Z) at the r3 gate**, by BOTH the
+boss and the fresh verifier, independently. **`a996b86` is not an object in the
+read-only clone**, so nothing could be diffed: every receipt was re-checked
+**by content**. All eight held on substance; four had line drift, listed at the
+foot. **Two were WRONG and are corrected below as R2′ and R4′. R9–R11 are new.**
+
+Every row names the file and line. **This is a code read, not an artifact quote** — which
 is the whole reason it exists.
 
 ## R1 — ARMING CANNOT TOUCH SPEND. **VERIFIED IN SOURCE.**
@@ -50,9 +57,9 @@ law-4-note pattern §1.6 already uses). **Recorded here for the chief.**
 - `bid_strategy: 'LOWEST_COST_WITHOUT_CAP'` (`:144`, `:364`) is a **bid**
   strategy, not an absent budget cap. The lifetime budget is the cap. **Do not
   cite this line as either a reassurance or an alarm** — it is neither.
-- It says nothing about whose card the ad spend lands on, which is the SMB
+- ~~It says nothing about whose card the ad spend lands on, which is the SMB
   gate's actual unanswered question (*"spent on what? whose money?"*). **Still
-  UNANSWERED, still barred.**
+  UNANSWERED, still barred.**~~ **← WRONG. See R2′.**
 
 ## R3 — THE HERO IS CODE-COMMENTED "DO NOT REWRITE"
 
@@ -220,3 +227,134 @@ its own law-4 notes).
 plain-English form — **"or set once, in advance, for the times you choose."**
 Same mechanism (`slot.autoPost`, R1), same protection, no banned word, and it
 survives being read out loud. **Not applied to §6.2 by me.**
+
+
+---
+
+## R2′ — **CORRECTION TO R2. THE RECEIPT STOPPED ONE CLAUSE SHORT OF ITS OWN ANSWER.**
+
+Found independently by the boss and by the r3 fresh verifier, this shift.
+
+R2 quoted `console/lib/meta-ads.ts:3` and concluded the question *"spent on
+what? whose money?"* was **"Still UNANSWERED, still barred."** **The comment it
+was quoting continues four lines further and answers it.** `meta-ads.ts:1-7`:
+
+> `// Budget caps are enforced at Meta (lifetime_budget + end_time).`
+> **`// Ad spend bills the workspace's OWN ad account (adAccountId on its meta`**
+> **`// connection).`**
+
+Restated at `meta-ads.ts:326`: *"Spend bills the workspace's own ad account."*
+
+**THIS IS THE SAME CUSTODY DEFECT THE OVERHAUL CHARGES v1 WITH.** At Hero B,
+v1 quoted `content.ts:82`'s comment truncated and then used the missing half as
+an argument; the overhaul called that a custody defect and corrected it.
+**R2 did the same thing to `meta-ads.ts`, in the receipts file whose entire
+purpose is that artifacts quoting artifacts is how this org gets things
+wrong** — and then propagated *"UNANSWERED"* into the overhaul's §7(i).
+
+**What is now answered:** whose money. **What is still NOT:** the
+**account-level standing ceiling**, which `position-v2` §3.2 records as RULED
+and UNBUILT. **Those remain two different things.** R2's careful line on that
+distinction was right and survives intact.
+
+**Consequence for §6.2, for the chief and NOT taken by this org:** the barred
+sentence *"Your ad budget is yours, set by you, and separate from the
+subscription"* is barred **"NOT SAYABLE UNTIL VERIFIED."** Its first two
+clauses are now verified in source (here and R11). **§6.2 is a gated artifact
+this org may not edit. Recommendation: lift the bar on the verified clauses.**
+
+## R4′ — **CORRECTION TO R4. IT STILL ASSERTED THE COUPLING §1 CORRECTED.**
+
+R4 reads *"Ship the new hero without it and the tooling stops finding the
+landing page. **Same commit or it breaks.**"* — **the exact claim the overhaul's
+§1 corrected as WRONG at r1** (journalist MUST-FIX 7). `render.mjs:28`'s `SRC`
+is a scratchpad path **outside the repo** and the script reads `#dc-root`; it
+never touches `content.ts`.
+
+**Re-scoped:** `render.mjs:88` is coupled to the **`.dc.html` design
+prototype** (strike-list rows 10–11), **not** to the shipping code. **The
+correction landed in the artifact and not in the receipt it rests on** — which
+is the same one-of-two-places failure R5 exists to record. *(r3 SHOULD-FIX 4.)*
+
+## R9 — COMMENT REPLIES ARE SHIPPED, AND NO COPY HAS EVER USED THEM
+
+| Receipt | Where | What it says |
+|---|---|---|
+| Instagram reply | `console/lib/meta.ts:359` | comment **reply**, graded **SHIPPED** |
+| Facebook reply | `console/lib/meta.ts:372` | comment **reply**, graded **SHIPPED** |
+| The authority's own read | `docs/channel-readiness.md` | Instagram *"goes further than most competitors' 'generate and download', covering Reels, Stories, **comment replies** and metrics read-back"* |
+
+**Used in the r3 waitlist sub** (*"answer the comments underneath them"*).
+**It is the only genuinely new capability claim this overhaul adds, and it cost
+nothing** — it was shipped before this org existed and every previous round
+walked past it.
+
+## R10 — THE ATTRIBUTION CLAIM IS CONDITIONAL, AND THE PRODUCT SAYS SO BETTER THAN THE COPY DOES
+
+Checked because Hero A's ruled sub ends *"tells you which ones **moved units**."*
+
+| Receipt | Where | What it says |
+|---|---|---|
+| Engagement read-back — **unconditional** | `meta.ts:420-427` | Instagram: `like_count`, `comments_count` |
+| — | `meta.ts:465-471` | Facebook: likes, comments, shares |
+| **Revenue tracing — CONDITIONAL** | `claims-pure.ts:386-389` | `revenueCents > 0` → *"At least $X traced this month — **walk-ins not counted**."* · else → *"**No conversions tagged to this channel this month — log sales to trace revenue.**"* |
+
+**So the shipped product traces revenue ONLY from conversions the owner tags,
+and refuses to invent a floor when there are none.** *"Moved units"*, stated
+flat in a hero, promises attribution the product delivers **conditionally**.
+
+**The phrase is not new** — it is live at `content.ts:120` and `:154` — **so it
+is not struck.** But **the in-app copy is more careful than the front-door
+copy**, which is the wrong way round, and the §4 Platform header states the
+same idea in its unconditional form (*"tells you what worked"*, backed by the
+engagement rows above). **For Phin: it is his ruled sub.** *(Overhaul §2.)*
+
+**And it is the source of the best line in the r3 waitlist** — *"when it can
+trace a sale back to a post, it'll tell you which post. When it can't, it'll
+tell you that too."* **The product's honesty is a boast, not a hedge.**
+
+## R11 — **A PER-CAMPAIGN SPEND CEILING IS BUILT, IT IS THE CUSTOMER'S CLICK, AND NO COPY SAYS SO**
+
+| Receipt | Where | What it says |
+|---|---|---|
+| The gate, in its own words | `console/app/api/ads/launch/route.ts:11-14` | *"**HARD HUMAN GATE** (paid-scope rule 1): launching spends money. Requires `confirm:true` from the Ads-page button **that displayed the budget**. The conductor's `draft_ad_campaign` tool has no path here."* |
+| It refuses without it | `route.ts:20-22` | no `confirm` → 400, *"Launching an ad campaign spends money — requires confirm: true."* |
+| **It is the account holder's own click** | `route.ts:26,30` | `getActiveWorkspace()`, and the draft must belong to that workspace |
+| **Caps re-validated AT the gate** | `route.ts:36-41` | **lifetime budget $5–$500**; **run length 1–30 days** — *"never trust the stored row alone"* |
+| Whose money | `meta-ads.ts:7`, `:326` | the workspace's **own ad account** |
+
+**`meta-ads.ts:241`'s "after Phin approves" is the single-tenant present tense
+of this same gate** — the route itself is workspace-scoped.
+
+**WHAT THIS DOES NOT ESTABLISH, stated plainly so nobody over-reads it a second
+time:** it is a **per-campaign** cap. **It is NOT the account-level standing
+ceiling** `position-v2` §3.2 records as RULED and UNBUILT. R2 drew that line
+correctly and it holds.
+
+**Why this matters more than any other receipt this shift.** The hire frame's
+two hardest objections are *"whose money"* and *"what if it runs away."*
+**Both now have specific, certain, checkable answers** — your own ad account ·
+nothing launches without a click on a button showing the budget · $5–$500 a
+campaign, 1–30 days. **The directive's rule was that excitement is SPECIFICITY
+plus CERTAINTY. This is the most specific and certain material on the
+property and no copy anywhere uses a word of it.** **Not shipped into copy by
+this shift** — §6.2 governs and is the chief's. **Filed as the single
+highest-value unblocked asset available to the next rewrite.**
+
+---
+
+## LINE DRIFT CORRECTED AT r3 (`a996b86` → `ebac7d1`) — all substance held
+
+- R8's `tier.ts:80-86` "BANNED RENDERED WORDS" comment → **~`:102-106`**
+  (`:79` now holds the downgrade comment).
+- R2's four `requireCapability(ws, 'ads')` cites were the **import** lines;
+  the calls are at **`meta-ads.ts:122, 331, 408, 424`**.
+- Overhaul §1 row 13: `docs/org/inbox.md` 494/495/1096 → **557/558/1159**.
+- Overhaul §3.0: the `MARKETING.md` ⚠ "and updates" block → **`:189`**.
+
+**AND ONE MORE INSTANCE R5 DID NOT NAME.** R5 found the false *"we email you
+the result"* claim in two places (`api/scan/route.ts:47`, `content.ts` the
+`freeNote` string). **There is a third: the doc comment directly above
+`freeNote`** (`content.ts` ~`:99`) — *"it takes an email because that is where
+the result is sent."* **The receipt that exists to prove "grep for every
+instance, not the first" found two of three.**
