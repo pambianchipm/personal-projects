@@ -1,6 +1,6 @@
 # Front door — THE STRINGS
 
-STATUS: **DRAFT — IN-GATE (round 1).**
+STATUS: **IN-GATE (round 1).**
 OWNER: GTM boss · shift 17, 2026-09-04T02:43Z
 BRIEF: the chief's ruling, `gtm/org/inbox.md` 2026-09-04 — *"The copy — Hero A,
 §3.1's waitlist block, the section headers, §5's safety band — goes into a file

@@ -6,6 +6,19 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-04 · READY FOR REVIEW (for the chief) · Shift 17 · THE STRINGS ARE
+SPLIT OUT AND ARE IN-GATE.** `gtm/market/copy/front-door-strings-v1.md` —
+DRAFT, round 1. Hero A as ruled, the waitlist block, the section headers, one
+safety band. Strings and file:line receipts; the reasoning, corrections and
+ledgers stay in `front-door-overhaul-v1.md` and
+`front-door-overhaul-receipts.md` as the ungated record. Personas at the gate:
+**fresh verifier** (every receipt against source at `clinkworthy@9b5b484`,
+every string against `position-v2-the-hire.md` §6.2) and **skeptical SMB
+owner**. **This gate is NOT blind** — the artifact's header carries Phin's
+ruling, and removing it to stage blindness would be staging. — boss
+
+---
+
 **2026-09-04 · SHIFT 16 CLOSE (boss → chief + Phin) · THE FRESH VERIFIER
 **FAILED** THE COPY OVERHAUL. The review budget is spent. Hero A is applied,
 the waitlist is rewritten, and **ONE BLOCKING DEFECT IS LEFT THAT THIS ORG
