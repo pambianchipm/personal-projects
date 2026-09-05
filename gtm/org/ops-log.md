@@ -8,6 +8,74 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-05 · on-demand (chief-fired, after three ten-second shifts) · SHIFT 21
+— THE GATE ON SLIDE 4, AND THE THING UNDER IT.** Chief's directive: gate slide 4
+and A40–A46 aimed at A45; act on the 44% answer; check for a crossed citation.
+
+**WHAT RAN.**
+- **The crossed-citation check FIRST**, because it could have invalidated the
+  gate's subject. Cloned `pambianchipm/clinkworthy` (read-only) and read
+  `docs/research-smm-landscape.md` at `5eeb1c8`, SHA-256 `696a6b69…`, 62,637 B.
+  **CLEARED: A30 cites the Adobe cadence figure, A11 the Clutch spend figure.
+  Not crossed.** Found a **third** unrelated 44% (Metricool 2026, n=927,
+  freelancers) that the directive did not name and no row cites.
+- `gtm/raise/model/snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md` —
+  **NEW. RECEIPT.** The source **states no population for n=433 anywhere**, so
+  the A14/A30 divergence is **inherited, not invented**. Conservative reading
+  adopted — **on the ground that no panel is stated, NOT the chief's ground that
+  the source calls it TikTok-active, which it does not.** §4a publishes the
+  evidence pointing the other way **because it flatters our number.**
+- `assumptions.md` — A14, A30, A45 grade cells amended. **No figure changed.**
+- **THE GATE.** `gtm/org/reviews/2026-09-05-slide4-a40-a46-hostile-investor-r1.md`
+  — **NEW. VERDICT: FAIL, round 1 of 3.** Full written their/mine/match ledger.
+- `gtm/raise/deck/slide-04-market-size-v1.md` — **DRAFT → GATE-FAILED (r1).**
+- `gtm/raise/deck/gap-list-2026-09-04.md` — **G17 OPENED at the top of Tier 1.**
+- `assumptions.md` header — **PROVENANCE ALERT** naming ten affected rows.
+
+**THE FINDING, AND IT IS NOT WHERE THE GATE WAS AIMED.**
+`research-smm-landscape.md` declares on **its own line 3** that it is a *"16-agent
+research swarm … **this report grades itself**."* Mechanically at that hash:
+**`grep -c 'http'` = 0**, zero markdown links, **100 `[VERIFIED]` tags** assigned
+by agents to agents. **Ten rows of the truth table cite it — A11 · A12 · A14 ·
+A15 · A25 · A27 · A30 · A31 · A33 · A45 — including A11, the pricing thesis.**
+Law 1, criterion (d). **A receipts failure, not a finding of falsity.**
+
+**WHAT WAS DELIBERATELY NOT DONE.** No grade changed, no figure touched.
+Regrading ten rows of a **GATED v3** table is not the boss's call alone (law 7);
+it is queued to the chief with a two-part recommendation (regrade now, retrieve
+primaries next). **Round 2 was not convened** — the corollary applies.
+
+**FAN-OUT DISCLOSURE.** **One (1) persona reviewer spawned: hostile
+institutional investor, at gate time, aimed at A45 per the shift-20 handoff and
+the chief's directive.** It was given the artifacts, the doctrine, and read-only
+access to the cloned source; it was **not** given the boss's predictions, which
+were committed to scratchpad **before** it was spawned so the ledger would be
+real. **Its verdict was independent and it was not self-passed (law 7).** No
+other agents. **Every mechanical claim it made was re-run by the boss before
+being written down** (capped-loop law 1) — all four provenance checks reproduce;
+its blast-radius enumeration did **not**, and the boss's correction makes the
+finding worse (ten rows, not eight; it missed A15/A25/A45 and wrongly included
+A32). **Token weight: medium.**
+
+**WHAT THIS SHIFT LEARNED, AND IT IS AGAINST ITS OWN NAME.**
+**The boss aimed the gate at A45 because its own shift-20 handoff said so in
+capitals and the chief ratified it. The aim was the blind spot.** A gate pointed
+at a row cannot see a defect in the corpus beneath the row. The boss read that
+file for a morning, quoted six of its lines, hashed it, and **never asked whether
+it was evidence** — it even wrote *"the primary instrument was not retrieved"*
+into its own NOT CHECKED section and treated it as a missing detail rather than
+as the whole question. **The reviewer asked it in its first minute. That is the
+strongest argument this org has produced for law 7.**
+
+**And two failures of the boss's own, both caught by the reviewer:** the audit
+said `grep` returned *"eight lines"* when it returns **12** (corrected in place,
+with the correction labelled); and the 07:2x amendment to A14/A30/A45
+**manufactured three fresh law-4 breaks** between the table and slide 4, because
+the table was amended and the slide was not re-read against it. **Capped-loop law
+1, landing on the shift that invoked it.**
+
+---
+
 **2026-09-04 · on-demand (chief-fired) · SHIFT 20 — SLIDE 4, THE BOTTOM-UP
 MARKET SIZE.** Chief's brief: build gap G2 off public, citable establishment
 counts; label the serviceable fraction **ARGUED on the slide, not in a
