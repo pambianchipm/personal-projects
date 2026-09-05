@@ -2,9 +2,10 @@
 
 CONFIDENTIAL — internal-audit class (law 8).
 
-## ⚠ PROVENANCE ALERT — RAISED BY THE ROUND-1 GATE, 2026-09-05, AND UNRESOLVED
+## ⚠ PROVENANCE — RULED 2026-09-05 (chief, G17(a)). ELEVEN ROWS ARE NOW `AGENT-REPORTED`
 
-**TEN ROWS IN THIS TABLE CITE A DOCUMENT THAT GRADES ITSELF.**
+**ELEVEN ROWS IN THIS TABLE CITE A DOCUMENT THAT GRADES ITSELF, AND THEY NOW
+SAY SO IN THEIR GRADE CELL.**
 
 `clinkworthy/docs/research-smm-landscape.md` (@`5eeb1c8`, SHA-256 `696a6b69…`)
 declares on **its own line 3** that it is a *"16-agent research swarm … ~1.4M
@@ -12,23 +13,105 @@ tokens of research … **this report grades itself**."* Mechanically verified at
 that hash: **`grep -c 'http'` = 0** (no URLs), **zero markdown links**, and
 **100 `[VERIFIED]` tags** — grades agents assigned to other agents' output.
 
-**AFFECTED: A11 · A12 · A14 · A15 · A25 · A27 · A30 · A31 · A33 · A45.**
-A11 is the $500–2,000/mo services band — **the pricing thesis.** A45 is slide
-4's serviceable fraction. *Instrument: an `awk` field-scan of each `| A## |`
-row for `landscape report | research-smm-landscape | SMM landscape`. **Blind
-spot: it cannot see a row inheriting the source indirectly** — one citing
-another row, or citing "the origin doc" unnamed. **Ten is a floor.***
+**AGENT-REPORTED (11):** **A11 · A12 · A14 · A27 · A29 · A30 · A31 · A32 ·
+A33 · A45 · A46.** A11 is the $500–2,000/mo services band — **the pricing
+thesis.** A45 is slide 4's serviceable fraction and A46 the market count that
+hangs off it.
 
-**NO GRADE HAS BEEN CHANGED AND NO FIGURE HAS BEEN TOUCHED.** Regrading ten rows
-of a table that is **GATED at v3** — including the pricing thesis — is not a
-unilateral act by the boss (law 7), and self-graded provenance is a **receipts
-failure, not proof of falsity**: several of these figures may well be correct,
-and none is currently checkable from inside this org. **The decision is queued
-to the chief and Phin.** Until it is ruled, **no row in the list above may be
-treated as SOURCED in a new artifact**, and any artifact quoting one carries
-this alert by reference.
+**THIS MOVED NO FIGURE AND CHANGED NO CLAIM.** It is a relabel of provenance,
+which is why the chief ruled it and Phin did not (law 7 governs revaluations;
+this is not one). **It is a receipts failure, not a finding of falsity** — see
+the legend's second clause, which is the one the next reader will skip.
+
+### TEN WAS A FLOOR, AND THE FLOOR WAS WRONG IN BOTH DIRECTIONS
+
+Shift 21 named **ten** rows and said in its own alert that ten was a floor,
+because the instrument was an `awk` field-scan that cannot see a row inheriting
+the source through another row. **I re-ran the enumeration this shift with an
+instrument that can, and the number moved to eleven — but the more useful
+result is that the MEMBERSHIP moved by five rows, in both directions.**
+
+**Instrument:** a Python pass over every `| A… |` line that (1) matched the
+corpus by four names on the whole row rather than on the grade field, (2) built
+a citation graph of every `A##` and every `A##–A##` range referenced anywhere
+in a row, and (3) took the transitive closure of contamination over that graph
+— then **every candidate it produced was read by hand before being accepted or
+rejected**, which is where four of the five changes came from.
+
+**REMOVED (2) — these two have a retrieved, hashed primary instrument, and the
+landscape report only corroborates it:**
+
+- **A15** — upgraded to OBSERVED at shift 13 on **Phin's own primary capture**
+  of the Holo pricing page (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`);
+  the row's own words are that the landscape report Appendix B *"independently
+  says"* the same band. Corroboration by the corpus is not sourcing from it.
+  *(Separate defect, flagged not fixed: A15's grade CELL still reads
+  DIRECTIONAL while its value cell records the shift-13 upgrade to OBSERVED.
+  Not mine to resolve in a provenance pass.)*
+- **A25** — raw fetch 3 Sep 12:39:48Z, **HTTP 200, 612,498 B, SHA-256
+  `d0decc76…`**, with the byte-exact extraction retained
+  (`snapshots/2026-09-03-buy-editor-pricing.md`). The landscape report appears
+  in the row only as the thing the fetch **confirms unchanged**.
+
+**This removal makes our problem smaller, so it is stated with its evidence
+rather than left in place for tidiness** — the mirror of the rule shift 21 was
+given about the flattering reading. **A15 and A25 were false positives of the
+shift-21 scan, and I put them here rather than in a note.**
+
+**ADDED (3):**
+
+- **A32** — *missed by both scans until a third pass.* It cites the same corpus
+  as **"landscape §1.3"** and **"§2.4 / Big Table"**, never as "landscape
+  report", so neither the shift-21 `awk` nor my own first pattern saw it. Two
+  `[VERIFIED]` tags, no primary. **This is the one that most nearly stayed
+  hidden, and it hid behind an abbreviation, not behind an indirection.**
+- **A29** — DERIVED over A25/A26/A27; **A27 is AGENT-REPORTED**, so one of the
+  four vendors in the band inherits the defect. The band's stated endpoints
+  come from A25, which does not — so A29 inherits **partially**, and its cell
+  says which part.
+- **A46** — DERIVED from A45 and already said so in its own cell; the closure
+  makes explicit what the row had been carrying implicitly.
+
+**WHAT MY OWN INSTRUMENT COULD NOT SEE, and two of these bit:** (1) my first
+regex `^\| A\d+ \|` **silently skipped the two lettered rows A7b and A25b** —
+they were read by hand afterwards and both have retained primary snapshots, but
+a scan that drops rows without saying so is the same class of error as a floor
+that reads like a total; (2) it matched **"the ORIGINAL"** inside A9 as an
+unnamed-origin-doc reference, which pulled A9 and A39 in as false positives —
+both rejected by hand, both are xAI-pricing and Census chains with nothing to do
+with this corpus; (3) it reads only THIS file, so a contaminated figure restated
+in another artifact without a row ID is invisible to it; (4) it cannot detect a
+row whose cited source is itself agent-generated but is **not** this corpus.
+**Eleven is still a floor. It is a better-instrumented floor.**
+
+### THE BLAST RADIUS IS THE DECK AND THIS TABLE — NOT THE PRODUCT
+
+**The chief ran a check this org could not run from inside the table: every
+pre-signup surface — landing, tour, services, proof, scan — grepped for numeric
+claims. Two hits, both benign:** a `100%` inside a code comment quoting Phin
+about a palette, and `48 hours` on `/scan/welcome`, which is an operational
+promise this org makes rather than a research statistic. **ZERO
+research-derived figures appear on any live page.**
+
+**This is in the header because the next reader of "law 1, eleven rows" will
+assume the worse version, and the difference between *our fundraising materials
+overstate what we can show* and *our website lies to customers* is the whole
+difference.** The exposure is real, bounded, and internal.
+
+### WHAT IS STILL OPEN
+
+**Recommendation (b) is next shift's work, approved:** retrieve and hash **one
+primary instrument per load-bearing row, the Adobe Express n=433 survey first**,
+because slide 4's headline moves 2× on it. **(a) makes the deck honest; (b)
+makes it strong. Nothing outward in the meantime — that is already law, and
+this ruling explains it rather than changing it.**
+
+**Nobody in this org has retrieved the Adobe Express survey.** This grade
+establishes that the org cannot currently show it; it establishes nothing about
+whether it exists or what it says.
 
 Verdict: `gtm/org/reviews/2026-09-05-slide4-a40-a46-hostile-investor-r1.md` §1–§2.
+Ruling: `gtm/org/inbox.md`, chief 2026-09-05 08:1x.
 
 STATUS: v3 GATED (shift-9 rebuild, with the model — fresh verifier,
 written ledger, confirmation PASS: no dead number survives live).
@@ -50,7 +133,15 @@ argument and A46 inherits it.**
 **SHIFT-21 (2026-09-05) amended A14, A30 and A45's grade cells with the
 citation audit — no FIGURE in any row changed; the amendments record which
 source statistic each row cites and that the n=433 panel is unstated upstream.
-Those cells are UNGATED for the same reason A45 is.** Law 7: the author cannot pass them. The
+Those cells are UNGATED for the same reason A45 is.** 
+**SHIFT-22 (2026-09-05) added the `AGENT-REPORTED` legend grade on the chief's
+G17(a) ruling and applied it to ELEVEN rows — A11 A12 A14 A27 A29 A30 A31 A32
+A33 A45 A46. NO FIGURE IN ANY ROW CHANGED and no claim moved; every prior
+restriction on those rows is retained alongside the new grade.** A15 and A25
+were REMOVED from shift 21's list of ten on hand-checked primary instruments,
+and A29/A32/A46 were added — see the header. **These cells are UNGATED: law 7
+and the org's own rule that an author cannot pass their own work both apply, and
+a provenance relabel is no exception. The hostile-investor gate applies.** Law 7: the author cannot pass them. The
 hostile-investor gate applies, and A45 is where it should aim.
 OWNER: GTM boss · shift 5, 2026-09-02
 LAW 4: shared facts live HERE, once. The deck, the model, the site, and
@@ -74,6 +165,42 @@ labelled ARGUED on the face of every artifact that states it, never in a
 footnote — because ARGUED is exactly the seam where a bottom-up model becomes
 the top-down one law 2 bars.**
 
+**AGENT-REPORTED (added shift 22, 2026-09-05, on the chief's ruling on G17(a)):
+a figure restated by an AI research process that assigned its own verification
+tag, where no primary instrument has been retrieved.** It is not a weaker
+SOURCED and it is not DIRECTIONAL, secondary, indirect or pending — each of
+those names a thinner version of sourcing, and this is a different kind of
+thing. **A reader must not be able to mistake it for a citation.** Three
+clauses, and all three travel together:
+
+- **WHAT IT MEANS.** The claim's chain terminates in a document that grades
+  itself. For every row carrying this grade today the terminus is
+  `clinkworthy/docs/research-smm-landscape.md`, which declares on its own line
+  3 that it is a *"16-agent research swarm … this report grades itself"*;
+  mechanically at `5eeb1c8`, SHA-256 `696a6b69…`: **`grep -c 'http'` = 0**,
+  zero markdown links, **100 `[VERIFIED]` tags** that are grades agents
+  assigned to other agents' output. A `[VERIFIED]` tag inside such a document
+  is not a receipt this org can show anyone.
+- **WHAT IT DOES NOT MEAN.** **It is not a finding of falsity. Several of these
+  numbers are probably right. They are unshowable, not disproven.** No figure
+  under this grade has been re-derived and no claim is made here that any of
+  them is wrong. **Do not delete a row for carrying this grade, and do not
+  treat the grade as a verdict on the person or process that wrote the row** —
+  the correct response is to retrieve the primary instrument, at which point
+  the row upgrades to SOURCED with the instrument named and hashed.
+- **WHAT IT FORBIDS.** An AGENT-REPORTED row **may not carry its number into
+  any outward artifact — deck, site, email, pitch — unless the provenance is
+  stated on the SAME SURFACE as the number. Not in a footnote, not by
+  reference, not on a later slide.** A row computed from an AGENT-REPORTED row
+  inherits the grade.
+
+**AGENT-REPORTED LEADS, IT DOES NOT REPLACE.** Where a row already carried a
+restriction of its own — DIRECTIONAL's *never load-bearing alone*, a stated
+population caveat, a staleness flag — that restriction is retained verbatim
+alongside the new grade. AGENT-REPORTED answers *can this org show the
+instrument*; the prior grade answered *how much weight will this number bear*.
+They are different questions and dropping either one loses a rule.
+
 **First breath:** Player 2 is an AI marketing employee for small
 businesses; this file is the single table of numbers its raise artifacts
 may state.
@@ -91,10 +218,10 @@ may state.
 | A8 | Entry-tier allowance | 4 videos/week + uncapped images | RULED — Phin, 31 Aug 2026 |
 | A9 | Entry-tier est. generation cost / gross-margin drag | **~$25–38/mo ≈ 42–64% of A1 — RESTORED 2 Sep (evening)** at the real $0.14: plain-video floor ($24.27 = 17.33 × $1.40) + minimal images (~$0.6), up to observed-blended ($34.67 = 17.33 × A6 $2) + 60 quality images (~$3). Image counts now STATED (chief's law-4 note): floor assumes ~30 base images, ceiling 60 quality. ~~Shift-8 "25–39% today"~~ inherited the A4 misread; ~~the ORIGINAL 41–59% band~~ was struck without date in shift 8 — it was video-only and essentially CORRECT (this row is that band plus the image tail). Still NOT a ceiling (entry images uncapped, A8; tripwire full-OS only, A10; A7b input-image charge additionally unmodeled per image→video use). Tripwire = undecided, with Phin (his D9; the question's original 41–59% basis was right) | DERIVED — A8 × A5/A6 + stated image counts per A7; re-derived at the RESTORED price; sensitivity in `model-v1.md` §4 |
 | A10 | Full-OS allowance | unlimited, internal fair-use tripwire | RULED — Phin, 31 Aug 2026 |
-| A11 | SMB paid-social services band | $500–2,000/mo dominant among SMBs that pay at all | SOURCED (VERIFIED grade in origin doc, with its own sampling caveat) — Clutch 2025 via `clinkworthy/docs/research-smm-landscape.md` |
-| A12 | Freelancer entry packages | roughly $300–1,500/mo | DIRECTIONAL — landscape report; the report itself also cites "$300–500" elsewhere; treat as a range, never load-bearing alone |
+| A11 | SMB paid-social services band | $500–2,000/mo dominant among SMBs that pay at all | **AGENT-REPORTED** (regraded shift 22, chief's G17(a) ruling — was *SOURCED (VERIFIED grade in origin doc, with its own sampling caveat)*, and the origin doc's own sampling caveat is retained below). The `[VERIFIED]` tag this row carried is one the corpus assigned to itself; no Clutch instrument has been retrieved by anyone here. **This is the pricing thesis, and it is the most consequential row under this grade.** Underlying — Clutch 2025 via `clinkworthy/docs/research-smm-landscape.md` |
+| A12 | Freelancer entry packages | roughly $300–1,500/mo | **AGENT-REPORTED** (regraded shift 22 — was DIRECTIONAL, **and the DIRECTIONAL restriction stands: never load-bearing alone**) — landscape report; the report itself also cites "$300–500" elsewhere; treat as a range, never load-bearing alone |
 | A13 | Accelerator terms (ERA / Techstars NYC) | $150k post-money SAFE for 6% / $220k ($200k uncapped MFN SAFE + $20k convertible, 5% common) | SOURCED — `gtm/raise/accelerators.md` is the source of truth (primary pages read 31 Aug); quote it, don't restate elsewhere |
-| A14 | Owner burnout / time poverty stats | 88% of TikTok-active owners report posting burnout (Adobe Express n=433, vendor survey — treat as ceiling); 42% of SMBs have <1 hr/day for ALL marketing (Constant Contact 2025) | SOURCED — landscape report, its own editor's grades carried | **SHIFT-21 CITATION AUDIT:** this row's *"TikTok-active"* and A30's *"owners"* describe the SAME instrument and both are faithful copies of one source sentence (`research-smm-landscape.md`@`5eeb1c8` line 63), which attaches the qualifier to the 88% and drops it from the 44%. **The source never states the n=433 panel.** The divergence is inherited, not invented here; do not "reconcile" the two rows by editing either — that would launder an upstream gap. Receipt: `snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md` §4.
+| A14 | Owner burnout / time poverty stats | 88% of TikTok-active owners report posting burnout (Adobe Express n=433, vendor survey — treat as ceiling); 42% of SMBs have <1 hr/day for ALL marketing (Constant Contact 2025) | **AGENT-REPORTED** (regraded shift 22 — was SOURCED). *"Its own editor's grades carried"* names the defect exactly: the editor is the swarm, and carrying its grade into an org SOURCED is what this grade exists to stop. Underlying — landscape report, its own editor's grades carried | **SHIFT-21 CITATION AUDIT:** this row's *"TikTok-active"* and A30's *"owners"* describe the SAME instrument and both are faithful copies of one source sentence (`research-smm-landscape.md`@`5eeb1c8` line 63), which attaches the qualifier to the 88% and drops it from the 44%. **The source never states the n=433 panel.** The divergence is inherited, not invented here; do not "reconcile" the two rows by editing either — that would launder an upstream gap. Receipt: `snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md` §4.
 | A15 | SMM tool band (Holo-class) | **OBSERVED shift 13, 3 Sep — list $20 / $48, promo $12 / $29, TWO plans only, 120 / 350 creatives per month.** Upgraded DIRECTIONAL → **OBSERVED** on Phin's primary capture of the pricing page (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`), which confirms the shift-12 band in both columns exactly. ~~**~$20–48/mo list — CORRECTED shift 12**~~ (a near-permanent promo column runs ~$12–29). ~~~$12–48/mo~~ took the PROMO floor from one column and the LIST ceiling from another: the teardown's own headline is "a **$20–48/mo** price anchor" and its table puts $20 under *List* and $12 under *"Promo" (near-permanent)*; the landscape report Appendix B §2 independently says "Holo: Starter **$20** … Scale **$48**". Caught at the competitor-salesperson gate r1, which also noted the dossier condemned Holo's sale-price framing on one page while quoting its sale price as a band floor on another | DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced; the teardown's own flag carried: SPOT-CHECK before any external use; never load-bearing alone |
 | A16 | SMB SaaS monthly logo churn prior | 3–7%/mo (compounded annual: 31–58%) — scenario BAND, not a claim about Player 2. (The Kalungi page's own "36 to 76%" annual figure matches no consistent annualization method; the compounded figures here are this table's, derivation: 1−(1−m)^12) | DIRECTIONAL — kalungi.com/blog/saas-churn-rate-benchmarks, read 2 Sep 2026 (the page states the band but cites no underlying study — graded accordingly); consistent with the secondary-source consensus surveyed same read. Used ONLY as scenario inputs in model-v1.md; Player 2's own churn is UNKNOWN (zero customers) and replaces this row the day real cohort data exists |
 
@@ -109,13 +236,13 @@ may state.
 | A25 | OpusClip list price | Free $0 (60 credits/mo) · Starter $15/mo (150 credits/mo, monthly billing only) · Pro **$29/mo monthly, $14.50/mo on annual ($174 billed annually, 3,600 credits/yr)** · Business custom. **Annual tier added shift 12 at the gate** — it was in the retained extraction all along (`Pro\|For professional creators, marketers, & teams\|$\|29\| USD\|$\|14.5\| USD\|/mo`, and `$\|174\| billed \|annually`), inside the one block quote the snapshot had trimmed. The established paid floor for the category is therefore **$14.50/mo**, not $15 | SOURCED — live page, raw fetch 3 Sep 12:39:48Z, HTTP 200, hash + retained extracted text in `snapshots/2026-09-03-buy-editor-pricing.md`; CONFIRMS the landscape report's 20 Aug figures unchanged |
 | A25b | OpusClip posts to social itself | TRUE, on its paid plans — the page sells `Social scheduler|Schedule a month’s posts to all platforms in 10 minutes`, `Post to social media`, `Post to multiple profiles per social platform` (copied from the retained extraction, not retyped — r2 caught this row paraphrasing a string its own grade cell called verbatim) | SOURCED — same snapshot, verbatim rows. **Tier gating CHECKED shift 12 at the gate** (it was in the retained extraction; the earlier NOT CHECKED was wrong): the **Starter $15** plan card lists `Auto post to YouTube Shorts, TikTok, IG Reels, or download`; the **Pro** card lists `Social media scheduler` and `|6| social account connections|Everything in Starter plan, plus:` So: **assume they post from $15.** NOT CHECKED: the remaining comparison-table posting rows, whose columns the flattened text does not align |
 | A26 | Descript entry price | "from $16/month" (its own page's meta description); free tier exists | **DIRECTIONAL — regraded at gate r2** (was SOURCED-PARTIAL): the string was recorded at fetch time but Descript's extraction was NOT retained, so this is a presence claim with no surviving receipt and cannot be re-checked. Re-fetch and retain, or leave it here. Prior note stands — same snapshot. Tier table is client-rendered and was NOT obtained; `$12/$18/$14` in the raw HTML are React stream IDs, not prices (trap recorded in the snapshot) |
-| A27 | CapCut price | Standard $9.99 / Pro $19.99 per mo | DIRECTIONAL — `clinkworthy/docs/research-smm-landscape.md` [VERIFIED] grade, read 20 Aug 2026; live re-fetch 3 Sep returned **HTTP 502**, so this is a dated secondary read carrying a re-verify flag, not a fresh receipt |
+| A27 | CapCut price | Standard $9.99 / Pro $19.99 per mo | **AGENT-REPORTED** (regraded shift 22 — was DIRECTIONAL; **never load-bearing alone still holds**). The live re-fetch that would have made this primary failed, so the `[VERIFIED]` is the swarm's own. Underlying — `clinkworthy/docs/research-smm-landscape.md` [VERIFIED] grade, read 20 Aug 2026; live re-fetch 3 Sep returned **HTTP 502**, so this is a dated secondary read carrying a re-verify flag, not a fresh receipt |
 | A28 | Vizard price | **UNKNOWN — no figure exists in this table** | NOT CHECKED — the pricing page renders in JavaScript and states it; zero price strings in 213,639 fetched bytes. Vizard may be named as a category member; no price claim about it may be made anywhere |
-| A29 | BUY-EDITOR category price band | ~$0–29/mo **at monthly list** for the named tools where a price is established (A25–A27), with an **established paid floor of $14.50/mo on annual** (A25); the band excludes Vizard (A28) and is a band over FOUR vendors, never a market-wide claim. **Corrected shift 12** — the band was stated as if monthly list were the only shape | DERIVED — A25/A26/A27 only, with A27's staleness inherited. Not a market size, not a top-down figure (law 2) |
-| A30 | Owner cadence + reach stats (INACTION) | 63% of owners feel pressure to post daily · 44% post weekly, 18% daily · accounts under 10K followers see 8–15% organic reach (3–4× the big-account average) · 43% spend ~6 hrs/wk on social | SOURCED with grades carried, not laundered — 63/44 and the reach figure: landscape report §2.1 (Adobe Express n=433 [VERIFIED, **vendor-adjacent — treat as a ceiling**]; Socialinsider [VERIFIED]); 18% daily is §1.7, not §2.1; the 43%/6hrs figure is VerticalResponse and the origin report flags the survey **stale/undated** — never load-bearing alone. Opened shift 12 at the gate r2, which caught these stated in two artifacts each under a header promising quotation by reference | **SHIFT-21 CITATION AUDIT: the 44% here is the ADOBE CADENCE figure and that is confirmed against the source** (`research-smm-landscape.md`@`5eeb1c8`, SHA-256 `696a6b69…`, line 63 in §2.1). **It is NOT the Clutch "44% spend $500–2,000/mo" figure (that is A11, line 59) and NOT the Metricool "44% cannot disconnect" figure (n=927, FREELANCERS, line 73 — cited by no row and the likeliest future cross).** Three unrelated 44%s live in that one corpus. **The panel behind n=433 is NOT STATED anywhere in the source** — see A14 and receipt `snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md`.
-| A31 | DIY assembled-stack cost | Tools $28–55/mo, ~$50–75/mo once video is in it · **true in-house DIY cost including labour $500–1,200/mo** | DIRECTIONAL — landscape report Appendix B. The labour figure rests on a **single source** (venturemedia.io) and is the most quotable and least defensible number in the BUILD dossier: **do not lead with it, and do not use it externally without a second source.** Opened shift 12 |
-| A32 | AI use by social-media practitioners | 46% use ChatGPT for ideation · 39% for copy · **4% for calendar planning** | SOURCED with a **POPULATION CAVEAT that travels with every use**: measured on professional **social media managers**, NOT on SMB owners (46% and 4% at landscape §1.3 [VERIFIED verbatim]; 39% at §2.4 / Big Table [VERIFIED] — *not* §1.3). The same report says of the owner ICP "they barely buy tools." Applying this to a DIY owner is `UNTESTED` inference; carry the SHAPE (AI drafts, humans plan), never quote the percentage to an owner. Opened shift 12 |
-| A33 | SMM tool-category bands | Design: Canva Pro $18/mo (Appendix B says $15 — **unresolved contradiction in the origin doc, disclosed not smoothed**) · ChatGPT Plus $20 · Buffer from $5/channel · Sprout $199–399/seat · approval tools $39–399 (Planable $39–59 · HeyOrca $59–149/calendar · Gain $99–399) · dedicated listening from $199/mo (Brand24), usually skipped below mid-market, though Vista Social bundles it at $79 | SOURCED — landscape report §1.5–1.9 and the Big Table, all [VERIFIED 2026-08] at their own grades. Opened shift 12 at the gate r2 |
+| A29 | BUY-EDITOR category price band | ~$0–29/mo **at monthly list** for the named tools where a price is established (A25–A27), with an **established paid floor of $14.50/mo on annual** (A25); the band excludes Vizard (A28) and is a band over FOUR vendors, never a market-wide claim. **Corrected shift 12** — the band was stated as if monthly list were the only shape | **AGENT-REPORTED, PARTIALLY — inherited via A27** (added shift 22 by the re-run enumeration; not in shift 21's ten). **Which part: A27 (CapCut) is one of the four vendors in this band and is AGENT-REPORTED, so the band's COMPOSITION inherits the defect. Its stated endpoints do not** — the $14.50 floor and the $29 ceiling both come from A25, which has a hashed primary fetch. Underlying DERIVED — A25/A26/A27 only, with A27's staleness inherited. Not a market size, not a top-down figure (law 2) |
+| A30 | Owner cadence + reach stats (INACTION) | 63% of owners feel pressure to post daily · 44% post weekly, 18% daily · accounts under 10K followers see 8–15% organic reach (3–4× the big-account average) · 43% spend ~6 hrs/wk on social | **AGENT-REPORTED** (regraded shift 22 — was *SOURCED with grades carried, not laundered*). **That phrase was the good-faith error: carrying a swarm's self-assigned `[VERIFIED]` into an org SOURCED IS the laundering, done by the process built to prevent it.** The vendor-adjacency and ceiling flags below are retained and still bind. Underlying — 63/44 and the reach figure: landscape report §2.1 (Adobe Express n=433 [VERIFIED, **vendor-adjacent — treat as a ceiling**]; Socialinsider [VERIFIED]); 18% daily is §1.7, not §2.1; the 43%/6hrs figure is VerticalResponse and the origin report flags the survey **stale/undated** — never load-bearing alone. Opened shift 12 at the gate r2, which caught these stated in two artifacts each under a header promising quotation by reference | **SHIFT-21 CITATION AUDIT: the 44% here is the ADOBE CADENCE figure and that is confirmed against the source** (`research-smm-landscape.md`@`5eeb1c8`, SHA-256 `696a6b69…`, line 63 in §2.1). **It is NOT the Clutch "44% spend $500–2,000/mo" figure (that is A11, line 59) and NOT the Metricool "44% cannot disconnect" figure (n=927, FREELANCERS, line 73 — cited by no row and the likeliest future cross).** Three unrelated 44%s live in that one corpus. **The panel behind n=433 is NOT STATED anywhere in the source** — see A14 and receipt `snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md`.
+| A31 | DIY assembled-stack cost | Tools $28–55/mo, ~$50–75/mo once video is in it · **true in-house DIY cost including labour $500–1,200/mo** | **AGENT-REPORTED** (regraded shift 22 — was DIRECTIONAL; **never load-bearing alone still holds, and so does the do-not-lead-with-it flag below**) — landscape report Appendix B. The labour figure rests on a **single source** (venturemedia.io) and is the most quotable and least defensible number in the BUILD dossier: **do not lead with it, and do not use it externally without a second source.** Opened shift 12 |
+| A32 | AI use by social-media practitioners | 46% use ChatGPT for ideation · 39% for copy · **4% for calendar planning** | **AGENT-REPORTED** (added shift 22 — **missed by shift 21's scan and by my own first pass**, because this row names the corpus as *"landscape §1.3"* and *"§2.4 / Big Table"* rather than "landscape report"; found on a third pass keyed to `[VERIFIED]` tags. Was SOURCED). **The population caveat below is retained in full and is a SEPARATE restriction from this grade** — one says the org cannot show the instrument, the other says the instrument measured the wrong people. Underlying SOURCED with a **POPULATION CAVEAT that travels with every use**: measured on professional **social media managers**, NOT on SMB owners (46% and 4% at landscape §1.3 [VERIFIED verbatim]; 39% at §2.4 / Big Table [VERIFIED] — *not* §1.3). The same report says of the owner ICP "they barely buy tools." Applying this to a DIY owner is `UNTESTED` inference; carry the SHAPE (AI drafts, humans plan), never quote the percentage to an owner. Opened shift 12 |
+| A33 | SMM tool-category bands | Design: Canva Pro $18/mo (Appendix B says $15 — **unresolved contradiction in the origin doc, disclosed not smoothed**) · ChatGPT Plus $20 · Buffer from $5/channel · Sprout $199–399/seat · approval tools $39–399 (Planable $39–59 · HeyOrca $59–149/calendar · Gain $99–399) · dedicated listening from $199/mo (Brand24), usually skipped below mid-market, though Vista Social bundles it at $79 | **AGENT-REPORTED** (regraded shift 22 — was SOURCED). ***"At their own grades"* is the whole problem: the grades are the swarm's.** Underlying — landscape report §1.5–1.9 and the Big Table, all [VERIFIED 2026-08] at their own grades. Opened shift 12 at the gate r2 |
 
 | A34 | Holo refund terms | **7 calendar days**, void if ANY credit allocated by that payment was used — *"including for a test generation or a discarded generation"* — minus a **5% processing fee**, optionally paid as **non-transferable credits expiring 90 days** after issue; assessed separately per payment **including every renewal**; **business-use-only, buyer waives statutory cooling-off rights**; no refund on cancellation; credits expire unused | **OBSERVED** — refund policy verbatim in the primary snapshot, **last updated 2 Sep 2026, the day before capture.** Supersedes the 19 Aug teardown's "14-day money-back, voided after 35+ pieces", which was **FALSE**. This is the one unambiguously buyer-hostile fact this org holds a receipt for; external use still needs Phin |
 | A35 | Holo trust / scale figures | **Third-party: 1,048 Trustpilot reviews, 4.4/5.** Self-printed on their own pricing page: **4,268 brands**, **4.9/5** creator rating, 1.2M+ ads created | **OBSERVED** — primary snapshot §1–2. **The 4,268 is a BRAND count, not reviews, and 4.9 is not a third-party rating.** The shift-12 dossier carried "4,200+ Trustpilot reviews", conflating the two and overstating the competitor's third-party trust asset ~4× in the competitor's favour. Never carry 4.9 as third-party |
@@ -128,8 +255,8 @@ may state.
 | A42 | US employer firms **under 20 employees**, same segments | **556,857** (81.7% of A41). Establishments belonging to them: 561,954 | **SOURCED (the count) / ARGUED (the reading)** — same SUSB file, `ENTRSIZE='33'` (`<20`, legend read from the file's own `ENTRSIZEDSCR` column). **The count is published. That "under 20 employees" means "has no marketing hire" is this org's inference and is graded ARGUED wherever it is used that way** — untested against any real firm |
 | A43 | Chain concentration in the named segments | **26.4%** of locations belong to multi-location firms overall; **apparel/accessories 56.5%**, food 25.6%, fitness 18.5%, personal care 9.2%, bakery 3.9% | **DERIVED** — `1 − FIRM/ESTB` within SUSB 2022 (one program, one year). Consequence, and it is the load-bearing one: **counting establishments instead of firms would overstate the base by 38.6%** |
 | A44 | The nonemployer exclusion, sized | CBP/SUSB count **employer** businesses only. On the six codes that match exactly across both programs: **740,236 employer establishments vs 1,409,898 nonemployers (1.9×)** — but the ratio is violently segment-dependent: barber shops **18.2×**, beauty salons 10.0×, nail salons 8.6×, **all three food classes 0.2×**. Personal-care nonemployers alone number **1,276,010**, ~1.87× the entire A41 firm base | **SOURCED** — US Census **Nonemployer Statistics 2023**, US file. Raw fetch 2026-09-04T18:49:03Z, HTTP 200, 44,519 B, SHA-256 `420e37af…`; `RCPTOT_SIZE='001'` confirmed as the total by summing its nine class rows to it exactly. **NES 2023 uses 2022 NAICS** (clothing is `458*`, not `448*`) and publishes most segments only at 3–4 digits, so **no parallel model is available** — only these six codes. **Whether a booth-renting stylist is "a shop" is an unmade Phin ruling and it moves market size more than any other single decision in the model** |
-| A45 | Serviceable fraction — "posts often enough to want the job done" | **44%** — **ARGUED**, with a stated range of **22–88%** | **ARGUED** — the only basis available is A30's *"44% post weekly"* (Adobe Express n=433), whose own grade cell says **vendor-adjacent, treat as a ceiling**. **THREE REASONS THIS ROW IS THE WEAKEST IN THE TABLE, stated on the face of slide 4 and not in a footnote:** (1) the vendor adjacency; (2) **this table describes that survey's population two different ways — A14 calls it "TikTok-active owners", A30 calls it "owners"** — and if A14's reading is right, 44% is a fraction of already-posting owners and is badly overstated as a filter on the whole base; (3) it measures **cadence, not want**, and zero interviews exist to say the proxy holds (law 6). **CLOSING RECEIPT TAKEN, shift 21 — and the answer is that THE SOURCE STATES NO POPULATION.** `clinkworthy/docs/research-smm-landscape.md` @ `5eeb1c8`, SHA-256 `696a6b69…`, was cloned and read; every line naming `Adobe` or `433` (13, 38, 63, 141, 225, 441) was read in full and **none defines the panel**. Line 63 attaches *"on TikTok"* to the 88% burnout figure and drops it from the 44% cadence figure **in one sentence**. **So A14 and A30 each copied a different half of that sentence faithfully; neither row invented a denominator, and reason (2) above is an INHERITED ambiguity, not one this table created** — the remedy is the upstream methodology, not this row. **Reading adopted: the conservative one** (treat 44% as a ceiling drawn from an already-posting panel), placing the centre at the LOW end of A46's band — **but NOT on the ground that the source calls the panel TikTok-active; it does not. On the ground that it names no panel at all.** Evidence pointing the other way is disclosed in the receipt §4a rather than omitted. **AND THE DEFECT NEITHER READING FIXES (receipt §4b): the 433 were respondents to a design vendor's survey; A42's base is Census employer firms. Applying a fraction measured on the first to the second is a population transfer with no bridge, under BOTH readings.** Receipt: `gtm/raise/model/snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md`. **Crossed-citation check (chief's directive item 2): CLEARED — A30 cites the Adobe CADENCE figure, A11 separately cites the Clutch SPEND figure, and a third unrelated 44% (Metricool 2026 n=927, freelancers who cannot disconnect) is in the same corpus and is cited by neither.** No government source exists for this fraction — neither Census program asks whether a business has a social account | **ROUND-1 GATE, MF-4 — THIS GRADE FAILS THE LEGEND'S OWN TEST AND IS FLAGGED, NOT CHANGED.** The legend defines ARGUED as a figure the org **chose** *"where no source exists to choose it for us"*. **A45 did not choose 44% — it copied A30, a graded row, and this cell says so.** Nowhere is it argued why 44 rather than 30 or 60; §3 of slide 4 is a list of reasons to DISTRUST the number it then adopts. **The practical effect is inversion: the grade reads as candour and functions as an org endorsement of a vendor statistic the org cannot retrieve.** Regrade pending the chief's provenance ruling above. **MF-2, and it is the bigger one: the source's own line 230 frames 44%-weekly as the CONSISTENCY-COLLAPSE cohort — the owners who are coping against a 7×/wk ideal — while this org's ICP is "too small to hire anyone for marketing". So step 4 screens OUT the 56% the positioning targets. The row's LABEL says "wants the job done"; its CONTENT says "posts weekly". Those are different claims and the equivocation is load-bearing.**
-| A46 | Bottom-up serviceable market, **in units** | **~245,000 firms**, range **~123,000–490,000** | **DERIVED, inheriting A45's ARGUED grade** — A42 × A45 (556,857 × 0.44 = 245,017; × 0.22 = 122,509; × 0.88 = 490,034). **The band is asymmetric and that is itself a finding: the double case is 88% of every small firm in five industries, so the upside is capped by the count while the downside is not — the point estimate sits near the top of its plausible band.** The defensible statement is the range. **NOT multiplied by any price: no tier mix is RULED (G11), so ARPU does not exist and `SAM_revenue` is deliberately absent from slide 4.** This row is a count of businesses that exist; it is **not demand evidence** and may never be presented as any |
+| A45 | Serviceable fraction — "posts often enough to want the job done" | **44%** — **AGENT-REPORTED + ARGUED**, with a stated range of **22–88%** | **AGENT-REPORTED + ARGUED** (regraded shift 22). **Both grades apply and neither substitutes for the other:** AGENT-REPORTED because the chain terminates in the self-grading corpus; ARGUED because the org chose to carry the number anyway. Underlying **ARGUED** — the only basis available is A30's *"44% post weekly"* (Adobe Express n=433), whose own grade cell says **vendor-adjacent, treat as a ceiling**. **THREE REASONS THIS ROW IS THE WEAKEST IN THE TABLE, stated on the face of slide 4 and not in a footnote:** (1) the vendor adjacency; (2) **this table describes that survey's population two different ways — A14 calls it "TikTok-active owners", A30 calls it "owners"** — and if A14's reading is right, 44% is a fraction of already-posting owners and is badly overstated as a filter on the whole base; (3) it measures **cadence, not want**, and zero interviews exist to say the proxy holds (law 6). **CLOSING RECEIPT TAKEN, shift 21 — and the answer is that THE SOURCE STATES NO POPULATION.** `clinkworthy/docs/research-smm-landscape.md` @ `5eeb1c8`, SHA-256 `696a6b69…`, was cloned and read; every line naming `Adobe` or `433` (13, 38, 63, 141, 225, 441) was read in full and **none defines the panel**. Line 63 attaches *"on TikTok"* to the 88% burnout figure and drops it from the 44% cadence figure **in one sentence**. **So A14 and A30 each copied a different half of that sentence faithfully; neither row invented a denominator, and reason (2) above is an INHERITED ambiguity, not one this table created** — the remedy is the upstream methodology, not this row. **Reading adopted: the conservative one** (treat 44% as a ceiling drawn from an already-posting panel), placing the centre at the LOW end of A46's band — **but NOT on the ground that the source calls the panel TikTok-active; it does not. On the ground that it names no panel at all.** Evidence pointing the other way is disclosed in the receipt §4a rather than omitted. **AND THE DEFECT NEITHER READING FIXES (receipt §4b): the 433 were respondents to a design vendor's survey; A42's base is Census employer firms. Applying a fraction measured on the first to the second is a population transfer with no bridge, under BOTH readings.** Receipt: `gtm/raise/model/snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md`. **Crossed-citation check (chief's directive item 2): CLEARED — A30 cites the Adobe CADENCE figure, A11 separately cites the Clutch SPEND figure, and a third unrelated 44% (Metricool 2026 n=927, freelancers who cannot disconnect) is in the same corpus and is cited by neither.** No government source exists for this fraction — neither Census program asks whether a business has a social account | **ROUND-1 GATE, MF-4 — THIS GRADE FAILS THE LEGEND'S OWN TEST AND IS FLAGGED, NOT CHANGED.** The legend defines ARGUED as a figure the org **chose** *"where no source exists to choose it for us"*. **A45 did not choose 44% — it copied A30, a graded row, and this cell says so.** Nowhere is it argued why 44 rather than 30 or 60; §3 of slide 4 is a list of reasons to DISTRUST the number it then adopts. **The practical effect is inversion: the grade reads as candour and functions as an org endorsement of a vendor statistic the org cannot retrieve.** **Regraded shift 22 on the chief's ruling — to AGENT-REPORTED + ARGUED, which does not answer MF-4.** MF-4 says this row did not ARGUE 44%, it copied A30; adding a provenance grade records where the number came from and still supplies no reason for 44 rather than 30 or 60. **MF-4 and MF-2 remain OPEN against this row** and are recommendation (b)'s first target. **MF-2, and it is the bigger one: the source's own line 230 frames 44%-weekly as the CONSISTENCY-COLLAPSE cohort — the owners who are coping against a 7×/wk ideal — while this org's ICP is "too small to hire anyone for marketing". So step 4 screens OUT the 56% the positioning targets. The row's LABEL says "wants the job done"; its CONTENT says "posts weekly". Those are different claims and the equivocation is load-bearing.**
+| A46 | Bottom-up serviceable market, **in units** | **~245,000 firms**, range **~123,000–490,000** | **DERIVED, inheriting A45's AGENT-REPORTED + ARGUED grades** (shift 22 — the row already said it inherited A45; the closure makes the provenance half of that inheritance explicit) — A42 × A45 (556,857 × 0.44 = 245,017; × 0.22 = 122,509; × 0.88 = 490,034). **The band is asymmetric and that is itself a finding: the double case is 88% of every small firm in five industries, so the upside is capped by the count while the downside is not — the point estimate sits near the top of its plausible band.** The defensible statement is the range. **NOT multiplied by any price: no tier mix is RULED (G11), so ARPU does not exist and `SAM_revenue` is deliberately absent from slide 4.** This row is a count of businesses that exist; it is **not demand evidence** and may never be presented as any |
 
 ## Not yet in this table (and therefore claimable nowhere)
 
