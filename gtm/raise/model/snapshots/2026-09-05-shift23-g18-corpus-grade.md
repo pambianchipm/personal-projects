@@ -129,12 +129,19 @@ inside the chief's own inbox entry naming them. The chief's count on
 truth table finds documents under *rows*. It cannot find a document under a
 *claim that has no row*:
 
-> **`clinkworthy/docs/channel-readiness.md` is cited in nine `gtm/` artifacts —
-> `position-v2-the-hire.md` (GATED), `front-door-strings-v1.md`,
-> `front-door-overhaul-v1.md`, `front-door-overhaul-receipts.md`,
-> `live-front-door-audit-2026-09-04.md`, `position-v2-framing-v1.md`,
-> `gap-list-2026-09-04.md` and two filed gate verdicts — and by ZERO rows of
-> `assumptions.md`, because the table has no channel row at all.**
+> **THIRTEEN `gtm/` FILES CITE IT AND ZERO ROWS OF THIS TABLE DO** — seven
+> claim-bearing artifacts (`position-v2-the-hire.md` (GATED),
+> `position-v2-framing-v1.md`, `live-front-door-audit-2026-09-04.md`,
+> `front-door-strings-v1.md`, `front-door-overhaul-v1.md`,
+> `front-door-overhaul-receipts.md`, `gap-list-2026-09-04.md`) and **six filed
+> gate verdicts** (shifts 14, 15 ×2, 16, 17 ×2). *(Instrument: `grep -rl` over
+> `gtm/**/*.md`, excluding the four org-ledger files and the two written this
+> shift. **The first version of this passage said NINE and named "two filed
+> verdicts"; there are six. I wrote a count from a partial listing.** The
+> correction moves the number in the direction that makes this gap larger.
+> Blind spot that remains: `grep -rl` counts FILES that name the string, not
+> citations, and cannot see an artifact that leans on this document without
+> naming it.)*
 
 It is the authority that decides **what this org's copy may claim about
 platforms**. A rule keyed to rows grades everything under the market-size

@@ -131,9 +131,11 @@ primary; the grade cell still says DIRECTIONAL and names the teardown.
 this boss's** — and least of all inside the pass whose conclusion it supports.
 
 **WHAT THE ROW-KEYED SWEEP CANNOT SEE, AND IT IS THE BIGGER HALF OF G18.**
-`competitor-holo.md` is cited by exactly one row (A15). **`channel-readiness.md`
-is cited by nine `gtm/` artifacts and by ZERO rows of this table, because this
-table has no channel row at all** — a gap the shift-14 gate named on 3 Sep and
+`competitor-holo.md` is cited by exactly one row (A15). `channel-readiness.md`
+is cited by **thirteen `gtm/` files — seven claim-bearing artifacts and six
+filed gate verdicts — and by ZERO rows of this table, because this table has no
+channel row at all.** *(The first draft of this sentence said nine, from a
+partial listing; corrected here, and the correction enlarges the gap.)* — a gap the shift-14 gate named on 3 Sep and
 nobody has closed. It is the authority deciding what this org's copy may claim
 about platforms. Graded this shift against the cloned code (four receipts
 spot-checked, all resolve): **SOURCED, and the strongest external document this
