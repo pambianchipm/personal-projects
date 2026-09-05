@@ -8,6 +8,115 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-05 · on-demand (chief-fired, after a ten-second stand-down on the
+10:00 scheduled slot) · SHIFT 23 — G18 ANSWERED FROM THE FILE, NOT FROM A
+RELAY. THE REPO THIS ORG CALLED UNREACHABLE FOR TWO SHIFTS TOOK ONE TOOL
+CALL.** ⧖ **IN PROGRESS — the gate is running as this is written; the verdict
+section below is unfilled and this entry is not final.**
+
+**WHY THE SHIFT RAN AT ALL.** The chief's G18 answer landed in the inbox at
+08:5x, **newer than shift 22's close at 08:19**, and the lock was RELEASED. The
+early-exit clause requires all three of: someone else's fresh lock, every open
+item blocked on Phin, and no inbox entry newer than the last close. **None of
+the three held.** Recorded because four consecutive shifts stood down and a
+silent ten-second shift is indistinguishable from a crashed cron.
+
+**THE THING WORTH KEEPING, AND IT IS NOT A FINDING.** Shifts 21 and 22 wrote
+*"`clinkworthy` is not in this tree"* into their blind-spot lists — twice, as a
+limitation to disclose. **It was `add_repo` + one `git clone`.** The egress
+block on `tryholo.ai` is real and stands. The block on our own private repo was
+procedural, and this org disclosed it honestly four times instead of trying the
+door. **A disclosed limitation is not the same as an unavoidable one, and this
+org has been treating them as the same.**
+
+**WHAT RAN.**
+- **`snapshots/2026-09-05-shift23-g18-corpus-grade.md` — NEW. RECEIPT.**
+  `clinkworthy` cloned at `956028b4`. All 21 `docs/*.md` files counted (bytes,
+  `http`, markdown links, `[VERIFIED]`). **The chief's counts reproduce
+  exactly** at a different hash: landscape report = 100 `[VERIFIED]` and the
+  only file carrying the tag; `competitor-holo` / `claude-ads-steal-report` /
+  `onboarding-funnel-plan` = 0 `http`; `design-partner-candidates-nyc` = 87.
+  Landscape report's SHA-256 `696a6b69…` is byte-identical across three
+  commits.
+- **`competitor-holo.md` READ IN FULL AND GRADED against Phin's 3 Sep primary:
+  of eight gradeable claims, ONE holds.** Price band $20–48 / $12–29 confirmed
+  exactly. FALSE: three plans (two), 200/650 creatives (120/350), 4,200+
+  Trustpilot (1,048), 14-day/35-piece refund (7-day/one-generation), the BLUF,
+  *"generates on demand, then silence"*. **Two found for the first time this
+  shift; four already struck by the primary — by an org that had never opened
+  the file they came from.** No live artifact carries a falsified figure, **by
+  sequencing rather than by grading.**
+- **`snapshots/2026-09-05-shift23-citescan.py` — NEW, the enumeration
+  instrument.** *Matches all 48 rows including the lettered A7b/A25b — the
+  silent row-drop that bit shift 22 is closed. Blind spots in its docstring and
+  they are real: it cannot tell a citation from a mention, it carries a
+  hand-maintained list of bare-prose source names (the hole A32 hid in), and it
+  reads one file.* Every hit read by hand.
+- **`assumptions.md`** — the **STATED-LIMITATION clause** added to the legend;
+  the **G18 header block** rewritten; **A15's grade cell now reads UNSETTLED**;
+  the snapshot-debt note re-drawn. **NO FIGURE IN ANY ROW CHANGED.** The eleven
+  `AGENT-REPORTED` rows were not touched.
+- **`gap-list-2026-09-04.md`** — G18 **ANSWERED** (part (i) closed, part (ii)
+  routed); **G19 OPENED** (Tier 2).
+- **Law-4 sweep on A15's amended grade: five files** — `skeleton.md`,
+  `positioning.md`, `battle-cards.md`, `dossier-buy-holo.md`, the table.
+
+**WHERE I ARGUE WITH THE CHIEF, AND IT IS RECOMMENDATION 2.** *"Grade only what
+a live row cites"* is keyed to the wrong unit. `competitor-holo.md` is cited by
+**exactly one row**. The three zero-URL files the sweep flagged are cited by
+**no row and appear nowhere under `gtm/`** — nothing rests on them, which
+answers the chief's own NOT CHECKED. **But `channel-readiness.md` is cited by
+thirteen `gtm/` files and by zero rows**, because the table has no channel row —
+so a row-keyed rule would never look at the document that decides what our copy
+may claim about platforms. Graded anyway: **SOURCED, the strongest external
+document this org cites**, every row naming a file and a line, four receipts
+spot-checked against the cloned code. **It has zero URLs** — counting `http`
+grades a document on whether its sources are on the web, not on whether it has
+any.
+
+**AND WHERE I CORRECTED MYSELF, BOTH TIMES IN THE UNFLATTERING DIRECTION.**
+(1) My first reading of this evidence concluded the org had **heeded** the
+teardown's warning — the flag is in A15's cell and in `positioning.md`, and
+Phin's capture is exactly the spot-check the file asked for. **`git log -S`
+puts the flag's arrival at shift 15, after shift 13's capture had already found
+the errors, and shift 12 had by then shipped two of them into a dossier.** The
+warning caught nothing. The chief's *"the org read the number and not the
+warning"* is correct and my first reading of my own evidence was the flattering
+one. (2) I wrote that `channel-readiness.md` was cited by **nine** files, from a
+partial listing, naming *"two filed verdicts"* where there are six. **It is
+thirteen.** Corrected in three files as a new draft.
+
+**THE AMENDMENT TO THE CHIEF'S RULE 3, AND THIS ORG PAID FOR IT.** The teardown
+warned *spot-check **pricing***. **Pricing is the one claim of eight that
+held.** Four of the five numeric failures sit outside what it warned about.
+Carrying its stated limitation verbatim — which A15's cell has done since shift
+15 — **would have protected this org from nothing that actually went wrong.**
+So the legend clause carries both halves: **a source's stated limitation is a
+FLOOR on its unreliability, never a description of it.**
+
+**THE GATE.** ⧖ **RUNNING — one hostile-investor persona reviewer, spawned at
+gate time only, aimed at the receipt and every shift-23 amendment, and briefed
+to re-derive the counts rather than accept them.** Verdict will be filed at
+`reviews/2026-09-05-shift23-g18-corpus-grade-hostile-investor-r1.md`. **Every
+shift-23 amendment is marked UNGATED in its own file until it returns.**
+
+**FAN-OUT: one hostile-investor persona reviewer, gate time only. Solo
+otherwise. Token weight: medium-heavy** (one repo clone, one full-directory
+count, two files read end to end, one instrument written and run).
+
+**NOT CHECKED THIS SHIFT.** The landscape report's contents were not re-read —
+only its hash and tag count re-derived; the eleven `AGENT-REPORTED` rows are
+untouched. **The Adobe Express n=433 survey is still unretrieved and
+recommendation (b) did not advance.** Sixteen of the 21 directory files were
+counted and not read. `design-partner-candidates-nyc.md`'s 87 URLs were not
+opened or sampled. No live Holo page was opened — `tryholo.ai` is still
+egress-blocked and the primary is now two days old, on a policy that changed
+the day before it was taken. The clone is `--depth 1`: **no dates, no
+authorship, no history for any clinkworthy file**, so every date quoted from
+one is that document's own header claim.
+
+---
+
 **2026-09-05 · on-demand (chief-fired, the ruling on shift 21's close) · SHIFT 22
 — THE GRADE EXISTS, ELEVEN ROWS CARRY IT, AND THE GATE ON THE FIX FAILED THE
 FIX.** Chief's ruling: G17(a) this shift; G17(b) next shift.
