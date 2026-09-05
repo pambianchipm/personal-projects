@@ -2,9 +2,23 @@
 
 **Shift 23, 2026-09-05. RECEIPT.** CONFIDENTIAL — internal-audit class (law 8).
 
-STATUS: **DRAFT — UNGATED.** Written by the boss this shift; law 7 and the
-org's own rule that an author cannot pass their own work both apply. The
-hostile-investor gate applies and §5 is where it should aim.
+STATUS: **GATE-FAILED (round 1).** Verdict:
+`gtm/org/reviews/2026-09-05-shift23-g18-corpus-grade-hostile-investor-r1.md`
+— **eight MUST-FIX.** Round 2 **not convened**; the MUST-FIX are applied below
+as new drafts and the artifact stays GATE-FAILED for the chief to read.
+
+**THE THREE THE GATE LED WITH, AND ALL THREE RAN THE SAME WAY.** A §5 receipt
+**invented a defect** in the document it was grading and then spent the
+invention in NOT CHECKED. **The headline ratio did not reconstruct from this
+artifact's own tables**, and its denominator had been assembled by dropping
+every teardown claim the primary *confirms*. And *"nobody in this org had
+opened `competitor-holo.md`"* — the sentence the whole first-time-finding
+rested on — **is refuted by a verbatim transcription of that file sitting in a
+gated artifact in this tree.** Shift 22's filed lesson is that the direction of
+a finding predicts where its evidence is weakest. §4 records the boss catching
+himself making that turn once. **He made it three more times in the same
+document and caught none of them.** The ratio is retracted rather than
+repaired — see §4.
 
 **INSTRUMENT, AND THIS IS THE PART THAT CHANGED THE ANSWER.** `clinkworthy`
 was **attached to this session and cloned into this box** (`add_repo` →
@@ -97,7 +111,14 @@ commits.
 ## IS TOO NARROW
 
 **Instrument:** `snapshots/2026-09-05-shift23-citescan.py`, run against
-`assumptions.md` at SHA-256 `b469d60f…`, 53,970 B. It matched **all 48 rows
+`assumptions.md` at SHA-256 `b469d60f…`, 53,970 B. **⚠ DISCLOSED (MF-5): that
+hash is `assumptions.md` at `18edb84` — the file as it stood BEFORE this
+shift's own amendments to it.** The scan therefore describes the table the
+shift inherited, not the table the shift leaves. It was not re-run afterwards.
+Nothing in this section's findings turns on the shift's own edits — they added
+prose to the header and to A15's grade cell and no row's citations — **but the
+receipt named a hash without saying which version it was, which is the defect
+this org files against other people's receipts.** It matched **all 48 rows
 including the lettered A7b and A25b** — the row-drop that bit shift 22's scan
 is closed. Its own blind spots are in its docstring and they are real: it
 cannot tell a citation from a mention, it carries a hand-maintained list of
@@ -110,7 +131,14 @@ file. **Every hit below was read by hand.**
   A25 A27 A30 A31 A32 A33 A45. *(A15 and A25 are mentions, not citations —
   both were adjudicated out at shift 22; the scan cannot tell the difference
   and did not try.)*
-- `clinkworthy/docs/competitor-holo.md` — **1 row: A15, and only A15.**
+- `clinkworthy/docs/competitor-holo.md` — **1 row cites it as a source: A15.**
+  **⚠ CORRECTED (MF-6): A34 also NAMES it**, as the source it supersedes
+  (*"Supersedes the 19 Aug teardown's '14-day money-back…', which was FALSE"*),
+  and A35 does the same for the Trustpilot count. Those are mentions, not
+  citations — **which is exactly the distinction I applied to shrink the
+  landscape report's count from 11 and did not apply here, where it would have
+  enlarged a number.** The pass was run in one direction. Stated both ways
+  now: **one row cites it; three rows name it.**
 - `clinkworthy/console/lib/pricing.ts` (A1), `docs/productization-v1.md` (A3),
   `console/lib/xai-video.ts` (A4), `xai-image.ts` (A7) — code and scope.
 - Retrieved-and-hashed org snapshots — A4 A20 A21 A25 A37 A40.
@@ -119,10 +147,15 @@ file. **Every hit below was read by hand.**
   these hashed via org snapshots), Trustpilot (A35, via Phin's screenshot).
 
 **ANSWER TO THE CHIEF'S OWN `NOT CHECKED`:** *"whether the other zero-URL files
-are cited by any live row."* **They are not — and not by any live artifact
-either.** `claude-ads-steal-report.md`, `onboarding-funnel-plan.md` and
-`design-partner-candidates-nyc.md` appear **nowhere under `gtm/`** except
-inside the chief's own inbox entry naming them. The chief's count on
+are cited by any live row."* **No live row cites them, and no
+claim-bearing artifact does either.** `claude-ads-steal-report.md`,
+`onboarding-funnel-plan.md` and `design-partner-candidates-nyc.md` are named
+under `gtm/` **only inside the chief's own inbox entry and inside this shift's
+own files** — `grep -rn` over `gtm/**/*.md` at this shift's HEAD. *(Blind spot:
+`grep` finds a filename, not a dependency; an artifact that leans on one of
+these documents without naming it is invisible to this check. The bare
+statement "they appear nowhere under `gtm/`" was false the moment I wrote about
+them and is corrected here — MF-8.)* The chief's count on
 `claude-ads-steal-report.md` needed no verdict: nothing rests on it.
 
 **AND HERE IS WHERE RECOMMENDATION 2 UNDER-COVERS.** Enumerating from the
@@ -158,7 +191,8 @@ inside the pass that grades it, is shift 22's exact failure shape.
 
 ---
 
-## 4 — `competitor-holo.md`: GRADED AGAINST THE PRIMARY. **ONE OF SIX NUMERIC
+## 4 — `competitor-holo.md`: GRADED AGAINST THE PRIMARY. **NO RATIO — SEE
+## THE RETRACTION BELOW. ONE OF SIX NUMERIC
 ## CHECKABLE CLAIMS SURVIVES.**
 
 The file is 4,423 B, self-dated **19 Aug 2026**, and its third line is the one
@@ -187,17 +221,64 @@ having read the file they came from:**
 | Gap 1: *"No learning loop. Nothing feeds results back into generation"* | Addendum 2: the wide claim is *"now unsupportable"*; the honest question is whether a learning **re-enters generation** | **UNSUPPORTED** (not disproven) |
 | Gap 2 (no attribution), Gap 3 (no ad execution) | Only goal metric ever observed is **followers**; an **Ads** section exists in the nav, Phin's read of it hedged | **NOT CHECKED** — and Phin's own hedges stay hedged |
 
-**Running total against the primary: of eight claims that can be graded at all,
-ONE is confirmed.** Two more are unsupported and two remain not checked. **The
-one that holds is the price band — the only thing the file warned about.**
+**⚠ THE RATIO IS RETRACTED (MF-2, MF-3). IT IS NOT REPAIRED, AND THE REASON IS
+THE POINT.** This passage said *"of eight claims that can be graded at all, ONE
+is confirmed."* **It does not reconstruct from the two tables above it** — they
+hold eleven rows, exactly one marked UNSUPPORTED — **and the denominator was
+assembled without a stated selection rule, by counting the teardown's failures
+and one survivor while dropping every claim the primary CONFIRMS.** The primary
+corroborates at least the URL-scan/Brand-DNA onboarding, the email campaigns,
+the ad creatives and the *"deliberately slippery"* promo framing; the *"10M
+assets + 19,000 ads"* marketing claim is a numeric claim that was never graded
+at all and alone falsifies *"six numeric checkable claims."*
+
+**A ratio needs a rule for what enters the denominator and I did not have one.
+Inventing one now to make the number survive would be the same error with
+better manners, so the number is gone and the ledger stays:**
+
+> **CONFIRMED by the primary:** the price band ($20/$48 list, $12/$29 promo) —
+> and, uncounted before, the URL-scan onboarding, the email campaigns, the ad
+> creatives, the slippery promo framing.
+> **FALSIFIED by the primary:** the plan count, the creative allowances, the
+> Trustpilot review count, the refund terms, the BLUF, *"generates on demand,
+> then silence"*.
+> **UNSUPPORTED:** *"no learning loop."*
+> **NOT CHECKED:** attribution, ad execution, brands-per-account, *"10M assets
+> + 19,000 ads"*, *"OpenAI under the hood"*, the team and funding claims.
+
+**What survives without a ratio, and it is the whole load-bearing point: the
+one claim the file WARNED about is the one that held, and six of the claims it
+did not warn about are false.** That sentence needed no denominator and it is
+what §6 is built on.
 
 **Claims 4 and 5 were already caught and corrected** — A34 and A35 carry the
 primary and name the teardown FALSE, and `dossier-buy-holo.md` §106–110 owns
-both corrections. **Claims 2 and 3 are found here for the first time**, because
-until this shift **nobody in this org had opened `competitor-holo.md`.** No
-live artifact carries 200/650 or a third plan, so **no copy is wrong** — the
-org has been using Phin's numbers throughout. **The exposure is that it was
-using them by luck of sequencing, not by having graded the alternative.**
+both corrections. **The plan count and the creative allowances are stated as
+findings here for the first time.**
+
+**⚠ RETRACTED (MF-4), AND THIS ONE WAS THE ARGUMENT'S SPINE.** This passage
+said the reason was that *"nobody in this org had opened `competitor-holo.md`."*
+**That is false, and the refutation is three lines long and sits in this tree.**
+`dossier-buy-holo.md:316–318` is a **character-identical transcription** of
+`competitor-holo.md:85–87` — the positioning line, quoted whole, struck on
+3 Sep. The gate found **six distinct sections** of the teardown transcribed
+into `gtm/` artifacts. **The file's contents have been in this repo since shift
+12.** I asserted the negative — nobody opened it — without running the one grep
+that tests it, and I asserted it repeatedly because it made a first-time
+finding out of a first-time *grading*.
+
+**THE CORRECTED STATEMENT, and it is narrower and still the point.** The
+teardown was **read and quoted for weeks and never GRADED** — no one put its
+claims against the primary that superseded it, so four of its errors were
+caught one at a time by Phin's capture and two were never caught at all. **What
+was new this shift is the grading, not the reading.**
+
+**AND THE "NO LIVE ARTIFACT" CLAIM NEEDED THE SAME GREP.** `dossier-buy-holo.md:316`
+does carry the teardown's *"200 assets a month"* — inside a **struck** block,
+retired 3 Sep, so it is not live copy and no external surface carries it. **But
+the correct sentence is "one struck occurrence, no live one," not "none."** The
+exposure stands as stated: the org used Phin's numbers by sequencing, not by
+having graded the alternative.
 
 **THE FINDING THAT MATTERS MOST, AND IT CUTS AGAINST THE READING THAT
 FLATTERS US.** My first pass through this evidence concluded that the org had
@@ -238,8 +319,14 @@ only reason this section is a grade and not a compliment:**
 |---|---|---|
 | `SHELL_PLATFORMS = ['tiktok']`, `channel-data.ts:22` | `console/lib/channel-data.ts:22` | **VERBATIM** |
 | `Channel` union, `types.ts:3` | `console/lib/types.ts:3` | **VERBATIM**, all five members |
-| `replyToInstagramComment` `:359`, `replyToFacebookComment` `:372` | `console/lib/meta.ts:358`, `:371` | **PRESENT**, 1-line drift |
+| `replyToInstagramComment` `:359`, `replyToFacebookComment` `:372` | `console/lib/meta.ts:359`, `:372` | **EXACT** |
 | `publishInstagramImage` `:126` | `console/lib/meta.ts:126` | **PRESENT** |
+
+**⚠ CORRECTED (MF-1). The row above previously read `meta.ts:358`, `:371` and
+graded the result *"PRESENT, 1-line drift."* Lines 358 and 371 are BLANK. The
+functions are at 359 and 372 — exactly where `channel-readiness.md` puts them.
+There is no drift; I mis-read my own `sed` window and then wrote the off-by-one
+up as a defect in the document I was grading.** All four receipts are exact.
 
 *Blind spot, in the same breath: four of roughly thirty receipts, all four
 chosen because they are the ones GTM copy leans on, and existence-of-symbol is
@@ -320,5 +407,7 @@ Both clauses are proposed for the legend in §7 and are written into
 - **The clone is `--depth 1`.** No authorship, no dates, no history for any
   clinkworthy file. Every date in §4 and §5 is a document's own header claim.
 - **Whether `channel-readiness.md`'s grades are still current.** It self-dates
-  3 Sep and the code has moved since; the four spot-checks already show line
-  drift.
+  3 Sep and the code has moved since. ~~*the four spot-checks already show line
+  drift*~~ — **STRUCK (MF-1): they show none. All four resolve exactly.** The
+  staleness question is real and open; **the evidence I gave for it was my own
+  arithmetic error, and it was pointed at the file rather than at me.**

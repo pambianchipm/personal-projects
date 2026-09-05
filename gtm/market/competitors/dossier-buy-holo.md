@@ -91,9 +91,9 @@ gives no money back on cancellation and credits expire.
 | Field | Value | Grade / source |
 |---|---|---|
 | Plans | **Two only** — Starter and Scale (MOST POPULAR). No agency, enterprise or per-seat tier shown | **A15 — see the grade note below**, primary snapshot §1. *(The 19 Aug teardown printed THREE plans; shift 23 read it and graded that FALSE.)* |
-| List price | **$20 / $48** per month | **A15 — OBSERVED** |
-| Promo price | **$12 / $29** per month, with a 6-month toggle "Save up to 41%" | **A15 — OBSERVED**. The promo column is near-permanent |
-| Creatives per month | **120 / 350** | A15 — OBSERVED |
+| List price | **$20 / $48** per month | **A15 — figures OBSERVED (primary §1); the ROW's grade reads UNSETTLED, see the note below** |
+| Promo price | **$12 / $29** per month, with a 6-month toggle "Save up to 41%" | **A15 — figures OBSERVED (primary §1); row grade UNSETTLED, see below**. The promo column is near-permanent |
+| Creatives per month | **120 / 350** | A15 — figures OBSERVED (primary §1); row grade UNSETTLED, see below. *(The 19 Aug teardown said 200 / 650; shift 23 graded that FALSE.)* |
 | Cost per ad, their framing | ≈$0.10 / ≈$0.08 ("lowest cost") | OBSERVED |
 | Concurrent generations | 2 / 6 | OBSERVED |
 | **Third-party trust** | **1,048 Trustpilot reviews · 4.4/5** | **A35 — OBSERVED.** Claimed profile, invites customers to review, replies to 85% of negative reviews |
@@ -103,7 +103,7 @@ gives no money back on cancellation and credits expire.
 | Team / funding / headcount | Lithuanian founders, ex-operators of real ecommerce brands; VC-backed | **DIRECTIONAL** — 19 Aug teardown, not re-verified. Amount, headcount, regions **NOT CHECKED** |
 | Brands per account | **NOT CHECKED** | The compare table has **no brand row**. Neither the teardown's "10" nor the "5" in Phin's research is confirmed. Phin's "5 lower / 10 higher, I think" is the **leading candidate**, held at arm's length — a hypothesis that dissolves a contradiction that neatly earns more scrutiny, not less |
 
-**A15's GRADE, AMENDED 2026-09-05 (shift 23), law 4:** the truth table now reads A15 **UNSETTLED**, not OBSERVED — its value cell records the shift-13 upgrade on Phin's primary and its grade cell still says DIRECTIONAL, and reconciling the two is a revaluation (law 7) routed to the chief. **The FIGURES here are unaffected: they are Phin's 3 Sep primary capture, not the teardown's**, which shift 23 graded at one surviving claim of six. See `gtm/raise/model/assumptions.md` A15 and `gtm/raise/model/snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4.
+**A15's GRADE, AMENDED 2026-09-05 (shift 23), law 4:** the truth table now reads A15 **UNSETTLED**, not OBSERVED — its value cell records the shift-13 upgrade on Phin's primary and its grade cell still says DIRECTIONAL, and reconciling the two is a revaluation (law 7) routed to the chief. **The FIGURES here are unaffected: they are Phin's 3 Sep primary capture, not the teardown's**, which shift 23 graded against that capture: the teardown's price band is CONFIRMED by that capture while its plan count, creative allowances, Trustpilot count, refund terms, BLUF and *"generates on demand, then silence"* are FALSE **(no ratio — shift 23's "one of eight" was retracted at its own gate for having no stated denominator rule)**. See `gtm/raise/model/assumptions.md` A15 and `gtm/raise/model/snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4.
 
 **Two corrections the org owes itself.** The shift-12 dossier said *"4,200+
 Trustpilot reviews"* and *"4,200 reviews vs our zero customers"* — it had
@@ -378,5 +378,5 @@ of the session plus the Learnings capture — five, not four).
   is the leading candidate and stays UNCONFIRMED.
 - (ix) Funding, headcount, regions served.
 - (x) The 19 Aug teardown's reviewer-reported product complaints — not
-  re-verified, and that document has now been wrong twice.
+  re-verified, and that document has now been ~~wrong twice~~ **RE-COUNTED 2026-09-05 (shift 23) against the teardown itself: SIX, not two — refund terms, the 4× Trustpilot overstatement, the plan count (three vs two), the creative allowances (200/650 vs 120/350), its BLUF, and *"generates on demand, then silence"*.**
 - (xi) **Every claim about what an owner would prefer.** Zero interviews.

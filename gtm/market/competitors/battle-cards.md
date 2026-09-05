@@ -56,7 +56,9 @@ NUMBERS: by reference from `gtm/raise/model/assumptions.md` (law 4).
 >    that waives consumer cooling-off rights. Policy last updated **2 Sep
 >    2026** — the day before capture.
 >
-> **A15 survives intact and is upgraded to OBSERVED**: list $20 / $48, promo
+> **A15 survives intact and was upgraded to OBSERVED here** *(its GRADE reads
+> **UNSETTLED** as of 2026-09-05, shift 23 — see §243; these figures are Phin's
+> primary and are unaffected)*: list $20 / $48, promo
 > $12 / $29, two plans only. The gate r1 correction that produced that band
 > was right. Brands-per-account is still **NOT CHECKED** — the pricing page
 > has no such row, so neither 10 nor 5 is confirmed.
@@ -240,7 +242,7 @@ renewal** (§3.3), under a **business-use-only** clause in which the buyer
 waives statutory cooling-off rights **"to the extent permitted by law"**
 (§2.1/2.2). **Five clauses. All five exactly, or none.**
 
-**A15's GRADE, AMENDED 2026-09-05 (shift 23), law 4:** the truth table now reads A15 **UNSETTLED**, not OBSERVED — its value cell records the shift-13 upgrade on Phin's primary and its grade cell still says DIRECTIONAL, and reconciling the two is a revaluation (law 7) routed to the chief. **The FIGURES here are unaffected: they are Phin's 3 Sep primary capture, not the teardown's**, which shift 23 graded at one surviving claim of six. See `gtm/raise/model/assumptions.md` A15 and `gtm/raise/model/snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4.
+**A15's GRADE, AMENDED 2026-09-05 (shift 23), law 4:** the truth table now reads A15 **UNSETTLED**, not OBSERVED — its value cell records the shift-13 upgrade on Phin's primary and its grade cell still says DIRECTIONAL, and reconciling the two is a revaluation (law 7) routed to the chief. **The FIGURES here are unaffected: they are Phin's 3 Sep primary capture, not the teardown's**, which shift 23 graded against that capture: the teardown's price band is CONFIRMED by that capture while its plan count, creative allowances, Trustpilot count, refund terms, BLUF and *"generates on demand, then silence"* are FALSE **(no ratio — shift 23's "one of eight" was retracted at its own gate for having no stated denominator rule)**. See `gtm/raise/model/assumptions.md` A15 and `gtm/raise/model/snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4.
 
 | | Holo | Player 2 |
 |---|---|---|
@@ -433,9 +435,14 @@ citing findings, and should know the difference.
 ## NOT CHECKED (across all four cards)
 
 - (i) Every resonance claim — no owner has seen any of this.
-- (ii) **RETIRED 2026-09-03** — A15 is now **OBSERVED** from Phin's primary
-  snapshot (§1). The 19 Aug teardown is superseded and has now been wrong
-  twice (refund terms, Trustpilot count).
+- (ii) **RETIRED 2026-09-03** — A15's figures come from Phin's primary
+  snapshot (§1). **A15's GRADE reads UNSETTLED as of 2026-09-05 (shift 23),
+  not OBSERVED** — see the grade note at §243; the figures are unaffected. The
+  19 Aug teardown is superseded and has now been ~~wrong twice (refund terms,
+  Trustpilot count)~~ **RE-COUNTED shift 23 against the teardown itself: SIX —
+  refund terms, the 4× Trustpilot overstatement, the plan count (three vs two),
+  the creative allowances (200/650 vs 120/350), its BLUF, and *"generates on
+  demand, then silence"*.**
 - (iii) CapCut pricing (A27, 502 on re-fetch); Descript's tier table
   (A26); **Vizard entirely** (A28).
 - (iv) **RETIRED at gate r1** — the tier gating was in our own retained

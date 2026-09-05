@@ -103,7 +103,7 @@ UNSETTLED, not DIRECTIONAL**, because the table's own two cells state two
 grades and the reconciliation is the chief's. **The spot-check flag is still
 carried and the slide still says so, like A12** — but under the legend's
 STATED-LIMITATION clause it is a floor, not a description: the flag covered
-pricing, and pricing is the one claim of eight the teardown got right). **Receipt requirements — REWRITTEN
+pricing, and pricing is the one thing the teardown warned about and also the one thing the primary confirms; six other claims of its own are false). **Receipt requirements — REWRITTEN
 2026-09-05: this line previously instructed the slide to print "A11 VERIFIED w/
 caveat, A12 + A15 DIRECTIONAL". THAT `VERIFIED` IS THE SWARM'S OWN TAG AND MUST
 NOT REACH A SLIDE.** Every band price is graded on-slide, and **A11 and A12 are
