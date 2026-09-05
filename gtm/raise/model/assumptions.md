@@ -80,21 +80,66 @@ THEM MUST BE HIGHER THAN THE STANDARD FOR THE ADDITIONS — AND MINE WAS LOWER.*
 A25 and A15 were false positives of the shift-21 scan; the finding stands, the
 sentence I used to justify half of it did not.
 
-**⚠ G18 — OPENED BY THE GATE (MUST-FIX 2 and 3), UNRESOLVED, AND IT IS
-STRUCTURAL.** A15's **grade cell** does not name Phin's snapshot at all. It
-reads *"DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md`
-pricing table), third-party-sourced"* — **a sibling document in the same
-`clinkworthy/docs/` directory that produced the 16-agent swarm report, and
-nobody in this org has ever asked how `competitor-holo.md` was made.** So an
-auditor reading only the grade column sees a row sourced to the corpus's
-neighbour with no primary named, and A15's exemption exists **only in this
-header's prose**. That makes the removal circular as the table is currently
-written. **The value/grade mismatch is real** — A15's value cell records the
-shift-13 upgrade to OBSERVED and its grade cell still says DIRECTIONAL — and
-**it is deliberately not resolved here**: correcting a grade cell to a stronger
-grade is a revaluation (law 7), and doing it inside the pass that benefits from
-it is the failure mode this whole shift is about. **G18 is filed in the gap
-list and A15 should be read as UNSETTLED, not as cleared.**
+**⚠ G18 — OPENED BY THE GATE (MUST-FIX 2 and 3). ANSWERED SHIFT 23 FROM THE
+FILE ITSELF; A15 STAYS UNSETTLED ON A DIFFERENT GROUND.** Receipt:
+`snapshots/2026-09-05-shift23-g18-corpus-grade.md`. **UNGATED.**
+
+**Shift 22 wrote that A15's grade cell reads *"DIRECTIONAL — Holo teardown
+(`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced"*.
+That quotation is truncated, and it drops the clause that matters.** The cell
+continues: *"the teardown's own flag carried: SPOT-CHECK before any external
+use; never load-bearing alone"* — present since shift 15 (`c3e9f91`), in this
+file and in `positioning.md`. **The header indicting the org for not carrying a
+source's limitation quoted the cell with the limitation cut off.** Corrected
+here as a new draft of the passage, not an edit to it.
+
+**`competitor-holo.md` WAS READ THIS SHIFT.** `clinkworthy` was attached to the
+session and cloned (`956028b4`); the file is 4,423 B, self-dated 19 Aug 2026,
+zero `http`, zero `[VERIFIED]`. Graded against Phin's 3 Sep primary capture,
+**one of its six checkable NUMERIC claims survives**: the $20–48 list / $12–29 promo
+band is **confirmed exactly**; its plan count (three vs **two**), its creative
+allowances (**200/650 vs 120/350**), its Trustpilot review count (**4,200+ vs
+1,048**) and its refund terms (**14-day/35-pieces vs 7-day/one-generation**)
+are all **FALSE**, and *"up to 10 brands"* is unconfirmed. Claims 4 and 5 were
+already caught by Phin's capture and corrected into A34/A35; **the plan count
+and the creative allowances are found for the first time here.** **Its
+capability claims grade no better:** its BLUF (*"Holo makes assets; Player2
+runs marketing"*) and its *"generates on demand, then silence"* were both
+struck FALSE on 3 Sep — by the primary, by an org that had still never opened
+the file they came from. **Of eight gradeable claims, one holds, and it is the
+one the file warned about.** No live
+artifact carries either, so **no copy is wrong** — the org has been using
+Phin's numbers throughout, by sequencing rather than by having graded the
+alternative.
+
+**AND THE SEQUENCE REFUTES THE FLATTERING READING OF THAT, INCLUDING THE ONE
+THIS BOSS REACHED FIRST.** The spot-check flag landed at **shift 15**, *after*
+shift 13's capture had already found the errors — and **shift 12 had by then
+built a dossier on the teardown's Trustpilot and refund figures and shipped
+both wrong.** The warning caught nothing; Phin's independent capture did.
+**Worse for the rule: the warning said *spot-check pricing*, and pricing is the
+single claim that held.** Four of the five failures sit outside what it warned
+about. See the STATED-LIMITATION clause in the legend, which exists because of
+this.
+
+**WHY A15 STILL READS UNSETTLED — and the ground has moved.** Not *"nobody has
+spot-checked Holo's pricing"*: someone did, on 3 Sep, and it confirmed the band
+in both columns. **The live ground is that A15's two cells state two different
+grades** — the value cell records the shift-13 upgrade to OBSERVED on Phin's
+primary; the grade cell still says DIRECTIONAL and names the teardown.
+**Reconciling them is a revaluation (law 7) and is the chief's or Phin's, not
+this boss's** — and least of all inside the pass whose conclusion it supports.
+
+**WHAT THE ROW-KEYED SWEEP CANNOT SEE, AND IT IS THE BIGGER HALF OF G18.**
+`competitor-holo.md` is cited by exactly one row (A15). **`channel-readiness.md`
+is cited by nine `gtm/` artifacts and by ZERO rows of this table, because this
+table has no channel row at all** — a gap the shift-14 gate named on 3 Sep and
+nobody has closed. It is the authority deciding what this org's copy may claim
+about platforms. Graded this shift against the cloned code (four receipts
+spot-checked, all resolve): **SOURCED, and the strongest external document this
+org cites** — zero `http` and every row naming a file and a line, which is why
+counting URLs is the wrong instrument. **A channel row is proposed to the
+chief, not written here.**
 
 **ADDED (3):**
 
@@ -191,7 +236,17 @@ were REMOVED from shift 21's list of ten (A25 on a hashed fetch record; **A15
 on a ground the round-1 gate found overstated — see the header and G18**),
 and A29/A32/A46 were added — see the header. **These cells are UNGATED: law 7
 and the org's own rule that an author cannot pass their own work both apply, and
-a provenance relabel is no exception. The hostile-investor gate applies.** Law 7: the author cannot pass them. The
+a provenance relabel is no exception. The hostile-investor gate applies.**
+**SHIFT-23 (2026-09-05) AMENDMENTS ARE UNGATED AND MARKED AS SUCH:** the
+**STATED-LIMITATION clause** in the legend, the rewritten **G18 block** in the
+header, and **A15's grade cell**, which now reads **UNSETTLED** per the chief's
+G18 ruling with the ground restated. **NO FIGURE IN ANY ROW CHANGED** — the
+120 / 350 in A15's value cell is Phin's primary and is untouched; the 200 / 650
+found FALSE this shift is the teardown's and has never been in this table. The
+eleven `AGENT-REPORTED` rows are **not touched by this shift at all.** Receipt:
+`snapshots/2026-09-05-shift23-g18-corpus-grade.md`; instrument:
+`snapshots/2026-09-05-shift23-citescan.py`. **Law 7 and the no-self-pass rule
+apply; the hostile-investor gate applies and A15 is where it should aim.** Law 7: the author cannot pass them. The
 hostile-investor gate applies, and A45 is where it should aim.
 OWNER: GTM boss · shift 5, 2026-09-02
 LAW 4: shared facts live HERE, once. The deck, the model, the site, and
@@ -244,6 +299,32 @@ clauses, and all three travel together:
   reference, not on a later slide.** A row computed from an AGENT-REPORTED row
   inherits the grade.
 
+**THE STATED-LIMITATION CLAUSE (added shift 23, 2026-09-05, on the chief's
+G18 recommendation 3 — and it has a second half the chief's version did not,
+which is the half this org paid for).**
+
+- **A limitation a source states about ITSELF is part of the receipt.** A grade
+  cell citing that source without carrying the limitation is an **incomplete
+  citation**, not a wrong one. It travels with the citation into every artifact
+  that quotes the row, on the same surface as the number.
+- **AND THE LIMITATION IS A FLOOR ON THE SOURCE'S UNRELIABILITY, NEVER A
+  DESCRIPTION OF IT. Carrying it discharges NOTHING about the rest of the
+  document, which stays ungraded until something independent is put against
+  it.** `competitor-holo.md` warned *spot-check **pricing***; pricing is the
+  one claim of six that held, and its review count, refund terms, plan count
+  and creative allowances — none of them warned about — were wrong, two of
+  them into a shipped dossier. **A source that tells you where it is weak has
+  told you one place, and the honest reading of that sentence is that it did
+  not audit itself either.**
+- **A document that grades no claim of its own is not thereby unsourced.**
+  `channel-readiness.md` carries zero URLs, zero self-assigned tags, and a
+  file-and-line receipt on every row. **The question is whether a reader can
+  independently re-derive the claim from a named, retrievable instrument** —
+  not whether the instrument is on the web.
+
+Receipt: `snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4–§6. **UNGATED —
+written by the boss shift 23; law 7 and the no-self-pass rule both apply.**
+
 **AGENT-REPORTED LEADS, IT DOES NOT REPLACE.** Where a row already carried a
 restriction of its own — DIRECTIONAL's *never load-bearing alone*, a stated
 population caveat, a staleness flag — that restriction is retained verbatim
@@ -272,7 +353,7 @@ may state.
 | A12 | Freelancer entry packages | roughly $300–1,500/mo | **AGENT-REPORTED** (regraded shift 22 — was DIRECTIONAL, **and the DIRECTIONAL restriction stands: never load-bearing alone**) — landscape report; the report itself also cites "$300–500" elsewhere; treat as a range, never load-bearing alone |
 | A13 | Accelerator terms (ERA / Techstars NYC) | $150k post-money SAFE for 6% / $220k ($200k uncapped MFN SAFE + $20k convertible, 5% common) | SOURCED — `gtm/raise/accelerators.md` is the source of truth (primary pages read 31 Aug); quote it, don't restate elsewhere |
 | A14 | Owner burnout / time poverty stats | 88% of TikTok-active owners report posting burnout (Adobe Express n=433, vendor survey — treat as ceiling); 42% of SMBs have <1 hr/day for ALL marketing (Constant Contact 2025) | **AGENT-REPORTED** (regraded shift 22 — was SOURCED). *"Its own editor's grades carried"* names the defect exactly: the editor is the swarm, and carrying its grade into an org SOURCED is what this grade exists to stop. Underlying — landscape report, its own editor's grades carried | **SHIFT-21 CITATION AUDIT:** this row's *"TikTok-active"* and A30's *"owners"* describe the SAME instrument and both are faithful copies of one source sentence (`research-smm-landscape.md`@`5eeb1c8` line 63), which attaches the qualifier to the 88% and drops it from the 44%. **The source never states the n=433 panel.** The divergence is inherited, not invented here; do not "reconcile" the two rows by editing either — that would launder an upstream gap. Receipt: `snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md` §4.
-| A15 | SMM tool band (Holo-class) | **OBSERVED shift 13, 3 Sep — list $20 / $48, promo $12 / $29, TWO plans only, 120 / 350 creatives per month.** Upgraded DIRECTIONAL → **OBSERVED** on Phin's primary capture of the pricing page (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`), which confirms the shift-12 band in both columns exactly. ~~**~$20–48/mo list — CORRECTED shift 12**~~ (a near-permanent promo column runs ~$12–29). ~~~$12–48/mo~~ took the PROMO floor from one column and the LIST ceiling from another: the teardown's own headline is "a **$20–48/mo** price anchor" and its table puts $20 under *List* and $12 under *"Promo" (near-permanent)*; the landscape report Appendix B §2 independently says "Holo: Starter **$20** … Scale **$48**". Caught at the competitor-salesperson gate r1, which also noted the dossier condemned Holo's sale-price framing on one page while quoting its sale price as a band floor on another | DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced; the teardown's own flag carried: SPOT-CHECK before any external use; never load-bearing alone |
+| A15 | SMM tool band (Holo-class) | **OBSERVED shift 13, 3 Sep — list $20 / $48, promo $12 / $29, TWO plans only, 120 / 350 creatives per month.** Upgraded DIRECTIONAL → **OBSERVED** on Phin's primary capture of the pricing page (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`), which confirms the shift-12 band in both columns exactly. ~~**~$20–48/mo list — CORRECTED shift 12**~~ (a near-permanent promo column runs ~$12–29). ~~~$12–48/mo~~ took the PROMO floor from one column and the LIST ceiling from another: the teardown's own headline is "a **$20–48/mo** price anchor" and its table puts $20 under *List* and $12 under *"Promo" (near-permanent)*; the landscape report Appendix B §2 independently says "Holo: Starter **$20** … Scale **$48**". Caught at the competitor-salesperson gate r1, which also noted the dossier condemned Holo's sale-price framing on one page while quoting its sale price as a band floor on another | **UNSETTLED — ruled by the chief 2026-09-05 (G18), and the ground is restated shift 23 because the ruling's ground no longer holds.** This row's two cells state two grades: the value cell records the shift-13 upgrade to **OBSERVED** on Phin's primary capture; this cell says **DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced**. Reconciling them is a revaluation (law 7) and is not the boss's. **NOT unsettled for want of a spot-check: Phin performed one on 3 Sep and it confirmed the $20/$48 list and $12/$29 promo band in both columns exactly.** The teardown carries its own flag — *SPOT-CHECK before any external use* — and it travels with this citation (STATED-LIMITATION clause); **it is a floor, not a description.** The teardown was read in full shift 23 (`clinkworthy@956028b4`) and graded against that capture: **one of six checkable numeric claims survives — and one of eight once its capability claims are counted.** Its **creative allowances (200 / 650) are FALSE — the primary says 120 / 350** — and its **three-plan table is FALSE; there are two plans.** Both found shift 23; neither figure has ever appeared in a live artifact. Its Trustpilot and refund rows were already FALSE and are corrected at A35 and A34. **The 120 / 350 in the value cell is the primary's, not the teardown's.** Never load-bearing alone. Receipt: `snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4 |
 | A16 | SMB SaaS monthly logo churn prior | 3–7%/mo (compounded annual: 31–58%) — scenario BAND, not a claim about Player 2. (The Kalungi page's own "36 to 76%" annual figure matches no consistent annualization method; the compounded figures here are this table's, derivation: 1−(1−m)^12) | DIRECTIONAL — kalungi.com/blog/saas-churn-rate-benchmarks, read 2 Sep 2026 (the page states the band but cites no underlying study — graded accordingly); consistent with the secondary-source consensus surveyed same read. Used ONLY as scenario inputs in model-v1.md; Player 2's own churn is UNKNOWN (zero customers) and replaces this row the day real cohort data exists |
 
 | A17 | Entry refund policy + rate | POLICY RULED (Phin D2): full refund on request, first 30 days. RATE: 5–15%/mo-1 scenario band — PROJECTED (no observation, no source; the chief's "DIRECTIONAL until observed" label noted, but no secondhand source was read, so this table grades it PROJECTED). LTV effect: entry LTV × (1−r), and refunders still consume ~1 month COGS — cells in model-v1 §3a | RULED (policy) + PROJECTED (rate) |

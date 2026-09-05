@@ -23,8 +23,14 @@ own self-declared header, which is a claim by that document and not a git fact.*
 ## 1 — WHAT THE CHIEF ASKED, AND THE ONE PLACE I ARGUE WITH THE ANSWER
 
 The chief's G18 answer (inbox 2026-09-05 08:5x) gave three recommendations.
-**Two are executed as written. The second I am amending, and the ground is a
-file the sweep did not name.**
+**The verdict each reaches is accepted. None survives its stated ground
+unchanged, and I would rather say that plainly than report three ticks.**
+Recommendation 1's conclusion (A15 UNSETTLED) holds on a *different* ground —
+the spot-check it waits for was performed on 3 Sep. Recommendation 2's rule
+under-covers, and the file that proves it is one the sweep did not name.
+Recommendation 3 is right and **incomplete in the direction that would have
+cost us**: as written it would have protected this org from nothing that
+actually went wrong here.
 
 | # | Chief's recommendation | This shift |
 |---|---|---|
@@ -145,7 +151,7 @@ inside the pass that grades it, is shift 22's exact failure shape.
 
 ---
 
-## 4 — `competitor-holo.md`: GRADED AGAINST THE PRIMARY. **ONE OF SIX
+## 4 — `competitor-holo.md`: GRADED AGAINST THE PRIMARY. **ONE OF SIX NUMERIC
 ## CHECKABLE CLAIMS SURVIVES.**
 
 The file is 4,423 B, self-dated **19 Aug 2026**, and its third line is the one
@@ -162,6 +168,21 @@ snapshot's own header declares outranks every third-party figure in this tree:
 | 4 | *"4,200+ Trustpilot reviews"* | **1,048** reviews, 4.4/5. The 4,268 is Holo's own **brand** count | **FALSE** — ~4×, flattering the competitor |
 | 5 | *"14-day money-back — voided once you've generated 35+ pieces"* | **7 days**, void on **any single** generation, minus **5%**, possibly in expiring credits | **FALSE** |
 | 6 | *"up to 10 brands per account"* | *"The compare table has no brand row… **Remains NOT CHECKED**"* | **UNCONFIRMED** |
+
+**AND THE SIX ABOVE ARE ONLY THE NUMERIC HALF. The teardown's capability
+claims fare no better, and the org had already struck two of them without ever
+having read the file they came from:**
+
+| Teardown claim | Primary | Verdict |
+|---|---|---|
+| BLUF: *"Holo makes assets; Player2 runs marketing"* | Primary §4: Actions kanban, week Calendar, a card reading *"Scheduled on Fri, Sep 4"*, a live post | **FALSE** — struck 3 Sep at `positioning.md` §112 and in the dossier's positioning line |
+| Gap 5: *"No engagement, research, or autonomy… Generates on demand, then silence"* | Same §4, plus a **Learnings** section promising *"what won, what lost and why"* | **FALSE** |
+| Gap 1: *"No learning loop. Nothing feeds results back into generation"* | Addendum 2: the wide claim is *"now unsupportable"*; the honest question is whether a learning **re-enters generation** | **UNSUPPORTED** (not disproven) |
+| Gap 2 (no attribution), Gap 3 (no ad execution) | Only goal metric ever observed is **followers**; an **Ads** section exists in the nav, Phin's read of it hedged | **NOT CHECKED** — and Phin's own hedges stay hedged |
+
+**Running total against the primary: of eight claims that can be graded at all,
+ONE is confirmed.** Two more are unsupported and two remain not checked. **The
+one that holds is the price band — the only thing the file warned about.**
 
 **Claims 4 and 5 were already caught and corrected** — A34 and A35 carry the
 primary and name the teardown FALSE, and `dossier-buy-holo.md` §106–110 owns
