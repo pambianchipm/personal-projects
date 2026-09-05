@@ -190,7 +190,7 @@ Per the PM deck p38, three competitor types:
   no attribution, no ad execution. Better: outcome memory + optimizers +
   gated ad runs. Caveat: their prices were third-party-sourced; spot-check
   before any external use.~~ Primary capture (A36) shows Holo schedules,
-  posts, measures and ships a Learnings surface; A15 is now OBSERVED and its
+  posts, measures and ships a Learnings surface; A15 was upgraded to OBSERVED here and **the truth table now reads it UNSETTLED (amended 2026-09-05, shift 23 — see the note at §5's price-anchor row); the figures are unchanged and are Phin's primary**, and its
   spot-check caveat is discharged. What survives as *ours*: revenue traced to
   a post rather than followers, the operated tier, and the click gate.
   Whether their learning re-enters their generation is **NOT OBSERVED** and

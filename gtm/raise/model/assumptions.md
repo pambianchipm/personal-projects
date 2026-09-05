@@ -424,11 +424,19 @@ may state.
   rows are short of a fresh first-party receipt and each is flagged
   where it is used. (a) **A15 (Holo) — PAID 3 Sep by Phin's primary
   capture** (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`):
-  A15 is now OBSERVED, and A34/A35/A36 opened from the same capture.
-  tryholo.ai is egress-blocked from every box in this org, so **only Phin
-  can refresh it** — the debt returns the moment these figures need to be
-  current. The 19 Aug teardown is superseded and has now been wrong twice
-  (refund terms, Trustpilot count). (b) **A27 (CapCut)** — the 3 Sep live
+  **A34/A35/A36 opened from that capture and are OBSERVED. A15's own grade
+  reads UNSETTLED** — amended shift 23; its value cell took the shift-13
+  upgrade to OBSERVED and its grade cell did not, and reconciling them is the
+  chief's (law 7). **The debt itself is paid either way: the figures are the
+  primary's.** tryholo.ai is egress-blocked from every box in this org, so
+  **only Phin can refresh it** — the debt returns the moment these figures
+  need to be current. ~~The 19 Aug teardown is superseded and has now been
+  wrong twice (refund terms, Trustpilot count).~~ **RE-DRAWN 2026-09-05,
+  shift 23, from the teardown itself rather than from this sentence: it has
+  been wrong on the refund terms, the Trustpilot count, the plan count (three
+  vs two) and the creative allowances (200/650 vs 120/350), plus its BLUF and
+  its "generates on demand, then silence" — SIX, not two. Of eight gradeable
+  claims exactly one holds: the price band.** (b) **A27 (CapCut)** — the 3 Sep live
   re-fetch returned HTTP 502; the row is a 20 Aug secondary read until
   a fetch succeeds. (c) **A28 (Vizard)** — pricing is client-rendered
   and was not obtained; the row holds no figure, and no Vizard price

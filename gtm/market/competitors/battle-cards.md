@@ -229,7 +229,7 @@ step, an Analytics tab and a Learnings surface** — what those produce is
 **NOT OBSERVED**. Two plans. They market "cancel anytime"; §7.1 gives **no money back on
 cancellation** and credits expire.
 
-**Key stats (A15, A34, A35, A36 — all OBSERVED).** List **$20 / $48**, promo
+**Key stats (A15, A34, A35, A36 — A34/A35/A36 OBSERVED; A15 see the note below).** List **$20 / $48**, promo
 **$12 / $29**, two plans only, **120 / 350** creatives per month · third-party
 trust **1,048 Trustpilot reviews at 4.4/5** (their self-printed **4,268** is a
 *brand* count and **4.9/5 is not a third-party rating**) · refund is **7 days, void on any credit use including a test or discarded
@@ -239,6 +239,8 @@ rather than cash (§4.2 says "may"), assessed **per payment including every
 renewal** (§3.3), under a **business-use-only** clause in which the buyer
 waives statutory cooling-off rights **"to the extent permitted by law"**
 (§2.1/2.2). **Five clauses. All five exactly, or none.**
+
+**A15's GRADE, AMENDED 2026-09-05 (shift 23), law 4:** the truth table now reads A15 **UNSETTLED**, not OBSERVED — its value cell records the shift-13 upgrade on Phin's primary and its grade cell still says DIRECTIONAL, and reconciling the two is a revaluation (law 7) routed to the chief. **The FIGURES here are unaffected: they are Phin's 3 Sep primary capture, not the teardown's**, which shift 23 graded at one surviving claim of six. See `gtm/raise/model/assumptions.md` A15 and `gtm/raise/model/snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4.
 
 | | Holo | Player 2 |
 |---|---|---|

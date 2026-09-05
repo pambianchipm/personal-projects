@@ -93,7 +93,7 @@ appears on this slide until then.
 
 **Must prove:** who gets paid for SMB marketing today and which dollars
 Player 2 redirects. Structure on file (positioning.md §7): inaction (the
-real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (A15, asset
+real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (**A15 — UNSETTLED as of 2026-09-05, shift 23: the row's value and grade cells state different grades and the reconciliation is the chief's; the band's FIGURES are Phin's 3 Sep primary capture and are unaffected**, asset
 factories) → freelancer band (A12, **AGENT-REPORTED**) → agency band (A11,
 **AGENT-REPORTED**).
 Player 2's seat: does the WORK of the service bands at software cost —
