@@ -71,9 +71,11 @@ deliberately stops before the second one.**
 > ### The market, counted from the bottom
 >
 > **556,857 US firms** run a local, visual business, own their own locations,
-> and are small enough that nobody there is a marketing hire.
+> and are **under 20 employees — which we read as "nobody there is a marketing
+> hire", and that reading is ours, not the Census's.**
 > *US Census SUSB 2022, employer firms under 20 employees, in the NAICS
-> classes this positioning names.* **[A42 — SOURCED]**
+> classes this positioning names.* **[A42 — SOURCED (the count) / ARGUED (the
+> reading)]**
 >
 > Of those, we argue **~245,000** post to social often enough to want the job
 > done for them. **That fraction is ARGUED, not measured — and the one number
@@ -94,7 +96,14 @@ deliberately stops before the second one.**
 > **What this count deliberately excludes: every business with no employees.**
 > In personal care that is 8.6-18.2× the employer count. **[A44]**
 
-**THE THREE LABELS ON THE SLIDE ARE THE POINT.** SOURCED, ARGUED, and the
+**THE LABELS ON THE SLIDE ARE THE POINT — AND ONE OF THEM WAS WRONG UNTIL THE
+ROUND-1 GATE ON THE REGRADE CAUGHT IT (MUST-FIX 6).** The quote block printed
+*"small enough that nobody there is a marketing hire"* — A42's **inference** —
+under the label **`[A42 — SOURCED]`**, while §2's step 3 graded the same
+inference correctly. The Census publishes the count, not the meaning. **The
+ARGUED legend requires the label on the face of every artifact that states the
+inference, never in a footnote, and this slide's most quotable sentence was the
+one place it was missing.** SOURCED, ARGUED, and the
 missing multiplication. A reader who takes nothing else should take that the
 org knows which of its own numbers is which.
 

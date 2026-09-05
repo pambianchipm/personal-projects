@@ -38,25 +38,54 @@ in a row, and (3) took the transitive closure of contamination over that graph
 — then **every candidate it produced was read by hand before being accepted or
 rejected**, which is where four of the five changes came from.
 
-**REMOVED (2) — these two have a retrieved, hashed primary instrument, and the
-landscape report only corroborates it:**
+**REMOVED (1), CONTESTED (1) — and the first version of this passage said
+"REMOVED (2) … a retrieved, hashed primary instrument" for both. THAT WAS
+FALSE FOR A15, AND FALSE IN THE DIRECTION THAT MADE THIS ORG'S PROBLEM LOOK
+SMALLER.** Caught by the round-1 gate on this regrade (MUST-FIX 1), not by me.
+One hash was supplied and allowed to cover two rows of very different quality.
+**The corrected version:**
 
-- **A15** — upgraded to OBSERVED at shift 13 on **Phin's own primary capture**
-  of the Holo pricing page (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`);
-  the row's own words are that the landscape report Appendix B *"independently
-  says"* the same band. Corroboration by the corpus is not sourcing from it.
-  *(Separate defect, flagged not fixed: A15's grade CELL still reads
-  DIRECTIONAL while its value cell records the shift-13 upgrade to OBSERVED.
-  Not mine to resolve in a provenance pass.)*
-- **A25** — raw fetch 3 Sep 12:39:48Z, **HTTP 200, 612,498 B, SHA-256
-  `d0decc76…`**, with the byte-exact extraction retained
-  (`snapshots/2026-09-03-buy-editor-pricing.md`). The landscape report appears
-  in the row only as the thing the fetch **confirms unchanged**.
+- **A25 — REMOVED, and this one holds.** Raw fetch 3 Sep 12:39:48Z, **HTTP 200,
+  612,498 B, SHA-256 `d0decc76…`**, byte-exact extraction retained and itself
+  hashed `bf7ea8a2…` (`snapshots/2026-09-03-buy-editor-pricing.md`). The
+  landscape report appears in the row only as the thing the fetch **confirms
+  unchanged**. Machine-retrieved, hashed, re-checkable.
+- **A15 — REMOVED FROM `AGENT-REPORTED`, BUT NOT ON THE GROUND I FIRST GAVE,
+  AND THE REMAINING GROUND HAS AN OPEN QUESTION UNDER IT.** There is **no hash,
+  no HTTP status, no byte count and no fetch record** in
+  `gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`; `grep -in
+  'sha\|hash\|http 200\|bytes\|curl'` over that file returns **zero
+  matches**. It is **Phin's own capture, pasted verbatim from a logged-in
+  session**, with the Trustpilot header **read from a screenshot** — and
+  `tryholo.ai` is **egress-blocked from every box in this org, so no agent here
+  can ever refresh it.** *(Blind spot of that grep: it proves the org cannot
+  SHOW a fetch record, not that no fetch occurred — which is exactly the
+  standard this new grade sets, now applied to my own claim.)*
+  **Why it is still out:** a founder's direct observation of a live page is a
+  human primary, and it outranks agent output; the row's figure does not come
+  from the corpus, which its own value cell says *"independently"* confirms it.
+  **Why that is not the end of it: see G18 below.**
 
-**This removal makes our problem smaller, so it is stated with its evidence
-rather than left in place for tidiness** — the mirror of the rule shift 21 was
-given about the flattering reading. **A15 and A25 were false positives of the
-shift-21 scan, and I put them here rather than in a note.**
+**THE REMOVALS MAKE THIS ORG'S PROBLEM SMALLER, WHICH IS WHY THE STANDARD FOR
+THEM MUST BE HIGHER THAN THE STANDARD FOR THE ADDITIONS — AND MINE WAS LOWER.**
+A25 and A15 were false positives of the shift-21 scan; the finding stands, the
+sentence I used to justify half of it did not.
+
+**⚠ G18 — OPENED BY THE GATE (MUST-FIX 2 and 3), UNRESOLVED, AND IT IS
+STRUCTURAL.** A15's **grade cell** does not name Phin's snapshot at all. It
+reads *"DIRECTIONAL — Holo teardown (`clinkworthy/docs/competitor-holo.md`
+pricing table), third-party-sourced"* — **a sibling document in the same
+`clinkworthy/docs/` directory that produced the 16-agent swarm report, and
+nobody in this org has ever asked how `competitor-holo.md` was made.** So an
+auditor reading only the grade column sees a row sourced to the corpus's
+neighbour with no primary named, and A15's exemption exists **only in this
+header's prose**. That makes the removal circular as the table is currently
+written. **The value/grade mismatch is real** — A15's value cell records the
+shift-13 upgrade to OBSERVED and its grade cell still says DIRECTIONAL — and
+**it is deliberately not resolved here**: correcting a grade cell to a stronger
+grade is a revaluation (law 7), and doing it inside the pass that benefits from
+it is the failure mode this whole shift is about. **G18 is filed in the gap
+list and A15 should be read as UNSETTLED, not as cleared.**
 
 **ADDED (3):**
 
