@@ -3,7 +3,21 @@
 CONFIDENTIAL — Lane A raise artifact (law 8). **Internal-audit class:** it
 grades this org's own evidence and names what it could not source, so it is
 confidential regardless of directory and is never quoted externally.
-STATUS: **DRAFT, ungated.** Not self-passed (law 7). The persona that applies
+STATUS: **GATE-FAILED (round 1), 2026-09-05.** Hostile investor. Verdict:
+`gtm/org/reviews/2026-09-05-slide4-a40-a46-hostile-investor-r1.md`.
+**THE GATE DID NOT FAIL ON THE FRACTION THIS SLIDE NOMINATES AS ITS WEAK POINT.**
+It failed one link further down: **the document under A45 —
+`clinkworthy/docs/research-smm-landscape.md` — declares itself on its own line 3
+to be a 16-agent research swarm that "grades itself", and carries zero URLs and
+100 self-assigned `[VERIFIED]` tags.** Step 4's multiplier is an agent's
+assertion that a survey exists. **Law 1, criterion (d) — simulated validation
+presented as evidence.** Seven MUST-FIX, five SHOULD-FIX, three arithmetic
+non-reconciliations (including A43's 38.6%, which is cross-vintage while its own
+grade cell claims one program and one year). **The government counts in steps
+1-3 were recomputed independently and are exact — zero errors.**
+**DO NOT CONVENE ROUND 2 ON THIS DRAFT.** The recommendation to the chief is
+that the deck cannot resolve this; the corpus under it must be graded first.
+ORIGINAL STATUS: DRAFT, ungated. Not self-passed (law 7). The persona that applies
 is **hostile investor**, and the right first question is **not** "is the count
 right" — the counts are hashed and re-checkable. It is **"does the fraction in
 step 4 do all the work?"** — because it does.

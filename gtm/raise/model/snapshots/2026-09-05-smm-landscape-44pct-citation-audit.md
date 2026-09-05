@@ -31,7 +31,13 @@ Every quotation below is verbatim from that file at that hash.
 ## §2. THERE ARE **THREE** UNRELATED 44%s, NOT TWO
 
 The chief's directive warned of two. `grep -n "44%"` over the file returns
-**eight lines carrying three distinct statistics**:
+**12 lines carrying three distinct statistics**:
+
+**CORRECTED 2026-09-05 by the round-1 gate (SHOULD-FIX 1): this sentence
+originally read "eight lines". `grep -c "44%"` returns 12, and the table below
+always listed 12. A receipt whose banner reads "mechanical and re-checkable" 
+miscounted its own mechanism, and an outside reviewer caught it, not its
+author.**
 
 | # | Statistic | Instrument | Population | Lines |
 |---|---|---|---|---|
@@ -181,6 +187,22 @@ step-4 question, not a step-1 question. **They compound rather than duplicate:**
 a firm can be both counted and taken. Note that 44-B's own caveat (line 11)
 caps how far line 439 goes — Clutch sampled businesses *already buying*, so it
 does not license "44% of the base is served."
+
+---
+
+## §5a. WHAT THIS AUDIT WALKED PAST — added by its author after the round-1 gate
+
+**This audit asked what population `n=433` has. It never asked whether
+`research-smm-landscape.md` is evidence at all.** The round-1 hostile-investor
+gate did, and the answer is on the file's own line 3: it is the output of a
+**16-agent research swarm** that **"grades itself"**, containing **zero URLs**
+(`grep -c http` = 0) and **100 `[VERIFIED]` tags** assigned by agents to other
+agents' output. **Every quotation in this receipt is faithfully transcribed and
+every hash is correct — and the document under all of it is self-graded.**
+
+**The NOT CHECKED item below — "the primary instrument was not retrieved" — was
+written by this audit as a missing detail. It was the whole question.** Verdict:
+`gtm/org/reviews/2026-09-05-slide4-a40-a46-hostile-investor-r1.md`.
 
 ---
 
