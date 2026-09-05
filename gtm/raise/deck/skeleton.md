@@ -93,13 +93,17 @@ appears on this slide until then.
 
 **Must prove:** who gets paid for SMB marketing today and which dollars
 Player 2 redirects. Structure on file (positioning.md §7): inaction (the
-real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (**A15 — UNSETTLED as of 2026-09-05, shift 23: the row's value and grade cells state different grades and the reconciliation is the chief's; the band's FIGURES are Phin's 3 Sep primary capture and are unaffected**, asset
+real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (**A15 — UNSETTLED**, asset
 factories) → freelancer band (A12, **AGENT-REPORTED**) → agency band (A11,
 **AGENT-REPORTED**).
 Player 2's seat: does the WORK of the service bands at software cost —
 A2 $299 vs A11 $500–2,000 (**A11 is AGENT-REPORTED**); tool band A15
-(DIRECTIONAL, spot-check flag carried — the slide says so, like A12; **A15's
-own provenance is UNSETTLED, G18**). **Receipt requirements — REWRITTEN
+(~~DIRECTIONAL~~ — **AMENDED 2026-09-05, shift 23: the slide prints A15 as
+UNSETTLED, not DIRECTIONAL**, because the table's own two cells state two
+grades and the reconciliation is the chief's. **The spot-check flag is still
+carried and the slide still says so, like A12** — but under the legend's
+STATED-LIMITATION clause it is a floor, not a description: the flag covered
+pricing, and pricing is the one claim of eight the teardown got right). **Receipt requirements — REWRITTEN
 2026-09-05: this line previously instructed the slide to print "A11 VERIFIED w/
 caveat, A12 + A15 DIRECTIONAL". THAT `VERIFIED` IS THE SWARM'S OWN TAG AND MUST
 NOT REACH A SLIDE.** Every band price is graded on-slide, and **A11 and A12 are
