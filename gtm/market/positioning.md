@@ -73,7 +73,7 @@ Three candidates argued (backlog item 1 names all three):
 | Candidate | For | Against |
 |---|---|---|
 | **A. "AI marketing platform"** | The folder that already exists in buyers' heads; zero explanation needed | Crowded folder; anchors price to the A15 tool band (Holo's position — `competitor-holo.md` pricing table; third-party-sourced, spot-check before any external use). $299 reads 6× too expensive in this folder |
-| **B. "The marketing employee you subscribe to"** | Matches what it does (done-for-you, not do-it-yourself); anchors to the hire/services band — among SMBs that pay for social at all the dominant band is $500–2,000/mo (Clutch 2025, VERIFIED, with the source's own sampling caveat); entry freelancer packages run roughly $300–1,500/mo (landscape report, directional/unverified — the report itself also cites "$300–500" elsewhere; treat as a range, not a fact). $299 reads cheap in this folder. Matches Dad's founding framing: "replaces the need to hire an ad agency or marketing company" (`gtm/sources/source-dad-notes-2026-08-24.md`) | "Employee" invites accountability expectations a product can't hold (who do I yell at?); possibly a legal/claims exposure — flag for the lawyer brief. New folder = explanation cost |
+| **B. "The marketing employee you subscribe to"** | Matches what it does (done-for-you, not do-it-yourself); anchors to the hire/services band — among SMBs that pay for social at all the dominant band is $500–2,000/mo (Clutch 2025 — **A11, AGENT-REPORTED as of 2026-09-05**; the "VERIFIED" was the research corpus's own self-assigned tag, and the source's own sampling caveat still applies on top of it); entry freelancer packages run roughly $300–1,500/mo (landscape report, directional/unverified — the report itself also cites "$300–500" elsewhere; treat as a range, not a fact). $299 reads cheap in this folder. Matches Dad's founding framing: "replaces the need to hire an ad agency or marketing company" (`gtm/sources/source-dad-notes-2026-08-24.md`) | "Employee" invites accountability expectations a product can't hold (who do I yell at?); possibly a legal/claims exposure — flag for the lawyer brief. New folder = explanation cost |
 | **C. "Growth OS for small business"** | Matches the shipped landing's "marketing runtime/OS" language | Founder-speak. An SMB owner does not shop for an operating system. Likely fails the five-second test |
 
 **ADOPTED (Phin, 31 Aug): B, worded as "an AI marketing employee for small businesses."**
@@ -133,8 +133,10 @@ and learns for your shop — and nothing goes out without your click."
    mechanism itself is likely investor-resonant (Lane A), owner-resonance
    unproven.
 4. **A marketing employee's coverage at a fraction of a hire.** $299/mo
-   founding rate against a $500–2,000/mo services band (Clutch 2025,
-   VERIFIED w/ caveat) and entry freelancer packages of roughly $300–1,500
+   founding rate against a $500–2,000/mo services band (Clutch 2025 —
+   **AGENT-REPORTED as of 2026-09-05**; the "VERIFIED w/ caveat" this line
+   carried was the research corpus's **own self-assigned tag**, not a receipt)
+   and entry freelancer packages of roughly $300–1,500
    (directional, unverified — see §2). `UNTESTED` (price framing, not price
    fact). "Coverage" itself flagged by the gate as insurance-speak — owner
    wording candidate: "does what a $1,000-a-month freelancer does, for $299."

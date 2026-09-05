@@ -336,7 +336,8 @@ closest to becoming external copy — which is exactly why it failed.)*
 
 ## The wider BUY landscape (unchanged by this snapshot)
 
-Verified tool bands, carried in **A33**: schedulers $5/channel (Buffer) to
+Tool bands carried in **A33 — AGENT-REPORTED as of 2026-09-05** (the word
+"Verified" here was the corpus's own self-assigned tag, not a receipt): schedulers $5/channel (Buffer) to
 $199–399/seat (Sprout); approval tools **$39–399** (Planable $39–59 · HeyOrca
 $59–149/calendar · Gain $99–399); dedicated listening from $199/mo (Brand24),
 usually skipped below mid-market, though Vista Social bundles it at $79/mo.

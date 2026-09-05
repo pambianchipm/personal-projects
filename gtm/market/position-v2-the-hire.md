@@ -232,7 +232,9 @@ across the seven unfetched products.
 **Mis-citation corrected at gate r1.** The draft wrote *"A21/A11's services
 band is the sourced anchor."* **A21 is the reasoning-layer COGS band
 (~$12–38/mo), graded PROJECTED — not a services band and not sourced.** The
-anchor is **A11 alone: $500–2,000/mo, Clutch 2025, SOURCED** with its own
+anchor is **A11 alone: $500–2,000/mo, Clutch 2025 — AGENT-REPORTED as of
+2026-09-05, NOT SOURCED**: restated by a self-grading AI research report with no
+primary instrument retrieved. It carries its own
 sampling caveat — **plus a caveat the gate added and I accept: A11 measures
 SMBs *that pay for social at all*, and `positioning.md` §6 defines the ICP as
 owners with *low or no budget*.** The anchor is drawn from a population the
@@ -798,8 +800,11 @@ The old defence (cheaper than human time) went with the service tier, and
 §1.5 shows the obvious replacement is weaker than it looks. **What can hold
 $299 is scope of work product:** it publishes to the owner's real accounts,
 spends real ad money under a ceiling, and produces finished video from their
-own footage. The sourced band for "somebody does your paid social" is **A11,
-$500–2,000/mo**, and $299 sits under it.
+own footage. The band for "somebody does your paid social" is **A11,
+$500–2,000/mo — AGENT-REPORTED as of 2026-09-05, not "sourced"**: it is a
+Clutch 2025 figure restated by a self-grading AI research report that this org
+cannot show. $299 sits under it, and **the comparison may not be made on any
+outward surface without that provenance beside it.**
 
 **STRUCK AT GATE r1 — both competitor-lack claims.** The draft said *"Viktor at
 $100/mo does neither for a shop"* and *"Holo at $29 promo does not run your ad

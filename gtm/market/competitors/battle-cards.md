@@ -93,9 +93,11 @@ response to a loop that never closed. `UNTESTED`.
 
 **Key stats.** 42% of SMBs have under 1 hr/day for ALL marketing (**A14**)
 · 63% feel pressure to post daily, 44% actually post weekly (**A30** —
-Adobe Express n=433 [VERIFIED, vendor-adjacent]) · 88% of TikTok-active
-owners report burnout (**A14**, graded a ceiling) · under-10K accounts
-still see 8–15% organic reach (**A30** — Socialinsider [VERIFIED]).
+Adobe Express n=433, the corpus's **own** [VERIFIED, vendor-adjacent] tag —
+**A30 is AGENT-REPORTED as of 2026-09-05**) · 88% of TikTok-active
+owners report burnout (**A14 — AGENT-REPORTED**, graded a ceiling) · under-10K
+accounts still see 8–15% organic reach (**A30 — AGENT-REPORTED**;
+Socialinsider, the corpus's own [VERIFIED]).
 
 | | Inaction | Player 2 |
 |---|---|---|
@@ -164,13 +166,14 @@ someone's spare hours. The most respectable alternative: competent, and
 it works exactly as long as the person running it keeps running it.
 
 **Key stats.** Assembled stack $28–55/mo, ~$50–75 with video (**A31**) ·
-Canva Pro $18/mo, ChatGPT Plus $20, Buffer from $5/ch (**A33**) · CapCut
-$9.99/$19.99 (**A27**, re-verify flag) · **46% of professional social
+Canva Pro $18/mo, ChatGPT Plus $20, Buffer from $5/ch (**A33 —
+AGENT-REPORTED**) · CapCut $9.99/$19.99 (**A27 — AGENT-REPORTED**, re-verify
+flag) · **46% of professional social
 media managers use ChatGPT for ideation, 4% for calendar planning**
-(**A32**; 39% for copy, from a different section) — **population caveat:
+(**A32 — AGENT-REPORTED**; 39% for copy, from a different section) — **population caveat:
 measured on paid SMMs, not on owners; carry the shape, never quote the
 percentage to an owner. `UNTESTED` as applied to our buyer** · true DIY
-cost including labour $500–1,200/mo (**A31** — single directional
+cost including labour $500–1,200/mo (**A31 — AGENT-REPORTED**; single
 source, **do not lead with this**).
 
 | | Build | Player 2 |

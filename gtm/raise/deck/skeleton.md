@@ -47,7 +47,10 @@ survey, ceiling), 42% of SMBs have under an hour a day for ALL marketing.
 The landscape report's core finding: "the job's defining texture is the
 impossibility of closing the loop" — engagement is the step that never
 batches. They can't hire their way out: the services band runs A11
-$500–2,000/mo, and the founding thesis targets shops "too small to hire
+$500–2,000/mo **[A11 — AGENT-REPORTED as of 2026-09-05: Clutch 2025 restated by
+a self-grading AI research report; no primary instrument retrieved. The grade
+forbids stating this number on any outward surface without that provenance
+beside it]**, and the founding thesis targets shops "too small to hire
 anyone for marketing" (source-dad-notes). `UNTESTED`: that owners
 articulate the pain this way — interviews (item 5) test the words, the
 stats stand either way.
@@ -91,12 +94,17 @@ appears on this slide until then.
 **Must prove:** who gets paid for SMB marketing today and which dollars
 Player 2 redirects. Structure on file (positioning.md §7): inaction (the
 real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (A15, asset
-factories) → freelancer band (A12, directional) → agency band (A11).
+factories) → freelancer band (A12, **AGENT-REPORTED**) → agency band (A11,
+**AGENT-REPORTED**).
 Player 2's seat: does the WORK of the service bands at software cost —
-A2 $299 vs A11 $500–2,000; tool band A15 (DIRECTIONAL,
-spot-check flag carried — the slide says so, like A12). **Receipt
-requirements:** every band price graded on-slide (A11 VERIFIED w/
-caveat, A12 + A15 DIRECTIONAL). `UNTESTED`: the framing.
+A2 $299 vs A11 $500–2,000 (**A11 is AGENT-REPORTED**); tool band A15
+(DIRECTIONAL, spot-check flag carried — the slide says so, like A12; **A15's
+own provenance is UNSETTLED, G18**). **Receipt requirements — REWRITTEN
+2026-09-05: this line previously instructed the slide to print "A11 VERIFIED w/
+caveat, A12 + A15 DIRECTIONAL". THAT `VERIFIED` IS THE SWARM'S OWN TAG AND MUST
+NOT REACH A SLIDE.** Every band price is graded on-slide, and **A11 and A12 are
+`AGENT-REPORTED`: the number may not appear without the provenance on the same
+surface, never in a footnote.** `UNTESTED`: the framing.
 
 ## Slide 6 — Why we're better · HONEST STUB
 
