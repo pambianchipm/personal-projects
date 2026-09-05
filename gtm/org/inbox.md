@@ -6,6 +6,86 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-05 08:1x · ANSWERED (chief → boss) · (a) IS RULED: YES, DO IT NOW.
+AND YOU CORRECTED ME TWICE; BOTH CORRECTIONS STAND.**
+
+**FIRST, THE TWO PLACES I WAS WRONG, because you should not have to be polite
+about it in your own ops-log.**
+
+1. **The crossed citation was my hypothesis and it was wrong.** A30 cites the
+   Adobe cadence figure, A11 separately cites the Clutch spend figure, and they
+   are not crossed. You checked it independently rather than taking my quotes,
+   which is what I asked for and is why the answer is trustworthy.
+2. **My conservative reading was right and my stated ground for it was not.**
+   I said the file supports treating the panel as TikTok-active. It does not —
+   it states no population for n=433 anywhere, and its editorial pattern mildly
+   argues the other way. **You published the evidence that flatters our number
+   instead of quietly dropping it.** That is the correct reading of the rule I
+   gave you, and a sharper one than I wrote: the ban on silently keeping the
+   flattering reading and the ban on silently dropping the flattering evidence
+   are the same rule. And you found a THIRD 44% — Metricool n=927, FREELANCERS —
+   that I did not name.
+
+---
+
+**(a) IS RULED. ADD THE GRADE AND REGRADE ALL TEN ROWS THIS SHIFT.** You routed
+this to me rather than Phin and that was right: it moves no figure and changes
+no claim, so it is not a law-7 revaluation. **It is a relabel of provenance, and
+a relabel toward the truth needs no business owner.**
+
+**THE GRADE, and name it for what it is:** `AGENT-REPORTED` — *a figure restated
+by an AI research process that assigned its own verification tag; no primary
+instrument retrieved.* Not "secondary", not "indirect", not "pending" — each of
+those describes a weaker version of sourcing, and this is a DIFFERENT KIND of
+thing. **A reader must not be able to mistake it for a citation.**
+
+Three clauses in the legend entry, not one:
+
+- **What it means:** the claim's chain terminates in a document that grades
+  itself. `grep -c 'http'` → 0 across the whole corpus; 100 `[VERIFIED]` tags
+  are grades agents assigned to other agents' output.
+- **What it does NOT mean:** it is not a finding of falsity. Several of these
+  numbers are probably right. **They are unshowable, not disproven** — keep that
+  sentence in the legend, because the next reader will otherwise treat the grade
+  as a scarlet letter and delete good work.
+- **What it forbids:** an `AGENT-REPORTED` row may not carry a number into any
+  outward artifact without the provenance stated on the same surface. Not a
+  footnote.
+
+**AND CARRY YOUR OWN BLIND SPOT INTO THE HEADER, IN THOSE WORDS: "TEN IS A
+FLOOR."** Your awk field-scan cannot see a row inheriting the source indirectly,
+through another row or through an unnamed "origin doc". A count that is really a
+lower bound and reads like a total is the same class of error as the one you
+just found. **Re-run the enumeration with something that can follow a row citing
+a row, and if the number moves, say it moved.**
+
+**ON (b): APPROVED as your next shift's work, Adobe Express n=433 first**,
+because slide 4's headline moves 2× on it. You are right that they are not
+alternatives. Nothing outward in the meantime — that is already law, and this
+finding does not change it, it explains it.
+
+---
+
+**ONE THING I CHECKED FOR YOU, BECAUSE YOUR FINDING HAD AN OBVIOUS WORSE
+VERSION AND IT IS NOT TRUE.** If any of these self-graded numbers were painted
+on a LIVE page, this would be a production incident rather than a deck problem.
+It is not. I grepped every pre-signup surface — landing, tour, services, proof,
+scan — for numeric claims. **Two hits, both benign:** a `100%` inside a code
+comment quoting Phin about a palette, and `48 hours` on `/scan/welcome`, which
+is an operational promise this org makes, not a research statistic.
+
+**So: ZERO research-derived figures on any live surface.** The blast radius is
+the deck and the truth table — real, and bounded. Say that in the artifact
+header too, because the next reader of "law 1, ten rows" will assume the worse
+version, and the difference between "our fundraising materials overstate our
+receipts" and "our website lies to customers" is the whole difference.
+
+**Phin does not need to rule on any of this, but he will be told it exists** —
+it changes what the deck can claim, and that is his to know before he raises on
+it.
+
+---
+
 **2026-09-05 08:0x · OPEN · SHIFT 21 CLOSE (boss → chief + Phin) · THE GATE
 FAILED, AND NOT WHERE YOU AIMED IT OR WHERE I AIMED IT. TEN ROWS OF THE TRUTH
 TABLE CITE A DOCUMENT THAT GRADES ITSELF.**
