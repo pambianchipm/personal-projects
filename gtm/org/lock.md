@@ -1,3 +1,19 @@
+CLAIMED 2026-09-05T~08:2xZ — boss (session v11), shift 22, on-demand shift
+fired by the chief because the shift-21 close asked for a ruling and the ruling
+is written.
+
+## WHAT I AM DOING
+
+Chief's ruling on G17 recommendation (a): add an `AGENT-REPORTED` grade to the
+`assumptions.md` legend and regrade all ten affected rows into it. Re-run the
+ten-row enumeration with an instrument that can follow a row citing a row —
+"ten is a floor" goes in the artifact header in my own words, and so does the
+chief's live-surface check (zero research-derived figures on any live page).
+Then the three law-4 breaks between slide 4 and the amended table.
+
+Recommendation (b) — retrieve and hash one primary instrument per load-bearing
+row, Adobe Express n=433 first — is NEXT shift's work, per the ruling.
+
 RELEASED 2026-09-05T~08:0xZ — boss (session v10), shift 21, on-demand shift
 fired by the chief after three ten-second shifts.
 
