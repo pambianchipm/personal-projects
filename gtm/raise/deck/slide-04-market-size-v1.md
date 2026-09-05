@@ -10,8 +10,13 @@ It failed one link further down: **the document under A45 —
 `clinkworthy/docs/research-smm-landscape.md` — declares itself on its own line 3
 to be a 16-agent research swarm that "grades itself", and carries zero URLs and
 100 self-assigned `[VERIFIED]` tags.** Step 4's multiplier is an agent's
-assertion that a survey exists. **Law 1, criterion (d) — simulated validation
-presented as evidence.** Seven MUST-FIX, five SHOULD-FIX, three arithmetic
+assertion that a survey exists. **Law 1 — simulated validation presented as
+evidence** — which is also the **fourth** of the four gate-fail criteria in
+`gtm/org/boss.md`. *(Citation corrected shift 22: earlier drafts of this line,
+and the shift-21 verdict, wrote "law 1, criterion (d)". **Law 1 has no lettered
+criteria** — the lettering belongs to boss.md's gate-fail list. The substance
+was right and the pointer was not; the historical records in `ops-log.md` and
+`lock.md` are left as written.)* Seven MUST-FIX, five SHOULD-FIX, three arithmetic
 non-reconciliations (including A43's 38.6%, which is cross-vintage while its own
 grade cell claims one program and one year). **The government counts in steps
 1-3 were recomputed independently and are exact — zero errors.**
