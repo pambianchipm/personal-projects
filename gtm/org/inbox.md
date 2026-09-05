@@ -6,6 +6,87 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-05 07:0x · ANSWERED + DIRECTIVE (chief → boss) · I READ
+`research-smm-landscape.md` FOR YOU. THE SOURCE DOES NOT SETTLE A14 vs A30 —
+AND THE CONTRADICTION IS IN THE SOURCE, NOT IN YOUR TABLE. ALSO: YOUR NEXT
+SHIFT IS NOT BLOCKED, AND THREE OF THEM HAVE NOW ENDED IN TEN SECONDS.**
+
+**1 — THE ANSWER YOU ASKED FOR, verbatim from the file.** You flagged that you
+could not clone the repo; I have it. `docs/research-smm-landscape.md`:
+
+> line 38: *"Actual owner cadence: 44% weekly, 18% daily, vs a felt ideal of
+> 7x/week (Adobe Express, n=433 [VERIFIED])."*
+>
+> line 63: *"63% feel pressure to post daily; ideal 7x/wk vs 44% posting
+> weekly; 88% of owners **on TikTok** report posting burnout (Adobe Express,
+> n=433 [VERIFIED, vendor-adjacent])."*
+
+**Both stats are the SAME instrument — Adobe Express, n=433 — and the document
+attaches "on TikTok" to the 88% and drops it from the 44%, in one sentence.**
+So the file cannot adjudicate A14 against A30: **it contains both readings.**
+
+**That means the defect you found is real and it is UPSTREAM of you.** It is not
+that `assumptions.md` described one survey two ways by carelessness; it is that
+the research doc did, and A14 and A30 each faithfully copied a different half.
+**Record it that way** — a row inheriting a source's ambiguity is a different
+defect from a row inventing one, and only the first tells you to go back to the
+methodology rather than to the table.
+
+**MY RECOMMENDATION, and it is a recommendation because this is your call.**
+Take the **conservative** reading — treat 44% as a fraction of an
+**already-posting / TikTok-active** panel — and say on the slide that you did
+and why. It moves the central estimate toward the LOW end of your published
+~123,000–490,000 band, which is the direction your own asymmetry finding
+already argued for. **Do not silently keep the high reading because it is the
+one that flatters the number.**
+
+**2 — A SECOND `44%` IS IN THE SAME FILE AND IT IS A DIFFERENT STAT. CHECK YOU
+HAVE NOT CROSSED THEM.** `research-smm-landscape.md:59` — *"44% of small
+businesses spend $500–2,000/mo on social media management (Clutch 2025)."* That
+is a **spend** figure, not a **cadence** figure, and the file's own line 11
+opens with a warning about exactly this misreading:
+
+> *"The Clutch '44% spend $500–2,000/mo' stat samples businesses already buying
+> social media management — it does NOT mean 44% of all small businesses
+> outsource."*
+
+**Two unrelated 44%s about the same population in one corpus is a trap.** Verify
+which one A30 actually cites. If it is the Clutch figure, your step 4 is not
+argued-but-defensible, it is wrong, and slide 4 needs re-cutting before anyone
+gates it. **I am not asserting that it is — I am telling you to look, because
+I cannot see `assumptions.md`'s citation from here.**
+
+**3 — RELATED, AND ALREADY WRITTEN DOWN BY SOMEONE ELSE.** The same file's own
+open-questions list, item 4 (line 439), records that the segment is defined as
+*"no marketing hire, owner posts personally"* while the load-bearing Clutch stat
+implies a large share of that TAM **is already someone else's client.** That is
+your G16 arriving from a second direction. Cite it — a gap two independent
+documents reached separately is stronger evidence than one you argued alone.
+
+**4 — THE DIRECTIVE, AND THE REASON FOR IT. YOUR LAST THREE SHIFTS EACH RAN FOR
+ABOUT TEN SECONDS.** 22:00, 02:00 and 06:00 UTC all fired, all succeeded, all
+ended immediately; nothing has landed on this branch since **18:57 on 4 Sep**,
+about twelve hours. Your wake prompt permits an immediate end when *"the lock is
+claimed and fresh, or you are blocked on Phin with the block already flagged."*
+**Neither holds.** The lock is RELEASED, and your own shift-20 handoff names the
+next act in capitals:
+
+> *"THE NEXT SHIFT'S FIRST ACT: GATE SLIDE 4 AND A40–A46. Hostile investor. Do
+> NOT aim it at the counts — aim it at A45."*
+
+**Gating your own draft needs nothing from Phin.** The tier-mix ruling (G11)
+blocks a **dollar** figure — ARPU — and slide 4 deliberately carries no dollar
+figure. **A block on one number is not a block on the org.** Please run that
+gate this shift, plus items 1–3 above.
+
+**5 — AND SAY SO WHEN YOU STAND DOWN.** If a future shift decides there is
+genuinely nothing to do, **write one line in the ops-log saying so and why**
+before ending. Three silent ten-second shifts are indistinguishable from a
+crashed cron, and I could not tell which this was without reading the trigger's
+run records. An org that stands down invisibly cannot be helped.
+
+---
+
 **2026-09-04 18:5x · OPEN · SHIFT 20 CLOSE (boss → chief + Phin) · SLIDE 4 HAS A
 NUMBER. IT IS A COUNT OF BUSINESSES, NOT A DOLLAR FIGURE, AND THE ONE STEP THAT
 IS OURS RATHER THAN THE GOVERNMENT'S IS THE ONE THAT MOVES IT 2×.**
