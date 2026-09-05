@@ -17,6 +17,33 @@ grade cell claims one program and one year). **The government counts in steps
 1-3 were recomputed independently and are exact — zero errors.**
 **DO NOT CONVENE ROUND 2 ON THIS DRAFT.** The recommendation to the chief is
 that the deck cannot resolve this; the corpus under it must be graded first.
+
+**SHIFT-22 UPDATE, 2026-09-05 — THE CORPUS HAS NOW BEEN GRADED, AND THIS SLIDE
+STILL STANDS GATE-FAILED.** On the chief's G17(a) ruling, `assumptions.md` gained
+an `AGENT-REPORTED` grade and **eleven rows** were regraded into it (A11 A12 A14
+A27 A29 A30 A31 A32 A33 A45 A46 — shift 21 named ten; the re-run enumeration
+removed A15 and A25, which have hashed primary instruments, and added A29, A32
+and A46). **Step 4's multiplier is now labelled on the face of this slide as
+AGENT-REPORTED + ARGUED, and §7 records that nobody here has retrieved the Adobe
+Express survey.**
+
+**FOUR SENTENCES ON THIS SLIDE WERE REWRITTEN, NOT EDITED** (capped-loop law 1 —
+a correction to a claim-bearing sentence is a new draft): §3's characterisation
+of the A14/A30 divergence, which said the defect was in `assumptions.md` and is
+now recorded as **inherited from the source**; §3's range-table comment on 22%,
+which rested on a TikTok-active reading the source **does not state**; §7's
+closing receipt, which was **taken on 2026-09-05**; and the grade labels in the
+summary and step table. **Three of those four breaks were manufactured by shift
+21's own amendments** to the table — it amended rows and did not re-read the
+slide against them.
+
+**WHAT THIS UPDATE DID NOT DO.** It moved **no figure** on this slide and
+answered **none of the seven MUST-FIX**. In particular **MF-4 stands**: A45 is
+labelled honestly now and still does not argue *why 44 rather than 30 or 60*.
+**MF-2 stands**: the source's line 230 frames 44%-weekly as the
+consistency-collapse cohort, so step 4 may be screening out the very ICP this
+org's positioning targets. **A relabel is not a repair.** Round 2 remains
+un-convened, deliberately.
 ORIGINAL STATUS: DRAFT, ungated. Not self-passed (law 7). The persona that applies
 is **hostile investor**, and the right first question is **not** "is the count
 right" — the counts are hashed and re-checkable. It is **"does the fraction in
@@ -44,10 +71,15 @@ deliberately stops before the second one.**
 > classes this positioning names.* **[A42 — SOURCED]**
 >
 > Of those, we argue **~245,000** post to social often enough to want the job
-> done for them. **That fraction is ARGUED, not measured.**
+> done for them. **That fraction is ARGUED, not measured — and the one number
+> under it is AGENT-REPORTED: restated by an AI research process that graded
+> itself, with no primary instrument retrieved.**
 > *If it is half what we argue: ~123,000. If it is double: ~490,000 — which is
 > 88% of every small firm in the segment, so the upside is capped by the count
-> itself and the downside is not.* **[A45, A46 — ARGUED]**
+> itself and the downside is not.* **[A45, A46 — AGENT-REPORTED + ARGUED:
+> the fraction is one this org chose, and the only number under it is one no
+> primary instrument has been retrieved for. Both halves stated here, on this
+> surface, because the grade forbids a footnote.]**
 >
 > **We have not multiplied this by a price.** Both prices are sourced; the
 > **mix is not ruled**, and the tier that carries the higher one is waitlisted,
@@ -70,8 +102,8 @@ org knows which of its own numbers is which.
 | 1 | US **employer establishments** in the named NAICS classes | **945,036** | **SOURCED** | CBP 2023, `lfo='-'`, 18 six-digit classes [A40] |
 | 2 | → US **employer firms** (one firm = one buying decision) | **681,795** | **SOURCED** | SUSB 2022. Removes 26.4% of locations that belong to multi-location firms [A41, A43] |
 | 3 | → firms with **under 20 employees** | **556,857** | **SOURCED count / ARGUED reading** | SUSB 2022 `ENTRSIZE=33`. The *count* is published. That "<20 employees" means "no marketing hire" is **our inference** [A42] |
-| 4 | → × **fraction that actively posts** | **× 44%** | **ARGUED** | A30's *"44% post weekly"* — Adobe Express n=433, **vendor-adjacent, its own row says treat as a ceiling** [A45] |
-| 5 | = **serviceable market, in units** | **~245,000 firms** | **DERIVED, inheriting ARGUED** | 556,857 × 0.44 [A46] |
+| 4 | → × **fraction that actively posts** | **× 44%** | **AGENT-REPORTED + ARGUED** | A30's *"44% post weekly"* — Adobe Express n=433, **vendor-adjacent, its own row says treat as a ceiling, and the survey has not been retrieved by anyone in this org** [A45] |
+| 5 | = **serviceable market, in units** | **~245,000 firms** | **DERIVED, inheriting AGENT-REPORTED + ARGUED** | 556,857 × 0.44 [A46] |
 | 6 | × ARPU | **NOT COMPUTED** | **BLOCKED** | No tier mix is ruled (G11). See §5 |
 | 7 | Top-down analyst TAM, as colour | **NOT FETCHED** | — | Law 2 admits it *after* the bottom-up gates. Deliberately absent |
 
@@ -105,8 +137,16 @@ landscape report, sourced to an Adobe Express survey, n=433.
    Those are different denominators. If the survey sampled owners who are
    already social-active, then 44% is not "44% of small firms post weekly" —
    it is "44% of already-posting owners post weekly", which would make it
-   **badly overstated as a filter on the whole base.** *This is a defect in
-   `assumptions.md`, found by trying to use the row, and it is filed as such.*
+   **badly overstated as a filter on the whole base.** ***The closing receipt
+   was taken on 2026-09-05 and it does not adjudicate between them: the source
+   states no population for n=433 anywhere.*** Every line naming `Adobe` or
+   `433` (13, 38, 63, 141, 225, 441) was read at `5eeb1c8`; line 63 attaches
+   *"on TikTok"* to the 88% burnout figure and drops it from the 44% cadence
+   figure **within one sentence**. **So A14 and A30 each copied a different
+   half of that sentence faithfully. The ambiguity is INHERITED from the
+   source, not created by `assumptions.md`** — which matters because it sends
+   the remedy upstream to the methodology rather than to either row. Receipt:
+   `gtm/raise/model/snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md`.
 3. **It measures posting cadence, not want.** A firm that posts weekly may be
    content. A firm that posts never may be the better customer. **We are using
    a behaviour as a proxy for a need, and we have zero interviews** (G1) to
@@ -116,7 +156,7 @@ landscape report, sourced to an Adobe Express survey, n=433.
 
 | If the fraction is | Serviceable units | Comment |
 |---|---:|---|
-| 22% (half our argument) | **~123,000** | **Plausible, and arguably the centre** if A14's "TikTok-active" reading of the survey population is the correct one |
+| 22% (half our argument) | **~123,000** | **The reading this slide adopts as the conservative one — but NOT on the ground that the source calls the panel TikTok-active. It does not; it names no panel at all.** With the denominator unstated, treating 44% as drawn from an already-posting panel is the reading that does not assume in our favour |
 | **44% (our argument)** | **~245,000** | Rests on a vendor survey its own row calls a ceiling |
 | 88% (double) | **~490,000** | **Near-impossible** — 88% of every firm under 20 employees in five industries |
 
@@ -210,9 +250,18 @@ rather than filled in.**
 - **Any social-presence figure.** Neither Census program asks whether a
   business has a social account. **There is no government source for step 4**,
   which is why step 4 is argued.
-- **The population of the n=433 survey** — needs the SMM landscape report read
-  directly (`clinkworthy/docs/research-smm-landscape.md`). **Closing receipt
-  for A45 and the highest-value follow-up on this slide.**
+- **The population of the n=433 survey — RECEIPT TAKEN 2026-09-05, AND THE
+  ANSWER IS THAT THE SOURCE DOES NOT STATE ONE.** `research-smm-landscape.md`
+  was cloned and read at `5eeb1c8`, SHA-256 `696a6b69…`; no line defines the
+  panel. **This closes the question of what the report says and opens a larger
+  one: the report is not an instrument.** See the entry below.
+- **THE ADOBE EXPRESS SURVEY ITSELF — NOT RETRIEVED BY ANYONE HERE, AND THIS IS
+  NOW THE HIGHEST-VALUE FOLLOW-UP ON THIS SLIDE.** Reading the landscape report
+  established only that it restates the figure with no URL, no title and no
+  date. **The org cannot show the instrument behind step 4's multiplier.** That
+  is why A45 and A46 are graded `AGENT-REPORTED` as of 2026-09-05, and why the
+  slide's headline moves 2× on a document nobody here has seen. Retrieving and
+  hashing it is the chief-approved next unit of work.
 - **SUSB 2023 and CBP 2024** — not published as of 2026-09-04.
 - **A nonemployer parallel model.** NES 2023 uses **2022** NAICS (clothing is
   `458*`, not `448*`) and publishes most segments only at 3-4 digits, so only
