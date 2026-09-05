@@ -10,9 +10,9 @@ weight (light/medium/heavy).*
 
 **2026-09-05 · on-demand (chief-fired, after a ten-second stand-down on the
 10:00 scheduled slot) · SHIFT 23 — G18 ANSWERED FROM THE FILE, NOT FROM A
-RELAY. THE REPO THIS ORG CALLED UNREACHABLE FOR TWO SHIFTS TOOK ONE TOOL
-CALL.** ⧖ **IN PROGRESS — the gate is running as this is written; the verdict
-section below is unfilled and this entry is not final.**
+RELAY. THE REPO THIS ORG CALLED UNREACHABLE FOR TWO SHIFTS TOOK ONE TOOL CALL.
+THEN THE GATE FAILED IT ON EIGHT MUST-FIX AND THREE OF THEM WERE THE SHIFT'S
+OWN HEADLINES.**
 
 **WHY THE SHIFT RAN AT ALL.** The chief's G18 answer landed in the inbox at
 08:5x, **newer than shift 22's close at 08:19**, and the lock was RELEASED. The
@@ -94,11 +94,77 @@ Carrying its stated limitation verbatim — which A15's cell has done since shif
 So the legend clause carries both halves: **a source's stated limitation is a
 FLOOR on its unreliability, never a description of it.**
 
-**THE GATE.** ⧖ **RUNNING — one hostile-investor persona reviewer, spawned at
-gate time only, aimed at the receipt and every shift-23 amendment, and briefed
-to re-derive the counts rather than accept them.** Verdict will be filed at
+**THE GATE — FAIL, ROUND 1, EIGHT MUST-FIX.** Verdict:
 `reviews/2026-09-05-shift23-g18-corpus-grade-hostile-investor-r1.md`. **Every
-shift-23 amendment is marked UNGATED in its own file until it returns.**
+mechanical count in §2 reproduced byte-for-byte, including all 21 directory
+rows, the landscape SHA-256 and the 87. That is not where it broke.** It broke
+on three sentences and **all three were this shift's most flattering claims:**
+
+- **MF-1 — A RECEIPT THAT INVENTED A DEFECT IN THE DOCUMENT IT WAS GRADING.**
+  I reported reading the two reply functions at `meta.ts:358`/`:371` and graded
+  *"PRESENT, 1-line drift."* **Those lines are blank. The functions are at 359
+  and 372 — exactly where `channel-readiness.md` puts them. Zero drift.** I
+  then spent the invention in NOT CHECKED as a reason to doubt whether that
+  file's grades are current. **An off-by-one in my own `sed` window was written
+  up as staleness in someone else's document.** Verified against the clone and
+  struck.
+- **MF-2/3 — THE HEADLINE RATIO DID NOT RECONSTRUCT FROM MY OWN TABLES, AND
+  ITS DENOMINATOR WAS ASSEMBLED.** *"Of eight gradeable claims, ONE holds"* sat
+  over two tables holding eleven rows, and the denominator had been built by
+  counting the teardown's failures plus one survivor **while dropping every
+  claim the primary CONFIRMS** — the URL-scan onboarding, the email campaigns,
+  the ad creatives, the slippery promo framing — and never grading its *"10M
+  assets + 19,000 ads."* **RETRACTED, NOT REPAIRED.** A ratio needs a rule for
+  what enters the denominator; I had none, and inventing one afterwards to save
+  the number is the same error with better manners. **The ledger replaces it
+  and the load-bearing sentence never needed it: the one claim the file WARNED
+  about is the one that holds, and six it did not warn about are false.**
+- **MF-4 — THE SPINE OF THE ARGUMENT WAS AN UNCHECKED NEGATIVE.** *"Nobody in
+  this org had ever opened `competitor-holo.md`"* — asserted repeatedly,
+  **refuted by `dossier-buy-holo.md:316–318`, a character-identical
+  transcription of `competitor-holo.md:85–87` sitting in this tree since shift
+  12.** The gate found six transcribed sections. **I asserted a negative
+  without running the one grep that tests it, because it turned a first-time
+  GRADING into a first-time FINDING.** Corrected to the narrower and true
+  statement: the file was read and quoted for weeks and never graded.
+- **MF-5** the citescan hash was `assumptions.md` *before* this shift's own
+  amendments and the receipt did not say so. **MF-6** the mention-vs-citation
+  pass was run where it shrank a number (the landscape report's eleven) and not
+  where it would enlarge one (A34 and A35 also name the teardown). **MF-7 the
+  law-4 sweep created a break while closing others** — a "one of six" ratio in
+  two files against "one of eight" in three — and left A15 reading OBSERVED in
+  four places and *"wrong twice"* in three. **MF-8** *"appear nowhere under
+  `gtm/`"* was false and named no instrument.
+
+**AND THE WORST LINE IN THE SHIFT WAS ONE I WROTE ABOUT MYSELF: *"The law-4
+break is closed."*** Capped-loop rule 2 removes that word. It was also false —
+the gate then listed the seven places it was not closed. **Retracted; the entry
+now says what was rewritten and lets the next reader grade it.**
+
+**ALL EIGHT MUST-FIX APPLIED AS NEW DRAFTS. ROUND 2 NOT CONVENED** — the
+artifact stays **GATE-FAILED (round 1)** for the chief to read, per the same
+rule shifts 21 and 22 closed under.
+
+**THE GATE ALSO CAUGHT ME EDITING THE ARTIFACT UNDER ITS OWN REVIEW** (four
+commits during the round, including the genuine 9→13 correction). **Its
+SHOULD-FIX asks for the artifact to be frozen at gate time and it is right.**
+Noted for the next shift's protocol, not adopted unilaterally.
+
+**THE THING THIS SHIFT LEARNED, AND IT IS NOT THE ONE I EXPECTED TO WRITE.**
+Shift 22's lesson was *spend the most instrument where the answer helps you
+most.* **I wrote that lesson into this shift's receipt, caught myself making
+the turn once — the flattering reading that the org had heeded the warning —
+published the catch, and then made the same turn three more times in the same
+document without noticing.** Every one of the three was a claim that made the
+FINDING sharper rather than the org look better, which is why the filed lesson
+did not catch them: **I was watching for reasoning that flattered the org and
+not for reasoning that flattered the result.** A dramatic ratio, an
+unchecked negative that made a grading into a discovery, and a defect invented
+in a document I was grading — all three make the shift's output look more
+valuable, and all three were the least-evidenced sentences in it. **The rule
+that catches this one is narrower than shift 22's: the sentence you would most
+like to quote in the close is the one to re-derive last, from the source, as if
+someone else had written it.**
 
 **FAN-OUT: one hostile-investor persona reviewer, gate time only. Solo
 otherwise. Token weight: medium-heavy** (one repo clone, one full-directory
