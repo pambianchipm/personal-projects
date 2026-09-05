@@ -9,16 +9,25 @@ SAY SO IN THEIR GRADE CELL.**
 
 `clinkworthy/docs/research-smm-landscape.md` (@`5eeb1c8`, SHA-256 `696a6b69…`)
 declares on **its own line 3** that it is a *"16-agent research swarm … ~1.4M
-tokens of research … **this report grades itself**."* Mechanically verified at
-that hash: **`grep -c 'http'` = 0** (no URLs), **zero markdown links**, and
-**100 `[VERIFIED]` tags** — grades agents assigned to other agents' output.
+tokens of research … **this report grades itself**."* Counts taken at that hash
+and recorded in `snapshots/2026-09-05-smm-landscape-44pct-citation-audit.md`
+§199: **`grep -c 'http'` = 0**, **zero markdown links**, **100 `[VERIFIED]`
+tags** — grades agents assigned to other agents' output. *(Blind spot, in the
+same breath as the result: `grep 'http'` cannot see a bare-domain citation, a
+footnoted title, or a DOI. It establishes that the document carries no clickable
+source, not that it names none. The round-1 gate on this regrade did not
+re-derive these counts either — `clinkworthy` is not in this tree.)*
 
 **AGENT-REPORTED (11):** **A11 · A12 · A14 · A27 · A29 · A30 · A31 · A32 ·
 A33 · A45 · A46.** A11 is the $500–2,000/mo services band — **the pricing
 thesis.** A45 is slide 4's serviceable fraction and A46 the market count that
 hangs off it.
 
-**THIS MOVED NO FIGURE AND CHANGED NO CLAIM.** It is a relabel of provenance,
+**THIS MOVED NO FIGURE AND CHANGED NO CLAIM** — instrument: every numeric
+token in all 48 rows at `9348c77` compared in order against the amended file,
+and the round-1 gate re-derived it independently with a per-row value-cell byte
+comparison (twelve of thirteen byte-identical; A45's differs only by the grade
+label inside it). *Neither instrument can see a figure restated as a word.* It is a relabel of provenance,
 which is why the chief ruled it and Phin did not (law 7 governs revaluations;
 this is not one). **It is a receipts failure, not a finding of falsity** — see
 the legend's second clause, which is the one the next reader will skip.
@@ -89,7 +98,11 @@ list and A15 should be read as UNSETTLED, not as cleared.**
 
 **ADDED (3):**
 
-- **A32** — *missed by both scans until a third pass.* It cites the same corpus
+- **A32** — *missed by both scans until a third pass — and "missed" understates
+  it: the shift-21 gate verdict adjudicated A32 OUT by name* (`reviews/2026-09-05-slide4-a40-a46-hostile-investor-r1.md`
+  §82: *"the reviewer … wrongly included A32"*). **This shift reverses a filed
+  gate finding.** The ground for the reversal is the row's own text: two
+  `[VERIFIED]` tags, no primary, corpus named as *"landscape §1.3"*.* It cites the same corpus
   as **"landscape §1.3"** and **"§2.4 / Big Table"**, never as "landscape
   report", so neither the shift-21 `awk` nor my own first pattern saw it. Two
   `[VERIFIED]` tags, no primary. **This is the one that most nearly stayed
@@ -121,6 +134,13 @@ claims. Two hits, both benign:** a `100%` inside a code comment quoting Phin
 about a palette, and `48 hours` on `/scan/welcome`, which is an operational
 promise this org makes rather than a research statistic. **ZERO
 research-derived figures appear on any live page.**
+
+**PROVENANCE OF THAT CHECK, because it is the most reassuring sentence here and
+was the least checkable:** it is **the chief's grep, relayed — not run by this
+org's boss and not re-run at the gate**, which had no site code in its tree
+either. *Blind spots a grep for numeric claims cannot cover: a figure written as
+a word ("nearly half"), a figure rendered from data at request time, and a figure
+inside an image.* **It is reported as a relayed finding, not as a verified one.**
 
 **This is in the header because the next reader of "law 1, eleven rows" will
 assume the worse version, and the difference between *our fundraising materials
@@ -167,7 +187,8 @@ Those cells are UNGATED for the same reason A45 is.**
 G17(a) ruling and applied it to ELEVEN rows — A11 A12 A14 A27 A29 A30 A31 A32
 A33 A45 A46. NO FIGURE IN ANY ROW CHANGED and no claim moved; every prior
 restriction on those rows is retained alongside the new grade.** A15 and A25
-were REMOVED from shift 21's list of ten on hand-checked primary instruments,
+were REMOVED from shift 21's list of ten (A25 on a hashed fetch record; **A15
+on a ground the round-1 gate found overstated — see the header and G18**),
 and A29/A32/A46 were added — see the header. **These cells are UNGATED: law 7
 and the org's own rule that an author cannot pass their own work both apply, and
 a provenance relabel is no exception. The hostile-investor gate applies.** Law 7: the author cannot pass them. The

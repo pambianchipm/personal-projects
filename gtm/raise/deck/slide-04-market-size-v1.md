@@ -32,15 +32,19 @@ and A46). **Step 4's multiplier is now labelled on the face of this slide as
 AGENT-REPORTED + ARGUED, and §7 records that nobody here has retrieved the Adobe
 Express survey.**
 
-**FOUR SENTENCES ON THIS SLIDE WERE REWRITTEN, NOT EDITED** (capped-loop law 1 —
+**SIX SENTENCES ON THIS SLIDE WERE REWRITTEN, NOT EDITED** (capped-loop law 1 —
 a correction to a claim-bearing sentence is a new draft): §3's characterisation
 of the A14/A30 divergence, which said the defect was in `assumptions.md` and is
 now recorded as **inherited from the source**; §3's range-table comment on 22%,
 which rested on a TikTok-active reading the source **does not state**; §7's
 closing receipt, which was **taken on 2026-09-05**; and the grade labels in the
-summary and step table. **Three of those four breaks were manufactured by shift
-21's own amendments** to the table — it amended rows and did not re-read the
-slide against them.
+summary and step table. **Three of those breaks were manufactured by shift 21's
+own amendments** to the table — it amended rows and did not re-read the slide
+against them. **Two more were added after the round-1 gate on the regrade:** the
+`law 1, criterion (d)` pointer (law 1 has no lettered criteria) and **the quote
+block's `[A42 — SOURCED]` label, MUST-FIX 6.** *(This count read "four" until the
+gate observed it had gone stale in the working tree — a sentence tally about my
+own work, which is the shape `boss.md` warns about.)*
 
 **WHAT THIS UPDATE DID NOT DO.** It moved **no figure** on this slide and
 answered **none of the seven MUST-FIX**. In particular **MF-4 stands**: A45 is
@@ -141,7 +145,9 @@ enough to want the work done is around **44%**.
 **On what basis:** A30 carries *"44% post weekly, 18% daily"* from the SMM
 landscape report, sourced to an Adobe Express survey, n=433.
 
-**Why we do not trust it, stated here rather than in a footnote:**
+**Why we do not trust it, stated here rather than in a footnote — five
+reasons, and reasons 4 and 5 were added on 2026-09-05 after two separate gates
+found this list incomplete under a heading that promised it was full:**
 
 1. **It is vendor-adjacent and A30's own grade cell says treat it as a
    ceiling.** Adobe sells creative software to people who post.
@@ -165,6 +171,21 @@ landscape report, sourced to an Adobe Express survey, n=433.
    content. A firm that posts never may be the better customer. **We are using
    a behaviour as a proxy for a need, and we have zero interviews** (G1) to
    tell us whether that proxy holds. Law 6: we are not our customer.
+4. **AND THE ONE NEITHER READING FIXES — A POPULATION TRANSFER WITH NO BRIDGE.**
+   The 433 were respondents to a **design vendor's survey**; A42's base is
+   **Census employer firms**. Applying a fraction measured on the first to the
+   second is not a conservative or a generous reading of the same number — it is
+   the two populations never having been connected, **and it holds under BOTH
+   readings.** *(Added 2026-09-05: the truth table's A45 cell carried this defect
+   and this section — headed as the argument "in full" — listed three reasons
+   without it. Found by the round-1 gate on the regrade, SHOULD-FIX 7.)*
+5. **AND THE ONE THAT POINTS THE OTHER WAY, WHICH IS WHY IT IS HERE.** The
+   source's line 230 frames 44%-weekly as the **consistency-collapse cohort** —
+   owners coping against a 7×/week ideal. This org's ICP is *"too small to hire
+   anyone for marketing."* **If line 230 is right, step 4 screens OUT the 56%
+   the positioning targets**, and the row's label ("wants the job done") and its
+   content ("posts weekly") are different claims. **That is MF-2 from the round-1
+   gate on this slide, and it is unanswered.**
 
 **Therefore the honest form of step 4 is a range, and it is asymmetric:**
 
