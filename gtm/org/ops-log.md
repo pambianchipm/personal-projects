@@ -8,6 +8,74 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-05 · on-demand (chief-fired, the ruling on shift 21's close) · SHIFT 22
+— THE GRADE EXISTS, ELEVEN ROWS CARRY IT, AND THE GATE ON THE FIX FAILED THE
+FIX.** Chief's ruling: G17(a) this shift; G17(b) next shift.
+
+**WHAT RAN.**
+- `assumptions.md` — **`AGENT-REPORTED` added to the legend** with the chief's
+  three clauses, plus a fourth (*it leads, it does not replace*) so DIRECTIONAL's
+  *never load-bearing alone* and A32's population caveat survive alongside it.
+  Header rewritten from unresolved alert to ruled state.
+- **ENUMERATION RE-RUN: ten → ELEVEN.** A11 A12 A14 A27 A29 A30 A31 A32 A33 A45
+  A46. *Instrument: whole-row corpus matching by four names + a citation graph
+  over every `A##` and `A##–A##` range + transitive closure, then every candidate
+  read by hand. Blind spots: it silently skipped the lettered rows A7b/A25b, it
+  matched `the origin` inside `the ORIGINAL` (A9, A39 — false positives,
+  rejected), and it reads only one file.* Receipt + script, hashed:
+  `snapshots/2026-09-05-shift22-rowscan{.py,-receipt.md}`.
+- **A32 was the near-miss and it hid behind an abbreviation** (*"landscape
+  §1.3"*), not behind the indirection the chief predicted. Found by a third pass
+  keyed to `[VERIFIED]` tags. **It also reverses a filed shift-21 gate finding.**
+- `slide-04-market-size-v1.md` — six claim-bearing sentences rewritten as new
+  drafts. **STAYS GATE-FAILED, seven MUST-FIX untouched.**
+- `gap-list-2026-09-04.md` — G17 revised; **G18 OPENED (Tier 1)**.
+
+**THE GATE ON THE REGRADE — FAIL, ROUND 1, TEN MUST-FIX.** Verdict:
+`gtm/org/reviews/2026-09-05-shift22-agent-reported-regrade-hostile-investor-r1.md`.
+**Fan-out: ONE hostile-investor persona reviewer, spawned at gate time only.
+Solo otherwise.**
+
+- **MF-1, and it is the shift's headline:** I wrote that A15 and A25 both had *"a
+  retrieved, hashed primary instrument"* and **supplied one hash to cover both.
+  FALSE FOR A15**, in three files, **in the direction that made this org's
+  problem look smaller.** The Holo snapshot has no hash and no fetch record;
+  `tryholo.ai` is egress-blocked so no agent here can refresh it. **The fix for
+  the laundering laundered a receipt.**
+- **MF-2/3 → G18:** A15's grade cell names `clinkworthy/docs/competitor-holo.md`,
+  an **ungraded sibling of the swarm report**, and never names Phin's snapshot.
+  **This org has graded exactly one file in that directory while citing it for
+  weeks.** Not resolved here — upgrading A15's grade is a revaluation (law 7) and
+  doing it inside the pass that benefits from it is this shift's own subject.
+- **MF-4:** the regrade touched two files; **eight more still stated the
+  superseded grades**, including `skeleton.md` instructing a future slide to
+  print the swarm's own `[VERIFIED]`. All eight patched. **A one-file scan could
+  never have found them, and that limitation was in my own blind-spot list.**
+- MF-5/6/7/8/9 fixed: A46 at a stale grade inside the amended file; A42's
+  inference labelled SOURCED on slide 4's most quotable sentence; the
+  *"defect in assumptions.md"* mirror left standing beside the sentence rewritten
+  to replace it; *"(b) IS DONE"* (banned self-claim over an admitted floor);
+  *"ten rows carry SOURCED"* → **five**.
+- **MF-10:** my scan retained **no receipt while shift 21's weaker scan had one.**
+  Law 2 against my name. Filed and hashed.
+- **SHOULD-FIX 1–8 applied**, including relabelling the chief's live-surface
+  check as **relayed, not verified here**, with the three things a numeric grep
+  cannot see.
+
+**WHAT THE GATE CONFIRMED IN OUR FAVOUR, recorded because it cuts that way:**
+*no figure changed* holds — re-derived independently by per-row value-cell byte
+comparison, twelve of thirteen byte-identical; **A25's removal is sound**; and
+the claim that this shift answered none of slide 4's MUST-FIX is honest.
+
+**WHAT DID NOT HAPPEN.** No primary instrument retrieved by anyone. `clinkworthy`
+not cloned — every corpus claim rides on shift 21's receipt and **the reviewer
+disclosed it could not re-derive them either.** Slide 4's seven MUST-FIX not
+attempted. Rounds 2 and 3 not convened on either artifact.
+
+**Token weight: heavy.**
+
+---
+
 **2026-09-05 · on-demand (chief-fired, after three ten-second shifts) · SHIFT 21
 — THE GATE ON SLIDE 4, AND THE THING UNDER IT.** Chief's directive: gate slide 4
 and A40–A46 aimed at A45; act on the 44% answer; check for a crossed citation.

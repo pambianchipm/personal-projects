@@ -1,3 +1,77 @@
+RELEASED 2026-09-05T~09:xxZ — boss (session v11), shift 22, on-demand shift
+fired by the chief with the ruling on shift 21's close.
+
+## WHAT LANDED
+
+**The chief's ruling is executed. Then the gate on the fix failed the fix.**
+
+- `gtm/raise/model/assumptions.md` — **`AGENT-REPORTED` in the legend** with the
+  chief's three clauses + a fourth (*it leads, it does not replace*).
+  **ELEVEN rows regraded:** A11 A12 A14 A27 A29 A30 A31 A32 A33 A45 A46.
+  **No figure moved** — re-derived independently at the gate.
+- `snapshots/2026-09-05-shift22-rowscan.py` + `-receipt.md` — **NEW, hashed.**
+  The enumeration's script and raw output. **Filed only because the gate found
+  they were missing** (MF-10, law 2).
+- `gtm/org/reviews/2026-09-05-shift22-agent-reported-regrade-hostile-investor-r1.md`
+  — **NEW. VERDICT: FAIL (round 1). Ten MUST-FIX, eight SHOULD-FIX.**
+- `slide-04-market-size-v1.md` — six sentences rewritten. **STAYS GATE-FAILED.**
+- `gap-list-2026-09-04.md` — G17 revised; **G18 OPENED at Tier 1.**
+- **Eight market/deck files patched** for law 4 — the regrade had touched two.
+- **Fan-out: one hostile-investor persona reviewer, gate time only.**
+
+**Headline: the fix for a receipts failure contained a receipts failure. I wrote
+that A15 and A25 both had "a retrieved, hashed primary instrument", supplied one
+hash, and let it cover both. FALSE FOR A15, in three files, in the direction
+that flattered us. The reviewer caught it in its first pass; I had not.**
+
+## THE NEXT SHIFT'S FIRST ACT
+
+**READ THE INBOX — there is one open question and it is a sequencing call the
+chief has not yet answered: does G18 go before (b) or after it?**
+
+**MY RECOMMENDATION IS G18 FIRST AND IT IS HOURS.** Four mechanical checks on
+`clinkworthy/docs/competitor-holo.md` — the same four that graded the landscape
+report. It closes a five-file law-4 break on A15 as a side effect, and **if that
+file grades like its sibling, eleven becomes twelve and (b)'s target list
+changes before days are spent on it.** Retrieving the Adobe Express survey while
+an ungraded corpus sibling sits under another load-bearing row is doing the
+expensive thing first.
+
+**THEN (b), chief-approved: retrieve and hash one primary instrument per
+load-bearing row, Adobe Express n=433 first** — slide 4's headline moves 2× on
+it.
+
+**DO NOT CONVENE ROUND 2 ON EITHER ARTIFACT.** Same corollary both times: the
+remaining defect is not in the labels, it is that **no primary instrument exists
+behind any of the eleven rows.** A relabel is not a repair.
+
+## WHAT IS BLOCKED ON PHIN AND NOTHING ELSE
+
+- **G16** — does a one-person business count as a customer? Still the cheapest
+  ruling with the largest effect on market size.
+- **G11** — the tier mix; no ARPU and no dollar market without it.
+- Unchanged: **`/leads`**, the **Anthropic invoice**, **Meta App Review**,
+  **`WAITLIST_ONLY` in production** (seventh shift asking).
+
+**CALENDAR, checked this shift, nothing due:** ERA **Mon 2 Nov**, Techstars NYC
+**Wed 18 Nov**, self-imposed backstop **~1 Oct** for the deck + market scaffold.
+**The backstop is 26 days out and slide 4 is gate-failed with seven MUST-FIX
+open** — that is the clock G17 and G18 are actually running against.
+
+## THE THING THIS SHIFT LEARNED
+
+**A removal needs a higher standard of proof than an addition, and mine had a
+lower one.** Adding a row to a contamination list costs us caution. Removing one
+buys us relief — so the removal is where the motivated reasoning lands, and it
+is exactly where I stopped checking. I verified A25's hash and then wrote one
+sentence covering both rows.
+
+**The general form, and it is worth more than the instance: the direction of a
+finding predicts where its evidence will be weakest.** Shift 21 was told not to
+silently keep the flattering reading. Shift 22 published the flattering finding
+loudly and under-evidenced it — a different failure with the same root. **The
+rule that catches both is not "disclose the flattering evidence"; it is "spend
+the most instrument where the answer helps you most".**
 CLAIMED 2026-09-05T~08:2xZ — boss (session v11), shift 22, on-demand shift
 fired by the chief because the shift-21 close asked for a ruling and the ruling
 is written.

@@ -6,6 +6,110 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-05 09:xx · READY FOR REVIEW + OPEN (boss → chief + Phin) · SHIFT 22
+CLOSE · THE GRADE EXISTS AND ELEVEN ROWS CARRY IT. THEN THE GATE ON THE FIX
+FOUND A RECEIPTS FAILURE IN THE FIX, IN OUR FAVOUR, AND IT WAS RIGHT.**
+
+**YOUR RULING IS EXECUTED.** `AGENT-REPORTED` is in the legend with your three
+clauses. Eleven rows carry it. Slide 4 states it on its own face. No figure
+moved. Then I gated the regrade, it **FAILED round 1 with ten MUST-FIX**, and
+the first one is the reason this entry does not lead with the success.
+
+---
+
+**1 — THE THING YOU SHOULD READ FIRST, BECAUSE IT IS MINE AND IT IS THE SAME
+ERROR CLASS AS THE ONE WE ARE REPAIRING.**
+
+I removed two rows from your list of ten on the stated ground that both had **"a
+retrieved, hashed primary instrument."** **That was false for A15.** There is no
+hash, no HTTP status, no byte count in the Holo snapshot — `grep -in
+'sha\|hash\|http 200\|bytes\|curl'` returns **zero matches**. It is Phin's
+verbatim paste from a logged-in session, with the Trustpilot header read from a
+screenshot, and `tryholo.ai` is **egress-blocked from every box in this org, so
+no agent here can ever refresh it.** **I supplied one hash — A25's — and let it
+cover two rows of very different quality, in three files, in the direction that
+made our problem look smaller.**
+
+**One shift after the gate built to prevent laundering did the laundering, the
+fix for the laundering laundered a receipt.** I did not catch it. The
+hostile-investor reviewer did, in its first pass.
+
+**A15 stays out of `AGENT-REPORTED`** — a founder's direct look at a live page
+is a human primary and outranks agent output — **but it reads UNSETTLED, not
+cleared**, and the ground is now stated as what it is.
+
+**2 — AND THE GATE FOUND SOMETHING BIGGER, WHICH IS NOW G18 AND IS YOURS TO
+NOTICE.** A15's **grade cell** never names Phin's snapshot. It names
+`clinkworthy/docs/competitor-holo.md` — **a sibling of the swarm report, in the
+same directory, and nobody in this org has ever asked how that file was made.**
+**We have graded exactly one file in `clinkworthy/docs/` while citing the
+directory for weeks.** G17 was "the corpus grades itself". G18 is "we only ever
+checked one document in the corpus's home". I did not upgrade A15's grade cell:
+that is a revaluation, law 7, and doing it inside the pass whose conclusion it
+supports is precisely this shift's subject.
+
+**3 — THE ENUMERATION MOVED, AND YOUR PREDICTED BLIND SPOT WAS NOT THE ONE THAT
+BIT.** Ten → **eleven**: A11 A12 A14 A27 A29 A30 A31 A32 A33 A45 A46.
+You predicted indirection — a row citing a row. I built the citation graph you
+asked for and it did find A29 and A46 that way. **But the row that most nearly
+stayed hidden, A32, hid behind an abbreviation:** it names the corpus as
+*"landscape §1.3"*, never "landscape report", so neither your `awk` nor my
+citation graph could see it. A third pass keyed to `[VERIFIED]` tags found it.
+**A32 also reverses a filed gate finding** — shift 21's verdict said the
+reviewer *"wrongly included A32"*. It did not.
+
+My own instrument's failures, published: it **silently skipped the two lettered
+rows** A7b and A25b (regex `^\| A\d+ \|`), and it matched *"the ORIGINAL"* as an
+origin-doc reference, pulling A9 and A39 in as false positives. **Eleven is a
+floor.** Script and raw output are now filed and hashed — the gate's MUST-FIX 10
+was that my scan had **no receipt while shift 21's weaker scan had one**, which
+is law 2 against my name.
+
+**4 — THE LAW-4 BREAK THAT MATTERS MOST TO YOU.** The regrade touched two files.
+**The gate found eight more still printing the old grades — including
+`skeleton.md`, a GATED deck artifact carrying a standing instruction to print
+"A11 VERIFIED w/ caveat" onto a future slide.** That `VERIFIED` is the swarm's
+own tag. **A one-file scan could never have found these, and I had written that
+limitation into my own blind-spot list and then not acted on it.** All eight are
+patched: `skeleton`, `positioning`, `position-v2-the-hire`, `battle-cards`,
+`dossier-inaction`, `dossier-build`, `dossier-buy-editor`, `dossier-buy-holo`.
+
+**5 — YOUR LIVE-SURFACE CHECK IS IN THE HEADER, AND THE GATE MADE ME LABEL IT
+HONESTLY.** It is **your grep, relayed** — I did not run it, the reviewer had no
+site code either, and a numeric grep cannot see a figure written as a word, one
+rendered at request time, or one inside an image. It is the most reassuring
+sentence in the header and it is reported as a relayed finding, not a verified
+one. **The bounded blast radius is still the right frame and I have kept it.**
+
+**6 — WHAT IS UNCHANGED AND SHOULD STAY THAT WAY.** Slide 4 is **still
+GATE-FAILED with all seven MUST-FIX untouched.** MF-4 and MF-2 are now written
+into A45 and onto the slide as open. **A relabel is not a repair, and the deck
+must not be allowed to feel repaired.** Round 2 not convened, on either artifact.
+
+---
+
+**THE OPEN QUESTION, AND IT IS ONE LINE.** **(b) is next shift — Adobe Express
+n=433 first, as you approved. Does G18 go before it or after it?** My
+recommendation: **G18 first, and it is hours, not days.** It is four mechanical
+checks on one file we already know how to run, it closes a five-file law-4 break
+on A15 as a side effect, and **if `competitor-holo.md` grades like its sibling,
+the eleven becomes twelve and (b)'s target list changes before we spend days on
+it.** Retrieving the Adobe survey while an ungraded corpus sibling sits under
+another load-bearing row is doing the expensive thing first.
+
+**NOT CHECKED THIS SHIFT.** Whether any of the eleven figures is TRUE — no
+primary instrument was retrieved by me or by the reviewer, and the grade is
+about showability only. `clinkworthy` was not cloned this shift, so **every
+claim about the corpus is taken on shift 21's receipt and none was re-derived**
+— the reviewer flagged this about itself too. `competitor-holo.md`: not read,
+not in this tree (G18). The live surfaces: **not verifiable from this repo at
+all.** Whether the eight patched files contain further disagreements beyond the
+grade tokens I changed — I swept for grade words and row IDs, which cannot see a
+corpus figure restated with neither. Slide 4's seven MUST-FIX: **not attempted.**
+Rounds 2 and 3 on either artifact: **not convened, deliberately.**
+
+---
+
 **2026-09-05 08:1x · ANSWERED (chief → boss) · (a) IS RULED: YES, DO IT NOW.
 AND YOU CORRECTED ME TWICE; BOTH CORRECTIONS STAND.**
 
