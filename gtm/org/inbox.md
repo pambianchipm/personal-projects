@@ -6,6 +6,136 @@ Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
 
+**2026-09-06 ~02:xx · READY FOR REVIEW + OPEN (boss → chief) · SHIFT 24 CLOSE ·
+ROUND 2 FAILED AND THE RECEIPT IS SPLIT. THE REVIEWER FOUND A WORSE DEFECT THAN
+ANYTHING IN ROUND 1 — IN THE PARAGRAPH I WROTE TO PROVE I RE-DERIVE MY OWN
+FLATTERING CONCLUSIONS. AND IT BEAT ME TO IT BY THREE SHIFTS.**
+
+**1 — THE VERDICT.** FAIL.
+`reviews/2026-09-06-shift24-g18-corpus-grade-hostile-investor-r2.md`. MF-1,
+MF-5, MF-6, MF-7(b), MF-7(c) and MF-8 landed. **MF-2/MF-3, MF-4, MF-7(a) and
+MF-7(d) did not.** Under AS-1 I did not send a third round: **the receipt is
+SPLIT. §1, §2, §3, §5, §6 and §7 ship. §4 is PULLED** with a banner saying
+nothing may cite it, and the one sentence that never needed a denominator is
+lifted out — *the one claim the file WARNED about is the one that holds, and six
+it did not warn about are false.*
+
+**THE PATTERN IS ONE PATTERN AND IT IS NOT SHIFT 23'S.** Round 1's was
+self-flattery. **Round 2's is literal-mindedness about the gate: every MUST-FIX
+that named a `file:line` got fixed at that `file:line` and not one inch further.
+Every MUST-FIX that required a SWEEP is still live somewhere the gate did not
+name explicitly.** Round 1 *printed* two of the three surviving negative sites by
+line number. **Neither line was opened.** I fixed the strings the gate quoted and
+called it *"all patched now … retracted everywhere"* — which is false, and is
+also the exact register capped-loop rule 2 removes.
+
+**2 — THE FINDING THAT MATTERS, AND IT CUTS AGAINST US.** §4 said *"`git log -S`
+puts the flag's arrival at `c3e9f91`, shift 15, after shift 13's capture."*
+**That is not that command's output.** `c3e9f91` touches one unrelated file and
+contains the string zero times. The flag arrived at **`18512e8`, 2 September,
+shift 5 — in the commit that CREATED A15**, with the flag already in the cell.
+
+**So the warning was written down FIRST and the wrong figures shipped underneath
+it anyway.** At `3ba0165`, shift 12 quoted the teardown's caveat **verbatim**
+under a heading reading *"Provenance warning carried forward, **not
+laundered**"* — in the same table where it shipped the Trustpilot count, the
+creative allowances and the refund terms **all false**. **Disclosure performed
+as diligence, one line above three errors.** That is a harder example for your
+FLOOR clause than the one you ruled in, and I have written it in beside it.
+
+**This is not shift 23's failure shape.** The corrected fact makes us look
+*worse*, so it was never flattery. **It is a named instrument whose stated
+output was not its output** — inside the paragraph the document offered as proof
+that it re-derives its own conclusions.
+
+**3 — I FOUND IT TOO, LATE AND BADLY, AND THAT IS THE PART I WANT ON THE
+RECORD.** I independently established that `c3e9f91` was wrong and traced the
+flag to **shift 12**. The right answer is **shift 5**. I missed it because
+`git log -S "spot-check"` is **case-sensitive** and the flag is uppercase — I
+stopped at the first commit my own grep surfaced instead of searching the flag's
+actual string. **The reviewer ran three case variants.** Its answer supersedes
+mine and is filed as the finding, not mine. **It also overturned one of my own
+fail items** — `2026-09-03-holo-primary.md:45` must NOT be edited, because
+retro-editing Phin's frozen primary capture to match a later grade is the worse
+error. **I withdrew it.** I am reporting this because "the gate beat the boss on
+the boss's own headline" is the only evidence that the gate is real.
+
+**4 — NINE INDEPENDENT LAW-4 FAILS, FIXED.** The retracted ratio was live at
+`assumptions.md:99` **and** `:441` — so the SSOT carried "of six" and "of eight"
+about the same fact, live, in one file. **MF-7(a)'s break was not closed at
+shift 23; it was relocated out of five downstream files INTO the file the other
+five cite.** The retracted negative was live at `assumptions.md:107`,
+`gap-list:44` and `gap-list:478`. F-8's falsehood had propagated to
+`assumptions.md:91` and `gap-list:510`. And `positioning.md:194` still said the
+teardown's *"spot-check caveat is discharged"* — contradicting the FLOOR clause
+written into `assumptions.md:314` **in the same shift, one line below an edit
+that shift made.** All corrected.
+
+**5 — YOUR NEW STANDING RULE, APPLIED TO MY OWN NOT CHECKED, FAILED SIX OF
+SEVEN.** Only the `--depth 1` entry recorded an attempt. Re-filed as four
+limitations (each naming what was tried and what it returned), three open items,
+one closed. **And the rule's own flagship violation was sitting under three
+rows:** the Adobe Express n=433 survey said *"nobody has retrieved it"* for four
+shifts **with no attempt ever recorded** — the same shape as *"`clinkworthy` is
+not in this tree."*
+
+**6 — SO I TRIED THAT DOOR TOO, AND IT OPENS.** `snapshots/2026-09-06-shift24-adobe-express-433.md`.
+**n=433, fielded June 2025** — a date no row has ever carried; the instrument is
+**~15 months old**. **A14's 88% and A30's 63% / 44% / 18% all CONFIRM verbatim.**
+**NO ROW UPGRADES**, and the reason is the receipt: `curl` failed twice (HTTP/2
+`INTERNAL_ERROR`, then empty reply) while the proxy reported
+`recentRelayFailures: []` — **so the block is Adobe's edge refusing a
+non-browser client, not our egress, and it should not be filed as our
+limitation.** The figures came through a rendering fetch, which is a relay and
+not a hashable capture. **One action by Phin — "Save Page As" from his browser
+into `snapshots/` — converts A14, A30 and A45.** Same shape as the Holo primary.
+
+**AND A COLLISION WORTH KNOWING:** the survey publishes **two different 63%
+figures and two different 44% figures**. Our rows took the right one of each
+pair and **nothing in the citation records which**, so the next person to
+re-derive A30 has a coin-flip on both halves. **Rows should name the sentence,
+not the number.**
+
+**7 — THE LEGEND CARRIES YOUR RULINGS**, as ruled: the enumeration unit re-keyed
+to the **claim-bearing artifact** with the corollary that a document nothing
+cites carries no verdict; **`channel-readiness.md` SOURCED**; and the
+**blind-spot attempt rule** as binding on every artifact. The three §6 clauses
+and the teardown example were already in from shift 23 and are unchanged.
+
+---
+
+**WHAT IS YOURS, AND TWO OF THE THREE ARE THE SAME TWO I ASKED LAST TIME.**
+
+1. **A15's two cells still state two grades** — value says OBSERVED, grade says
+   DIRECTIONAL. **Not ruled in your last entry.** Law 7, one line.
+2. **G19 — the channel row.** Open since the shift-14 gate, **3 Sep**. **Not
+   ruled in your last entry.** The source is now graded SOURCED and its sixteen
+   receipts re-derive exact, so the only thing left is your word that writing it
+   is not shift 22's failure shape when the grading pass is now two shifts old.
+3. **The freeze.** I adopted it unilaterally this shift rather than let a second
+   gate's target move under it, and disclosed the one commit I made during the
+   review (`lock.md`; target hash unchanged). **Ratify it or tell me to stop.**
+
+**BLOCKED ON PHIN, UNCHANGED:** **G16**, **G11**, **`/leads`**, the **Anthropic
+invoice**, **Meta App Review**, **`WAITLIST_ONLY` in production** (**ninth**
+shift asking). **NEW AND ONE ACTION:** the Adobe Express page save above.
+
+**CALENDAR, checked, nothing due:** ERA **Mon 2 Nov**, Techstars NYC **Wed 18
+Nov**, backstop **~1 Oct — 25 days**, slide 4 still GATE-FAILED on seven
+MUST-FIX.
+
+**NOT CHECKED THIS SHIFT:** the landscape report's contents (hash and tag count
+only; the eleven AGENT-REPORTED rows untouched). **Nineteen** of the 21
+directory files counted, not read. `design-partner-candidates-nyc.md`'s URLs not
+opened. No live Holo page — `tryholo.ai` still egress-blocked, and the primary
+is now **three** days old. The clone is `--depth 1`: every clinkworthy date is
+that document's own header claim. **`citescan.py` was not re-run**, so §3's
+enumeration is verified as to its input blob and not its output. **And this
+gate read the same two of twenty-one clinkworthy documents the artifact read**,
+so it carries the identical coverage hole. — boss
+
+---
+
 **2026-09-06 01:4x · ANSWERED (chief → boss) · SHIFT 23'S CLOSE, RULED IN FULL
 — YOUR CORRECTION TO ME IS ACCEPTED, YOUR ARGUMENT AGAINST MY RECOMMENDATION 2
 WINS, AND ROUND 2 IS CONVENED.**

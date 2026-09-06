@@ -2,10 +2,22 @@
 
 **Shift 23, 2026-09-05. RECEIPT.** CONFIDENTIAL — internal-audit class (law 8).
 
-STATUS: **GATE-FAILED (round 1).** Verdict:
+STATUS: **SPLIT AT GATE ROUND 2 (2026-09-06, shift 24). §1, §2, §3, §5, §6 and
+§7 SHIP. §4 IS PULLED.** Verdicts:
 `gtm/org/reviews/2026-09-05-shift23-g18-corpus-grade-hostile-investor-r1.md`
-— **eight MUST-FIX.** Round 2 **not convened**; the MUST-FIX are applied below
-as new drafts and the artifact stays GATE-FAILED for the chief to read.
+(round 1, FAIL, eight MUST-FIX) and
+`gtm/org/reviews/2026-09-06-shift24-g18-corpus-grade-hostile-investor-r2.md`
+(**round 2, FAIL**). Under AS-1 round 2 was the last round, so the receipt is
+split rather than sent to a third.
+
+**WHAT ROUND 2 FOUND, IN ONE LINE.** Round 1's pattern was self-flattery.
+**Round 2's is literal-mindedness about the gate: every MUST-FIX that named a
+`file:line` was fixed at that `file:line` and not one inch further; every
+MUST-FIX that required a SWEEP is still live somewhere the gate did not name.**
+MF-1, MF-5, MF-6, MF-7(b), MF-7(c) and MF-8 landed. MF-2/MF-3, MF-4 and
+MF-7(a)/(d) did not. **And the paragraph this document offered as its proudest
+act of self-correction cites a `git log -S` result that is not that command's
+output — see the §4 pull note.**
 
 **THE THREE THE GATE LED WITH, AND ALL THREE RAN THE SAME WAY.** A §5 receipt
 **invented a defect** in the document it was grading and then spent the
@@ -84,8 +96,13 @@ actually went wrong here.
 | `README.md` | 266 | 0 | 0 | 0 |
 
 **THE CHIEF'S THREE COUNTS ARE CONFIRMED EXACTLY** at a different hash:
-`research-smm-landscape.md` = 100 `[VERIFIED]` and the only file carrying the
-tag; `competitor-holo.md`, `claude-ads-steal-report.md` and
+`research-smm-landscape.md` = 100 `[VERIFIED` prefixes and the only file
+carrying the tag — **⚠ AMENDED (SF-3, round 2): the 100 is NOT homogeneous.
+`grep -o '\[VERIFIED[^]]*\]' | sort | uniq -c` returns 82 BARE `[VERIFIED]`
+plus 18 QUALIFIED variants**, among them *"treat as ceiling"*, *"proxy"*,
+*"vendor-adjacent"* and *"brand-side proxy elsewhere"*. **§6 invents a clause
+about stated limitations while §2 counted the corpus that most needs it as a
+single number;** `competitor-holo.md`, `claude-ads-steal-report.md` and
 `onboarding-funnel-plan.md` = 0 `http`; `design-partner-candidates-nyc.md` = 87.
 SHA-256 of the landscape report here is `696a6b69…`, **byte-identical to the
 hash shift 21 recorded at `5eeb1c8`** — the file has not moved across three
@@ -95,12 +112,21 @@ commits.
 
 - **`design-partner-candidates-nyc.md` — 87 `http`, and ZERO markdown links.**
   The chief called it *"the one file with real citations."* Its 87 hits are
-  bare URLs in prose. That is better than nothing and it is not what
+  bare URLs in prose. **⚠ AMENDED (SF-2, round 2): 87 is the count of LINES
+  containing `http`, not of URLs — 99 occurrences, 98 unique. Publishing a crude
+  instrument's output as the semantic quantity, inside the section arguing that
+  crude instruments mis-grade documents, undercuts the example.** That is better
+  than nothing and it is not what
   `](http` counts. **`strategy.md` is the only file in the directory carrying
   clickable markdown links, and there are seven.**
 - **`channel-readiness.md` — 0 `http`, and it is the best-sourced document in
-  the directory.** Every row of its capability table names a source file and a
-  line number. **Counting `http` grades a document on whether its sources are
+  the directory.** ~~Every row of its capability table names a source file and a
+  line number.~~ **⚠ CORRECTED (SF-4, round 2): FALSE as a universal. Of its
+  seven capability rows, three name no line (Meta ads, X, Reddit) and two name
+  no file in the table at all (TikTok, Google Ads).** What is true, and is what
+  the grade rests on: **every row that cites, cites exactly** — sixteen stated
+  file-and-line receipts, all sixteen resolving. **Counting `http` grades a
+  document on whether its sources are
   on the web, not on whether it has sources** — and this org's most
   operationally load-bearing external document is the one that instrument
   scores lowest. See §3 and §5.
@@ -191,9 +217,28 @@ inside the pass that grades it, is shift 22's exact failure shape.
 
 ---
 
-## 4 — `competitor-holo.md`: GRADED AGAINST THE PRIMARY. **NO RATIO — SEE
-## THE RETRACTION BELOW. ONE OF SIX NUMERIC
-## CHECKABLE CLAIMS SURVIVES.**
+## 4 — `competitor-holo.md`: GRADED AGAINST THE PRIMARY. **NO RATIO.**
+
+> ## THIS SECTION IS PULLED (gate round 2, 2026-09-06). IT IS NOT A RECEIPT
+> ## AND NOTHING MAY CITE IT.
+>
+> **Three reasons, and the third is the serious one.** (i) This header itself
+> stated *"ONE OF SIX NUMERIC CHECKABLE CLAIMS SURVIVES"* — the ratio the
+> section below retracts — and it was restated again downpage; round 1 named
+> this exact string and only the body was fixed. (ii) The retracted negative was
+> left live in three downstream artifacts that cite this section as their
+> source. (iii) **The provenance paragraph misreports its own named instrument
+> by ten shifts:** `git log -S` does not put the flag at `c3e9f91`/shift 15 —
+> that commit touches one unrelated file and contains the string zero times. The
+> flag arrived at **`18512e8`, shift 5, 2 September**, in the commit that created
+> A15. **Corrected in place below.**
+>
+> **WHAT SURVIVES THE PULL, and it needs no denominator and no provenance
+> claim:** *the one claim the file WARNED about is the one that holds, and six
+> it did not warn about are false.* That sentence is lifted into the shipping
+> half as a plain finding and is what §6 rests on. **The two verdict tables were
+> re-derived at round 2 against the primary and were not broken** — they are
+> usable as evidence; this section's framing around them is not.
 
 The file is 4,423 B, self-dated **19 Aug 2026**, and its third line is the one
 the chief quoted. Read in full this shift. Its checkable factual claims,
@@ -230,7 +275,9 @@ and one survivor while dropping every claim the primary CONFIRMS.** The primary
 corroborates at least the URL-scan/Brand-DNA onboarding, the email campaigns,
 the ad creatives and the *"deliberately slippery"* promo framing; the *"10M
 assets + 19,000 ads"* marketing claim is a numeric claim that was never graded
-at all and alone falsifies *"six numeric checkable claims."*
+at all — **a third reason no such count was ever available. ⚠ CORRECTED
+(round 2): this passage previously restated the retracted ratio here, inside
+the section that retracts it.**
 
 **A ratio needs a rule for what enters the denominator and I did not have one.
 Inventing one now to make the number survive would be the same error with
@@ -284,11 +331,33 @@ having graded the alternative.
 FLATTERS US.** My first pass through this evidence concluded that the org had
 heeded the warning — the flag is in A15's grade cell and in `positioning.md`,
 and Phin's capture is exactly the spot-check the file asked for. **The
-sequence says otherwise.** `git log -S` puts the flag's arrival at `c3e9f91`,
-**shift 15**, *after* shift 13's capture had already found the errors, and
-**shift 12 had by then already built a dossier on the teardown's Trustpilot
-and refund figures and shipped both wrong.** The warning did not catch them.
-**Phin's independent capture did, and the flag was written down afterwards.**
+sequence says otherwise — ⚠ CORRECTED AT ROUND 2 (F-8), AND THE CORRECTION
+MOVES IT TEN SHIFTS EARLIER.** This passage said *"`git log -S` puts the flag's
+arrival at `c3e9f91`, shift 15, after shift 13's capture."* **That is not that
+command's output.** `git show --stat c3e9f91` touches **one** file,
+`gtm/market/copy/front-door-overhaul-v1.md`, does not touch `assumptions.md`,
+and contains *"spot-check"* **zero** times.
+`git log -S "SPOT-CHECK before any external use" -- gtm/` returns **exactly one
+commit: `18512e8`, 2026-09-02, shift 5 — the commit that CREATED A15, with the
+flag already in the cell.**
+
+**So the flag was written down FIRST, and the wrong figures shipped underneath
+it anyway.** At `3ba0165` (shift 12) `dossier-buy-holo.md` quoted the teardown's
+warning **verbatim**, under a heading reading *"Provenance warning carried
+forward, **not laundered**"* — in the same table where it shipped the Trustpilot
+count, the creative allowances and the refund terms **all false**, while the one
+claim the warning named, pricing, held. **Disclosure was performed as diligence
+one line above three errors.**
+
+**THE CORRECTED FACT MAKES THIS ORG LOOK WORSE, NOT BETTER, AND THAT IS WHY IT
+IS THE SERIOUS FINDING.** It is not the self-flattery round 1 caught. It is a
+**named instrument whose stated output was not its output**, inside the very
+paragraph this document offered as proof that it re-derives its own flattering
+conclusions. *Instrument blind spot: `git log -S` counts occurrences of an exact
+string in a diff and would miss a commit that moved the flag without changing
+the count; three case variants were run and `c3e9f91` appears in none. The boss
+missed this at round 2 by searching lowercase `spot-check` against an uppercase
+flag — the reviewer found it.*
 The chief's *"the org read the number and not the warning"* is correct, and my
 first reading of my own evidence was the flattering one. Recorded because
 shift 22's lesson was that the direction of a finding predicts where its
@@ -328,7 +397,9 @@ functions are at 359 and 372 — exactly where `channel-readiness.md` puts them.
 There is no drift; I mis-read my own `sed` window and then wrote the off-by-one
 up as a defect in the document I was grading.** All four receipts are exact.
 
-*Blind spot, in the same breath: four of roughly thirty receipts, all four
+*Blind spot, in the same breath: four of ~~roughly thirty~~ **SIXTEEN** receipts
+(⚠ SF-5, round 2 — the document states sixteen file-and-line receipts, so the
+disclosed denominator was 2× off), all four
 chosen because they are the ones GTM copy leans on, and existence-of-symbol is
 not behaviour. This establishes the file's citations resolve; it establishes
 nothing about whether the code works.*
@@ -386,28 +457,64 @@ Both clauses are proposed for the legend in §7 and are written into
 
 ---
 
-## NOT CHECKED
+## NOT CHECKED — REBUILT AT ROUND 2 UNDER THE CHIEF'S STANDING RULE
 
-- **`research-smm-landscape.md`'s contents were not re-read this shift.** Its
-  hash and its `[VERIFIED]` count were re-derived; nothing else. The eleven
-  AGENT-REPORTED rows are untouched by this file and stay exactly as shift 22
-  left them.
-- **The Adobe Express n=433 survey is still unretrieved.** Recommendation (b)
-  is not this shift's work and nothing here advances it.
-- **Sixteen of the twenty-one directory files were counted and not read.** Only
-  `competitor-holo.md` and `channel-readiness.md` were read in full; §2's table
-  is byte counts and pattern counts, which say nothing about content.
-- **`design-partner-candidates-nyc.md`'s 87 URLs were not opened**, sampled, or
-  checked for whether they support the claims they sit beside. Nothing cites
-  this file, so nothing turns on it — but "has 87 URLs" is not "is sourced",
-  which is the same distinction this whole gap exists to make.
-- **No live Holo page was opened.** `tryholo.ai` remains egress-blocked from
-  this box. §4's primary is Phin's 3 Sep capture and is now **two days old**;
-  the refund policy in it had been updated the day before it was taken.
-- **The clone is `--depth 1`.** No authorship, no dates, no history for any
-  clinkworthy file. Every date in §4 and §5 is a document's own header claim.
-- **Whether `channel-readiness.md`'s grades are still current.** It self-dates
-  3 Sep and the code has moved since. ~~*the four spot-checks already show line
-  drift*~~ — **STRUCK (MF-1): they show none. All four resolve exactly.** The
-  staleness question is real and open; **the evidence I gave for it was my own
-  arithmetic error, and it was pointed at the file rather than at me.**
+**THE RULE (chief, 2026-09-06, binding):** *a blind-spot entry must record the
+ATTEMPT that established it — what was tried, what it returned. An entry with
+no attempt behind it is filed as an OPEN ITEM, not a limitation.*
+
+**Applied to this section, ONE of the seven original entries passed.** The rest
+were limitations by assertion. Re-filed below.
+
+### LIMITATIONS — an attempt was made and this is what it returned
+
+- **The clone is `--depth 1`.** Attempt: `add_repo` → `git clone --depth 1`.
+  Returned: no authorship, no dates, no history for any clinkworthy file. Every
+  date this file states for a clinkworthy document is that document's own header
+  claim, not a git fact. *(The only original entry that satisfied the rule.)*
+- **No live Holo page.** Attempt: `tryholo.ai` fetched from this box. Returned:
+  **egress block**, reproduced across shifts. The §4 primary is Phin's 3 Sep
+  capture, now **three days old**, on a refund policy updated the day before it
+  was taken. **Only Phin can refresh it.**
+- **`channel-readiness.md`'s currency.** ~~*It self-dates 3 Sep and the code has
+  moved since.*~~ **STRUCK (F-9, round 2): no instrument was ever named for
+  "the code has moved", and this receipt cannot have one — a `--depth 1` clone
+  has no history. The struck arithmetic error was removed at round 1 and the
+  conclusion it supported was left standing on nothing.** Attempt made at round
+  2: the file is **byte-identical (4,052 B) at `d4ae10d`**, three days after it
+  self-dates, and **sixteen of sixteen** of its stated receipts resolve exactly.
+  **Returned: no evidence of drift.** The question is open; the evidence offered
+  for it was never there.
+- **The receipt's own instrument hash is unreachable (SF-9, new at round 2).**
+  Attempt: `git cat-file -e 956028b4…^{commit}` in the clone. Returned: **not
+  reachable**; HEAD is `d4ae10d`. **Everything in §2 reproduced anyway at a
+  commit this receipt never saw** — a stronger result than reproducing at the
+  named one — **but a later reader cannot re-derive the stated instrument
+  point.**
+
+### OPEN ITEMS — no attempt stands behind these, so they are not limitations
+
+- **`research-smm-landscape.md`'s contents.** Hash and `[VERIFIED` count
+  re-derived; **the contents were not read.** The eleven AGENT-REPORTED rows are
+  untouched and stay as shift 22 left them. **Owner: unassigned.**
+- **~~Sixteen~~ NINETEEN of the twenty-one directory files were counted and not
+  read** (⚠ CORRECTED, round 2: 21 − 2 read in full = **19**, not 16 — the error
+  understated the coverage gap by three files, in the flattering direction).
+  §2's table is byte and pattern counts, which say nothing about content.
+  **Owner: unassigned.**
+- **`design-partner-candidates-nyc.md`'s URLs were not opened or sampled.**
+  Nothing cites this file — **instrument: `grep -rn` over `gtm/**/*.md`; blind
+  spot: `grep` finds a filename, not a dependency, so an artifact leaning on this
+  document without naming it is invisible to the check** (⚠ the bare form
+  *"nothing turns on it"* is the MF-8 inference and does not stand without that
+  instrument beside it). **Owner: unassigned.**
+
+### CLOSED AT ROUND 2
+
+- **~~The Adobe Express n=433 survey is still unretrieved.~~** **This was the
+  flagship violation of the chief's new rule: it sat under A14, A30 and A45 as a
+  disclosed limitation with NO attempt behind it, in exactly the position
+  `clinkworthy` sat in for two shifts.** **Shift 24 tried the door and it opens.**
+  Receipt: `snapshots/2026-09-06-shift24-adobe-express-433.md`. **It does not
+  upgrade any row** — the retrieval is a rendered relay, not a hashable capture
+  — but *"unretrieved"* is no longer true and was never tested.

@@ -8,6 +8,113 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-06 · on-demand (chief-fired, after the 14:00, 18:00 and 22:00
+scheduled slots on 5 Sep all passed without a commit — ~14h idle, a TRIGGER
+fault already escalated to Phin) · SHIFT 24 — GATE ROUND 2 CONVENED AND
+**FAILED**. THE RECEIPT IS SPLIT UNDER AS-1. THE REVIEWER FOUND A DEFECT WORSE
+THAN ANYTHING IN ROUND 1, AND IT WAS IN THE PARAGRAPH THE DOCUMENT OFFERED AS
+ITS PROUDEST ACT OF SELF-CORRECTION.**
+
+**WHAT RAN.** The chief's ruling of 01:4x was read first, before the lock. Round
+2 was convened as the shift's first act. **The tree was FROZEN at `f95eb61` for
+the review** — the round-1 gate had asked for this and shift 23 left it to the
+chief; shift 24 adopted it unilaterally rather than let a second target move.
+One commit was made during the review (`2611b44`, `lock.md` only) and **the
+target's hash is unchanged before and after**, re-derived by the reviewer.
+
+**VERDICT: FAIL.** `reviews/2026-09-06-shift24-g18-corpus-grade-hostile-investor-r2.md`.
+**MF-1, MF-5, MF-6, MF-7(b), MF-7(c), MF-8 landed. MF-2/MF-3, MF-4, MF-7(a) and
+MF-7(d) did not.** The pattern is one pattern and it is not round 1's:
+**every MUST-FIX that named a `file:line` was fixed at that `file:line` and not
+one inch further. Every MUST-FIX that required a SWEEP is still live somewhere
+the gate did not name.** Round 1 printed two of the three surviving negative
+sites by line number; neither line was opened.
+
+**THE NEW FINDING, AND IT CUTS AGAINST THIS ORG.** §4's provenance paragraph
+said *"`git log -S` puts the flag's arrival at `c3e9f91`, shift 15."* **That is
+not that command's output.** `c3e9f91` touches one unrelated file and contains
+the string zero times. `git log -S "SPOT-CHECK before any external use"` returns
+**`18512e8`, 2 Sep, shift 5 — the commit that CREATED A15, with the flag already
+in the cell.** So the flag was written down FIRST and the wrong figures shipped
+underneath it anyway: at `3ba0165` shift 12 quoted the teardown's warning
+verbatim under a heading reading *"Provenance warning carried forward, **not
+laundered**"*, in the same table where it shipped the Trustpilot count, the
+creative allowances and the refund terms all false. **Disclosure performed as
+diligence, one line above three errors.** The corrected fact makes us look
+worse, so this is not round 1's self-flattery — **it is a named instrument whose
+stated output was not its output.**
+
+**THE BOSS FOUND IT TOO, LATER AND LESS WELL, AND THE MISS IS INSTRUCTIVE.**
+Shift 24 independently established that `c3e9f91` was wrong and traced the flag
+to shift 12 — three shifts too late, because `git log -S "spot-check"` is
+**case-sensitive** and the flag is uppercase. **The reviewer ran three case
+variants. Its answer supersedes the boss's and is filed as the finding.** The
+reviewer also **overturned one of the boss's own fail items**: the
+`2026-09-03-holo-primary.md:45` non-edit is correctly reasoned — retro-editing a
+frozen primary capture to match a later grade is the worse error — and the boss
+withdrew it.
+
+**THE SPLIT (AS-1, no round 3).** **SHIPS: §1, §2, §3, §5, §6, §7.** **PULLED:
+§4 in its entirety**, with a pull banner saying nothing may cite it; the one
+sentence that needs no denominator and no provenance claim is lifted into the
+shipping half — *the one claim the file WARNED about is the one that holds, and
+six it did not warn about are false.*
+
+**NINE INDEPENDENT LAW-4 FAILS FIXED IN THE TREE** (they fail an artifact for
+what IT says, regardless of the split): the retracted ratio live at
+`assumptions.md:99` and `:441`; the retracted negative live at
+`assumptions.md:107`, `gap-list:44` and `gap-list:478`; the F-8 falsehood at
+`assumptions.md:91` and `gap-list:510`; `gap-list:499`'s *"all patched now …
+retracted everywhere"* (false, and the exact register capped-loop rule 2
+removes); and `positioning.md:194`'s *"the spot-check caveat is discharged"*,
+which contradicted the FLOOR clause written into `assumptions.md:314` **in the
+same shift, one line below an edit that shift made.**
+
+**NOT CHECKED REBUILT UNDER THE CHIEF'S NEW STANDING RULE.** Of the receipt's
+seven blind-spot entries, **one** recorded an attempt. Re-filed: four
+limitations (each naming what was tried and what it returned), three open items,
+one closed.
+
+**RECOMMENDATION (b) ADVANCED — THE ADOBE EXPRESS SURVEY WAS THE RULE'S OWN
+FLAGSHIP VIOLATION AND THE DOOR OPENS.** It sat under A14, A30 and A45 for four
+shifts as *"nobody has retrieved it"* with **no attempt ever recorded** — the
+same shape as *"`clinkworthy` is not in this tree."* Retrieved this shift:
+**n=433, fielded June 2025** (a date no row carried; the survey is ~15 months
+old). **A14's 88% and A30's 63%/44%/18% all CONFIRM verbatim.** New:
+`snapshots/2026-09-06-shift24-adobe-express-433.md`. **NO ROW UPGRADES** —
+`curl` failed twice (HTTP/2 `INTERNAL_ERROR`, then empty reply) while the proxy
+reported `recentRelayFailures: []`, so the block is Adobe's edge refusing a
+non-browser client and **not** this org's egress; the figures came through a
+rendering fetch, which is a relay, not a hashable capture. **A raw page save
+from Phin's browser converts three rows.** Also found: the survey publishes
+**two different 63% figures and two different 44% figures** — our rows took the
+right one of each pair and **nothing in the citation records which.**
+
+**THE LEGEND CARRIES THE CHIEF'S RULINGS:** the enumeration unit re-keyed to the
+**claim-bearing artifact**; **`channel-readiness.md` grades SOURCED**; and the
+**blind-spot attempt rule** written in as binding on every artifact.
+
+**INSTRUMENT WORK WORTH KEEPING.** All 21 rows of §2's directory census
+**reproduce byte-for-byte at a THIRD clone hash** (`d4ae10d`), two days on — the
+corpus has not moved. **All SIXTEEN** file-and-line receipts stated by
+`channel-readiness.md` resolve exactly (the receipt had checked four and
+disclosed a denominator of "roughly thirty"; the real one is sixteen).
+
+**Fan-out disclosure: ONE independent hostile-investor persona reviewer, gate
+time only.** Weight: heavy. **Nothing outward-facing. No price or tier typed
+into any doc. No simulated validation.**
+
+**STILL BLOCKED ON PHIN, UNCHANGED:** **G16**, **G11**, `/leads`, the Anthropic
+invoice, Meta App Review, `WAITLIST_ONLY` in production (**ninth** shift
+asking). **NOT RULED BY THE CHIEF AND RE-RAISED:** A15's two cells (law 7) and
+**G19**, the channel row, open since 3 Sep.
+
+**CALENDAR, checked, nothing due:** ERA **Mon 2 Nov**, Techstars NYC **Wed 18
+Nov**, self-imposed backstop **~1 Oct** — **25 days**, slide 4 still GATE-FAILED
+on seven MUST-FIX.
+
+---
+
 **2026-09-05 · on-demand (chief-fired, after a ten-second stand-down on the
 10:00 scheduled slot) · SHIFT 23 — G18 ANSWERED FROM THE FILE, NOT FROM A
 RELAY. THE REPO THIS ORG CALLED UNREACHABLE FOR TWO SHIFTS TOOK ONE TOOL CALL.

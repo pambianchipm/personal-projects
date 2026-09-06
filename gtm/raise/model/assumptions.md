@@ -88,15 +88,20 @@ FILE ITSELF; A15 STAYS UNSETTLED ON A DIFFERENT GROUND.** Receipt:
 (`clinkworthy/docs/competitor-holo.md` pricing table), third-party-sourced"*.
 That quotation is truncated, and it drops the clause that matters.** The cell
 continues: *"the teardown's own flag carried: SPOT-CHECK before any external
-use; never load-bearing alone"* — present since shift 15 (`c3e9f91`), in this
-file and in `positioning.md`. **The header indicting the org for not carrying a
+use; never load-bearing alone"* — **present since shift 5 (`18512e8`,
+2 Sep), in the commit that CREATED this row** (⚠ CORRECTED 2026-09-06 at the
+round-2 gate: this read *"since shift 15 (`c3e9f91`)"*; that commit touches one
+unrelated file and contains the string zero times. **Instrument:
+`git log -S "SPOT-CHECK before any external use" -- gtm/`, one commit returned;
+blind spot: `-S` counts occurrence changes and would miss a pure move.**), in
+this file and in `positioning.md`. **The header indicting the org for not carrying a
 source's limitation quoted the cell with the limitation cut off.** Corrected
 here as a new draft of the passage, not an edit to it.
 
 **`competitor-holo.md` WAS READ THIS SHIFT.** `clinkworthy` was attached to the
 session and cloned (`956028b4`); the file is 4,423 B, self-dated 19 Aug 2026,
-zero `http`, zero `[VERIFIED]`. Graded against Phin's 3 Sep primary capture,
-**one of its six checkable NUMERIC claims survives**: the $20–48 list / $12–29 promo
+zero `http`, zero `[VERIFIED]`. Graded against Phin's 3 Sep primary capture
+**— no ratio; see the retraction note below**: the $20–48 list / $12–29 promo
 band is **confirmed exactly**; its plan count (three vs **two**), its creative
 allowances (**200/650 vs 120/350**), its Trustpilot review count (**4,200+ vs
 1,048**) and its refund terms (**14-day/35-pieces vs 7-day/one-generation**)
@@ -105,8 +110,12 @@ already caught by Phin's capture and corrected into A34/A35; **the plan count
 and the creative allowances are found for the first time here.** **Its
 capability claims grade no better:** its BLUF (*"Holo makes assets; Player2
 runs marketing"*) and its *"generates on demand, then silence"* were both
-struck FALSE on 3 Sep — by the primary, by an org that had still never opened
-the file they came from. **The one claim the file WARNED about is the one the primary confirms; six
+struck FALSE on 3 Sep — by the primary. *(⚠ CORRECTED 2026-09-06: this read
+*"by an org that had still never opened the file they came from"*. **That
+negative was retracted at the shift-23 gate and is false** —
+`dossier-buy-holo.md:316–318` transcribes `competitor-holo.md:85–87`
+character-identically and has since shift 12. **What was new was the GRADING,
+not the reading.**)* **The one claim the file WARNED about is the one the primary confirms; six
 claims it did not warn about are false.** *(A ratio stated here was retracted
 at this shift's gate — no denominator rule, and it dropped the confirmations.)* No live
 artifact carries either, so **no copy is wrong** — the org has been using
@@ -328,6 +337,45 @@ which is the half this org paid for).**
 Receipt: `snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4–§6. **UNGATED —
 written by the boss shift 23; law 7 and the no-self-pass rule both apply.**
 
+**THE ENUMERATION UNIT, RE-KEYED — RULED BY THE CHIEF 2026-09-06, BINDING.**
+The rule was *"grade what a live truth-table row cites."* It is re-keyed:
+**grade what any CLAIM-BEARING ARTIFACT cites; a row of this table is one kind
+of claim-bearing artifact and not the privileged kind.** The proof is
+`clinkworthy/docs/channel-readiness.md` — **thirteen `gtm/` files cite it and
+ZERO rows do**, because this table carries no channel row, so a row-keyed rule
+never looks at the document that decides what our copy may claim about
+platforms. **That is the one place where being wrong reaches a client.**
+Corollary, ruled in the same breath: a document cited by **no** claim-bearing
+artifact carries no verdict, because nothing rests on it.
+
+**AND `channel-readiness.md` GRADES SOURCED** — sixteen stated file-and-line
+receipts, **all sixteen re-derived exact** against the cloned code at
+`d4ae10d` (2026-09-06). It carries **zero URLs**. **Any rule that would have
+marked it unsourced is a rule about publishing, not about truth.** *(Blind spot,
+same breath: three of its seven capability rows name no line and two name no
+file — the grade rests on the rows that DO cite citing exactly, not on a
+universal. Symbol-existence is not behaviour; no code was run.)*
+
+**THE BLIND-SPOT RULE — RULED BY THE CHIEF 2026-09-06, BINDING ON EVERY
+ARTIFACT THIS ORG FILES.**
+
+> **A blind-spot entry must record the ATTEMPT that established it — what was
+> tried, and what it returned. An entry with no attempt behind it is filed as an
+> OPEN ITEM, not a limitation.**
+
+The case that produced it: shifts 21 and 22 both wrote *"`clinkworthy` is not in
+this tree"* into blind-spot lists — **twice, as a limitation to disclose
+honestly, and it was one `add_repo` and one `git clone` away.** Nobody had tried
+the door. **An honestly-disclosed limitation is the easiest kind to leave
+standing, because disclosure feels like diligence.** `tryholo.ai` passes the
+rule (tried; returned an egress block). *"Not in this tree"* never did — **and
+neither did the Adobe Express survey under A14/A30/A45, which said "nobody has
+retrieved it" for four shifts with no attempt recorded. Shift 24 tried it: it
+opens.** See `snapshots/2026-09-06-shift24-adobe-express-433.md`.
+
+**UNGATED — written by the boss shift 24 from the chief's ruling; law 7 and the
+no-self-pass rule both apply.**
+
 **AGENT-REPORTED LEADS, IT DOES NOT REPLACE.** Where a row already carried a
 restriction of its own — DIRECTIONAL's *never load-bearing alone*, a stated
 population caveat, a staleness flag — that restriction is retained verbatim
@@ -438,8 +486,9 @@ may state.
   shift 23, from the teardown itself rather than from this sentence: it has
   been wrong on the refund terms, the Trustpilot count, the plan count (three
   vs two) and the creative allowances (200/650 vs 120/350), plus its BLUF and
-  its "generates on demand, then silence" — SIX, not two. Of eight gradeable
-  claims exactly one holds: the price band.** (b) **A27 (CapCut)** — the 3 Sep live
+  its "generates on demand, then silence" — SIX, not two. NO RATIO: the
+  "of eight" was retracted at the shift-23 gate for having no denominator rule,
+  and is struck here 2026-09-06 (round 2) where it had survived the sweep.** (b) **A27 (CapCut)** — the 3 Sep live
   re-fetch returned HTTP 502; the row is a 20 Aug secondary read until
   a fetch succeeds. (c) **A28 (Vizard)** — pricing is client-rendered
   and was not obtained; the row holds no figure, and no Vizard price
