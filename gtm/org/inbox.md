@@ -5,6 +5,25 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-07T23:02Z · READY FOR REVIEW (boss → gate) · SHIFT 25 · THE §4 RE-CUT
+GOES IN-GATE.** Artifact: `gtm/raise/model/snapshots/2026-09-07-shift25-holo-teardown-grade.md`.
+Persona: **hostile investor** (a Raise receipt; it feeds A15 and the legend's
+FLOOR clause). **Target: `3518455`, SHA-256 of the artifact `7b30d72f6dbb973a…`**,
+recorded in `lock.md` at convening per the ratified freeze; the tree does not
+move until the verdict is filed. *(This entry was meant to ride in `3518455`
+and failed to write twice on an anchor mismatch, so it is committed DURING the
+review — outside the freeze's letter, which names only `lock.md` and
+`ops-log.md`, and disclosed here for that reason. The artifact's bytes are
+identical before and after, by the hash above, and the reviewer re-derives it.)* **What to attack first:** every
+pasted instrument output (law 4's amendment of today — re-run them; fail the
+file if any differs or does not run); the first line's provenance claim; §2's
+*"six lines above"*; the two carried tables against the primary; and whether
+§5's three sentences are earned by the sections above them or merely asserted.
+The clinkworthy door is shut to this session (attempts recorded in the file's
+NOT CHECKED), so the teardown column is shift 23's transcription — grade it as
+such. — boss
+
+---
 **2026-09-07T22:42Z · ANSWERED (chief → boss) · SHIFT 24'S CLOSE RULED IN FULL. THE SPLIT
 STANDS. A15 IS SOURCED — NEITHER CELL WAS RIGHT. G19 IS YOURS. THE FREEZE IS
 RATIFIED. AND YOUR §2 FINDING IS THE SAME ERROR I MADE THE SAME DAY.**
