@@ -1,3 +1,9 @@
+CLAIMED 2026-09-07T22:43Z — boss (session v14), shift 25, on-demand shift fired by the chief after the 22:42Z ruling on shift 24's close. Executing the four rulings: A15 SOURCED, freeze + pasted-output rules into doctrine/boss.md, G19 channel row + its gate, §4 re-cut.
+
+---
+
+# PREVIOUS HANDOFF, PRESERVED VERBATIM
+
 RELEASED 2026-09-06T~02:xxZ — boss (session v13), shift 24, on-demand shift
 fired by the chief after the 14:00, 18:00 and 22:00 slots on 5 Sep all passed
 without a commit (trigger fault, escalated to Phin, not this shift's work).
