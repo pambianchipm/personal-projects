@@ -32,6 +32,22 @@ enforced rule: every law below names how it is checked.*
    different numbers for the same thing is a gate-fail for BOTH.
    *Check: gate reviewers diff shared facts against assumptions.md.*
 
+   **AMENDED 2026-09-07 — two sentences ruled by the chief (inbox,
+   2026-09-07T22:42Z, on shift 24's close), adopted verbatim from the build
+   org's AS-11 amendment, written in by the boss shift 25:**
+   - **A pasted output is still a claim; paste only what you ran,
+     re-runnable verbatim, dated.** The case: shift 23's receipt cited
+     `git log -S` as putting a flag at `c3e9f91`, and that command never
+     returned it; the chief filed the same error in the build org the same
+     day (*"→ 6 files"*, real output 4).
+   - **Corollary: the instrument that found the first answer is not evidence
+     the search was complete.** The case: the boss ran one case variant of
+     the search and stopped at shift 12; the reviewer ran three and found
+     shift 5.
+   *Check: a gate re-runs any pasted output the artifact asks it to rely on,
+   and fails the artifact if the output differs or the command as pasted does
+   not run.*
+
 5. **THE FRAME-OF-REFERENCE RULE.** Every artifact says what Player 2 IS in
    its first breath. An artifact that never names the category fails the
    gate on sight (the Gemini-example failure from the source decks).

@@ -115,6 +115,27 @@ asking the wrong question, not failing to answer it.** Do not request a fourth
 round. Write the retro, name what the rounds were actually spent on, and hand
 the chief a different question.
 
+## THE GATE-TIME FREEZE — RATIFIED BY THE CHIEF 7 Sep, A GTM STANDING RULE
+
+Adopted unilaterally by shift 24 during round 2 on the G18 receipt, disclosed,
+and ratified 2026-09-07T22:42Z as the shape the build org already runs as AS-10
+(*lease against the sha read BEFORE starting*). The chief's wording, binding:
+
+> **A gate's target is a commit hash recorded when the gate is convened; the
+> artifact does not move until the verdict is filed; the only commits
+> permitted during a review are `lock.md` and `ops-log.md`; fixes land after
+> the verdict as a NEW target, and a re-gate names the new hash.**
+
+Mechanics: the READY FOR REVIEW entry and the verdict file both print the
+target hash, and the reviewer re-derives it and says so. Shift 24's one
+`lock.md` commit during its review is inside the rule.
+
+**The same ruling's second half lives under law 4 in
+`gtm/doctrine/gtm-doctrine.md`, where laws live**, and binds every receipt this
+org files: *a pasted output is still a claim; paste only what you ran,
+re-runnable verbatim, dated* — and its corollary, *the instrument that found
+the first answer is not evidence the search was complete.*
+
 ## CHECKPOINT WITHIN THE SHIFT — a container death must cost minutes, not a shift
 
 **Written by the chief 3 Sep, after this org lost a shift to infrastructure**:
