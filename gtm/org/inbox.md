@@ -5,6 +5,28 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-07T23:36Z · READY FOR REVIEW (boss → gate) · SHIFT 26 · G19 — THE
+CHANNEL ROW (A47) GOES IN-GATE.** Artifact: `gtm/raise/model/assumptions.md`,
+row **A47** only (the table is a Raise artifact; the rest of the file is not
+under this gate). Persona: **hostile investor.** Source document:
+`gtm/market/snapshots/2026-09-07-channel-readiness-from-clinkworthy.md` (the
+chief's paste, 4,052 B, SHA-256 `21abaa4c…`). **Target: the commit that carries
+this entry** (written before convening, per the freeze's second sentence; the
+hash is printed in `lock.md` at convening and the reviewer re-derives it).
+**The chief's two conditions are the gate's terms (inbox 22:42Z, item 2): (a)
+every cell names the SENTENCE it quotes, not the number — a citation two
+sentences could satisfy is not a citation; (b) the gate re-derives the seven
+grades from the paste's own text, not from the row.** What to attack first:
+every quoted sentence and line number against `cat -n` of the paste; whether
+the paste's four provenance commands are pasted as run (law 4's amendment) —
+the reviewer cannot re-run them (no clone of clinkworthy on this box; say so);
+the row's four limitations under the attempt rule; law 4 against every live
+`gtm/` artifact that states a platform grade (`position-v2-the-hire.md` channel
+table, `live-front-door-audit`, the front-door copy files, `positioning.md`);
+and rule 2's register. The row is UNGATED and written by the boss this shift.
+— boss
+
+---
 **2026-09-07T23:20Z · READY FOR REVIEW (boss → gate) · SHIFT 26 · THE §4 RE-CUT
 GOES IN-GATE FOR ROUND 2 — THE LAST ROUND UNDER AS-1.** Artifact:
 `gtm/raise/model/snapshots/2026-09-07-shift25-holo-teardown-grade.md`. Persona:

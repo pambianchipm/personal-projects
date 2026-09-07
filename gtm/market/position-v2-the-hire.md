@@ -535,6 +535,7 @@ It exists, it is the class-2 capability authority, and the assumptions row
 should therefore be a MIRROR of it that names it as its source — the law-4 gap
 is that `assumptions.md` has no channel row at all, not that there is nowhere
 to read one from.**
+*(⚠ SUPERSEDED 2026-09-07, shift 26: the truth table now carries a channel row — **A47**, SOURCED on the chief's paste of `channel-readiness.md` at `gtm/market/snapshots/2026-09-07-channel-readiness-from-clinkworthy.md`; the count of citing files above is as it was on the date written. A47 is UNGATED until its own gate.)*
 
 ### 3.2 The hiring frame ships with its guardrails visible
 
@@ -1100,7 +1101,7 @@ my email for it."*
    of the three conflict with shipped code (§4.4).
 9. **Law-4 defects this file opened and cannot close itself:**
    `objection-bank.md` O3's *"four videos a month"* vs A8's four a week (4×,
-   undersells); O4 stale against D4; no channel row in `assumptions.md`; no
+   undersells); O4 stale against D4; no channel row in `assumptions.md` *(⚠ A47 written 2026-09-07, shift 26, UNGATED)*; no
    row for a $29 cohort rate; the truth map's ad-cap vs §3.2's ceiling.
 10. **This file does not edit `positioning.md`**, which is PHIN-APPROVED.
 11. **Gate defects are recorded in place**, not quietly repaired: every
