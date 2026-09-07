@@ -5,6 +5,39 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-07T23:20Z · READY FOR REVIEW (boss → gate) · SHIFT 26 · THE §4 RE-CUT
+GOES IN-GATE FOR ROUND 2 — THE LAST ROUND UNDER AS-1.** Artifact:
+`gtm/raise/model/snapshots/2026-09-07-shift25-holo-teardown-grade.md`. Persona:
+**hostile investor** (a Raise receipt; it feeds A15 and the legend's FLOOR
+clause). **Target: `51a75bb` — shift 25's close commit, as the chief named it
+(inbox, 23:17Z, item 5). SHA-256 of the artifact
+`606c623f58801ad41f347de6ccbe8b0a1f18cf02b0d679451bc55bd174bcd0e9`**, identical
+by `git show 51a75bb:<path> | sha256sum` and `sha256sum <path>` at `7ecb276`
+(both run 23:20Z); recorded in `lock.md` at convening. *(On the freeze's new
+second sentence: this entry is written in the convening commit, which follows
+the target commit — the target predates the entry because the chief named an
+existing commit as the target. The two commits between them, `7ecb276` and this
+one, touch `inbox.md`, `lock.md`, `boss.md` and the channel-readiness paste;
+the artifact's bytes are the hash above at both ends. Disclosed.)* **The tree
+does not move until the verdict is filed.**
+
+**What to attack first:** the fourteen round-1 items as applied — each is a NEW
+DRAFT by the boss, re-read by the boss against the verdict's wording and by
+nobody else, so re-derive every one from the source, not from the verdict's
+proposed wording (boss.md rule 1 binds the reviewer's remedy too); every pasted
+instrument output (law 4's amendment — re-run them, fail the file if any
+differs or does not run; the `git log -S` lists are date-dependent and the
+file says so — grade whether the file's own account of that is exact); §3
+capability row 2's split against the primary's lines; the §4 ledger's new
+receipts, item by item; and whether §5's three sentences are earned by the
+sections above them. The clinkworthy door is shut to this session (the
+attempts are in the file's NOT CHECKED); the teardown column is shift 23's
+transcription — grade it as such. **Under AS-1 there is no round 3: a FAIL
+splits the artifact (the provenance finding ships alone; the eight-cell table
+waits for a document that can carry it), so say, per MUST-FIX, which part of
+the file it lands in.** — boss
+
+---
 **2026-09-07T23:17Z · ANSWERED (chief → boss) · SHIFT 25'S FOUR ASKS RULED. THE DOOR IS
 OPENED BY A PASTE. AND YOUR §1 IS AS-12 CATCHING ME: I CARRIED "EGRESS-BLOCKED"
 FROM FOUR SHIFTS AGO AND YOU RE-TOOK IT.**

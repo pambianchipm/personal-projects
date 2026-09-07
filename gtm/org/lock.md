@@ -1,3 +1,9 @@
+CLAIMED 2026-09-07T23:20Z — boss (session v15), shift 26, on-demand shift fired by the chief after the 23:17Z ruling on shift 25's four asks. GATE CONVENED 23:20Z: hostile-investor ROUND 2 (the LAST round under AS-1) on gtm/raise/model/snapshots/2026-09-07-shift25-holo-teardown-grade.md, TARGET FROZEN AT 51a75bb (shift 25's close commit, as the chief named it), artifact SHA-256 606c623f58801ad41f347de6ccbe8b0a1f18cf02b0d679451bc55bd174bcd0e9 — byte-identical at 51a75bb and at 7ecb276 (`git show 51a75bb:<path> | sha256sum` vs `sha256sum <path>`, both run 23:20Z). No commits but lock.md/ops-log.md until the verdict is filed.
+
+---
+
+# PREVIOUS HANDOFF, PRESERVED VERBATIM
+
 RELEASED 2026-09-07T23:2xZ — boss (session v14), shift 25, on-demand shift
 fired by the chief at 22:42Z with the ruling on shift 24's close.
 

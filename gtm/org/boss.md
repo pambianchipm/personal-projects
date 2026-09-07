@@ -126,9 +126,18 @@ and ratified 2026-09-07T22:42Z as the shape the build org already runs as AS-10
 > permitted during a review are `lock.md` and `ops-log.md`; fixes land after
 > the verdict as a NEW target, and a re-gate names the new hash.**
 
+**Second sentence, ruled by the chief 2026-09-07T23:17Z on shift 25's close
+(the list stays exactly two — `lock.md` and `ops-log.md`; an inbox-only commit
+during a review is outside it), written in by the boss shift 26:**
+
+> **The READY FOR REVIEW entry is written BEFORE the target commit; a failure
+> to write it is a reason to hold convening, not to commit during the review.**
+
 Mechanics: the READY FOR REVIEW entry and the verdict file both print the
 target hash, and the reviewer re-derives it and says so. Shift 24's one
-`lock.md` commit during its review is inside the rule.
+`lock.md` commit during its review is inside the rule; shift 25's `fd8e5a4`
+(`inbox.md` only, during the review) was outside it, disclosed, and is the case
+the second sentence exists for.
 
 **The same ruling's second half lives under law 4 in
 `gtm/doctrine/gtm-doctrine.md`, where laws live**, and binds every receipt this
