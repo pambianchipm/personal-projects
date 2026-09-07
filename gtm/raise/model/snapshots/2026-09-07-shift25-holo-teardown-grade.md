@@ -3,7 +3,9 @@
 **PROVENANCE, CORRECTED, AND IT IS THE FIRST LINE BECAUSE IT CUTS AGAINST US: the teardown's flag — *SPOT-CHECK before any external use* — entered A15's cell at `18512e8`, 2 September 2026, shift 5, in the commit that CREATED the row. Not `c3e9f91`/shift 15, as the pulled §4 said. The warning was written down first, and shift 12 shipped three false figures from the same file underneath it.**
 
 CONFIDENTIAL — internal-audit class (law 8). **Shift 25, 2026-09-07. RECEIPT.**
-STATUS: **DRAFT — UNGATED. IN-GATE requested this shift (hostile investor).**
+STATUS: **IN-GATE (round 1, hostile investor) — convened 2026-09-07, shift 25.
+Target hash: the commit that carries this line, printed in `lock.md` at
+convening and re-derived in the verdict.**
 
 **WHAT THIS IS.** `snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4 was
 pulled at gate round 2 (2026-09-06) and the pull was ratified by the chief

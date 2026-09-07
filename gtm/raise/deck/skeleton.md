@@ -93,14 +93,18 @@ appears on this slide until then.
 
 **Must prove:** who gets paid for SMB marketing today and which dollars
 Player 2 redirects. Structure on file (positioning.md §7): inaction (the
-real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (**A15 — UNSETTLED**, asset
+real #1) → DIY (Canva + ChatGPT + a nephew) → tool band (**A15 — SOURCED, ruled 2026-09-07**, asset
 factories) → freelancer band (A12, **AGENT-REPORTED**) → agency band (A11,
 **AGENT-REPORTED**).
 Player 2's seat: does the WORK of the service bands at software cost —
 A2 $299 vs A11 $500–2,000 (**A11 is AGENT-REPORTED**); tool band A15
 (~~DIRECTIONAL~~ — **AMENDED 2026-09-05, shift 23: the slide prints A15 as
-UNSETTLED, not DIRECTIONAL**, because the table's own two cells state two
-grades and the reconciliation is the chief's. **The spot-check flag is still
+~~UNSETTLED~~ **SOURCED — RULED 2026-09-07 by the chief (law 7): Phin's primary
+capture of 2026-09-03 is the row's document, and the two limitations on the
+row's face — a human paste with no hash or fetch record; the capture date
+decays — print on the same surface as the number**; the shift-23 UNSETTLED
+had stood on the ground that the table's own two cells stated two grades and
+the reconciliation was the chief's. **The spot-check flag is still
 carried and the slide still says so, like A12** — but under the legend's
 STATED-LIMITATION clause it is a floor, not a description: the flag covered
 pricing, and pricing is the one thing the teardown warned about and also the one thing the primary confirms; six other claims of its own are false). **Receipt requirements — REWRITTEN

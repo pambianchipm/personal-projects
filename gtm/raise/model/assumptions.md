@@ -67,7 +67,7 @@ One hash was supplied and allowed to cover two rows of very different quality.
   matches**. It is **Phin's own capture, pasted verbatim from a logged-in
   session**, with the Trustpilot header **read from a screenshot** — and
   `tryholo.ai` is **egress-blocked from every box in this org, so no agent here
-  can ever refresh it.** *(Blind spot of that grep: it proves the org cannot
+  can ever refresh it.** *(⚠ Did not reproduce 2026-09-07T22:49Z: `curl https://tryholo.ai/pricing` from the GTM box returned HTTP 200, 198,978 B, and the extracted text carries every A15 figure — `gtm/market/competitors/snapshots/2026-09-07-holo-pricing-fetch.md`. The block was real on every shift that tried it and not on this one.)* *(Blind spot of that grep: it proves the org cannot
   SHOW a fetch record, not that no fetch occurred — which is exactly the
   standard this new grade sets, now applied to my own claim.)*
   **Why it is still out:** a founder's direct observation of a live page is a
@@ -81,7 +81,8 @@ A25 and A15 were false positives of the shift-21 scan; the finding stands, the
 sentence I used to justify half of it did not.
 
 **⚠ G18 — OPENED BY THE GATE (MUST-FIX 2 and 3). ANSWERED SHIFT 23 FROM THE
-FILE ITSELF; A15 STAYS UNSETTLED ON A DIFFERENT GROUND.** Receipt:
+FILE ITSELF; A15 ~~STAYS UNSETTLED ON A DIFFERENT GROUND~~ — RULED SOURCED
+2026-09-07, see the row.** Receipt:
 `snapshots/2026-09-05-shift23-g18-corpus-grade.md`. **UNGATED.**
 
 **Shift 22 wrote that A15's grade cell reads *"DIRECTIONAL — Holo teardown
@@ -132,13 +133,16 @@ single claim that held.** Four of the five failures sit outside what it warned
 about. See the STATED-LIMITATION clause in the legend, which exists because of
 this.
 
-**WHY A15 STILL READS UNSETTLED — and the ground has moved.** Not *"nobody has
+**WHY A15 ~~STILL READS~~ READ UNSETTLED UNTIL 2026-09-07 — and the ground has moved.** Not *"nobody has
 spot-checked Holo's pricing"*: someone did, on 3 Sep, and it confirmed the band
 in both columns. **The live ground is that A15's two cells state two different
 grades** — the value cell records the shift-13 upgrade to OBSERVED on Phin's
 primary; the grade cell still says DIRECTIONAL and names the teardown.
 **Reconciling them is a revaluation (law 7) and is the chief's or Phin's, not
 this boss's** — and least of all inside the pass whose conclusion it supports.
+**RULED 2026-09-07T22:42Z: neither cell was right — OBSERVED is *"real usage, n
+stated"* and a pricing page is not usage; the teardown is not the source. A15
+is SOURCED on Phin's capture of 2026-09-03; executed shift 25, both cells.**
 
 **WHAT THE ROW-KEYED SWEEP CANNOT SEE, AND IT IS THE BIGGER HALF OF G18.**
 `competitor-holo.md` is cited by exactly one row (A15). `channel-readiness.md`
@@ -251,8 +255,9 @@ and the org's own rule that an author cannot pass their own work both apply, and
 a provenance relabel is no exception. The hostile-investor gate applies.**
 **SHIFT-23 (2026-09-05) AMENDMENTS ARE UNGATED AND MARKED AS SUCH:** the
 **STATED-LIMITATION clause** in the legend, the rewritten **G18 block** in the
-header, and **A15's grade cell**, which now reads **UNSETTLED** per the chief's
-G18 ruling with the ground restated. **NO FIGURE IN ANY ROW CHANGED** — the
+header, and **A15's grade cell**, which ~~now reads~~ read **UNSETTLED** per the chief's
+G18 ruling with the ground restated, until the 2026-09-07 ruling re-graded the
+row SOURCED (shift 25, both cells; UNGATED likewise). **NO FIGURE IN ANY ROW CHANGED** — the
 120 / 350 in A15's value cell is Phin's primary and is untouched; the 200 / 650
 found FALSE this shift is the teardown's and has never been in this table. The
 eleven `AGENT-REPORTED` rows are **not touched by this shift at all.** Receipt:
@@ -334,7 +339,9 @@ which is the half this org paid for).**
   independently re-derive the claim from a named, retrievable instrument** —
   not whether the instrument is on the web.
 
-Receipt: `snapshots/2026-09-05-shift23-g18-corpus-grade.md` §4–§6. **UNGATED —
+Receipt: `snapshots/2026-09-05-shift23-g18-corpus-grade.md` §5–§6, and for the
+teardown grading `snapshots/2026-09-07-shift25-holo-teardown-grade.md` (§4 of
+the former is pulled and cited by nothing). **UNGATED —
 written by the boss shift 23; law 7 and the no-self-pass rule both apply.**
 
 **THE ENUMERATION UNIT, RE-KEYED — RULED BY THE CHIEF 2026-09-06, BINDING.**
@@ -476,12 +483,16 @@ may state.
   where it is used. (a) **A15 (Holo) — PAID 3 Sep by Phin's primary
   capture** (`gtm/market/competitors/snapshots/2026-09-03-holo-primary.md`):
   **A34/A35/A36 opened from that capture and are OBSERVED. A15's own grade
-  reads UNSETTLED** — amended shift 23; its value cell took the shift-13
-  upgrade to OBSERVED and its grade cell did not, and reconciling them is the
-  chief's (law 7). **The debt itself is paid either way: the figures are the
+  ~~reads UNSETTLED~~ reads SOURCED — RULED 2026-09-07 (chief, law 7)**; until
+  then its value cell had taken the shift-13 upgrade to OBSERVED and its grade
+  cell had not. **The debt itself is paid either way: the figures are the
   primary's.** tryholo.ai is egress-blocked from every box in this org, so
   **only Phin can refresh it** — the debt returns the moment these figures
-  need to be current. ~~The 19 Aug teardown is superseded and has now been
+  need to be current. **⚠ 2026-09-07: the block did not reproduce from the GTM
+  box — HTTP 200, every A15 figure in the fetched text, hashed:
+  `gtm/market/competitors/snapshots/2026-09-07-holo-pricing-fetch.md`. The
+  debt is paid by machine as of that date; the next fetch may be blocked
+  again.** ~~The 19 Aug teardown is superseded and has now been
   wrong twice (refund terms, Trustpilot count).~~ **RE-DRAWN 2026-09-05,
   shift 23, from the teardown itself rather than from this sentence: it has
   been wrong on the refund terms, the Trustpilot count, the plan count (three

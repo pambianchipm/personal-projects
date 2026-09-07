@@ -3,7 +3,8 @@
 **Shift 23, 2026-09-05. RECEIPT.** CONFIDENTIAL — internal-audit class (law 8).
 
 STATUS: **SPLIT AT GATE ROUND 2 (2026-09-06, shift 24). §1, §2, §3, §5, §6 and
-§7 SHIP. §4 IS PULLED.** Verdicts:
+§7 SHIP. §4 IS PULLED** — and re-cut 2026-09-07 as
+`snapshots/2026-09-07-shift25-holo-teardown-grade.md`. Verdicts:
 `gtm/org/reviews/2026-09-05-shift23-g18-corpus-grade-hostile-investor-r1.md`
 (round 1, FAIL, eight MUST-FIX) and
 `gtm/org/reviews/2026-09-06-shift24-g18-corpus-grade-hostile-investor-r2.md`
@@ -232,6 +233,11 @@ inside the pass that grades it, is shift 22's exact failure shape.
 > that commit touches one unrelated file and contains the string zero times. The
 > flag arrived at **`18512e8`, shift 5, 2 September**, in the commit that created
 > A15. **Corrected in place below.**
+>
+> **RE-CUT 2026-09-07 (shift 25), as the chief ruled on ratifying the split:
+> `snapshots/2026-09-07-shift25-holo-teardown-grade.md` — its first line is the
+> corrected provenance, its instruments are pasted as run, and it carries its
+> own gate. Cite that; never this.**
 >
 > **WHAT SURVIVES THE PULL, and it needs no denominator and no provenance
 > claim:** *the one claim the file WARNED about is the one that holds, and six
