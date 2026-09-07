@@ -2,6 +2,12 @@
 
 **Shift 23, 2026-09-05. RECEIPT.** CONFIDENTIAL — internal-audit class (law 8).
 
+**Player 2 is an AI marketing employee for small businesses; this receipt
+grades the documents the org's claim-bearing artifacts cite, so that rows A15
+and (from shift 26) A47 of the truth table rest on graded sources.** *(Law 5
+first breath, added 2026-09-07 shift 26 on the chief's ruling of 23:17Z —
+internal-audit receipts are not exempt; the file was gated without it.)*
+
 STATUS: **SPLIT AT GATE ROUND 2 (2026-09-06, shift 24). §1, §2, §3, §5, §6 and
 §7 SHIP. §4 IS PULLED** — and re-cut 2026-09-07 as
 `snapshots/2026-09-07-shift25-holo-teardown-grade.md`. Verdicts:
@@ -245,6 +251,13 @@ inside the pass that grades it, is shift 22's exact failure shape.
 > half as a plain finding and is what §6 rests on. **The two verdict tables were
 > re-derived at round 2 against the primary and were not broken** — they are
 > usable as evidence; this section's framing around them is not.
+>
+> **⚠ 2026-09-07 (shift 26, round-2 gate on the re-cut, SF-8b): the sentence
+> above about the tables is the BOSS'S OWN, written at shift 24 inside this
+> banner; the round-2 verdict on this receipt does not say it. It was re-quoted
+> as the verdict's at the re-cut's round 1 (MF-1) and in the A15 row (round-2
+> MUST-FIX 1). Do not re-quote it. The record of who re-read the tables is the
+> re-cut's two verdicts, WHAT PASSED.**
 
 The file is 4,423 B, self-dated **19 Aug 2026**, and its third line is the one
 the chief quoted. Read in full this shift. Its checkable factual claims,

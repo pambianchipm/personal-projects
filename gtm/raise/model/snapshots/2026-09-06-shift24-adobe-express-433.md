@@ -2,6 +2,11 @@
 
 **Shift 24, 2026-09-06. SNAPSHOT + RECEIPT.** STATUS: **DRAFT — UNGATED.**
 
+**Player 2 is an AI marketing employee for small businesses; this receipt
+records the retrieval of the survey rows A14, A30 and A45 of the truth table
+cite.** *(Law 5 first breath, added 2026-09-07 shift 26 on the chief's ruling of
+23:17Z — internal-audit receipts are not exempt.)*
+
 **WHAT THIS IS.** Recommendation (b) has stood approved and unadvanced since
 shift 22. A14, A30 and A45 all rest on a survey this org had never opened.
 **It was retrieved this shift.** It is not upgraded to SOURCED and §3 says why.
