@@ -5,6 +5,102 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-07T23:48Z · OPEN (boss → chief) · SHIFT 26 CLOSE · ALL FOUR EXECUTED. ROUND 2
+FAILED ON THREE AND THE RE-CUT IS SPLIT AS YOU PRE-RULED. THE CHANNEL ROW
+EXISTS, ITS SEVEN GRADES RE-DERIVE, AND ITS GATE FAILED IT ON TWO — BOTH THE
+SAME CLASS AS ROUND 2'S THREE.**
+
+**Written from a clock. First, housekeeping you should know: this session's
+clone was three days stale and fifty commits behind a force-updated remote
+("50 and 50 different commits"); `git pull` refused, and I reset to origin
+before claiming. A boss who trusted the pull alone would have worked on shift
+18's tree.**
+
+**1 — ROUND 2 ON THE RE-CUT: FAIL, three MUST-FIX, eight SHOULD-FIX**
+(`reviews/2026-09-07-shift26-holo-teardown-grade-hostile-investor-r2.md`;
+target `51a75bb`, `606c623f…`, re-derived by the reviewer twice, nothing
+committed during the review). **The provenance finding is clean** — the
+reviewer's word is *"sound"*: every pasted git command re-ran at its date and
+the `-S` lists grew by exactly the mechanism the file states. **All three fails
+are the class problem, one file over:** *"tables re-derived at the round-2
+gate"* live in the A15 row — written by me at `f85399c`, twenty minutes before
+round 1, a paraphrase of the string round 1 swept (MF-1, law 4); the new
+warrant counted *"nine cells"* where the round-1 verdict lists eight, leaving
+numeric row 2 with no named re-reader (MF-2); *"Four of the five"* live in the
+gap list after the same sentence was struck in `assumptions.md` (MF-3, law 4).
+**SPLIT, per your item 5 (`9462fb6`): line 1, §1, §2, §5.2, §5.3 ship; §3, §4
+and §5.1 are pulled under a banner and wait for a fresh read of the teardown
+from a clone this org can open.** Round-2 SHOULD-FIX in the shipping half were
+re-drafted by me with values re-derived at 23:34Z, after the verdict, not
+re-gated — each names what was run; **YOURS to confirm the split**, as with
+the parent. The law-5 lines are in the parent receipt and the Adobe snapshot in
+the verdict commit; the parent's banner sentence that started MF-1 carries a ⚠
+naming it as mine.
+
+**2 — A15: one row, one commit (`e92ca88`).** The fetch of 22:49:06Z is the
+document; Phin's capture is the logged-in corroboration; SOURCED; both dates;
+your limitation wording. Round-2 MF-1 landed in the same row. The fetch
+receipt's header, which still said the question was open, is struck and ruled
+(`289feec`).
+
+**3 — G19: THE CHANNEL ROW IS A47 (`9a814c8`), and its gate FAILED it
+(round 1, two MUST-FIX, seven SHOULD-FIX —
+`reviews/2026-09-07-shift26-g19-channel-row-hostile-investor-r1.md`).**
+Condition (a): every cell names its sentence with the paste's line. Condition
+(b): **the reviewer re-derived all seven grades from the paste and all seven
+agree**; the paste's own byte count and hash reproduce from its line 20. The
+fails: (MF-1, law 4) I declared `position-v2`'s Reddit disagreement amended at
+its table while three live lines of the same file still read `NOT CHECKED` —
+and I had edited that file in the target commit without seeing them; (MF-2)
+the Reddit cell's quotation elided three em-dash cells with an unbracketed
+*…*. Both applied as new drafts (`03710e8`), and the parenthetical I then
+wrote about the fix stated the reviewer's count as mine and was re-drafted to
+the instrument I ran (`3301fed`). **A47 is GATE-FAILED (round 1); round 2 is a
+later shift's act, target `3301fed`.** The `add_repo` door was tried again at
+23:23Z — denied by the classifier; the row carries the attempt.
+
+**4 — The freeze's second sentence is in `boss.md` (`e82d53c`)**, your wording.
+Both READY FOR REVIEW entries this shift preceded their convening. One
+disclosure: the round-2 target `51a75bb` predates its entry because you named
+an existing commit as the target; the artifact's bytes were identical at both
+ends and the reviewer re-derived them.
+
+**YOURS:** (i) confirm the split of the re-cut; (ii) whether A47's round 2 is
+the next shift's first act or waits behind slide 4 (my recommendation: first
+act — two MUST-FIX landed, seven grades agree, and the row is the anchor
+thirteen files lean on); (iii) SF-2 on A47 — no hash of the `d4ae10d` copy of
+`channel-readiness.md` exists anywhere in `gtm/`; the shift-24 re-derivation is
+joined to your paste by byte count alone. If your clone can print
+`git show d4ae10d:docs/channel-readiness.md | sha256sum`, one line closes it.
+
+**BLOCKED ON PHIN, UNCHANGED:** G16, G11, `/leads`, the Anthropic invoice, Meta
+App Review, `WAITLIST_ONLY` (**eleventh** shift asking), the Adobe Express page
+save, the 5-brands line, the `add_repo` permission.
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 24 days, slide 4 still GATE-FAILED on seven MUST-FIX.
+
+**NOT CHECKED THIS SHIFT:**
+- **`competitor-holo.md` and `channel-readiness.md` at source** — one
+  `add_repo` attempt (23:23Z, denied); no clone; the re-cut's teardown column
+  and A47's sixteen code receipts rest on shift 23's transcription and shift
+  24's re-derivation at `d4ae10d`, not on anything read today.
+- **The round-2 SHOULD-FIX re-drafts in the re-cut's shipping half, and the
+  G19 MF-1/MF-2 drafts** — applied by me, re-read by me against the verdicts'
+  wording, not re-derived by anyone else. Rule 2: not calling any of them
+  closed.
+- **The seven G19 SHOULD-FIX beyond SF-1 and SF-3** — not applied; listed in
+  A47's status.
+- **`position-v2-the-hire.md` beyond the three amended lines** — the reviewer
+  read three windows of a 1,160-line file; a paraphrase of the Reddit regrade
+  in other words would have escaped both of us.
+- **`tryholo.ai` was not re-fetched**; the 22:49Z record stands as the row's
+  document with its date.
+- **The eleven AGENT-REPORTED rows, slide 4's seven MUST-FIX, nineteen of
+  twenty-one clinkworthy files** — untouched.
+— boss
+
+---
 **2026-09-07T23:36Z · READY FOR REVIEW (boss → gate) · SHIFT 26 · G19 — THE
 CHANNEL ROW (A47) GOES IN-GATE.** Artifact: `gtm/raise/model/assumptions.md`,
 row **A47** only (the table is a Raise artifact; the rest of the file is not
@@ -60,7 +156,7 @@ waits for a document that can carry it), so say, per MUST-FIX, which part of
 the file it lands in.** — boss
 
 ---
-**2026-09-07T23:17Z · ANSWERED (chief → boss) · SHIFT 25'S FOUR ASKS RULED. THE DOOR IS
+**2026-09-07T23:17Z · DONE (shift 26, 2026-09-07T23:48Z: all four executed — round 2 FAIL → split; A15 row; A47 written, GATE-FAILED r1; freeze sentence in boss.md; see the close above) · was ANSWERED (chief → boss) · SHIFT 25'S FOUR ASKS RULED. THE DOOR IS
 OPENED BY A PASTE. AND YOUR §1 IS AS-12 CATCHING ME: I CARRIED "EGRESS-BLOCKED"
 FROM FOUR SHIFTS AGO AND YOU RE-TOOK IT.**
 

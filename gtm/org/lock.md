@@ -1,4 +1,53 @@
-CLAIMED 2026-09-07T23:20Z — boss (session v15), shift 26, on-demand shift fired by the chief after the 23:17Z ruling on shift 25's four asks. GATE CONVENED 23:20Z: hostile-investor ROUND 2 (the LAST round under AS-1) on gtm/raise/model/snapshots/2026-09-07-shift25-holo-teardown-grade.md, TARGET FROZEN AT 51a75bb (shift 25's close commit, as the chief named it), artifact SHA-256 606c623f58801ad41f347de6ccbe8b0a1f18cf02b0d679451bc55bd174bcd0e9 — byte-identical at 51a75bb and at 7ecb276 (`git show 51a75bb:<path> | sha256sum` vs `sha256sum <path>`, both run 23:20Z). No commits but lock.md/ops-log.md until the verdict is filed. ROUND 2 VERDICT FILED 23:35Z: FAIL, 3 MF — SPLIT under AS-1 (9462fb6). SECOND GATE CONVENED 23:37Z: hostile-investor round 1 on assumptions.md row A47 (G19, the channel row), TARGET FROZEN AT 9a814c8 (the commit carrying the READY FOR REVIEW entry), SHA-256 of the A47 line 861be4f9e879ea552a5f60f0e7c199fe5e7a44409c3b92eb207488531fb75581. No commits but lock.md/ops-log.md until the verdict is filed.
+RELEASED 2026-09-07T23:48Z — boss (session v15), shift 26, on-demand shift fired by
+the chief at 23:17Z with the ruling on shift 25's four asks. (Clone was three
+days stale against a force-updated remote; reset to origin before claiming.)
+
+## WHAT LANDED
+
+- **Round 2 on the §4 re-cut — FAIL, 3 MF / 8 SF** (target `51a75bb`,
+  `reviews/2026-09-07-shift26-holo-teardown-grade-hostile-investor-r2.md`).
+  Provenance finding clean; all three fails are the class problem one file
+  over. **SPLIT under AS-1 (`9462fb6`):** line 1, §1, §2, §5.2, §5.3 ship;
+  §3, §4, §5.1 pulled. Law-5 lines in the parent receipt and the Adobe
+  snapshot, same commit. Round-2 SF re-drafted in the shipping half, not
+  re-gated.
+- **A15 — the hashed fetch is the document, Phin's capture the corroboration,
+  SOURCED** (`e92ca88`, one row, one commit; round-2 MF-1 landed in it). Fetch
+  receipt header ruled (`289feec`).
+- **A47 — THE CHANNEL ROW EXISTS** (`9a814c8`), each cell naming its sentence;
+  **GATE-FAILED r1, 2 MF / 7 SF** (`reviews/2026-09-07-shift26-g19-channel-row-hostile-investor-r1.md`);
+  **all seven grades re-derived by the reviewer and agree.** MF-1, MF-2, SF-1,
+  SF-3 applied as new drafts (`03710e8`, `3301fed`).
+- **The freeze's second sentence in `boss.md`** (`e82d53c`).
+- **Fan-out: two hostile-investor reviewers, one per gate, gate time only.**
+
+## THE NEXT SHIFT'S FIRST ACT
+
+**Read the inbox: the chief owes (i) confirmation of the re-cut's split, (ii)
+whether A47's round 2 is the next first act (recommended), (iii) the
+`d4ae10d` hash of `channel-readiness.md` if a clone can print it.** If (ii) is
+yes: convene round 2 on A47 at `3301fed` — READY FOR REVIEW entry first, then
+lock, one hostile-investor reviewer re-deriving the seven grades from the
+paste; under AS-1 it is the last round. If nothing is ruled, end cheap.
+
+## WHAT IS BLOCKED ON PHIN AND NOTHING ELSE
+
+G16, G11, `/leads`, the Anthropic invoice, Meta App Review, `WAITLIST_ONLY`
+(eleventh shift), the Adobe Express page save, the 5-brands line, the
+`add_repo` permission for this environment (tried again 23:23Z, denied).
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 24 days; slide 4 still GATE-FAILED on seven MUST-FIX.
+
+## THE THING THIS SHIFT LEARNED
+
+Every MUST-FIX at both gates was a claim I had corrected somewhere else the
+same day and left alive in the freshest place I had restated it — the A15 row
+written twenty minutes before the gate, the position-v2 file I edited in the
+target commit itself. **When a gate hands you a string, sweep for the CLAIM in
+every wording you have used for it, starting with what you wrote last.** And a
+count I stated about my own fix was the reviewer's count, not my instrument's;
+it was re-drafted to what I ran. Rule 2 does not get easier with practice.
 
 ---
 

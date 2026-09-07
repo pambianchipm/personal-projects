@@ -8,6 +8,114 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-07 · on-demand (chief-fired at 23:17Z, ruling shift 25's four asks;
+the boss's session found its clone three days stale and reset it to origin
+before claiming) · SHIFT 26 — ROUND 2 ON THE RE-CUT FAILED AND THE FILE IS
+SPLIT AS PRE-RULED; A15'S DOCUMENT IS THE FETCH; THE CHANNEL ROW EXISTS AND
+ITS OWN GATE FAILED IT ON TWO — BOTH THE CLASS PROBLEM, AGAIN**
+
+**WHAT RAN, IN THE RULING'S ORDER.**
+
+**(1) Round 2 on the §4 re-cut — target `51a75bb`, artifact `606c623f…`,
+re-derived by the reviewer at 23:22Z and 23:32Z, no commit during the review
+(`e82d53c`, the convening commit, preceded it). VERDICT: FAIL, three MUST-FIX,
+eight SHOULD-FIX**
+(`reviews/2026-09-07-shift26-holo-teardown-grade-hostile-investor-r2.md`).
+**None of the three touches the provenance finding.** All three are the class
+round 1 named: a fix landed at the cited line and the same claim alive one file
+over — the *"tables re-derived at the round-2 gate"* sentence live in the A15
+row (MF-1, law 4; written by me at `f85399c` twenty minutes before round 1);
+the new warrant sentence counting *"nine cells"* where the round-1 verdict
+lists eight, so numeric row 2 had no named re-reader (MF-2); *"Four of the
+five"* live in the gap list after the same sentence was struck in
+`assumptions.md` (MF-3, law 4). **Under AS-1 there is no round 3. SPLIT
+(`9462fb6`): the first line, §1, §2, §5.2 and §5.3 ship — every pasted git
+command re-ran as pasted at its date, the `-S` lists grew by exactly the
+mechanism the file states; §3, §4 and §5.1 are pulled under a banner and wait
+for a fresh read of the teardown from a clone this org can open.** The
+round-2 SHOULD-FIX in the shipping half were re-drafted by me after the verdict
+with values re-derived at 23:34Z (4 h 24 min, not "four and a half"; the
+`--diff-filter=A` paste with its `--format` and full path; the ledger span
+`:292–300`; a fourth hyphenated form of the flag at dossier blob :46 that no
+`-S` variant sees) — **not re-gated; each names what was run.** The law-5
+first-breath line went into the parent receipt and the Adobe snapshot in the
+verdict commit, per the ruling; the parent's banner sentence that started MF-1
+carries a ⚠ naming it as mine.
+
+**(2) A15 — one row, one commit (`e92ca88`).** The hashed machine fetch of
+2026-09-07T22:49:06Z is the named document; Phin's 3 Sep capture stays on the
+face as the logged-in corroboration; SOURCED unchanged; both dates on the face,
+the document's the one that decays; the limitation in the chief's wording
+(which side of the block changed is unknown; the next fetch may block and that
+would not make today's record false). **Round-2 MF-1 landed in the same row**
+— the receipt sentence now names the three verdicts that re-read the ten rows,
+not a re-derivation the round-2 G18 verdict never did. The fetch receipt's
+header, which still said the question was open, struck and ruled in
+`289feec`.
+
+**(3) G19 — THE CHANNEL ROW, A47 (`9a814c8`).** Written from the chief's paste
+(4,052 B, `21abaa4c…`, file last commit `5f0de311` 2026-09-03): seven grades,
+each cell naming the sentence it quotes with the paste's `cat -n` line
+(condition (a)); four limitations, each with its attempt — `add_repo` tried
+again at 23:23Z, denied by the classifier; the code receipts not re-derived
+this shift; the document dated by its own last commit; its NOT CHECKED carried;
+the `SHELL_PLATFORMS` tension carried, not resolved. The eight live *"no
+channel row"* sites (assumptions legend ×2, gap list ×2, position-v2 ×2, G19
+itself) carry a dated ⚠. **READY FOR REVIEW written in the target commit, per
+the freeze's second sentence; lock convened at `b698b2d`.** **VERDICT: FAIL (round 1), two MUST-FIX, seven SHOULD-FIX**
+(`reviews/2026-09-07-shift26-g19-channel-row-hostile-investor-r1.md`).
+**Condition (b) held — the reviewer re-derived all seven grades from the paste
+and every one agrees; the paste's own 4,052-byte / `21abaa4c…` claim
+reproduces from line 20 to end.** The two fails: (MF-1, law 4) the row declared
+`position-v2-the-hire.md`'s Reddit disagreement amended at its table (:509)
+while three live lines of the same file (:522, :1054 — the §6.2 column that
+leaves the file — and :1158) still read `NOT CHECKED`, and I had edited that
+file in the target commit without seeing them — the corollary applied to me;
+(MF-2) the Reddit cell's quotation replaced the document's three em-dash cells
+with an unbracketed *…* — the other twenty-two quotations reproduce. **Both
+applied as new drafts in `03710e8`** (three dated ⚠ amendments in position-v2,
+the cell quoted verbatim, SF-1 and SF-3 too); then the parenthetical I wrote
+about it stated the reviewer's count as mine and was re-drafted at `3301fed` to
+the instrument I ran (7 → 7: a line count cannot see a strike). **A47 is
+GATE-FAILED (round 1); round 2 is a later shift's act, target = `3301fed`;
+SF-2 and SF-4–SF-7 are open (no hash of the `d4ae10d` copy exists in `gtm/`;
+the row states no scope against the "signals secondhand" claims elsewhere).**
+
+**(4) The freeze's second sentence is in `boss.md` (`e82d53c`)**, the chief's
+wording, with shift 25's `fd8e5a4` named as the case it exists for.
+
+**FREEZE, HONOURED.** Round 2: target `51a75bb`; commits after it before
+convening: `7ecb276` (chief), `e82d53c` (lock/boss/inbox); none during. G19:
+target `9a814c8`; `b698b2d` (`lock.md`) during. none else during either review. Both READY FOR REVIEW entries preceded their convening; the round-2 target (`51a75bb`) predates its entry because the chief named an existing commit — disclosed in the entry.
+
+**Fan-out: TWO independent hostile-investor persona reviewers, one per gate,
+gate time only.** Weight: heavy. Nothing outward. No simulated validation. The
+primary capture was not edited.
+
+**THE THING THIS SHIFT LEARNED.** Two rounds, two verdicts, and every MUST-FIX
+at round 2 was a sentence I had corrected somewhere else the same day. The
+class rule (*fix the class, not the citation*) was in the lock file, the
+ops-log and the doctrine, and I still swept for the strings the previous gate
+had used rather than for the claim — the reviewer's word for it: *"a paraphrase
+of a string round 1 had swept."* The narrower rule: **when a gate hands you a
+string, sweep for the CLAIM in every wording you yourself have used for it, and
+the A15 row I wrote twenty minutes before the gate is the first place to look,
+because the freshest restatement is the one no sweep has been pointed at.**
+And the clone: three days stale, fifty commits behind, "50 and 50 different
+commits" — a shallow clone diverged from a force-updated remote, and a boss
+who trusted `git pull` alone would have worked on shift 18's tree.
+
+**STILL BLOCKED ON PHIN, UNCHANGED:** **G16**, **G11**, `/leads`, the Anthropic
+invoice, Meta App Review, `WAITLIST_ONLY` in production (**eleventh** shift
+asking), the Adobe Express page save, the 5-brands line, and NEW: the
+`add_repo` permission for this environment (the chief's list).
+
+**CALENDAR, checked, nothing due:** ERA **Mon 2 Nov**, Techstars NYC **Wed 18
+Nov**, backstop **~1 Oct — 24 days**, slide 4 still GATE-FAILED on seven
+MUST-FIX.
+
+---
+
 **2026-09-07 · on-demand (chief-fired at 22:42Z, ruling shift 24's close; the
 ruling had sat 44h and the four wake-ups in between ended in under twenty
 seconds each because nothing was new) · SHIFT 25 — THE FOUR RULINGS EXECUTED,
