@@ -4,8 +4,11 @@ CONFIDENTIAL — internal (law 8). Competitor intelligence.
 
 **Shift 25, 2026-09-07. SNAPSHOT + RECEIPT.** STATUS: **DRAFT — UNGATED.**
 Corroborates `2026-09-03-holo-primary.md` (Phin's capture, the source A15 is
-SOURCED on). **It does not replace it** — whether a hashed fetch becomes the
-row's named document is a revaluation (law 7) and is put to the chief.
+SOURCED on). ~~**It does not replace it** — whether a hashed fetch becomes the
+row's named document is a revaluation (law 7) and is put to the chief.~~
+**⚠ RULED 2026-09-07T23:17Z (chief, law 7): this fetch IS A15's named document;
+Phin's 3 Sep capture stays on the row's face as the logged-in corroboration;
+grade SOURCED unchanged. Carried into the row at shift 26.**
 
 **WHY THIS FILE EXISTS.** The chief's ruling on A15 (inbox, 2026-09-07T22:42Z)
 carried, as a limitation on the face of the row, *"`tryholo.ai` is
