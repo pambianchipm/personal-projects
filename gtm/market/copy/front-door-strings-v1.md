@@ -364,7 +364,9 @@ stranger with a card can pay. For Phin.**
   struck. The SMB gate asked for a name; there is none to give.
 - Reddit's grade. `docs/channel-readiness.md:17` says BLOCKED-on-credentials;
   `position-v2` §6.2 says NOT CHECKED. **Two gated artifacts disagree and this
-  file does not adjudicate them.**
+  file does not adjudicate them.** *(⚠ 2026-09-07, shift 26: adjudicated —
+  `assumptions.md` A47 is the anchor, BLOCKED on credentials; `position-v2`
+  §6.2 amended the same shift at the G19 gate.)*
 - Where each string sits on the page. This file approves words, not layout.
 - The line numbers above were read at `9b5b484`. They drift.
 

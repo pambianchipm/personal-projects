@@ -519,7 +519,11 @@ first-order interview question.
 count, any TikTok or Google Ads logo presented as live. **A logo is a claim.**
 
 **Two r1 additions.** (a) **X and Reddit are named nowhere in copy** — X is
-PARTIAL and unverified, **Reddit is NOT CHECKED** (regraded at the round-3
+PARTIAL and unverified, ~~**Reddit is NOT CHECKED**~~ **Reddit is BLOCKED on
+credentials** *(⚠ AMENDED 2026-09-07, shift 26, at the G19 gate (MF-1, law 4):
+the authority's sentence — *"credentials still on Phin's list"* — now anchored
+at `assumptions.md` A47; the table at :509 was amended 2026-09-04 and this
+prose was left)* (regraded NOT CHECKED at the round-3
 gate; round 4 found the regrade had reached the narrative and not the table);
 a buyer who asks about either gets *"not yet"*, and the seller needs that line in hand. (b) **The
 draft's "3 of 5 real" is struck** — it reached 3 by counting Meta ads as a
@@ -1051,7 +1055,7 @@ what the r1 version argued for and then did not do.)*
 
 | May say today | **PROHIBITED** |
 |---|---|
-| "Posts, replies and runs ads on Instagram and Facebook today. TikTok and Google Ads are coming." | "Every channel" · "all the features you'd want" · any platform count · TikTok/Google Ads logos as live · **X or Reddit named at all** (X PARTIAL, Reddit **NOT CHECKED**) |
+| "Posts, replies and runs ads on Instagram and Facebook today. TikTok and Google Ads are coming." | "Every channel" · "all the features you'd want" · any platform count · TikTok/Google Ads logos as live · **X or Reddit named at all** (X PARTIAL, Reddit ~~**NOT CHECKED**~~ **BLOCKED on credentials** — ⚠ amended 2026-09-07 shift 26 to A47, G19 gate MF-1, law 4) |
 | "Nothing goes out and nothing gets spent without your approval — per post, or armed in advance for the slots you choose." (SHIPPED, enforced) | The same claim **without** the armed-in-advance qualifier |
 | — | **"Your ad budget is yours, set by you, and separate from the subscription." — NOT SAYABLE UNTIL VERIFIED.** *(Moved out of the ship column at r2. No receipt exists in `assumptions.md` or the objection bank. The SMB gate: "Law 2 is not 'receipts, or a note asking someone to get one.'" It is the best sentence added this shift and it cannot ship on a parenthetical.)* |
 | — | **"Runs your Meta ads" paired with "armed in advance" — NOT SAYABLE as a pair.** *(New hole opened by the r1 honesty edit, found by the salesperson gate r2: we now say we run the ad account AND that approvals can be armed in advance, while §3.2 records the owner-facing spend ceiling as RULED and **UNBUILT**. "They'll run your ad account, you can pre-approve in advance, and the cap hasn't been built" is a true sentence assembled entirely from our own table. Ship the ceiling, or do not pair the claims.)* |
@@ -1155,7 +1159,10 @@ my email for it."*
     to the auditor, not to the reader.)*
 20. **`channel-readiness.md`, cited as "the authority" for §3.1, does not
     exist** in the build repo. §3.1's grades are re-anchored to code receipts
-    that open (5 of 7 corroborated); **the Reddit grade is now NOT CHECKED**.
+    that open (5 of 7 corroborated); ~~**the Reddit grade is now NOT CHECKED**~~
+    *(⚠ 2026-09-07, shift 26, G19 gate MF-1: **BLOCKED on credentials** per
+    `assumptions.md` A47, which anchors the document — it exists, and its
+    paste is at `gtm/market/snapshots/2026-09-07-channel-readiness-from-clinkworthy.md`)*.
 21. **A37 IS now cited by row ID** (§5.1, round-3 gate); **A38 still is not**,
     though §1.3 and §1.5 state its facts. Half-closed.
     *(Corrected at the round-4 gate. This item previously said A37 and A38 are
