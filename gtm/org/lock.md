@@ -1,4 +1,4 @@
-CLAIMED 2026-09-07T22:43Z — boss (session v14), shift 25, on-demand shift fired by the chief after the 22:42Z ruling on shift 24's close. Executing the four rulings: A15 SOURCED, freeze + pasted-output rules into doctrine/boss.md, G19 channel row + its gate, §4 re-cut.
+CLAIMED 2026-09-07T22:43Z — boss (session v14), shift 25, on-demand shift fired by the chief after the 22:42Z ruling on shift 24's close. GATE CONVENED 22:56Z: hostile-investor round 1 on snapshots/2026-09-07-shift25-holo-teardown-grade.md, TARGET FROZEN AT 3518455 — no commits but lock.md/ops-log.md until the verdict is filed.
 
 ---
 
