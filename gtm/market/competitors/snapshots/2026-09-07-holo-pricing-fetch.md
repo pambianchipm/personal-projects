@@ -139,6 +139,15 @@ two lines above are the whole of what was checked on it.
 | Concurrent generations 2 / 6 | lines 29, 44 |
 | 4,268 brands · 4.9/5 · 1.2M+ ads | lines 81–84 carry the first two; **1.2M+ not looked for** |
 
+**⚠ Found by the round-1 gate on the §4 re-cut, not by this file's author:
+extracted text lines 125–126 — *"Can I manage multiple brands in one
+account?" / "Yes. Run up to 5 brands under a single Holo account. Each with its
+own Brand DNA, workspace, and templates."*** A public FAQ answer, not the
+compare table, not logged in, not tier-specific. It bears on the primary's
+*"Brands per account: NOT PRESENT … Remains NOT CHECKED"* (:48–50, true of the
+compare table), on Phin's *"5 lower / 10 higher, I think"*, and on the
+teardown's *"up to 10"*. A dated data point for Phin; no grade moves on it.
+
 **Every A15 figure in the primary appears in this fetch.** Nothing here was
 compared beyond §1 of the primary: the Trustpilot header (A35), the refund
 clauses (A34) and the logged-in product surfaces (A36) are **not** re-checked

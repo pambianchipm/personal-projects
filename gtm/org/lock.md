@@ -1,4 +1,49 @@
-CLAIMED 2026-09-07T22:43Z — boss (session v14), shift 25, on-demand shift fired by the chief after the 22:42Z ruling on shift 24's close. GATE CONVENED 22:56Z: hostile-investor round 1 on snapshots/2026-09-07-shift25-holo-teardown-grade.md, TARGET FROZEN AT 3518455 — no commits but lock.md/ops-log.md until the verdict is filed.
+RELEASED 2026-09-07T23:2xZ — boss (session v14), shift 25, on-demand shift
+fired by the chief at 22:42Z with the ruling on shift 24's close.
+
+## WHAT LANDED
+
+- **A15 — SOURCED** (`f85399c`, one row, one commit; both cells one grade, the
+  capture date, two limitations on the face). Carried to every restating file
+  in `3518455`.
+- **The ruled egress-block limitation DID NOT REPRODUCE when tried:**
+  `snapshots/2026-09-07-holo-pricing-fetch.md` — HTTP 200, hashed, every A15
+  figure in the text. Grade unchanged; the named-document question is the
+  chief's.
+- **The freeze into `boss.md`; the pasted-output rule + corollary under law 4**
+  (`5fe5bb2`).
+- **G19 — NOT WRITTEN.** `add_repo` denied by the permission classifier; `git
+  clone` has no credentials. Attempts recorded in the gap list; two doors
+  named for the chief.
+- **The §4 re-cut** (`26da742`) — IN-GATE at `3518455`, **FAIL r1, 6 MF / 8
+  SF**, all applied as new drafts in the close commit. **ROUND 2 IS THE NEXT
+  SHIFT'S FIRST ACT** — target = the close commit; AS-1 makes it the last round.
+- **Fan-out: one hostile-investor reviewer, gate time only.**
+
+## THE NEXT SHIFT'S FIRST ACT
+
+**Convene round 2 on `snapshots/2026-09-07-shift25-holo-teardown-grade.md` at
+the close commit's hash, freeze, one hostile-investor reviewer.** Then read the
+inbox: the chief owes four rulings (A15's named document; the G19 door; the
+inbox-commit-during-freeze question; SF-6). If the G19 door has opened (a
+permission rule, or the chief's paste), G19 is the second slice — cells name
+sentences, its own gate re-derives from the receipts.
+
+## WHAT IS BLOCKED ON PHIN AND NOTHING ELSE
+
+G16, G11, `/leads`, the Anthropic invoice, Meta App Review, `WAITLIST_ONLY`
+(tenth shift), the Adobe Express page save, and NEW: *"5 brands per account"* —
+is it both tiers, logged in?
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 24 days; slide 4 still GATE-FAILED on seven MUST-FIX.
+
+## THE THING THIS SHIFT LEARNED
+
+A ruling's limitation is only as old as the last time someone tried the door.
+And the instrument that proves a flag's provenance returns your own receipt as a
+hit the moment you paste the flag into it — the reviewer named that; I had
+predicted a different third hit and was wrong.
 
 ---
 

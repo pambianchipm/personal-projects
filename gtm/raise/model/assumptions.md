@@ -114,7 +114,7 @@ runs marketing"*) and its *"generates on demand, then silence"* were both
 struck FALSE on 3 Sep — by the primary. *(⚠ CORRECTED 2026-09-06: this read
 *"by an org that had still never opened the file they came from"*. **That
 negative was retracted at the shift-23 gate and is false** —
-`dossier-buy-holo.md:316–318` transcribes `competitor-holo.md:85–87`
+`dossier-buy-holo.md:316–318` (line numbers at `f95eb61`; 318–320 from `3518455`) transcribes `competitor-holo.md:85–87`
 character-identically and has since shift 12. **What was new was the GRADING,
 not the reading.**)* **The one claim the file WARNED about is the one the primary confirms; six
 claims it did not warn about are false.** *(A ratio stated here was retracted
@@ -124,13 +124,18 @@ Phin's numbers throughout, by sequencing rather than by having graded the
 alternative.
 
 **AND THE SEQUENCE REFUTES THE FLATTERING READING OF THAT, INCLUDING THE ONE
-THIS BOSS REACHED FIRST.** The spot-check flag landed at **shift 15**, *after*
-shift 13's capture had already found the errors — and **shift 12 had by then
-built a dossier on the teardown's Trustpilot and refund figures and shipped
-both wrong.** The warning caught nothing; Phin's independent capture did.
+THIS BOSS REACHED FIRST.** ~~The spot-check flag landed at **shift 15**, *after*
+shift 13's capture had already found the errors~~ **⚠ CORRECTED 2026-09-07
+(round-1 gate on the §4 re-cut, MF-6, law 4 — the round-2 fix had landed at
+the passage above and not here): the flag landed at shift 5, `18512e8`, 2 Sep,
+BEFORE the dossier and the capture, so the sequence is worse than this sentence
+said** — and **shift 12 built a dossier on the teardown's Trustpilot and refund
+figures and shipped both wrong, under a heading that quoted the flag.** The warning caught nothing; Phin's independent capture did.
 **Worse for the rule: the warning said *spot-check pricing*, and pricing is the
-single claim that held.** Four of the five failures sit outside what it warned
-about. See the STATED-LIMITATION clause in the legend, which exists because of
+single claim that held.** ~~Four of the five failures sit outside what it warned about.~~ **Six claims are
+false and none is the one it warned about** (re-cut
+`snapshots/2026-09-07-shift25-holo-teardown-grade.md` §5.1; corrected
+2026-09-07, same gate). See the STATED-LIMITATION clause in the legend, which exists because of
 this.
 
 **WHY A15 ~~STILL READS~~ READ UNSETTLED UNTIL 2026-09-07 — and the ground has moved.** Not *"nobody has
