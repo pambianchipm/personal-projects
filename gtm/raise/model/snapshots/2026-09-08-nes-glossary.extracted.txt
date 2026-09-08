@@ -1,0 +1,334 @@
+Glossary
+United States Census Bureau | An official website of the United States Government
+An official website of the United States government
+Here’s how you know
+Here’s how you know
+Official websites use .gov
+A .gov website belongs to an official government organization in the United States.
+Secure .gov websites use HTTPS
+A lock (
+Lock
+A locked padlock
+) or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+Celebrating 250 Years of Measuring America's People and Economy
+Learn more.
+Skip Header
+Partners
+Researchers
+Educators
+Survey Respondents
+Explore Census.gov for...
+Partners
+Researchers
+Educators
+Survey Respondents
+News
+NAICS Codes
+Jobs
+About Us
+Contact Us
+Help
+Topics
+Data & Maps
+Surveys & Programs
+Resource Library
+Search data, events, resources, and more
+Search
+Search
+Helpful Links
+Advanced Data Search
+Get Survey Help
+Census Bureau Data and Maps
+American Community Survey (ACS)
+Census Records & Genealogy
+Helpful Links
+Advanced Data Search
+Get Survey Help
+Census Bureau Data and Maps
+American Community Survey (ACS)
+Census Records & Genealogy
+Search
+Menu
+Topics
+Browse our topics and subtopics to find information and data.
+View All Topics and Subtopics
+Index A to Z
+Age and Sex
+Business and Economy
+Education
+Emergency Management / Disasters
+Employment
+Families and Living Arrangements
+Geography
+Health
+Hispanic Origin
+Housing
+Income and Poverty
+International Trade
+Migration/Geographic Mobility
+Population
+Population Estimates
+Public Sector
+Race
+Redistricting
+Research
+Voting and Registration
+Data & Maps
+Access demographic, economic and population data from the U.S. Census Bureau. Explore census data with visualizations and view tutorials.
+Explore data on data.census.gov
+View all data resources
+Census Academy
+Combining Data
+Data Tools and Apps
+Datasets
+Developers
+Experimental Data Products
+Interactive Maps
+Mapping Files
+Profiles
+Related Sites
+Software
+Tables
+Training and Workshops
+Visualizations
+Surveys & Programs
+Our surveys provide periodic and comprehensive statistics about the nation. This data is critical for government programs, policies, and decision-making.
+Survey Help
+View all Surveys & Programs
+2020 Census
+2026 Census Test
+2030 Census
+American Community Survey (ACS)
+American Housing Survey (AHS)
+Annual Business Survey (ABS)
+Annual Integrated Economic Survey (AIES)
+County Business Patterns (CBP)
+Current Population Survey (CPS)
+Economic Census
+Household Pulse Survey
+International Programs
+Metro and Micro Areas
+Population Estimates
+Population Projections
+Small Area Income and Poverty
+Statistics of U.S. Businesses
+Survey of Income and Program Participation (SIPP)
+Resource Library
+Browse our collection of stories and more.
+View all library resources
+Glossary
+America Counts: Stories
+Audio
+Blogs
+Facts for Features
+Fact Sheets
+Infographics and Visualizations
+Publications
+Spotlights
+Stats for Stories
+Training (Census Academy)
+Videos
+Working Papers
+Topics
+Data & Maps
+Surveys & Programs
+Resource Library
+Topics
+Data & Maps
+Surveys & Programs
+Resource Library
+Partners
+Researchers
+Educators
+Survey Respondents
+News
+NAICS Codes
+Jobs
+About Us
+Contact Us
+Help
+View All Topics and Subtopics
+Index A to Z
+Age and Sex
+Business and Economy
+Education
+Emergency Management / Disasters
+Employment
+Families and Living Arrangements
+Geography
+Health
+Hispanic Origin
+Housing
+Income and Poverty
+International Trade
+Migration/Geographic Mobility
+Population
+Population Estimates
+Public Sector
+Race
+Redistricting
+Research
+Voting and Registration
+Explore data on data.census.gov
+View all data resources
+Census Academy
+Combining Data
+Data Tools and Apps
+Datasets
+Developers
+Experimental Data Products
+Interactive Maps
+Mapping Files
+Profiles
+Related Sites
+Software
+Tables
+Training and Workshops
+Visualizations
+Survey Help
+View all Surveys & Programs
+2020 Census
+2026 Census Test
+2030 Census
+American Community Survey (ACS)
+American Housing Survey (AHS)
+Annual Business Survey (ABS)
+Annual Integrated Economic Survey (AIES)
+County Business Patterns (CBP)
+Current Population Survey (CPS)
+Economic Census
+Household Pulse Survey
+International Programs
+Metro and Micro Areas
+Population Estimates
+Population Projections
+Small Area Income and Poverty
+Statistics of U.S. Businesses
+Survey of Income and Program Participation (SIPP)
+View all library resources
+Glossary
+America Counts: Stories
+Audio
+Blogs
+Facts for Features
+Fact Sheets
+Infographics and Visualizations
+Publications
+Spotlights
+Stats for Stories
+Training (Census Academy)
+Videos
+Working Papers
+//
+Census.gov
+/
+Our Surveys & Programs
+/
+Nonemployer Statistics
+/
+About This Program
+/
+Nonemployer Glossary
+Glossary
+Skip Navigation
+Within About This Program
+FAQs
+Glossary
+Within About This Program
+Within About This Program
+FAQs
+Glossary
+Nonemployer Statistics Glossary
+The glossary below defines terms included in the Nonemployer Statistics (NES) program.
+Abbreviations and Symbols
+The following abbreviations and symbols are used with the NES data:
+S
+Withheld to avoid releasing data that do not meet publication standards; data are included in broader industry totals.
+N
+Not available or not comparable.
+G
+Low noise - indicates the cell value was changed by less than 2 percent by the application of noise
+H
+Moderate noise - indicates the cell value was changed by 2 percent or more but less than 5 percent by the application of noise
+J
+High noise - indicates the cell value was changed by 5 percent or more by the application of noise
+Combined Statistical Area (CSA)
+CSAs consist of two or more adjacent metropolitan and/or micropolitan areas that have substantial employment interchange. Because CSAs represent groupings of metropolitan and/or micropolitan statistical areas, they should not be ranked or compared with individual metropolitan and micropolitan statistical areas.
+Firms or Establishments
+Generally, an establishment is a single physical location at which business is conducted, services are rendered, or industrial operations are performed. However, NES counts each distinct business income tax return as a firm. For NES, the terms firm, business, and establishment are used interchangeably. Since a nonemployer business may operate from its owner's home address or from an unspecified physical location, most geography codes are derived from the business owner's mailing address, which may not be the same as the physical location of the business activity.
+Legal Form of Organization (LFO)
+LFO is derived from administrative records data sources. The following LFOs are included in the NES program:
+C-Corporation and other corporate legal forms of organization: An incorporated business that is granted a charter recognizing it as a separate legal entity having its own privileges and liabilities distinct from those of its members.
+Partnership: An unincorporated business where two or more persons join to carry on a trade or business with each having a shared financial interest in the business.
+Sole proprietorship: Also referred to as a "individual proprietorship," an unincorporated business with a sole owner. Also included in this category are self-employed persons.
+S-Corporations: A form of corporation where the entity does not pay any federal income taxes. The corporation's income or losses are divided among and passed to its shareholders. The shareholders must then report the income or loss on their own individual income tax returns.
+Metropolitan/Micropolitan Statistical Area (MSA)
+MSA is a core area containing a substantial population nucleus, together with adjacent communities having a high degree of economic and social integration with that core.
+Each metropolitan statistical area must have at least one urbanized area of 50,000 or more inhabitants. Each micropolitan statistical area must have at least one urban cluster of at least 10,000 but less than 50,000 population. Metropolitan and micropolitan statistical areas can be collectively referred to as "Core Based Statistical Areas" (CBSAs); however, NES uses the term MSA.
+Noise Infusion
+Noise infusion is a method of disclosure avoidance in which a random noise multiplier is applied to certain data values for each business prior to table creation. Disclosure protection is accomplished in a manner that results in a relatively small change in the majority of tabulated values.
+Nonemployer
+A nonemployer business is one that has no paid employees, has annual business receipts of $1,000 or more ($1 or more in the Construction industry), and is subject to federal income taxes.
+North American Industry Classification System (NAICS)
+NAICS is the standard used by Federal statistical agencies in classifying business establishments for the purpose of collecting, analyzing, and publishing statistical information related to the U.S. business economy.
+Receipts
+Includes gross receipts, sales, commissions, and income from trades and businesses, as reported on annual business income tax returns. Business income consists of all payments received for services rendered.
+The composition of nonemployer receipts may differ from receipts data published for employer establishments. Nonemployer receipts may include commissions or earnings. In contrast, for employers the sales and receipts items published (for example, in the Economic Census) represents only the value of the goods involved in the transaction.
+Receipts Size Class
+The receipts size class provides the number of establishments by the dollar value of reported receipts at the U.S. level only. The receipts size class is derived from the original receipts reported before noise is applied. This may cause a slight difference between the tabulated total establishment value and the value shown for a receipts size class. Receipts size class was first published with the 2009 reference year.
+Reference Year
+The reference year is the year for which the data are published. NES data are released approximately 17 months after the conclusion of the reference year.
+Share
+Facebook
+X (Twitter)
+LinkedIn
+Related Information
+About the Nonemployer Statistics Program
+Nonemployer Data
+Page Last Revised - July 30, 2024
+✕
+Is this page helpful?
+Yes
+No
+✕
+NO THANKS
+255 characters maximum
+255 characters maximum reached
+✕
+Thank you for your feedback.
+Comments or suggestions?
+Top
+Back to Header
+Receive Updates
+To sign up for updates please enter your email address.
+Enter your email address
+Subscribe
+Stay Current
+America Counts
+Director’s Blog
+Deputy Director’s Blog
+Random Samplings
+Research Matters
+Stay Connected
+Contact
+Support
+Jobs
+Follow
+Information Quality
+|
+Data Linkage Infrastructure
+|
+Data Protection and Privacy Policy
+|
+Accessibility
+|
+FOIA
+|
+Inspector General
+|
+No FEAR Act
+|
+U.S. Department of Commerce
+|
+USA.gov
+Measuring America's People and Economy

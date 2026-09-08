@@ -1,0 +1,24 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 08 Sep 2026 15:01:43 GMT
+content-type: text/html; charset=UTF-8
+accept-ranges: bytes
+speculation-rules: "/cdn-cgi/speculation"
+x-content-type-options: nosniff
+content-security-policy: default-src 'self' 'unsafe-inline' 'unsafe-eval' mailto: data: census.gov *.census.gov http://www.census.gov house.gov *.house.gov senate.gov *.senate.gov *.ssa.gov *.shorthand.com *.ytimg.com *.youtube.com *.twitter.com *.facebook.net *.facebook.com *.google-analytics.com *.google.com *.gstatic.com *.googleapis.com *.googlecode.com *.googletagmanager.com *.doubleclick.net *.jquery.com *.govdelivery.com *.highcharts.com *.adobe.com *.adobedtm.com *.amsadobe.com *.demdex.net *.omtrdc.net *.everesttech.net *.arcgisonline.com *.digitalgov.gov *.tableau.com *.instagram.com *.static.cloudflareinsights.com https://static.cloudflareinsights.com *.go-mpulse.net *.askstat.io *.c-span.org sitecatalyst.omniture.com authorize.omniture.com;
+x-xss-protection: 1; mode=block
+cache-control: no-store
+x-frame-options: SAMEORIGIN
+vary: Origin
+referrer-policy: strict-origin-when-cross-origin
+strict-transport-security: max-age=31536000
+cf-cache-status: DYNAMIC
+set-cookie: HttpOnly;Secure
+set-cookie: K755t7m=!KQEBMbIbMm3YWVwcnn9WbOOXwLuwndnd8PV70uYm3/y+UxzXgZZgPL7qnFaAPEZPjHljNkI6qXW7DQ==; path=/; Httponly; Secure
+set-cookie: TS01a30f36=01283c52a4924c556c118bda9ed7d1c3dee94fcae60f7847e06ca82ceb4d8337f8ecf070b6bbb39408f7099abb9d1be01e57af407a; Path=/; Domain=.www.census.gov; Secure; HttpOnly
+set-cookie: __cf_bm=5h_3IwFkvAJpOyxU9knZpxghgS7MvAqfcNkdQi2Jfag-1788879703.5881174-1.0.1.1-A0jtp.3LCcBXB3ObvYjuKyGVabA66O8SDwj_FAjqef6Jh2Ko2vVyLytEwFV3OvjXEFQs252YYixj09h4DaT5Jk9kCIvz9_EHpi384FW2NRncB_Nvg8p88cIGs.rMCUJG; HttpOnly; SameSite=None; Secure; Path=/; Domain=www.census.gov; Expires=Tue, 08 Sep 2026 15:31:43 GMT
+expect-ct: max-age=86400, enforce
+server: cloudflare
+cf-ray: a37ed483694d728d-EWR
+
