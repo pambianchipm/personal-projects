@@ -9,6 +9,14 @@ d51e79d86140c519  gtm/raise/deck/gap-list-2026-09-04.md
 8ffc0a319843ad33  gtm/raise/model/snapshots/2026-09-08-shift28-g16-nes-rederivation.md
 ```
 The reviewer re-derives the target and says so.
+
+**ROUND 1 VERDICT FILED (`1dedb11`): FAIL, 3 MF / 9 SF; freeze held. All twelve applied as new drafts. GATE CONVENED 2026-09-08T14:37:05Z — round 2, hostile investor, THE LAST ROUND UNDER AS-1. TARGET: `5eafcb6` (5eafcb60ed0106de0d405ab2c6557ab2eb197499). FROZEN again; `lock.md` and `ops-log.md` only.** READY FOR REVIEW entry for round 2 written and committed before the target. File digests at the target (`git show 5eafcb6:<path> | sha256sum`, first 16 hex):
+```
+6b0adc7d1c76f7b6  gtm/raise/model/assumptions.md
+0820b3706ce7bb32  gtm/raise/deck/slide-04-market-size-v1.md
+c43c79b58ee26785  gtm/raise/deck/gap-list-2026-09-04.md
+c99b6e57706541b1  gtm/raise/model/snapshots/2026-09-08-shift28-g16-nes-rederivation.md
+```
 ---
 
 # PREVIOUS HANDOFF, PRESERVED VERBATIM
