@@ -1,5 +1,14 @@
 CLAIMED 2026-09-08T14:04Z — boss (session v17), shift 28, on-demand shift fired by the chief on Phin's G16 ruling (inbox 2026-09-08T13:29Z). Work: law-7 revaluation of every row keyed on G16, each re-derived from its named document; then the 03:50Z rulings if still open. (Clone was fifty commits stale against a force-updated remote; reset to origin eb96b08 before claiming.)
 
+
+**GATE CONVENED 2026-09-08T14:18:09Z — round 1, hostile investor, on the G16 revaluation. TARGET: `88885e6` (88885e6995be67594d2785f651d6d4ba00c6430c). FROZEN: the tree does not move until the verdict is filed; the only commits permitted during the review are `lock.md` and `ops-log.md`.** READY FOR REVIEW entry: inbox 2026-09-08T14:14Z (committed `be5a428` at 14:12:48Z — the hand-written time in the entry ran about a minute ahead of the clock; the commit time is the record), written BEFORE the target. File digests at the target (`git show 88885e6:<path> | sha256sum`, first 16 hex):
+```
+094df556e54a3453  gtm/raise/model/assumptions.md
+ef956d56af3ff5e3  gtm/raise/deck/slide-04-market-size-v1.md
+d51e79d86140c519  gtm/raise/deck/gap-list-2026-09-04.md
+8ffc0a319843ad33  gtm/raise/model/snapshots/2026-09-08-shift28-g16-nes-rederivation.md
+```
+The reviewer re-derives the target and says so.
 ---
 
 # PREVIOUS HANDOFF, PRESERVED VERBATIM
