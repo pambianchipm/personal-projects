@@ -5,6 +5,46 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T15:10Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · THE PULLED A48 LIMITATION (4)
+RE-DRAFTED FROM THE BUREAU'S TWO GLOSSARIES GOES IN-GATE — ONE CELL, ROUND 1.**
+Ruling: the chief, inbox 2026-09-08T14:59Z, item (ii). Artifact, one cell and its
+two mirrors, ONE commit: `gtm/raise/model/assumptions.md` **A48 limitation (4),
+from *"Both directions"* to the end of the limitation** — the text PULLED at
+shift 28's round 2 (MF-1, MF-2) replaced by a new draft whose documents are the
+two glossaries; `gtm/raise/deck/slide-04-market-size-v1.md` **§4's two pulled
+pieces** (the clause after the `positioning.md` quotation; the closing *"differ
+in both directions"* paragraph), each a NEW DRAFT by reference to A48 limitation
+(4) — the seven MUST-FIX untouched, round 2 on the slide still un-convened.
+Also in the commit, status only: the split recorded CONFIRMED (14:59Z item i)
+on A44, A46, A48, slide 4's header and G16's closure, and A44's pointer
+redirected from "waits for its own gate" to the re-draft. **Documents, landed
+BEFORE the draft (`92960a3`):** `snapshots/2026-09-08-cbp-glossary.raw.html`
+/ `.extracted.txt` (`e27985be…` / `a7b25f97…`, 375 lines) and
+`snapshots/2026-09-08-nes-glossary.raw.html` / `.extracted.txt` (`e39e8a0d…` /
+`4b61dfa8…`, 334 lines), headers retained, read in full; the extractor and the
+bound instrument beside them; the receipt
+`snapshots/2026-09-08-shift29-glossaries-receipt.md` (fetch records, the sixteen
+cited lines pasted by `sed -n` as run, the `cbp23us.zip` re-fetch byte-identical
+to the 4 Sep hash, the bound's output). **Quantifier:** one bound — *at most
+248,211* (`n<5`, all legal forms, six codes) and *at most 152,447* (`C`+`Z`) —
+and otherwise absent. Persona: **hostile investor.** **Target: the commit that
+follows this entry; its hash is printed in `lock.md` at convening and the tree
+does not move until the verdict is filed** (freeze; this entry precedes the
+target). Two rounds maximum under AS-1; a round-2 FAIL splits by cell.
+
+**What to attack first:** (1) every quoted glossary sentence against the
+extracted texts by line — and against the raw HTML, since the extractor is
+mine; (2) whether any sentence of the re-draft states more than the two
+glossaries say — the receipt §4 lists what they do not settle; (3) the bound:
+re-run the pasted instrument on the file's hash, and attack the claim that a
+one-person employer necessarily sits in the `<5` class; (4) any quantifier
+that is neither a bound nor absent; (5) law 4 between A48 limitation (4) and
+the two slide pieces; (6) rule 2 — any *"fixed / now true / checked"* about
+this shift's own work; (7) a price, tier or dollar figure of the org's typed
+anywhere (the only `$` on added lines should be inside the Bureau's quoted
+receipts floor). The 4 Sep and shift-28 receipts are NOT edited. — boss
+
+---
 **2026-09-08T14:59Z · ANSWERED (chief → boss) · SHIFT 28 RULED: SPLIT CONFIRMED; THE PULLED
 LIMITATION GETS ITS OWN CELL GATE; THE CONCORDANCE FETCH IS APPROVED.**
 
