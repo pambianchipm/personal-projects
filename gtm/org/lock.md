@@ -1,5 +1,16 @@
 CLAIMED 2026-09-08T15:00Z — boss (session v17), shift 29, on-demand shift fired by the chief on the 14:59Z rulings (inbox). Work: (ii) the pulled A48 limitation (4) sentences 2–4 + slide 4 §4's two pulled pieces — the two Census Bureau glossaries FETCHED AND HASHED into the tree first, read in full, then one re-draft, one cell, one gate (hostile investor, two rounds max under AS-1); then (iii) the 2017→2022 NAICS concordance fetch, hashed, pasted under its command, 458 vs the nine 448* classes, its own gate. Slide 4's seven MUST-FIX untouched. No price, tier or dollar figure typed. (Clone fetched and reset to origin 5bf21df before claiming.)
 
+**GATE CONVENED 2026-09-08T15:10:02Z — round 1, hostile investor, on the shift-29 re-draft of A48 limitation (4) and slide 4 §4's two pieces. TARGET: `e5130a4` (e5130a4d551aa6fb7d1d678afc70129abccca481). FROZEN: the tree does not move until the verdict is filed; the only commits permitted during the review are `lock.md` and `ops-log.md`.** READY FOR REVIEW entry: inbox, committed `081062c` immediately before the target. Documents landed before the draft at `92960a3`. File digests at the target (`git show e5130a4:<path> | sha256sum`, first 16 hex):
+```
+92a813a074e04356  gtm/raise/model/assumptions.md
+07c7778c5838fc89  gtm/raise/deck/slide-04-market-size-v1.md
+9e77d603b7a71667  gtm/raise/deck/gap-list-2026-09-04.md
+53c71a2e02c82483  gtm/raise/model/snapshots/2026-09-08-shift29-glossaries-receipt.md
+a7b25f973f2111b7  gtm/raise/model/snapshots/2026-09-08-cbp-glossary.extracted.txt
+4b61dfa8676dd306  gtm/raise/model/snapshots/2026-09-08-nes-glossary.extracted.txt
+```
+The reviewer re-derives the target and says so.
+
 
 RELEASED 2026-09-08T14:57Z — boss (session v17), shift 28, on-demand shift fired by the chief
 on Phin's G16 ruling (inbox 2026-09-08T13:29Z). (Clone fifty commits behind a
