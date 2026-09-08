@@ -258,11 +258,16 @@ Instagram count as a shop?**
 **What the ruling does to this slide, and what it does not.** The headline
 count (steps 1–5) did not move: its inputs are A42 and A45, and neither is a
 nonemployer figure. **What moved is what the count IS: the employer-firm floor
-of a base ruled larger** — and the population it left out is the one
+of a base ruled larger** — and the population it left out overlaps the one
 `positioning.md` §6 names as the target (*"solo owner-operators of local,
-visual small businesses … with no marketing hire"*, `positioning.md:162–164`),
-so until 8 September the market slide excluded by construction the customer
-the positioning describes. **The ruled-in businesses are not added to the
+visual small businesses [— salons, gyms/studios, restaurants/cafes, boutiques —]
+with no marketing hire"*, `positioning.md:162–164`): a solo owner-operator with
+no employees is a nonemployer, so until 8 September the market slide excluded by
+construction a large part of the customer the positioning describes. **How
+large is ARGUED, not measured** — the positioning's own examples include
+restaurants and gyms, which are 0.2× nonemployer in the table above, and a solo
+owner who is on her own payroll is an employer already inside step 3 (A48,
+limitation 4). **The ruled-in businesses are not added to the
 headline, for three reasons stated rather than assumed:** (1) a matched
 nonemployer count exists for **six of the eighteen classes** and no more — the
 command that establishes the absence is the receipt's section C (every NES
@@ -280,7 +285,7 @@ describes the population: of the 1,276,010 personal-care nonemployers,
 **96.6% are sole proprietorships**, **57.3% report receipts under $25,000** and
 24.1% under $10,000 (the three food classes: 58–63% under $25,000) — read
 through the Bureau's **2017** layout against the **2023** file, the same
-cross-vintage shape as §6 item 6, checked arithmetically the same way, and
+cross-vintage shape as §6 item 6, with the same class-sum test, and
 with the same blind spot: a partition is proven, the dollar boundaries are
 not. **This describes who was ruled in; it says nothing about what any of them
 would pay** (law 6; zero interviews, G1). Nothing on this slide multiplies
@@ -296,10 +301,12 @@ nonemployers is a base weighted toward hair, nails and barbering, and slide 5
 this under G16 as the case against; **it is now a property of the ruled base,
 not an argument against it.** [A44]
 
-**A nonemployer is not necessarily one person.** NES counts businesses with
-no paid employees; corporations and partnerships are among them. The ruling's
-words are *"one person business"*; this slide applies them to the Census
-category that contains those businesses, and says so here. [A48, limitation 4]
+**"One-person business" and "nonemployer" differ in both directions.** NES
+counts businesses with no paid employees, and corporations and partnerships are
+among them; a one-person business whose owner draws a wage is an employer with
+one employee and is already inside step 3. The ruling's words are *"one person
+business"*; this slide applies them to the Census category that contains most
+of those businesses, and says so here. [A48, limitation 4]
 
 ---
 
@@ -378,8 +385,9 @@ rather than filled in.**
   six codes match exactly.
   *(Re-tried 2026-09-08, shift 28, after G16 was ruled: every NES total row
   under the six prefixes printed — receipt section C — and the six-digit rows
-  present are still exactly the matched six plus `722514`; the coarser rows'
-  2022-NAICS titles are wider than the 2017 classes, and the 2017→2022
+  present are still exactly the matched six plus `722514`; by the 2017
+  structure in the CBP file, `81219`, `7139` and `3118` are each a superset of
+  the one slide class they contain (receipt §4, pasted), and the 2017→2022
   concordance was NOT fetched, so whether `458` equals the nine `448*` classes
   is an open item — G20.)*
 - **Any top-down analyst TAM** — deliberately not fetched (law 2).

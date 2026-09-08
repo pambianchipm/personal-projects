@@ -37,14 +37,36 @@ HTTP 200 bytes 44519
 HTTP 200 bytes 750265
 3f9018f807f1ffd7bcbb00690f9792573bc2bc6bb4cfab9df14ca7ab3eac0862  cbp23us.zip
 $ unzip -o -q nonemp23us.zip && unzip -o -q cbp23us.zip
-$ curl -sS -o us_record_layout_2017.txt -w "HTTP %{http_code} bytes %{size_download}\n" \
-    https://www2.census.gov/programs-surveys/nonemployer-statistics/technical-documentation/record-layouts/us-record-layout/us_record_layout_2017.txt
+$ for u in https://www2.census.gov/programs-surveys/nonemployer-statistics/technical-documentation/record-layouts/us-record-layout/us_record_layout_2017.txt \
+           https://www2.census.gov/programs-surveys/nonemployer-statistics/technical-documentation/code-lists/nes_naics22.txt; do
+    f=$(basename $u); date -u +%Y-%m-%dT%H:%M:%SZ
+    curl -sS -o $f -w "HTTP %{http_code} bytes %{size_download} $f\n" "$u"; sha256sum $f; done
 2026-09-08T14:09:43Z
 HTTP 200 bytes 4265 us_record_layout_2017.txt
-$ curl -sS -o nes_naics22.txt -w "HTTP %{http_code} bytes %{size_download}\n" \
-    https://www2.census.gov/programs-surveys/nonemployer-statistics/technical-documentation/code-lists/nes_naics22.txt
+51e8d2915595e8aea1c27eec6e17eb0c0ca32885a8ae7a94f011179ad01f8626  us_record_layout_2017.txt
 2026-09-08T14:09:44Z
 HTTP 200 bytes 19280 nes_naics22.txt
+e79c488b7c7f99874134971b3dfa155c048e1f8e7ac293b4ec55dc51feff18e1  nes_naics22.txt
+$ curl -sS https://www2.census.gov/programs-surveys/nonemployer-statistics/technical-documentation/record-layouts/us-record-layout/ | grep -o 'href="[^"]*"' | grep -i "file\|layout"     # 2026-09-08T14:32:55Z
+href="/programs-surveys/nonemployer-statistics/technical-documentation/record-layouts/"
+href="United%20States%20File%201997-2001.docx"
+href="United%20States%20File%202002-2003.docx"
+href="United%20States%20File%202004-2006.docx"
+href="United%20States%20File%202007.docx"
+href="United%20States%20File%202008.docx"
+href="United%20States%20File%202009-2013.docx"
+href="United%20States%20File%202014.docx"
+href="United%20States%20File%202015.txt"
+href="us_record_layout_2017.txt"
+$ date -u +%Y-%m-%dT%H:%M:%SZ; curl -sS -o us_layout_2015.txt -w "HTTP %{http_code} bytes %{size_download}\n" "https://www2.census.gov/programs-surveys/nonemployer-statistics/technical-documentation/record-layouts/us-record-layout/United%20States%20File%202015.txt"; sha256sum us_layout_2015.txt
+2026-09-08T14:32:56Z
+HTTP 200 bytes 5233
+d5342f74e451ebe91cd0b2c438e03dbd31df7a36075a6b05bfc6d4296752c477  us_layout_2015.txt
+$ grep -n '"111"\|"119"\|"1411"\|"S" - Sole' us_layout_2015.txt
+25:                                  "S" - Sole Proprietorships
+31:                                         "111" - less than $5,000 
+33:                                         "119" - $10,000 - $24,999
+41:                                         "1411" - greater than $5,000,000 
 $ sha256sum nonemp23us.zip nonemp23us.txt cbp23us.zip cbp23us.txt us_record_layout_2017.txt nes_naics22.txt
 420e37afbf7c05f3cd399316e59f21df9022efc0fcde8c965354c920f9329576  nonemp23us.zip
 2bf4e3e6cef01bcc22ea397f49977324d1c1b428ac4c8c2d9a0901e6965a2bec  nonemp23us.txt
@@ -70,17 +92,19 @@ $ wc -c nonemp23us.zip nonemp23us.txt cbp23us.zip cbp23us.txt us_record_layout_2
 | → `cbp23us.txt` | `1d8dbbfa…a54b` | `1d8dbbfa…a54b` | **YES — 3,801,025 B** |
 | `us_record_layout_2017.txt` | — (not fetched 4 Sep) | `51e8d291…8626` | NEW, 4,265 B |
 | `nes_naics22.txt` | — (not fetched 4 Sep) | `e79c488b…18e1` | NEW, 19,280 B |
+| `United States File 2015.txt` (NES US layout, 2015) | — | `d5342f74…c477` | NEW, 5,233 B — fetched after round 1 (SF-1) |
 
 **So every figure below is computed from the same bytes the 4 Sep receipt
-hashed.** The two new files are the NES US record layout (the Bureau's newest
-plain-text layout is dated **2017**; the directory lists `.docx` for earlier
-years and nothing later — `curl` of the `us-record-layout/` listing, 14:08:51Z)
-and the 2022-NAICS code list NES 2023 uses.
+hashed.** The new files are the NES US record layouts — the listing above, pasted (round-1 SF-1: the first draft described it as *".docx for earlier years"*, and 2015 is a `.txt`), shows `.docx` for 1997–2014, a `.txt` for 2015, `us_record_layout_2017.txt`, and nothing later; the 2015 layout carries the same `LFO` strings and the same `RCPTOT_SIZE` bands as the 2017 one (the `grep -n` above), two layout vintages agreeing on the codes this receipt reads — and the 2022-NAICS code list NES 2023 uses. *(Round-1 MF-1: the first draft of this section pasted the two layout/code-list fetches under a command that could not have printed them — a `-w` string without the filename and no `date`; the loop above is what ran, with its three output lines each.)*
 
 ## 2. THE INSTRUMENT, AND ITS OUTPUT AS RUN
 
 Instrument: `2026-09-08-shift28-g16-nes-rederivation.py` (this directory). It
-types no figure; every number below is read from the two `.txt` files.
+types no figure; every number below is read from the two `.txt` files, which it
+expects in its working directory. **The data is not in `snapshots/`** (round-1
+SF-7); to re-run: fetch and unzip per §1 into any directory, copy the script
+there (`cp gtm/raise/model/snapshots/2026-09-08-shift28-g16-nes-rederivation.py .`),
+and run it from that directory as below.
 
 ```
 $ date -u +%Y-%m-%dT%H:%M:%SZ; python3 2026-09-08-shift28-g16-nes-rederivation.py
@@ -193,17 +217,36 @@ printed. The six-digit rows present under those prefixes are exactly
 **Nothing at six digits exists for `812199`, `713940`, `311811` or any `448*`
 class.**
 
-**Why the coarser rows are not used as matches, with the attempt behind it:**
-`nes_naics22.txt` titles them *3118 Bakeries and Tortilla Manufacturing* ·
-*458 Clothing, Clothing Accessories, Shoe, and Jewelry Retailers* · *7139 Other
-Amusement and Recreation Industries* · *81219 Other Personal Care Services*
-(`grep` of the code list, 14:09Z). Each is a 2022-NAICS aggregate whose title is
-wider than, or differently cut from, the 2017 six-digit class it would stand
-in for (tortilla manufacturing beside retail bakeries; every amusement industry
-beside fitness centres). **A 2017→2022 concordance was NOT fetched this shift**,
-so whether `458` equals the nine `448*` classes in scope is an OPEN ITEM, not a
-limitation — recorded in gap-list **G20**. The 4 Sep receipt's judgement stands:
-six codes match exactly and only those are compared.
+**Why the coarser rows are not used as matches, with the attempt behind it
+(re-drafted after round 1, MF-3 — the first draft said their titles were
+*"wider than, or differently cut from"* the 2017 classes on the strength of the
+code list, and for `81219` the code list's title is the same string as CBP's
+`812199`; the sentence below rests on the CBP file instead).** `nes_naics22.txt`
+titles them *3118 Bakeries and Tortilla Manufacturing* · *458 Clothing, Clothing
+Accessories, Shoe, and Jewelry Retailers* · *7139 Other Amusement and Recreation
+Industries* · *81219 Other Personal Care Services*. What the CBP 2023 file (2017
+NAICS, `lfo='-'`) contains under the same prefixes, pasted as run:
+
+```
+$ cd <the directory holding cbp23us.txt>    # 2026-09-08T14:34:55Z
+$ python3 -c "import csv;r=[x for x in csv.DictReader(open(\"cbp23us.txt\",newline=\"\",encoding=\"latin-1\")) if x[\"lfo\"].strip()==\"-\"];[print(p,[(x[\"naics\"].strip(),int(x[\"est\"])) for x in r if x[\"naics\"].strip().startswith(p) and len(x[\"naics\"].strip())==6 and x[\"naics\"].strip().isdigit()]) for p in (\"81219\",\"7139\",\"3118\",\"448\")]"
+81219 [('812191', 2481), ('812199', 31863)]
+7139 [('713910', 10076), ('713920', 348), ('713930', 3739), ('713940', 41556), ('713950', 3154), ('713990', 22786)]
+3118 [('311811', 9219), ('311812', 2842), ('311813', 237), ('311821', 461), ('311824', 390), ('311830', 428)]
+448 [('448110', 6582), ('448120', 26279), ('448130', 3666), ('448140', 27986), ('448150', 7488), ('448190', 11286), ('448210', 18177), ('448310', 19897), ('448320', 801)]
+```
+
+So by the 2017 structure the NES rows `81219`, `7139` and `3118` are each
+**supersets** of the one slide-4 class they contain (`812199` beside `812191`;
+`713940` beside five others; `311811` beside five others), and none can stand in
+for its class. `448` in the CBP file is exactly the nine slide-4 apparel classes;
+whether 2022's `458` is co-extensive with 2017's `448` **was not established** —
+**the 2017→2022 concordance was NOT fetched this shift** — so `458` is an OPEN
+ITEM, recorded in gap-list **G20**. *Blind spot: the superset finding reads the
+2017 hierarchy from the CBP file and the 2022 titles from the code list; neither
+is a concordance, and a 2022 revision that moved a six-digit class between
+four-digit parents would be invisible to both.* The 4 Sep receipt's judgement
+stands: six codes match exactly and only those are compared.
 
 ## 5. WHAT SECTION D–E ESTABLISH — two cuts the ruling makes load-bearing, and the blind spot in the read
 
@@ -211,11 +254,18 @@ Section D reads the file's `RCPTOT_SIZE` classes through the **2017** layout
 (`"111" - less than $5,000 · "118" - $5,000–$9,999 · "119" - $10,000–$24,999 ·
 "121" - $25,000–$49,999 · "122" - $50,000–$99,999 …`, layout lines as fetched)
 against a **2023** file — the same cross-vintage shape as the 4 Sep receipt's
-CBP read, and checked the same way: for each of the seven codes the class rows
-present sum to the `001` total exactly for the four personal-care rows and to
-**2 and 1 short** for `722511` and `722513` (the `133` class row is absent from
-the file for the three food codes — no row, not a flagged row; the residual sits
-there or in noise infusion, flag `G` on every row read). **The blind spot, in
+CBP read, with the same class-sum test (the 2015 layout, fetched after round 1,
+carries the same bands — §1): for each of the seven codes the class rows present
+were summed against the `001` row — **exact for five** (`812111`, `812112`,
+`812113`, `81211`, `722515`) and **2 and 1 short** for `722511` and `722513`
+(the `133` class row is absent from the file for the three food codes — no row,
+not a flagged row). Flags on the 67 rows read, as the file carries them
+(round-1 SF-2 — the first draft said *"flag `G` on every row read"*, which is
+false for 60 of them): `RCPTOT_N_F` is `G` (low noise) on the seven `001` rows
+and `N` (*"not available or not comparable"*) on all 60 class rows; `ESTAB_F` is
+blank on every row of the file (non-blank count → 0). Where the 2- and
+1-establishment residuals sit is therefore not stated by any flag; the absent
+`133` row is the only candidate the file shows. **The blind spot, in
 the same breath:** the arithmetic proves the class rows partition the total by
 *some* receipts variable; it does not prove the 2023 boundaries are the dollar
 bands the 2017 layout names. Section E reads `LFO` codes through the same
@@ -239,6 +289,11 @@ license no conclusion about willingness to pay** — that is a customer question
   and the six-code slice is not the eighteen-class base. A48 is a count of
   businesses the ruling brought in; it is not added to A46 and not multiplied
   by A45 (see the rows).
-- **The 4 Sep receipt is NOT edited.** It is a RAW CAPTURE dated 2026-09-04
-  and still reads *"an unmade Phin ruling"*; whether a dated pointer belongs on
-  it is put to the gate.
+- **The 4 Sep receipt is NOT edited.** It is a RAW CAPTURE dated 2026-09-04.
+  *(Round-1 MF-2: the first draft of this bullet quoted it as reading "an unmade
+  Phin ruling" — a phrase that file never contained; `grep -c unmade` on it → 0.
+  Those were A44's own words, struck this shift.)* What the capture says, its
+  lines 138–141: *"Whether a booth-renting stylist is "a shop" therefore moves the
+  count by more than any other single decision in the model"* — true before and
+  after the ruling. The gate's answer, adopted: a frozen capture stays as
+  written; the ruling's pointer lives in A44, not on the capture.
