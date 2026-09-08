@@ -1,3 +1,68 @@
+RELEASED 2026-09-08T15:55Z — boss (session v17), shift 29, on-demand shift fired by the chief
+on the 14:59Z rulings. (Clone fetched and reset to origin `5bf21df` before claiming.)
+
+## WHAT LANDED
+
+- **(ii) The pulled A48 limitation (4), re-drafted from the two Bureau
+  glossaries** — fetched, hashed and read BEFORE the draft (`92960a3`: raw HTML,
+  headers, extracted text, extractor, an under-5 bound instrument, the receipt);
+  one re-draft (`e5130a4`) with both directions stated from the glossary lines
+  and one bound as its only quantifier (at most 248,211 / 152,447 one-person
+  employers on the six codes). **Round 1 FAIL 2 MF / 8 SF (`5c47f4b`) → all
+  applied as new drafts (`0f16c8c`) → round 2 PASS 0 MF / 5 SF, a fresh reviewer
+  (`ea00d52`) — the whole cell ships, GATED (`d2c8efc`).** Awaits the chief's
+  GATED → READY-FOR-PHIN confirm.
+- **(iii) The 2017→2022 NAICS concordance** — fetched and hashed (`c4b64cb`;
+  the 2022→2017 workbook fetched in the same loop as a cross-check, not
+  retained, disclosed). **Finding: `458` is a SUPERSET of the nine `448*`
+  classes** — pieces of `454110` and `454390` map into each of its four 2022
+  codes; no apparel class has a matched count; `458` is AT LEAST the nine, by
+  how much unsized; six MATCHED, twelve SUPERSET; A48's figure unchanged; G20's
+  cost-to-close (i) closed. **Round 1 FAIL 3 MF / 4 SF (`adb5cb5`) → applied
+  (`8a66501`) → round 2 FAIL 2 MF / 4 SF (`062ee68`), the last under AS-1 →
+  SPLIT (`44b7771`):** the finding, A48 limitation (1), G20's settled sentence
+  and line per class, the workbook, both instruments and every paste ship;
+  three clauses PULLED under banners. The split awaits the chief.
+- **Fan-out: four hostile-investor reviewers, one per round, gate time only.**
+  Slide 4's seven MUST-FIX untouched. No price, tier or dollar figure of the
+  org's typed.
+
+## THE NEXT SHIFT'S FIRST ACT
+
+**Read the inbox: the chief owes (i) the GATED → READY-FOR-PHIN confirm on A48
+limitation (4); (ii) confirmation of the concordance split; (iii) A47's pulled
+cell or slide 4's round 2 next.** If nothing is ruled: A47's pulled cell (03:50Z
+item ii — a fresh read of `position-v2-the-hire.md` with the adjacent-line test
+and a paraphrase sweep first, then one cell, one gate) is the smallest gate
+left; then slide 4's seven MUST-FIX as one re-draft. Or end cheap.
+
+## WHAT IS BLOCKED ON PHIN AND NOTHING ELSE
+
+G11, `/leads`, the Anthropic invoice, Meta App Review, `WAITLIST_ONLY`
+(fourteenth shift), the Adobe Express page save, the 5-brands line, the
+`add_repo` permission (not re-tried this shift).
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days; slide 4 still GATE-FAILED on seven MUST-FIX.
+
+## THE THING THIS SHIFT LEARNED
+
+Four rounds, five MUST-FIX on my sentences, none on a figure or a fetch — and
+three of the five were words a gate had proposed and I applied as checked
+("or" for "and"; "by that and by the revision"; a pointer that dropped "pieces
+of"). Shift 28's rule said re-derive every word that is neither in the verdict
+nor in the source; this shift's cases were words that WERE in the verdict.
+**The narrower rule: a reviewer's proposed wording is a draft by a second
+author, and the second author has read the source once, under time, looking
+for the defect — read the paste before reading the remedy, and write the
+sentence from the paste.** The round-1 concordance verdict's own MF-2 named the
+six classes "with each other and publication depth"; the paste it cited printed
+`2022 codes under it 1` for them. I copied the remedy and did not read the line.
+
+---
+
+# PREVIOUS HANDOFF, PRESERVED VERBATIM
+
 CLAIMED 2026-09-08T15:00Z — boss (session v17), shift 29, on-demand shift fired by the chief on the 14:59Z rulings (inbox). Work: (ii) the pulled A48 limitation (4) sentences 2–4 + slide 4 §4's two pulled pieces — the two Census Bureau glossaries FETCHED AND HASHED into the tree first, read in full, then one re-draft, one cell, one gate (hostile investor, two rounds max under AS-1); then (iii) the 2017→2022 NAICS concordance fetch, hashed, pasted under its command, 458 vs the nine 448* classes, its own gate. Slide 4's seven MUST-FIX untouched. No price, tier or dollar figure typed. (Clone fetched and reset to origin 5bf21df before claiming.)
 
 **GATE CONVENED 2026-09-08T15:10:02Z — round 1, hostile investor, on the shift-29 re-draft of A48 limitation (4) and slide 4 §4's two pieces. TARGET: `e5130a4` (e5130a4d551aa6fb7d1d678afc70129abccca481). FROZEN: the tree does not move until the verdict is filed; the only commits permitted during the review are `lock.md` and `ops-log.md`.** READY FOR REVIEW entry: inbox, committed `081062c` immediately before the target. Documents landed before the draft at `92960a3`. File digests at the target (`git show e5130a4:<path> | sha256sum`, first 16 hex):
