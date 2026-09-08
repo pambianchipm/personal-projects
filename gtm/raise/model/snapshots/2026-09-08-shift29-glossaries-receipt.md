@@ -4,8 +4,11 @@ CONFIDENTIAL — Lane A raise artifact (law 8). Internal-audit class.
 STATUS: RECEIPT (not an artifact; the documents and instrument behind the
 shift-29 re-draft of `assumptions.md` A48 limitation (4) — the part PULLED at
 shift 28's round 2 — and the two pulled pieces of slide 4 §4). Written by the
-GTM boss, shift 29, 2026-09-08. Law 7: the re-draft it supports is gated on its
-own; this receipt's status follows that gate's verdict.
+GTM boss, shift 29, 2026-09-08. Law 7: the re-draft it supports was GATED on its
+own — round 1 FAIL 2 MF / 8 SF at `e5130a4`, round 2 PASS 0 MF / 5 SF at
+`0f16c8c` (`gtm/org/reviews/2026-09-08-shift29-a48-lim4-glossaries-hostile-investor-r{1,2}.md`);
+round-2 SF-2, SF-3, SF-4, SF-5c drafted here after the verdict, by the boss,
+not re-gated.
 
 **First breath:** Player 2 is an AI marketing employee for small businesses.
 This file is the re-runnable record of two documents nobody in this org had
@@ -93,7 +96,8 @@ shift-28 receipt names for the 2017 layout).
 ## 2. THE LINES THE RE-DRAFT RELIES ON — quoted from the extracted texts, as run
 
 Every sentence the re-draft states about either program is one of these lines
-or a plain consequence of two of them. `cut -c1-260` is applied to the paste
+or a plain consequence of two of them (round-2 SF-3: cbp:302 and nes:261–264
+were quoted by the drafts before they were pasted here; rows 11–12). `cut -c1-260` is applied to the paste
 below for width only; the files carry the full lines.
 
 ```
@@ -152,6 +156,20 @@ $ grep -n -i 'nonemployer\|paid employ\|sole propriet\|salaried officer\|receipt
 2026-09-08-nes-glossary.extracted.txt:287:Nonemployer Data
 ```
 
+Added after round 2 (SF-3 — the index above was one line short of what the re-draft quotes), run 2026-09-08T15:32:54Z:
+
+```
+$ date -u +%Y-%m-%dT%H:%M:%SZ
+2026-09-08T15:32:54Z
+$ sed -n 302p 2026-09-08-cbp-glossary.extracted.txt
+Non-profit  - An organization that does not distribute surplus funds to its owners or shareholders, but instead uses surplus funds to help pursue its goals. Most non-profit organizations are exempt from income taxes.
+$ sed -n 261,264p 2026-09-08-nes-glossary.extracted.txt | cut -c1-120
+C-Corporation and other corporate legal forms of organization: An incorporated business that is granted a charter recogn
+Partnership: An unincorporated business where two or more persons join to carry on a trade or business with each having 
+Sole proprietorship: Also referred to as a "individual proprietorship," an unincorporated business with a sole owner. Al
+S-Corporations: A form of corporation where the entity does not pay any federal income taxes. The corporation's income o
+```
+
 **The definitions, in the words the re-draft leans on** (the full lines are
 above and in the files):
 
@@ -166,6 +184,8 @@ above and in the files):
 | 7 | Sole proprietorship (CBP / NES) | cbp:300 / nes:263 | *"An unincorporated business with a sole owner."* / the same, plus *"Also included in this category are self-employed persons."* |
 | 8 | Partnership | cbp:301 | *"An unincorporated business where two or more persons join …"* |
 | 9 | Firms or establishments (NES) | nes:258 | *"NES counts each distinct business income tax return as a firm. For NES, the terms firm, business, and establishment are used interchangeably."* |
+| 11 | Non-profit (CBP) | cbp:302 | *"Most non-profit organizations are exempt from income taxes."* |
+| 12 | Legal forms (NES) | nes:261–264 | C-Corporation, Partnership, Sole proprietorship, S-Corporations — the four forms NES lists |
 | 10 | Receipts size class (NES) | nes:278 | *"… by the dollar value of reported receipts at the U.S. level only … derived from the original receipts reported before noise is applied."* |
 
 **What the round-2 verdict quoted and what the page says:** the verdict's
@@ -233,7 +253,8 @@ receipt), so that reading is the shift-28 receipt's and is a blind spot here.
 `S` and `P` are excluded from the corporate-forms figure on rows 3, 6, 7, 8: a sole
 proprietor or partner cannot be their own paid employee. `N` and `O` (306 and
 159 in the class) are outside that figure by its scope only — nothing in either
-glossary keeps a non-profit's one person off its payroll — so the figure with
+glossary keeps a non-profit's one person off its payroll, on the same undefined
+letter mapping that reads `N` as the non-profit form — so the figure with
 `S` and `P` alone removed is the sum of the printed `C`, `Z`, `N`, `O` totals,
 42,587 + 109,860 + 306 + 159 = 152,912 (round-1 SF-1; arithmetic on the cells
 above, not a new instrument run). (c) **Noise infusion**
@@ -261,7 +282,7 @@ nine size-class n* columns summed 740232 vs est 740236 difference 4 | non-numeri
 ```
 
 Four short of `est`, with twelve `N` (not available) cells treated as zero —
-so the four may sit in suppressed cells, or be the *"slight difference"*
+so the four may sit in the not-available cells, or be the *"slight difference"*
 cbp:289 warns of (class from pre-noise employment, totals noised); this check
 cannot tell which. A bound stated on the published `n<5` cell is not moved by
 either. (d) The bound is on **establishments in CBP**; the ruled-in count at

@@ -67,7 +67,7 @@ at `88885e6`, r2 FAIL 2 MF / 10 SF at `5eafcb6`, the last under AS-1): every
 figure and every draft on this slide ships except two pieces of §4, pulled under
 banners — the clause mapping solo owner-operators onto nonemployers and the
 closing "both directions" paragraph. Round-2 SF-3, SF-6, SF-9 drafted on the
-shipping half, not re-gated. The split was CONFIRMED by the chief 2026-09-08T14:59Z, item (i); the two pulled pieces of §4 are RE-DRAFTED at shift 29 from the Bureau's two glossaries, fetched and hashed, and are IN-GATE on their own with A48 limitation (4) — one cell, one gate; the seven MUST-FIX of round 1 are untouched.** What the ruling changed is what the
+shipping half, not re-gated. The split was CONFIRMED by the chief 2026-09-08T14:59Z, item (i); the two pulled pieces of §4 are RE-DRAFTED at shift 29 from the Bureau's two glossaries, fetched and hashed, and are GATED with A48 limitation (4) — one cell, one gate: round 1 FAIL 2 MF / 8 SF at `e5130a4`, round 2 PASS 0 MF / 5 SF at `0f16c8c` (`gtm/org/reviews/2026-09-08-shift29-a48-lim4-glossaries-hostile-investor-r{1,2}.md`); the seven MUST-FIX of round 1 are untouched and this slide's own status is unchanged.** What the ruling changed is what the
 headline number IS: the employer-firm floor of a base Phin has ruled larger.
 
 ORIGINAL STATUS: DRAFT, ungated. Not self-passed (law 7). The persona that applies
@@ -234,7 +234,7 @@ is the optimistic end of it.
 
 ## §4. THE EXCLUSION THAT MOVED THE ANSWER MORE THAN THE FRACTION — RULED 8 SEPTEMBER: THEY ARE IN
 
-*(New draft, shift 28, 2026-09-08 — rule 1; gated under law 7 and SPLIT at round 2 — the two pulled pieces were marked below at `046da44` and are re-drafted at shift 29, in their own gate. The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
+*(New draft, shift 28, 2026-09-08 — rule 1; gated under law 7 and SPLIT at round 2 — the two pulled pieces were marked below at `046da44` and are re-drafted at shift 29, GATED in their own gate (round 2 PASS at `0f16c8c`). The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
 
 CBP and SUSB count **employer** businesses. A salon chair rented by a
 self-employed stylist is a **nonemployer** and appears in neither.
