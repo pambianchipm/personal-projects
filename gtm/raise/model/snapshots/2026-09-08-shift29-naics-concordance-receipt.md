@@ -28,7 +28,7 @@ The proxy is the session's; no key, no login. Two workbooks were fetched in one
 loop: the 2017→2022 file is THE document; the 2022→2017 file was fetched in the
 same loop as a cross-check and is NOT retained in the tree (its hash is below;
 its seventeen `448*`/`458*` rows, parsed the same way, are the transposition of
-the seventeen printed in §2 — read by eye, not diffed).
+the seventeen printed in §2 — as sets, by the second instrument in §2a).
 
 ```
 $ date -u +%Y-%m-%dT%H:%M:%SZ; for u in https://www.census.gov/naics/concordances/2017_to_2022_NAICS.xlsx https://www.census.gov/naics/concordances/2022_to_2017_NAICS.xlsx; do f=$(basename $u); date -u +%Y-%m-%dT%H:%M:%SZ; curl -sS -m 60 -o $f -w "HTTP %{http_code} bytes %{size_download} %{content_type} $f\n" "$u"; sha256sum $f; done
@@ -142,22 +142,59 @@ $ date -u +%Y-%m-%dT%H:%M:%SZ; sha256sum 2026-09-08-2017_to_2022_NAICS.xlsx 2026
 160c79b4dd84c584dda5dccbad90a52c8f7f20cc7e04b9e86adad590187d4a65  2026-09-08-shift29-naics-concordance.py
 ```
 
+### 2a. The second instrument, after round 1 — the split rows and the transposition, pasted as run
+
+`2026-09-08-shift29-naics-pieces.py` (retained beside this receipt), run beside
+both workbooks in the scratch directory (SF-1: the row counts behind "pieces";
+SF-4a: the 2022→2017 workbook's `458*` rows diffed against the forward file as
+sets, not read by eye). Cell text only; the marks are not read.
+
+```
+$ date -u +%Y-%m-%dT%H:%M:%SZ; sha256sum pieces.py 2017_to_2022_NAICS.xlsx 2022_to_2017_NAICS.xlsx; python3 pieces.py
+2026-09-08T15:45:28Z
+8049b4c6fea69f4170fcc000c31cd8e879a7def5824d88835819cda0be1eaf47  pieces.py
+4662cc7ed9e7f3fb8a968e9504a7d06e448f5b65a349996a5627439df193eb30  2017_to_2022_NAICS.xlsx
+76ed2d5bc8cd3443dc86f0c3225b83e6d187f3fc47d4c5696c911a3234f1716f  2022_to_2017_NAICS.xlsx
+2017->2022 data rows 1150
+454110: 42 rows in the 2017->2022 sheet, mapping to 42 distinct 2022 codes; its 2017-title cell on the four 458* rows: ['Electronic Shopping and Mail-Order Houses']
+   454110 as a 2017 source of 458*: ['458110', '458210', '458310', '458320']
+454390: 39 rows in the 2017->2022 sheet, mapping to 39 distinct 2022 codes; its 2017-title cell on the four 458* rows: ['Other Direct Selling Establishments']
+   454390 as a 2017 source of 458*: ['458110', '458210', '458310', '458320']
+448* rows: [('448110', 1), ('448120', 1), ('448130', 1), ('448140', 1), ('448150', 1), ('448190', 1), ('448210', 1), ('448310', 1), ('448320', 1)]
+transposition check, 458* rows: forward pairs 17 backward pairs 17 sets equal -> True
+```
+
 ## 3. WHAT IT SETTLES
 
 **`458` is a SUPERSET of the nine `448*` classes, at every level NES publishes.**
+*(Re-drafted after round 1 — MF-1, MF-2, SF-1, SF-2 land in this section.)*
 The concordance maps the six clothing classes `448110`–`448190` to `458110`,
-`448210` to `458210`, `448310` to `458310`, `448320` to `458320` — and maps
-pieces of two other 2017 industries into every one of those four 2022 codes:
+`448210` to `458210`, `448310` to `458310`, `448320` to `458320` — and maps two
+other 2017 industries into every one of those four 2022 codes as well:
 `454110` *Electronic Shopping and Mail-Order Houses* and `454390` *Other Direct
-Selling Establishments* (seventeen rows, printed above). NES 2023 publishes
-`45811`, `45821`, `45831`, `45832` (the 2022 code list has one six-digit code
-under each, so the five-digit row is that code's row) — 241,235 / 8,897 /
+Selling Establishments* (seventeen rows, printed above). "Pieces" is the sheet's own word for what a
+split industry contributes (its note, row 2: *"2022 NAICS codes in bold
+indicate pieces of the 2022 industry came from more than one 2017 NAICS
+industry; 2017 NAICS codes in italics indicate the 2017 industry split"*), and
+the split is visible in row counts the second instrument prints (§2a): `454110`
+has 42 rows to 42 distinct 2022 codes and `454390` 39 to 39, where every `448*`
+class has one; the 2017-title cell on their `458*` rows carries the bare
+industry title, not a description of the piece — so the sheet names the
+industry, and the size of what it contributes is stated nowhere in it. NES 2023 publishes
+`45811`, `45821`, `45831`, `45832` and no six-digit code under `458` (the code
+list paste above: eight entries, none of six digits); the concordance's 2022
+column holds exactly one six-digit code under each of those four (the
+instrument's `2022 codes under it 1`, computed from the concordance, not from
+the code list — round-1 MF-1), so the five-digit NES row is that code's row — 241,235 / 8,897 /
 55,123 / 2,338, summing to `458`'s 307,593 — and each draws on those two
 non-store industries as well as its `448*` class. **So no NES row is
 co-extensive with any `448*` class or with the nine together; the apparel
 nonemployer count the org can state is a superset that includes online and
-direct sellers, whose share the concordance does not give.** The direction is
-not conservative: read as apparel, `458` overstates.
+direct sellers, whose share the concordance does not give.** The direction: nothing
+subtracts (no `448*` class splits — one row each) and two industries add, so
+`458` is AT LEAST the nine apparel classes; by how much, the concordance does
+not size (round-1 SF-2 — "overstates" would assume the added pieces are
+non-empty in NES 2023, which no file here shows).
 
 **A line per class (G20's ask), from the instrument's per-class block:**
 
@@ -174,8 +211,13 @@ not conservative: read as apparel, `458` overstates.
 | `448320` | `458320` | `45832` (2,338) | SUPERSET at 5 digits — with pieces of `454110`, `454390` |
 
 Six matched, twelve superset, none "no row" — the twelve unmatched classes of
-A48 limitation (1) stay unmatched, and for nine of them the reason is now two
-reasons: NES's publication depth AND a 2022 code that absorbed non-store retail.
+A48 limitation (1) stay unmatched. The reason differs by class (round-1 MF-2):
+for `812199`, `713940`, `311811` it is NES's publication depth alone; for the six
+clothing classes in `458110` it is both — they share one 2022 code with each
+other AND with the two non-store industries; for `448210`, `448310`, `448320` it
+is the 2022 revision alone — each is the only `448*` class in its 2022 code, its
+five-digit NES row holds that code alone, and the superset is with the two
+non-store industries only.
 The 2017-structure supersets for `812199`, `713940`, `311811` (shift-28 receipt
 §4) are re-derived here from the concordance rather than the CBP file: the same
 three verdicts.
@@ -188,14 +230,15 @@ multiplied, or priced.
 ## 4. WHAT THIS RECEIPT DOES NOT ESTABLISH
 
 - **The size of the `454110` / `454390` pieces inside each `458*` code** — the
-  concordance names the pieces, not their establishment counts. A bound on the
+  concordance names the industries and marks them split; it states no
+  establishment count and no description of the piece for these two. A bound on the
   apparel share of `458` would need the 2022 Economic Census or a bridge table;
   neither was sought (attempt: none).
 - **Bold/italic marks in the workbook** — not read; multi-source derived by row
   count (§2).
-- **Whether the 2022→2017 workbook is the exact transposition** — its
-  seventeen `448*`/`458*` rows were read by eye in the same parse and agree; no
-  full-file diff was run.
+- **Whether the 2022→2017 workbook is the exact transposition beyond `458`** —
+  its seventeen `458*` rows equal the forward file's as sets (§2a); the other
+  1,133 rows were not compared.
 - **NES's own statement of which NAICS vintage `nonemp23us` uses** — carried from
   the 4 Sep receipt (its `458` row is the evidence); the NES methodology page was
   not opened.
