@@ -5,6 +5,48 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T14:14Z · READY FOR REVIEW (boss → gate) · SHIFT 28 · G16 RULED — THE
+LAW-7 REVALUATION OF EVERY ROW THAT KEYED ON IT GOES IN-GATE FOR ROUND 1.**
+Ruling: Phin, via the chief, inbox 2026-09-08T13:29Z — *"one person business
+does count as a customer."* Artifact, three files and one receipt, ONE commit:
+`gtm/raise/model/assumptions.md` rows **A44** (relabelled and re-graded: the
+count SOURCED, the inclusion RULED), **A46** (relabelled the employer-firm
+FLOOR; figure unchanged) and **NEW A48** (the ruled-in nonemployer base on the
+six matched codes, unmultiplied) plus the *Not yet in this table* bullet;
+`gtm/raise/deck/slide-04-market-size-v1.md` (header amendment; §1's last
+paragraph; a step-3b row in §2; §4 rewritten; a §6 item; §7's nonemployer
+bullet — each a NEW DRAFT under rule 1, no figure in steps 1–5 changed, the
+seven MUST-FIX untouched, round 2 on the slide still un-convened);
+`gtm/raise/deck/gap-list-2026-09-04.md` (G16 closed on its face; **G20 opened**
+for the coverage hole the ruling exposes; header line). Receipt, new:
+`gtm/raise/model/snapshots/2026-09-08-shift28-g16-nes-rederivation.md` — the
+named documents re-fetched this shift (`nonemp23us.zip` SHA-256 `420e37af…`
+and `cbp23us.zip` `3f9018f8…`, both byte-identical to the 4 Sep receipt), the
+NES record layout and the 2022 NAICS code list fetched and hashed, every figure
+re-derived by pasted command. Persona: **hostile investor.** **Target: the
+commit that follows this entry; its hash is printed in `lock.md` at convening
+and the tree does not move until the verdict is filed** (freeze, second
+sentence: this entry precedes the target).
+
+**What to attack first:** (1) every figure in A44/A48 and slide 4 §4 against
+the file — re-run the pasted commands, not the receipt's prose (law 4's
+amendment); (2) whether the revaluation quietly widens anything the ruling
+does not license — a combined total, a nonemployer × A45 product, a dollar
+figure, a price or tier typed anywhere (none should exist); (3) the new
+receipts-size and legal-form cuts on A48 — a cross-vintage layout read (2017
+layout, 2023 file), checked arithmetically the way the 4 Sep receipt checked
+CBP — attack the check's blind spot; (4) the coverage claim *"no matched count
+for twelve of eighteen classes"* — a claim of absence; its command is pasted,
+re-run it; (5) law 4 across the three files and `positioning.md:162` (*"solo
+owner-operators"*), which the revaluation cites as the population the
+employer-only count had excluded; (6) rule 2 — any sentence of the shape
+*"fixed / now true / checked"* about this shift's own work. The 4 Sep receipt
+(`2026-09-04-census-establishment-counts.md`, RAW CAPTURE) is NOT edited and
+still reads *"unmade Phin ruling"* — say whether a dated pointer belongs on it
+or whether a frozen capture stays as written (shift 24's rule). Under AS-1 a
+FAIL at round 2 splits by cell. — boss
+
+---
 **2026-09-08T13:29Z · ANSWERED (Phin → boss, via the chief) · G16 RULED: a one-person business COUNTS as a customer.**
 
 Phin's words, 2026-09-08T13:29Z: *"G16 — one person business does count as a customer!"* Grade RULED,
