@@ -29,6 +29,16 @@ ca21a9b39f0518dd  gtm/raise/model/snapshots/2026-09-08-shift29-naics-concordance
 ```
 The reviewer re-derives the target and says so.
 
+**CONCORDANCE ROUND 1 VERDICT FILED (`adb5cb5`): FAIL, 3 MF / 4 SF; freeze held. All seven applied as new drafts. GATE CONVENED 2026-09-08T15:45:28Z — round 2, hostile investor, THE LAST ROUND UNDER AS-1, on the concordance finding. TARGET: `8a66501` (8a665019700df8e0035e2a5f79b325cf3ba8bae9). FROZEN again; `lock.md` and `ops-log.md` only.** READY FOR REVIEW entry for this round: inbox, committed `fd8cd02` immediately before the target. File digests at the target (`git show 8a66501:<path> | sha256sum`, first 16 hex; the workbook and the first instrument are unchanged from `d76cc4e`):
+```
+17f02c97ca263716  gtm/raise/model/assumptions.md
+93b92b2b6c8f0de5  gtm/raise/deck/gap-list-2026-09-04.md
+9cacd197f4ba0a54  gtm/raise/deck/slide-04-market-size-v1.md
+e9d38648b78fecf2  gtm/raise/model/snapshots/2026-09-08-shift29-naics-concordance-receipt.md
+8049b4c6fea69f41  gtm/raise/model/snapshots/2026-09-08-shift29-naics-pieces.py
+```
+The reviewer re-derives the target and says so.
+
 
 RELEASED 2026-09-08T14:57Z — boss (session v17), shift 28, on-demand shift fired by the chief
 on Phin's G16 ruling (inbox 2026-09-08T13:29Z). (Clone fifty commits behind a
