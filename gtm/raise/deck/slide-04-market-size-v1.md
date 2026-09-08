@@ -411,9 +411,12 @@ rather than filled in.**
   the one slide class they contain (receipt §4, pasted), and the 2017→2022
   concordance was NOT fetched, ~~so whether `458` equals the nine `448*` classes
   is an open item — G20~~ — ⚠ SETTLED shift 29, 2026-09-08: the concordance
-  fetched and hashed; `458` is a SUPERSET of the nine — every `458*` code also
-  takes `454110` and `454390` — so no apparel class has a matched count; A48
-  limitation (1) and G20 carry it, gated on their own; this line is a dated
+  fetched and hashed; `458` is a SUPERSET of the nine ⚠ *(the clause between
+  the marks was PULLED at that gate's round 2 — law 4: it dropped "pieces of"
+  and read as four codes each taking two whole industries; A48 limitation (1)
+  states the shared fact and ships)* **⟦PULLED TEXT — begins⟧** — every `458*` code also
+  takes `454110` and `454390` — **⟦PULLED TEXT — ends⟧** so no apparel class has a matched count; A48
+  limitation (1) and G20 carry it, SPLIT at round 2 (`reviews/2026-09-08-shift29-naics-concordance-hostile-investor-r2.md`); this line is a dated
   pointer, not part of that gate's cell.)*
 - **Any top-down analyst TAM** — deliberately not fetched (law 2).
 - **Willingness to pay, at any price, by anyone.** Zero customers, zero

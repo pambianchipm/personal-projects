@@ -4,8 +4,15 @@ CONFIDENTIAL — Lane A raise artifact (law 8). Internal-audit class.
 STATUS: RECEIPT (not an artifact; the document and instrument behind the
 shift-29 closure of gap-list G20's cost-to-close item (i) and the re-draft of
 `assumptions.md` A48 limitation (1)'s concordance sentence). Written by the GTM
-boss, shift 29, 2026-09-08. Law 7: the two sentences it supports are gated on
-their own; this receipt's status follows that verdict.
+boss, shift 29, 2026-09-08. **Law 7: SPLIT at gate round 2 (round 1 FAIL 3 MF /
+4 SF at `d76cc4e`; round 2 FAIL 2 MF / 4 SF at `8a66501`, the last under AS-1 —
+`gtm/org/reviews/2026-09-08-shift29-naics-concordance-hostile-investor-r{1,2}.md`):
+the finding, the workbook, both instruments, every paste and A48 limitation (1)
+ship; one reason-clause in §3 below, one in G20 and one clause of slide 4 §6's
+pointer are PULLED under banners. Round-2 SF-1, SF-2, SF-4 drafted on the
+shipping text after the verdict, by the boss, not re-gated; SF-3 (the second
+instrument's unprinted column-order assumption and filter asymmetry) noted
+here, the instrument unchanged. The split awaits the chief's confirmation.**
 
 **First breath:** Player 2 is an AI marketing employee for small businesses.
 This file records one fetch the chief approved (inbox 2026-09-08T14:59Z, item
@@ -175,7 +182,10 @@ other 2017 industries into every one of those four 2022 codes as well:
 Selling Establishments* (seventeen rows, printed above). "Pieces" is the sheet's own word for what a
 split industry contributes (its note, row 2: *"2022 NAICS codes in bold
 indicate pieces of the 2022 industry came from more than one 2017 NAICS
-industry; 2017 NAICS codes in italics indicate the 2017 industry split"*), and
+industry; 2017 NAICS codes in italics indicate the 2017 industry split to two or
+more 2022 NAICS industries.)"* — and row 3, column B's header, *"2017 NAICS Title
+(and specific piece of the 2017 industry that is contained in the 2022
+industry)"*, round-2 SF-1), and
 the split is visible in row counts the second instrument prints (§2a): `454110`
 has 42 rows to 42 distinct 2022 codes and `454390` 39 to 39, where every `448*`
 class has one; the 2017-title cell on their `458*` rows carries the bare
@@ -189,8 +199,8 @@ the code list — round-1 MF-1), so the five-digit NES row is that code's row �
 55,123 / 2,338, summing to `458`'s 307,593 — and each draws on those two
 non-store industries as well as its `448*` class. **So no NES row is
 co-extensive with any `448*` class or with the nine together; the apparel
-nonemployer count the org can state is a superset that includes online and
-direct sellers, whose share the concordance does not give.** The direction: nothing
+nonemployer count the org can state is a superset that includes pieces of
+those two industries, whose share the concordance does not give.** The direction: nothing
 subtracts (no `448*` class splits — one row each) and two industries add, so
 `458` is AT LEAST the nine apparel classes; by how much, the concordance does
 not size (round-1 SF-2 — "overstates" would assume the added pieces are
@@ -212,9 +222,9 @@ non-empty in NES 2023, which no file here shows).
 
 Six matched, twelve superset, none "no row" — the twelve unmatched classes of
 A48 limitation (1) stay unmatched. The reason differs by class (round-1 MF-2):
-for `812199`, `713940`, `311811` it is NES's publication depth alone; for the six
+for `812199`, `713940`, `311811` it is NES's publication depth alone; **⚠ PULLED AT GATE ROUND 2 (2026-09-08, shift 29, the concordance finding; `reviews/2026-09-08-shift29-naics-concordance-hostile-investor-r2.md`, target `8a66501`) — the text between the ⟦PULLED TEXT⟧ marks does not ship and nothing may cite it.** *(Round-2 MF-1: the same `2022 codes under it 1` the criterion two lines down relies on; the table row above carries the six correctly.)* **⟦PULLED TEXT — begins⟧** for the six
 clothing classes in `458110` it is both — they share one 2022 code with each
-other AND with the two non-store industries; for `448210`, `448310`, `448320` it
+other AND with the two non-store industries; **⟦PULLED TEXT — ends⟧** for `448210`, `448310`, `448320` it
 is the 2022 revision alone — each is the only `448*` class in its 2022 code, its
 five-digit NES row holds that code alone, and the superset is with the two
 non-store industries only.
