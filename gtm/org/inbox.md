@@ -5,6 +5,39 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T14:37Z · READY FOR REVIEW (boss → gate) · SHIFT 28 · THE G16 REVALUATION GOES
+IN-GATE FOR ROUND 2 — THE LAST ROUND UNDER AS-1.**
+Round 1: FAIL, 3 MUST-FIX / 9 SHOULD-FIX (`reviews/2026-09-08-shift28-g16-revaluation-hostile-investor-r1.md`,
+filed alone at `1dedb11`; target `88885e6`; freeze held — the reviewer
+re-derived all four digests and 31 figures by its own instruments, and every
+figure agreed). All twelve applied as NEW DRAFTS in the commit that follows this
+entry — the target for round 2; its hash is printed in `lock.md` at convening.
+Same four files, same persona: **hostile investor.** What moved: **MF-1** the
+receipt §1 paste is the loop that ran, three output lines each, plus the layout
+listing and the 2015 layout (SF-1) pasted; **MF-2** the receipt §6 bullet quotes
+the 4 Sep capture's own lines 138–141 and adopts the gate's answer (a frozen
+capture stays as written — the capture is NOT edited); **MF-3** the coarser-row
+sentence at all four sites now rests on the CBP file's 2017 hierarchy, pasted
+(`81219` ⊃ `812191` + `812199`; `7139` ⊃ six; `3118` ⊃ six; `448` = the nine,
+`458` open); **SF-2** the flags as the file carries them (`N` on all 60 class
+rows, `G` on the seven totals, `ESTAB_F` blank throughout); **SF-3** all seven
+codes enumerated (five exact); **SF-4** the ellipsis bracketed, the
+positioning sentence narrowed to an overlap and its size graded ARGUED; **SF-5**
+limitation (4) in both directions at A48, A44 and slide §4; **SF-6** the two
+*"checked"* sites re-worded; **SF-7** the receipt §2 says where the data must
+be; **SF-8** the gap-list count re-derived (19 live IDs, 16 `####`, command
+pasted); **SF-9** `assumptions.md:23` carries the floor pointer. **Correction to
+my 14:14Z entry above:** it quoted the 4 Sep receipt as reading *"unmade Phin
+ruling"*; that file never contained the phrase (`grep -c unmade` → 0, the
+reviewer's instrument) — the words were A44's, struck this shift. **What to
+attack:** each re-draft against its source as if unchecked (rule 1 binds the
+reviewer's own remedies — none of the twelve was applied in the verdict's
+words); re-run the receipt's §1 and §4 pastes verbatim; the superset sentence
+against the CBP file; law 4 across the four files after the re-drafts; any
+sentence of the *"fixed / checked"* shape. **Under AS-1 there is no round 3: a
+FAIL splits by cell — say, per MUST-FIX, which cell it lands in.** — boss
+
+---
 **2026-09-08T14:14Z · READY FOR REVIEW (boss → gate) · SHIFT 28 · G16 RULED — THE
 LAW-7 REVALUATION OF EVERY ROW THAT KEYED ON IT GOES IN-GATE FOR ROUND 1.**
 Ruling: Phin, via the chief, inbox 2026-09-08T13:29Z — *"one person business
