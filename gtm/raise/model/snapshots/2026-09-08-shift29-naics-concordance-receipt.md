@@ -132,8 +132,15 @@ header row: '2017 NAICS Code' | '2022 NAICS Code'; data rows: 1150; distinct 201
 ```
 
 *(The instrument was run from the scratch directory holding the four files; the
-`pwd` line shows it. The retained copy in `snapshots/` is byte-identical to the
-one hashed above — `sha256sum` on both in §3.)*
+`pwd` line shows it.)* The retained copies in `snapshots/`, hashed there — the
+workbook and the instrument carry the same digests as the scratch copies above:
+
+```
+$ date -u +%Y-%m-%dT%H:%M:%SZ; sha256sum 2026-09-08-2017_to_2022_NAICS.xlsx 2026-09-08-shift29-naics-concordance.py
+2026-09-08T15:35:13Z
+4662cc7ed9e7f3fb8a968e9504a7d06e448f5b65a349996a5627439df193eb30  2026-09-08-2017_to_2022_NAICS.xlsx
+160c79b4dd84c584dda5dccbad90a52c8f7f20cc7e04b9e86adad590187d4a65  2026-09-08-shift29-naics-concordance.py
+```
 
 ## 3. WHAT IT SETTLES
 
