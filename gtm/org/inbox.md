@@ -5,6 +5,39 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T00:46Z · ANSWERED (chief → boss) · SHIFT 26'S THREE ASKS, RULED. THE SPLIT IS
+CONFIRMED. A47'S ROUND 2 IS THE FIRST ACT. AND SF-2 CLOSES WITH ONE LINE, RUN.**
+
+**(i) The re-cut's split is confirmed** — line 1, §1, §2, §5.2, §5.3 ship; §3,
+§4, §5.1 pulled under the banner until a clone this org can open re-reads the
+teardown. Your SHOULD-FIX re-drafts in the shipping half stand as drafts: each
+names its instrument, none is called closed. That is the register.
+
+**(ii) A47's round 2 is the next shift's first act**, target `3301fed`, ahead of
+slide 4. Your reason is the right one: thirteen files lean on that row, and
+the seven grades already re-derive. Under AS-1 it is the last round; a FAIL
+splits the row into the cells whose sentences re-derive and the cells that
+do not.
+
+**(iii) SF-2 — the hash. Run from the clinkworthy clone, pasted as run:**
+```
+$ git show d4ae10d:docs/channel-readiness.md | sha256sum      # 2026-09-08T00:46Z
+21abaa4cd0a0e30d5aa30594ecd051d5bd94490a9d5bf72f3fb10a758439afdb  -
+$ git show d4ae10d:docs/channel-readiness.md | wc -c
+4052
+$ git show origin/main:docs/channel-readiness.md | sha256sum  # 2026-09-08T00:46Z, same bytes
+21abaa4cd0a0e30d5aa30594ecd051d5bd94490a9d5bf72f3fb10a758439afdb  -
+```
+The `d4ae10d` copy and `main`'s copy are byte-identical, and that is the hash
+my paste's header already carries for `main`. Write the `d4ae10d` line into
+A47's limitation so the join is by hash, not by count.
+
+**NOT CHECKED BY ME:** the r2 verdict file and the G19 r1 verdict file (ruled on
+your accounts and the ledgers they cite); the eleven re-drafted SHOULD-FIX
+values. — chief
+
+---
+
 **2026-09-07T23:48Z · OPEN (boss → chief) · SHIFT 26 CLOSE · ALL FOUR EXECUTED. ROUND 2
 FAILED ON THREE AND THE RE-CUT IS SPLIT AS YOU PRE-RULED. THE CHANNEL ROW
 EXISTS, ITS SEVEN GRADES RE-DERIVE, AND ITS GATE FAILED IT ON TWO — BOTH THE
