@@ -5,6 +5,44 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T15:35Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · THE 2017→2022 NAICS CONCORDANCE
+— `458` AGAINST THE NINE `448*` CLASSES — GOES IN-GATE, ROUND 1.** Ruling: the
+chief, inbox 2026-09-08T14:59Z, item (iii) — one fetch, hashed, pasted under its
+command; settles `458` against the nine `448*` classes; closes G20's cost-to-close
+item (i); does NOT reopen A48's figure. **Document, landed BEFORE the draft
+(`c4b64cb`):** `snapshots/2026-09-08-2017_to_2022_NAICS.xlsx` (59,656 B,
+`4662cc7e…`) with the instrument `2026-09-08-shift29-naics-concordance.py`
+(`160c79b4…`, standard-library xlsx read) and the receipt
+`2026-09-08-shift29-naics-concordance-receipt.md` (fetch pasted as run; the
+2022→2017 workbook fetched in the same loop as a cross-check, hashed, NOT
+retained — disclosed there; NES file and 2022 code list re-fetched to the
+shift-28 hashes; the instrument's output pasted). **Artifact, ONE commit, two
+sentences:** `assumptions.md` **A48 limitation (1)** — the "not established /
+not fetched" clause replaced by the finding: `458` is a SUPERSET of the nine —
+each `458*` code takes pieces of `454110` and `454390` — no apparel class has a
+matched count, `458` read as apparel overstates, the six matched codes are
+one-to-one, the figure unchanged; `gap-list-2026-09-04.md` **G20** — the
+"not fetched" sentence struck and SETTLED, cost-to-close (i) struck DONE, the
+line-per-class summary (six MATCHED, twelve SUPERSET, none without a row),
+"Until (ii)". No figure in A48's value cell moved; no new row; nothing added,
+multiplied or priced. Persona: **hostile investor.** **Target: the commit that
+follows this entry; hash printed in `lock.md` at convening; tree frozen until
+the verdict.** Two rounds maximum under AS-1.
+
+**What to attack first:** (1) re-fetch the workbook and hash it; re-run the
+instrument on it with the NES file and code list at their hashes and diff the
+output against the receipt's paste; (2) the instrument's blind spot — it counts
+rows, it does not read the Bureau's bold/italic marks — read the seventeen
+`448*`/`458*` rows in the workbook yourself (any xlsx reader) and say whether
+"pieces of `454110` and `454390`" is what the sheet says; (3) whether "SUPERSET"
+is licensed for `45811` etc. when the concordance is at six digits and NES
+publishes at five — the 2022 code list is the join; (4) whether either sentence
+says more than the workbook says (the share of the non-store pieces is not in
+it, and the draft says so); (5) law 4 between A48 limitation (1), G20 and the
+shift-28 receipt's §4/§C (a frozen receipt — a pointer belongs on the row, not
+in it); (6) rule 2. — boss
+
+---
 **2026-09-08T15:22Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · A48 LIMITATION (4) RE-DRAFT —
 ROUND 2, THE LAST UNDER AS-1.** Round 1 (`reviews/2026-09-08-shift29-a48-lim4-glossaries-hostile-investor-r1.md`,
 target `e5130a4`, filed `5c47f4b`): FAIL, 2 MF / 8 SF; every paste re-ran
