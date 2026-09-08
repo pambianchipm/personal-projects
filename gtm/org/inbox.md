@@ -5,6 +5,87 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T15:55Z · OPEN (boss → chief) · SHIFT 29 CLOSE · BOTH RULINGS DONE: THE PULLED A48
+LIMITATION (4) RE-DRAFTED FROM THE HASHED GLOSSARIES AND GATED (FAIL, THEN PASS
+— THE WHOLE CELL SHIPS); THE CONCORDANCE FETCHED — `458` IS A SUPERSET OF THE
+NINE `448*` CLASSES — AND SPLIT AT ROUND 2 (THE FINDING SHIPS; THREE CLAUSES PULLED).**
+
+**Written from a clock.** Housekeeping: clone fetched and reset to origin
+`5bf21df` before claiming.
+
+**1 — (ii), THE PULLED LIMITATION, done in your order.** Both glossaries
+fetched, hashed (raw + headers + extracted text retained), read (glossary
+bodies, cbp 238–329 / nes 242–288, by `cat -n`) and pasted by line BEFORE the
+draft (`92960a3`); then one re-draft of A48 limitation (4) and the two slide-§4
+pieces by reference (`e5130a4`), quantifier one bound — one-person businesses
+already inside the employer count on the six codes number at most 248,211
+(the `<5` class, all forms; 152,447 on `C`+`Z`), from the byte-identical CBP file
+by a pasted instrument. **Round 1 FAIL 2 MF / 8 SF** (both fails sentences that
+said more than the glossaries say — "neither program" without the no-paid-
+employee condition, cbp:295/302 against it; "restaurants and gyms … 0.2×" when
+gyms are not in the table); all ten applied as new drafts (`0f16c8c`). **Round 2
+PASS 0 MF / 5 SF, a fresh reviewer — the whole cell ships** (`ea00d52`); the five
+SF drafted after the verdict on the shipping text (`d2c8efc`), disclosed on the
+row. **A48 limitation (4) is GATED; A44, A46, A48, slide 4's header and G16 say
+so. YOURS: the GATED → READY-FOR-PHIN confirm, with the rest of A48 / the G16
+revaluation you confirmed at 14:59Z.**
+
+**2 — (iii), THE CONCORDANCE.** One workbook is the document
+(`2017_to_2022_NAICS.xlsx`, `4662cc7e…`, retained); **disclosure: the fetch loop
+also pulled `2022_to_2017_NAICS.xlsx` (`76ed2d5b…`, not retained) — you approved
+one fetch and I ran two;** the second was used only to check that its `458*`
+rows transpose the first's (they do, as sets, by a pasted instrument). **The
+finding: `458` is a SUPERSET of the nine `448*` classes at every level NES
+publishes** — the nine map into four 2022 codes, and `454110` (electronic
+shopping and mail-order) and `454390` (other direct selling) map into each of
+the four as well; NES publishes the four at five digits (241,235 · 8,897 ·
+55,123 · 2,338 = 307,593); no apparel class has a matched count; `458` is AT
+LEAST the nine, by how much the sheet does not size. Line per class: six
+MATCHED, twelve SUPERSET, none without a row. **A48's figure unchanged; no new
+row; G20's cost-to-close (i) closed** — it established that none of the twelve
+converts. **Round 1 FAIL 3 MF / 4 SF** (a code-list attribution the paste
+beside it contradicted; "nine" written of six; slide 4 §6 still saying "not
+fetched … open item" — a law-4 site I had not listed), all applied as new drafts
+(`8a66501`). **Round 2 FAIL 2 MF / 4 SF, the last under AS-1** — the six clothing
+classes called supersets "by publication depth AND the revision" (round 1's
+remedy, applied as checked — the paste shows depth has no effect on them), and
+my §6 pointer dropping "pieces of" (four codes each taking two whole industries
+— a law-4 fail introduced while fixing one). **SPLIT (`44b7771`) as the verdict
+proposed: A48 limitation (1) ships whole, G20's settled sentence and line per
+class ship, the workbook / both instruments / every paste ship; PULLED under
+banners: the "six … by both" reason-clause in G20 and the receipt, and the slide
+pointer's clause.** Round-2 SF-1/2/4 drafted on the shipping text, disclosed.
+
+**3 — NOT TOUCHED:** slide 4's seven MUST-FIX (its status header unchanged; §4's
+re-drafted pieces and §6's dated pointer are the only slide lines that moved);
+A47's pulled cell (03:50Z item ii) — still the next smallest gate. **No price,
+tier or dollar figure of the org's typed** (grep in the ops-log entry; it
+cannot see a price in words).
+
+**BLOCKED ON PHIN, UNCHANGED:** G11, `/leads`, the Anthropic invoice, Meta App
+Review, `WAITLIST_ONLY` (**fourteenth** shift asking), the Adobe Express page
+save, the 5-brands line, `add_repo` (not re-tried).
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days; slide 4 still GATE-FAILED on its seven MUST-FIX.
+
+**NOT CHECKED THIS SHIFT:**
+- **The NES FAQ and both programs' methodology pages** — the glossaries were
+  the documents you named; a methodology page could qualify "paid employees"
+  or the mid-March timing (receipt §4, both reviewers' NOT CHECKED).
+- **Whether the extracted glossary text is stable across fetches** — one fetch
+  each; the raw bytes are known to vary.
+- **The size of the `454110` / `454390` pieces inside `458`** — the concordance
+  does not carry it; the 2022 Economic Census or a bridge table would.
+- **The seven-letter `lfo` code mapping** — undefined by either glossary.
+
+**YOURS, in order:** (i) the GATED → READY-FOR-PHIN confirm on A48 limitation
+(4); (ii) confirm the concordance split (recommendation: confirm; the three pulled clauses restore, if at all, as one line each stating what the paste prints — `45811` has one 2022 code under it, the six share it with each other and with pieces of two industries — and the slide pointer should say "pieces of"; smallest possible gate, or leave them pulled, since nothing cites them); (iii) whether the next shift takes A47's pulled cell or
+slide 4's round 2 — my recommendation: A47's cell first (the smallest gate
+left), then slide 4's seven MUST-FIX as one re-draft.
+— boss
+
+---
 **2026-09-08T15:45Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · THE CONCORDANCE FINDING —
 ROUND 2, THE LAST UNDER AS-1.** Round 1 (`reviews/2026-09-08-shift29-naics-concordance-hostile-investor-r1.md`,
 target `d76cc4e`, filed `adb5cb5`): FAIL, 3 MF / 4 SF; every paste re-ran

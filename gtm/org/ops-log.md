@@ -8,6 +8,161 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-08 · on-demand (chief-fired on the 14:59Z rulings; clone fetched and
+reset to origin `5bf21df` before claiming) · SHIFT 29 — THE PULLED A48
+LIMITATION (4) RE-DRAFTED FROM THE BUREAU'S TWO GLOSSARIES, FETCHED AND HASHED
+BEFORE THE DRAFT, AND GATED IN TWO ROUNDS (FAIL 2 MF / 8 SF, THEN PASS 0 MF /
+5 SF — THE WHOLE CELL SHIPS); THEN THE 2017→2022 NAICS CONCORDANCE FETCHED AND
+HASHED — `458` IS A SUPERSET OF THE NINE `448*` CLASSES — AND GATED ON ITS OWN
+(FAIL, THEN FAIL — SPLIT UNDER AS-1: THE FINDING SHIPS, THREE REASON- AND POINTER-CLAUSES ARE PULLED)**
+
+**WHAT RAN, IN ORDER.**
+
+**(1) The documents first (`92960a3`, 15:06Z), before one word of the draft:**
+the CBP glossary and the NES glossary fetched from `www.census.gov` (HTTP 200,
+327,996 B / 334,123 B raw; SHA-256 `e27985be…` / `e39e8a0d…`), headers retained,
+extracted by a stdlib instrument written into the tree (`…html-extract.py`,
+`91c7177e…`) to 375 / 334 lines (`a7b25f97…` / `4b61dfa8…`), the glossary body of
+each read by `cat -n` (cbp 238–329, nes 242–288), the sixteen lines the draft
+leans on pasted by `sed -n` as run; the raw byte counts differ from the round-2
+reviewer's fetch fifteen minutes earlier — the raw hash is a fetch identity,
+the extracted text the content receipt, said so in the receipt. `cbp23us.zip`
+re-fetched byte-identical (`3f9018f8…`) and an under-5 bound instrument written
+and run: one-person businesses already inside the employer count on the six
+matched codes number at most 248,211 (`n<5`, all legal forms) and at most
+152,447 on `C`+`Z` — an upper bound, not an estimate, and called one everywhere.
+
+**(2) The re-draft (`e5130a4`, behind READY FOR REVIEW `081062c`):** A48
+limitation (4)'s pulled sentences replaced by both directions stated from the
+glossary lines — a nonemployer's three conditions (nes:271 / cbp:312); paid
+employment includes salaried officers of corporations and excludes proprietors
+and partners (cbp:287, 317); so an incorporated one-person business on payroll
+is an employer and a sole proprietor cannot be; NES counts returns (nes:258) —
+with the bound as the only quantifier. Slide 4 §4's two pulled pieces
+re-drafted by reference; the split recorded CONFIRMED (14:59Z item i) on
+A44/A46/A48, slide 4's header and G16. The seven MUST-FIX untouched.
+
+**(3) Round 1 — FAIL, 2 MF / 8 SF** (`reviews/…-a48-lim4-glossaries-…-r1.md`
+at `5c47f4b`; target `e5130a4`; freeze held; every paste re-ran identical, the
+extractor reproduced both texts to the hash, the bound re-derived by the
+reviewer's own `awk`). Both fails were sentences saying MORE than the glossaries
+say: *"below the floor, or not subject to federal income taxes, a one-person
+business is in neither program"* — CBP's count has no floor and no tax
+condition, and the non-profit is a CBP legal form (cbp:295, 302; the receipt's
+own table prints 306 of them in the class); and *"restaurants and gyms, which
+are 0.2× nonemployer in the table above"* — gyms are not in the table and have
+no matched count, words carried over from the pulled clause and never re-read.
+All ten applied as new drafts (`0f16c8c`, behind READY FOR REVIEW `ab24de9`),
+each re-read against its line; the size-class partition SF-7 asked for run and
+pasted (740,232 vs 740,236, twelve `N` cells as zero).
+
+**(4) Round 2 — PASS, 0 MF / 5 SF, a fresh reviewer, the last under AS-1**
+(`…-r2.md` at `ea00d52`; target `0f16c8c`; freeze held; every paste re-ran
+identical at the new target). Round-2 SF drafted on the shipping text after
+the verdict (`d2c8efc`), by me, not re-gated: the "or" that made a one-person
+business a partnership (the one word that differed from round 1's proposed
+gloss — rule 1's case again) re-drafted on cbp:301; cbp:302 and nes:261–264
+pasted into the receipt's index; the `N`/`O` reading given the same blind spot
+as `C`/`Z`; the receipt §1 header paste restored byte-for-byte (my python
+write had normalised the CRLF headers' CRs — the text was identical, the bytes
+were not, and the reviewer's `cmp` caught it). **The cell is GATED; A44, A46,
+A48, slide 4's header and G16 say so; it awaits the chief's GATED →
+READY-FOR-PHIN confirm with the rest of the row.**
+
+**(5) The concordance (item iii), documents first again (`c4b64cb`):**
+`2017_to_2022_NAICS.xlsx` fetched (59,656 B, `4662cc7e…`) — and, in the same
+loop, `2022_to_2017_NAICS.xlsx` as a cross-check, hashed, NOT retained,
+disclosed in the receipt: the chief approved one fetch and I ran two; the
+second was read by eye for its seventeen `448*`/`458*` rows and used for
+nothing else. NES file and 2022 code list re-fetched to the shift-28 hashes. A
+stdlib xlsx instrument (`…naics-concordance.py`, `160c79b4…`; it reads cell
+text and counts rows — it cannot see the Bureau's bold/italic split marks, said
+so) run and pasted. **Finding: `458` is a SUPERSET of the nine `448*` classes.**
+The nine map into `458110`/`458210`/`458310`/`458320`, and pieces of `454110`
+*Electronic Shopping and Mail-Order Houses* and `454390` *Other Direct Selling
+Establishments* map into each of the four; NES publishes the four at five digits
+(241,235 · 8,897 · 55,123 · 2,338 = 307,593, the `458` row). No apparel class has
+a matched count, and `458` read as apparel overstates by a share the
+concordance does not size. Line per class: six MATCHED, twelve SUPERSET, none
+without a row. A48's figure unchanged. A48 limitation (1) and G20 re-drafted
+(`d76cc4e`, behind READY FOR REVIEW `f9a75d0`).
+
+**(6) Concordance round 1 — FAIL, 3 MF / 4 SF** (`reviews/…-naics-concordance-…-r1.md`
+at `adb5cb5`; target `d76cc4e`; freeze held; both workbooks re-fetched to the
+byte, the instrument's 51 lines diffed identical, the finding held on the
+reviewer's own read of the bold/italic marks the instrument cannot see). None
+of the three was the finding: a sentence attributed "one six-digit code under
+each" to the 2022 code list when the paste beside it prints none (the fact is
+the concordance's); "the nine `448*` … with each other" and "nine … two reasons"
+written of nine classes when the instrument's own lines show it of six (three
+apparel classes sit alone in their 2022 code); and slide 4 §6 still saying the
+concordance "was NOT fetched … an open item" — a law-4 site my READY FOR REVIEW
+had not listed. All seven applied as new drafts (`8a66501`, behind READY FOR
+REVIEW `fd8cd02`): the attribution moved to the concordance's column; the
+per-class reasons split six / three / three at G20 and the receipt; §6 struck
+with a dated ⚠ pointer (a pointer, not a re-draft — the seven MUST-FIX
+untouched); "overstates" replaced by the bound the sheet licenses (`458` is AT
+LEAST the nine, by how much unsized); "pieces" tied to the sheet's own note and
+to a second instrument's row counts (`454110` 42 rows, `454390` 39, every `448*`
+one), pasted; the transposition diffed as sets instead of "by eye".
+
+**(7) Concordance round 2 — FAIL, 2 MF / 4 SF, a fresh reviewer, the last under
+AS-1 → SPLIT (`44b7771`)** (`…-r2.md` at `062ee68`; target `8a66501`; freeze held;
+every paste re-ran identical, both instruments line-for-line; all three round-1
+MUST-FIX closed on the source). Both fails were mine and neither was the
+finding: the six clothing classes called supersets "by publication depth AND
+the 2022 revision" when the paste prints `2022 codes under it 1` for `45811`
+exactly as for the three codes the same sentence calls "revision alone" — the
+words were round 1's proposed remedy, applied as checked, rule 1's exact case;
+and the slide §6 pointer I wrote for round-1 MF-3 dropped "pieces of" and read
+as four codes each taking two whole industries — a law-4 fail I introduced
+while fixing a law-4 fail. **SPLIT as the verdict proposed: A48 limitation (1)
+ships whole (neither round's MUST-FIX lives in it), G20's settled sentence and
+line per class ship, the workbook, both instruments and every paste ship; PULLED
+under banners: G20's and the receipt's "six … by both" clause, and the slide
+pointer's "every `458*` code also takes `454110` and `454390`".** Round-2 SF-1,
+SF-2, SF-4 drafted on the shipping text after the verdict (the full row-2
+quotation; the "non-store" label replaced by the sheet's two titles; "includes
+online and direct sellers" → "includes pieces of those two industries"); SF-3
+noted on the receipt, the instrument unchanged. The split awaits the chief.
+
+**NO PRICE, TIER OR DOLLAR FIGURE OF THE ORG'S TYPED.** Run 15:39Z on the
+shift's added lines, raw HTML / extracted texts / verdicts excluded:
+`git diff 5bf21df HEAD -- gtm … | grep '^+' | grep -o '\$[0-9][0-9,]*' | sort |
+uniq -c` → `5 $1 · 4 $1,000 · 1 $10,000 · 2 $25,000` — the first two are the
+Bureau's quoted receipts floor, the last two A48's pre-existing receipts bands
+re-shown because the row is one line; the word grep (`per month|/mo|tier|price`)
+hits only this rule's own statement, "priced" in a negation, and A46's
+pre-existing text. The grep cannot see a price in words.
+
+**BLOCKED ON PHIN, UNCHANGED:** G11, `/leads`, the Anthropic invoice, Meta App
+Review, `WAITLIST_ONLY` (fourteenth shift asking), the Adobe Express page save,
+the 5-brands line, `add_repo` (not re-tried — nothing this shift needed the
+clone).
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days; slide 4 still GATE-FAILED on its seven MUST-FIX
+(untouched today; today's gates were on §4's re-drafted pieces and A48's cells,
+not the slide's round 2).
+
+**Fan-out disclosure:** four hostile-investor reviewers, one per round,
+gate time only, each a fresh agent; solo otherwise. Web: six fetches from
+`census.gov` / `www2.census.gov` (two glossaries, two concordance workbooks, the
+NES zip twice, the CBP zip once, the 2022 code list) — all HTTP 200, all hashed.
+Weight: heavy.
+
+**THE THING THIS SHIFT LEARNED.** Round 1's two fails and round 2's nearest
+miss were all the same shape: **a sentence that said more than its cited line
+says, in the direction that made the sentence cleaner** — "neither program"
+without the condition that makes it true, "restaurants and gyms" when the table
+holds restaurants, "or" where the source needs "and". None was a figure; every
+figure re-derived three times. The receipt's own table had already printed the
+306 non-profits that falsified the first — **I wrote the instrument's output
+into the receipt and then wrote a sentence the output contradicts, in the same
+file.** The narrower rule: **after pasting an instrument's output, read every
+sentence of the draft against the paste as if the paste were the reviewer** —
+it is the one reader that cannot be persuaded by a tidy sentence.
+
 **2026-09-08 · on-demand (chief-fired on Phin's G16 ruling, inbox 13:29Z; the
 boss's clone was fifty commits behind a force-updated remote and was reset to
 origin `eb96b08` before claiming) · SHIFT 28 — G16 RULED, AND EVERY ROW THAT
