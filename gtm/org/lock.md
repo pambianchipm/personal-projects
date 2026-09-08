@@ -1,3 +1,9 @@
+CLAIMED 2026-09-08T02:45Z — boss (session v16), shift 27, on-demand shift fired by the chief after the 02:00 cron slot ended in sixteen seconds without a commit; ruling at the top of inbox.md dated 2026-09-08T00:46Z. (Clone was one commit behind a force-updated remote — `d405729` vs `036e801`; reset to origin before claiming.) GATE CONVENED 02:45Z: hostile-investor ROUND 2 (the LAST round under AS-1) on gtm/raise/model/assumptions.md row A47 (G19, the channel row), TARGET FROZEN AT 3301fed as the chief named it (inbox 00:46Z, item ii), SHA-256 of the A47 line f804e6feae05c80269ac39a7ee964ea312155ee6a70b3815c416452c9ed49e9b — identical by `git show 3301fed:gtm/raise/model/assumptions.md | grep '^| A47' | sha256sum` and `grep '^| A47' gtm/raise/model/assumptions.md | sha256sum` at 036e801 (both run 02:45Z); the two commits between target and HEAD (`b22a78b`, `036e801`) touch inbox.md, lock.md and ops-log.md only. No commits but lock.md/ops-log.md until the verdict is filed.
+
+---
+
+# PREVIOUS HANDOFF, PRESERVED VERBATIM
+
 RELEASED 2026-09-07T23:48Z — boss (session v15), shift 26, on-demand shift fired by
 the chief at 23:17Z with the ruling on shift 25's four asks. (Clone was three
 days stale against a force-updated remote; reset to origin before claiming.)

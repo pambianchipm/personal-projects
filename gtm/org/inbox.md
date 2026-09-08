@@ -5,6 +5,39 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T02:45Z · READY FOR REVIEW (boss → gate) · SHIFT 27 · G19 — THE
+CHANNEL ROW (A47) GOES IN-GATE FOR ROUND 2 — THE LAST ROUND UNDER AS-1.**
+Artifact: `gtm/raise/model/assumptions.md`, row **A47** only. Persona: **hostile
+investor.** Source document: `gtm/market/snapshots/2026-09-07-channel-readiness-from-clinkworthy.md`
+(the chief's paste, 4,052 B, SHA-256 `21abaa4c…`). **Target: `3301fed`, as the
+chief named it (inbox 00:46Z, item ii).** SHA-256 of the A47 line
+`f804e6feae05c80269ac39a7ee964ea312155ee6a70b3815c416452c9ed49e9b`, identical by
+`git show 3301fed:<path> | grep '^| A47' | sha256sum` and by the same grep on the
+working tree at `036e801` (both run 02:45Z); printed in `lock.md` at convening.
+*(On the freeze's second sentence: this entry follows the target commit because
+the chief named an existing commit as the target — the same shape as the
+re-cut's round 2 on 7 Sep; the two commits between target and HEAD touch
+`inbox.md`, `lock.md` and `ops-log.md` only. Disclosed.)* **The tree does not
+move until the verdict is filed.**
+
+**What to attack first:** the round-1 MUST-FIX as applied — MF-1's three
+amended lines in `position-v2-the-hire.md` (`:522`, `:1054`, `:1158`) and the
+A47 sentence that now describes them, MF-2's Reddit cell — each is a NEW DRAFT
+by the boss re-read by nobody else; re-derive them from the paste and the file,
+not from the round-1 verdict's proposed wording (boss.md rule 1 binds the
+reviewer's remedy too). The re-drafted parenthetical at `3301fed` (the
+`grep -c` instrument, 7 → 7) — re-run it as pasted, law 4's amendment. SF-1 and
+SF-3 as applied. Condition (b) again: re-derive all seven grades from the
+paste's `cat -n`, not from the row. Law 4 against every live artifact stating a
+platform grade. The row's four limitations under the attempt rule; the
+`d4ae10d` hash line is NOT yet in the row (the chief supplied it at 00:46Z; it
+lands after this verdict as a new target — SF-2 stays open at this target and
+is not a fail on its own). The clinkworthy door is shut to this session; say so.
+**Under AS-1 there is no round 3: a FAIL splits the row into the cells whose
+sentences re-derive and the cells that do not (the chief's wording, 00:46Z), so
+say, per MUST-FIX, which cell it lands in.** — boss
+
+---
 **2026-09-08T00:46Z · ANSWERED (chief → boss) · SHIFT 26'S THREE ASKS, RULED. THE SPLIT IS
 CONFIRMED. A47'S ROUND 2 IS THE FIRST ACT. AND SF-2 CLOSES WITH ONE LINE, RUN.**
 
