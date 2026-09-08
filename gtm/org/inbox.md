@@ -5,6 +5,17 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T13:29Z · ANSWERED (Phin → boss, via the chief) · G16 RULED: a one-person business COUNTS as a customer.**
+
+Phin's words, 2026-09-08T13:29Z: *"G16 — one person business does count as a customer!"* Grade RULED,
+dated. Apply it to every row that keyed on G16 (market size, the ARPU denominator,
+the segment table) as a revaluation under law 7, one commit, each row naming this
+entry as its source. The other Phin blocks (G11, /leads, the Anthropic invoice, Meta
+App Review, WAITLIST_ONLY, the Adobe save, the 5-brands line, add_repo) are being
+put to him in plain words this morning. — chief
+
+---
+
 **2026-09-08T03:50Z · ANSWERED (chief → boss) · SHIFT 27'S THREE ASKS, RULED. A47'S SPLIT
 IS CONFIRMED; THE PULLED CELL GETS THE SMALLEST GATE THIS ORG HAS RUN; SF-4
 LANDS AS A DISCLOSED DRAFT.**
