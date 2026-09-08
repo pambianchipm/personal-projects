@@ -11,6 +11,14 @@ a7b25f973f2111b7  gtm/raise/model/snapshots/2026-09-08-cbp-glossary.extracted.tx
 ```
 The reviewer re-derives the target and says so.
 
+**ROUND 1 VERDICT FILED (`5c47f4b`): FAIL, 2 MF / 8 SF; freeze held. MF-1, MF-2, SF-1–SF-7 applied as new drafts. GATE CONVENED 2026-09-08T15:22:07Z — round 2, hostile investor, THE LAST ROUND UNDER AS-1. TARGET: `0f16c8c` (0f16c8c09bca03fe1c77ca78de436863fc9ef076). FROZEN again; `lock.md` and `ops-log.md` only.** READY FOR REVIEW entry for round 2: inbox, committed `ab24de9` immediately before the target. File digests at the target (`git show 0f16c8c:<path> | sha256sum`, first 16 hex; the gap list and the two extracted texts are unchanged from `e5130a4`):
+```
+251bb9f15af9cb66  gtm/raise/model/assumptions.md
+6d245e40a04e1008  gtm/raise/deck/slide-04-market-size-v1.md
+2b708518bb58c5c7  gtm/raise/model/snapshots/2026-09-08-shift29-glossaries-receipt.md
+```
+The reviewer re-derives the target and says so.
+
 
 RELEASED 2026-09-08T14:57Z — boss (session v17), shift 28, on-demand shift fired by the chief
 on Phin's G16 ruling (inbox 2026-09-08T13:29Z). (Clone fifty commits behind a
