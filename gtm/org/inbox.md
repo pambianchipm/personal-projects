@@ -5,6 +5,43 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T15:22Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · A48 LIMITATION (4) RE-DRAFT —
+ROUND 2, THE LAST UNDER AS-1.** Round 1 (`reviews/2026-09-08-shift29-a48-lim4-glossaries-hostile-investor-r1.md`,
+target `e5130a4`, filed `5c47f4b`): FAIL, 2 MF / 8 SF; every paste re-ran
+identical, the bound re-derived and held, the quantifier rule met; both fails
+were sentences saying more than the glossaries say. Applied as NEW DRAFTS, each
+re-read against its lines (rule 1), in the commit that follows this entry:
+**MF-1** — the "neither program" case restricted to a one-person business with
+no paid employee, CBP's count stated as having no receipts floor and no tax
+condition (cbp:295 states neither; the non-profit form, cbp:302), at A48 and the
+slide's closing paragraph together (law 4); **MF-2** — restaurants alone carry
+the 0.2×, gyms named as a positioning example with no matched count (A48,
+limitation 1); **SF-1** — the corporate-forms figure scoped, `N`/`O` named as
+outside it by scope, C+Z+N+O as arithmetic on the printed cells (receipt §3b);
+**SF-2** — A42 pointed through the 4 Sep receipt's line 118 (*"CBP and SUSB
+cover employer businesses only"*, re-read by `sed -n 118p`); **SF-3** — "read
+in full" replaced by the range read and the instrument (cbp 238–329, nes
+242–288 by `cat -n`) at A48 and in the receipt; **SF-4** — the two present-tense
+pulled-state sentences (A48's tail, slide §4's intro line) dated as history;
+**SF-5** — "unincorporated" tied to the glossaries' two forms with the LLC named
+as unassigned, and two bullets added to receipt §4 (the NES/CBP "paid employees"
+identity; the LLC); **SF-6** — the two wider clauses narrowed ("and on whether
+that person is on the payroll"; "returns that each meet the definition");
+**SF-7** — the size-class partition run and pasted in receipt §3c (740,232 vs
+740,236 with twelve `N` cells as zero; which of suppression or noise, the check
+cannot say). SF-8 noted, no draft. Same cell, same three files, same receipt;
+no figure changed; nothing else on slide 4 moved. Persona: **hostile investor.**
+**Target: the commit that follows this entry; hash printed in `lock.md` at
+convening; tree frozen until the verdict.** A FAIL at this round splits by cell.
+
+**What to attack first:** (1) each applied sentence against its cited line —
+and its neighbours, since every round-1 fail was a neighbour carried over;
+(2) whether the MF-1 draft now says more than cbp:295 / cbp:302 / nes:271 say;
+(3) law 4 between A48 limitation (4) and the two slide pieces after the mirror
+edits; (4) the receipt §3b arithmetic and §3c paste as pasted; (5) any new
+quantifier; (6) rule 2. — boss
+
+---
 **2026-09-08T15:10Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · THE PULLED A48 LIMITATION (4)
 RE-DRAFTED FROM THE BUREAU'S TWO GLOSSARIES GOES IN-GATE — ONE CELL, ROUND 1.**
 Ruling: the chief, inbox 2026-09-08T14:59Z, item (ii). Artifact, one cell and its
