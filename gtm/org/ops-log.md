@@ -8,6 +8,82 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-08 · on-demand (chief-fired on Phin's G16 ruling, inbox 13:29Z; the
+boss's clone was fifty commits behind a force-updated remote and was reset to
+origin `eb96b08` before claiming) · SHIFT 28 — G16 RULED, AND EVERY ROW THAT
+KEYED ON IT WAS REVALUED FROM THE BYTE-IDENTICAL FILE, NOT RE-TYPED: A44
+RELABELLED, A46 THE EMPLOYER-FIRM FLOOR, A48 NEW AND UNMULTIPLIED, SLIDE 4 §4
+A NEW DRAFT, G16 CLOSED, G20 OPENED — THEN TWO GATE ROUNDS, BOTH FAILED, AND THE ARTIFACT IS SPLIT BY CELL UNDER AS-1 — EVERY FIGURE SHIPS; WHAT IS PULLED IS THE SENTENCES THAT MAPPED "ONE-PERSON BUSINESS" ONTO "NONEMPLOYER"**
+
+**WHAT RAN, IN ORDER.**
+
+**(0) The chief's 03:50Z rulings on A47's face, before the freeze (`236403b`):**
+(i) the split recorded CONFIRMED with the entry's time; (iii) round-1 SF-4 as a
+scope clause — the document's four columns (paste line 30) as the row's scope,
+R2 as the anchor for *"IG/TikTok signals secondhand"* (`sed -n 29p
+risk-register.md`, `sed -n 252p skeleton.md`, both carry the phrase, 14:12Z) —
+disclosed on its face as a post-gate draft, no grade change; (ii) the pulled
+cell's own gate deferred to a later shift, said so in the cell.
+
+**(1) The named documents re-fetched, not re-read from the receipt** (14:06Z):
+`nonemp23us.zip` and `cbp23us.zip` from `www2.census.gov`, HTTP 200, byte
+counts and SHA-256 identical to the 4 Sep receipt (`420e37af…`, `3f9018f8…`);
+extracted texts identical (`2bf4e3e6…`, `1d8dbbfa…`). NEW: the NES US record
+layout (`us_record_layout_2017.txt`, `51e8d291…` — the Bureau's newest
+plain-text layout, so a cross-vintage read on a 2023 file, named as such) and
+`nes_naics22.txt` (`e79c488b…`). Instrument written into the tree
+(`snapshots/2026-09-08-shift28-g16-nes-rederivation.py`) and its output pasted
+as run (14:13:29Z) into `…rederivation.md`: every 4 Sep figure reproduces —
+the six NES counts, six CBP counts, 740,236 / 1,409,898 / 1.9×, 1,276,010 (=
+the file's own `81211` row), the five coarser rows. Blind spot of that result:
+same bytes, same code, same reader — it proves the 4 Sep arithmetic, not that
+the fields mean what the layout says; the arithmetic partition check is the
+only cross-check and it cannot see a silently re-cut class.
+
+**(2) READY FOR REVIEW written BEFORE the target (`be5a428`, 14:12:48Z — the
+entry's hand-written 14:14Z ran a minute ahead of the clock; the commit time
+is the record).**
+
+**(3) THE TARGET, one commit as the chief asked (`88885e6`):** A44 relabelled
+(counts SOURCED, inclusion RULED, the *"unmade Phin ruling"* sentence struck,
+the ruling quoted with its inbox time as the source); A46 relabelled the
+employer-firm FLOOR, figure unchanged, the ARPU-denominator consequence stated
+(*this row plus an unmeasured share of A48*); **A48 NEW** — 1,409,898
+nonemployer establishments on the six matched codes, not added to A46
+(establishments beside firms; six classes beside eighteen), not multiplied by
+A45 (no posting fraction measured on that population), with the receipts-size
+and legal-form cuts on the face (96.6% sole proprietorships; 57.3% under
+$25,000 receipts in the personal-care three) and four limitations each naming
+its attempt; the not-yet bullet; slide 4 — header amendment, §1's last
+paragraph, step 3b and step 5, §4 entire (the ruling; what it does and does
+not do to the slide; the case against carried as a limitation; the
+`positioning.md:162–164` observation that the employer-only count had
+excluded the population the positioning names), §6 item 7, §7's bullet; gap
+list — G16 closed on its face, original entry kept as the record, **G20
+opened** (the coverage hole: twelve of eighteen classes unmatched, no fraction
+on nonemployers, the 2017→2022 concordance NOT fetched — an open item with its
+attempt). **No price, no tier, no dollar figure, no combined total typed
+anywhere in the target** (`git diff -U0 | grep '^+' | grep -i '\$59\|\$299\|\$499'`
+→ empty, 14:16Z; the grep cannot see a price written in words).
+
+**(4) Convened (`1010478`, lock.md only): target `88885e6`, four file digests
+printed, tree frozen. One hostile-investor reviewer.**
+
+**(5) ROUND 1 — FAIL, 3 MF / 9 SF** (`reviews/2026-09-08-shift28-g16-revaluation-hostile-investor-r1.md`, filed alone at `1dedb11`; target `88885e6`; freeze held; the reviewer re-fetched all four Census files and re-derived 31 figures by its own instruments — all agree). The fails were mine and none was a figure: (MF-1) two pasted `curl` outputs in the receipt sat under a command that could not have printed them (the loop that ran had `date` and `$f`; the paste did not); (MF-2) I quoted the 4 Sep RAW CAPTURE as reading *"an unmade Phin ruling"* — it never did (`grep -c unmade` → 0); those were A44's own words, and I put a question to the gate about editing the capture on the strength of them; (MF-3) *"titles wider than, or differently cut from"* rested on the code list, whose `81219` title equals CBP's `812199` — the CBP file shows the superset and I had not run it. All twelve applied as new drafts (`5eafcb6`) after a second READY FOR REVIEW entry (`6bddf55`, before the target).
+
+**(6) ROUND 2 — FAIL, 2 MF / 10 SF — THE LAST UNDER AS-1** (`…-r2.md`, filed alone at `dad38e8`; target `5eafcb6`; freeze held including the second sentence, 14:37:00Z entry before 14:37:03Z target; every pasted output re-ran byte-identical; 33 figures re-derived, all agree; round-1 MF-1/2/3 closed on the reviewer's own instruments). Both MUST-FIX land in the one limitation the round-1 fix expanded: (MF-1) *"the Census category that contains **most** of them"* — a majority claim arriving in the SF-5 fix, in a sentence that says *"attempt: none"*, direction not conservative; (MF-2) the converse (*"pays herself a wage → employer with one employee"*) and the forward mapping cited only *"(round-1 SF-5)"* — the reviewer fetched both Bureau glossaries: true for salaried officers of corporations only, and a nonemployer has a receipts floor of $1,000; neither stated.
+
+**(7) SPLIT (`046da44`), as both verdicts proposed:** SHIP — A44 and A46 entire; A48's value, grade, instrument, limitations (1)–(3) and the first sentence of (4); the not-yet bullet; legend line 23; slide 4's header, §1 paragraph, §2 rows 3b/5, §4's table and paragraphs, §6 item 7, §7 bullet; the gap-list header, G16 closure, G20; the receipt and instrument entire. PULLED between ⟦PULLED TEXT⟧ marks under banners naming both fails and what restores them (a re-draft from the two glossaries, fetched and hashed, quantifier a bound or absent, at its own gate): A48 limitation (4) sentences 2–4; slide §4's clause from the colon at *"a solo owner-operator with no employees is a nonemployer"* to *"(A48, limitation 4)"*; slide §4's closing *"both directions"* paragraph. A44's pointer re-drafted to cite what ships (the A47 precedent). Round-2 SF-1, 3–10 drafted on the shipping half after the verdict, by me, not re-gated — each names what was run (the 2015/2017 layout `diff`, pasted; line 77's A48 pointer; the ruling quoted with its `!` and a bracketed `[G16 —]`; the 139–141 pointer; the two wording fragments; the `us_layout_2015.txt` name collision named; *"only"* removed). SF-2 fell with the pulled clause. **YOURS to confirm the split.**
+
+**NOT TOUCHED, and why:** the 4 Sep RAW CAPTURE still reads *"unmade Phin
+ruling"* — a frozen receipt dated 2026-09-04 (shift 24's rule on Phin's
+capture; put to the gate whether a dated pointer belongs on it); SUSB not
+re-fetched (A42/A45 did not move); the seven MUST-FIX on slide 4; the pulled
+A47 cell; the eleven AGENT-REPORTED rows; the clinkworthy door (not re-tried
+this shift — nothing in the revaluation needed it).
+
+**Fan-out: two hostile-investor reviewers, one per round, gate time only (~194k and ~252k tokens); solo otherwise. Web: six fetches from `www2.census.gov` (two bulk files, two layouts, one code list, one listing), no search. Weight: heavy.**
+
 **2026-09-08 · on-demand (chief-fired after the 02:00 cron slot ended in sixteen
 seconds without a commit; the boss's clone was one commit behind a
 force-updated remote and was reset to origin before claiming) · SHIFT 27 —

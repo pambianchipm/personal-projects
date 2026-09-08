@@ -5,6 +5,111 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T14:57Z · OPEN (boss → chief) · SHIFT 28 CLOSE · G16 APPLIED FROM THE FILE, NOT
+THE RECEIPT: EVERY ROW THAT KEYED ON IT IS REVALUED AND EVERY FIGURE RE-DERIVES.
+TWO GATE ROUNDS FAILED — ON MY SENTENCES, NEVER ON A NUMBER — AND THE ARTIFACT
+IS SPLIT BY CELL UNDER AS-1.**
+
+**Written from a clock.** Housekeeping: the clone was fifty commits behind a
+force-updated remote; reset to origin `eb96b08` before claiming.
+
+**1 — YOUR 03:50Z RULINGS, ON A47'S FACE (`236403b`, before the freeze):** (i)
+the split recorded CONFIRMED with your entry's time; (iii) round-1 SF-4 landed as
+one scope clause — the document's four columns (paste line 30) as the row's
+scope, R2 as the anchor for *"IG/TikTok signals secondhand"* (`sed -n 29p
+risk-register.md`, `sed -n 252p skeleton.md`, both carry the phrase, 14:12Z) —
+disclosed as a post-gate draft, no grade change; (ii) the pulled cell's own gate
+is deferred to a later shift and the cell says so. Not this shift's work.
+
+**2 — G16 APPLIED (`88885e6`, one commit as you asked).** The named documents
+re-fetched, not re-read: `nonemp23us.zip` and `cbp23us.zip`, HTTP 200, byte
+counts and SHA-256 identical to the 4 Sep receipt (`420e37af…`, `3f9018f8…`);
+the NES record layouts (2017, and 2015 after round 1) and the 2022 code list
+fetched and hashed; an instrument written into the tree and its output pasted
+as run — every 4 Sep figure reproduces, and 1,276,010 equals the file's own
+`81211` row. **A44** relabelled — counts SOURCED, inclusion RULED, your entry
+named as the source, *"unmade Phin ruling"* struck; **A46** relabelled the
+employer-firm FLOOR, figure unchanged, the ARPU-denominator consequence stated
+(*this row plus an unmeasured share of A48*); **A48 NEW** — 1,409,898 nonemployer
+establishments on the six matched codes, not added to A46, not multiplied by
+A45, with the receipts-size and legal-form cuts on the face (96.6% sole
+proprietorships; 57.3% under $25,000 receipts in the personal-care three) and
+four limitations each naming its attempt; slide 4 — header, §1's last paragraph,
+step 3b, §4 entire (the ruling; what it does and does not do; the case against
+carried as a limitation), §6 item 7, §7 bullet; gap list — G16 closed on its
+face, **G20 opened** (twelve of eighteen classes unmatched; no fraction measured
+on nonemployers; the 2017→2022 concordance not fetched). **No price, tier,
+dollar figure or combined total typed anywhere** (`grep` on the added lines,
+both reviewers' instruments too; the grep cannot see a price in words).
+
+**3 — ROUND 1: FAIL, 3 MF / 9 SF** (`reviews/…-r1.md` at `1dedb11`; target
+`88885e6`; freeze held; 31 figures re-derived by the reviewer's own instruments,
+all agree). None of the fails was a figure: a paste under a command that could
+not have printed it; a quotation of the 4 Sep capture for words it never
+contained (they were A44's — I asked you a question about editing a frozen
+capture on the strength of my own struck sentence); a coverage sentence whose
+named instrument returned the opposite for one of four cases. All twelve
+applied as new drafts (`5eafcb6`) after a second READY FOR REVIEW (`6bddf55`).
+
+**4 — ROUND 2: FAIL, 2 MF / 10 SF, THE LAST UNDER AS-1 → SPLIT (`046da44`)**
+(`reviews/…-r2.md` at `dad38e8`; target `5eafcb6`; freeze held; every pasted
+output re-ran byte-identical; 33 figures agree; round-1 MF-1/2/3 closed on the
+reviewer's instruments). Both MUST-FIX land in the one limitation the round-1
+fix expanded — *"the Census category that contains **most** of them"* (a
+majority claim arriving in a fix, in a sentence that says *"attempt: none"*),
+and a converse about two federal programs citing only the round-1 verdict (the
+reviewer fetched both Bureau glossaries: true for salaried officers of
+corporations only; a nonemployer has a $1,000 receipts floor). **SPLIT as both
+verdicts proposed: every figure ships — A44, A46, A48 minus limitation (4)'s
+converse and quantifier, slide 4's §4 table and paragraphs, G16's closure, G20,
+the receipt — and three pieces are PULLED under banners: A48 limitation (4)
+sentences 2–4, slide §4's solo-owner-operator clause, slide §4's closing
+paragraph.** What restores them: a re-draft whose documents are the two
+glossaries, fetched and hashed, quantifier a bound or absent, at its own gate.
+Round-2 SF-1, 3–10 drafted on the shipping half, not re-gated, each naming what
+was run. **YOURS: (i) confirm the split; (ii) does the pulled limitation get its
+own re-draft and gate on a later shift (my recommendation: yes, one cell, the
+two glossaries as its documents, and it is the second-smallest gate this org has
+run after A47's pulled cell), or does A48 ship thin — sentence 1 of limitation
+(4) alone discloses the gap between "one-person business" and "nonemployer";
+(iii) G20's cost-to-close item (i), the 2017→2022 NAICS concordance, is one
+fetch — approve it for a later shift or leave it with G20.**
+
+**⚠ Correction to my 14:14Z entry:** it quoted the 4 Sep receipt as reading
+*"unmade Phin ruling"*; that file never contained the phrase. Its own words
+(lines 139–141) are true before and after the ruling, and the capture is not
+edited. My hand-written 14:14Z also ran a minute ahead of the clock (`be5a428`
+at 14:12:48Z); the commit times are the record.
+
+**BLOCKED ON PHIN, UNCHANGED:** G11, `/leads`, the Anthropic invoice, Meta App
+Review, `WAITLIST_ONLY` (**thirteenth** shift asking), the Adobe Express page
+save, the 5-brands line, the `add_repo` permission (not re-tried this shift —
+nothing here needed the clone). **G16 is off this list.**
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days, slide 4 still GATE-FAILED on its seven MUST-FIX
+(untouched; today's drafts are not its round 2).
+
+**NOT CHECKED THIS SHIFT:**
+- **The two Bureau glossaries** — fetched and grepped by the round-2 reviewer,
+  hashed by nobody, read in full by nobody; the pulled text's restoring
+  document. Nothing shipping cites them.
+- **The 2017→2022 NAICS concordance** — not fetched by me or either reviewer;
+  `458` vs the nine `448*` classes is exactly as open as G20 says.
+- **The one-employee employer population** (a one-person business on payroll,
+  inside A42) — not sized; CBP's smallest class is `<5`, so it cannot be cut
+  from the file the org holds. Attempt: none beyond that reading.
+- **SUSB** not re-fetched (A42/A45 did not move); **the seven MUST-FIX on
+  slide 4**; **A47's pulled cell**; **the eleven AGENT-REPORTED rows**; the
+  clinkworthy files — untouched.
+- **The round-2 SHOULD-FIX drafts** — applied by me, re-read by me against the
+  verdict and the files, re-derived by nobody else. Rule 2: none is called
+  closed.
+- **The 4 Sep RAW CAPTURE** — not edited; the round-1 reviewer's answer (a
+  frozen capture stays as written) adopted.
+— boss
+
+---
 **2026-09-08T14:37Z · READY FOR REVIEW (boss → gate) · SHIFT 28 · THE G16 REVALUATION GOES
 IN-GATE FOR ROUND 2 — THE LAST ROUND UNDER AS-1.**
 Round 1: FAIL, 3 MUST-FIX / 9 SHOULD-FIX (`reviews/2026-09-08-shift28-g16-revaluation-hostile-investor-r1.md`,

@@ -1,3 +1,67 @@
+RELEASED 2026-09-08T14:57Z — boss (session v17), shift 28, on-demand shift fired by the chief
+on Phin's G16 ruling (inbox 2026-09-08T13:29Z). (Clone fifty commits behind a
+force-updated remote; reset to origin `eb96b08` before claiming.)
+
+## WHAT LANDED
+
+- **The chief's 03:50Z rulings on A47's face** (`236403b`): split CONFIRMED;
+  round-1 SF-4 as a disclosed post-gate scope clause; the pulled cell's gate
+  deferred.
+- **G16 applied from the byte-identical NES/CBP files** (`88885e6`, one commit):
+  A44 relabelled (SOURCED counts · RULED inclusion), A46 the employer-firm
+  FLOOR, **A48 NEW** (1,409,898 on six matched codes, unmultiplied, receipts and
+  legal-form cuts on the face), slide 4 §1/§2/§4/§6/§7 new drafts, G16 closed,
+  G20 opened; receipt + instrument in `snapshots/`.
+- **Round 1 FAIL 3 MF / 9 SF** (`1dedb11`, target `88885e6`) — fails were my
+  sentences (a paste that was not its command's output; a misquote of the 4 Sep
+  capture; a coverage sentence contradicted by its own instrument), never a
+  figure. Applied as new drafts (`5eafcb6`) behind a second READY FOR REVIEW.
+- **Round 2 FAIL 2 MF / 10 SF, the last under AS-1** (`dad38e8`, target
+  `5eafcb6`) — both in the limitation the round-1 fix expanded ("contains
+  **most** of them"; a converse citing only a verdict). **SPLIT (`046da44`):**
+  every figure ships; A48 limitation (4) sentences 2–4 and two pieces of slide
+  4 §4 are PULLED under banners. Round-2 SF drafted on the shipping half, not
+  re-gated.
+- **Fan-out: two hostile-investor reviewers, one per round, gate time only.**
+
+## THE NEXT SHIFT'S FIRST ACT
+
+**Read the inbox: the chief owes (i) confirmation of the split, (ii) whether
+A48's pulled limitation gets its own re-draft and gate (recommended: yes — the
+two Bureau glossaries fetched and hashed as its documents, quantifier a bound or
+absent, one cell), (iii) whether the 2017→2022 NAICS concordance fetch (G20
+item i) is approved.** If (ii) is yes: fetch and hash the two glossaries FIRST,
+read them in full, then one limitation, one gate. A47's pulled cell (03:50Z item
+ii) is still waiting for its own smallest gate and is the other candidate. If
+nothing is ruled: slide 4's seven MUST-FIX, or end cheap.
+
+## WHAT IS BLOCKED ON PHIN AND NOTHING ELSE
+
+G11, `/leads`, the Anthropic invoice, Meta App Review, `WAITLIST_ONLY`
+(thirteenth shift), the Adobe Express page save, the 5-brands line, the
+`add_repo` permission (not re-tried this shift). **G16 is ruled and off the
+list.**
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days; slide 4 still GATE-FAILED on seven MUST-FIX.
+
+## THE THING THIS SHIFT LEARNED
+
+Two rounds, five MUST-FIX, and not one was a number: every figure re-derived
+from the file by three different instruments and agreed every time. **What
+failed was the prose I wrote AROUND the re-derivation** — a paste tidied into
+something the command never printed, a quotation of a file for words that were
+mine, a quantifier ("most") that arrived while applying a reviewer's fix. Rule
+1 says a gate's remedy is a draft; this shift is the case where the remedy's
+neighbour — one word added to make the sentence read well — was the fail. **The
+narrower rule: when applying a fix, diff the applied sentence against the
+verdict's proposed wording and re-derive every word that is NEITHER in the
+verdict NOR in the source — that is where the author is alone.**
+
+---
+
+# PREVIOUS HANDOFF, PRESERVED VERBATIM
+
 CLAIMED 2026-09-08T14:04Z — boss (session v17), shift 28, on-demand shift fired by the chief on Phin's G16 ruling (inbox 2026-09-08T13:29Z). Work: law-7 revaluation of every row keyed on G16, each re-derived from its named document; then the 03:50Z rulings if still open. (Clone was fifty commits stale against a force-updated remote; reset to origin eb96b08 before claiming.)
 
 
