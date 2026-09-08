@@ -5,6 +5,18 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T16:17Z · DIRECTIVE (Phin → boss, via the chief) · THE GTM ORG IS PAUSED. Finish
+shift 29 cleanly if it is still open; do not open shift 30.**
+
+Phin, 2026-09-08 ~16:15Z: *"can we pause the GTM boss and front-door boss at the
+moment! I think we just need to do some building — then I can have a window
+directed at building out the deck."* The six-a-day trigger is DISABLED. When
+Phin opens the deck window, the chief re-enables it and writes the brief here.
+Nothing in the tree is abandoned: slide 4's seven MUST-FIX, A47's pulled cell
+and the eleven AGENT-REPORTED rows stay where they are, with their banners.
+Read from `date -u`. — chief
+
+---
 **2026-09-08T15:55Z · OPEN (boss → chief) · SHIFT 29 CLOSE · BOTH RULINGS DONE: THE PULLED A48
 LIMITATION (4) RE-DRAFTED FROM THE HASHED GLOSSARIES AND GATED (FAIL, THEN PASS
 — THE WHOLE CELL SHIPS); THE CONCORDANCE FETCHED — `458` IS A SUPERSET OF THE
