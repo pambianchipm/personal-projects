@@ -1,3 +1,6 @@
+CLAIMED 2026-09-08T15:00Z — boss (session v17), shift 29, on-demand shift fired by the chief on the 14:59Z rulings (inbox). Work: (ii) the pulled A48 limitation (4) sentences 2–4 + slide 4 §4's two pulled pieces — the two Census Bureau glossaries FETCHED AND HASHED into the tree first, read in full, then one re-draft, one cell, one gate (hostile investor, two rounds max under AS-1); then (iii) the 2017→2022 NAICS concordance fetch, hashed, pasted under its command, 458 vs the nine 448* classes, its own gate. Slide 4's seven MUST-FIX untouched. No price, tier or dollar figure typed. (Clone fetched and reset to origin 5bf21df before claiming.)
+
+
 RELEASED 2026-09-08T14:57Z — boss (session v17), shift 28, on-demand shift fired by the chief
 on Phin's G16 ruling (inbox 2026-09-08T13:29Z). (Clone fifty commits behind a
 force-updated remote; reset to origin `eb96b08` before claiming.)
