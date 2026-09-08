@@ -67,7 +67,7 @@ at `88885e6`, r2 FAIL 2 MF / 10 SF at `5eafcb6`, the last under AS-1): every
 figure and every draft on this slide ships except two pieces of §4, pulled under
 banners — the clause mapping solo owner-operators onto nonemployers and the
 closing "both directions" paragraph. Round-2 SF-3, SF-6, SF-9 drafted on the
-shipping half, not re-gated. The split awaits the chief's confirmation.** What the ruling changed is what the
+shipping half, not re-gated. The split was CONFIRMED by the chief 2026-09-08T14:59Z, item (i); the two pulled pieces of §4 are RE-DRAFTED at shift 29 from the Bureau's two glossaries, fetched and hashed, and are IN-GATE on their own with A48 limitation (4) — one cell, one gate; the seven MUST-FIX of round 1 are untouched.** What the ruling changed is what the
 headline number IS: the employer-firm floor of a base Phin has ruled larger.
 
 ORIGINAL STATUS: DRAFT, ungated. Not self-passed (law 7). The persona that applies
@@ -266,16 +266,19 @@ nonemployer figure. **What moved is what the count IS: the employer-firm floor
 of a base ruled larger** — and the population it left out overlaps the one
 `positioning.md` §6 names as the target (*"solo owner-operators of local,
 visual small businesses — salons, gyms/studios, restaurants/cafes, boutiques —
-with no marketing hire"*, `positioning.md:162–164`). *(⚠ PULLED AT GATE ROUND 2
-— round-2 MF-2 and SF-2; the clause between the marks does not ship and nothing
-may cite it. What restores it is a re-draft from the Bureau's glossaries at its
-own gate — see A48 limitation (4).)* **⟦PULLED TEXT — begins⟧** : a solo
-owner-operator with no employees is a nonemployer, so until 8 September the
-market slide excluded by construction a large part of the customer the
-positioning describes. **How large is ARGUED, not measured** — the
-positioning's own examples include restaurants and gyms, which are 0.2×
-nonemployer in the table above, and a solo owner who is on her own payroll is
-an employer already inside step 3 (A48, limitation 4). **⟦PULLED TEXT — ends⟧**
+with no marketing hire"*, `positioning.md:162–164`): a solo
+owner-operator with no paid employee is a nonemployer when unincorporated (or
+incorporated with its owner off the payroll), at or above the Bureau's receipts
+floor and subject to federal income taxes, so until 8 September the market slide excluded by construction part of
+the customer the positioning describes. **How large a part is not measured** —
+the positioning's own examples include restaurants and gyms, which are 0.2×
+nonemployer in the table above; and a solo owner who is the salaried officer of
+her own corporation is an employer already inside step 3 — **at most 248,211**
+such establishments on the six matched codes, the `<5`-class count, an upper
+bound that also holds every two-to-four-employee shop. [A48, limitation 4 —
+re-drafted shift 29 from the Bureau's two glossaries, fetched and hashed, at its
+own gate] *(The clause this replaces was PULLED at shift 28's round 2, MF-2 and
+SF-2; its wording is at `046da44`.)*
 **The ruled-in businesses are not added to the
 headline, for three reasons stated rather than assumed:** (1) a matched
 nonemployer count exists for **six of the eighteen classes** and no more — the
@@ -310,15 +313,18 @@ nonemployers is a base weighted toward hair, nails and barbering, and slide 5
 this under G16 as the case against; **it is now a property of the ruled base,
 not an argument against it.** [A44]
 
-*(⚠ PULLED AT GATE ROUND 2 — round-2 MF-1 and MF-2; the paragraph between the
-marks does not ship and nothing may cite it. What ships on this point is A48
-limitation (4), first sentence: a nonemployer is not necessarily one person.)*
-**⟦PULLED TEXT — begins⟧** **"One-person business" and "nonemployer" differ in both directions.** NES
-counts businesses with no paid employees, and corporations and partnerships are
-among them; a one-person business whose owner draws a wage is an employer with
-one employee and is already inside step 3. The ruling's words are *"one person
-business"*; this slide applies them to the Census category that contains most
-of those businesses, and says so here. [A48, limitation 4] **⟦PULLED TEXT — ends⟧**
+**"One-person business" and "nonemployer" differ in both directions.** NES
+counts businesses with no paid employees — one business income tax return each
+— and corporations and partnerships are among them. A one-person business whose
+owner is the salaried officer of its own corporation is an employer with one
+employee, already inside step 3 (the bound above); a sole proprietor cannot be
+her own paid employee; and below the Bureau's receipts floor, or not subject to
+federal income taxes, a one-person business is in neither program. No fraction on either
+side is measured. The ruling's words are *"one person business"*; this slide
+applies them to the Census category of businesses with no paid employees, and
+says so here. [A48, limitation 4 — re-drafted shift 29 from the Bureau's two
+glossaries, fetched and hashed, at its own gate] *(The paragraph this replaces
+was PULLED at shift 28's round 2, MF-1 and MF-2; its wording is at `046da44`.)*
 
 ---
 
