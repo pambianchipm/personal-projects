@@ -4,8 +4,10 @@ CONFIDENTIAL — Lane A raise artifact (law 8). Internal-audit class.
 STATUS: RECEIPT (not an artifact; the instrument behind the shift-28 revaluation
 of `assumptions.md` A44 / A46 / A48, slide 4 §1, §2, §4, §6, §7 and gap-list
 G16 / G20). Written by the GTM boss, shift 28, 2026-09-08. **Law 7: the
-revaluation it supports is IN-GATE (hostile investor) and nothing here is
-self-passed.**
+revaluation it supports is SPLIT at gate round 2 (r1 FAIL 3 MF / 9 SF at
+`88885e6`; r2 FAIL 2 MF / 10 SF at `5eafcb6`, the last under AS-1); this receipt
+and its instrument ship entire under both verdicts' proposed cut; round-2 SF-1,
+SF-4, SF-5, SF-10 drafted here after the verdict, by the boss, not re-gated.**
 
 **First breath:** Player 2 is an AI marketing employee for small businesses.
 This file is the re-runnable record of every nonemployer figure the revaluation
@@ -92,10 +94,22 @@ $ wc -c nonemp23us.zip nonemp23us.txt cbp23us.zip cbp23us.txt us_record_layout_2
 | → `cbp23us.txt` | `1d8dbbfa…a54b` | `1d8dbbfa…a54b` | **YES — 3,801,025 B** |
 | `us_record_layout_2017.txt` | — (not fetched 4 Sep) | `51e8d291…8626` | NEW, 4,265 B |
 | `nes_naics22.txt` | — (not fetched 4 Sep) | `e79c488b…18e1` | NEW, 19,280 B |
-| `United States File 2015.txt` (NES US layout, 2015) | — | `d5342f74…c477` | NEW, 5,233 B — fetched after round 1 (SF-1) |
+| `United States File 2015.txt` (NES US layout, 2015; saved locally as `us_layout_2015.txt` — the same local name the 4 Sep receipt used for the CBP 2015 layout, `c009d926…`, 9,284 B, a different file — round-2 SF-4) | — | `d5342f74…c477` | NEW, 5,233 B — fetched after round 1 (SF-1) |
 
 **So every figure below is computed from the same bytes the 4 Sep receipt
-hashed.** The new files are the NES US record layouts — the listing above, pasted (round-1 SF-1: the first draft described it as *".docx for earlier years"*, and 2015 is a `.txt`), shows `.docx` for 1997–2014, a `.txt` for 2015, `us_record_layout_2017.txt`, and nothing later; the 2015 layout carries the same `LFO` strings and the same `RCPTOT_SIZE` bands as the 2017 one (the `grep -n` above), two layout vintages agreeing on the codes this receipt reads — and the 2022-NAICS code list NES 2023 uses. *(Round-1 MF-1: the first draft of this section pasted the two layout/code-list fetches under a command that could not have printed them — a `-w` string without the filename and no `date`; the loop above is what ran, with its three output lines each.)*
+hashed.** The new files are the NES US record layouts — the listing above, pasted (round-1 SF-1: the first draft described it as *".docx for earlier years"*, and 2015 is a `.txt`), shows `.docx` for 1997–2014, a `.txt` for 2015, `us_record_layout_2017.txt`, and nothing later; the 2015 layout's `LFO` and `RCPTOT_SIZE` blocks are byte-identical to the 2017 one's (round-2 SF-1 — the first draft claimed this on a four-line `grep`; the instrument that shows it, run 2026-09-08T14:54:45Z:
+```
+$ diff <(sed -n 20,41p us_layout_2015.txt) <(sed -n 20,41p us_record_layout_2017.txt); echo "exit $?"
+exit 0
+$ diff us_layout_2015.txt us_record_layout_2017.txt | grep -c '"D"\|"N"'; diff us_layout_2015.txt us_record_layout_2017.txt | grep '"D"\|"N"' | cut -c1-90
+5
+<                                   "D" - Number of establishments 
+<                                   "D" - Receipts data are withheld to 
+> 				  "N" - Not available or not comparable.
+<                                   "D" - Receipts data are withheld to 
+> 				  "N" - Not available or not comparable.
+```
+so the two vintages agree on the codes §4–§5 read for legal form and receipts size, and **disagree on the flag codes** — 2015 defines `D` where 2017 defines `N`, and §5 reads `N`, a code the 2015 vintage does not carry) — and the 2022-NAICS code list NES 2023 uses. *(Round-1 MF-1: the first draft of this section pasted the two layout/code-list fetches under a command that could not have printed them — a `-w` string without the filename and no `date`; the loop above is what ran, with its three output lines each.)*
 
 ## 2. THE INSTRUMENT, AND ITS OUTPUT AS RUN
 
@@ -265,7 +279,7 @@ false for 60 of them): `RCPTOT_N_F` is `G` (low noise) on the seven `001` rows
 and `N` (*"not available or not comparable"*) on all 60 class rows; `ESTAB_F` is
 blank on every row of the file (non-blank count → 0). Where the 2- and
 1-establishment residuals sit is therefore not stated by any flag; the absent
-`133` row is the only candidate the file shows. **The blind spot, in
+`133` row is the candidate the file shows (round-2 SF-10). **The blind spot, in
 the same breath:** the arithmetic proves the class rows partition the total by
 *some* receipts variable; it does not prove the 2023 boundaries are the dollar
 bands the 2017 layout names. Section E reads `LFO` codes through the same
@@ -293,7 +307,8 @@ license no conclusion about willingness to pay** — that is a customer question
   *(Round-1 MF-2: the first draft of this bullet quoted it as reading "an unmade
   Phin ruling" — a phrase that file never contained; `grep -c unmade` on it → 0.
   Those were A44's own words, struck this shift.)* What the capture says, its
-  lines 138–141: *"Whether a booth-renting stylist is "a shop" therefore moves the
+  lines 139–141 (round-2 SF-5 — the first draft said 138–141; 138 is the
+  preceding sentence): *"Whether a booth-renting stylist is "a shop" therefore moves the
   count by more than any other single decision in the model"* — true before and
   after the ruling. The gate's answer, adopted: a frozen capture stays as
   written; the ruling's pointer lives in A44, not on the capture.

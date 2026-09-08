@@ -61,8 +61,13 @@ bullet are NEW DRAFTS (rule 1), written by the boss from the re-fetched NES
 file (`snapshots/2026-09-08-shift28-g16-nes-rederivation.md`, byte-identical
 to the 4 Sep fetch) and quoting rows **A44, A46, A48**. **No figure in steps
 1–5 changed; the seven MUST-FIX stand; round 2 on this slide remains
-un-convened. The revaluation itself is IN-GATE (hostile investor) under law 7
-— it is not this slide's round 2.** What the ruling changed is what the
+un-convened. The revaluation itself went to its own gate under law 7 — not
+this slide's round 2 — and is SPLIT at round 2 (2026-09-08; r1 FAIL 3 MF / 9 SF
+at `88885e6`, r2 FAIL 2 MF / 10 SF at `5eafcb6`, the last under AS-1): every
+figure and every draft on this slide ships except two pieces of §4, pulled under
+banners — the clause mapping solo owner-operators onto nonemployers and the
+closing "both directions" paragraph. Round-2 SF-3, SF-6, SF-9 drafted on the
+shipping half, not re-gated. The split awaits the chief's confirmation.** What the ruling changed is what the
 headline number IS: the employer-firm floor of a base Phin has ruled larger.
 
 ORIGINAL STATUS: DRAFT, ungated. Not self-passed (law 7). The persona that applies
@@ -74,7 +79,7 @@ MANDATE: gap G2 (`gap-list-2026-09-04.md`), the largest hole this org can fill
 by itself. Skeleton inputs (i)-(iv); **(iii) ARPU is blocked — see §5.**
 RECEIPT: `gtm/raise/model/snapshots/2026-09-04-census-establishment-counts.md`
 — every figure below, with fetch times, byte counts and SHA-256 hashes.
-NUMBERS RULE (law 4): figures quote `assumptions.md` rows **A40-A46**.
+NUMBERS RULE (law 4): figures quote `assumptions.md` rows **A40-A46** *(and, since 2026-09-08, **A48** — a law-4 pointer fix, round-2 SF-3)*.
 
 **First breath:** Player 2 is an AI marketing employee for small businesses.
 **This slide answers one question — how many businesses could hire it — and
@@ -111,7 +116,7 @@ deliberately stops before the second one.**
 >
 > ~~**What this count deliberately excludes: every business with no employees.**~~
 > ~~In personal care that is 8.6-18.2× the employer count. **[A44]**~~
-> *(⚠ 2026-09-08, shift 28 — new draft under G16, IN-GATE:)* **What this count
+> *(⚠ 2026-09-08, shift 28 — new draft under G16; ships under the round-2 split:)* **What this count
 > still leaves out, and since 8 September should not: every business with no
 > employees.** Phin ruled that a one-person business counts as a customer
 > (G16). On the six classes where the two Census programs match, that is
@@ -142,7 +147,7 @@ org knows which of its own numbers is which.
 | 1 | US **employer establishments** in the named NAICS classes | **945,036** | **SOURCED** | CBP 2023, `lfo='-'`, 18 six-digit classes [A40] |
 | 2 | → US **employer firms** (one firm = one buying decision) | **681,795** | **SOURCED** | SUSB 2022. Removes 26.4% of locations that belong to multi-location firms [A41, A43] |
 | 3 | → firms with **under 20 employees** | **556,857** | **SOURCED count / ARGUED reading** | SUSB 2022 `ENTRSIZE=33`. The *count* is published. That "<20 employees" means "no marketing hire" is **our inference** [A42] |
-| 3b | → **plus** every business with **no employees** — RULED IN 2026-09-08 (G16), *new draft, IN-GATE* | **+1,409,898** on six of the 18 classes; **not carried into steps 4–5** | **SOURCED count / RULED inclusion** | NES 2023, the six codes that match CBP exactly. No matched count exists for the other twelve; no posting fraction has been measured on this population; establishments, not firms [A44, A48] |
+| 3b | → **plus** every business with **no employees** — RULED IN 2026-09-08 (G16), *new draft, ships under the round-2 split* | **+1,409,898** on six of the 18 classes; **not carried into steps 4–5** | **SOURCED count / RULED inclusion** | NES 2023, the six codes that match CBP exactly. No matched count exists for the other twelve; no posting fraction has been measured on this population; establishments, not firms [A44, A48] |
 | 4 | → × **fraction that actively posts** | **× 44%** | **AGENT-REPORTED + ARGUED** | A30's *"44% post weekly"* — Adobe Express n=433, **vendor-adjacent, its own row says treat as a ceiling, and the survey has not been retrieved by anyone in this org** [A45] |
 | 5 | = **serviceable market, in units** | **~245,000 firms** | **DERIVED, inheriting AGENT-REPORTED + ARGUED** | 556,857 × 0.44 — **the employer-firm FLOOR since 8 Sep (G16); step 3b is not in it** [A46] |
 | 6 | × ARPU | **NOT COMPUTED** | **BLOCKED** | No tier mix is ruled (G11). See §5 |
@@ -229,7 +234,7 @@ is the optimistic end of it.
 
 ## §4. THE EXCLUSION THAT MOVED THE ANSWER MORE THAN THE FRACTION — RULED 8 SEPTEMBER: THEY ARE IN
 
-*(New draft, shift 28, 2026-09-08 — rule 1; IN-GATE under law 7. The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
+*(New draft, shift 28, 2026-09-08 — rule 1; gated under law 7 and SPLIT at round 2 — the two pulled pieces are marked below. The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
 
 CBP and SUSB count **employer** businesses. A salon chair rented by a
 self-employed stylist is a **nonemployer** and appears in neither.
@@ -253,21 +258,25 @@ the argued fraction. **It was a definition: does a booth-renting stylist with an
 Instagram count as a shop?**
 
 **RULED — 2026-09-08T13:29Z, Phin, via the chief (inbox entry of that time):
-*"one person business does count as a customer."*** They are in. [A44 — RULED]
+*"[G16 —] one person business does count as a customer!"*** They are in. [A44 — RULED]
 
 **What the ruling does to this slide, and what it does not.** The headline
 count (steps 1–5) did not move: its inputs are A42 and A45, and neither is a
 nonemployer figure. **What moved is what the count IS: the employer-firm floor
 of a base ruled larger** — and the population it left out overlaps the one
 `positioning.md` §6 names as the target (*"solo owner-operators of local,
-visual small businesses [— salons, gyms/studios, restaurants/cafes, boutiques —]
-with no marketing hire"*, `positioning.md:162–164`): a solo owner-operator with
-no employees is a nonemployer, so until 8 September the market slide excluded by
-construction a large part of the customer the positioning describes. **How
-large is ARGUED, not measured** — the positioning's own examples include
-restaurants and gyms, which are 0.2× nonemployer in the table above, and a solo
-owner who is on her own payroll is an employer already inside step 3 (A48,
-limitation 4). **The ruled-in businesses are not added to the
+visual small businesses — salons, gyms/studios, restaurants/cafes, boutiques —
+with no marketing hire"*, `positioning.md:162–164`). *(⚠ PULLED AT GATE ROUND 2
+— round-2 MF-2 and SF-2; the clause between the marks does not ship and nothing
+may cite it. What restores it is a re-draft from the Bureau's glossaries at its
+own gate — see A48 limitation (4).)* **⟦PULLED TEXT — begins⟧** : a solo
+owner-operator with no employees is a nonemployer, so until 8 September the
+market slide excluded by construction a large part of the customer the
+positioning describes. **How large is ARGUED, not measured** — the
+positioning's own examples include restaurants and gyms, which are 0.2×
+nonemployer in the table above, and a solo owner who is on her own payroll is
+an employer already inside step 3 (A48, limitation 4). **⟦PULLED TEXT — ends⟧**
+**The ruled-in businesses are not added to the
 headline, for three reasons stated rather than assumed:** (1) a matched
 nonemployer count exists for **six of the eighteen classes** and no more — the
 command that establishes the absence is the receipt's section C (every NES
@@ -301,12 +310,15 @@ nonemployers is a base weighted toward hair, nails and barbering, and slide 5
 this under G16 as the case against; **it is now a property of the ruled base,
 not an argument against it.** [A44]
 
-**"One-person business" and "nonemployer" differ in both directions.** NES
+*(⚠ PULLED AT GATE ROUND 2 — round-2 MF-1 and MF-2; the paragraph between the
+marks does not ship and nothing may cite it. What ships on this point is A48
+limitation (4), first sentence: a nonemployer is not necessarily one person.)*
+**⟦PULLED TEXT — begins⟧** **"One-person business" and "nonemployer" differ in both directions.** NES
 counts businesses with no paid employees, and corporations and partnerships are
 among them; a one-person business whose owner draws a wage is an employer with
 one employee and is already inside step 3. The ruling's words are *"one person
 business"*; this slide applies them to the Census category that contains most
-of those businesses, and says so here. [A48, limitation 4]
+of those businesses, and says so here. [A48, limitation 4] **⟦PULLED TEXT — ends⟧**
 
 ---
 
