@@ -53,6 +53,18 @@ labelled honestly now and still does not argue *why 44 rather than 30 or 60*.
 consistency-collapse cohort, so step 4 may be screening out the very ICP this
 org's positioning targets. **A relabel is not a repair.** Round 2 remains
 un-convened, deliberately.
+
+**AMENDED shift 28, 2026-09-08 — G16 RULED: A ONE-PERSON BUSINESS COUNTS AS A
+CUSTOMER (Phin, via the chief, inbox 2026-09-08T13:29Z).** §1's last
+paragraph, a step-3b row in §2, §4 entire, §6 item 7 and §7's nonemployer
+bullet are NEW DRAFTS (rule 1), written by the boss from the re-fetched NES
+file (`snapshots/2026-09-08-shift28-g16-nes-rederivation.md`, byte-identical
+to the 4 Sep fetch) and quoting rows **A44, A46, A48**. **No figure in steps
+1–5 changed; the seven MUST-FIX stand; round 2 on this slide remains
+un-convened. The revaluation itself is IN-GATE (hostile investor) under law 7
+— it is not this slide's round 2.** What the ruling changed is what the
+headline number IS: the employer-firm floor of a base Phin has ruled larger.
+
 ORIGINAL STATUS: DRAFT, ungated. Not self-passed (law 7). The persona that applies
 is **hostile investor**, and the right first question is **not** "is the count
 right" — the counts are hashed and re-checkable. It is **"does the fraction in
@@ -97,8 +109,18 @@ deliberately stops before the second one.**
 > not purchasable. A revenue number here would be the first invented figure in
 > the deck. **[§5]**
 >
-> **What this count deliberately excludes: every business with no employees.**
-> In personal care that is 8.6-18.2× the employer count. **[A44]**
+> ~~**What this count deliberately excludes: every business with no employees.**~~
+> ~~In personal care that is 8.6-18.2× the employer count. **[A44]**~~
+> *(⚠ 2026-09-08, shift 28 — new draft under G16, IN-GATE:)* **What this count
+> still leaves out, and since 8 September should not: every business with no
+> employees.** Phin ruled that a one-person business counts as a customer
+> (G16). On the six classes where the two Census programs match, that is
+> **1,409,898** more businesses — 1.9× the employer locations there, and in
+> personal care alone **1,276,010**, more than the whole firm count above.
+> **They are not added here:** no matched count exists for twelve of the
+> eighteen classes, and no posting fraction has been measured on them. **So the
+> number above is the employer floor of a base ruled larger.** **[A44, A48 —
+> SOURCED (the counts) / RULED (the inclusion); A46 — the floor]**
 
 **THE LABELS ON THE SLIDE ARE THE POINT — AND ONE OF THEM WAS WRONG UNTIL THE
 ROUND-1 GATE ON THE REGRADE CAUGHT IT (MUST-FIX 6).** The quote block printed
@@ -120,8 +142,9 @@ org knows which of its own numbers is which.
 | 1 | US **employer establishments** in the named NAICS classes | **945,036** | **SOURCED** | CBP 2023, `lfo='-'`, 18 six-digit classes [A40] |
 | 2 | → US **employer firms** (one firm = one buying decision) | **681,795** | **SOURCED** | SUSB 2022. Removes 26.4% of locations that belong to multi-location firms [A41, A43] |
 | 3 | → firms with **under 20 employees** | **556,857** | **SOURCED count / ARGUED reading** | SUSB 2022 `ENTRSIZE=33`. The *count* is published. That "<20 employees" means "no marketing hire" is **our inference** [A42] |
+| 3b | → **plus** every business with **no employees** — RULED IN 2026-09-08 (G16), *new draft, IN-GATE* | **+1,409,898** on six of the 18 classes; **not carried into steps 4–5** | **SOURCED count / RULED inclusion** | NES 2023, the six codes that match CBP exactly. No matched count exists for the other twelve; no posting fraction has been measured on this population; establishments, not firms [A44, A48] |
 | 4 | → × **fraction that actively posts** | **× 44%** | **AGENT-REPORTED + ARGUED** | A30's *"44% post weekly"* — Adobe Express n=433, **vendor-adjacent, its own row says treat as a ceiling, and the survey has not been retrieved by anyone in this org** [A45] |
-| 5 | = **serviceable market, in units** | **~245,000 firms** | **DERIVED, inheriting AGENT-REPORTED + ARGUED** | 556,857 × 0.44 [A46] |
+| 5 | = **serviceable market, in units** | **~245,000 firms** | **DERIVED, inheriting AGENT-REPORTED + ARGUED** | 556,857 × 0.44 — **the employer-firm FLOOR since 8 Sep (G16); step 3b is not in it** [A46] |
 | 6 | × ARPU | **NOT COMPUTED** | **BLOCKED** | No tier mix is ruled (G11). See §5 |
 | 7 | Top-down analyst TAM, as colour | **NOT FETCHED** | — | Law 2 admits it *after* the bottom-up gates. Deliberately absent |
 
@@ -204,7 +227,9 @@ is the optimistic end of it.
 
 ---
 
-## §4. THE EXCLUSION THAT MOVES THE ANSWER MORE THAN THE FRACTION DOES
+## §4. THE EXCLUSION THAT MOVED THE ANSWER MORE THAN THE FRACTION — RULED 8 SEPTEMBER: THEY ARE IN
+
+*(New draft, shift 28, 2026-09-08 — rule 1; IN-GATE under law 7. The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
 
 CBP and SUSB count **employer** businesses. A salon chair rented by a
 self-employed stylist is a **nonemployer** and appears in neither.
@@ -217,21 +242,64 @@ self-employed stylist is a **nonemployer** and appears in neither.
 | Full-Service Restaurants | 258,626 | 61,909 | 0.2× |
 | Limited-Service Restaurants | 270,088 | 52,005 | 0.2× |
 | Snack / Nonalcoholic Beverage Bars | 85,140 | 19,974 | 0.2× |
+| **Six-code total** | **740,236** | **1,409,898** | **1.9×** |
 
-**Personal-care nonemployers alone number 1,276,010 — nearly double the entire
-employer-firm base this slide is built on.** So the single largest lever on
-market size is not the argued fraction at all. **It is a definition: does a
-booth-renting stylist with an Instagram count as a shop?**
+*Every figure re-derived 2026-09-08 from the byte-identical NES and CBP files by the pasted instrument in `snapshots/2026-09-08-shift28-g16-nes-rederivation.md` §2 (sections A–B). [A44, A48]*
 
-**We have not answered it, and this slide does not.** The case for including
-them is that they are *precisely* the founding ICP — *"too small to hire anyone
-for marketing."* The case against is that a one-person operation has the least
-money and the ratio is so segment-lopsided (18× in barbering, 0.2× in food)
-that including them would silently re-weight the whole market toward personal
-care.
+**Personal-care nonemployers alone number 1,276,010 — more than the entire
+employer-firm base this slide is built on** (the three-code sum equals the
+file's own `81211` row). So the single largest lever on market size was never
+the argued fraction. **It was a definition: does a booth-renting stylist with an
+Instagram count as a shop?**
 
-**This is a Phin ruling, and it is a bigger one than the tier mix.** Until it
-is made, **this slide's number is a floor** and should be said aloud as one.
+**RULED — 2026-09-08T13:29Z, Phin, via the chief (inbox entry of that time):
+*"one person business does count as a customer."*** They are in. [A44 — RULED]
+
+**What the ruling does to this slide, and what it does not.** The headline
+count (steps 1–5) did not move: its inputs are A42 and A45, and neither is a
+nonemployer figure. **What moved is what the count IS: the employer-firm floor
+of a base ruled larger** — and the population it left out is the one
+`positioning.md` §6 names as the target (*"solo owner-operators of local,
+visual small businesses … with no marketing hire"*, `positioning.md:162–164`),
+so until 8 September the market slide excluded by construction the customer
+the positioning describes. **The ruled-in businesses are not added to the
+headline, for three reasons stated rather than assumed:** (1) a matched
+nonemployer count exists for **six of the eighteen classes** and no more — the
+command that establishes the absence is the receipt's section C (every NES
+total row under the six prefixes, printed); (2) the six-code figure counts
+**establishments** beside a firm count, and step 2 exists precisely because
+those are different units; (3) **no posting fraction has been measured on this
+population** — step 4's 44% was measured on a panel its source does not name,
+and applying it one population further out repeats the transfer defect §3
+already carries (A45 receipt §4b). **So step 3b is stated and stopped.** [A46,
+A48]
+
+**The case against, carried as a limitation rather than dropped.** The gap
+list recorded it: *a one-person operation has the least money.* The same file
+describes the population: of the 1,276,010 personal-care nonemployers,
+**96.6% are sole proprietorships**, **57.3% report receipts under $25,000** and
+24.1% under $10,000 (the three food classes: 58–63% under $25,000) — read
+through the Bureau's **2017** layout against the **2023** file, the same
+cross-vintage shape as §6 item 6, checked arithmetically the same way, and
+with the same blind spot: a partition is proven, the dollar boundaries are
+not. **This describes who was ruled in; it says nothing about what any of them
+would pay** (law 6; zero interviews, G1). Nothing on this slide multiplies
+anything by a price, and the ruling changes that in no way — G11 stands, and
+**the denominator any future ARPU would multiply is this floor plus an
+unmeasured share of A48, which is why §5's refusal now covers a larger
+number than it did.** [A48]
+
+**Segment re-weighting, named because the ruling makes it real.** The ratio is
+8.6–18.2× in personal care and 0.2× in food service; a base that includes
+nonemployers is a base weighted toward hair, nails and barbering, and slide 5
+(which band we displace) and slide 6 inherit that shape. The gap list carried
+this under G16 as the case against; **it is now a property of the ruled base,
+not an argument against it.** [A44]
+
+**A nonemployer is not necessarily one person.** NES counts businesses with
+no paid employees; corporations and partnerships are among them. The ruling's
+words are *"one person business"*; this slide applies them to the Census
+category that contains those businesses, and says so here. [A48, limitation 4]
 
 ---
 
@@ -277,6 +345,13 @@ rather than filled in.**
    checked arithmetically against the 2023 file (757 rows, 0 mismatches).
    **That check proves the fields partition the total; it cannot prove the
    class boundaries are the employee counts the 2015 layout names.**
+7. **The nonemployer base is stated and not counted** *(new draft, shift 28,
+   IN-GATE)*. Step 3b brings in 1,409,898 businesses on six classes and stops:
+   a reader can fairly ask why the slide does not carry a larger headline, and
+   the answer — six of eighteen classes matched, establishments beside firms,
+   no posting fraction measured on them — is stated in §4, not assumed. The
+   receipts and legal-form cuts in §4 are a 2017-layout read of a 2023 file
+   (item 6's shape) and license nothing about willingness to pay. [A48]
 
 ---
 
@@ -301,6 +376,12 @@ rather than filled in.**
 - **A nonemployer parallel model.** NES 2023 uses **2022** NAICS (clothing is
   `458*`, not `448*`) and publishes most segments only at 3-4 digits, so only
   six codes match exactly.
+  *(Re-tried 2026-09-08, shift 28, after G16 was ruled: every NES total row
+  under the six prefixes printed — receipt section C — and the six-digit rows
+  present are still exactly the matched six plus `722514`; the coarser rows'
+  2022-NAICS titles are wider than the 2017 classes, and the 2017→2022
+  concordance was NOT fetched, so whether `458` equals the nine `448*` classes
+  is an open item — G20.)*
 - **Any top-down analyst TAM** — deliberately not fetched (law 2).
 - **Willingness to pay, at any price, by anyone.** Zero customers, zero
   interviews (G1). **Nothing on this slide is demand evidence.** It is a count
