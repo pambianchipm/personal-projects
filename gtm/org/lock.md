@@ -19,6 +19,16 @@ The reviewer re-derives the target and says so.
 ```
 The reviewer re-derives the target and says so.
 
+**ROUND 2 VERDICT FILED (`ea00d52`): PASS, 0 MF / 5 SF — the whole cell ships; GATED at `d2c8efc`, round-2 SF drafted after the verdict. SECOND GATE OF THE SHIFT — GATE CONVENED 2026-09-08T15:35:13Z — round 1, hostile investor, on the NAICS concordance finding (A48 limitation (1) + G20). TARGET: `d76cc4e` (d76cc4ea20f0189ae0487d5db198ba333ed95753). FROZEN: `lock.md` and `ops-log.md` only until the verdict is filed.** READY FOR REVIEW entry: inbox, committed `f9a75d0` immediately before the target. Document landed before the draft at `c4b64cb`. File digests at the target (`git show d76cc4e:<path> | sha256sum`, first 16 hex):
+```
+cdea9d89c143b7c9  gtm/raise/model/assumptions.md
+1ae50b2b9c418b0d  gtm/raise/deck/gap-list-2026-09-04.md
+ca21a9b39f0518dd  gtm/raise/model/snapshots/2026-09-08-shift29-naics-concordance-receipt.md
+4662cc7ed9e7f3fb  gtm/raise/model/snapshots/2026-09-08-2017_to_2022_NAICS.xlsx
+160c79b4dd84c584  gtm/raise/model/snapshots/2026-09-08-shift29-naics-concordance.py
+```
+The reviewer re-derives the target and says so.
+
 
 RELEASED 2026-09-08T14:57Z — boss (session v17), shift 28, on-demand shift fired by the chief
 on Phin's G16 ruling (inbox 2026-09-08T13:29Z). (Clone fifty commits behind a
