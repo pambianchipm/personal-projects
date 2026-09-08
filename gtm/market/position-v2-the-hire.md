@@ -72,8 +72,12 @@ the counts are in the shift's verdict file.
 3. **§4.0 reported a cost share (63%) as a gross position**, in the paragraph
    written to fix an over-claim. True gross there is +37.3%.
 4. **`channel-readiness.md`, cited as "the authority" for §3.1, does not
-   exist.** Re-anchored to code receipts that open; the Reddit row is now
-   NOT CHECKED.
+   exist.** Re-anchored to code receipts that open; ~~the Reddit row is now
+   NOT CHECKED~~ *(⚠ 2026-09-08, shift 27, G19 gate round 2 MF-1, law 4: **BLOCKED on
+   credentials** per `assumptions.md` A47; the document exists as the chief's
+   paste at `gtm/market/snapshots/2026-09-07-channel-readiness-from-clinkworthy.md`.
+   This line was the fourth live site of the superseded grade, split across a
+   line-wrap where a per-line grep for both strings cannot see it)*.
 
 **PROCESS DEFECT, RECORDED AGAINST THE BOSS (found by the salesperson gate
 r2).** The round-1 edit pass was committed at `0fac89a` while **only one of
@@ -523,8 +527,8 @@ PARTIAL and unverified, ~~**Reddit is NOT CHECKED**~~ **Reddit is BLOCKED on
 credentials** *(⚠ AMENDED 2026-09-07, shift 26, at the G19 gate (MF-1, law 4):
 the authority's sentence — *"credentials still on Phin's list"* — now anchored
 at `assumptions.md` A47; the table at :509 was amended 2026-09-04 and this
-prose was left)* (regraded NOT CHECKED at the round-3
-gate; round 4 found the regrade had reached the narrative and not the table);
+prose was left)* ~~(regraded NOT CHECKED at the round-3
+gate; round 4 found the regrade had reached the narrative and not the table)~~ *(⚠ 2026-09-08, shift 27, G19 r2 SF-3: this clause belonged to the struck words and was left hanging by the 7 Sep amendment)*;
 a buyer who asks about either gets *"not yet"*, and the seller needs that line in hand. (b) **The
 draft's "3 of 5 real" is struck** — it reached 3 by counting Meta ads as a
 platform while the copy sentence names two, and it is a count in a section
@@ -1105,7 +1109,7 @@ my email for it."*
    of the three conflict with shipped code (§4.4).
 9. **Law-4 defects this file opened and cannot close itself:**
    `objection-bank.md` O3's *"four videos a month"* vs A8's four a week (4×,
-   undersells); O4 stale against D4; no channel row in `assumptions.md` *(⚠ A47 written 2026-09-07, shift 26, UNGATED)*; no
+   undersells); O4 stale against D4; no channel row in `assumptions.md` *(⚠ A47 written 2026-09-07, shift 26; SPLIT at its gate's round 2, 2026-09-08 — the seven grade cells ship SOURCED, the cross-artifact parenthetical is pulled; see the row)*; no
    row for a $29 cohort rate; the truth map's ad-cap vs §3.2's ceiling.
 10. **This file does not edit `positioning.md`**, which is PHIN-APPROVED.
 11. **Gate defects are recorded in place**, not quietly repaired: every

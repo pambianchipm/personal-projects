@@ -18,7 +18,11 @@ failed twice (MUST-FIX 1 and 2), and the eight-cell table waits for a document
 that can carry it: a fresh read of `competitor-holo.md` from a clone this org
 can open. Round-2 SHOULD-FIX 1–7 are re-drafted in the shipping half below with
 the values re-derived at 23:34Z, by the boss, after the verdict and not
-re-gated — each names what was run. The two law-4 MUST-FIX outside this file
+re-gated — each names what was run. **SPLIT CONFIRMED BY THE CHIEF
+2026-09-08T00:46Z (inbox, item i), recorded here by the boss shift 27 2026-09-08T02:57Z:
+line 1, §1, §2, §5.2, §5.3 ship; §3, §4, §5.1 stay pulled under the banner
+until a clone this org can open re-reads the teardown; the SHOULD-FIX re-drafts
+stand as drafts, each naming its instrument, none called closed.** The two law-4 MUST-FIX outside this file
 (`assumptions.md:419`, `gap-list:517–518`) land in this shift's commits.**
 
 **Player 2 is an AI marketing employee for small businesses. This file is a

@@ -366,7 +366,9 @@ stranger with a card can pay. For Phin.**
   `position-v2` §6.2 says NOT CHECKED. **Two gated artifacts disagree and this
   file does not adjudicate them.** *(⚠ 2026-09-07, shift 26: adjudicated —
   `assumptions.md` A47 is the anchor, BLOCKED on credentials; `position-v2`
-  §6.2 amended the same shift at the G19 gate.)*
+  §6.2 amended the same shift at the G19 gate.)* *(⚠ 2026-09-08, shift 27: A47 was
+  SPLIT at its gate's round 2 — the Reddit grade cell ships SOURCED; the
+  parenthetical in A47 describing `position-v2`'s amendments is pulled.)*
 - Where each string sits on the page. This file approves words, not layout.
 - The line numbers above were read at `9b5b484`. They drift.
 
