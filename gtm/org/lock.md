@@ -1,4 +1,58 @@
-CLAIMED 2026-09-08T02:45Z — boss (session v16), shift 27, on-demand shift fired by the chief after the 02:00 cron slot ended in sixteen seconds without a commit; ruling at the top of inbox.md dated 2026-09-08T00:46Z. (Clone was one commit behind a force-updated remote — `d405729` vs `036e801`; reset to origin before claiming.) GATE CONVENED 02:45Z: hostile-investor ROUND 2 (the LAST round under AS-1) on gtm/raise/model/assumptions.md row A47 (G19, the channel row), TARGET FROZEN AT 3301fed as the chief named it (inbox 00:46Z, item ii), SHA-256 of the A47 line f804e6feae05c80269ac39a7ee964ea312155ee6a70b3815c416452c9ed49e9b — identical by `git show 3301fed:gtm/raise/model/assumptions.md | grep '^| A47' | sha256sum` and `grep '^| A47' gtm/raise/model/assumptions.md | sha256sum` at 036e801 (both run 02:45Z); the two commits between target and HEAD (`b22a78b`, `036e801`) touch inbox.md, lock.md and ops-log.md only. No commits but lock.md/ops-log.md until the verdict is filed.
+RELEASED 2026-09-08T03:00Z — boss (session v16), shift 27, on-demand shift fired by
+the chief after the 02:00 cron slot ended in sixteen seconds without a commit;
+ruling at inbox 2026-09-08T00:46Z. (Clone one commit behind a force-updated remote;
+reset to origin before claiming.)
+
+## WHAT LANDED
+
+- **A47 round 2 — the last under AS-1 — FAIL, 2 MF / 5 SF, SPLIT** (target
+  `3301fed`, convening `0ab3cc2`, verdict filed alone at `26831d4`,
+  `reviews/2026-09-08-shift27-g19-channel-row-hostile-investor-r2.md`). Seven
+  grades re-derived from the paste a second time, agree. Both MUST-FIX in the
+  cross-artifact parenthetical: a fourth live `NOT CHECKED` Reddit line at
+  `position-v2:75–76` my pasted per-line grep cannot see (a pair split across
+  a wrap), and two line pointers moved by my own fix. **SPLIT (`2d58c57`):**
+  grade cells, status cell, four limitations ship SOURCED; the parenthetical
+  is pulled between ⟦PULLED TEXT⟧ marks under a banner. `:75–76` struck with a
+  ⚠ as a law-4 fix in that file.
+- **The `d4ae10d` hash line in limitation (1)** — the chief's three commands
+  pasted as run; join by hash.
+- **The re-cut's split recorded as CONFIRMED (chief, 00:46Z) on its face.**
+- Round-2 SF-1 (six stale *"UNGATED until its own gate"* sites) and SF-3
+  drafted, not re-gated; SF-5 (round 1's SF-4–SF-7) not applied.
+- **Fan-out: one hostile-investor reviewer, gate time only.**
+
+## THE NEXT SHIFT'S FIRST ACT
+
+**Read the inbox: the chief owes (i) confirmation of A47's split, (ii) whether
+the pulled cell gets its own re-draft and gate, (iii) whether round 1's SF-4
+scope clause may land on the shipping half.** If (ii) is yes: a fresh read of
+`position-v2-the-hire.md` for the Reddit grade with an adjacent-line test AND a
+paraphrase sweep ("unverified", "not established", "not confirmed") BEFORE
+drafting the cell; then READY FOR REVIEW, lock, one reviewer, one cell. If
+nothing is ruled: slide 4's seven MUST-FIX are the top GATE-FAILED item, or
+end cheap.
+
+## WHAT IS BLOCKED ON PHIN AND NOTHING ELSE
+
+G16, G11, `/leads`, the Anthropic invoice, Meta App Review, `WAITLIST_ONLY`
+(twelfth shift), the Adobe Express page save, the 5-brands line, the
+`add_repo` permission (not re-tried this shift; last attempt 23:23Z, 7 Sep).
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days; slide 4 still GATE-FAILED on seven MUST-FIX.
+
+## THE THING THIS SHIFT LEARNED
+
+Rule 3 says name the instrument's blind spot in the same sentence as its
+result. I did, and named the wrong one: I said a line count cannot see a strike,
+and the blind spot that mattered was that a per-line grep for two strings
+cannot see them on two lines. **A blind spot you name because the rule asks
+for one is not the blind spot; ask what shape of the claim your instrument
+would return silence for, then look for that shape with a different
+instrument.** And the line numbers a fix moves are the fix's own neighbours —
+re-read them from `cat -n` after the edit, and pin them to a commit, because
+the next fix moves them again (mine did, four lines, in this very shift).
 
 ---
 

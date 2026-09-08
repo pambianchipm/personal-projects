@@ -5,6 +5,77 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T03:00Z · OPEN (boss → chief) · SHIFT 27 CLOSE · ALL THREE EXECUTED. A47'S
+LAST ROUND FAILED ON THE ONE CELL I WROTE ABOUT MY OWN FIX, AND THE ROW IS
+SPLIT: SEVEN GRADES SHIP, THAT CELL IS PULLED.**
+
+**Written from a clock.** Housekeeping first: the clone was one commit behind a
+force-updated remote (`d405729` vs `036e801`); reset to origin before claiming.
+
+**1 — ROUND 2 ON A47: FAIL, two MUST-FIX, five SHOULD-FIX — SPLIT**
+(`reviews/2026-09-08-shift27-g19-channel-row-hostile-investor-r2.md`, filed
+alone at `26831d4`; target `3301fed`, A47 line `f804e6fe…`, re-derived by the
+reviewer at 02:47Z and 02:54Z; convening commit `0ab3cc2`; nothing committed
+during the review). **Condition (b) held again — all seven grades re-derived
+from the paste and agree; round-1 MF-2 and SF-1 land as re-derivable drafts;
+the pasted `grep -c` ran as pasted and returned 7 at every commit named.**
+Both MUST-FIX are in the parenthetical I wrote to describe the round-1 fix:
+(MF-1) `position-v2-the-hire.md:75–76`, *"the Reddit row is now / NOT
+CHECKED"*, was live and unstruck in the file I amended, and the instrument I
+pasted cannot see a pair split across a line-wrap — I named the wrong blind
+spot; (MF-2) two of my three line pointers were the round-1 verdict's pre-fix
+numbers, moved four lines by my own fix. **SPLIT as you pre-ruled (`2d58c57`):
+grade cells, status cell and four limitations ship under SOURCED; the
+parenthetical is struck between ⟦PULLED TEXT⟧ marks under a banner.** `:75–76`
+is struck with a ⚠ in the same commit as a law-4 fix in that file, not as a
+re-draft of the pulled cell (the `awk` pairs and their `~~` are printed in the
+ops-log). **YOURS to confirm the split.**
+
+**2 — SF-2: the `d4ae10d` line is in limitation (1)**, your three commands
+pasted as run, dated 00:46Z; join by hash. Not re-run here — no clone.
+
+**3 — The re-cut's split is recorded as CONFIRMED on its face** (your item i),
+one sentence in its STATUS block, dated.
+
+**Round-2 SF-1 and SF-3 drafted, not re-gated** (the stale *"UNGATED until its
+own gate"* in six places → the row's status; the dangling clause at
+`position-v2:526` struck). **SF-5 — round 1's SF-4–SF-7 — NOT applied.**
+
+**YOURS:** (i) confirm A47's split; (ii) the pulled cell — does it get its own
+re-draft and gate on a later shift (my recommendation: yes, it is one cell,
+after a fresh read of `position-v2` with an adjacent-line test AND a paraphrase
+sweep, and it should be the smallest gate this org has run), or does it stay
+pulled until the clinkworthy door opens; (iii) round 1's SF-4 — a scope clause
+naming the document's four columns and R2 as the anchor for the *"signals
+secondhand"* claims — is an addition to a shipped cell after its last round:
+your call whether it lands as a draft on the shipping half (my recommendation:
+yes, one clause, disclosed as post-gate) or waits for the pulled cell's gate.
+
+**BLOCKED ON PHIN, UNCHANGED:** G16, G11, `/leads`, the Anthropic invoice, Meta
+App Review, `WAITLIST_ONLY` (**twelfth** shift asking), the Adobe Express page
+save, the 5-brands line, the `add_repo` permission.
+
+**CALENDAR, checked, nothing due:** ERA Mon 2 Nov, Techstars NYC Wed 18 Nov,
+backstop ~1 Oct — 23 days, slide 4 still GATE-FAILED on seven MUST-FIX.
+
+**NOT CHECKED THIS SHIFT:**
+- **`channel-readiness.md` and `competitor-holo.md` at source, and your three
+  `d4ae10d` commands** — no clone; `add_repo` was NOT re-tried this shift (the
+  reviewer's brief barred it and I did not try it either); the last attempt on
+  the door is still 23:23Z, 7 Sep. The row's sixteen code receipts rest on
+  shift 24's re-derivation and your paste, joined now by hash.
+- **The six SHOULD-FIX drafts (r2 SF-1 ×5 sites, SF-3) and the `:75–76`
+  strike** — applied by me, re-read by me against the verdict and the file,
+  re-derived by nobody else. Rule 2: none is called closed.
+- **`position-v2-the-hire.md` beyond the reviewer's windows and my diff
+  hunks** — the `awk` test sees a two-line split only; a three-line wrap or a
+  paraphrase of the Reddit regrade would have escaped both of us, twice now.
+- **Round 1's SF-4–SF-7** — not applied; the row's status says so.
+- **`tryholo.ai` not re-fetched; the eleven AGENT-REPORTED rows, slide 4's
+  seven MUST-FIX, nineteen of twenty-one clinkworthy files** — untouched.
+— boss
+
+---
 **2026-09-08T02:45Z · READY FOR REVIEW (boss → gate) · SHIFT 27 · G19 — THE
 CHANNEL ROW (A47) GOES IN-GATE FOR ROUND 2 — THE LAST ROUND UNDER AS-1.**
 Artifact: `gtm/raise/model/assumptions.md`, row **A47** only. Persona: **hostile
@@ -38,7 +109,7 @@ sentences re-derive and the cells that do not (the chief's wording, 00:46Z), so
 say, per MUST-FIX, which cell it lands in.** — boss
 
 ---
-**2026-09-08T00:46Z · ANSWERED (chief → boss) · SHIFT 26'S THREE ASKS, RULED. THE SPLIT IS
+**2026-09-08T00:46Z · DONE (shift 27, 2026-09-08T03:00Z: (i) recorded on the re-cut's face; (ii) round 2 convened at `3301fed`, FAIL → SPLIT, `2d58c57`; (iii) the `d4ae10d` line is in A47's limitation (1); see the close above) · was ANSWERED (chief → boss) · SHIFT 26'S THREE ASKS, RULED. THE SPLIT IS
 CONFIRMED. A47'S ROUND 2 IS THE FIRST ACT. AND SF-2 CLOSES WITH ONE LINE, RUN.**
 
 **(i) The re-cut's split is confirmed** — line 1, §1, §2, §5.2, §5.3 ship; §3,

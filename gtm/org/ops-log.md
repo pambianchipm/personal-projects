@@ -8,6 +8,89 @@ weight (light/medium/heavy).*
 
 ---
 
+**2026-09-08 · on-demand (chief-fired after the 02:00 cron slot ended in sixteen
+seconds without a commit; the boss's clone was one commit behind a
+force-updated remote and was reset to origin before claiming) · SHIFT 27 —
+A47'S ROUND 2, THE LAST UNDER AS-1, FAILED ON ONE CELL AND THE ROW IS SPLIT AS
+THE CHIEF PRE-RULED: SEVEN GRADES SHIP, THE CROSS-ARTIFACT PARENTHETICAL IS
+PULLED — AND THE DEFECT WAS A FOURTH LIVE LINE MY OWN PASTED INSTRUMENT COULD
+NOT SEE BY CONSTRUCTION**
+
+**WHAT RAN, IN THE RULING'S ORDER (inbox 2026-09-08T00:46Z).**
+
+**(1) Round 2 on A47 — target `3301fed` as the chief named it; READY FOR REVIEW
+entry and lock in the convening commit `0ab3cc2` (the entry follows the target
+because the chief named an existing commit — disclosed in the entry, graded
+exact by the reviewer); A47 line SHA-256 `f804e6fe…` identical at target and
+HEAD, re-derived by the reviewer at 02:47:13Z and 02:54:36Z; no commit during
+the review. VERDICT: FAIL, two MUST-FIX, five SHOULD-FIX — SPLIT**
+(`reviews/2026-09-08-shift27-g19-channel-row-hostile-investor-r2.md`, filed
+alone at `26831d4`). Condition (b) held a second time: all seven grades
+re-derived from the paste's `cat -n` and agree; the X headline carries the
+document's qualifier; the Reddit cell hits paste line 36 once; the pasted
+`grep -c` instrument ran as pasted and returned 7 at `9a814c8`, `03710e8`,
+`3301fed` and HEAD. **Both MUST-FIX land in the one cell I wrote to describe
+my own round-1 fix:** (MF-1, law 4 / rule 3) `position-v2-the-hire.md:75–76` —
+*"the Reddit row is now / NOT CHECKED"* — was live, unstruck and byte-identical
+to `9a814c8`, in the file I amended at `03710e8`; the instrument I pasted,
+`grep -n "Reddit" … | grep -c "NOT CHECKED"`, counts lines carrying both
+strings and cannot return a pair split across a line-wrap — the reviewer's
+`awk` adjacent-line test found it. (MF-2, condition (a) / rule 1) two of the
+three line pointers in that cell, `:1054` and `:1158`, were the round-1
+verdict's pre-fix numbers, moved four lines by my own fix. **SPLIT
+(`2d58c57`):** the seven grade cells, the status cell and the four limitations
+ship under SOURCED; the parenthetical is struck between ⟦PULLED TEXT⟧ marks
+under a banner naming both fails and what would restore it (a new draft from
+the file after `:75–76`'s amendment, at its own gate). **YOURS to confirm the
+split**, as with the re-cut.
+
+**(2) The law-4 half of MF-1, in the other file, same commit, not a re-draft
+of the pulled cell:** `position-v2-the-hire.md:75–76` struck with a dated ⚠ to
+A47's grade. Instrument, run 2026-09-08T03:00Z, as the banner promises:
+```
+$ awk 'prev ~ /Reddit/ && $0 ~ /NOT CHECKED/ {print NR-1": "prev; print NR": "$0} {prev=$0}' gtm/market/position-v2-the-hire.md
+75:    exist.** Re-anchored to code receipts that open; ~~the Reddit row is now
+76:    NOT CHECKED~~ *(⚠ 2026-09-08, shift 27, G19 gate round 2 MF-1, law 4: **BLOCKED on
+525: **Two r1 additions.** (a) **X and Reddit are named nowhere in copy** — X is
+526: PARTIAL and unverified, ~~**Reddit is NOT CHECKED**~~ **Reddit is BLOCKED on
+$ grep -n "Reddit" gtm/market/position-v2-the-hire.md | grep -c "NOT CHECKED"      # 7
+```
+Two pairs; both carry `~~` on the `NOT CHECKED` line. The test sees a two-line
+split only — a three-line wrap or a paraphrase ("unverified", "not
+established") is outside it, and the file is 1,178 lines of which this shift
+read the reviewer's windows and the diff hunks.
+
+**(3) SF-2 — the `d4ae10d` hash line is in limitation (1)**, the chief's three
+commands pasted as run, dated 00:46Z: the `d4ae10d` copy and the `main` copy
+hash to the paste's `21abaa4c…` at 4,052 B. Join by hash. Those commands were
+not re-run here — no clone.
+
+**(4) Round-2 SF-1 and SF-3 drafted, not re-gated:** *"A47 is UNGATED until its
+own gate"* re-drafted to the row's status in the legend (`:164`, `:363`), the
+gap list (×2), `position-v2:1108→1112` and the `front-door-strings:365` pointer
+(instrument: `grep -c "UNGATED until its own gate"` → 0 in both files after);
+the dangling *"(regraded NOT CHECKED at the round-3 gate…)"* clause struck
+with a ⚠. **SF-5 (round 1's SF-4–SF-7) NOT applied** — a scope clause added to
+a shipped cell after its last round is the chief's call, asked in the inbox.
+One neighbour my own insert moved: the four lines added at `:75–76` shift the
+SF-3 clause `:526→:530`; the status cell pins both numbers to their commits.
+
+**(5) The re-cut's split recorded as CONFIRMED on its face** (the chief's
+00:46Z item i), one sentence in the STATUS block.
+
+**Fan-out: ONE independent hostile-investor persona reviewer, gate time only
+(~161k subagent tokens, 23 tool uses, ~8 min). Token weight: medium.**
+
+**Blocked on Phin, unchanged:** G16, G11, `/leads`, the Anthropic invoice,
+Meta App Review, `WAITLIST_ONLY` (twelfth shift), the Adobe Express page save,
+the 5-brands line, the `add_repo` permission (NOT re-tried this shift — the
+reviewer's brief barred it and the boss did not try it either; the door's last
+attempt is still 23:23Z on 7 Sep). **Calendar, checked, nothing due:** ERA
+Mon 2 Nov, Techstars NYC Wed 18 Nov, backstop ~1 Oct — 23 days; slide 4 still
+GATE-FAILED on seven MUST-FIX.
+
+---
+
 **2026-09-07 · on-demand (chief-fired at 23:17Z, ruling shift 25's four asks;
 the boss's session found its clone three days stale and reset it to origin
 before claiming) · SHIFT 26 — ROUND 2 ON THE RE-CUT FAILED AND THE FILE IS
