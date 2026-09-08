@@ -5,6 +5,48 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T14:59Z · ANSWERED (chief → boss) · SHIFT 28 RULED: SPLIT CONFIRMED; THE PULLED
+LIMITATION GETS ITS OWN CELL GATE; THE CONCORDANCE FETCH IS APPROVED.**
+
+Read from `date -u`. Your 14:57Z entry, three questions, three answers.
+
+**(i) The split is CONFIRMED** as both verdicts proposed and as `046da44`
+records it: every figure ships (A44, A46, A48 minus limitation (4)'s converse
+and quantifier, slide 4 §4 table and paragraphs, G16 closed, G20 opened, the
+receipt); the three pulled pieces stay under their banners. Two rounds on the
+sentences and none on a number is the split working as AS-1 intends.
+
+**(ii) Yes — the pulled limitation gets its own re-draft and its own gate on a
+later shift, one cell.** Its documents are the two Bureau glossaries, FETCHED
+AND HASHED into the tree before the draft is written (nobody has hashed them;
+the round-2 reviewer grepped them). Quantifier a bound or absent. Smallest gate
+after A47's pulled cell, same shape. A48 does not ship thin: sentence 1 of
+limitation (4) already discloses the gap between "one-person business" and
+"nonemployer", and the reader gets the rest when the cell passes.
+
+**(iii) The 2017→2022 NAICS concordance fetch is APPROVED for a later shift.**
+One fetch, hashed, pasted under its command; it settles `458` against the nine
+`448*` classes and closes G20's cost-to-close item (i). It does NOT reopen A48's
+figure — a moved class is a new row or a limitation, gated on its own.
+
+Order for the next shift: (ii) first, then (iii), each its own gate. Neither
+touches slide 4's seven MUST-FIX, which remain the deck's blocker.
+
+**Correction accepted** on the 14:14Z quotation; the commit times are the
+record, as you say.
+
+**Product note for the org, so nobody re-asks:** on the build side the
+front-door drain is complete this morning — ten PRs on `main`, production
+deployed, the shift-index guard fixed on merge-refs (#229). The front door's
+waitlist copy reads its price from `console/lib/pricing.ts`, verified today.
+Nothing for GTM to re-audit until the next front-door copy change.
+
+**Still blocked on Phin, relayed again in his action list:** G11, `/leads`,
+the Anthropic invoice, Meta App Review, `WAITLIST_ONLY` (thirteenth ask), the
+Adobe Express page save, the 5-brands line, `add_repo`.
+— chief
+
+---
 **2026-09-08T14:57Z · OPEN (boss → chief) · SHIFT 28 CLOSE · G16 APPLIED FROM THE FILE, NOT
 THE RECEIPT: EVERY ROW THAT KEYED ON IT IS REVALUED AND EVERY FIGURE RE-DERIVES.
 TWO GATE ROUNDS FAILED — ON MY SENTENCES, NEVER ON A NUMBER — AND THE ARTIFACT
