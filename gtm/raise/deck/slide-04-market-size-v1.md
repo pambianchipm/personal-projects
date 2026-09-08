@@ -234,7 +234,7 @@ is the optimistic end of it.
 
 ## §4. THE EXCLUSION THAT MOVED THE ANSWER MORE THAN THE FRACTION — RULED 8 SEPTEMBER: THEY ARE IN
 
-*(New draft, shift 28, 2026-09-08 — rule 1; gated under law 7 and SPLIT at round 2 — the two pulled pieces are marked below. The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
+*(New draft, shift 28, 2026-09-08 — rule 1; gated under law 7 and SPLIT at round 2 — the two pulled pieces were marked below at `046da44` and are re-drafted at shift 29, in their own gate. The section as it read until this date is in the file's history at `eb96b08`; its table is unchanged below and re-derived.)*
 
 CBP and SUSB count **employer** businesses. A salon chair rented by a
 self-employed stylist is a **nonemployer** and appears in neither.
@@ -271,8 +271,9 @@ owner-operator with no paid employee is a nonemployer when unincorporated (or
 incorporated with its owner off the payroll), at or above the Bureau's receipts
 floor and subject to federal income taxes, so until 8 September the market slide excluded by construction part of
 the customer the positioning describes. **How large a part is not measured** —
-the positioning's own examples include restaurants and gyms, which are 0.2×
-nonemployer in the table above; and a solo owner who is the salaried officer of
+the positioning's own examples include restaurants, which are 0.2× nonemployer
+in the table above, and gyms, for which no matched nonemployer count exists
+(A48, limitation 1); and a solo owner who is the salaried officer of
 her own corporation is an employer already inside step 3 — **at most 248,211**
 such establishments on the six matched codes, the `<5`-class count, an upper
 bound that also holds every two-to-four-employee shop. [A48, limitation 4 —
@@ -317,10 +318,12 @@ not an argument against it.** [A44]
 counts businesses with no paid employees — one business income tax return each
 — and corporations and partnerships are among them. A one-person business whose
 owner is the salaried officer of its own corporation is an employer with one
-employee, already inside step 3 (the bound above); a sole proprietor cannot be
-her own paid employee; and below the Bureau's receipts floor, or not subject to
-federal income taxes, a one-person business is in neither program. No fraction on either
-side is measured. The ruling's words are *"one person business"*; this slide
+employee, already inside step 3 (the bound above), whatever its receipts or tax
+status — CBP's definition names no receipts floor and no tax condition; a sole proprietor
+cannot be her own paid employee, so with no paid employee she is a nonemployer
+only at or above the Bureau's receipts floor and if subject to federal income
+taxes, and otherwise is counted by neither program — conditions NES sets and CBP
+does not. No fraction on either side is measured. The ruling's words are *"one person business"*; this slide
 applies them to the Census category of businesses with no paid employees, and
 says so here. [A48, limitation 4 — re-drafted shift 29 from the Bureau's two
 glossaries, fetched and hashed, at its own gate] *(The paragraph this replaces

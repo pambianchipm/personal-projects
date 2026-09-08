@@ -9,7 +9,7 @@ own; this receipt's status follows that gate's verdict.
 
 **First breath:** Player 2 is an AI marketing employee for small businesses.
 This file is the re-runnable record of two documents nobody in this org had
-hashed or read in full before this shift — the Census Bureau's County Business
+hashed before this shift (the round-2 reviewer grepped them) — the Census Bureau's County Business
 Patterns (CBP) glossary and its Nonemployer Statistics (NES) glossary — and of
 one bound computed from the already-hashed CBP 2023 US file.
 
@@ -20,8 +20,10 @@ own re-draft and its own gate on a later shift, one cell. Its documents are the
 two Bureau glossaries, FETCHED AND HASHED into the tree before the draft is
 written (nobody has hashed them; the round-2 reviewer grepped them). Quantifier
 a bound or absent."* The round-2 reviewer's fetch (verdict `…-r2.md`, MF-2,
-14:44:53Z / 14:44:55Z) was `curl` + `grep`, not hashed, not read in full, and
-the verdict says so (its NOT CHECKED list). What is below was done before one
+14:44:53Z / 14:44:55Z) was `curl` + `grep`, not hashed, and the verdict says so
+(its NOT CHECKED list). What was read this shift, and with what: the glossary
+body of each page by `cat -n` — cbp 238–329, nes 242–288 — and the rest of each
+extracted text scrolled past as navigation and footer. What is below was done before one
 word of the re-draft was written; the commit order on the branch is the record.
 
 ## 1. THE TWO GLOSSARIES — FETCHED, HASHED, EXTRACTED. Pasted as run.
@@ -228,11 +230,41 @@ two corporate legal forms — **the file's letter codes are defined by neither
 glossary** (the CBP glossary names six legal forms in words, cbp:296–303; the
 file writes seven letters; the API's `LFO` value list was empty at the 4 Sep
 receipt), so that reading is the shift-28 receipt's and is a blind spot here.
-`S` and `P` are excluded from the tighter figure on rows 3, 6, 7, 8: a sole
-proprietor or partner cannot be their own paid employee. (c) **Noise infusion**
-(cbp:309–310) touches these cells; the class partition check printed above is
-arithmetic, not proof of the class boundaries (the shift-28 receipt's caveat,
-unchanged). (d) The bound is on **establishments in CBP**; the ruled-in count at
+`S` and `P` are excluded from the corporate-forms figure on rows 3, 6, 7, 8: a sole
+proprietor or partner cannot be their own paid employee. `N` and `O` (306 and
+159 in the class) are outside that figure by its scope only — nothing in either
+glossary keeps a non-profit's one person off its payroll — so the figure with
+`S` and `P` alone removed is the sum of the printed `C`, `Z`, `N`, `O` totals,
+42,587 + 109,860 + 306 + 159 = 152,912 (round-1 SF-1; arithmetic on the cells
+above, not a new instrument run). (c) **Noise infusion**
+(cbp:309–310) touches these cells; the partition check printed above is the
+LEGAL-FORM partition of `n<5` (the seven letters sum to `-` on every code) — it
+is arithmetic, not proof of the class boundaries (the shift-28 receipt's caveat,
+unchanged). The SIZE-CLASS partition — the nine `n*` columns against `est` — was
+not printed by the instrument (round-1 SF-7); run afterwards, pasted as run:
+
+```
+$ date -u +%Y-%m-%dT%H:%M:%SZ; cat sizeclass.py; python3 sizeclass.py
+2026-09-08T15:20:17Z
+import csv
+SIX=('812111','812112','812113','722511','722513','722515'); COLS=('n<5','n5_9','n10_19','n20_49','n50_99','n100_249','n250_499','n500_999','n1000')
+t=e=0; nonnum=[]
+for r in csv.DictReader(open('cbp23us.txt',newline='',encoding='latin-1')):
+    if r['lfo'].strip()=='-' and r['naics'].strip() in SIX:
+        e+=int(r['est'])
+        for k in COLS:
+            v=r[k].strip()
+            if v.isdigit(): t+=int(v)
+            else: nonnum.append((r['naics'].strip(),k,v))
+print('nine size-class n* columns summed', t, 'vs est', e, 'difference', e-t, '| non-numeric cells treated as 0:', nonnum)
+nine size-class n* columns summed 740232 vs est 740236 difference 4 | non-numeric cells treated as 0: [('722511', 'n1000', 'N'), ('722515', 'n1000', 'N'), ('812111', 'n250_499', 'N'), ('812111', 'n500_999', 'N'), ('812111', 'n1000', 'N'), ('812112', 'n250_499', 'N'), ('812112', 'n500_999', 'N'), ('812112', 'n1000', 'N'), ('812113', 'n100_249', 'N'), ('812113', 'n250_499', 'N'), ('812113', 'n500_999', 'N'), ('812113', 'n1000', 'N')]
+```
+
+Four short of `est`, with twelve `N` (not available) cells treated as zero —
+so the four may sit in suppressed cells, or be the *"slight difference"*
+cbp:289 warns of (class from pre-noise employment, totals noised); this check
+cannot tell which. A bound stated on the published `n<5` cell is not moved by
+either. (d) The bound is on **establishments in CBP**; the ruled-in count at
 A48 is NES **firms** (= tax returns, row 9). The two are not subtracted from or
 added to each other anywhere.
 
@@ -243,6 +275,14 @@ added to each other anywhere.
   NES's definition says *"no paid employees"* with no reference period (row 1).
   Neither glossary says how the two programs de-duplicate; the NES FAQ page (a
   sibling of the glossary, nes:235) was not fetched.
+- **Whether NES's *"no paid employees"* (nes:271) is CBP's *"paid employment"*
+  (cbp:287).** NES does not define the phrase; the re-draft reads the two as one
+  test, and neither glossary says so.
+- **Where an LLC is assigned.** The glossaries' "unincorporated" forms are the
+  sole proprietorship and the partnership (cbp:300–301); an LLC — unincorporated
+  under state law, taxable as a corporation on election — is named by neither
+  page, and LFO *"is derived from administrative records data sources"*
+  (cbp:297). The re-draft's "unincorporated" means those two forms and says so.
 - **Any fraction of one-person businesses that falls on either side of the
   line.** No instrument here measures it, and the re-draft states none.
 - **Whether the extracted text is stable across fetches** — one fetch each.
