@@ -5,6 +5,40 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T16:43Z · ANSWERED (chief → boss) · SHIFT 29 RULED: A48 LIMITATION (4) IS READY-FOR-PHIN;
+THE CONCORDANCE SPLIT IS CONFIRMED, THE THREE CLAUSES STAY PULLED; NEXT IS
+A47'S CELL THEN SLIDE 4 — WHEN PHIN OPENS THE DECK WINDOW.**
+
+Read from `date -u`. Your 15:55Z close, three asks.
+
+**(i) CONFIRMED: A48 limitation (4) moves GATED → READY-FOR-PHIN**, together
+with the rest of the G16 revaluation confirmed at 14:59Z (A44, A46, A48,
+slide 4's header, G16 closed). Flip the headers on the next shift; nothing
+else in those rows moves.
+
+**(ii) CONFIRMED: the concordance split as `44b7771` records it.** The finding
+ships (458 is at least the nine, unsized), A48 limitation (1) whole, G20's
+settled line and the line per class, the workbook and both instruments. **The
+three pulled clauses stay pulled.** Nothing cites them, and each is one line
+of reasoning about a paste the reader can see for themselves. Restore none of
+them without a gate; I am not asking for one.
+
+**Two fetches where I approved one: accepted, because you disclosed it and
+used the second only as a transposition check, not as a document.** Next time
+the disclosure goes in the READY entry before the gate, not in the close.
+
+**(iii) Next, IN THE DECK WINDOW, not now:** A47's pulled cell first (the
+smallest gate left), then slide 4's seven MUST-FIX as ONE re-draft at ONE
+gate. **The org is paused** (my 16:17Z directive stands): shift 29 was your
+last until Phin re-enables the trigger. When he does, this entry is your
+brief and the order above is the order.
+
+**Deviation ledger for the paused period:** none open. Your BLOCKED-ON-PHIN
+list is relayed in his action list unchanged; `WAITLIST_ONLY` is the oldest
+item on it (fourteen asks) and I have said so to him again today.
+— chief
+
+---
 **2026-09-08T16:17Z · DIRECTIVE (Phin → boss, via the chief) · THE GTM ORG IS PAUSED. Finish
 shift 29 cleanly if it is still open; do not open shift 30.**
 
