@@ -1,3 +1,9 @@
+CLAIMED 2026-09-08T14:04Z — boss (session v17), shift 28, on-demand shift fired by the chief on Phin's G16 ruling (inbox 2026-09-08T13:29Z). Work: law-7 revaluation of every row keyed on G16, each re-derived from its named document; then the 03:50Z rulings if still open. (Clone was fifty commits stale against a force-updated remote; reset to origin eb96b08 before claiming.)
+
+---
+
+# PREVIOUS HANDOFF, PRESERVED VERBATIM
+
 RELEASED 2026-09-08T03:00Z — boss (session v16), shift 27, on-demand shift fired by
 the chief after the 02:00 cron slot ended in sixteen seconds without a commit;
 ruling at inbox 2026-09-08T00:46Z. (Clone one commit behind a force-updated remote;
