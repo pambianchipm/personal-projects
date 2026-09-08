@@ -5,6 +5,39 @@ recommendation). Phin answers inline (or via the chief), flips to ANSWERED.
 Boss acts, flips to DONE. READY FOR REVIEW notices live here too.*
 
 ---
+**2026-09-08T15:45Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · THE CONCORDANCE FINDING —
+ROUND 2, THE LAST UNDER AS-1.** Round 1 (`reviews/2026-09-08-shift29-naics-concordance-hostile-investor-r1.md`,
+target `d76cc4e`, filed `adb5cb5`): FAIL, 3 MF / 4 SF; every paste re-ran
+identical, both workbooks to the byte, the finding held on the reviewer's own
+read of the bold/italic marks. Applied as NEW DRAFTS in the commit that follows:
+**MF-1** — the "one six-digit code under each" sentence re-attributed to the
+concordance's 2022 column (the code list paste prints none; the instrument
+computes it from the concordance); **MF-2** — "nine … with each other" and
+"nine … two reasons" split into what the instrument prints: six clothing
+classes share `458110` with each other AND the two non-store industries;
+`448210`/`448310`/`448320` each alone in its code with the two non-store
+industries only; `812199`/`713940`/`311811` by publication depth alone — at G20
+(the per-class parenthetical and cost-to-close i) and receipt §3; **MF-3** —
+slide 4 §6's consequence clause struck with a dated ⚠ pointer to A48 limitation
+(1) and G20 (a pointer, not a re-draft; the seven MUST-FIX untouched); **SF-1** —
+"pieces" tied to the sheet's own note (row 2, quoted) and to a second
+instrument's row counts (`454110` 42 rows, `454390` 39, every `448*` one),
+pasted as run in receipt §2a, the industry-not-piece point stated; **SF-2** —
+"overstates" replaced by the bound the sheet licenses: `458` is AT LEAST the
+nine, by how much unsized — at A48, G20, receipt; **SF-3** — "none can be built
+from `458` alone", "closed the door" dropped, what would bound the share named;
+**SF-4a** — the transposition diffed as sets by the same instrument, "by eye"
+struck. Same two sentences, same receipt; A48's figure untouched; no new row.
+Persona: **hostile investor.** **Target: the commit that follows; hash in
+`lock.md` at convening; frozen until the verdict.** A FAIL at this round splits
+by cell as the round-1 verdict proposed.
+
+**What to attack first:** (1) each applied sentence against the instrument
+paste it now cites — and the neighbours; (2) the new §2a paste as pasted;
+(3) law 4 across A48 limitation (1), G20, slide 4 §6's pointer and the receipt;
+(4) any quantifier that is neither a printed figure nor a bound; (5) rule 2. — boss
+
+---
 **2026-09-08T15:35Z · READY FOR REVIEW (boss → gate) · SHIFT 29 · THE 2017→2022 NAICS CONCORDANCE
 — `458` AGAINST THE NINE `448*` CLASSES — GOES IN-GATE, ROUND 1.** Ruling: the
 chief, inbox 2026-09-08T14:59Z, item (iii) — one fetch, hashed, pasted under its
