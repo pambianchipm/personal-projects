@@ -1,0 +1,1588 @@
+<title>Project Halo</title>
+<meta name="description" content="Project Halo — a character-creator style engagement ring customizer with a live 3D ring and an optional price estimate, built to hand a spec to a jeweler.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#ECEAE5; --panel:#F6F5F1; --panel2:#FFFFFF; --ink:#1C1A20; --ink2:#5E5B66; --muted:#8B8792;
+    --line:#D8D4CC; --line2:#E7E4DD; --gold:#A8842F; --gold2:#C9A651; --gold-ink:#3E3110;
+    --stage:#E3E0DA; --stage2:#CDC9C1; --good:#2F7D4F; --warn:#B4651C; --warn-bg:rgba(180,101,28,.10);
+    --shadow:0 12px 32px rgba(20,18,26,.14); --sel-bg:rgba(168,132,47,.10); --focus:#2F5FD3;
+    --display:'Fraunces',Georgia,'Times New Roman',serif;
+    --ui:'Instrument Sans','Helvetica Neue',Arial,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#141319; --panel:#1B1A21; --panel2:#23222A; --ink:#EEEBE4; --ink2:#B7B3BE; --muted:#807C89;
+      --line:#2A2933; --line2:#33323D; --gold:#D6B35A; --gold2:#EAC974; --gold-ink:#F6E9C6;
+      --stage:#1B1A21; --stage2:#0E0D12; --good:#7BC89A; --warn:#E0A05B; --warn-bg:rgba(224,160,91,.12);
+      --shadow:0 12px 32px rgba(0,0,0,.5); --sel-bg:rgba(214,179,90,.13); --focus:#8FB0FF;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#141319; --panel:#1B1A21; --panel2:#23222A; --ink:#EEEBE4; --ink2:#B7B3BE; --muted:#807C89;
+    --line:#2A2933; --line2:#33323D; --gold:#D6B35A; --gold2:#EAC974; --gold-ink:#F6E9C6;
+    --stage:#1B1A21; --stage2:#0E0D12; --good:#7BC89A; --warn:#E0A05B; --warn-bg:rgba(224,160,91,.12);
+    --shadow:0 12px 32px rgba(0,0,0,.5); --sel-bg:rgba(214,179,90,.13); --focus:#8FB0FF;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--ui);font-size:14px;line-height:1.4;overflow:hidden;-webkit-font-smoothing:antialiased}
+  button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+  button:focus-visible,input:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  h1,h2,h3{margin:0;font-weight:500;text-wrap:balance}
+  .eyebrow{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+  #app{height:100%;display:grid;grid-template-columns:292px 336px minmax(0,1fr);grid-template-rows:54px minmax(0,1fr);background:var(--bg)}
+
+  /* ---------- header ---------- */
+  #top{grid-column:1/-1;display:flex;align-items:center;gap:16px;padding:0 16px;border-bottom:1px solid var(--line);background:var(--panel)}
+  .brand{display:flex;align-items:baseline;gap:10px;min-width:0}
+  .brand h1{font-family:var(--display);font-size:22px;font-weight:500;letter-spacing:-.01em;white-space:nowrap}
+  .brand h1 em{font-style:italic;color:var(--gold)}
+  .brand .tag{font-size:11px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
+  #top .grow{flex:1}
+  .btn{display:inline-flex;align-items:center;gap:8px;height:34px;padding:0 14px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);font-weight:500;white-space:nowrap}
+  .btn:hover{border-color:var(--gold2)}
+  .btn.primary{background:var(--gold);border-color:var(--gold);color:#fff}
+  .btn.primary:hover{background:var(--gold2);border-color:var(--gold2)}
+  .btn.ghost{background:transparent}
+  .btn svg{width:16px;height:16px}
+
+  /* ---------- slot rail ---------- */
+  #slots{border-right:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-height:0}
+  #slots .rail-head{padding:14px 16px 8px}
+  .looks{display:flex;gap:8px;overflow-x:auto;padding:0 16px 12px;scrollbar-width:thin}
+  .look{flex:0 0 auto;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel2);font-size:12px;font-weight:500;color:var(--ink2)}
+  .look:hover{border-color:var(--gold2);color:var(--ink)}
+  .slot-list{flex:1;overflow-y:auto;min-height:0;border-top:1px solid var(--line)}
+  .slot{display:grid;grid-template-columns:44px minmax(0,1fr) 16px;align-items:center;gap:10px;width:100%;text-align:left;padding:10px 12px 10px 14px;border-bottom:1px solid var(--line2);border-left:3px solid transparent;position:relative}
+  .slot:hover{background:var(--sel-bg)}
+  .slot[aria-current="true"]{border-left-color:var(--gold);background:var(--sel-bg)}
+  .slot .ico{width:44px;height:44px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);display:grid;place-items:center;color:var(--ink2)}
+  .slot .ico svg{width:30px;height:30px}
+  .slot .lab{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .slot .val{display:block;font-family:var(--display);font-size:16px;line-height:1.2;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .slot .chev{color:var(--muted)}
+  .slot .delta{position:absolute;right:30px;top:10px;font-size:11px;color:var(--muted)}
+  .rail-foot{padding:10px 12px;display:flex;gap:8px;border-top:1px solid var(--line)}
+  .rail-foot .btn{flex:1;justify-content:center;height:32px;font-size:13px}
+
+  /* ---------- option tray ---------- */
+  #tray{border-right:1px solid var(--line);background:var(--bg);display:flex;flex-direction:column;min-height:0}
+  .tray-head{padding:16px 18px 10px;border-bottom:1px solid var(--line)}
+  .tray-head h2{font-family:var(--display);font-size:22px}
+  .tray-head p{margin:4px 0 0;color:var(--ink2);font-size:13px;max-width:34ch}
+  .tray-body{flex:1;overflow-y:auto;min-height:0;padding:14px 18px 24px;display:flex;flex-direction:column;gap:18px}
+  .group{display:flex;flex-direction:column;gap:8px}
+  .group-head{display:flex;align-items:baseline;justify-content:space-between;gap:8px}
+  .group-head .eyebrow{color:var(--ink2)}
+  .group-head .hint{font-size:12px;color:var(--muted)}
+  .tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+  .tiles.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tile{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px 8px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--ink2);min-width:0;position:relative}
+  .tile:hover{border-color:var(--gold2);color:var(--ink)}
+  .tile[aria-pressed="true"]{border-color:var(--gold);background:var(--sel-bg);color:var(--ink);box-shadow:inset 0 0 0 1px var(--gold)}
+  .tile[disabled]{opacity:.4;cursor:not-allowed}
+  .tile svg{width:38px;height:38px;flex:none}
+  .tile .sw{width:38px;height:38px;border-radius:50%;border:1px solid rgba(0,0,0,.15);box-shadow:inset -6px -8px 14px rgba(0,0,0,.18),inset 6px 8px 12px rgba(255,255,255,.35)}
+  .tile .t{font-size:12px;font-weight:500;text-align:center;line-height:1.15;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+  .tile .d{font-family:var(--mono);font-size:10.5px;color:var(--muted);line-height:1}
+  .tile .d.up{color:var(--warn)} .tile .d.down{color:var(--good)}
+  .chips{display:flex;flex-wrap:wrap;gap:6px}
+  .chip{padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:var(--panel);font-size:12.5px;font-weight:500;color:var(--ink2)}
+  .chip:hover{border-color:var(--gold2);color:var(--ink)}
+  .chip[aria-pressed="true"]{border-color:var(--gold);background:var(--sel-bg);color:var(--ink);box-shadow:inset 0 0 0 1px var(--gold)}
+  .range{display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px}
+  .range label{font-size:13px;color:var(--ink2)}
+  .range .ro{font-family:var(--mono);font-size:12.5px;color:var(--ink);text-align:right;font-variant-numeric:tabular-nums}
+  .range input[type=range]{grid-column:1/-1;width:100%;accent-color:var(--gold);margin:2px 0 0}
+  .range .sub{grid-column:1/-1;font-size:12px;color:var(--muted);margin-top:-2px}
+  .field input[type=text]{width:100%;height:36px;border-radius:8px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);padding:0 10px;font:inherit}
+  .switchrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--panel)}
+  .switchrow .l{font-size:13px;font-weight:500}
+  .switchrow .s{font-size:12px;color:var(--muted)}
+  .note{display:flex;gap:8px;align-items:flex-start;padding:10px 12px;border-radius:10px;background:var(--warn-bg);color:var(--ink);font-size:12.5px;line-height:1.35}
+  .note svg{width:16px;height:16px;flex:none;color:var(--warn);margin-top:1px}
+  .note.ok{background:var(--sel-bg)} .note.ok svg{color:var(--gold)}
+
+  /* switch */
+  .switch{position:relative;width:38px;height:22px;border-radius:999px;background:var(--line);transition:background .15s;flex:none}
+  .switch::after{content:"";position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.3);transition:transform .15s}
+  .switch[aria-checked="true"]{background:var(--gold)}
+  .switch[aria-checked="true"]::after{transform:translateX(16px)}
+
+  /* ---------- stage ---------- */
+  #stage{position:relative;min-width:0;min-height:0;background:radial-gradient(120% 90% at 50% 40%,var(--stage) 0%,var(--stage2) 100%)}
+  #stage canvas{display:block;width:100%;height:100%;touch-action:none}
+  .stage-ui{position:absolute;inset:0;pointer-events:none}
+  .stage-ui>*{pointer-events:auto}
+  .views{position:absolute;left:16px;top:14px;display:flex;gap:6px;background:color-mix(in srgb,var(--panel) 82%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:10px;padding:4px}
+  .views button{height:28px;padding:0 10px;border-radius:7px;font-size:12.5px;font-weight:500;color:var(--ink2)}
+  .views button[aria-pressed="true"]{background:var(--sel-bg);color:var(--ink);box-shadow:inset 0 0 0 1px var(--gold)}
+  .estimator{position:absolute;right:16px;top:14px;display:flex;flex-direction:column;align-items:flex-end;gap:10px;max-width:min(330px,calc(100% - 32px))}
+  .est-toggle{display:flex;align-items:center;gap:10px;height:36px;padding:0 6px 0 12px;border-radius:10px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 88%,transparent);backdrop-filter:blur(8px);font-weight:500;font-size:13px}
+  .est-card{width:330px;max-width:100%;border-radius:14px;border:1px solid var(--line);background:color-mix(in srgb,var(--panel) 94%,transparent);backdrop-filter:blur(10px);box-shadow:var(--shadow);padding:14px 16px 12px}
+  .est-card .eyebrow{display:flex;justify-content:space-between;align-items:center}
+  .est-card .big{font-family:var(--display);font-size:30px;line-height:1.05;margin:6px 0 2px;font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+  .est-card .big small{font-size:14px;color:var(--muted);font-family:var(--ui);margin-left:6px}
+  .est-card .mid{font-size:12px;color:var(--muted);margin-bottom:10px}
+  .lines{display:grid;grid-template-columns:1fr auto;gap:5px 12px;font-size:12.5px;border-top:1px solid var(--line);padding-top:10px}
+  .lines .k{color:var(--ink2)} .lines .k small{display:block;color:var(--muted);font-size:11px}
+  .lines .v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums}
+  .lines .tot{border-top:1px solid var(--line);padding-top:6px;margin-top:2px;font-weight:600}
+  .est-card details{margin-top:10px;font-size:12px;color:var(--muted)}
+  .est-card summary{cursor:pointer;color:var(--ink2)}
+  .est-card details p{margin:6px 0 0;line-height:1.4}
+  .est-card .link{color:var(--gold);text-decoration:underline;text-underline-offset:2px}
+  .strip{position:absolute;left:16px;right:16px;bottom:14px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+  .strip .summary{flex:1 1 260px;min-width:0;font-family:var(--display);font-size:15px;color:var(--ink);background:color-mix(in srgb,var(--panel) 80%,transparent);backdrop-filter:blur(8px);border:1px solid var(--line);border-radius:10px;padding:8px 12px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .strip .summary .num{font-size:12px;color:var(--muted);margin-left:8px}
+  .strip .btn{height:36px}
+  .stage-msg{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:24px;color:var(--ink2);font-size:14px}
+  .stage-msg b{display:block;font-family:var(--display);font-size:20px;color:var(--ink);margin-bottom:6px}
+  .hint-rot{position:absolute;left:50%;top:14px;transform:translateX(-50%);font-size:11.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+
+  /* ---------- drawer (spec / jeweler) ---------- */
+  .scrim{position:fixed;inset:0;background:rgba(10,9,14,.45);opacity:0;pointer-events:none;transition:opacity .2s;z-index:20}
+  .scrim.open{opacity:1;pointer-events:auto}
+  .drawer{position:fixed;top:0;right:0;bottom:0;width:min(520px,100%);background:var(--panel);border-left:1px solid var(--line);box-shadow:var(--shadow);transform:translateX(100%);transition:transform .25s;z-index:21;display:flex;flex-direction:column;padding-top:env(safe-area-inset-top,0px)}
+  .drawer.open{transform:none}
+  .drawer-head{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+  .drawer-head h2{font-family:var(--display);font-size:22px;flex:1}
+  .drawer-body{flex:1;overflow-y:auto;padding:18px 20px 28px;display:flex;flex-direction:column;gap:18px}
+  .spec{display:grid;grid-template-columns:130px 1fr;gap:6px 12px;font-size:13px}
+  .spec .k{color:var(--muted)} .spec .v{color:var(--ink)}
+  .spec .sec{grid-column:1/-1;margin-top:8px;padding-top:8px;border-top:1px solid var(--line)}
+  textarea.json{width:100%;height:190px;font-family:var(--mono);font-size:11.5px;line-height:1.35;border-radius:10px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);padding:10px;resize:vertical}
+  .jeweler{display:grid;grid-template-columns:44px 1fr auto;gap:12px;align-items:center;padding:12px;border-radius:12px;border:1px solid var(--line);background:var(--panel2)}
+  .jeweler .av{width:44px;height:44px;border-radius:12px;background:var(--sel-bg);display:grid;place-items:center;font-family:var(--display);font-size:18px;color:var(--gold)}
+  .jeweler .n{font-weight:600} .jeweler .m{font-size:12px;color:var(--muted)}
+  .jeweler .tags{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+  .jeweler .tags span{font-size:10.5px;padding:2px 6px;border-radius:999px;background:var(--sel-bg);color:var(--gold-ink)}
+  .sample{display:inline-block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:999px;border:1px dashed var(--line);color:var(--muted)}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:10px;font-size:13px;opacity:0;transition:.2s;z-index:30;pointer-events:none;max-width:calc(100% - 32px)}
+  .toast.show{opacity:1;transform:translate(-50%,0)}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:1100px){
+    #app{grid-template-columns:250px 300px minmax(0,1fr)}
+    .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  }
+  @media (max-width:820px){
+    body{overflow:auto}
+    #app{height:auto;min-height:100%;display:flex;flex-direction:column}
+    #top{height:54px;padding:0 16px}
+    #top .btn .lbl{display:none}
+    #stage{order:1;height:46vh;min-height:300px;flex:none}
+    #slots{order:2;border-right:0;border-top:1px solid var(--line)}
+    #slots .rail-head,.rail-foot{display:none}
+    .looks{display:none}
+    .slot-list{display:flex;overflow-x:auto;overflow-y:hidden;border-top:0;scrollbar-width:thin}
+    .slot{flex:0 0 auto;width:150px;grid-template-columns:36px minmax(0,1fr);border-bottom:0;border-left:0;border-right:1px solid var(--line2);border-top:3px solid transparent;padding:8px 10px}
+    .slot[aria-current="true"]{border-top-color:var(--gold)}
+    .slot .ico{width:36px;height:36px} .slot .ico svg{width:24px;height:24px}
+    .slot .chev,.slot .delta{display:none}
+    .slot .val{font-size:14px}
+    #tray{order:3;border-right:0;border-top:1px solid var(--line);flex:1}
+    .tray-body{padding:14px 16px 28px}
+    .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}
+    .estimator{right:12px;top:10px}
+    .est-card{width:280px}
+    .views{left:12px;top:10px}
+    .hint-rot{display:none}
+    .strip{left:12px;right:12px;bottom:10px}
+    .strip .summary{font-size:13px}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .drawer,.scrim,.toast,.switch,.switch::after{transition:none}
+  }
+</style>
+<div id="app">
+  <header id="top">
+    <div class="brand">
+      <h1>Project <em>Halo</em></h1>
+      <span class="tag">Ring builder · demo</span>
+    </div>
+    <div class="grow"></div>
+    <button class="btn ghost" id="btn-random" title="Surprise me">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+      <span class="lbl">Surprise me</span>
+    </button>
+    <button class="btn primary" id="btn-spec">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      <span class="lbl">Send to a jeweler</span>
+    </button>
+  </header>
+
+  <aside id="slots" aria-label="Ring parts">
+    <div class="rail-head">
+      <div class="eyebrow">Start from a look</div>
+    </div>
+    <div class="looks" id="looks"></div>
+    <div class="slot-list" id="slot-list" role="tablist" aria-orientation="vertical"></div>
+    <div class="rail-foot">
+      <button class="btn" id="btn-reset">Reset</button>
+      <button class="btn" id="btn-theme" title="Toggle light / dark">Theme</button>
+    </div>
+  </aside>
+
+  <section id="tray" aria-live="polite">
+    <div class="tray-head">
+      <h2 id="tray-title">Center stone</h2>
+      <p id="tray-desc"></p>
+    </div>
+    <div class="tray-body" id="tray-body"></div>
+  </section>
+
+  <main id="stage">
+    <canvas id="gl" aria-label="3D ring preview"></canvas>
+    <div class="stage-ui">
+      <div class="views" id="views" role="group" aria-label="Camera views">
+        <button data-view="hero" aria-pressed="true">¾ view</button>
+        <button data-view="top" aria-pressed="false">Top</button>
+        <button data-view="side" aria-pressed="false">Profile</button>
+        <button data-view="front" aria-pressed="false">Front</button>
+      </div>
+      <div class="hint-rot" id="hint-rot">drag to turn · scroll to zoom</div>
+      <div class="estimator">
+        <button class="est-toggle" id="est-toggle" aria-pressed="false">
+          <span>Price estimate</span>
+          <span class="switch" id="est-switch" aria-checked="false" role="switch"></span>
+        </button>
+        <div class="est-card" id="est-card" hidden></div>
+      </div>
+      <div class="strip">
+        <div class="summary" id="summary"></div>
+        <button class="btn" id="btn-copy-summary" title="Copy a one-line summary">Copy summary</button>
+      </div>
+      <div class="stage-msg" id="stage-msg" hidden></div>
+    </div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Spec sheet" aria-hidden="true">
+  <div class="drawer-head">
+    <h2>Send to a jeweler</h2>
+    <button class="btn" id="drawer-close">Close</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>
+<script type="module">
+// =====================================================================
+//  PROJECT HALO — demo ring builder
+//  Section 1: option catalogue, presets, sizing math, price model
+// =====================================================================
+
+const GEMS = [
+  // id, label, group, hex (display), ior, dispersion, hardness(Mohs), lab-able?, defaultOrigin
+  { id:'natural',    label:'Natural diamond',   group:'Diamond',  hex:'#f4f6fb', ior:2.42, disp:.35, hard:10,  origins:['natural'] },
+  { id:'lab',        label:'Lab diamond',       group:'Diamond',  hex:'#f2f7ff', ior:2.42, disp:.35, hard:10,  origins:['lab'] },
+  { id:'moissanite', label:'Moissanite',        group:'Diamond alternatives', hex:'#f6f9ff', ior:2.65, disp:.6, hard:9.25, origins:['lab'] },
+  { id:'whiteSapph', label:'White sapphire',    group:'Diamond alternatives', hex:'#eef0f2', ior:1.77, disp:.08, hard:9, origins:['natural','lab'] },
+  { id:'saltpepper', label:'Salt & pepper',     group:'Diamond alternatives', hex:'#9a9aa2', ior:2.42, disp:.1, hard:10, origins:['natural'], rough:.25, opaque:.55 },
+  { id:'blackDia',   label:'Black diamond',     group:'Diamond alternatives', hex:'#17171c', ior:2.42, disp:0, hard:10, origins:['natural'], rough:.1, opaque:.95 },
+  { id:'yellowDia',  label:'Yellow diamond',    group:'Fancy diamonds', hex:'#f2d45a', ior:2.42, disp:.3, hard:10, origins:['natural','lab'] },
+  { id:'pinkDia',    label:'Pink diamond',      group:'Fancy diamonds', hex:'#f2b8c9', ior:2.42, disp:.3, hard:10, origins:['natural','lab'] },
+  { id:'sapphire',   label:'Blue sapphire',     group:'Colored stones', hex:'#1d3fa8', ior:1.77, disp:.08, hard:9, origins:['natural','lab'] },
+  { id:'pinkSapph',  label:'Pink sapphire',     group:'Colored stones', hex:'#e66a9e', ior:1.77, disp:.08, hard:9, origins:['natural','lab'] },
+  { id:'tealSapph',  label:'Teal sapphire',     group:'Colored stones', hex:'#1f7f86', ior:1.77, disp:.08, hard:9, origins:['natural','lab'] },
+  { id:'ruby',       label:'Ruby',              group:'Colored stones', hex:'#b3102e', ior:1.77, disp:.08, hard:9, origins:['natural','lab'] },
+  { id:'emerald',    label:'Emerald',           group:'Colored stones', hex:'#0e8a4e', ior:1.58, disp:.05, hard:7.5, origins:['natural','lab'], fragile:true },
+  { id:'alexandrite',label:'Alexandrite',       group:'Colored stones', hex:'#5d7f6a', ior:1.75, disp:.07, hard:8.5, origins:['natural','lab'] },
+  { id:'spinel',     label:'Grey spinel',       group:'Colored stones', hex:'#8d8aa0', ior:1.72, disp:.1, hard:8, origins:['natural'] },
+  { id:'morganite',  label:'Morganite',         group:'Pastels', hex:'#f4b9a8', ior:1.58, disp:.05, hard:7.75, origins:['natural'] },
+  { id:'aquamarine', label:'Aquamarine',        group:'Pastels', hex:'#9dd6e6', ior:1.58, disp:.05, hard:7.75, origins:['natural'] },
+  { id:'tourmaline', label:'Green tourmaline',  group:'Pastels', hex:'#3f9a6a', ior:1.63, disp:.08, hard:7.25, origins:['natural'] },
+  { id:'opal',       label:'Opal',              group:'Pastels', hex:'#e8e4f2', ior:1.45, disp:.2, hard:5.75, origins:['natural'], fragile:true, opaque:.7 },
+];
+const GEM = Object.fromEntries(GEMS.map(g => [g.id, g]));
+
+// Shapes. ratio = length/width. k = carat factor (ct = L*W*D*k), depthPct = depth as fraction of width.
+// facets: 'brilliant' | 'step' ; tips: angles (deg, in outline space, 0 = +length axis) that get V-prongs
+const SHAPES = [
+  { id:'round',    label:'Round',       ratio:[1,1],        def:1.0,  k:.0061, depth:.615, facets:'brilliant' },
+  { id:'oval',     label:'Oval',        ratio:[1.2,1.6],    def:1.38, k:.0062, depth:.60,  facets:'brilliant', elong:true },
+  { id:'cushion',  label:'Cushion',     ratio:[1,1.45],     def:1.08, k:.0080, depth:.65,  facets:'brilliant', elong:true },
+  { id:'princess', label:'Princess',    ratio:[1,1.08],     def:1.0,  k:.0083, depth:.72,  facets:'brilliant', poly:true },
+  { id:'emerald',  label:'Emerald',     ratio:[1.25,1.65],  def:1.45, k:.0080, depth:.66,  facets:'step', poly:true, elong:true },
+  { id:'asscher',  label:'Asscher',     ratio:[1,1.06],     def:1.0,  k:.0080, depth:.68,  facets:'step', poly:true },
+  { id:'radiant',  label:'Radiant',     ratio:[1,1.5],      def:1.25, k:.0081, depth:.66,  facets:'brilliant', poly:true, elong:true },
+  { id:'pear',     label:'Pear',        ratio:[1.4,1.8],    def:1.55, k:.0059, depth:.60,  facets:'brilliant', tips:[0], elong:true },
+  { id:'marquise', label:'Marquise',    ratio:[1.7,2.3],    def:1.95, k:.0058, depth:.60,  facets:'brilliant', tips:[0,180], elong:true },
+  { id:'heart',    label:'Heart',       ratio:[.9,1.1],     def:1.0,  k:.0059, depth:.60,  facets:'brilliant', tips:[180] },
+  { id:'hexagon',  label:'Hexagon',     ratio:[1,1.4],      def:1.15, k:.0072, depth:.62,  facets:'step', poly:true, elong:true },
+  { id:'trillion', label:'Trillion',    ratio:[1,1],        def:1.0,  k:.0057, depth:.50,  facets:'brilliant', poly:true, tips:[0,120,240] },
+];
+const SHAPE = Object.fromEntries(SHAPES.map(s => [s.id, s]));
+
+const CUT_STYLES = [
+  { id:'brilliant', label:'Modern brilliant', desc:'The standard sparkle: 57–58 facets, ~57% table.' },
+  { id:'oldeuro',   label:'Old European',     desc:'Antique look: small table, tall crown, open culet. Chunky, romantic light.' },
+  { id:'rose',      label:'Rose cut',         desc:'Flat back, domed faceted top. Low profile, soft glow, less fire.' },
+];
+
+const HEADS = [
+  { id:'prong4',   label:'4 prong',       desc:'Classic. Shows the most stone; four points of contact.', labor:90 },
+  { id:'prong6',   label:'6 prong',       desc:'Tiffany-style. More secure, rounder outline.', labor:110 },
+  { id:'double',   label:'Double prong',  desc:'Paired claws; airy and modern.', labor:130 },
+  { id:'compass',  label:'Compass',       desc:'Prongs at N/S/E/W. Squares off a round, flatters ovals.', labor:95 },
+  { id:'trellis',  label:'Trellis',       desc:'Crossed, woven prongs that lift the stone.', labor:140 },
+  { id:'bezel',    label:'Bezel',         desc:'Metal rim all the way around. Most protective, lowest profile.', labor:220 },
+  { id:'halfbezel',label:'Half bezel',    desc:'Rim on two sides, open on the others.', labor:190 },
+  { id:'tension',  label:'Tension',       desc:'Held by the band’s spring pressure. Only for hard stones.', labor:360 },
+];
+const PRONG_TIPS = [
+  { id:'round',  label:'Rounded' },
+  { id:'claw',   label:'Claw' },
+  { id:'flat',   label:'Flat tab' },
+];
+const PROFILES = [
+  { id:'low',       label:'Low',       desc:'Stone sits close to the finger. Snag-free.' },
+  { id:'standard',  label:'Standard',  desc:'Balanced height.' },
+  { id:'high',      label:'High',      desc:'Lifted for maximum light and a matching band.' },
+  { id:'cathedral', label:'Cathedral', desc:'Shoulders sweep up to meet the head.' },
+];
+
+const HALOS = [
+  { id:'none',   label:'None',            desc:'Let the center stone speak.' },
+  { id:'single', label:'Single halo',     desc:'A ring of small stones. Reads ~30% bigger.' },
+  { id:'double', label:'Double halo',     desc:'Two rings. Maximum sparkle footprint.' },
+  { id:'hidden', label:'Hidden halo',     desc:'Stones tucked under the girdle; visible from the side.' },
+  { id:'both',   label:'Halo + hidden',   desc:'Belt and suspenders.' },
+];
+const HALO_SHAPES = [
+  { id:'match',   label:'Match stone' },
+  { id:'cushion', label:'Cushion' },
+  { id:'round',   label:'Round' },
+];
+const ACCENTS = [
+  { id:'diamond',  label:'Diamond',        hex:'#f2f6ff' },
+  { id:'sapphire', label:'Blue sapphire',  hex:'#1d3fa8' },
+  { id:'pink',     label:'Pink sapphire',  hex:'#e66a9e' },
+  { id:'ruby',     label:'Ruby',           hex:'#b3102e' },
+  { id:'emerald',  label:'Emerald',        hex:'#0e8a4e' },
+  { id:'black',    label:'Black diamond',  hex:'#17171c' },
+];
+
+const SIDES = [
+  { id:'none',    label:'None',        desc:'Plain shoulders.' },
+  { id:'pave',    label:'Pavé',        desc:'Tiny beads hold a river of melee along the band.' },
+  { id:'channel', label:'Channel',     desc:'Stones sit inside two metal rails. Snag-proof.' },
+  { id:'three',   label:'Three-stone', desc:'Past, present, future. Two flanking stones.' },
+];
+const COVERAGES = [
+  { id:'half',  label:'Half',   frac:.5 },
+  { id:'3q',    label:'¾',      frac:.75 },
+  { id:'full',  label:'Eternity', frac:1 },
+];
+const SIDE_SHAPES = [
+  { id:'round',     label:'Round' },
+  { id:'pear',      label:'Pear' },
+  { id:'trapezoid', label:'Trapezoid' },
+  { id:'baguette',  label:'Baguette' },
+  { id:'halfmoon',  label:'Half-moon' },
+  { id:'trillion',  label:'Trillion' },
+];
+
+const BANDS = [
+  { id:'plain',   label:'Straight',   desc:'Even width all the way around.' },
+  { id:'tapered', label:'Tapered',    desc:'Narrows toward the head; makes the stone read larger.' },
+  { id:'split',   label:'Split shank',desc:'Divides into two arms as it reaches the head.' },
+  { id:'twist',   label:'Twisted',    desc:'Two strands wrapped around each other.' },
+  { id:'bypass',  label:'Bypass',     desc:'Ends sweep past each other around the stone.' },
+];
+const BAND_PROFILES = [
+  { id:'comfort', label:'Comfort fit', desc:'Rounded inside, soft outside. The default for a reason.' },
+  { id:'flat',    label:'Flat',        desc:'Crisp, modern, squared edges.' },
+  { id:'dome',    label:'Half-round',  desc:'Classic domed top.' },
+  { id:'knife',   label:'Knife-edge',  desc:'A ridge down the center. Catches light like a blade.' },
+];
+
+const METALS = [
+  { id:'14y', label:'14k yellow gold', short:'14k yellow', hex:'#f2c56b', karat:14, family:'gold',  density:13.1, base:[1.0,.78,.36] },
+  { id:'18y', label:'18k yellow gold', short:'18k yellow', hex:'#f6c25a', karat:18, family:'gold',  density:15.5, base:[1.0,.75,.3] },
+  { id:'14r', label:'14k rose gold',   short:'14k rose',   hex:'#e8a888', karat:14, family:'gold',  density:13.2, base:[.96,.68,.56] },
+  { id:'18r', label:'18k rose gold',   short:'18k rose',   hex:'#e39d7d', karat:18, family:'gold',  density:15.3, base:[.97,.65,.52] },
+  { id:'14w', label:'14k white gold',  short:'14k white',  hex:'#e6e6e2', karat:14, family:'gold',  density:12.7, base:[.93,.92,.89] },
+  { id:'18w', label:'18k white gold',  short:'18k white',  hex:'#e4e4e0', karat:18, family:'gold',  density:15.0, base:[.93,.92,.89] },
+  { id:'pt',  label:'Platinum 950',    short:'Platinum',   hex:'#d7d8dc', karat:0,  family:'plat',  density:21.4, base:[.85,.84,.83] },
+  { id:'pd',  label:'Palladium 950',   short:'Palladium',  hex:'#cfced4', karat:0,  family:'pall',  density:12.0, base:[.82,.82,.84] },
+];
+const METAL = Object.fromEntries(METALS.map(m => [m.id, m]));
+const HEAD_METALS = [
+  { id:'same', label:'Match band' },
+  { id:'14w',  label:'White gold head' },
+  { id:'pt',   label:'Platinum head' },
+  { id:'14y',  label:'Yellow gold head' },
+  { id:'14r',  label:'Rose gold head' },
+];
+const FINISHES = [
+  { id:'polish',   label:'High polish', labor:0 },
+  { id:'satin',    label:'Satin / brushed', labor:35 },
+  { id:'hammered', label:'Hammered', labor:70 },
+];
+const HIDDEN_GEMS = [
+  { id:'none',     label:'None',           hex:null },
+  { id:'sapphire', label:'Blue sapphire',  hex:'#1d3fa8' },
+  { id:'ruby',     label:'Ruby',           hex:'#b3102e' },
+  { id:'emerald',  label:'Emerald',        hex:'#0e8a4e' },
+  { id:'pink',     label:'Pink sapphire',  hex:'#e66a9e' },
+  { id:'diamond',  label:'Diamond',        hex:'#f2f6ff' },
+];
+
+const COLORS   = ['D','E','F','G','H','I','J','K'];
+const CLARITY  = ['FL','IF','VVS1','VVS2','VS1','VS2','SI1','SI2','I1'];
+const CUTS     = [{id:'EX',label:'Ideal / Excellent'},{id:'VG',label:'Very good'},{id:'G',label:'Good'}];
+
+// ---------- default design & presets ----------
+const DEFAULT = {
+  stone:  { type:'lab', origin:'lab', tier:'fine', shape:'oval', carat:1.5, ratio:1.38, cutStyle:'brilliant', orient:'ns', color:'G', clarity:'VS1', cut:'EX' },
+  head:   { style:'prong4', tip:'claw', profile:'standard' },
+  halo:   { style:'none', shape:'match', accent:'diamond' },
+  sides:  { style:'none', coverage:'half', sideShape:'pear', sideSize:.38, accent:'diamond' },
+  band:   { style:'plain', profile:'comfort', width:1.8 },
+  metal:  { id:'14y', head:'same', finish:'polish' },
+  details:{ milgrain:false, engraving:'', hidden:'none', hand:false },
+  fit:    { size:6.5 },
+};
+
+const PRESETS = [
+  { id:'solitaire', label:'Classic solitaire', patch:{ stone:{type:'natural',origin:'natural',shape:'round',carat:1.0,ratio:1,cutStyle:'brilliant'}, head:{style:'prong6',tip:'round',profile:'standard'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'comfort',width:2.0}, metal:{id:'pt',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'ovalpave', label:'Oval pavé', patch:{ stone:{type:'lab',origin:'lab',shape:'oval',carat:2.0,ratio:1.4}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'hidden'}, sides:{style:'pave',coverage:'half',accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.7}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'emeraldbezel', label:'Emerald bezel', patch:{ stone:{type:'lab',origin:'lab',shape:'emerald',carat:1.75,ratio:1.45}, head:{style:'bezel',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'flat',width:2.4}, metal:{id:'18y',head:'same',finish:'satin'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'threestone', label:'Pear three-stone', patch:{ stone:{type:'natural',origin:'natural',shape:'oval',carat:1.5,ratio:1.35}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'three',sideShape:'pear',sideSize:.4,accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.9}, metal:{id:'14r',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'vintage', label:'Vintage halo', patch:{ stone:{type:'natural',origin:'natural',shape:'cushion',carat:1.2,ratio:1.05,cutStyle:'oldeuro'}, head:{style:'prong4',tip:'round',profile:'standard'}, halo:{style:'single',shape:'match'}, sides:{style:'pave',coverage:'half'}, band:{style:'plain',profile:'dome',width:2.0}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:true,hidden:'sapphire'} } },
+  { id:'teal', label:'Teal sapphire', patch:{ stone:{type:'tealSapph',origin:'natural',shape:'hexagon',carat:1.8,ratio:1.15}, head:{style:'double',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'split',profile:'comfort',width:1.9}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'toi', label:'Marquise east-west', patch:{ stone:{type:'lab',origin:'lab',shape:'marquise',carat:1.5,ratio:2.0,orient:'ew'}, head:{style:'prong4',tip:'claw',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'knife',width:1.8}, metal:{id:'18y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'cathedral', label:'Cathedral twist', patch:{ stone:{type:'natural',origin:'natural',shape:'round',carat:1.25,ratio:1}, head:{style:'prong6',tip:'round',profile:'cathedral'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'twist',profile:'comfort',width:2.1}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+];
+
+// ---------- sizing math ----------
+const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const deepMerge = (base, patch) => { const o = structuredClone(base); for (const k in patch) { if (patch[k] && typeof patch[k] === 'object' && !Array.isArray(patch[k])) o[k] = deepMerge(o[k] || {}, patch[k]); else o[k] = patch[k]; } return o; };
+
+// mm dimensions of the center stone from carat + ratio: L, W, D
+function stoneDims(st) {
+  const sh = SHAPE[st.shape];
+  const ratio = sh.ratio[0] === sh.ratio[1] ? 1 : clamp(st.ratio, sh.ratio[0], sh.ratio[1]);
+  let depth = sh.depth, k = sh.k;
+  if (st.cutStyle === 'oldeuro') { depth *= 1.1; }
+  if (st.cutStyle === 'rose') { depth *= .45; k *= 1.05; }
+  // ct = L*W*D*k = ratio*W * W * depth*W * k
+  const W = Math.cbrt(st.carat / (ratio * depth * k));
+  return { L: W * ratio, W, D: W * depth, ratio };
+}
+// US ring size -> inner diameter (mm)
+const ringID = size => 11.63 + 0.8128 * size;
+const sizeUK = size => { const uk = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'; const i = Math.round((size - 1.5) * 2); return uk[Math.floor(i / 2)] + (i % 2 ? '½' : ''); };
+const sizeEU = size => Math.round(ringID(size) * Math.PI);
+
+// melee (small accent stone) diameter, scaled to the center stone
+const meleeFor = W => clamp(.19 * W, 1.0, 1.9);
+
+// ---------- price model ----------
+// Numbers are anchored to public data pulled 2026-09-18 (StoneAlgo, Rapaport grid via Diamonds Pro, Kitco spot,
+// Brilliant Earth / Blue Nile semi-mounts, Guru Diam melee, trade labor posts). See docs/pricing-model.md for every source.
+// Everything marked est is an estimate. Paste your own data over these tables.
+const PRICE = {
+  version: '2026-09-18',
+  spot: { gold: 4357.70, plat: 1794, pall: 1307 }, // USD per troy oz, Kitco 2026-09-18
+  natural: {
+    // $/ct, round, G/VS1/EX, online-marketplace level. Duplicate x = price cliff.
+    curve: [[.2,2000],[.29,2050],[.3,2050],[.49,2200],[.5,2250],[.69,2450],[.7,2500],[.89,3000],[.9,3550],[.99,3750],[1,4300],[1.49,4950],[1.5,5800],[1.99,7300],[2,9400],[2.49,10900],[2.5,11900],[2.99,12300],[3,13000],[3.99,15600],[4,17000],[4.99,19600],[5,21600],[6,24500],[8,30000]],
+    shape: { round:1, oval:.82, cushion:.68, princess:.65, emerald:.70, asscher:.62, radiant:.70, pear:.88, marquise:.86, heart:.63, hexagon:.6, trillion:.6 },
+    // Rapaport 1.00–1.49 ct grid (Jan 2026) normalised to G/VS1 = 1.00; columns FL IF VVS1 VVS2 VS1 VS2 SI1 SI2 I1
+    grid: { D:[2.53,2.41,1.92,1.67,1.41,1.24,.95,.80,.58], E:[1.92,1.83,1.66,1.36,1.24,1.10,.92,.77,.55], F:[1.62,1.55,1.40,1.24,1.14,1.00,.88,.73,.53], G:[1.34,1.28,1.22,1.10,1.00,.92,.83,.69,.50], H:[1.08,1.03,1.01,.94,.88,.84,.76,.65,.47], I:[.92,.88,.86,.80,.78,.74,.70,.60,.44], J:[.76,.72,.70,.69,.66,.64,.59,.55,.40], K:[.62,.59,.57,.55,.52,.50,.48,.45,.33] },
+    cut: { EX:1, VG:.88, G:.77 },
+  },
+  lab: {
+    curve: [[.3,800],[.5,690],[.75,610],[1,560],[1.5,560],[2,620],[2.5,610],[3,660],[4,580],[5,500],[6,470],[10,420]],
+    shape: { round:1, oval:1.05, cushion:.95, princess:.95, emerald:.95, asscher:.95, radiant:1, pear:1, marquise:1, heart:1, hexagon:.95, trillion:.95 },
+    color: { D:1.15, E:1.1, F:1.05, G:1, H:.95, I:.9, J:.85, K:.8 },
+    clarity: { FL:1.25, IF:1.2, VVS1:1.12, VVS2:1.06, VS1:1, VS2:.95, SI1:.88, SI2:.8, I1:.7 },
+    cut: { EX:1, VG:.92, G:.85 },
+  },
+  moissanite: { perCt: 620, shape: { round:1, cushion:1, oval:1.05, princess:1.05, emerald:1.1, asscher:1.1, pear:1.05, marquise:1.05, radiant:1.05, heart:1.05, hexagon:1.05, trillion:1.05 } }, // Charles & Colvard Forever One DEF
+  // $/ct by tier [commercial, good, fine, extra fine] at carat buckets <1, 1–2, 2–3, 3+  (RubyGlint 2026, Natural Sapphire Co, IGS, Chatham)
+  gems: {
+    whiteSapph:  { natural:{ 0.5:[80,150,300,500], 1:[120,250,450,700], 2:[150,300,600,900], 3:[200,400,700,1000] }, lab:{ 0.5:[30,50,120,250], 1:[30,50,120,250], 2:[30,50,120,250], 3:[30,50,120,250] } },
+    saltpepper:  { natural:{ 0.5:[150,350,700,1200], 1:[150,350,700,1200], 2:[150,350,700,1200], 3:[150,350,700,1200] } },
+    blackDia:    { natural:{ 0.5:[250,600,1500,4000], 1:[250,600,1500,4000], 2:[300,700,2000,5000], 3:[300,800,2500,6000] } },
+    sapphire:    { natural:{ 0.5:[200,600,1500,4000], 1:[500,1500,3000,8000], 2:[1000,3000,5500,15000], 3:[2000,5000,10000,35000] }, lab:{ 0.5:[40,80,250,420], 1:[40,80,250,420], 2:[40,80,250,420], 3:[40,80,250,420] } },
+    pinkSapph:   { natural:{ 0.5:[150,400,900,2500], 1:[400,900,2000,6000], 2:[800,1500,3500,10000], 3:[1200,2500,6000,20000] }, lab:{ 0.5:[40,80,250,420], 1:[40,80,250,420], 2:[40,80,250,420], 3:[40,80,250,420] } },
+    tealSapph:   { natural:{ 0.5:[150,400,800,1500], 1:[300,800,1500,2500], 2:[500,1000,2000,4000], 3:[800,1500,3000,6000] }, lab:{ 0.5:[40,80,250,420], 1:[40,80,250,420], 2:[40,80,250,420], 3:[40,80,250,420] } },
+    ruby:        { natural:{ 0.5:[200,500,1500,4500], 1:[600,1500,4000,11000], 2:[1000,3000,7000,20000], 3:[1500,5000,14000,50000] }, lab:{ 0.5:[30,60,250,420], 1:[30,60,250,420], 2:[30,60,250,420], 3:[30,60,250,420] } },
+    emerald:     { natural:{ 0.5:[400,900,2000,5000], 1:[700,1500,4000,11000], 2:[1200,3000,6500,17000], 3:[2000,5000,10000,34000] }, lab:{ 0.5:[60,120,300,450], 1:[60,120,300,450], 2:[60,120,300,450], 3:[60,120,300,450] } },
+    alexandrite: { natural:{ 0.5:[800,1500,3500,8000], 1:[2000,4000,12000,35000], 2:[4000,8000,20000,50000], 3:[5000,10000,27000,60000] }, lab:{ 0.5:[100,200,350,500], 1:[100,200,350,500], 2:[100,200,350,500], 3:[100,200,350,500] } },
+    spinel:      { natural:{ 0.5:[100,250,800,3000], 1:[150,400,1500,5000], 2:[250,600,2500,8000], 3:[400,900,4000,12000] } },
+    morganite:   { natural:{ 0.5:[60,120,250,450], 1:[60,120,250,450], 2:[70,140,280,500], 3:[70,150,300,600] } },
+    aquamarine:  { natural:{ 0.5:[35,85,180,250], 1:[55,140,300,400], 2:[55,140,300,400], 3:[70,200,450,600] } },
+    tourmaline:  { natural:{ 0.5:[40,150,300,2500], 1:[60,250,450,4000], 2:[80,350,600,5500], 3:[100,450,800,7000] } },
+    opal:        { natural:{ 0.5:[40,100,250,600], 1:[60,150,350,800], 2:[80,200,450,1000], 3:[100,250,500,1200] } }, // est
+  },
+  // fancy colour diamonds: multiplier on the white-diamond price at the same carat (est from Leibish / Astteria / Diamonds Pro ranges)
+  fancy: { yellowDia:{ natural:1.0, lab:1.3 }, pinkDia:{ natural:10, lab:1.8 } },
+  gemShape: { round:1.05, oval:1, cushion:1, emerald:1, pear:.97, marquise:.95, princess:.95, radiant:1, asscher:1, heart:.95, hexagon:.97, trillion:.95 },
+  melee: { natural:11, lab:3, colored:4.5, paveLabor:12, channelLabor:15 },   // per ~1.3 mm stone, retail (wholesale × 2.5)
+  metal: { loss:.10, retailMult:2.0, headGrams:{ prong4:.6, prong6:.8, double:.7, compass:.6, trellis:.7, bezel:1.0, halfbezel:.7, tension:.3 }, extraGrams:{ cathedral:.4, single:.8, double:1.4, hidden:.3, both:1.1, three:.6 } },
+  labor: { cad:150, castGold:200, castPt:500, setProng:100, setBezel:175, setTension:250, polish:40, rhodium:50, haloAssembly:250, hiddenHalo:150, threeStone:200, engraveMachine:50, engraveHand:150, milgrain:100, twoTone:120, satin:35, hammered:70, hiddenGem:90 },
+  retail: [.92, 1.28],  // jeweler quote spread around the model's midpoint
+};
+
+function curveAt(curve, ct) {
+  if (ct <= curve[0][0]) return curve[0][1];
+  for (let i = 1; i < curve.length; i++) if (ct <= curve[i][0]) { const [a, pa] = curve[i - 1], [b, pb] = curve[i]; return b === a ? pb : lerp(pa, pb, (ct - a) / (b - a)); }
+  return curve[curve.length - 1][1];
+}
+const tierIndex = { commercial:0, good:1, fine:2, extra:3 };
+const TIERS = [{id:'commercial',label:'Commercial'},{id:'good',label:'Good'},{id:'fine',label:'Fine'},{id:'extra',label:'Extra fine'}];
+
+function centerStonePrice(st) {
+  const ct = st.carat, sh = st.shape;
+  const isDia = st.type === 'natural' || st.type === 'lab';
+  if (isDia) {
+    if (st.type === 'natural') {
+      const t = PRICE.natural, g = t.grid[st.color][CLARITY.indexOf(st.clarity)];
+      return ct * curveAt(t.curve, ct) * g * t.shape[sh] * t.cut[st.cut] * (st.cutStyle === 'brilliant' ? 1 : .9);
+    }
+    const t = PRICE.lab;
+    return ct * curveAt(t.curve, ct) * t.color[st.color] * t.clarity[st.clarity] * t.shape[sh] * t.cut[st.cut] * (st.cutStyle === 'brilliant' ? 1 : .9);
+  }
+  if (st.type === 'moissanite') return ct * PRICE.moissanite.perCt * PRICE.moissanite.shape[sh];
+  if (st.type === 'yellowDia' || st.type === 'pinkDia') {
+    const base = st.origin === 'lab' ? ct * curveAt(PRICE.lab.curve, ct) * PRICE.lab.shape[sh] : ct * curveAt(PRICE.natural.curve, ct) * PRICE.natural.shape[sh];
+    return base * PRICE.fancy[st.type][st.origin];
+  }
+  const g = PRICE.gems[st.type], byOrigin = g[st.origin] || g.natural, bucket = ct < 1 ? .5 : ct < 2 ? 1 : ct < 3 ? 2 : 3;
+  return ct * byOrigin[bucket][tierIndex[st.tier || 'fine']] * PRICE.gemShape[sh];
+}
+
+function estimate(s) {
+  const st = s.stone, dims = stoneDims(st), W = dims.W;
+  const lines = [];
+  const isDia = st.type === 'natural' || st.type === 'lab';
+  const stone = centerStonePrice(st);
+  const stoneSub = `${st.carat.toFixed(2)} ct ${GEM[st.type].label.toLowerCase()}` + (isDia ? ` · ${st.color} ${st.clarity} ${st.cut}` : st.type === 'moissanite' ? ' · premium grade' : ` · ${st.origin === 'lab' ? 'lab-created' : (TIERS.find(t => t.id === (st.tier || 'fine')).label.toLowerCase() + ' quality')}`);
+  lines.push({ k:'Center stone', sub: stoneSub, v: stone });
+
+  // --- metal ---
+  const m = METAL[s.metal.id], ID = ringID(s.fit.size);
+  const t = s.band.profile === 'knife' ? 1.9 : s.band.profile === 'dome' ? 1.7 : 1.5;
+  const fill = { comfort:.85, flat:.97, dome:.8, knife:.62 }[s.band.profile];
+  const styleF = { plain:1, tapered:.9, split:1.15, twist:.95, bypass:1.05 }[s.band.style];
+  let grams = Math.PI * (ID + t) * s.band.width * t * fill * styleF / 1000 * m.density;
+  let extra = (PRICE.metal.headGrams[s.head.style] || .6) * Math.pow(W / 6.5, 1.5);
+  if (s.head.profile === 'cathedral') extra += PRICE.metal.extraGrams.cathedral;
+  if (s.halo.style !== 'none') extra += (PRICE.metal.extraGrams[s.halo.style] || .8) * Math.pow(W / 6.5, 1.5);
+  if (s.sides.style === 'three') extra += PRICE.metal.extraGrams.three;
+  grams += extra * m.density / 13.1;
+  const purity = m.karat ? m.karat / 24 : .95;
+  const perG = (m.family === 'gold' ? PRICE.spot.gold : m.family === 'plat' ? PRICE.spot.plat : PRICE.spot.pall) / 31.1035 * purity;
+  const metal = grams * perG * (1 + PRICE.metal.loss) * PRICE.metal.retailMult;
+  lines.push({ k:'Metal', sub:`≈ ${grams.toFixed(1)} g ${m.short} at $${perG.toFixed(0)}/g melt`, v: metal });
+
+  // --- setting & labor ---
+  const L = PRICE.labor;
+  let labor = L.cad + (m.family === 'plat' ? L.castPt : L.castGold) + L.polish;
+  labor += s.head.style === 'bezel' || s.head.style === 'halfbezel' ? L.setBezel : s.head.style === 'tension' ? L.setTension : L.setProng;
+  if (m.id === '14w' || m.id === '18w') labor += L.rhodium;
+  if (s.metal.finish === 'satin') labor += L.satin; if (s.metal.finish === 'hammered') labor += L.hammered;
+  if (s.metal.head !== 'same') labor += L.twoTone;
+  lines.push({ k:'Setting & labor', sub:`CAD, ${m.family === 'plat' ? 'platinum ' : ''}casting, ${HEADS.find(h => h.id === s.head.style).label.toLowerCase()} head, finish`, v: labor });
+
+  // --- accents ---
+  const c = stoneCounts(s, dims);
+  const accentPrice = id => id === 'diamond' ? (st.type === 'natural' ? PRICE.melee.natural : PRICE.melee.lab) : PRICE.melee.colored;
+  if (c.halo) lines.push({ k: HALOS.find(h => h.id === s.halo.style).label, sub:`${c.halo} stones, set`, v: c.halo * (accentPrice(s.halo.accent) + PRICE.melee.paveLabor) + (s.halo.style === 'hidden' ? L.hiddenHalo : s.halo.style === 'both' ? L.haloAssembly + L.hiddenHalo : L.haloAssembly) });
+  if (c.band) lines.push({ k: s.sides.style === 'pave' ? 'Pavé band' : 'Channel band', sub:`${c.band} stones, set`, v: c.band * (accentPrice(s.sides.accent) + (s.sides.style === 'channel' ? PRICE.melee.channelLabor : PRICE.melee.paveLabor)) });
+  if (c.side) {
+    const sc = s.sides.sideSize, sideCt = st.carat * Math.pow(sc, 2.6) * 1.4;
+    const per = s.sides.accent === 'diamond'
+      ? centerStonePrice({ ...st, type: st.type === 'natural' ? 'natural' : 'lab', origin: st.type === 'natural' ? 'natural' : 'lab', carat: sideCt, shape: s.sides.sideShape === 'round' ? 'round' : 'pear' }) * .9
+      : sideCt * 300;
+    lines.push({ k:'Side stones', sub:`2 × ~${sideCt.toFixed(2)} ct ${SIDE_SHAPES.find(x => x.id === s.sides.sideShape).label.toLowerCase()}`, v: 2 * per + L.threeStone });
+  }
+  // --- details ---
+  let det = 0; const dsub = [];
+  if (s.details.milgrain) { det += L.milgrain; dsub.push('milgrain'); }
+  if (s.details.engraving) { det += s.details.hand ? L.engraveHand : L.engraveMachine; dsub.push(s.details.hand ? 'hand engraving' : 'engraving'); }
+  if (s.details.hidden !== 'none') { det += L.hiddenGem + 45; dsub.push('hidden gem'); }
+  if (det) lines.push({ k:'Details', sub: dsub.join(', '), v: det });
+
+  const total = lines.reduce((a, l) => a + l.v, 0);
+  return { lines, total, low: total * PRICE.retail[0], high: total * PRICE.retail[1], grams };
+}
+
+// How many accent stones the current design needs (mirrors what the 3D builder places)
+function stoneCounts(s, dims) {
+  const W = dims.W, L = dims.L, md = meleeFor(W);
+  const perim = Math.PI * (3 * (L / 2 + W / 2) - Math.sqrt((3 * L / 2 + W / 2) * (L / 2 + 3 * W / 2)));
+  let halo = 0;
+  const ringCount = d => Math.round((perim + 2 * Math.PI * d) / (md * 1.15));
+  if (s.halo.style === 'single' || s.halo.style === 'both') halo += ringCount(md * .67);
+  if (s.halo.style === 'double') halo += ringCount(md * .67) + ringCount(md * 1.82);
+  if (s.halo.style === 'hidden' || s.halo.style === 'both') halo += Math.round((perim * .8) / (md * .78 * 1.12));
+  let band = 0;
+  if (s.sides.style === 'pave' || s.sides.style === 'channel') {
+    const Rout = ringID(s.fit.size) / 2 + 1.6, frac = COVERAGES.find(c => c.id === s.sides.coverage).frac, bm = Math.min(md, s.band.width - .55);
+    if (bm >= .8) band = Math.max(0, Math.round((2 * Math.PI * Rout * frac - (W + 1.2)) / (bm * 1.12)));
+  }
+  return { halo, band, side: s.sides.style === 'three' ? 2 : 0 };
+}
+
+const fmt$ = v => '$' + Math.round(v).toLocaleString('en-US');
+const fmtRange = (a, b) => `${fmt$(a)} – ${fmt$(b)}`;
+
+// =====================================================================
+//  Section 2: parametric 3D ring (three.js)
+//  Units are millimetres. Ring circle lies in the XY plane, finger axis = Z, head at +Y.
+//  Stone-local space: x = length axis, z = width axis, y up, girdle plane at y = 0.
+// =====================================================================
+const D2R = Math.PI / 180;
+let THREE = null;
+
+// ---------- 2D outlines (x = length, z = width), normalised to [-1,1]², CCW ----------
+function normalizeOutline(pts) {
+  let minx = Infinity, maxx = -Infinity, minz = Infinity, maxz = -Infinity;
+  for (const [x, z] of pts) { if (x < minx) minx = x; if (x > maxx) maxx = x; if (z < minz) minz = z; if (z > maxz) maxz = z; }
+  const cx = (minx + maxx) / 2, cz = (minz + maxz) / 2, sx = 2 / (maxx - minx), sz = 2 / (maxz - minz);
+  const out = pts.map(([x, z]) => [(x - cx) * sx, (z - cz) * sz]);
+  let area = 0;
+  for (let i = 0; i < out.length; i++) { const [x1, z1] = out[i], [x2, z2] = out[(i + 1) % out.length]; area += x1 * (-z2) - x2 * (-z1); }
+  if (area < 0) out.reverse();
+  return out;
+}
+const circleO = N => Array.from({ length: N }, (_, i) => { const t = i / N * 2 * Math.PI; return [Math.cos(t), -Math.sin(t)]; });
+const superO = (N, n) => Array.from({ length: N }, (_, i) => { const t = i / N * 2 * Math.PI, c = Math.cos(t), s = Math.sin(t); return [Math.sign(c) * Math.pow(Math.abs(c), 2 / n), -Math.sign(s) * Math.pow(Math.abs(s), 2 / n)]; });
+function polyO(corners, N, bulge = 0) {
+  const P = corners.length, lens = []; let per = 0;
+  for (let i = 0; i < P; i++) { const a = corners[i], b = corners[(i + 1) % P]; const l = Math.hypot(b[0] - a[0], b[1] - a[1]); lens.push(l); per += l; }
+  const out = [];
+  for (let i = 0; i < P; i++) {
+    const a = corners[i], b = corners[(i + 1) % P], k = Math.max(1, Math.round(N * lens[i] / per));
+    const ex = (b[0] - a[0]) / lens[i], ez = (b[1] - a[1]) / lens[i];
+    for (let j = 0; j < k; j++) { const u = j / k, bl = bulge * Math.sin(Math.PI * u); out.push([a[0] + (b[0] - a[0]) * u + ez * bl, a[1] + (b[1] - a[1]) * u - ex * bl]); }
+  }
+  return out;
+}
+const octO = (N, c) => polyO([[1, -1 + c], [1, 1 - c], [1 - c, 1], [-1 + c, 1], [-1, 1 - c], [-1, -1 + c], [-1 + c, -1], [1 - c, -1]], N);
+const pearO = N => Array.from({ length: N }, (_, i) => { const t = i / N * 2 * Math.PI; return [Math.cos(t), Math.sin(t) * Math.pow(Math.sin(t / 2), 1.25)]; });
+const marqO = N => { const w = .5, R = (1 + w * w) / (2 * w); return Array.from({ length: N }, (_, i) => { const t = i / N * 2 * Math.PI, x = Math.cos(t), h = Math.sqrt(Math.max(0, R * R - x * x)) - (R - w); return [x, Math.sin(t) >= 0 ? h : -h]; }); };
+const heartO = N => Array.from({ length: N }, (_, i) => { const t = i / N * 2 * Math.PI; return [13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t), 16 * Math.pow(Math.sin(t), 3)]; });
+const regO = (sides, N, bulge = 0) => polyO(Array.from({ length: sides }, (_, i) => { const a = i / sides * 2 * Math.PI; return [Math.cos(a), -Math.sin(a)]; }), N, bulge);
+const halfmoonO = N => { const out = []; const n = Math.round(N * .7); for (let i = 0; i <= n; i++) { const th = -Math.PI / 2 + Math.PI * i / n; out.push([-1 + 2 * Math.cos(th), Math.sin(th)]); } for (let i = 1; i < N - n; i++) out.push([-1, 1 - 2 * i / (N - n)]); return out; };
+
+const OUTLINE_FN = {
+  round: N => circleO(N), oval: N => circleO(N), cushion: N => superO(N, 3.4),
+  princess: N => polyO([[1, 1], [-1, 1], [-1, -1], [1, -1]], N), emerald: N => octO(N, .16), asscher: N => octO(N, .24), radiant: N => octO(N, .17),
+  pear: N => pearO(N), marquise: N => marqO(N), heart: N => heartO(N), hexagon: N => regO(6, N), trillion: N => regO(3, N, .1),
+  trapezoid: N => polyO([[-1, -1], [1, -.62], [1, .62], [-1, 1]], N), baguette: N => polyO([[-1, -1], [1, -1], [1, 1], [-1, 1]], N), halfmoon: N => halfmoonO(N),
+};
+const SIDE_META = { round: { ratio: 1, facets: 'brilliant' }, pear: { ratio: 1.5, facets: 'brilliant' }, trapezoid: { ratio: .62, facets: 'step' }, baguette: { ratio: .55, facets: 'step' }, halfmoon: { ratio: .6, facets: 'step' }, trillion: { ratio: 1, facets: 'brilliant' } };
+const outlineCache = new Map();
+function outline(id, N) { const k = id + ':' + N; if (!outlineCache.has(k)) outlineCache.set(k, normalizeOutline(OUTLINE_FN[id](N))); return outlineCache.get(k); }
+const facetN = id => (SHAPE[id]?.poly || id in { trapezoid: 1, baguette: 1, halfmoon: 1 }) ? 24 : (id === 'heart' ? 28 : 16);
+
+// resample a closed outline to M points by arc length; returns [[x,z],...]
+function resample(pts, M) {
+  const n = pts.length, cum = [0]; let per = 0;
+  for (let i = 0; i < n; i++) { const a = pts[i], b = pts[(i + 1) % n]; per += Math.hypot(b[0] - a[0], b[1] - a[1]); cum.push(per); }
+  const out = []; let seg = 0;
+  for (let j = 0; j < M; j++) {
+    const d = per * j / M; while (seg < n - 1 && cum[seg + 1] < d) seg++;
+    const a = pts[seg], b = pts[(seg + 1) % n], u = (d - cum[seg]) / Math.max(1e-9, cum[seg + 1] - cum[seg]);
+    out.push([a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u]);
+  }
+  return out;
+}
+// dense outline in mm (scaled), with outward normals
+function densePath(id, L, W, M = 128) {
+  const pts = resample(outline(id, 96), M).map(([x, z]) => [x * L / 2, z * W / 2]);
+  const nrm = pts.map((p, i) => { const a = pts[(i - 1 + M) % M], b = pts[(i + 1) % M]; let tx = b[0] - a[0], tz = b[1] - a[1]; const l = Math.hypot(tx, tz) || 1; tx /= l; tz /= l; return [-tz, tx]; });
+  return { pts, nrm, M };
+}
+const offsetPath = (path, d) => path.pts.map((p, i) => [p[0] + path.nrm[i][0] * d, p[1] + path.nrm[i][1] * d]);
+const pathLength = pts => { let l = 0; for (let i = 0; i < pts.length; i++) { const a = pts[i], b = pts[(i + 1) % pts.length]; l += Math.hypot(b[0] - a[0], b[1] - a[1]); } return l; };
+// points spaced `pitch` apart along a closed polyline (returns [{p:[x,z], n:[nx,nz]}])
+function spaced(pts, nrm, pitch, startFrac = 0) {
+  const total = pathLength(pts), count = Math.max(1, Math.round(total / pitch)), step = total / count, out = [];
+  let seg = 0, acc = 0, target = step * startFrac;
+  const n = pts.length; let a = pts[0], b = pts[1 % n], segLen = Math.hypot(b[0] - a[0], b[1] - a[1]);
+  for (let k = 0; k < count; k++) {
+    while (target > acc + segLen && seg < n * 2) { acc += segLen; seg++; a = pts[seg % n]; b = pts[(seg + 1) % n]; segLen = Math.hypot(b[0] - a[0], b[1] - a[1]); }
+    const u = segLen ? (target - acc) / segLen : 0, i0 = seg % n, i1 = (seg + 1) % n;
+    out.push({ p: [a[0] + (b[0] - a[0]) * u, a[1] + (b[1] - a[1]) * u], n: [nrm[i0][0] + (nrm[i1][0] - nrm[i0][0]) * u, nrm[i0][1] + (nrm[i1][1] - nrm[i0][1]) * u] });
+    target += step;
+  }
+  return out;
+}
+// closest outline point (mm) at a given outline angle (deg, 0 = +x, CCW toward -z)
+function pointAtAngle(path, deg) {
+  const a = deg * D2R, dx = Math.cos(a), dz = -Math.sin(a); let best = 0, bd = -2;
+  for (let i = 0; i < path.M; i++) { const p = path.pts[i], l = Math.hypot(p[0], p[1]) || 1, d = (p[0] * dx + p[1] * dz) / l; if (d > bd) { bd = d; best = i; } }
+  return { p: path.pts[best], n: path.nrm[best], i: best };
+}
+
+// ---------- faceted gem geometry ----------
+function ringPts(O, s, y, off, L, W) {
+  const n = O.length, out = [];
+  for (let i = 0; i < n; i++) {
+    let x = O[i][0], z = O[i][1];
+    if (off) { const q = O[(i + 1) % n]; x = (x + q[0]) / 2; z = (z + q[1]) / 2; }
+    out.push([x * s * L / 2, y, z * s * W / 2]);
+  }
+  return out;
+}
+function gemGeometry(shapeId, L, W, D, facets, cutStyle) {
+  const O = outline(shapeId, facetN(shapeId)), n = O.length, tris = [];
+  const push = (a, b, c) => tris.push(a, b, c);
+  const connect = (A, B) => { // A lower ring, B upper ring
+    for (let i = 0; i < n; i++) {
+      const j = (i + 1) % n;
+      if (A.off === B.off) { push(A.p[i], A.p[j], B.p[j]); push(A.p[i], B.p[j], B.p[i]); }
+      else if (B.off > A.off) { push(A.p[i], A.p[j], B.p[i]); push(A.p[j], B.p[j], B.p[i]); }
+      else { push(A.p[i], B.p[j], B.p[i]); push(A.p[i], A.p[j], B.p[j]); }
+    }
+  };
+  const toPointBelow = (A, C) => { for (let i = 0; i < n; i++) push(A.p[i], C, A.p[(i + 1) % n]); };
+  const toPointAbove = (B, P) => { for (let i = 0; i < n; i++) push(B.p[i], B.p[(i + 1) % n], P); };
+  const cap = (R, up) => {
+    const v2 = R.p.map(p => new THREE.Vector2(p[0], -p[2]));
+    const faces = THREE.ShapeUtils.triangulateShape(v2, []);
+    for (const [a, b, c] of faces) {
+      const pa = R.p[a], pb = R.p[b], pc = R.p[c];
+      const ny = (pb[0] - pa[0]) * (pc[2] - pa[2]) - (pb[2] - pa[2]) * (pc[0] - pa[0]); // sign of y-normal (x,z plane)
+      const ok = up ? ny < 0 : ny > 0; // derived from cross product orientation in xz
+      if (ok) push(pa, pb, pc); else push(pa, pc, pb);
+    }
+  };
+  const mk = (s, y, off) => ({ p: ringPts(O, s, y, off, L, W), off });
+  let rings = [], crownH, girdleT, pavD;
+  if (cutStyle === 'rose') {
+    crownH = D; girdleT = D * .05; pavD = 0;
+    const g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0), c1 = mk(.86, D * .3, .5), c2 = mk(.6, D * .62, 0), c3 = mk(.28, D * .88, .5);
+    connect(g1, g0); connect(g0, c1); connect(c1, c2); connect(c2, c3); toPointAbove(c3, [0, D, 0]); cap(g1, false);
+  } else if (facets === 'step') {
+    crownH = D * .22; girdleT = D * .05; pavD = D * .73;
+    const t = mk(.62, crownH, 0), c1 = mk(.8, crownH * .62, 0), c2 = mk(.93, crownH * .28, 0), g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0);
+    const p1 = mk(.86, -girdleT - pavD * .28, 0), p2 = mk(.62, -girdleT - pavD * .6, 0), p3 = mk(.34, -girdleT - pavD * .86, 0), k = mk(.07, -girdleT - pavD, 0);
+    cap(t, true); connect(c1, t); connect(c2, c1); connect(g0, c2); connect(g1, g0); connect(p1, g1); connect(p2, p1); connect(p3, p2); connect(k, p3); cap(k, false);
+  } else if (cutStyle === 'oldeuro') {
+    crownH = D * .32; girdleT = D * .06; pavD = D * .62;
+    const t = mk(.45, crownH, 0), c1 = mk(.8, crownH * .5, .5), g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0), p1 = mk(.5, -girdleT - pavD * .5, .5), k = mk(.08, -girdleT - pavD, 0);
+    cap(t, true); connect(c1, t); connect(g0, c1); connect(g1, g0); connect(p1, g1); connect(k, p1); cap(k, false);
+  } else {
+    crownH = D * .24; girdleT = D * .06; pavD = D * .70;
+    const t = mk(.58, crownH, 0), c1 = mk(.84, crownH * .45, .5), g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0), p1 = mk(.56, -girdleT - pavD * .5, .5);
+    cap(t, true); connect(c1, t); connect(g0, c1); connect(g1, g0); connect(p1, g1); toPointBelow(p1, [0, -girdleT - pavD, 0]);
+  }
+  const arr = new Float32Array(tris.length * 3);
+  for (let i = 0; i < tris.length; i++) { arr[i * 3] = tris[i][0]; arr[i * 3 + 1] = tris[i][1]; arr[i * 3 + 2] = tris[i][2]; }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(arr, 3));
+  geo.computeVertexNormals();
+  return { geo, crownH, girdleT, pavD };
+}
+const gemCache = new Map();
+function gem(shapeId, L, W, D, facets, cutStyle) {
+  const k = [shapeId, L.toFixed(2), W.toFixed(2), D.toFixed(2), facets, cutStyle].join('|');
+  let v = gemCache.get(k);
+  if (v) { gemCache.delete(k); gemCache.set(k, v); return v; }
+  if (gemCache.size > 40) { let n = 0; for (const [kk, vv] of gemCache) { vv.geo.dispose(); gemCache.delete(kk); if (++n >= 15) break; } }
+  v = gemGeometry(shapeId, L, W, D, facets, cutStyle); gemCache.set(k, v); return v;
+}
+
+// ---------- metal walls (bezel rims, halo beds): inner/outer closed paths, top/bottom y ----------
+function wallGeometry(inner, outer, yTop, yBot, mask) {
+  const n = inner.length, tris = [];
+  const push = (a, b, c) => tris.push(a, b, c);
+  const P = (pt, y) => [pt[0], y, pt[1]];
+  const quad = (a, b, c, d) => { push(a, b, c); push(a, c, d); };
+  const on = i => !mask || mask(i);
+  for (let i = 0; i < n; i++) {
+    const j = (i + 1) % n; if (!on(i)) continue;
+    const it = P(inner[i], yTop), jt = P(inner[j], yTop), ib = P(inner[i], yBot), jb = P(inner[j], yBot);
+    const ot = P(outer[i], yTop), pt = P(outer[j], yTop), ob = P(outer[i], yBot), pb = P(outer[j], yBot);
+    quad(ob, pb, pt, ot);   // outer wall (outward)
+    quad(jb, ib, it, jt);   // inner wall (inward)
+    quad(ot, pt, jt, it);   // top rim (+y)
+    quad(ib, jb, pb, ob);   // bottom rim (-y)
+    if (!on(j)) quad(jb, jt, pt, pb);           // end cap
+    if (!on((i - 1 + n) % n)) quad(ob, ot, it, ib); // start cap
+  }
+  const arr = new Float32Array(tris.length * 3);
+  for (let i = 0; i < tris.length; i++) { arr[i * 3] = tris[i][0]; arr[i * 3 + 1] = tris[i][1]; arr[i * 3 + 2] = tris[i][2]; }
+  const geo = new THREE.BufferGeometry(); geo.setAttribute('position', new THREE.BufferAttribute(arr, 3)); geo.computeVertexNormals();
+  return geo;
+}
+
+// ---------- band sweep: a 2D profile (px axial, py radial from inner surface) swept around the ring ----------
+function bandProfile(style, w, t) {
+  const hw = w / 2, pts = [], arcN = 9;
+  if (style === 'flat') return [[-hw, 0], [hw, 0], [hw, 0], [hw, t], [hw, t], [-hw, t], [-hw, t], [-hw, 0]];
+  if (style === 'comfort') {
+    for (let i = 0; i <= arcN; i++) { const u = i / arcN; pts.push([lerp(-hw, hw, u), .2 * t * (1 - Math.sin(Math.PI * u))]); }
+    pts.push([hw, .2 * t], [hw, .72 * t]);
+    for (let i = 0; i <= arcN; i++) { const u = i / arcN; pts.push([lerp(hw, -hw, u), .72 * t + .28 * t * Math.sin(Math.PI * u)]); }
+    pts.push([-hw, .72 * t], [-hw, .2 * t]);
+    return pts;
+  }
+  if (style === 'dome') {
+    pts.push([-hw, 0], [hw, 0], [hw, 0], [hw, .22 * t]);
+    for (let i = 0; i <= arcN; i++) { const th = Math.PI * i / arcN; pts.push([hw * Math.cos(th), .22 * t + .78 * t * Math.sin(th)]); }
+    pts.push([-hw, .22 * t], [-hw, 0]);
+    return pts;
+  }
+  // knife-edge
+  return [[-hw, 0], [hw, 0], [hw, 0], [hw, .32 * t], [hw, .32 * t], [hw * .1, .96 * t], [0, t], [-hw * .1, .96 * t], [-hw, .32 * t], [-hw, .32 * t], [-hw, 0]];
+}
+const circleProfile = (r, cy, n = 14) => Array.from({ length: n }, (_, i) => { const a = i / n * 2 * Math.PI; return [r * Math.cos(a), cy + r * Math.sin(a)]; });
+
+function sweep(profile, o) {
+  // o: { R, phi0, phi1, seg, closed, radial(φ), axial(φ), wScale(φ), tScale(φ) }
+  const P = profile.length, S = o.seg, nR = o.closed ? S : S + 1, pos = new Float32Array(nR * P * 3), idx = [];
+  for (let j = 0; j < nR; j++) {
+    const phi = o.phi0 + (o.phi1 - o.phi0) * j / S, c = Math.cos(phi), s = Math.sin(phi);
+    const R = o.R + (o.radial ? o.radial(phi) : 0), ax = o.axial ? o.axial(phi) : 0, ws = o.wScale ? o.wScale(phi) : 1, ts = o.tScale ? o.tScale(phi) : 1;
+    for (let k = 0; k < P; k++) { const px = profile[k][0] * ws, py = profile[k][1] * ts, r = R + py, b = (j * P + k) * 3; pos[b] = r * c; pos[b + 1] = r * s; pos[b + 2] = px + ax; }
+  }
+  for (let j = 0; j < S; j++) {
+    const jn = o.closed ? (j + 1) % S : j + 1;
+    for (let k = 0; k < P; k++) {
+      const kn = (k + 1) % P; if (profile[k][0] === profile[kn][0] && profile[k][1] === profile[kn][1]) continue;
+      const a = j * P + k, b = j * P + kn, c = jn * P + kn, d = jn * P + k; idx.push(a, b, c, a, c, d);
+    }
+  }
+  if (!o.closed) { // end caps
+    const uniq = [], map = [];
+    for (let k = 0; k < P; k++) { const q = uniq.findIndex(u => u[0] === profile[k][0] && u[1] === profile[k][1]); if (q < 0) { map.push(uniq.length); uniq.push(profile[k]); } else map.push(q); }
+    const firstIdx = uniq.map((u, q) => map.indexOf(q));
+    const faces = THREE.ShapeUtils.triangulateShape(uniq.map(u => new THREE.Vector2(u[0], u[1])), []);
+    for (const [a, b, c] of faces) { // caps are emitted with both windings so they read from any side
+      const e = S * P;
+      idx.push(firstIdx[a], firstIdx[c], firstIdx[b], firstIdx[a], firstIdx[b], firstIdx[c]);
+      idx.push(e + firstIdx[a], e + firstIdx[b], e + firstIdx[c], e + firstIdx[a], e + firstIdx[c], e + firstIdx[b]);
+    }
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setIndex(idx); geo.computeVertexNormals();
+  return geo;
+}
+const smooth01 = x => { x = clamp(x, 0, 1); return x * x * (3 - 2 * x); };
+const angDist = (a, b) => { let d = (a - b) % (2 * Math.PI); if (d > Math.PI) d -= 2 * Math.PI; if (d < -Math.PI) d += 2 * Math.PI; return Math.abs(d); };
+
+// ---------- materials ----------
+const matCache = new Map();
+let envMap = null, bumpTex = null;
+function hammeredBump() {
+  if (bumpTex) return bumpTex;
+  const c = document.createElement('canvas'); c.width = c.height = 256; const g = c.getContext('2d');
+  g.fillStyle = '#808080'; g.fillRect(0, 0, 256, 256);
+  for (let i = 0; i < 260; i++) { const x = Math.random() * 256, y = Math.random() * 256, r = 10 + Math.random() * 14; const rg = g.createRadialGradient(x, y, 0, x, y, r); rg.addColorStop(0, 'rgba(255,255,255,.55)'); rg.addColorStop(1, 'rgba(60,60,60,0)'); g.fillStyle = rg; g.beginPath(); g.arc(x, y, r, 0, 7); g.fill(); }
+  bumpTex = new THREE.CanvasTexture(c); bumpTex.wrapS = bumpTex.wrapT = THREE.RepeatWrapping; bumpTex.repeat.set(6, 1); return bumpTex;
+}
+function metalMat(id, finish = 'polish') {
+  const k = 'm:' + id + ':' + finish; if (matCache.has(k)) return matCache.get(k);
+  const m = METAL[id], mat = new THREE.MeshStandardMaterial({ metalness: 1, roughness: finish === 'polish' ? .13 : finish === 'satin' ? .4 : .2, envMapIntensity: 1 });
+  mat.color.setRGB(Math.min(1, m.base[0]), m.base[1], m.base[2], THREE.LinearSRGBColorSpace);
+  if (finish === 'hammered') { mat.bumpMap = hammeredBump(); mat.bumpScale = .12; }
+  matCache.set(k, mat); return mat;
+}
+function gemMat(g, W, D, origin) {
+  const k = 'g:' + g.id + ':' + Math.round(W); if (matCache.has(k)) return matCache.get(k);
+  const colored = !(g.id === 'natural' || g.id === 'lab' || g.id === 'moissanite' || g.id === 'whiteSapph');
+  const mat = new THREE.MeshPhysicalMaterial({
+    color: colored ? new THREE.Color(g.hex).lerp(new THREE.Color('#ffffff'), .25) : new THREE.Color('#ffffff'),
+    metalness: 0, roughness: g.rough ?? .02, transmission: 1 - (g.opaque ?? 0), thickness: Math.max(1.5, D * .9), ior: g.ior, dispersion: g.disp,
+    envMapIntensity: 1.5, specularIntensity: 1, clearcoat: colored ? .3 : 0, side: THREE.FrontSide,
+  });
+  if (colored) { mat.attenuationColor = new THREE.Color(g.hex); mat.attenuationDistance = Math.max(.6, W * .35); }
+  if (g.opaque) { mat.color = new THREE.Color(g.hex); mat.roughness = g.rough ?? .1; mat.envMapIntensity = 1.3; }
+  matCache.set(k, mat); return mat;
+}
+function meleeMat(hex, isDiamond) {
+  const k = 'me:' + hex; if (matCache.has(k)) return matCache.get(k);
+  const mat = new THREE.MeshPhysicalMaterial({ color: new THREE.Color(hex).lerp(new THREE.Color('#ffffff'), isDiamond ? .0 : .12), metalness: isDiamond ? .7 : .45, roughness: .05, clearcoat: 1, clearcoatRoughness: .04, envMapIntensity: isDiamond ? 1.8 : 1.3 });
+  matCache.set(k, mat); return mat;
+}
+const ACCENT_HEX = Object.fromEntries(ACCENTS.map(a => [a.id, a.hex]));
+
+// ---------- scene / renderer ----------
+const R3 = { scene: null, camera: null, renderer: null, ring: null, ground: null, target: null, sph: { t: -.62, p: 1.08 }, zoom: 1, fit: 60, want: null, auto: true, dragging: false, pinch: 0, vel: { t: 0, p: 0 } };
+
+function studioEnvironment(renderer) {
+  const scene = new THREE.Scene();
+  const room = new THREE.Mesh(new THREE.BoxGeometry(60, 60, 60), new THREE.MeshBasicMaterial({ color: new THREE.Color().setRGB(.28, .28, .3), side: THREE.BackSide })); scene.add(room);
+  const panel = (w, h, x, y, z, rx, ry, l) => { const m = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color: new THREE.Color().setRGB(l[0], l[1], l[2]) })); m.position.set(x, y, z); m.rotation.set(rx, ry, 0); scene.add(m); };
+  panel(26, 16, 0, 28, 0, Math.PI / 2, 0, [7, 6.7, 6.2]);          // top softbox
+  panel(12, 30, -28, 4, 0, 0, Math.PI / 2, [4, 4.1, 4.4]);         // left strip
+  panel(12, 30, 28, 4, 0, 0, -Math.PI / 2, [4, 4.1, 4.4]);         // right strip
+  panel(20, 12, 0, 8, -28, 0, 0, [5, 4.8, 4.5]);                   // back key
+  panel(34, 8, 0, -8, 28, 0, Math.PI, [2, 2, 2.1]);                // front floor bounce
+  panel(5, 5, 12, 20, 16, -.9, .6, [11, 10.5, 10]);                // small hard highlight
+  panel(5, 5, -14, 16, 14, -.8, -.6, [8, 8, 8.4]);                 // second highlight
+  const pm = new THREE.PMREMGenerator(renderer); pm.compileEquirectangularShader();
+  const env = pm.fromScene(scene, .02).texture; pm.dispose(); return env;
+}
+
+function initGL(canvas) {
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.0;
+  renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  const scene = new THREE.Scene();
+  envMap = studioEnvironment(renderer); scene.environment = envMap;
+  const camera = new THREE.PerspectiveCamera(30, 1, 1, 400);
+  const key = new THREE.DirectionalLight(0xffffff, 2.2); key.position.set(10, 26, 14); key.castShadow = true; key.shadow.mapSize.set(1024, 1024);
+  Object.assign(key.shadow.camera, { left: -22, right: 22, top: 22, bottom: -22, near: 1, far: 80 }); key.shadow.bias = -.0005; key.shadow.radius = 4; scene.add(key);
+  const fill = new THREE.DirectionalLight(0xdfe8ff, .5); fill.position.set(-14, 8, -10); scene.add(fill);
+  const rim = new THREE.SpotLight(0xffffff, 40, 120, .5, .8, 1.2); rim.position.set(-20, 30, 30); scene.add(rim);
+  scene.add(new THREE.AmbientLight(0xffffff, .12));
+  const ground = new THREE.Mesh(new THREE.CircleGeometry(80, 48), new THREE.ShadowMaterial({ opacity: .28 })); ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+  Object.assign(R3, { scene, camera, renderer, ground, target: new THREE.Vector3(0, 2.5, 0) });
+  setStageColor();
+  return R3;
+}
+function setStageColor() {
+  if (!R3.renderer) return;
+  const c = getComputedStyle(document.documentElement).getPropertyValue('--stage2').trim() || '#cdc9c1';
+  R3.renderer.setClearColor(new THREE.Color(c), 1);
+  R3.ground.material.opacity = document.documentElement.dataset.theme === 'dark' || (matchMedia('(prefers-color-scheme: dark)').matches && document.documentElement.dataset.theme !== 'light') ? .5 : .26;
+}
+
+// ---------- ring assembly ----------
+function disposeGroup(g) { g.traverse(o => { if (o.isMesh || o.isInstancedMesh) { if (!o.userData.keepGeo) o.geometry.dispose(); } }); }
+
+function buildRing(s) {
+  const G = new THREE.Group();
+  const st = s.stone, dims = stoneDims(st), L = dims.L, W = dims.W, D = dims.D, shape = SHAPE[st.shape];
+  const bandMat = metalMat(s.metal.id, s.metal.finish), headMat = metalMat(s.metal.head === 'same' ? s.metal.id : s.metal.head, 'polish');
+  const gemType = GEM[st.type];
+  const md = meleeFor(W);
+  const Rin = ringID(s.fit.size) / 2, w = s.band.width, t = s.band.profile === 'knife' ? 1.9 : s.band.profile === 'dome' ? 1.7 : 1.5, Rout = Rin + t;
+  const TOP = Math.PI / 2;
+  const seg = 160;
+  const meshes = { metalBand: [], metalHead: [] };
+  const melee = { diamond: [], colored: {} };
+  const addMesh = (geo, mat, list, shadow = true) => { const m = new THREE.Mesh(geo, mat); m.castShadow = shadow; m.receiveShadow = false; G.add(m); return m; };
+  const pushMelee = (accent, matrix) => { if (accent === 'diamond') melee.diamond.push(matrix); else (melee.colored[accent] ||= []).push(matrix); };
+  const _m = new THREE.Matrix4(), _q = new THREE.Quaternion(), _p = new THREE.Vector3(), _s = new THREE.Vector3(), _up = new THREE.Vector3(0, 1, 0), _d = new THREE.Vector3();
+  const placeMelee = (accent, x, y, z, dir, size, tilt = null) => { _p.set(x, y, z); _d.set(dir[0], dir[1], dir[2]).normalize(); _q.setFromUnitVectors(_up, _d); _s.setScalar(size); pushMelee(accent, new THREE.Matrix4().compose(_p, _q, _s)); };
+
+  // ----- head geometry numbers -----
+  const stoneParts = gem(st.shape, L, W, D, shape.facets, st.cutStyle);
+  const { crownH, girdleT, pavD } = stoneParts;
+  const cathedral = s.head.profile === 'cathedral', lift = cathedral ? pavD * .45 : 0;
+  const yTop = Rout + lift;
+  const isBezel = s.head.style === 'bezel' || s.head.style === 'halfbezel', isTension = s.head.style === 'tension';
+  let yG = yTop + pavD * (s.head.profile === 'low' ? .3 : s.head.profile === 'high' ? 1.0 : .58) + (s.head.profile === 'high' ? .5 : 0);
+  if (isBezel) yG = yTop + pavD * .5;
+  if (isTension) yG = Rin + t * .55;
+  const orientEW = st.orient === 'ew' && shape.elong;
+  const stoneGroup = new THREE.Group(); stoneGroup.position.set(0, yG, 0); stoneGroup.rotation.y = orientEW ? 0 : Math.PI / 2; stoneGroup.updateMatrix(); G.add(stoneGroup);
+  const extX = orientEW ? L : W; // extent of the center stone along the band direction (X)
+  const extZ = orientEW ? W : L;
+
+  // ----- band -----
+  const prof = bandProfile(s.band.profile, w, t);
+  const halfHead = Math.atan2(extX / 2 + .6, Rout);
+  const radialCath = phi => { const d = angDist(phi, TOP), a = 38 * D2R; return d < a ? lift * smooth01(1 - d / a) : 0; };
+  const radialFn = cathedral ? radialCath : null;
+  const taper = phi => { const d = angDist(phi, TOP); return 1 - .34 * smooth01(1 - d / (Math.PI * .75)); };
+  if (s.band.style === 'twist') {
+    const r = Math.min(w * .3, t * .5), A = w * .25, k = 9;
+    for (const sgn of [1, -1]) {
+      const geo = sweep(circleProfile(r, t / 2), { R: Rin, phi0: 0, phi1: 2 * Math.PI, seg, closed: true, radial: phi => (radialFn ? radialFn(phi) : 0) + sgn * A * .5 * Math.cos(k * phi), axial: phi => sgn * A * Math.sin(k * phi) });
+      addMesh(geo, bandMat);
+    }
+  } else if (s.band.style === 'split') {
+    const a = 62 * D2R, S = .75 + w * .25;
+    const main = sweep(prof, { R: Rin, phi0: TOP + a, phi1: TOP - a + 2 * Math.PI, seg: Math.round(seg * .8), closed: false, radial: radialFn });
+    addMesh(main, bandMat);
+    for (const sgn of [1, -1]) {
+      const arm = sweep(prof, { R: Rin, phi0: TOP - a - 2 * D2R, phi1: TOP + a + 2 * D2R, seg: 48, closed: false, radial: radialFn, wScale: () => .5, axial: phi => { const f = smooth01(1 - angDist(phi, TOP) / a); return sgn * (w * .25 + S * f); } });
+      addMesh(arm, bandMat);
+    }
+  } else if (s.band.style === 'bypass') {
+    const phi0 = TOP - 22 * D2R, span = 404 * D2R, A = Math.max(1.0, w * .6);
+    const geo = sweep(prof, { R: Rin, phi0, phi1: phi0 + span, seg, closed: false, radial: radialFn, axial: phi => A * Math.cos(Math.PI * (phi - phi0) / span), wScale: phi => 1 - .25 * smooth01(1 - Math.min(phi - phi0, phi0 + span - phi) / (40 * D2R)) });
+    addMesh(geo, bandMat);
+  } else if (isTension) {
+    const gap = Math.atan2(extX / 2 + .1, Rin + t / 2);
+    const geo = sweep(prof, { R: Rin, phi0: TOP + gap, phi1: TOP - gap + 2 * Math.PI, seg, closed: false, tScale: phi => 1 + .35 * smooth01(1 - Math.min(angDist(phi, TOP + gap), angDist(phi, TOP - gap)) / (30 * D2R)) });
+    addMesh(geo, bandMat);
+  } else {
+    const geo = sweep(prof, { R: Rin, phi0: 0, phi1: 2 * Math.PI, seg, closed: true, radial: radialFn, wScale: s.band.style === 'tapered' ? taper : null });
+    addMesh(geo, bandMat);
+  }
+  const widthAt = phi => w * (s.band.style === 'tapered' ? taper(phi) : 1);
+
+  // ----- milgrain beads along band edges -----
+  if (s.details.milgrain && s.band.style !== 'twist') {
+    const br = .13, pitch = .33, n = Math.round(2 * Math.PI * Rout / pitch), geo = new THREE.SphereGeometry(br, 6, 5);
+    const inst = new THREE.InstancedMesh(geo, headMat, n * 2); let i = 0;
+    for (let k = 0; k < n; k++) { const phi = k / n * 2 * Math.PI, R = Rout - .06 + (radialFn ? radialFn(phi) : 0), hw = widthAt(phi) / 2 - .1; for (const sgn of [1, -1]) { _m.makeTranslation(R * Math.cos(phi), R * Math.sin(phi), sgn * hw); inst.setMatrixAt(i++, _m); } }
+    inst.castShadow = true; G.add(inst);
+  }
+
+  // ----- pavé / channel on the band -----
+  if (s.sides.style === 'pave' || s.sides.style === 'channel') {
+    const frac = COVERAGES.find(c => c.id === s.sides.coverage).frac, bm = Math.min(md, w - .55);
+    if (bm >= .8) {
+      const isChan = s.sides.style === 'channel', Rs = Rout - bm * (isChan ? .32 : .14), pitch = bm * 1.12;
+      const arc = 2 * Math.PI * frac, phiA = TOP - arc / 2, count = Math.round(arc * Rs / pitch);
+      const beadGeo = new THREE.SphereGeometry(bm * .15, 6, 5), beads = [];
+      for (let k = 0; k <= count; k++) {
+        const phi = phiA + arc * k / count; if (angDist(phi, TOP) < halfHead) continue;
+        if (s.sides.style === 'pave' && s.band.style === 'split' && angDist(phi, TOP) < 62 * D2R) continue;
+        const R = Rs + (radialFn ? radialFn(phi) : 0);
+        placeMelee(s.sides.accent, R * Math.cos(phi), R * Math.sin(phi), 0, [Math.cos(phi), Math.sin(phi), 0], bm);
+        if (!isChan) { const phm = phi + arc / count / 2, Rb = Rout + .02 + (radialFn ? radialFn(phm) : 0); for (const sgn of [1, -1]) { _m.makeTranslation(Rb * Math.cos(phm), Rb * Math.sin(phm), sgn * bm * .46); beads.push(_m.clone()); } }
+      }
+      if (beads.length) { const inst = new THREE.InstancedMesh(beadGeo, headMat, beads.length); beads.forEach((m, i) => inst.setMatrixAt(i, m)); G.add(inst); }
+      if (isChan) for (const sgn of [1, -1]) addMesh(sweep(circleProfile(.17, 0, 8), { R: Rout - .05, phi0: phiA, phi1: phiA + arc, seg: Math.round(seg * frac), closed: frac === 1, axial: () => sgn * (w / 2 - .17) }), headMat);
+    }
+  }
+
+  // ----- center stone -----
+  const stone = new THREE.Mesh(stoneParts.geo, gemMat(gemType, W, D, st.origin)); stone.userData.keepGeo = true; stone.castShadow = false; stoneGroup.add(stone);
+  const path = densePath(st.shape, L, W);
+
+  // prongs
+  const prongR = clamp(.058 * W, .34, .62);
+  const tips = shape.tips || [];
+  const prongAngles = () => {
+    const n = s.head.style === 'prong6' ? 6 : s.head.style === 'compass' ? 4 : 4;
+    if (s.head.style === 'compass') return [0, 90, 180, 270].map(a => ({ a, v: tips.includes(a) }));
+    if (st.shape === 'trillion') return [0, 120, 240].map(a => ({ a, v: true }));
+    if (st.shape === 'heart') return n === 6 ? [{ a: 180, v: true }, { a: 30 }, { a: 330 }, { a: 100 }, { a: 260 }, { a: 0 }] : [{ a: 180, v: true }, { a: 40 }, { a: 320 }, { a: 0 }];
+    if (st.shape === 'pear') return n === 6 ? [{ a: 0, v: true }, { a: 55 }, { a: 115 }, { a: 180 }, { a: 245 }, { a: 305 }] : [{ a: 0, v: true }, { a: 95 }, { a: 180 }, { a: 265 }];
+    if (st.shape === 'marquise') return n === 6 ? [{ a: 0, v: true }, { a: 60 }, { a: 120 }, { a: 180, v: true }, { a: 240 }, { a: 300 }] : [{ a: 0, v: true }, { a: 90 }, { a: 180, v: true }, { a: 270 }];
+    if (st.shape === 'princess') return n === 6 ? [45, 135, 225, 315].map(a => ({ a, v: true })).concat([{ a: 90 }, { a: 270 }]) : [45, 135, 225, 315].map(a => ({ a, v: true }));
+    if (st.shape === 'hexagon' && n === 6) return [0, 60, 120, 180, 240, 300].map(a => ({ a }));
+    return Array.from({ length: n }, (_, i) => ({ a: 360 / n * (i + .5) }));
+  };
+  const prongMesh = (px, pz, nx, nz, r, vee, tangentOff = 0) => {
+    const tx = -nz, tz = nx;
+    const bx = px + nx * r * .55 + tx * tangentOff, bz = pz + nz * r * .55 + tz * tangentOff;
+    const y0 = -girdleT - pavD * .66, y1 = crownH * .62;
+    const topx = bx - nx * r * .5, topz = bz - nz * r * .5;
+    const h = Math.hypot(topx - bx, y1 - y0, topz - bz);
+    const geo = vee ? new THREE.CylinderGeometry(r * 1.25, r * 1.25, h, 3) : new THREE.CylinderGeometry(r, r * 1.05, h, 10);
+    const m = new THREE.Mesh(geo, headMat); m.castShadow = true;
+    _d.set(topx - bx, y1 - y0, topz - bz).normalize(); m.quaternion.setFromUnitVectors(_up, _d);
+    if (vee) m.rotateY(Math.atan2(-nz, nx) + Math.PI);
+    m.position.set((bx + topx) / 2, (y0 + y1) / 2, (bz + topz) / 2); stoneGroup.add(m);
+    // tip
+    let tip;
+    if (s.head.tip === 'claw' && !vee) { tip = new THREE.Mesh(new THREE.ConeGeometry(r * 1.1, r * 1.9, 10), headMat); tip.position.set(topx - nx * r * .75, y1 + r * .2, topz - nz * r * .75); _d.set(-nx * 1.5, .9, -nz * 1.5).normalize(); tip.quaternion.setFromUnitVectors(_up, _d); }
+    else if (s.head.tip === 'flat' && !vee) { tip = new THREE.Mesh(new THREE.BoxGeometry(r * 2.3, r * .75, r * 1.7), headMat); tip.position.set(topx - nx * r * .95, y1 + r * .05, topz - nz * r * .95); tip.rotation.y = Math.atan2(-nz, nx); }
+    else { tip = new THREE.Mesh(new THREE.SphereGeometry(r * (vee ? 1.2 : 1.12), 12, 10), headMat); tip.position.set(topx - nx * r * .75, y1 - r * .05, topz - nz * r * .75); }
+    tip.castShadow = true; stoneGroup.add(tip);
+  };
+  const railTube = (pts2, y, r, closed = true) => { const v = pts2.map(p => new THREE.Vector3(p[0], y, p[1])); const curve = new THREE.CatmullRomCurve3(v, closed, 'catmullrom', .5); return new THREE.TubeGeometry(curve, Math.max(24, pts2.length), r, 8, closed); };
+
+  if (!isBezel && !isTension) {
+    const list = prongAngles();
+    for (const pr of list) {
+      const q = pointAtAngle(path, pr.a);
+      if (s.head.style === 'double' && !pr.v) { prongMesh(q.p[0], q.p[1], q.n[0], q.n[1], prongR * .78, false, prongR * 1.35); prongMesh(q.p[0], q.p[1], q.n[0], q.n[1], prongR * .78, false, -prongR * 1.35); }
+      else if (s.head.style === 'trellis') { prongMesh(q.p[0], q.p[1], q.n[0], q.n[1], prongR * .9, pr.v, prongR * .9); }
+      else prongMesh(q.p[0], q.p[1], q.n[0], q.n[1], prongR, !!pr.v);
+    }
+    // basket rails
+    const upper = offsetPath(path, prongR * .35), lowerPts = resample(outline(st.shape, 96), 64).map(([x, z]) => [x * L / 2 * .62, z * W / 2 * .62]);
+    const um = new THREE.Mesh(railTube(resample(upper, 64), -girdleT - prongR * .9, prongR * .42), headMat); um.castShadow = true; stoneGroup.add(um);
+    const lm = new THREE.Mesh(railTube(lowerPts, -girdleT - pavD * .66, prongR * .42), headMat); lm.castShadow = true; stoneGroup.add(lm);
+  }
+  if (isBezel) {
+    const bt = clamp(.075 * W, .45, .8), inner = offsetPath(path, -.02), outer = offsetPath(path, bt);
+    const mask = s.head.style === 'halfbezel' ? i => { const p = path.pts[i]; const a = Math.atan2(-p[1], p[0]); return Math.abs(Math.sin(a)) > .62; } : null;
+    const bm = new THREE.Mesh(wallGeometry(inner, outer, crownH * .3, -girdleT - pavD * .42, mask), headMat); bm.castShadow = true; stoneGroup.add(bm);
+    const lowerPts = resample(outline(st.shape, 96), 64).map(([x, z]) => [x * L / 2 * .6, z * W / 2 * .6]);
+    const lm = new THREE.Mesh(railTube(lowerPts, -girdleT - pavD * .68, .38), headMat); lm.castShadow = true; stoneGroup.add(lm);
+    if (s.head.style === 'halfbezel') { // open sides get two thin arms
+      for (const a of [0, 180]) { const q = pointAtAngle(path, a); const arm = new THREE.Mesh(new THREE.CylinderGeometry(.3, .3, pavD * .5, 8), headMat); arm.position.set(q.p[0] * .8, -girdleT - pavD * .45, q.p[1] * .8); stoneGroup.add(arm); }
+    }
+  }
+
+  // hidden halo (under the girdle)
+  if (s.halo.style === 'hidden' || s.halo.style === 'both') {
+    const hm = md * .78, sc = .8, yH = -girdleT - pavD * .42;
+    const hp = resample(outline(st.shape, 96), 128).map(([x, z]) => [x * L / 2 * sc, z * W / 2 * sc]);
+    const hn = hp.map((p, i) => { const a = hp[(i - 1 + 128) % 128], b = hp[(i + 1) % 128]; let tx = b[0] - a[0], tz = b[1] - a[1]; const l = Math.hypot(tx, tz) || 1; return [-tz / l, tx / l]; });
+    for (const q of spaced(hp, hn, hm * 1.12)) { _p.set(q.p[0] + q.n[0] * hm * .1, yH, q.p[1] + q.n[1] * hm * .1); _d.set(q.n[0], .15, q.n[1]).normalize(); _q.setFromUnitVectors(_up, _d); _s.setScalar(hm); const m4 = new THREE.Matrix4().compose(_p, _q, _s); m4.premultiply(stoneGroup.matrix); pushMelee(s.halo.accent, m4); }
+    const rail = new THREE.Mesh(railTube(resample(hp, 64), yH, hm * .32), headMat); stoneGroup.add(rail);
+  }
+  // halo(s)
+  if (s.halo.style === 'single' || s.halo.style === 'double' || s.halo.style === 'both') {
+    const rings = s.halo.style === 'double' ? 2 : 1;
+    let hpath = path;
+    if (s.halo.shape !== 'match') { const R = Math.max(L, W) / 2 + (s.halo.shape === 'cushion' ? .25 : .05); const id = s.halo.shape === 'cushion' ? 'cushion' : 'round'; hpath = densePath(id, 2 * R, 2 * R); }
+    const d0 = .12, dIn = d0 + md * .55, yH = -girdleT - md * .22;
+    const bedOuter = offsetPath(hpath, d0 + rings * md * 1.15 + .25), bedInner = offsetPath(hpath, d0);
+    const bed = new THREE.Mesh(wallGeometry(bedInner, bedOuter, yH - md * .35, yH - md * 1.05), headMat); bed.castShadow = true; stoneGroup.add(bed);
+    const beadGeo = new THREE.SphereGeometry(md * .14, 6, 5), beads = [];
+    for (let r = 0; r < rings; r++) {
+      const dc = dIn + r * md * 1.15, cpts = offsetPath(hpath, dc), cn = hpath.nrm;
+      const stones = spaced(cpts, cn, md * 1.15, r * .5);
+      stones.forEach((q, i) => {
+        _p.set(q.p[0], yH, q.p[1]); _q.identity(); _s.setScalar(md); const m4 = new THREE.Matrix4().compose(_p, _q, _s); m4.premultiply(stoneGroup.matrix); pushMelee(s.halo.accent, m4);
+        const nx = stones[(i + 1) % stones.length]; const mx = (q.p[0] + nx.p[0]) / 2, mz = (q.p[1] + nx.p[1]) / 2;
+        for (const sgn of [1, -1]) { _m.makeTranslation(mx + q.n[0] * sgn * md * .42, yH + md * .05, mz + q.n[1] * sgn * md * .42); beads.push(_m.clone()); }
+      });
+    }
+    if (beads.length) { const inst = new THREE.InstancedMesh(beadGeo, headMat, beads.length); beads.forEach((m, i) => inst.setMatrixAt(i, m)); stoneGroup.add(inst); }
+  }
+
+  // peg / collet + cathedral arches
+  const basketBottom = yG - girdleT - pavD * (isBezel ? .7 : .66);
+  if (!isTension && basketBottom > yTop - .6) {
+    const r = clamp(.14 * W, .8, 1.5), h = basketBottom - (yTop - .8);
+    const peg = new THREE.Mesh(new THREE.CylinderGeometry(r * .8, r, h, 12), headMat); peg.position.set(0, yTop - .8 + h / 2, 0); peg.castShadow = true; G.add(peg);
+  }
+  if (cathedral) {
+    for (const sgn of [1, -1]) {
+      const a = TOP + sgn * 30 * D2R, x0 = (Rout - .4) * Math.cos(a), y0 = (Rout - .4) * Math.sin(a);
+      const curve = new THREE.QuadraticBezierCurve3(new THREE.Vector3(x0, y0, 0), new THREE.Vector3(sgn * extX * .55, yG - pavD * .2, 0), new THREE.Vector3(sgn * extX * .42, yG - girdleT - pavD * .3, 0));
+      addMesh(new THREE.TubeGeometry(curve, 16, t * .42, 8, false), headMat);
+    }
+  }
+
+  // ----- three-stone side stones -----
+  if (s.sides.style === 'three') {
+    const meta = SIDE_META[s.sides.sideShape], Ws = W * s.sides.sideSize, Ls = Ws * meta.ratio, Ds = Ws * .62;
+    const parts = gem(s.sides.sideShape, Ls, Ws, Ds, meta.facets, 'brilliant'), sp = densePath(s.sides.sideShape, Ls, Ws);
+    const sMat = s.sides.accent === 'diamond' ? gemMat(GEM[st.type === 'natural' || st.type === 'lab' ? st.type : 'lab'], Ws, Ds) : gemMat({ id: 'acc' + s.sides.accent, hex: ACCENT_HEX[s.sides.accent], ior: 1.77, disp: .08 }, Ws, Ds);
+    const pr = clamp(.06 * Ws, .28, .5);
+    for (const sgn of [1, -1]) {
+      const g = new THREE.Group();
+      const x = sgn * (extX / 2 + Ls / 2 + .35), ang = Math.atan2(x, yG);
+      g.position.set(x, yG - Math.abs(x) * Math.tan(ang) * .35 - .3, 0); g.rotation.z = -ang * .55; g.rotation.y = sgn > 0 ? 0 : Math.PI;
+      const sm = new THREE.Mesh(parts.geo, sMat); sm.userData.keepGeo = true; g.add(sm);
+      const angles = s.sides.sideShape === 'trillion' ? [0, 120, 240] : s.sides.sideShape === 'pear' ? [0, 110, 180, 250] : [45, 135, 225, 315];
+      for (const a of angles) { const q = pointAtAngle(sp, a); const isV = (s.sides.sideShape === 'pear' && a === 0) || s.sides.sideShape === 'trillion';
+        const bx = q.p[0] + q.n[0] * pr * .5, bz = q.p[1] + q.n[1] * pr * .5, y0 = -parts.girdleT - parts.pavD * .6, y1 = parts.crownH * .5, h = y1 - y0;
+        const pm = new THREE.Mesh(isV ? new THREE.CylinderGeometry(pr * 1.2, pr * 1.2, h, 3) : new THREE.CylinderGeometry(pr, pr, h, 8), headMat); pm.position.set(bx, (y0 + y1) / 2, bz); g.add(pm);
+        const tp = new THREE.Mesh(new THREE.SphereGeometry(pr * 1.05, 10, 8), headMat); tp.position.set(bx - q.n[0] * pr * .5, y1 + pr * .1, bz - q.n[1] * pr * .5); g.add(tp); }
+      g.add(new THREE.Mesh(railTube(resample(sp.pts, 48), -parts.girdleT - parts.pavD * .6, pr * .4), headMat));
+      G.add(g);
+    }
+  }
+
+  // ----- hidden (peekaboo) gem under the head -----
+  if (s.details.hidden !== 'none') {
+    const hex = HIDDEN_GEMS.find(h => h.id === s.details.hidden).hex, sz = clamp(.28 * W, 1.4, 2.4);
+    const m = new THREE.Mesh(gem('round', sz, sz, sz * .6, 'brilliant', 'brilliant').geo, meleeMat(hex, s.details.hidden === 'diamond')); m.userData.keepGeo = true;
+    m.position.set(0, yG - girdleT - pavD * .55, Math.max(1.1, extZ / 2 * .5)); m.rotation.x = Math.PI / 2; G.add(m);
+    const seat = new THREE.Mesh(new THREE.CylinderGeometry(sz * .55, sz * .55, .5, 12), headMat); seat.position.copy(m.position); seat.position.z -= .3; seat.rotation.x = Math.PI / 2; G.add(seat);
+  }
+
+  // ----- flush melee instances -----
+  const meleeGeo = gem('round', 1, 1, .62, 'brilliant', 'brilliant').geo;
+  const flush = (list, mat) => { if (!list.length) return; const inst = new THREE.InstancedMesh(meleeGeo, mat, list.length); list.forEach((m, i) => inst.setMatrixAt(i, m)); inst.userData.keepGeo = true; inst.castShadow = true; G.add(inst); };
+  stoneGroup.updateMatrix();
+  flush(melee.diamond, meleeMat(ACCENT_HEX.diamond, true));
+  for (const k in melee.colored) flush(melee.colored[k], meleeMat(ACCENT_HEX[k], false));
+
+  G.userData = { yG, Rout, dims, extX, extZ, yTop, crownH, pavD };
+  return G;
+}
+
+function setRing(s) {
+  if (!R3.scene) return;
+  if (R3.ring) { R3.scene.remove(R3.ring); disposeGroup(R3.ring); }
+  const g = buildRing(s);
+  R3.ring = g; R3.scene.add(g);
+  R3.ground.position.y = -g.userData.Rout - .05;
+  const box = new THREE.Box3().setFromObject(g), c = box.getCenter(new THREE.Vector3()), sz = box.getSize(new THREE.Vector3());
+  R3.target.set(0, c.y, 0);
+  const radius = Math.max(sz.x, sz.y, sz.z) / 2;
+  R3.fit = radius / Math.tan(R3.camera.fov / 2 * D2R) * 1.55;
+}
+
+// ---------- camera / controls ----------
+const VIEWS = { hero: { t: -.62, p: 1.08, z: 1 }, top: { t: 0, p: .06, z: .92 }, side: { t: Math.PI / 2, p: 1.42, z: .86 }, front: { t: 0, p: 1.3, z: .9 } };
+function applyCamera() {
+  const { t, p } = R3.sph, d = R3.fit * R3.zoom, cam = R3.camera, tg = R3.target;
+  cam.position.set(tg.x + d * Math.sin(p) * Math.sin(t), tg.y + d * Math.cos(p), tg.z + d * Math.sin(p) * Math.cos(t)); cam.lookAt(tg);
+}
+function goView(name) {
+  const v = VIEWS[name]; R3.want = { ...v, t0: performance.now(), from: { t: R3.sph.t, p: R3.sph.p, z: R3.zoom } }; R3.auto = name === 'hero';
+}
+function bindControls(canvas) {
+  const ptrs = new Map();
+  canvas.addEventListener('pointerdown', e => { canvas.setPointerCapture(e.pointerId); ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY }); R3.dragging = true; R3.auto = false; R3.want = null; R3.vel.t = R3.vel.p = 0; if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; R3.pinch = Math.hypot(a.x - b.x, a.y - b.y); } });
+  canvas.addEventListener('pointermove', e => {
+    if (!ptrs.has(e.pointerId)) return; const prev = ptrs.get(e.pointerId); ptrs.set(e.pointerId, { x: e.clientX, y: e.clientY });
+    if (ptrs.size === 1) { const dx = e.clientX - prev.x, dy = e.clientY - prev.y; R3.sph.t -= dx * .008; R3.sph.p = clamp(R3.sph.p - dy * .006, .05, 1.55); R3.vel.t = -dx * .008; R3.vel.p = -dy * .006; }
+    else if (ptrs.size === 2) { const [a, b] = [...ptrs.values()]; const d = Math.hypot(a.x - b.x, a.y - b.y); if (R3.pinch) R3.zoom = clamp(R3.zoom * R3.pinch / d, .4, 2.4); R3.pinch = d; }
+  });
+  const up = e => { ptrs.delete(e.pointerId); if (!ptrs.size) R3.dragging = false; R3.pinch = 0; };
+  canvas.addEventListener('pointerup', up); canvas.addEventListener('pointercancel', up);
+  canvas.addEventListener('wheel', e => { e.preventDefault(); R3.zoom = clamp(R3.zoom * (1 + Math.sign(e.deltaY) * .08), .4, 2.4); R3.want = null; }, { passive: false });
+  canvas.addEventListener('dblclick', () => goView('hero'));
+}
+function frame(now) {
+  requestAnimationFrame(frame);
+  if (!R3.renderer || document.hidden) return;
+  if (R3.want) { const k = smooth01((now - R3.want.t0) / 650); const f = R3.want.from; R3.sph.t = lerp(f.t, R3.want.t, k); R3.sph.p = lerp(f.p, R3.want.p, k); R3.zoom = lerp(f.z, R3.want.z, k); if (k >= 1) R3.want = null; }
+  else if (!R3.dragging) { R3.sph.t += R3.vel.t; R3.sph.p = clamp(R3.sph.p + R3.vel.p, .05, 1.55); R3.vel.t *= .9; R3.vel.p *= .9; if (R3.auto) R3.sph.t += .0022; }
+  applyCamera(); R3.renderer.render(R3.scene, R3.camera);
+}
+function resizeGL(stage) {
+  const w = stage.clientWidth, h = stage.clientHeight; if (!w || !h) return;
+  R3.renderer.setSize(w, h, false); R3.camera.aspect = w / h; R3.camera.updateProjectionMatrix();
+}
+
+// =====================================================================
+//  Section 3: UI — character-creator slots, option trays, estimator, spec sheet
+// =====================================================================
+const $ = sel => document.querySelector(sel);
+const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+let state = structuredClone(DEFAULT), currentSlot = 'stone', estimatorOn = false, buildQueued = false, glReady = false;
+
+// ---------- persistence (per-viewer convenience only) ----------
+function save() { try { localStorage.setItem('halo.design.v1', JSON.stringify(state)); } catch (e) { /* storage unavailable */ } }
+function load() { try { const s = JSON.parse(localStorage.getItem('halo.design.v1')); if (s && s.stone && SHAPE[s.stone.shape] && GEM[s.stone.type]) return deepMerge(DEFAULT, s); } catch (e) { /* ignore */ } return null; }
+
+// ---------- validation / auto-corrections ----------
+function clampState() {
+  const st = state.stone, sh = SHAPE[st.shape];
+  st.ratio = clamp(+st.ratio || sh.def, sh.ratio[0], sh.ratio[1]);
+  st.carat = clamp(+st.carat || 1, .25, 6);
+  if (!GEM[st.type].origins.includes(st.origin)) st.origin = GEM[st.type].origins[0];
+  if ((st.cutStyle === 'oldeuro' || st.cutStyle === 'rose') && !(st.shape === 'round' || st.shape === 'cushion' || st.shape === 'oval' || st.shape === 'pear')) st.cutStyle = 'brilliant';
+  if (!sh.elong) st.orient = 'ns';
+  state.band.width = clamp(+state.band.width || 1.8, 1.4, 4);
+  state.fit.size = clamp(+state.fit.size || 6.5, 3, 13);
+  state.sides.sideSize = clamp(+state.sides.sideSize || .38, .25, .55);
+}
+function notes(s) {
+  const out = [], st = s.stone, g = GEM[st.type], sh = SHAPE[st.shape], dims = stoneDims(st);
+  if (s.head.style === 'tension' && g.hard < 9) out.push({ slot: 'head', level: 'warn', text: `${g.label} is too soft for a tension setting. Tension needs Mohs 9+: diamond, moissanite, sapphire or ruby.` });
+  if (g.fragile && !(s.head.style === 'bezel' || s.head.style === 'halfbezel')) out.push({ slot: 'head', level: 'warn', text: `${g.label} chips easily. Most jewelers will steer you to a bezel or half bezel to protect the edges.` });
+  if (g.fragile && s.sides.style === 'pave') out.push({ slot: 'sides', level: 'warn', text: 'Pavé next to a fragile center stone is hard to service later. Channel-set stones are safer.' });
+  if (s.band.profile === 'knife' && (s.sides.style === 'pave' || s.sides.style === 'channel')) out.push({ slot: 'band', level: 'warn', text: 'A knife-edge band has no flat top to hold stones. Switch to comfort fit, flat or half-round for pavé or channel.' });
+  if ((s.sides.style === 'pave' || s.sides.style === 'channel') && s.band.width < 1.6) out.push({ slot: 'band', level: 'warn', text: 'Bands under 1.6 mm cannot hold accent stones safely. Widen the band or drop the accents.' });
+  if ((s.sides.style === 'pave' || s.sides.style === 'channel') && s.sides.coverage === 'full') out.push({ slot: 'sides', level: 'info', text: 'Eternity bands cannot be resized. Get the finger size right before ordering.' });
+  if (s.band.style === 'twist' && s.details.milgrain) out.push({ slot: 'details', level: 'info', text: 'Milgrain needs a flat edge to sit on, so it is skipped on a twisted band.' });
+  if (s.head.profile === 'low' && (s.halo.style === 'hidden' || s.halo.style === 'both')) out.push({ slot: 'halo', level: 'info', text: 'A hidden halo needs a little height under the stone. Low profile will mostly hide it.' });
+  if (sh.tips || st.shape === 'princess') out.push({ slot: 'head', level: 'ok', text: 'Pointed corners get V-prongs automatically so the tips are protected.' });
+  if (st.type === 'moissanite' || (!(st.type === 'natural' || st.type === 'lab'))) out.push({ slot: 'size', level: 'info', text: `${g.label} weighs differently from diamond, so jewelers spec it by size: this stone is ${dims.L.toFixed(1)} × ${dims.W.toFixed(1)} mm.` });
+  if (st.type === 'natural' && ((st.carat >= .9 && st.carat < 1) || (st.carat >= 1.85 && st.carat < 2))) out.push({ slot: 'size', level: 'ok', text: `Just under the ${st.carat < 1 ? '1.00' : '2.00'} ct line: same look, typically 10–20% cheaper than the round number.` });
+  if (st.type === 'lab' && st.carat >= 3) out.push({ slot: 'size', level: 'ok', text: 'Lab-grown prices flatten above 3 ct. Going bigger costs little per carat.' });
+  if (s.metal.id === 'pt' && s.band.width < 2) out.push({ slot: 'band', level: 'info', text: 'Platinum under 2 mm bends more easily than gold. Most jewelers recommend 2 mm+ in platinum.' });
+  if (st.orient === 'ew' && sh.elong) out.push({ slot: 'shape', level: 'ok', text: 'East-west: the stone lies across the finger. Popular for marquise, oval and emerald cuts.' });
+  return out;
+}
+
+// ---------- tiny SVG glyphs ----------
+const SVG = (inner, vb = '0 0 40 40') => `<svg viewBox="${vb}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">${inner}</svg>`;
+function shapeSVG(id, ratio = 1, size = 40) {
+  const pts = outline(id, 64); const r = ratio || 1, sx = Math.min(1, r) * 15, sz = Math.min(1, 1 / r) * 15, c = size / 2;
+  const P = pts.map(([x, z]) => `${(c + x * sx).toFixed(1)},${(c + z * sz).toFixed(1)}`).join(' ');
+  const T = pts.map(([x, z]) => `${(c + x * sx * .58).toFixed(1)},${(c + z * sz * .58).toFixed(1)}`).join(' ');
+  const spokes = [0, 8, 16, 24, 32, 40, 48, 56].map(i => { const a = pts[i % pts.length]; return `<line x1="${(c + a[0] * sx * .58).toFixed(1)}" y1="${(c + a[1] * sz * .58).toFixed(1)}" x2="${(c + a[0] * sx).toFixed(1)}" y2="${(c + a[1] * sz).toFixed(1)}" opacity=".5"/>`; }).join('');
+  return SVG(`<polygon points="${P}"/><polygon points="${T}" opacity=".7"/>${spokes}`, `0 0 ${size} ${size}`);
+}
+const swatch = (hex, gem = false) => `<span class="sw" style="background:${gem ? `radial-gradient(circle at 35% 30%, #fff8 0%, transparent 45%), radial-gradient(circle at 70% 75%, #0003 0%, transparent 50%), ${hex}` : `linear-gradient(135deg, #fff5 0%, transparent 40%, #0002 100%), ${hex}`}"></span>`;
+const prongDots = (n, off = 0, r = 2.2, R = 13.5) => Array.from({ length: n }, (_, i) => { const a = (off + 360 / n * i) * D2R; return `<circle cx="${(20 + R * Math.cos(a)).toFixed(1)}" cy="${(20 + R * Math.sin(a)).toFixed(1)}" r="${r}" fill="currentColor" stroke="none"/>`; }).join('');
+const GLYPH = {
+  prong4: SVG(`<circle cx="20" cy="20" r="11"/>${prongDots(4, 45)}`), prong6: SVG(`<circle cx="20" cy="20" r="11"/>${prongDots(6, 30)}`),
+  double: SVG(`<circle cx="20" cy="20" r="11"/>${prongDots(4, 38, 1.7)}${prongDots(4, 52, 1.7)}`), compass: SVG(`<circle cx="20" cy="20" r="11"/>${prongDots(4, 0)}`),
+  trellis: SVG(`<circle cx="20" cy="20" r="10"/><path d="M8 32 L20 12 M32 32 L20 12 M8 8 L20 28 M32 8 L20 28" opacity=".7"/>`),
+  bezel: SVG(`<circle cx="20" cy="20" r="10"/><circle cx="20" cy="20" r="14" stroke-width="3"/>`), halfbezel: SVG(`<circle cx="20" cy="20" r="10"/><path d="M8 13 A14 14 0 0 0 8 27 M32 13 A14 14 0 0 1 32 27" stroke-width="3"/>`),
+  tension: SVG(`<circle cx="20" cy="20" r="9"/><path d="M4 14 L11 14 L11 26 L4 26 M36 14 L29 14 L29 26 L36 26" stroke-width="2.4"/>`),
+  none: SVG(`<circle cx="20" cy="20" r="10"/>`), single: SVG(`<circle cx="20" cy="20" r="8"/>${prongDots(14, 0, 1.6, 13.5)}`),
+  halo_double: SVG(`<circle cx="20" cy="20" r="6"/>${prongDots(12, 0, 1.4, 10.5)}${prongDots(18, 10, 1.4, 15)}`),
+  hidden: SVG(`<path d="M8 17 L20 9 L32 17 L20 25 Z"/><path d="M20 25 L20 33 M8 17 L8 21 M32 17 L32 21"/>${[10, 14, 18, 22, 26, 30].map(x => `<circle cx="${x}" cy="27" r="1.5" fill="currentColor" stroke="none"/>`).join('')}`),
+  both: SVG(`<circle cx="20" cy="17" r="6"/>${prongDots(12, 0, 1.4, 10)}${[13, 17, 21, 25].map(x => `<circle cx="${x + 1}" cy="31" r="1.4" fill="currentColor" stroke="none"/>`).join('')}`),
+  sides_none: SVG(`<path d="M6 30 A16 16 0 0 1 34 30"/>`), pave: SVG(`<path d="M6 30 A16 16 0 0 1 34 30"/>${[8, 12, 17, 23, 28, 32].map((x, i) => `<circle cx="${x}" cy="${[26, 20, 16.5, 16.5, 20, 26][i]}" r="1.7" fill="currentColor" stroke="none"/>`).join('')}`),
+  channel: SVG(`<path d="M5 31 A17 17 0 0 1 35 31 M9 31 A13 13 0 0 1 31 31"/>${[11, 16, 20, 24, 29].map((x, i) => `<rect x="${x - 1.5}" y="${[21, 16, 14.5, 16, 21][i]}" width="3" height="4" fill="currentColor" stroke="none"/>`).join('')}`),
+  three: SVG(`<circle cx="20" cy="18" r="8"/><circle cx="7" cy="22" r="4.5"/><circle cx="33" cy="22" r="4.5"/>`),
+  plain: SVG(`<circle cx="20" cy="20" r="13"/><circle cx="20" cy="20" r="9"/>`), tapered: SVG(`<path d="M20 7 A13 13 0 1 0 20 33 A13 13 0 1 0 20 7 Z M20 9 A11 11 0 1 1 20 31 A11 11 0 1 1 20 9" fill-rule="evenodd"/>`),
+  split: SVG(`<path d="M14 9 A13 13 0 1 0 26 9 M14 9 L16 5 M26 9 L24 5 M17 11 A9 9 0 1 0 23 11 M17 11 L15 7 M23 11 L25 7"/>`),
+  twist: SVG(`<path d="M7 20 C 12 10, 18 30, 24 20 S 33 10, 33 20 M7 20 C 12 30, 18 10, 24 20 S 33 30, 33 20"/>`),
+  bypass: SVG(`<path d="M22 8 A13 13 0 1 0 31 27 M31 27 L34 21 M22 8 L17 12"/>`),
+  comfort: SVG(`<rect x="8" y="13" width="24" height="14" rx="6"/>`), flat: SVG(`<rect x="8" y="14" width="24" height="12" rx="1"/>`), dome: SVG(`<path d="M8 27 L8 22 A12 12 0 0 1 32 22 L32 27 Z"/>`), knife: SVG(`<path d="M8 27 L8 22 L20 12 L32 22 L32 27 Z"/>`),
+  low: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 19 L20 13 L26 19 L20 25 Z"/>`), standard: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 14 L20 8 L26 14 L20 20 Z"/><path d="M17 20 L17 24 M23 20 L23 24"/>`),
+  high: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 10 L20 4 L26 10 L20 16 Z"/><path d="M16 16 L16 23 M24 16 L24 23"/>`), cathedral: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 12 L20 6 L26 12 L20 18 Z"/><path d="M8 24 C 12 18, 14 14, 15 13 M32 24 C 28 18, 26 14, 25 13"/>`),
+  round: SVG(`<path d="M17 34 L17 14" stroke-width="4"/><circle cx="17" cy="11" r="3.5" fill="currentColor" stroke="none"/>`), claw: SVG(`<path d="M17 34 L17 14" stroke-width="4"/><path d="M13 14 L17 6 L21 14 Z" fill="currentColor" stroke="none"/>`), flat_tip: SVG(`<path d="M17 34 L17 14" stroke-width="4"/><rect x="11" y="9" width="12" height="5" fill="currentColor" stroke="none"/>`),
+  half: SVG(`<circle cx="20" cy="20" r="13"/><path d="M7 20 A13 13 0 0 1 33 20" stroke-width="4"/>`), '3q': SVG(`<circle cx="20" cy="20" r="13"/><path d="M11 29 A13 13 0 1 1 29 29" stroke-width="4"/>`), full: SVG(`<circle cx="20" cy="20" r="13" stroke-width="4"/>`),
+  ns: SVG(`<path d="M6 30 A16 16 0 0 1 34 30"/><ellipse cx="20" cy="15" rx="4.5" ry="7.5"/>`), ew: SVG(`<path d="M6 30 A16 16 0 0 1 34 30"/><ellipse cx="20" cy="15" rx="8" ry="4.5"/>`),
+  match: SVG(`<ellipse cx="20" cy="20" rx="7" ry="9"/><ellipse cx="20" cy="20" rx="12" ry="14" stroke-dasharray="2 2.4"/>`), cushion: SVG(`<ellipse cx="20" cy="20" rx="7" ry="9"/><rect x="7" y="6" width="26" height="28" rx="8" stroke-dasharray="2 2.4"/>`), round_halo: SVG(`<ellipse cx="20" cy="20" rx="7" ry="9"/><circle cx="20" cy="20" r="14" stroke-dasharray="2 2.4"/>`),
+  brilliant: SVG(`<circle cx="20" cy="20" r="13"/><circle cx="20" cy="20" r="7"/>${[0, 45, 90, 135, 180, 225, 270, 315].map(a => `<line x1="${20 + 7 * Math.cos(a * D2R)}" y1="${20 + 7 * Math.sin(a * D2R)}" x2="${20 + 13 * Math.cos(a * D2R)}" y2="${20 + 13 * Math.sin(a * D2R)}" opacity=".6"/>`).join('')}`),
+  oldeuro: SVG(`<circle cx="20" cy="20" r="13"/><circle cx="20" cy="20" r="4.5"/>${[0, 45, 90, 135, 180, 225, 270, 315].map(a => `<line x1="${20 + 4.5 * Math.cos(a * D2R)}" y1="${20 + 4.5 * Math.sin(a * D2R)}" x2="${20 + 13 * Math.cos(a * D2R)}" y2="${20 + 13 * Math.sin(a * D2R)}" opacity=".6"/>`).join('')}`),
+  rose: SVG(`<path d="M7 26 L33 26 L20 8 Z"/><path d="M7 26 L20 15 L33 26 M20 8 L20 26" opacity=".6"/>`),
+  polish: SVG(`<circle cx="20" cy="20" r="13"/><path d="M12 14 Q 20 8 28 14" opacity=".6"/>`), satin: SVG(`<circle cx="20" cy="20" r="13"/><path d="M11 16 L29 16 M9 20 L31 20 M11 24 L29 24" opacity=".6"/>`), hammered: SVG(`<circle cx="20" cy="20" r="13"/><circle cx="15" cy="16" r="2.5" opacity=".6"/><circle cx="24" cy="15" r="2.5" opacity=".6"/><circle cx="19" cy="23" r="2.5" opacity=".6"/><circle cx="26" cy="24" r="2" opacity=".6"/><circle cx="13" cy="24" r="1.8" opacity=".6"/>`),
+};
+const glyph = k => GLYPH[k] || GLYPH.none;
+
+// ---------- slot rail ----------
+const SLOTS = [
+  { id: 'stone', label: 'Stone', title: 'Center stone', desc: 'What the ring is built around. Diamond, lab diamond, or any gem you love.', value: s => GEM[s.stone.type].label + (GEM[s.stone.type].origins.length > 1 && s.stone.type !== 'natural' && s.stone.type !== 'lab' ? (s.stone.origin === 'lab' ? ' (lab)' : '') : ''), icon: s => swatch(GEM[s.stone.type].hex, true) },
+  { id: 'shape', label: 'Shape', title: 'Shape & cut', desc: 'The outline of the stone, its proportions and how it is faceted.', value: s => `${SHAPE[s.stone.shape].label}${SHAPE[s.stone.shape].elong ? ` · ${s.stone.ratio.toFixed(2)}:1` : ''}${s.stone.orient === 'ew' && SHAPE[s.stone.shape].elong ? ' · E-W' : ''}`, icon: s => shapeSVG(s.stone.shape, s.stone.ratio) },
+  { id: 'size', label: 'Size & grade', title: 'Size & grade', desc: 'Carat weight sets the millimetre size. Grades drive the price more than the look.', value: s => { const d = stoneDims(s.stone); return `${s.stone.carat.toFixed(2)} ct · ${d.L.toFixed(1)}×${d.W.toFixed(1)} mm`; }, icon: s => SVG(`<circle cx="20" cy="20" r="${(6 + Math.min(10, Math.cbrt(s.stone.carat) * 6)).toFixed(1)}"/><circle cx="20" cy="20" r="${(3 + Math.min(10, Math.cbrt(s.stone.carat) * 6) * .55).toFixed(1)}" opacity=".6"/>`) },
+  { id: 'head', label: 'Setting', title: 'Setting', desc: 'How the stone is held and how high it sits.', value: s => `${HEADS.find(h => h.id === s.head.style).label} · ${PROFILES.find(p => p.id === s.head.profile).label.toLowerCase()}`, icon: s => glyph(s.head.style) },
+  { id: 'halo', label: 'Halo', title: 'Halo', desc: 'A frame of small stones around, or hidden under, the center.', value: s => HALOS.find(h => h.id === s.halo.style).label + (s.halo.style !== 'none' && s.halo.accent !== 'diamond' ? ` · ${ACCENTS.find(a => a.id === s.halo.accent).label.toLowerCase()}` : ''), icon: s => glyph(s.halo.style === 'double' ? 'halo_double' : s.halo.style) },
+  { id: 'sides', label: 'Side stones', title: 'Side stones', desc: 'Accents along the band or flanking the center.', value: s => { const x = SIDES.find(v => v.id === s.sides.style).label; return s.sides.style === 'pave' || s.sides.style === 'channel' ? `${x} · ${COVERAGES.find(c => c.id === s.sides.coverage).label.toLowerCase()}` : s.sides.style === 'three' ? `${x} · ${SIDE_SHAPES.find(v => v.id === s.sides.sideShape).label.toLowerCase()}s` : x; }, icon: s => glyph(s.sides.style === 'none' ? 'sides_none' : s.sides.style) },
+  { id: 'band', label: 'Band', title: 'Band', desc: 'Style, cross-section and width of the shank.', value: s => `${BANDS.find(b => b.id === s.band.style).label} · ${s.band.width.toFixed(1)} mm ${BAND_PROFILES.find(p => p.id === s.band.profile).label.toLowerCase()}`, icon: s => glyph(s.band.style) },
+  { id: 'metal', label: 'Metal', title: 'Metal & finish', desc: 'Alloy, colour and surface finish. Two-tone heads are common.', value: s => METAL[s.metal.id].label + (s.metal.head !== 'same' ? ` · ${METAL[s.metal.head].short} head` : '') + (s.metal.finish !== 'polish' ? ` · ${FINISHES.find(f => f.id === s.metal.finish).label.toLowerCase()}` : ''), icon: s => swatch(METAL[s.metal.id].hex) },
+  { id: 'details', label: 'Details', title: 'Details', desc: 'The small things a jeweler asks about last, and that make it yours.', value: s => { const d = []; if (s.details.milgrain) d.push('milgrain'); if (s.details.hidden !== 'none') d.push('hidden ' + HIDDEN_GEMS.find(h => h.id === s.details.hidden).label.toLowerCase()); if (s.details.engraving) d.push(`“${s.details.engraving}”`); return d.length ? d.join(' · ') : 'None yet'; }, icon: s => SVG(`<path d="M8 30 L26 12 L30 16 L12 34 L7 35 Z"/><path d="M23 15 L27 19"/>`) },
+  { id: 'fit', label: 'Ring size', title: 'Ring size', desc: 'US sizing. The jeweler will confirm before casting.', value: s => `US ${s.fit.size} · UK ${sizeUK(s.fit.size)} · EU ${sizeEU(s.fit.size)}`, icon: s => SVG(`<circle cx="20" cy="20" r="12"/><path d="M20 8 L20 12 M20 28 L20 32 M8 20 L12 20 M28 20 L32 20"/>`) },
+];
+function renderSlots() {
+  const list = $('#slot-list'); list.innerHTML = '';
+  for (const sl of SLOTS) {
+    const b = el('button', 'slot'); b.setAttribute('role', 'tab'); b.dataset.slot = sl.id; b.setAttribute('aria-current', sl.id === currentSlot ? 'true' : 'false');
+    b.innerHTML = `<span class="ico">${sl.icon(state)}</span><span><span class="lab">${sl.label}</span><span class="val">${esc(sl.value(state))}</span></span><svg class="chev" viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l5 5-5 5"/></svg>`;
+    b.addEventListener('click', () => { currentSlot = sl.id; renderSlots(); renderTray(); if (innerWidth <= 820) $('#tray').scrollIntoView({ behavior: 'smooth', block: 'start' }); });
+    list.appendChild(b);
+  }
+}
+function renderLooks() {
+  const box = $('#looks'); box.innerHTML = '';
+  for (const p of PRESETS) { const b = el('button', 'look', esc(p.label)); b.addEventListener('click', () => { state = deepMerge(DEFAULT, p.patch); update(); toast(`Loaded “${p.label}”. Tweak anything.`); }); box.appendChild(b); }
+}
+
+// ---------- tray builders ----------
+function tiles(list, isOn, pick, o = {}) {
+  const box = el('div', 'tiles' + (o.cols === 2 ? ' two' : ''));
+  const base = estimatorOn ? estimate(state).total : 0;
+  for (const it of list) {
+    const b = el('button', 'tile'); b.setAttribute('aria-pressed', isOn(it) ? 'true' : 'false'); b.type = 'button';
+    let delta = '';
+    if (estimatorOn && o.apply && !isOn(it)) { const trial = structuredClone(state); o.apply(trial, it); const d = estimate(trial).total - base; if (Math.abs(d) >= 5) delta = `<span class="d ${d > 0 ? 'up' : 'down'}">${d > 0 ? '+' : '−'}${fmt$(Math.abs(d))}</span>`; }
+    b.innerHTML = `${o.icon ? o.icon(it) : ''}<span class="t">${esc(it.label)}</span>${delta}`;
+    if (it.desc) b.title = it.desc;
+    b.addEventListener('click', () => { pick(it); update(); });
+    box.appendChild(b);
+  }
+  return box;
+}
+function chips(list, isOn, pick, o = {}) {
+  const box = el('div', 'chips');
+  const base = estimatorOn && o.apply ? estimate(state).total : 0;
+  for (const it of list) {
+    const b = el('button', 'chip'); b.type = 'button'; b.setAttribute('aria-pressed', isOn(it) ? 'true' : 'false');
+    let delta = '';
+    if (estimatorOn && o.apply && !isOn(it)) { const trial = structuredClone(state); o.apply(trial, it); const d = estimate(trial).total - base; if (Math.abs(d) >= 5) delta = ` <span class="num" style="color:var(--muted);font-size:11px">${d > 0 ? '+' : '−'}${fmt$(Math.abs(d))}</span>`; }
+    b.innerHTML = esc(it.label) + delta; b.addEventListener('click', () => { pick(it); update(); }); box.appendChild(b);
+  }
+  return box;
+}
+function group(title, node, hint) { const g = el('div', 'group'); g.innerHTML = `<div class="group-head"><span class="eyebrow">${esc(title)}</span>${hint ? `<span class="hint">${esc(hint)}</span>` : ''}</div>`; g.appendChild(node); return g; }
+function range(o) {
+  const g = el('div', 'range'); const id = 'r-' + o.id;
+  g.innerHTML = `<label for="${id}">${esc(o.label)}</label><span class="ro" id="${id}-ro">${esc(o.fmt(o.value))}</span><input type="range" id="${id}" min="${o.min}" max="${o.max}" step="${o.step}" value="${o.value}">${o.sub ? `<span class="sub" id="${id}-sub">${esc(o.sub(o.value))}</span>` : ''}`;
+  const inp = g.querySelector('input');
+  inp.addEventListener('input', () => { const v = +inp.value; o.set(v); g.querySelector('.ro').textContent = o.fmt(v); if (o.sub) g.querySelector('.sub').textContent = o.sub(v); update({ keepTray: true }); });
+  return g;
+}
+function switchRow(label, sub, on, set) {
+  const r = el('div', 'switchrow'); r.innerHTML = `<div><div class="l">${esc(label)}</div>${sub ? `<div class="s">${esc(sub)}</div>` : ''}</div><button class="switch" role="switch" aria-checked="${on ? 'true' : 'false'}" aria-label="${esc(label)}"></button>`;
+  r.querySelector('.switch').addEventListener('click', () => { set(!on); update(); }); return r;
+}
+function noteEl(n) { const d = el('div', 'note' + (n.level === 'ok' ? ' ok' : '')); d.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>${esc(n.text)}</span>`; return d; }
+
+function renderTray() {
+  const sl = SLOTS.find(x => x.id === currentSlot), body = $('#tray-body'), keepTop = body.scrollTop; body.innerHTML = '';
+  $('#tray-title').textContent = sl.title; $('#tray-desc').textContent = sl.desc;
+  const st = state.stone, sh = SHAPE[st.shape], g = GEM[st.type];
+  for (const n of notes(state).filter(n => n.slot === currentSlot)) body.appendChild(noteEl(n));
+  const add = (t, n, h) => body.appendChild(group(t, n, h));
+  if (currentSlot === 'stone') {
+    const groups = [...new Set(GEMS.map(x => x.group))];
+    for (const gr of groups) add(gr, tiles(GEMS.filter(x => x.group === gr), it => it.id === st.type, it => { st.type = it.id; st.origin = it.origins[0]; }, { icon: it => swatch(it.hex, true), apply: (s, it) => { s.stone.type = it.id; s.stone.origin = it.origins[0]; } }));
+    if (g.origins.length > 1) add('Origin', chips([{ id: 'natural', label: 'Natural' }, { id: 'lab', label: 'Lab-created' }], it => it.id === st.origin, it => { st.origin = it.id; }, { apply: (s, it) => { s.stone.origin = it.id; } }), 'Same look, very different price');
+    if (!(st.type === 'natural' || st.type === 'lab' || st.type === 'moissanite') && st.origin === 'natural') add('Quality', chips(TIERS, it => it.id === (st.tier || 'fine'), it => { st.tier = it.id; }, { apply: (s, it) => { s.stone.tier = it.id; } }), 'Colour saturation and clarity');
+  }
+  if (currentSlot === 'shape') {
+    add('Shape', tiles(SHAPES, it => it.id === st.shape, it => { st.shape = it.id; st.ratio = it.def; }, { icon: it => shapeSVG(it.id, it.def), apply: (s, it) => { s.stone.shape = it.id; s.stone.ratio = it.def; } }));
+    if (sh.elong) {
+      add('Proportions', range({ id: 'ratio', label: 'Length to width', min: sh.ratio[0], max: sh.ratio[1], step: .01, value: st.ratio, fmt: v => `${v.toFixed(2)} : 1`, sub: v => { const d = stoneDims({ ...st, ratio: v }); return `${d.L.toFixed(1)} × ${d.W.toFixed(1)} mm · ${v < (sh.ratio[0] + sh.ratio[1]) / 2 - .05 ? 'fuller, rounder' : v > (sh.ratio[0] + sh.ratio[1]) / 2 + .05 ? 'longer, more finger coverage' : 'classic proportions'}`; }, set: v => { st.ratio = v; } }), 'The face of the stone');
+      add('Orientation', tiles([{ id: 'ns', label: 'North–south' }, { id: 'ew', label: 'East–west' }], it => it.id === st.orient, it => { st.orient = it.id; }, { icon: it => glyph(it.id), cols: 2 }));
+    }
+    if (['round', 'cushion', 'oval', 'pear'].includes(st.shape)) add('Cut style', tiles(CUT_STYLES, it => it.id === st.cutStyle, it => { st.cutStyle = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.stone.cutStyle = it.id; } }));
+  }
+  if (currentSlot === 'size') {
+    add('Carat weight', range({ id: 'carat', label: 'Carat', min: .25, max: 6, step: .01, value: st.carat, fmt: v => `${v.toFixed(2)} ct`, sub: v => { const d = stoneDims({ ...st, carat: v }); return `≈ ${d.L.toFixed(1)} × ${d.W.toFixed(1)} mm face, ${d.D.toFixed(1)} mm deep`; }, set: v => { st.carat = v; } }), 'Drag; the 3D stone resizes');
+    if (st.type === 'natural' || st.type === 'lab') {
+      add('Colour', chips(COLORS.map(c => ({ id: c, label: c })), it => it.id === st.color, it => { st.color = it.id; }, { apply: (s, it) => { s.stone.color = it.id; } }), 'D is colourless; G–H look white to the eye');
+      add('Clarity', chips(CLARITY.map(c => ({ id: c, label: c })), it => it.id === st.clarity, it => { st.clarity = it.id; }, { apply: (s, it) => { s.stone.clarity = it.id; } }), 'VS1–VS2 is the value sweet spot');
+      add('Cut grade', chips(CUTS, it => it.id === st.cut, it => { st.cut = it.id; }, { apply: (s, it) => { s.stone.cut = it.id; } }));
+    }
+  }
+  if (currentSlot === 'head') {
+    add('Head', tiles(HEADS, it => it.id === state.head.style, it => { state.head.style = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.head.style = it.id; } }));
+    if (!['bezel', 'halfbezel', 'tension'].includes(state.head.style)) add('Prong tips', tiles(PRONG_TIPS, it => it.id === state.head.tip, it => { state.head.tip = it.id; }, { icon: it => glyph(it.id === 'flat' ? 'flat_tip' : it.id) }));
+    add('Profile', tiles(PROFILES, it => it.id === state.head.profile, it => { state.head.profile = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.head.profile = it.id; }, cols: 2 }));
+  }
+  if (currentSlot === 'halo') {
+    add('Halo', tiles(HALOS, it => it.id === state.halo.style, it => { state.halo.style = it.id; }, { icon: it => glyph(it.id === 'double' ? 'halo_double' : it.id), apply: (s, it) => { s.halo.style = it.id; } }));
+    if (state.halo.style === 'single' || state.halo.style === 'double' || state.halo.style === 'both') add('Halo outline', tiles(HALO_SHAPES, it => it.id === state.halo.shape, it => { state.halo.shape = it.id; }, { icon: it => glyph(it.id === 'round' ? 'round_halo' : it.id) }));
+    if (state.halo.style !== 'none') add('Halo stones', tiles(ACCENTS, it => it.id === state.halo.accent, it => { state.halo.accent = it.id; }, { icon: it => swatch(it.hex, true), apply: (s, it) => { s.halo.accent = it.id; } }));
+  }
+  if (currentSlot === 'sides') {
+    add('Style', tiles(SIDES, it => it.id === state.sides.style, it => { state.sides.style = it.id; }, { icon: it => glyph(it.id === 'none' ? 'sides_none' : it.id), apply: (s, it) => { s.sides.style = it.id; }, cols: 2 }));
+    if (state.sides.style === 'pave' || state.sides.style === 'channel') add('Coverage', tiles(COVERAGES, it => it.id === state.sides.coverage, it => { state.sides.coverage = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.sides.coverage = it.id; } }));
+    if (state.sides.style === 'three') {
+      add('Side stone shape', tiles(SIDE_SHAPES, it => it.id === state.sides.sideShape, it => { state.sides.sideShape = it.id; }, { icon: it => shapeSVG(it.id, SIDE_META[it.id].ratio) }));
+      add('Side stone size', range({ id: 'sideSize', label: 'Relative to center', min: .25, max: .55, step: .01, value: state.sides.sideSize, fmt: v => `${Math.round(v * 100)}%`, set: v => { state.sides.sideSize = v; } }));
+    }
+    if (state.sides.style !== 'none') add('Accent stones', tiles(ACCENTS, it => it.id === state.sides.accent, it => { state.sides.accent = it.id; }, { icon: it => swatch(it.hex, true), apply: (s, it) => { s.sides.accent = it.id; } }));
+  }
+  if (currentSlot === 'band') {
+    add('Style', tiles(BANDS, it => it.id === state.band.style, it => { state.band.style = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.band.style = it.id; } }));
+    add('Cross-section', tiles(BAND_PROFILES, it => it.id === state.band.profile, it => { state.band.profile = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.band.profile = it.id; }, cols: 2 }));
+    add('Width', range({ id: 'width', label: 'Band width', min: 1.4, max: 4, step: .1, value: state.band.width, fmt: v => `${v.toFixed(1)} mm`, sub: v => v < 1.7 ? 'Dainty. Makes the stone look bigger, wears faster.' : v < 2.3 ? 'The everyday standard.' : v < 3 ? 'Substantial, modern.' : 'Cigar band territory.', set: v => { state.band.width = v; } }));
+  }
+  if (currentSlot === 'metal') {
+    add('Metal', tiles(METALS, it => it.id === state.metal.id, it => { state.metal.id = it.id; }, { icon: it => swatch(it.hex), apply: (s, it) => { s.metal.id = it.id; } }));
+    add('Head metal', chips(HEAD_METALS, it => it.id === state.metal.head, it => { state.metal.head = it.id; }, { apply: (s, it) => { s.metal.head = it.id; } }), 'White heads make white stones read whiter');
+    add('Finish', tiles(FINISHES, it => it.id === state.metal.finish, it => { state.metal.finish = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.metal.finish = it.id; } }));
+  }
+  if (currentSlot === 'details') {
+    body.appendChild(switchRow('Milgrain edges', 'Tiny beaded border along the band. Vintage feel.', state.details.milgrain, v => { state.details.milgrain = v; }));
+    add('Hidden gem', tiles(HIDDEN_GEMS, it => it.id === state.details.hidden, it => { state.details.hidden = it.id; }, { icon: it => it.hex ? swatch(it.hex, true) : glyph('none'), apply: (s, it) => { s.details.hidden = it.id; } }), 'A secret stone under the head');
+    const f = el('div', 'field group'); f.innerHTML = `<div class="group-head"><span class="eyebrow">Engraving</span><span class="hint">Inside the band</span></div><input type="text" id="engraving" maxlength="40" placeholder="e.g. 14.02.27 · always" value="${esc(state.details.engraving)}">`;
+    f.querySelector('input').addEventListener('input', e => { state.details.engraving = e.target.value; update({ keepTray: true }); });
+    body.appendChild(f);
+    if (state.details.engraving) body.appendChild(switchRow('Hand engraved', 'By an engraver, not a machine. Slower, more character.', state.details.hand, v => { state.details.hand = v; }));
+  }
+  if (currentSlot === 'fit') {
+    add('US size', range({ id: 'size', label: 'Finger size', min: 3, max: 13, step: .25, value: state.fit.size, fmt: v => `US ${v}`, sub: v => `Inner diameter ${ringID(v).toFixed(1)} mm · UK ${sizeUK(v)} · EU ${sizeEU(v)} · Most common: 6 (women), 10 (men)`, set: v => { state.fit.size = v; } }));
+    const info = el('div', 'note ok'); info.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>Not sure? Jewelers can size a plain or half-pavé band up or down about two sizes later. Eternity and tension rings cannot be resized.</span>`; body.appendChild(info);
+  }
+  body.scrollTop = keepTop;
+}
+
+// ---------- summary / estimator ----------
+function summaryText(s) {
+  const st = s.stone, d = stoneDims(st), g = GEM[st.type];
+  const parts = [`${st.carat.toFixed(2)} ct ${SHAPE[st.shape].label.toLowerCase()} ${g.label.toLowerCase()}${st.type !== 'natural' && st.type !== 'lab' && st.origin === 'lab' ? ' (lab)' : ''}`];
+  parts.push(HEADS.find(h => h.id === s.head.style).label.toLowerCase() + (s.head.profile !== 'standard' ? ` ${PROFILES.find(p => p.id === s.head.profile).label.toLowerCase()}` : ''));
+  if (s.halo.style !== 'none') parts.push(HALOS.find(h => h.id === s.halo.style).label.toLowerCase());
+  if (s.sides.style !== 'none') parts.push(SLOTS.find(x => x.id === 'sides').value(s).toLowerCase());
+  parts.push(`${BANDS.find(b => b.id === s.band.style).label.toLowerCase()} ${s.band.width.toFixed(1)} mm band`);
+  parts.push(METAL[s.metal.id].label);
+  return { text: parts.join(' · '), mm: `${d.L.toFixed(1)}×${d.W.toFixed(1)} mm · US ${s.fit.size}` };
+}
+function updateSummary() { const s = summaryText(state); $('#summary').innerHTML = `${esc(s.text)}<span class="num">${esc(s.mm)}</span>`; }
+function updateEstimate() {
+  const card = $('#est-card'); $('#est-toggle').setAttribute('aria-pressed', estimatorOn); $('#est-switch').setAttribute('aria-checked', estimatorOn);
+  card.hidden = !estimatorOn; if (!estimatorOn) return;
+  const e = estimate(state);
+  card.innerHTML = `<div class="eyebrow"><span>Estimated jeweler quote</span><span class="sample">demo model</span></div>
+    <div class="big">${fmt$(e.low)}<small>to ${fmt$(e.high)}</small></div>
+    <div class="mid">Midpoint ${fmt$(e.total)}. Materials at today’s metal prices plus typical custom labor; the spread is how much jewelers differ.</div>
+    <div class="lines">${e.lines.map(l => `<span class="k">${esc(l.k)}<small>${esc(l.sub)}</small></span><span class="v">${fmt$(l.v)}</span>`).join('')}<span class="k tot">Estimate</span><span class="v tot">${fmt$(e.total)}</span></div>
+    <details><summary>How this is estimated</summary><p>Center stone from per-carat curves (natural: StoneAlgo Sept 2026 with the Rapaport colour × clarity grid; lab: StoneAlgo; gems: 2026 trade tiers). Metal from the band’s real volume × alloy density × Kitco spot, with casting loss and a retail multiplier. Labor from typical custom-shop line items. Option chips show the price change before you commit. Every constant lives in one table in the source and can be swapped for your own data.</p></details>`;
+}
+function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 2400); }
+
+// ---------- spec sheet / jeweler drawer ----------
+function specRows(s) {
+  const st = s.stone, d = stoneDims(st), g = GEM[st.type], c = stoneCounts(s, d), md = meleeFor(d.W);
+  const rows = [['sec', 'Center stone'],
+    ['Stone', g.label + (g.origins.length > 1 && st.type !== 'natural' && st.type !== 'lab' ? ` (${st.origin === 'lab' ? 'lab-created' : 'natural'})` : '') + (!(st.type === 'natural' || st.type === 'lab' || st.type === 'moissanite') && st.origin === 'natural' ? `, ${TIERS.find(t => t.id === (st.tier || 'fine')).label.toLowerCase()} quality` : '')],
+    ['Shape', `${SHAPE[st.shape].label}, ${CUT_STYLES.find(c => c.id === st.cutStyle).label.toLowerCase()}`],
+    ['Size', `${st.carat.toFixed(2)} ct ≈ ${d.L.toFixed(2)} × ${d.W.toFixed(2)} × ${d.D.toFixed(2)} mm (L:W ${d.ratio.toFixed(2)})`],
+    ['Orientation', st.orient === 'ew' && SHAPE[st.shape].elong ? 'East–west' : 'North–south']];
+  if (st.type === 'natural' || st.type === 'lab') rows.push(['Grade', `${st.color} colour, ${st.clarity} clarity, ${CUTS.find(x => x.id === st.cut).label.toLowerCase()} cut`]);
+  rows.push(['sec', 'Setting'], ['Head', `${HEADS.find(h => h.id === s.head.style).label}${['bezel', 'halfbezel', 'tension'].includes(s.head.style) ? '' : `, ${PRONG_TIPS.find(t => t.id === s.head.tip).label.toLowerCase()} tips`}${SHAPE[st.shape].tips || st.shape === 'princess' ? ', V-prongs on points' : ''}`], ['Profile', PROFILES.find(p => p.id === s.head.profile).label]);
+  rows.push(['Halo', s.halo.style === 'none' ? 'None' : `${HALOS.find(h => h.id === s.halo.style).label}, ${c.halo} × ~${md.toFixed(1)} mm ${ACCENTS.find(a => a.id === s.halo.accent).label.toLowerCase()}${s.halo.style !== 'hidden' ? `, ${HALO_SHAPES.find(h => h.id === s.halo.shape).label.toLowerCase()} outline` : ''}`]);
+  rows.push(['Side stones', s.sides.style === 'none' ? 'None' : s.sides.style === 'three' ? `Three-stone, 2 × ${SIDE_SHAPES.find(x => x.id === s.sides.sideShape).label.toLowerCase()} at ${Math.round(s.sides.sideSize * 100)}% of center width, ${ACCENTS.find(a => a.id === s.sides.accent).label.toLowerCase()}` : `${SIDES.find(x => x.id === s.sides.style).label}, ${COVERAGES.find(x => x.id === s.sides.coverage).label.toLowerCase()} coverage, ${c.band} × ~${Math.min(md, s.band.width - .55).toFixed(1)} mm ${ACCENTS.find(a => a.id === s.sides.accent).label.toLowerCase()}`]);
+  rows.push(['sec', 'Band & metal'], ['Band', `${BANDS.find(b => b.id === s.band.style).label}, ${BAND_PROFILES.find(p => p.id === s.band.profile).label.toLowerCase()}, ${s.band.width.toFixed(1)} mm wide`], ['Metal', METAL[s.metal.id].label + (s.metal.head !== 'same' ? `, ${METAL[s.metal.head].label} head` : '')], ['Finish', FINISHES.find(f => f.id === s.metal.finish).label], ['Ring size', `US ${s.fit.size} (UK ${sizeUK(s.fit.size)}, EU ${sizeEU(s.fit.size)}, ${ringID(s.fit.size).toFixed(1)} mm inner diameter)`]);
+  const det = []; if (s.details.milgrain) det.push('Milgrain edges'); if (s.details.hidden !== 'none') det.push(`Hidden ${HIDDEN_GEMS.find(h => h.id === s.details.hidden).label.toLowerCase()} under the head`); if (s.details.engraving) det.push(`${s.details.hand ? 'Hand' : 'Machine'} engraving: “${s.details.engraving}”`);
+  rows.push(['sec', 'Details'], ['Extras', det.length ? det.join('; ') : 'None']);
+  return rows;
+}
+function specJSON(s) { const d = stoneDims(s.stone), c = stoneCounts(s, d); return JSON.stringify({ project: 'halo-demo', version: 1, design: s, derived: { stone_mm: { L: +d.L.toFixed(2), W: +d.W.toFixed(2), D: +d.D.toFixed(2) }, inner_diameter_mm: +ringID(s.fit.size).toFixed(2), accent_counts: c, estimate_usd: estimatorOn ? Math.round(estimate(s).total) : undefined } }, null, 2); }
+const SAMPLE_JEWELERS = [
+  { n: 'Atelier Marrow', m: 'Brooklyn, NY · 4.9 ★ · 212 custom rings', t: ['Hand-set pavé', 'Platinum', 'Antique cuts'] },
+  { n: 'Ferro & Daughters', m: 'Chicago, IL · 4.8 ★ · 98 custom rings', t: ['Bezels', 'Colored stones', 'CAD in 5 days'] },
+  { n: 'Northlight Goldsmiths', m: 'Portland, OR · 5.0 ★ · 61 custom rings', t: ['Recycled gold', 'Hidden halos', 'Engraving'] },
+];
+function openDrawer() {
+  const body = $('#drawer-body'); body.innerHTML = '';
+  const s = summaryText(state);
+  body.appendChild(el('div', null, `<div class="eyebrow">Your design</div><p style="margin:6px 0 0;font-family:var(--display);font-size:18px;line-height:1.3">${esc(s.text)}</p>`));
+  const grid = el('div', 'spec'); grid.innerHTML = specRows(state).map(([k, v]) => k === 'sec' ? `<div class="sec eyebrow">${esc(v)}</div>` : `<div class="k">${esc(k)}</div><div class="v">${esc(v)}</div>`).join(''); body.appendChild(grid);
+  const acts = el('div', null); acts.style.cssText = 'display:flex;gap:8px;flex-wrap:wrap';
+  const copySpec = el('button', 'btn primary', 'Copy spec sheet'); copySpec.addEventListener('click', () => copyText(specRows(state).map(([k, v]) => k === 'sec' ? `\n${v.toUpperCase()}` : `${k}: ${v}`).join('\n').trim(), 'Spec sheet copied'));
+  const copyJson = el('button', 'btn', 'Copy JSON'); copyJson.addEventListener('click', () => copyText(specJSON(state), 'JSON copied'));
+  acts.append(copySpec, copyJson); body.appendChild(acts);
+  const ta = el('textarea', 'json'); ta.readOnly = true; ta.value = specJSON(state); ta.setAttribute('aria-label', 'Design JSON'); body.appendChild(group('Machine-readable spec', ta, 'What a jeweler’s CAD desk would receive'));
+  const jw = el('div', null); jw.style.cssText = 'display:flex;flex-direction:column;gap:10px';
+  for (const j of SAMPLE_JEWELERS) { const c = el('div', 'jeweler'); c.innerHTML = `<div class="av">${esc(j.n[0])}</div><div><div class="n">${esc(j.n)}</div><div class="m">${esc(j.m)}</div><div class="tags">${j.t.map(t => `<span>${esc(t)}</span>`).join('')}</div></div><button class="btn">Request quote</button>`; c.querySelector('button').addEventListener('click', () => toast('Demo only: this would send your spec to the jeweler.')); jw.appendChild(c); }
+  const head = el('div', 'group-head'); head.innerHTML = `<span class="eyebrow">Matched jewelers</span><span class="sample">sample data</span>`;
+  const wrap = el('div', 'group'); wrap.append(head, jw); body.appendChild(wrap);
+  $('#drawer').classList.add('open'); $('#drawer').setAttribute('aria-hidden', 'false'); $('#scrim').classList.add('open');
+}
+function closeDrawer() { $('#drawer').classList.remove('open'); $('#drawer').setAttribute('aria-hidden', 'true'); $('#scrim').classList.remove('open'); }
+async function copyText(text, msg) { try { await navigator.clipboard.writeText(text); toast(msg); } catch (e) { toast('Copy blocked here; select the text and copy manually.'); } }
+
+// ---------- randomize ----------
+const pick = a => a[Math.floor(Math.random() * a.length)];
+function randomize() {
+  const s = structuredClone(DEFAULT);
+  const g = pick(GEMS.filter(x => !x.fragile || Math.random() < .3)); s.stone.type = g.id; s.stone.origin = pick(g.origins);
+  const sh = pick(SHAPES); s.stone.shape = sh.id; s.stone.ratio = +lerp(sh.ratio[0], sh.ratio[1], Math.random()).toFixed(2);
+  s.stone.carat = +pick([.75, 1, 1.25, 1.5, 1.8, 2, 2.5, 3]).toFixed(2); s.stone.orient = sh.elong && Math.random() < .2 ? 'ew' : 'ns';
+  s.stone.cutStyle = (sh.id === 'round' || sh.id === 'cushion') && Math.random() < .2 ? pick(['oldeuro', 'rose']) : 'brilliant';
+  s.head.style = g.fragile ? pick(['bezel', 'halfbezel']) : pick(HEADS.filter(h => h.id !== 'tension' || g.hard >= 9)).id; s.head.tip = pick(PRONG_TIPS).id; s.head.profile = pick(PROFILES).id;
+  s.halo.style = pick(['none', 'none', 'single', 'hidden', 'double', 'both']); s.halo.shape = pick(HALO_SHAPES).id; s.halo.accent = Math.random() < .8 ? 'diamond' : pick(ACCENTS).id;
+  s.sides.style = pick(['none', 'pave', 'pave', 'channel', 'three']); s.sides.coverage = pick(COVERAGES).id; s.sides.sideShape = pick(SIDE_SHAPES).id; s.sides.sideSize = +lerp(.3, .5, Math.random()).toFixed(2); s.sides.accent = Math.random() < .85 ? 'diamond' : pick(ACCENTS).id;
+  s.band.style = pick(BANDS).id; s.band.profile = s.sides.style === 'pave' || s.sides.style === 'channel' ? pick(['comfort', 'flat', 'dome']) : pick(BAND_PROFILES).id; s.band.width = +(s.sides.style === 'none' ? lerp(1.5, 3, Math.random()) : lerp(1.7, 2.6, Math.random())).toFixed(1);
+  s.metal.id = pick(METALS).id; s.metal.head = Math.random() < .25 ? pick(HEAD_METALS).id : 'same'; s.metal.finish = Math.random() < .8 ? 'polish' : pick(FINISHES).id;
+  s.details.milgrain = Math.random() < .2; s.details.hidden = Math.random() < .25 ? pick(HIDDEN_GEMS).id : 'none';
+  s.fit.size = pick([5, 5.5, 6, 6.5, 7, 7.5]);
+  state = s; update(); toast('Rolled a new ring. Nothing here is final.');
+}
+
+// ---------- update cycle ----------
+function scheduleBuild() { if (!glReady || buildQueued) return; buildQueued = true; requestAnimationFrame(() => { buildQueued = false; try { setRing(state); } catch (e) { console.error(e); showStageMsg('Could not build this combination', e.message); } }); }
+function update(o = {}) { clampState(); renderSlots(); if (!o.keepTray) renderTray(); updateSummary(); updateEstimate(); scheduleBuild(); save(); }
+function showStageMsg(title, text) { const m = $('#stage-msg'); m.hidden = false; m.innerHTML = `<div><b>${esc(title)}</b>${esc(text)}</div>`; }
+
+// ---------- theme ----------
+function setTheme(t) { if (t) document.documentElement.dataset.theme = t; else delete document.documentElement.dataset.theme; try { t ? localStorage.setItem('halo.theme', t) : localStorage.removeItem('halo.theme'); } catch (e) { /* ignore */ } setStageColor(); }
+function toggleTheme() { const dark = document.documentElement.dataset.theme === 'dark' || (!document.documentElement.dataset.theme && matchMedia('(prefers-color-scheme: dark)').matches); setTheme(dark ? 'light' : 'dark'); }
+
+// ---------- boot ----------
+async function init() {
+  try { const t = localStorage.getItem('halo.theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) { /* ignore */ }
+  const saved = load(); if (saved) state = saved; clampState();
+  renderLooks(); renderSlots(); renderTray(); updateSummary(); updateEstimate();
+  $('#est-toggle').addEventListener('click', () => { estimatorOn = !estimatorOn; updateEstimate(); renderTray(); });
+  $('#btn-spec').addEventListener('click', openDrawer); $('#drawer-close').addEventListener('click', closeDrawer); $('#scrim').addEventListener('click', closeDrawer);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDrawer(); });
+  $('#btn-random').addEventListener('click', randomize);
+  $('#btn-reset').addEventListener('click', () => { state = structuredClone(DEFAULT); update(); toast('Back to the starting ring.'); });
+  $('#btn-theme').addEventListener('click', toggleTheme);
+  $('#btn-copy-summary').addEventListener('click', () => { const s = summaryText(state); copyText(`${s.text} · ${s.mm}`, 'Summary copied'); });
+  $('#views').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; for (const x of $('#views').children) x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); goView(b.dataset.view); });
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', setStageColor);
+
+  const stage = $('#stage'), canvas = $('#gl');
+  try { THREE = await import('https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js'); }
+  catch (e) { showStageMsg('3D preview could not load', 'The viewer needs the three.js library from cdn.jsdelivr.net. Check the connection and reload; the options and estimate still work.'); return; }
+  try {
+    initGL(canvas); bindControls(canvas); resizeGL(stage); new ResizeObserver(() => resizeGL(stage)).observe(stage);
+    glReady = true; applyCamera(); setRing(state); requestAnimationFrame(frame);
+    window.__halo = { R3, get state() { return state; }, estimate, stoneDims, THREE };
+    setTimeout(() => { const h = $('#hint-rot'); if (h) h.style.opacity = '0'; }, 6000);
+  } catch (e) { console.error(e); showStageMsg('3D preview unavailable', 'WebGL is not available in this browser. ' + e.message); }
+}
+init();
+</script>
