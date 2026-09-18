@@ -30,9 +30,9 @@ The three parts share one module scope and are concatenated in that order, so th
 | Area | Status |
 |---|---|
 | 3D ring | Built from scratch every time a value changes: band sweep, prongs, baskets, bezels, halos, pavé, milgrain, three-stone sides, hidden gem. No pre-made models, no photo swapping. |
-| Gem geometry | Faceted meshes generated per shape from real outlines and crown / girdle / pavilion proportions. Brilliant, step, old European and rose cuts. |
+| Gem geometry | Faceted meshes generated per shape from real outlines and crown / girdle / pavilion proportions. Facet architecture is its own axis: 57-facet brilliant up to 201, plus old European, old mine, rose, Dutch rose, step, French, portrait, Context and cabochon. |
 | Materials | Physically based metals from measured base colors, transmissive gems with per-species index of refraction and dispersion, a procedural studio environment. |
-| Options | 19 gem types, 12 shapes, 8 heads, 5 halo styles, 4 side-stone styles, 5 shanks, 8 metals, plus finish, milgrain, hidden gem, engraving and ring size. |
+| Options | 19 gem types, 19 shapes, 19 cut programs, 8 heads, 5 halo styles, 4 side-stone styles, 5 shanks, 8 metals, plus finish, milgrain, hidden gem, engraving and ring size. |
 | The band | Width and thickness in millimetres, and a shoulder law: does it taper, widen or pinch on the way up to the stone, by how much, and over how much of the ring. Plus euro shank and five engraved surfaces. The same function drives the geometry and the metal weight in the estimate. |
 | Estimator | Off by default, toggled top right. Line-itemized, and every option tile shows what choosing it would add or subtract. |
 | Guardrails | Soft stones blocked from tension settings, V-prongs forced on pointed shapes, pavé blocked on knife-edge bands, eternity resize warning, and so on. |
@@ -46,11 +46,24 @@ The taxonomy research found that a ring decomposes into orthogonal axes: center 
 
 What is deliberately *not* parametric, and should route to a brief-and-reference-images flow instead: figural and sculptural rings (the two dragons around a stone), carved pictorial galleries, enamel and mokume, kinetic or puzzle mechanisms, hinged shanks, and heirloom stones of nonstandard cut. That is the exotic fraction, and trying to build a Spore-style free-form editor for it would cost more than it returns.
 
+## Shapes and cut programs
+
+Outline and faceting are separate axes, which is how the trade actually works. An old mine cut is the round-brilliant facet architecture on a cushion outline with antique proportions; a Dutch marquise is marquise proportions on a hexagonal outline. Nineteen outlines, nineteen cut programs, and the customizer only offers combinations that exist.
+
+Two things the research corrected, and the UI now says out loud:
+
+- **The Dutch marquise is a modern trade name, not an antique cut.** Labs grade it as a hexagonal modified brilliant: a marquise with its curved flanks straightened into six flat edges. Vendor copy claiming an eighteenth-century French origin is unsourced. The genuinely Dutch antique cut is the Dutch rose, 24 facets in two rows on a flat back.
+- **More facets is not more sparkle.** Above roughly 80 facets each one gets small enough that large high-contrast flashes break into a finer glitter, and proprietary cuts resell at a discount. The builder offers 81, 129, 137 and 201 facet architectures and says this plainly when you pick one.
+
+For reference, the highest-facet cut a major jeweler sells is Wempe's trademarked 137-facet cut, 65 crown and 72 pavilion, hand ground over about eight hours per stone.
+
 ## Pricing
 
-`PRICE` in the source is the single table to replace with your own data. It currently holds per-carat curves for natural and lab diamonds, the Rapaport color-by-clarity grid, colored-gem tiers, melee, metal spot prices, and labor line items, all dated 2026-09-18. `docs/pricing-research.md` sources every number and flags the estimates.
+`PRICE` in the source is the single table to replace with your own data: per-carat curves for natural and lab diamonds, a colour and clarity ladder, colored-gem tiers by quality, melee, metal spot prices, and labor line items, all dated 2026-09-18.
 
 Calibration points the model reproduces: a 1.00 ct G/VS1 excellent round natural lands near $4,300, the same stone lab-grown near $560, and a 4 mm platinum band at size 6 weighs about 6.4 g.
+
+**Before this prices anything for real, read `docs/pricing-data-pipeline.md`.** Two findings matter. First, the demo's grade ladder is derived from a published benchmark price list, and on 4 September 2026 the Second Circuit revived Rapaport's copyright claim against Nivoda over exactly that kind of reuse, reasoning that benchmark prices are expert opinion rather than observed fact. That ladder has to be refitted from observed listing prices. Second, scraping is not the cheapest path: Nivoda's API is free with an account and covers roughly 1.6 million stones with certificate numbers, affiliate product feeds give per-vendor retail prices under contract, and a metals API costs about $32 a month. That combination runs near $40 a month against $2,000 to $8,000 for an equivalent scraping stack, and carries far less risk.
 
 ## Naming
 

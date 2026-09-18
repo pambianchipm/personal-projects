@@ -38,16 +38,23 @@ const heartO = N => Array.from({ length: N }, (_, i) => { const t = i / N * 2 * 
 const regO = (sides, N, bulge = 0) => polyO(Array.from({ length: sides }, (_, i) => { const a = i / sides * 2 * Math.PI; return [Math.cos(a), -Math.sin(a)]; }), N, bulge);
 const halfmoonO = N => { const out = []; const n = Math.round(N * .7); for (let i = 0; i <= n; i++) { const th = -Math.PI / 2 + Math.PI * i / n; out.push([-1 + 2 * Math.cos(th), Math.sin(th)]); } for (let i = 1; i < N - n; i++) out.push([-1, 1 - 2 * i / (N - n)]); return out; };
 
+const hexNavetteO = (N, w = .38) => polyO([[1, 0], [w, 1], [-w, 1], [-1, 0], [-w, -1], [w, -1]], N);   // Dutch marquise
+const kiteO = N => polyO([[1, 0], [-.35, 1], [-1, 0], [-.35, -1]], N);
+const shieldO = N => polyO([[1, 0], [-.25, .92], [-1, 1], [-1, -1], [-.25, -.92]], N, .04);
+const lozengeO = N => polyO([[1, 0], [0, 1], [-1, 0], [0, -1]], N);
+const bulletO = N => polyO([[1, 0], [.25, 1], [-1, 1], [-1, -1], [.25, -1]], N);
+
 const OUTLINE_FN = {
   round: N => circleO(N), oval: N => circleO(N), cushion: N => superO(N, 3.4),
   princess: N => polyO([[1, 1], [-1, 1], [-1, -1], [1, -1]], N), emerald: N => octO(N, .16), asscher: N => octO(N, .24), radiant: N => octO(N, .17),
   pear: N => pearO(N), marquise: N => marqO(N), heart: N => heartO(N), hexagon: N => regO(6, N), trillion: N => regO(3, N, .1),
+  dutchmarq: N => hexNavetteO(N), kite: N => kiteO(N), shield: N => shieldO(N), lozenge: N => lozengeO(N),
+  octagon: N => octO(N, .3), baguette: N => polyO([[1, 1], [-1, 1], [-1, -1], [1, -1]], N), bullet: N => bulletO(N),
   trapezoid: N => polyO([[-1, -1], [1, -.62], [1, .62], [-1, 1]], N), baguette: N => polyO([[-1, -1], [1, -1], [1, 1], [-1, 1]], N), halfmoon: N => halfmoonO(N),
 };
 const SIDE_META = { round: { ratio: 1, facets: 'brilliant' }, pear: { ratio: 1.5, facets: 'brilliant' }, trapezoid: { ratio: .62, facets: 'step' }, baguette: { ratio: .55, facets: 'step' }, halfmoon: { ratio: .6, facets: 'step' }, trillion: { ratio: 1, facets: 'brilliant' } };
 const outlineCache = new Map();
 function outline(id, N) { const k = id + ':' + N; if (!outlineCache.has(k)) outlineCache.set(k, normalizeOutline(OUTLINE_FN[id](N))); return outlineCache.get(k); }
-const facetN = id => (SHAPE[id]?.poly || id in { trapezoid: 1, baguette: 1, halfmoon: 1 }) ? 24 : (id === 'heart' ? 28 : 16);
 
 // resample a closed outline to M points by arc length; returns [[x,z],...]
 function resample(pts, M) {
@@ -99,8 +106,12 @@ function ringPts(O, s, y, off, L, W) {
   }
   return out;
 }
-function gemGeometry(shapeId, L, W, D, facets, cutStyle) {
-  const O = outline(shapeId, facetN(shapeId)), n = O.length, tris = [];
+// Builds a faceted gem from a cut program: how many pavilion mains, how many rows of
+// facets on the crown and pavilion, table size, and the crown/pavilion proportions.
+// Alternating row offsets are what produce the star / upper-girdle / lower-half facets.
+function gemGeometry(shapeId, L, W, D, facets, program) {
+  const pr = program, divs = Math.max(6, Math.round(pr.mains * 2));
+  const O = outline(shapeId, SHAPE[shapeId]?.poly || facets === 'step' ? Math.max(divs, 24) : divs), n = O.length, tris = [];
   const push = (a, b, c) => tris.push(a, b, c);
   const connect = (A, B) => { // A lower ring, B upper ring
     for (let i = 0; i < n; i++) {
@@ -117,45 +128,87 @@ function gemGeometry(shapeId, L, W, D, facets, cutStyle) {
     const faces = THREE.ShapeUtils.triangulateShape(v2, []);
     for (const [a, b, c] of faces) {
       const pa = R.p[a], pb = R.p[b], pc = R.p[c];
-      const ny = (pb[0] - pa[0]) * (pc[2] - pa[2]) - (pb[2] - pa[2]) * (pc[0] - pa[0]); // sign of y-normal (x,z plane)
-      const ok = up ? ny < 0 : ny > 0; // derived from cross product orientation in xz
-      if (ok) push(pa, pb, pc); else push(pa, pc, pb);
+      const ny = (pb[0] - pa[0]) * (pc[2] - pa[2]) - (pb[2] - pa[2]) * (pc[0] - pa[0]);
+      if (up ? ny < 0 : ny > 0) push(pa, pb, pc); else push(pa, pc, pb);
     }
   };
-  const mk = (s, y, off) => ({ p: ringPts(O, s, y, off, L, W), off });
-  let rings = [], crownH, girdleT, pavD;
-  if (cutStyle === 'rose') {
-    crownH = D; girdleT = D * .05; pavD = 0;
-    const g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0), c1 = mk(.86, D * .3, .5), c2 = mk(.6, D * .62, 0), c3 = mk(.28, D * .88, .5);
-    connect(g1, g0); connect(g0, c1); connect(c1, c2); connect(c2, c3); toPointAbove(c3, [0, D, 0]); cap(g1, false);
-  } else if (facets === 'step') {
-    crownH = D * .22; girdleT = D * .05; pavD = D * .73;
-    const t = mk(.62, crownH, 0), c1 = mk(.8, crownH * .62, 0), c2 = mk(.93, crownH * .28, 0), g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0);
-    const p1 = mk(.86, -girdleT - pavD * .28, 0), p2 = mk(.62, -girdleT - pavD * .6, 0), p3 = mk(.34, -girdleT - pavD * .86, 0), k = mk(.07, -girdleT - pavD, 0);
-    cap(t, true); connect(c1, t); connect(c2, c1); connect(g0, c2); connect(g1, g0); connect(p1, g1); connect(p2, p1); connect(p3, p2); connect(k, p3); cap(k, false);
-  } else if (cutStyle === 'oldeuro') {
-    crownH = D * .32; girdleT = D * .06; pavD = D * .62;
-    const t = mk(.45, crownH, 0), c1 = mk(.8, crownH * .5, .5), g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0), p1 = mk(.5, -girdleT - pavD * .5, .5), k = mk(.08, -girdleT - pavD, 0);
-    cap(t, true); connect(c1, t); connect(g0, c1); connect(g1, g0); connect(p1, g1); connect(k, p1); cap(k, false);
-  } else {
-    crownH = D * .24; girdleT = D * .06; pavD = D * .70;
-    const t = mk(.58, crownH, 0), c1 = mk(.84, crownH * .45, .5), g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0), p1 = mk(.56, -girdleT - pavD * .5, .5);
-    cap(t, true); connect(c1, t); connect(g0, c1); connect(g1, g0); connect(p1, g1); toPointBelow(p1, [0, -girdleT - pavD, 0]);
+  const mk = (sc, y, off) => ({ p: ringPts(O, sc, y, off, L, W), off });
+  const stepped = facets === 'step' || pr.step;
+  const girdleT = D * (pr.girdle ?? .06);
+  const crownH = D * pr.crownFrac, pavD = D * pr.pavFrac;
+
+  if (pr.flatBack) {                                  // rose cut: domed crown, no pavilion
+    const g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0);
+    connect(g1, g0);
+    let prev = g0;
+    const rows = Math.max(2, pr.crownRows);
+    for (let i = 1; i <= rows; i++) {
+      const u = i / (rows + 1), ring = mk(1 - (pr.smooth ? 1 : .78) * u * u, crownH * Math.sin(u * Math.PI / 2), stepped || pr.smooth ? 0 : (i % 2 ? .5 : 0));
+      connect(prev, ring); prev = ring;
+    }
+    toPointAbove(prev, [0, crownH, 0]); cap(g1, false);
+    return finish(tris, crownH, girdleT, 0, pr.smooth);
   }
+
+  // ----- crown: table, then crownRows of facets down to the girdle -----
+  let prev;
+  if (pr.table > .03) { const table = mk(pr.table, crownH, 0); cap(table, true); prev = table; }
+  else { prev = null; }
+  for (let i = pr.crownRows; i >= 1; i--) {
+    const u = i / (pr.crownRows + 1);                 // 1 near the table, 0 at the girdle
+    const sc = pr.table + (1 - pr.table) * (1 - u) ** (stepped ? 1 : .8);
+    const ring = mk(sc, crownH * u, stepped ? 0 : (i % 2 ? .5 : 0));
+    if (prev) connect(ring, prev); else toPointAbove(ring, [0, crownH * 1.25, 0]);
+    prev = ring;
+  }
+  const g0 = mk(1, 0, 0), g1 = mk(1, -girdleT, 0);
+  if (prev) connect(g0, prev); else toPointAbove(g0, [0, crownH, 0]);
+  connect(g1, g0);
+
+  // ----- pavilion: pavRows of facets down to the culet -----
+  prev = g1;
+  const culet = pr.culet ?? 0;
+  for (let i = 1; i <= pr.pavRows; i++) {
+    const u = i / (pr.pavRows + (culet ? 0 : 1));     // fraction of the way to the culet
+    const sc = 1 - (1 - Math.max(culet, .06)) * u ** (stepped ? 1 : 1.15);
+    const ring = mk(sc, -girdleT - pavD * u, stepped ? 0 : (i % 2 ? .5 : 0));
+    connect(ring, prev); prev = ring;
+  }
+  if (culet > .02) { const k = mk(culet, -girdleT - pavD, 0); connect(k, prev); cap(k, false); }
+  else toPointBelow(prev, [0, -girdleT - pavD, 0]);
+  return finish(tris, crownH, girdleT, pavD, pr.smooth);
+}
+function finish(tris, crownH, girdleT, pavD, smooth) {
   const arr = new Float32Array(tris.length * 3);
   for (let i = 0; i < tris.length; i++) { arr[i * 3] = tris[i][0]; arr[i * 3 + 1] = tris[i][1]; arr[i * 3 + 2] = tris[i][2]; }
   const geo = new THREE.BufferGeometry();
   geo.setAttribute('position', new THREE.BufferAttribute(arr, 3));
+  if (smooth) { const merged = mergeClose(geo); geo.dispose(); merged.computeVertexNormals(); return { geo: merged, crownH, girdleT, pavD }; }
   geo.computeVertexNormals();
   return { geo, crownH, girdleT, pavD };
 }
 const gemCache = new Map();
-function gem(shapeId, L, W, D, facets, cutStyle) {
-  const k = [shapeId, L.toFixed(2), W.toFixed(2), D.toFixed(2), facets, cutStyle].join('|');
+function gem(shapeId, L, W, D, facets, programId) {
+  const pr = cutProgram(programId, facets);
+  const k = [shapeId, L.toFixed(2), W.toFixed(2), D.toFixed(2), facets, pr.id].join('|');
   let v = gemCache.get(k);
   if (v) { gemCache.delete(k); gemCache.set(k, v); return v; }
   if (gemCache.size > 40) { let n = 0; for (const [kk, vv] of gemCache) { vv.geo.dispose(); gemCache.delete(kk); if (++n >= 15) break; } }
-  v = gemGeometry(shapeId, L, W, D, facets, cutStyle); gemCache.set(k, v); return v;
+  v = gemGeometry(shapeId, L, W, D, facets, pr); gemCache.set(k, v); return v;
+}
+
+// welds coincident vertices so a cabochon shades as a smooth dome rather than facets
+function mergeClose(geo) {
+  const pos = geo.getAttribute('position'), map = new Map(), verts = [], idx = [];
+  for (let i = 0; i < pos.count; i++) {
+    const k = [pos.getX(i), pos.getY(i), pos.getZ(i)].map(v => Math.round(v * 2000)).join(',');
+    let j = map.get(k);
+    if (j === undefined) { j = verts.length / 3; map.set(k, j); verts.push(pos.getX(i), pos.getY(i), pos.getZ(i)); }
+    idx.push(j);
+  }
+  const out = new THREE.BufferGeometry();
+  out.setAttribute('position', new THREE.BufferAttribute(new Float32Array(verts), 3));
+  out.setIndex(idx); return out;
 }
 
 // ---------- metal walls (bezel rims, halo beds): inner/outer closed paths, top/bottom y ----------
@@ -587,7 +640,7 @@ function buildRing(s) {
   // ----- three-stone side stones -----
   if (s.sides.style === 'three') {
     const meta = SIDE_META[s.sides.sideShape], Ws = W * s.sides.sideSize, Ls = Ws * meta.ratio, Ds = Ws * .62;
-    const parts = gem(s.sides.sideShape, Ls, Ws, Ds, meta.facets, 'brilliant'), sp = densePath(s.sides.sideShape, Ls, Ws);
+    const parts = gem(s.sides.sideShape, Ls, Ws, Ds, meta.facets, 'brilliant57'), sp = densePath(s.sides.sideShape, Ls, Ws);
     const sMat = s.sides.accent === 'diamond' ? gemMat(GEM[st.type === 'natural' || st.type === 'lab' ? st.type : 'lab'], Ws, Ds) : gemMat({ id: 'acc' + s.sides.accent, hex: ACCENT_HEX[s.sides.accent], ior: 1.77, disp: .08 }, Ws, Ds);
     const pr = clamp(.06 * Ws, .28, .5);
     for (const sgn of [1, -1]) {
@@ -608,13 +661,13 @@ function buildRing(s) {
   // ----- hidden (peekaboo) gem under the head -----
   if (s.details.hidden !== 'none') {
     const hex = HIDDEN_GEMS.find(h => h.id === s.details.hidden).hex, sz = clamp(.28 * W, 1.4, 2.4);
-    const m = new THREE.Mesh(gem('round', sz, sz, sz * .6, 'brilliant', 'brilliant').geo, meleeMat(hex, s.details.hidden === 'diamond')); m.userData.keepGeo = true;
+    const m = new THREE.Mesh(gem('round', sz, sz, sz * .6, 'brilliant', 'brilliant57').geo, meleeMat(hex, s.details.hidden === 'diamond')); m.userData.keepGeo = true;
     m.position.set(0, yG - girdleT - pavD * .55, Math.max(1.1, extZ / 2 * .5)); m.rotation.x = Math.PI / 2; G.add(m);
     const seat = new THREE.Mesh(new THREE.CylinderGeometry(sz * .55, sz * .55, .5, 12), headMat); seat.position.copy(m.position); seat.position.z -= .3; seat.rotation.x = Math.PI / 2; G.add(seat);
   }
 
   // ----- flush melee instances -----
-  const meleeGeo = gem('round', 1, 1, .62, 'brilliant', 'brilliant').geo;
+  const meleeGeo = gem('round', 1, 1, .62, 'brilliant', 'melee').geo;
   const flush = (list, mat) => { if (!list.length) return; const inst = new THREE.InstancedMesh(meleeGeo, mat, list.length); list.forEach((m, i) => inst.setMatrixAt(i, m)); inst.userData.keepGeo = true; inst.castShadow = true; G.add(inst); };
   stoneGroup.updateMatrix();
   flush(melee.diamond, meleeMat(ACCENT_HEX.diamond, true));

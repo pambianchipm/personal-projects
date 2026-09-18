@@ -46,11 +46,24 @@ function notes(s) {
   if (st.type === 'lab' && st.carat >= 3) out.push({ slot: 'size', level: 'ok', text: 'Lab-grown prices flatten above 3 ct. Going bigger costs little per carat.' });
   if (s.metal.id === 'pt' && s.band.width < 2) out.push({ slot: 'band', level: 'info', text: 'Platinum under 2 mm bends more easily than gold. Most jewelers recommend 2 mm+ in platinum.' });
   if (st.orient === 'ew' && sh.elong) out.push({ slot: 'shape', level: 'ok', text: 'East-west: the stone lies across the finger. Popular for marquise, oval and emerald cuts.' });
+  if (sh.note) out.push({ slot: 'shape', level: 'info', text: sh.note });
+  const prog = cutProgram(st.cutStyle, sh.facets);
+  if (prog.facets >= 81) out.push({ slot: 'shape', level: 'info', text: `More facets is not the same as more sparkle. Above about 80, each facet gets small enough that the big high-contrast flashes break up into a finer glitter, and proprietary cuts resell at a discount. Worth it if you like the look, not as an upgrade.` });
+  if (prog.culet >= .05) out.push({ slot: 'shape', level: 'ok', text: 'An open culet shows as a small circle through the table. On antique cuts that is correct, not a flaw.' });
+  if (prog.flatBack) out.push({ slot: 'head', level: 'info', text: 'A flat-backed stone sits very low. Bezels and low baskets suit it; a tall cathedral head has nothing to grip.' });
   return out;
 }
 
 // ---------- tiny SVG glyphs ----------
 const SVG = (inner, vb = '0 0 40 40') => `<svg viewBox="${vb}" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true">${inner}</svg>`;
+function cutGlyph(p) {
+  const n = Math.max(6, Math.min(18, p.mains)), c = 20;
+  if (p.flatBack) return SVG(`<polygon points="${Array.from({ length: n }, (_, i) => { const a = i / n * 2 * Math.PI; return `${(c + 14 * Math.cos(a)).toFixed(1)},${(c + 14 * Math.sin(a)).toFixed(1)}`; }).join(' ')}"/>${Array.from({ length: n }, (_, i) => { const a = i / n * 2 * Math.PI; return `<line x1="${c}" y1="${c}" x2="${(c + 14 * Math.cos(a)).toFixed(1)}" y2="${(c + 14 * Math.sin(a)).toFixed(1)}" opacity=".55"/>`; }).join('')}`);
+  const rings = [14, p.table ? 14 - (14 - 14 * p.table) * .55 : 7, 14 * (p.table || .5)];
+  const ring = r => `<polygon points="${Array.from({ length: n }, (_, i) => { const a = (i + (r === rings[1] ? .5 : 0)) / n * 2 * Math.PI; return `${(c + r * Math.cos(a)).toFixed(1)},${(c + r * Math.sin(a)).toFixed(1)}`; }).join(' ')}"/>`;
+  const spokes = Array.from({ length: n }, (_, i) => { const a = i / n * 2 * Math.PI; return `<line x1="${(c + rings[2] * Math.cos(a)).toFixed(1)}" y1="${(c + rings[2] * Math.sin(a)).toFixed(1)}" x2="${(c + 14 * Math.cos(a)).toFixed(1)}" y2="${(c + 14 * Math.sin(a)).toFixed(1)}" opacity=".5"/>`; }).join('');
+  return SVG(ring(rings[0]) + (p.step ? ring(rings[1]) : '') + ring(rings[2]) + (p.step ? '' : spokes) + (p.culet > .05 ? `<circle cx="${c}" cy="${c}" r="2" opacity=".6"/>` : ''));
+}
 function shapeSVG(id, ratio = 1, size = 40) {
   const pts = outline(id, 64); const r = ratio || 1, sx = Math.min(1, r) * 15, sz = Math.min(1, 1 / r) * 15, c = size / 2;
   const P = pts.map(([x, z]) => `${(c + x * sx).toFixed(1)},${(c + z * sz).toFixed(1)}`).join(' ');
@@ -105,7 +118,7 @@ const glyph = k => GLYPH[k] || GLYPH.none;
 // ---------- slot rail ----------
 const SLOTS = [
   { id: 'stone', label: 'Stone', title: 'Center stone', desc: 'What the ring is built around. Diamond, lab diamond, or any gem you love.', value: s => GEM[s.stone.type].label + (GEM[s.stone.type].origins.length > 1 && s.stone.type !== 'natural' && s.stone.type !== 'lab' ? (s.stone.origin === 'lab' ? ' (lab)' : '') : ''), icon: s => swatch(GEM[s.stone.type].hex, true) },
-  { id: 'shape', label: 'Shape', title: 'Shape & cut', desc: 'The outline of the stone, its proportions and how it is faceted.', value: s => `${SHAPE[s.stone.shape].label}${SHAPE[s.stone.shape].elong ? ` · ${s.stone.ratio.toFixed(2)}:1` : ''}${s.stone.orient === 'ew' && SHAPE[s.stone.shape].elong ? ' · E-W' : ''}`, icon: s => shapeSVG(s.stone.shape, s.stone.ratio) },
+  { id: 'shape', label: 'Shape', title: 'Shape & cut', desc: 'The outline of the stone, its proportions and how it is faceted.', value: s => `${SHAPE[s.stone.shape].label} · ${cutProgram(s.stone.cutStyle, SHAPE[s.stone.shape].facets).facets} facets${s.stone.orient === 'ew' && SHAPE[s.stone.shape].elong ? ' · E-W' : ''}`, icon: s => shapeSVG(s.stone.shape, s.stone.ratio) },
   { id: 'size', label: 'Size & grade', title: 'Size & grade', desc: 'Carat weight sets the millimetre size. Grades drive the price more than the look.', value: s => { const d = stoneDims(s.stone); return `${s.stone.carat.toFixed(2)} ct · ${d.L.toFixed(1)}×${d.W.toFixed(1)} mm`; }, icon: s => SVG(`<circle cx="20" cy="20" r="${(6 + Math.min(10, Math.cbrt(s.stone.carat) * 6)).toFixed(1)}"/><circle cx="20" cy="20" r="${(3 + Math.min(10, Math.cbrt(s.stone.carat) * 6) * .55).toFixed(1)}" opacity=".6"/>`) },
   { id: 'head', label: 'Setting', title: 'Setting', desc: 'How the stone is held and how high it sits.', value: s => `${HEADS.find(h => h.id === s.head.style).label} · ${PROFILES.find(p => p.id === s.head.profile).label.toLowerCase()}`, icon: s => glyph(s.head.style) },
   { id: 'halo', label: 'Halo', title: 'Halo', desc: 'A frame of small stones around, or hidden under, the center.', value: s => HALOS.find(h => h.id === s.halo.style).label + (s.halo.style !== 'none' && s.halo.accent !== 'diamond' ? ` · ${ACCENTS.find(a => a.id === s.halo.accent).label.toLowerCase()}` : ''), icon: s => glyph(s.halo.style === 'double' ? 'halo_double' : s.halo.style) },
@@ -187,7 +200,11 @@ function renderTray() {
       add('Proportions', range({ id: 'ratio', label: 'Length to width', min: sh.ratio[0], max: sh.ratio[1], step: .01, value: st.ratio, fmt: v => `${v.toFixed(2)} : 1`, sub: v => { const d = stoneDims({ ...st, ratio: v }); return `${d.L.toFixed(1)} × ${d.W.toFixed(1)} mm · ${v < (sh.ratio[0] + sh.ratio[1]) / 2 - .05 ? 'fuller, rounder' : v > (sh.ratio[0] + sh.ratio[1]) / 2 + .05 ? 'longer, more finger coverage' : 'classic proportions'}`; }, set: v => { st.ratio = v; } }), 'The face of the stone');
       add('Orientation', tiles([{ id: 'ns', label: 'North–south' }, { id: 'ew', label: 'East–west' }], it => it.id === st.orient, it => { st.orient = it.id; }, { icon: it => glyph(it.id), cols: 2 }));
     }
-    if (['round', 'cushion', 'oval', 'pear'].includes(st.shape)) add('Cut style', tiles(CUT_STYLES, it => it.id === st.cutStyle, it => { st.cutStyle = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.stone.cutStyle = it.id; } }));
+    const progs = programsFor(st.shape);
+    add('Facet architecture', tiles(progs, it => it.id === st.cutStyle, it => { st.cutStyle = it.id; }, { icon: it => cutGlyph(it), apply: (s, it) => { s.stone.cutStyle = it.id; } }), 'How many facets, and where');
+    const cp = cutProgram(st.cutStyle, SHAPE[st.shape].facets);
+    const cd = el('div', 'note ok'); cd.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span><b>${esc(cp.label)}, ${cp.facets} facets.</b> ${esc(cp.desc)}${cp.premium > 1 ? ` Cutting this costs about ${Math.round((cp.premium - 1) * 100)}% more than a standard cut.` : ''}</span>`;
+    body.appendChild(cd);
   }
   if (currentSlot === 'size') {
     add('Carat weight', range({ id: 'carat', label: 'Carat', min: .25, max: 6, step: .01, value: st.carat, fmt: v => `${v.toFixed(2)} ct`, sub: v => { const d = stoneDims({ ...st, carat: v }); return `≈ ${d.L.toFixed(1)} × ${d.W.toFixed(1)} mm face, ${d.D.toFixed(1)} mm deep`; }, set: v => { st.carat = v; } }), 'Drag; the 3D stone resizes');
@@ -274,7 +291,7 @@ function updateEstimate() {
     <div class="big">${fmt$(e.low)}<small>to ${fmt$(e.high)}</small></div>
     <div class="mid">Midpoint ${fmt$(e.total)}. Materials at today’s metal prices plus typical custom labor; the spread is how much jewelers differ.</div>
     <div class="lines">${e.lines.map(l => `<span class="k">${esc(l.k)}<small>${esc(l.sub)}</small></span><span class="v">${fmt$(l.v)}</span>`).join('')}<span class="k tot">Estimate</span><span class="v tot">${fmt$(e.total)}</span></div>
-    <details><summary>How this is estimated</summary><p>Center stone from per-carat curves (natural: StoneAlgo Sept 2026 with the Rapaport colour × clarity grid; lab: StoneAlgo; gems: 2026 trade tiers). Metal from the band’s real volume × alloy density × Kitco spot, with casting loss and a retail multiplier. Labor from typical custom-shop line items. Option chips show the price change before you commit. Every constant lives in one table in the source and can be swapped for your own data.</p></details>`;
+    <details><summary>How this is estimated</summary><p>Center stone from per-carat curves against a colour and clarity ladder, natural and lab priced separately. Metal from the band’s real cross-section, integrated around the shank, times alloy density and today’s spot price, with casting loss and a retail multiplier. Labor from typical custom-shop line items. Option chips show the price change before you commit.</p><p>The demo’s grade ladder is a placeholder derived from a published benchmark list and has to be refitted from observed listing prices before this is used commercially. Every constant lives in one table in the source.</p></details>`;
 }
 function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 2400); }
 
@@ -283,7 +300,8 @@ function specRows(s) {
   const st = s.stone, d = stoneDims(st), g = GEM[st.type], c = stoneCounts(s, d), md = meleeFor(d.W);
   const rows = [['sec', 'Center stone'],
     ['Stone', g.label + (g.origins.length > 1 && st.type !== 'natural' && st.type !== 'lab' ? ` (${st.origin === 'lab' ? 'lab-created' : 'natural'})` : '') + (!(st.type === 'natural' || st.type === 'lab' || st.type === 'moissanite') && st.origin === 'natural' ? `, ${TIERS.find(t => t.id === (st.tier || 'fine')).label.toLowerCase()} quality` : '')],
-    ['Shape', `${SHAPE[st.shape].label}, ${CUT_STYLES.find(c => c.id === st.cutStyle).label.toLowerCase()}`],
+    ['Shape', `${SHAPE[st.shape].label}, ${cutProgram(st.cutStyle, SHAPE[st.shape].facets).label.toLowerCase()}`],
+    ['Faceting', `${cutProgram(st.cutStyle, SHAPE[st.shape].facets).facets} facets (${cutProgram(st.cutStyle, SHAPE[st.shape].facets).mains} pavilion mains)`],
     ['Size', `${st.carat.toFixed(2)} ct ≈ ${d.L.toFixed(2)} × ${d.W.toFixed(2)} × ${d.D.toFixed(2)} mm (L:W ${d.ratio.toFixed(2)})`],
     ['Orientation', st.orient === 'ew' && SHAPE[st.shape].elong ? 'East–west' : 'North–south']];
   if (st.type === 'natural' || st.type === 'lab') rows.push(['Grade', `${st.color} colour, ${st.clarity} clarity, ${CUTS.find(x => x.id === st.cut).label.toLowerCase()} cut`]);
@@ -332,7 +350,7 @@ function randomize() {
   const g = pick(GEMS.filter(x => !x.fragile || Math.random() < .3)); s.stone.type = g.id; s.stone.origin = pick(g.origins);
   const sh = pick(SHAPES); s.stone.shape = sh.id; s.stone.ratio = +lerp(sh.ratio[0], sh.ratio[1], Math.random()).toFixed(2);
   s.stone.carat = +pick([.75, 1, 1.25, 1.5, 1.8, 2, 2.5, 3]).toFixed(2); s.stone.orient = sh.elong && Math.random() < .2 ? 'ew' : 'ns';
-  s.stone.cutStyle = (sh.id === 'round' || sh.id === 'cushion') && Math.random() < .2 ? pick(['oldeuro', 'rose']) : 'brilliant';
+  s.stone.cutStyle = pick(programsFor(sh.id).concat(Array(4).fill({ id: sh.facets === 'step' ? 'step58' : 'brilliant57' }))).id;
   s.head.style = g.fragile ? pick(['bezel', 'halfbezel']) : pick(HEADS.filter(h => h.id !== 'tension' || g.hard >= 9)).id; s.head.tip = pick(PRONG_TIPS).id; s.head.profile = pick(PROFILES).id;
   s.halo.style = pick(['none', 'none', 'single', 'hidden', 'double', 'both']); s.halo.shape = pick(HALO_SHAPES).id; s.halo.accent = Math.random() < .8 ? 'diamond' : pick(ACCENTS).id;
   s.sides.style = pick(['none', 'pave', 'pave', 'channel', 'three']); s.sides.coverage = pick(COVERAGES).id; s.sides.sideShape = pick(SIDE_SHAPES).id; s.sides.sideSize = +lerp(.3, .5, Math.random()).toFixed(2); s.sides.accent = Math.random() < .85 ? 'diamond' : pick(ACCENTS).id;

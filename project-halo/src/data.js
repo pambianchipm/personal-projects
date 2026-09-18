@@ -42,14 +42,92 @@ const SHAPES = [
   { id:'heart',    label:'Heart',       ratio:[.9,1.1],     def:1.0,  k:.0059, depth:.60,  facets:'brilliant', tips:[180] },
   { id:'hexagon',  label:'Hexagon',     ratio:[1,1.4],      def:1.15, k:.0072, depth:.62,  facets:'step', poly:true, elong:true },
   { id:'trillion', label:'Trillion',    ratio:[1,1],        def:1.0,  k:.0057, depth:.50,  facets:'brilliant', poly:true, tips:[0,120,240] },
+  { id:'dutchmarq',label:'Dutch marquise',ratio:[1.7,2.2],  def:1.95, k:.0062, depth:.62,  facets:'brilliant', poly:true, elong:true, tips:[0,180],
+    note:'A modern trade name, not an antique cut. Labs grade it as a hexagonal modified brilliant: a marquise with its curved flanks straightened into six flat edges.' },
+  { id:'kite',     label:'Kite',        ratio:[1.3,2],      def:1.6,  k:.0058, depth:.58,  facets:'step', poly:true, elong:true, tips:[0] },
+  { id:'shield',   label:'Shield',      ratio:[.9,1.3],     def:1.05, k:.0060, depth:.55,  facets:'step', poly:true, tips:[0] },
+  { id:'lozenge',  label:'Lozenge',     ratio:[1.4,2.4],    def:1.8,  k:.0056, depth:.58,  facets:'step', poly:true, elong:true, tips:[0,180] },
+  { id:'octagon',  label:'Octagon',     ratio:[1,1.4],      def:1.0,  k:.0075, depth:.64,  facets:'step', poly:true, elong:true },
+  { id:'baguette', label:'Baguette',    ratio:[1.4,3],      def:2.0,  k:.0074, depth:.60,  facets:'step', poly:true, elong:true },
+  { id:'bullet',   label:'Bullet',      ratio:[1.2,1.9],    def:1.5,  k:.0068, depth:.58,  facets:'step', poly:true, elong:true, tips:[0] },
 ];
 const SHAPE = Object.fromEntries(SHAPES.map(s => [s.id, s]));
 
-const CUT_STYLES = [
-  { id:'brilliant', label:'Modern brilliant', desc:'The standard sparkle: 57–58 facets, ~57% table.' },
-  { id:'oldeuro',   label:'Old European',     desc:'Antique look: small table, tall crown, open culet. Chunky, romantic light.' },
-  { id:'rose',      label:'Rose cut',         desc:'Flat back, domed faceted top. Low profile, soft glow, less fire.' },
+// ---------- cut programs ----------
+// A cut program is the facet architecture applied to an outline: how many pavilion mains,
+// how many rows of facets on the crown and pavilion, the table size, and the proportions.
+// `facets` is the nominal count the trade quotes; the mesh approximates that architecture.
+// mains  = pavilion main facets (8 on a standard round brilliant)
+// rows   = facet rows between table and girdle / girdle and culet (alternating rows make
+//          the star, upper-girdle and lower-half facets)
+// table/crownFrac/pavFrac are fractions of width, crown height and pavilion depth.
+const CUT_PROGRAMS = [
+  { id:'brilliant57', label:'Brilliant', facets:57, family:'brilliant', mains:8, crownRows:2, pavRows:2, table:.55, crownFrac:.26, pavFrac:.70, girdle:.045, culet:0, premium:1,
+    desc:'The modern standard. 33 crown and 24 pavilion facets, crown 34.5°, pavilion 40.75°. Cut to return the most light.' },
+  { id:'eighternity81', label:'81 facet', facets:81, family:'brilliant', mains:8, crownRows:3, pavRows:3, table:.555, crownFrac:.26, pavFrac:.70, girdle:.045, culet:0, premium:1.15,
+    desc:'Sixteen extra pavilion facets and eight extra crown facets over the standard. Bucherer sells this architecture as the Eighternity.' },
+  { id:'star129', label:'129 facet', facets:129, family:'brilliant', mains:10, crownRows:3, pavRows:4, table:.56, crownFrac:.26, pavFrac:.69, girdle:.04, culet:0, premium:1.3,
+    desc:'Seventy-one extra pavilion facets. Sold as the Star129. Reviewers find the facets read as splintery below about 1.5 ct.' },
+  { id:'wempe137', label:'137 facet, hand cut', facets:137, family:'brilliant', mains:12, crownRows:4, pavRows:4, table:.56, crownFrac:.26, pavFrac:.69, girdle:.04, culet:0, premium:1.6,
+    desc:'65 crown and 72 pavilion facets. Wempe of Hamburg holds this one as the trademarked WEMPE-Cut, ground by hand over about eight hours per stone.' },
+  { id:'royal201', label:'201 facet', facets:201, family:'brilliant', mains:14, crownRows:5, pavRows:5, table:.56, crownFrac:.27, pavFrac:.68, girdle:.04, culet:0, premium:1.8,
+    desc:'About the highest facet count cut commercially. Royal Coster in Amsterdam cuts a 201. A showpiece more than a value buy.' },
+  { id:'jubilee88', label:'88 facet, no table', facets:88, family:'brilliant', mains:8, crownRows:4, pavRows:4, table:.08, crownFrac:.30, pavFrac:.68, girdle:.04, culet:0, premium:1.35,
+    desc:'No table at all. The crown facets rise to a point, which is what gives the Jubilee its kaleidoscope look.' },
+  { id:'spiritsun32', label:'32 facet radial', facets:32, family:'brilliant', mains:16, crownRows:1, pavRows:1, table:.06, crownFrac:.38, pavFrac:.60, girdle:.03, culet:0, premium:1.4,
+    desc:'Sixteen facets radiating from a point on each side, no table and no girdle facets. Bernd Munsteiner cut the original Spirit Sun.' },
+  { id:'oldeuro58', label:'Old European', facets:58, family:'brilliant', mains:8, crownRows:1, pavRows:1, table:.43, crownFrac:.31, pavFrac:.66, girdle:.055, culet:.055, premium:1,
+    desc:'Antique: table under 53%, crown angle over 40°, open culet. Big chunky flashes instead of fine sparkle.' },
+  { id:'oldmine', label:'Old mine', facets:58, family:'brilliant', mains:8, crownRows:1, pavRows:1, table:.41, crownFrac:.34, pavFrac:.64, girdle:.065, culet:.085, premium:1,
+    desc:'The cushion-shaped ancestor of the old European. Small table, very large open culet, cut for candlelight.' },
+  { id:'rose24', label:'Rose cut', facets:24, family:'brilliant', mains:6, crownRows:3, pavRows:0, table:0, crownFrac:1, pavFrac:0, girdle:.04, flatBack:true, depthK:.53, premium:.9,
+    desc:'Flat back, domed faceted top, about a third as deep as it is wide. Soft glow, no fire, sits very low.' },
+  { id:'dutchrose', label:'Dutch rose', facets:24, family:'brilliant', mains:6, crownRows:2, pavRows:0, table:0, crownFrac:1, pavFrac:0, girdle:.035, flatBack:true, depthK:.82, premium:.95,
+    desc:'The genuinely Dutch antique cut: 24 facets in two equal rows of twelve, flat back, a high pyramid about half as deep as it is wide.' },
+  { id:'portrait', label:'Portrait cut', facets:11, family:'step', mains:8, crownRows:1, pavRows:1, table:.88, crownFrac:.30, pavFrac:.60, girdle:.08, culet:.5, step:true, depthK:.2, premium:1.1,
+    desc:'A huge table and almost no depth, like a pane of glass. Worn to show the skin or an engraving underneath.' },
+  { id:'step58', label:'Step cut', facets:58, family:'step', mains:12, crownRows:3, pavRows:4, table:.64, crownFrac:.20, pavFrac:.74, girdle:.045, culet:.06, step:true, premium:1,
+    desc:'Long parallel facets running to a keel. A hall of mirrors rather than sparkle, so clarity shows.' },
+  { id:'royalasscher74', label:'74 facet step', facets:74, family:'step', mains:12, crownRows:4, pavRows:5, table:.62, crownFrac:.24, pavFrac:.72, girdle:.045, culet:.05, step:true, premium:1.25,
+    desc:'Extra step rows and a taller crown. The Royal Asscher family cuts the trademarked 74-facet version.' },
+  { id:'crisscut77', label:'77 facet crisscross', facets:77, family:'step', mains:16, crownRows:4, pavRows:5, table:.62, crownFrac:.22, pavFrac:.73, girdle:.04, culet:.05, step:true, premium:1.3,
+    desc:'Step facets crisscrossed instead of parallel, which puts sparkle into an emerald outline. Christopher Designs sells this as the Crisscut.' },
+  { id:'french13', label:'French cut', facets:13, family:'step', mains:4, crownRows:1, pavRows:1, table:.52, crownFrac:.28, pavFrac:.66, girdle:.05, culet:.06, step:true, premium:1.05,
+    desc:'A Renaissance square cut: table set on the diagonal, four big crown facets and four corner triangles. Thirteen facets in total.' },
+  { id:'context8', label:'8 facet', facets:8, family:'step', mains:4, crownRows:0, pavRows:1, table:.02, crownFrac:.42, pavFrac:.55, girdle:.02, culet:0, step:true, premium:1.45,
+    desc:'The rough octahedron polished and nothing else: four facets up, four down, no table. The Context cut.' },
+  { id:'cabochon', label:'Cabochon', facets:0, family:'brilliant', mains:20, crownRows:5, pavRows:0, table:0, crownFrac:1, pavFrac:0, girdle:.04, flatBack:true, smooth:true, depthK:.8, premium:.8,
+    desc:'Polished to a smooth dome with no facets at all. How opals and star sapphires are almost always cut.' },
+  { id:'melee', label:'Melee', facets:17, family:'brilliant', mains:6, crownRows:1, pavRows:1, table:.58, crownFrac:.24, pavFrac:.70, girdle:.06, culet:0, premium:1, hidden:true,
+    desc:'Simplified architecture used for the accent stones.' },
 ];
+const CUT_PROGRAM = Object.fromEntries(CUT_PROGRAMS.map(c => [c.id, c]));
+const LEGACY_CUTS = { brilliant:'brilliant57', oldeuro:'oldeuro58', rose:'rose24' };
+function cutProgram(id, facetFamily) {
+  const p = CUT_PROGRAM[LEGACY_CUTS[id] || id];
+  if (p) return p;
+  return facetFamily === 'step' ? CUT_PROGRAM.step58 : CUT_PROGRAM.brilliant57;
+}
+// which programs a given shape can be cut in
+function programsFor(shapeId) {
+  const sh = SHAPE[shapeId];
+  const ROUNDISH = ['round', 'oval', 'cushion'];
+  return CUT_PROGRAMS.filter(c => {
+    if (c.hidden) return false;
+    if (c.id === 'oldmine') return shapeId === 'cushion';
+    if (c.id === 'oldeuro58') return shapeId === 'round' || shapeId === 'cushion';
+    if (c.id === 'rose24' || c.id === 'dutchrose') return [...ROUNDISH, 'pear', 'hexagon', 'marquise', 'dutchmarq'].includes(shapeId);
+    if (c.id === 'cabochon') return [...ROUNDISH, 'pear', 'heart', 'hexagon', 'octagon'].includes(shapeId);
+    if (c.id === 'jubilee88') return ['cushion', 'round', 'oval'].includes(shapeId);
+    if (c.id === 'spiritsun32') return shapeId === 'round' || shapeId === 'hexagon';
+    if (c.id === 'context8' || c.id === 'french13') return ['princess', 'asscher', 'octagon', 'lozenge', 'kite'].includes(shapeId);
+    if (c.id === 'royalasscher74') return ['asscher', 'octagon', 'princess'].includes(shapeId);
+    if (c.id === 'crisscut77') return ['emerald', 'radiant', 'octagon', 'baguette'].includes(shapeId);
+    if (c.id === 'portrait') return sh.poly || ROUNDISH.includes(shapeId);
+    // the high-facet brilliant programs are cut on brilliant outlines
+    return c.family === (sh.facets === 'step' ? 'step' : 'brilliant');
+  });
+}
 
 const HEADS = [
   { id:'prong4',   label:'4 prong',       desc:'Classic. Shows the most stone; four points of contact.', labor:90 },
@@ -181,7 +259,7 @@ const CUTS     = [{id:'EX',label:'Ideal / Excellent'},{id:'VG',label:'Very good'
 
 // ---------- default design & presets ----------
 const DEFAULT = {
-  stone:  { type:'lab', origin:'lab', tier:'fine', shape:'oval', carat:1.5, ratio:1.38, cutStyle:'brilliant', orient:'ns', color:'G', clarity:'VS1', cut:'EX' },
+  stone:  { type:'lab', origin:'lab', tier:'fine', shape:'oval', carat:1.5, ratio:1.38, cutStyle:'brilliant57', orient:'ns', color:'G', clarity:'VS1', cut:'EX' },
   head:   { style:'prong4', tip:'claw', profile:'standard' },
   halo:   { style:'none', shape:'match', accent:'diamond' },
   sides:  { style:'none', coverage:'half', sideShape:'pear', sideSize:.38, accent:'diamond' },
@@ -196,7 +274,7 @@ const PRESETS = [
   { id:'ovalpave', label:'Oval pavé', patch:{ stone:{type:'lab',origin:'lab',shape:'oval',carat:2.0,ratio:1.4}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'hidden'}, sides:{style:'pave',coverage:'half',accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.7,thickness:1.5,shoulder:'taper',shoulderAmt:.45,reach:75}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
   { id:'emeraldbezel', label:'Emerald bezel', patch:{ stone:{type:'lab',origin:'lab',shape:'emerald',carat:1.75,ratio:1.45}, head:{style:'bezel',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'flat',width:2.4,thickness:1.7,shoulder:'flare',shoulderAmt:.4,euro:true}, metal:{id:'18y',head:'same',finish:'satin'}, details:{milgrain:false,hidden:'none'} } },
   { id:'threestone', label:'Pear three-stone', patch:{ stone:{type:'natural',origin:'natural',shape:'oval',carat:1.5,ratio:1.35}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'three',sideShape:'pear',sideSize:.4,accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.9}, metal:{id:'14r',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
-  { id:'vintage', label:'Vintage halo', patch:{ stone:{type:'natural',origin:'natural',shape:'cushion',carat:1.2,ratio:1.05,cutStyle:'oldeuro'}, head:{style:'prong4',tip:'round',profile:'standard'}, halo:{style:'single',shape:'match'}, sides:{style:'pave',coverage:'half'}, band:{style:'plain',profile:'dome',width:2.0,thickness:1.6,engrave:'florentine'}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:true,hidden:'sapphire'} } },
+  { id:'vintage', label:'Vintage halo', patch:{ stone:{type:'natural',origin:'natural',shape:'cushion',carat:1.2,ratio:1.05,cutStyle:'oldeuro58'}, head:{style:'prong4',tip:'round',profile:'standard'}, halo:{style:'single',shape:'match'}, sides:{style:'pave',coverage:'half'}, band:{style:'plain',profile:'dome',width:2.0,thickness:1.6,engrave:'florentine'}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:true,hidden:'sapphire'} } },
   { id:'teal', label:'Teal sapphire', patch:{ stone:{type:'tealSapph',origin:'natural',shape:'hexagon',carat:1.8,ratio:1.15}, head:{style:'double',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'split',profile:'comfort',width:1.9,thickness:1.5,engrave:'vine'}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
   { id:'toi', label:'Marquise east-west', patch:{ stone:{type:'lab',origin:'lab',shape:'marquise',carat:1.5,ratio:2.0,orient:'ew'}, head:{style:'prong4',tip:'claw',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'knife',width:1.8}, metal:{id:'18y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
   { id:'cathedral', label:'Cathedral twist', patch:{ stone:{type:'natural',origin:'natural',shape:'round',carat:1.25,ratio:1}, head:{style:'prong6',tip:'round',profile:'cathedral'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'twist',profile:'comfort',width:2.1,thickness:1.6,cathRise:1.1}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
@@ -212,8 +290,9 @@ function stoneDims(st) {
   const sh = SHAPE[st.shape];
   const ratio = sh.ratio[0] === sh.ratio[1] ? 1 : clamp(st.ratio, sh.ratio[0], sh.ratio[1]);
   let depth = sh.depth, k = sh.k;
-  if (st.cutStyle === 'oldeuro') { depth *= 1.1; }
-  if (st.cutStyle === 'rose') { depth *= .45; k *= 1.05; }
+  const pr = cutProgram(st.cutStyle, sh.facets);
+  if (pr.depthK) { depth *= pr.depthK; k *= 1.05; }
+  else if (pr.culet >= .08) { depth *= 1.08; }
   // ct = L*W*D*k = ratio*W * W * depth*W * k
   const W = Math.cbrt(st.carat / (ratio * depth * k));
   return { L: W * ratio, W, D: W * depth, ratio };
@@ -259,19 +338,26 @@ const PRICE = {
   natural: {
     // $/ct, round, G/VS1/EX, online-marketplace level. Duplicate x = price cliff.
     curve: [[.2,2000],[.29,2050],[.3,2050],[.49,2200],[.5,2250],[.69,2450],[.7,2500],[.89,3000],[.9,3550],[.99,3750],[1,4300],[1.49,4950],[1.5,5800],[1.99,7300],[2,9400],[2.49,10900],[2.5,11900],[2.99,12300],[3,13000],[3.99,15600],[4,17000],[4.99,19600],[5,21600],[6,24500],[8,30000]],
-    shape: { round:1, oval:.82, cushion:.68, princess:.65, emerald:.70, asscher:.62, radiant:.70, pear:.88, marquise:.86, heart:.63, hexagon:.6, trillion:.6 },
-    // Rapaport 1.00–1.49 ct grid (Jan 2026) normalised to G/VS1 = 1.00; columns FL IF VVS1 VVS2 VS1 VS2 SI1 SI2 I1
+    shape: { round:1, oval:.82, cushion:.68, princess:.65, emerald:.70, asscher:.62, radiant:.70, pear:.88, marquise:.86, heart:.63, hexagon:.60, trillion:.60,
+             dutchmarq:.78, kite:.62, shield:.62, lozenge:.60, octagon:.64, baguette:.62, bullet:.60 },
+    // PLACEHOLDER GRADE LADDER — replace before any commercial use.
+    // These ratios were derived from a published benchmark price list. In Rapaport v. Nivoda the
+    // Second Circuit revived Rapaport's copyright claim on 2026-09-04, reasoning that benchmark
+    // prices are expert opinion about hypothetical stones rather than observed facts, and the
+    // RapNet licence separately bans derived data in a commercial product. Refit this grid from
+    // observed listing prices (see docs/pricing-data-pipeline.md). Columns FL IF VVS1 VVS2 VS1 VS2 SI1 SI2 I1
     grid: { D:[2.53,2.41,1.92,1.67,1.41,1.24,.95,.80,.58], E:[1.92,1.83,1.66,1.36,1.24,1.10,.92,.77,.55], F:[1.62,1.55,1.40,1.24,1.14,1.00,.88,.73,.53], G:[1.34,1.28,1.22,1.10,1.00,.92,.83,.69,.50], H:[1.08,1.03,1.01,.94,.88,.84,.76,.65,.47], I:[.92,.88,.86,.80,.78,.74,.70,.60,.44], J:[.76,.72,.70,.69,.66,.64,.59,.55,.40], K:[.62,.59,.57,.55,.52,.50,.48,.45,.33] },
     cut: { EX:1, VG:.88, G:.77 },
   },
   lab: {
     curve: [[.3,800],[.5,690],[.75,610],[1,560],[1.5,560],[2,620],[2.5,610],[3,660],[4,580],[5,500],[6,470],[10,420]],
-    shape: { round:1, oval:1.05, cushion:.95, princess:.95, emerald:.95, asscher:.95, radiant:1, pear:1, marquise:1, heart:1, hexagon:.95, trillion:.95 },
+    shape: { round:1, oval:1.05, cushion:.95, princess:.95, emerald:.95, asscher:.95, radiant:1, pear:1, marquise:1, heart:1, hexagon:.95, trillion:.95,
+             dutchmarq:1, kite:.95, shield:.95, lozenge:.95, octagon:.95, baguette:.9, bullet:.9 },
     color: { D:1.15, E:1.1, F:1.05, G:1, H:.95, I:.9, J:.85, K:.8 },
     clarity: { FL:1.25, IF:1.2, VVS1:1.12, VVS2:1.06, VS1:1, VS2:.95, SI1:.88, SI2:.8, I1:.7 },
     cut: { EX:1, VG:.92, G:.85 },
   },
-  moissanite: { perCt: 620, shape: { round:1, cushion:1, oval:1.05, princess:1.05, emerald:1.1, asscher:1.1, pear:1.05, marquise:1.05, radiant:1.05, heart:1.05, hexagon:1.05, trillion:1.05 } }, // Charles & Colvard Forever One DEF
+  moissanite: { perCt: 620, shape: { round:1, cushion:1, oval:1.05, princess:1.05, emerald:1.1, asscher:1.1, pear:1.05, marquise:1.05, radiant:1.05, heart:1.05, hexagon:1.05, trillion:1.05, dutchmarq:1.1, kite:1.1, shield:1.1, lozenge:1.1, octagon:1.1, baguette:1.05, bullet:1.1 } }, // Charles & Colvard Forever One DEF
   // $/ct by tier [commercial, good, fine, extra fine] at carat buckets <1, 1–2, 2–3, 3+  (RubyGlint 2026, Natural Sapphire Co, IGS, Chatham)
   gems: {
     whiteSapph:  { natural:{ 0.5:[80,150,300,500], 1:[120,250,450,700], 2:[150,300,600,900], 3:[200,400,700,1000] }, lab:{ 0.5:[30,50,120,250], 1:[30,50,120,250], 2:[30,50,120,250], 3:[30,50,120,250] } },
@@ -291,7 +377,8 @@ const PRICE = {
   },
   // fancy colour diamonds: multiplier on the white-diamond price at the same carat (est from Leibish / Astteria / Diamonds Pro ranges)
   fancy: { yellowDia:{ natural:1.0, lab:1.3 }, pinkDia:{ natural:10, lab:1.8 } },
-  gemShape: { round:1.05, oval:1, cushion:1, emerald:1, pear:.97, marquise:.95, princess:.95, radiant:1, asscher:1, heart:.95, hexagon:.97, trillion:.95 },
+  gemShape: { round:1.05, oval:1, cushion:1, emerald:1, pear:.97, marquise:.95, princess:.95, radiant:1, asscher:1, heart:.95, hexagon:.97, trillion:.95,
+              dutchmarq:1, kite:.95, shield:.95, lozenge:.95, octagon:.98, baguette:.92, bullet:.95 },
   melee: { natural:11, lab:3, colored:4.5, paveLabor:12, channelLabor:15 },   // per ~1.3 mm stone, retail (wholesale × 2.5)
   metal: { loss:.10, retailMult:2.0, headGrams:{ prong4:.6, prong6:.8, double:.7, compass:.6, trellis:.7, bezel:1.0, halfbezel:.7, tension:.3 }, extraGrams:{ cathedral:.4, single:.8, double:1.4, hidden:.3, both:1.1, three:.6 } },
   labor: { cad:150, castGold:200, castPt:500, setProng:100, setBezel:175, setTension:250, polish:40, rhodium:50, haloAssembly:250, hiddenHalo:150, threeStone:200, engraveMachine:50, engraveHand:150, milgrain:100, twoTone:120, satin:35, hammered:70, hiddenGem:90 },
@@ -304,6 +391,8 @@ function curveAt(curve, ct) {
   return curve[curve.length - 1][1];
 }
 const tierIndex = { commercial:0, good:1, fine:2, extra:3 };
+// every shape multiplier lookup goes through this, so an unlisted shape degrades instead of poisoning the total
+const shapeMult = (table, shape, fallback = .75) => table[shape] ?? fallback;
 const TIERS = [{id:'commercial',label:'Commercial'},{id:'good',label:'Good'},{id:'fine',label:'Fine'},{id:'extra',label:'Extra fine'}];
 
 function centerStonePrice(st) {
@@ -312,18 +401,18 @@ function centerStonePrice(st) {
   if (isDia) {
     if (st.type === 'natural') {
       const t = PRICE.natural, g = t.grid[st.color][CLARITY.indexOf(st.clarity)];
-      return ct * curveAt(t.curve, ct) * g * t.shape[sh] * t.cut[st.cut] * (st.cutStyle === 'brilliant' ? 1 : .9);
+      return ct * curveAt(t.curve, ct) * g * shapeMult(t.shape, sh) * t.cut[st.cut] * cutProgram(st.cutStyle, SHAPE[sh].facets).premium;
     }
     const t = PRICE.lab;
-    return ct * curveAt(t.curve, ct) * t.color[st.color] * t.clarity[st.clarity] * t.shape[sh] * t.cut[st.cut] * (st.cutStyle === 'brilliant' ? 1 : .9);
+    return ct * curveAt(t.curve, ct) * t.color[st.color] * t.clarity[st.clarity] * shapeMult(t.shape, sh, .95) * t.cut[st.cut] * cutProgram(st.cutStyle, SHAPE[sh].facets).premium;
   }
-  if (st.type === 'moissanite') return ct * PRICE.moissanite.perCt * PRICE.moissanite.shape[sh];
+  if (st.type === 'moissanite') return ct * PRICE.moissanite.perCt * shapeMult(PRICE.moissanite.shape, sh, 1.05);
   if (st.type === 'yellowDia' || st.type === 'pinkDia') {
-    const base = st.origin === 'lab' ? ct * curveAt(PRICE.lab.curve, ct) * PRICE.lab.shape[sh] : ct * curveAt(PRICE.natural.curve, ct) * PRICE.natural.shape[sh];
+    const base = st.origin === 'lab' ? ct * curveAt(PRICE.lab.curve, ct) * shapeMult(PRICE.lab.shape, sh, .95) : ct * curveAt(PRICE.natural.curve, ct) * shapeMult(PRICE.natural.shape, sh);
     return base * PRICE.fancy[st.type][st.origin];
   }
   const g = PRICE.gems[st.type], byOrigin = g[st.origin] || g.natural, bucket = ct < 1 ? .5 : ct < 2 ? 1 : ct < 3 ? 2 : 3;
-  return ct * byOrigin[bucket][tierIndex[st.tier || 'fine']] * PRICE.gemShape[sh];
+  return ct * byOrigin[bucket][tierIndex[st.tier || 'fine']] * shapeMult(PRICE.gemShape, sh, .97);
 }
 
 function estimate(s) {
