@@ -1,0 +1,72 @@
+<div id="app">
+  <header id="top">
+    <div class="brand">
+      <h1>Project <em>Halo</em></h1>
+      <span class="tag">Ring builder · demo</span>
+    </div>
+    <div class="grow"></div>
+    <button class="btn ghost" id="btn-random" title="Surprise me">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"/><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"/><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg>
+      <span class="lbl">Surprise me</span>
+    </button>
+    <button class="btn primary" id="btn-spec">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+      <span class="lbl">Send to a jeweler</span>
+    </button>
+  </header>
+
+  <aside id="slots" aria-label="Ring parts">
+    <div class="rail-head">
+      <div class="eyebrow">Start from a look</div>
+    </div>
+    <div class="looks" id="looks"></div>
+    <div class="slot-list" id="slot-list" role="tablist" aria-orientation="vertical"></div>
+    <div class="rail-foot">
+      <button class="btn" id="btn-reset">Reset</button>
+      <button class="btn" id="btn-theme" title="Toggle light / dark">Theme</button>
+    </div>
+  </aside>
+
+  <section id="tray" aria-live="polite">
+    <div class="tray-head">
+      <h2 id="tray-title">Center stone</h2>
+      <p id="tray-desc"></p>
+    </div>
+    <div class="tray-body" id="tray-body"></div>
+  </section>
+
+  <main id="stage">
+    <canvas id="gl" aria-label="3D ring preview"></canvas>
+    <div class="stage-ui">
+      <div class="views" id="views" role="group" aria-label="Camera views">
+        <button data-view="hero" aria-pressed="true">¾ view</button>
+        <button data-view="top" aria-pressed="false">Top</button>
+        <button data-view="side" aria-pressed="false">Profile</button>
+        <button data-view="front" aria-pressed="false">Front</button>
+      </div>
+      <div class="hint-rot" id="hint-rot">drag to turn · scroll to zoom</div>
+      <div class="estimator">
+        <button class="est-toggle" id="est-toggle" aria-pressed="false">
+          <span>Price estimate</span>
+          <span class="switch" id="est-switch" aria-checked="false" role="switch"></span>
+        </button>
+        <div class="est-card" id="est-card" hidden></div>
+      </div>
+      <div class="strip">
+        <div class="summary" id="summary"></div>
+        <button class="btn" id="btn-copy-summary" title="Copy a one-line summary">Copy summary</button>
+      </div>
+      <div class="stage-msg" id="stage-msg" hidden></div>
+    </div>
+  </main>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-label="Spec sheet" aria-hidden="true">
+  <div class="drawer-head">
+    <h2>Send to a jeweler</h2>
+    <button class="btn" id="drawer-close">Close</button>
+  </div>
+  <div class="drawer-body" id="drawer-body"></div>
+</aside>
+<div class="toast" id="toast" role="status"></div>

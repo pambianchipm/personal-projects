@@ -201,6 +201,7 @@
     .drawer,.scrim,.toast,.switch,.switch::after{transition:none}
   }
 </style>
+
 <div id="app">
   <header id="top">
     <div class="brand">
@@ -273,6 +274,7 @@
   <div class="drawer-body" id="drawer-body"></div>
 </aside>
 <div class="toast" id="toast" role="status"></div>
+
 <script type="module">
 // =====================================================================
 //  PROJECT HALO — demo ring builder
@@ -404,6 +406,21 @@ const BAND_PROFILES = [
   { id:'knife',   label:'Knife-edge',  desc:'A ridge down the center. Catches light like a blade.' },
 ];
 
+const SHOULDERS = [
+  { id:'even',  label:'Even',    desc:'Same width all the way to the head.' },
+  { id:'taper', label:'Tapers in', desc:'Narrows as it reaches the stone. Makes the center look larger.' },
+  { id:'flare', label:'Widens',  desc:'Broadens into the head. Reads substantial and modern.' },
+  { id:'pinch', label:'Pinched', desc:'Nips in at the shoulder, then widens again at the head.' },
+];
+const ENGRAVINGS = [
+  { id:'none',       label:'None',        labor:0,   hand:false, desc:'Plain metal.' },
+  { id:'rope',       label:'Rope',        labor:140, hand:false, desc:'A twisted cord running around the band.' },
+  { id:'florentine', label:'Florentine',  labor:180, hand:false, desc:'Fine cross-hatch. Matte, antique surface.' },
+  { id:'deco',       label:'Art deco',    labor:220, hand:false, desc:'Repeating geometric steps. 1920s.' },
+  { id:'vine',       label:'Vine & leaf', labor:260, hand:false, desc:'Botanical scroll winding along the shank.' },
+  { id:'scroll',     label:'Hand scroll', labor:480, hand:true,  desc:'Cut by hand with a graver. No two are alike.' },
+];
+
 const METALS = [
   { id:'14y', label:'14k yellow gold', short:'14k yellow', hex:'#f2c56b', karat:14, family:'gold',  density:13.1, base:[1.0,.78,.36] },
   { id:'18y', label:'18k yellow gold', short:'18k yellow', hex:'#f6c25a', karat:18, family:'gold',  density:15.5, base:[1.0,.75,.3] },
@@ -446,7 +463,7 @@ const DEFAULT = {
   head:   { style:'prong4', tip:'claw', profile:'standard' },
   halo:   { style:'none', shape:'match', accent:'diamond' },
   sides:  { style:'none', coverage:'half', sideShape:'pear', sideSize:.38, accent:'diamond' },
-  band:   { style:'plain', profile:'comfort', width:1.8 },
+  band:   { style:'plain', profile:'comfort', width:1.8, thickness:1.5, shoulder:'even', shoulderAmt:.5, reach:70, euro:false, engrave:'none', cathRise:.75 },
   metal:  { id:'14y', head:'same', finish:'polish' },
   details:{ milgrain:false, engraving:'', hidden:'none', hand:false },
   fit:    { size:6.5 },
@@ -454,13 +471,13 @@ const DEFAULT = {
 
 const PRESETS = [
   { id:'solitaire', label:'Classic solitaire', patch:{ stone:{type:'natural',origin:'natural',shape:'round',carat:1.0,ratio:1,cutStyle:'brilliant'}, head:{style:'prong6',tip:'round',profile:'standard'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'comfort',width:2.0}, metal:{id:'pt',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
-  { id:'ovalpave', label:'Oval pavé', patch:{ stone:{type:'lab',origin:'lab',shape:'oval',carat:2.0,ratio:1.4}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'hidden'}, sides:{style:'pave',coverage:'half',accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.7}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
-  { id:'emeraldbezel', label:'Emerald bezel', patch:{ stone:{type:'lab',origin:'lab',shape:'emerald',carat:1.75,ratio:1.45}, head:{style:'bezel',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'flat',width:2.4}, metal:{id:'18y',head:'same',finish:'satin'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'ovalpave', label:'Oval pavé', patch:{ stone:{type:'lab',origin:'lab',shape:'oval',carat:2.0,ratio:1.4}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'hidden'}, sides:{style:'pave',coverage:'half',accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.7,thickness:1.5,shoulder:'taper',shoulderAmt:.45,reach:75}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'emeraldbezel', label:'Emerald bezel', patch:{ stone:{type:'lab',origin:'lab',shape:'emerald',carat:1.75,ratio:1.45}, head:{style:'bezel',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'flat',width:2.4,thickness:1.7,shoulder:'flare',shoulderAmt:.4,euro:true}, metal:{id:'18y',head:'same',finish:'satin'}, details:{milgrain:false,hidden:'none'} } },
   { id:'threestone', label:'Pear three-stone', patch:{ stone:{type:'natural',origin:'natural',shape:'oval',carat:1.5,ratio:1.35}, head:{style:'prong4',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'three',sideShape:'pear',sideSize:.4,accent:'diamond'}, band:{style:'plain',profile:'comfort',width:1.9}, metal:{id:'14r',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
-  { id:'vintage', label:'Vintage halo', patch:{ stone:{type:'natural',origin:'natural',shape:'cushion',carat:1.2,ratio:1.05,cutStyle:'oldeuro'}, head:{style:'prong4',tip:'round',profile:'standard'}, halo:{style:'single',shape:'match'}, sides:{style:'pave',coverage:'half'}, band:{style:'plain',profile:'dome',width:2.0}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:true,hidden:'sapphire'} } },
-  { id:'teal', label:'Teal sapphire', patch:{ stone:{type:'tealSapph',origin:'natural',shape:'hexagon',carat:1.8,ratio:1.15}, head:{style:'double',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'split',profile:'comfort',width:1.9}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'vintage', label:'Vintage halo', patch:{ stone:{type:'natural',origin:'natural',shape:'cushion',carat:1.2,ratio:1.05,cutStyle:'oldeuro'}, head:{style:'prong4',tip:'round',profile:'standard'}, halo:{style:'single',shape:'match'}, sides:{style:'pave',coverage:'half'}, band:{style:'plain',profile:'dome',width:2.0,thickness:1.6,engrave:'florentine'}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:true,hidden:'sapphire'} } },
+  { id:'teal', label:'Teal sapphire', patch:{ stone:{type:'tealSapph',origin:'natural',shape:'hexagon',carat:1.8,ratio:1.15}, head:{style:'double',tip:'claw',profile:'standard'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'split',profile:'comfort',width:1.9,thickness:1.5,engrave:'vine'}, metal:{id:'14y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
   { id:'toi', label:'Marquise east-west', patch:{ stone:{type:'lab',origin:'lab',shape:'marquise',carat:1.5,ratio:2.0,orient:'ew'}, head:{style:'prong4',tip:'claw',profile:'low'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'plain',profile:'knife',width:1.8}, metal:{id:'18y',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
-  { id:'cathedral', label:'Cathedral twist', patch:{ stone:{type:'natural',origin:'natural',shape:'round',carat:1.25,ratio:1}, head:{style:'prong6',tip:'round',profile:'cathedral'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'twist',profile:'comfort',width:2.1}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
+  { id:'cathedral', label:'Cathedral twist', patch:{ stone:{type:'natural',origin:'natural',shape:'round',carat:1.25,ratio:1}, head:{style:'prong6',tip:'round',profile:'cathedral'}, halo:{style:'none'}, sides:{style:'none'}, band:{style:'twist',profile:'comfort',width:2.1,thickness:1.6,cathRise:1.1}, metal:{id:'14w',head:'same',finish:'polish'}, details:{milgrain:false,hidden:'none'} } },
 ];
 
 // ---------- sizing math ----------
@@ -486,6 +503,29 @@ const sizeEU = size => Math.round(ringID(size) * Math.PI);
 
 // melee (small accent stone) diameter, scaled to the center stone
 const meleeFor = W => clamp(.19 * W, 1.0, 1.9);
+
+// ---------- band cross-section along the shank ----------
+// d = angular distance from the head, in radians. Returns { w, t } in mm.
+// One function so the 3D geometry and the price estimate can never disagree.
+function bandSectionAt(b, d) {
+  const reach = clamp(b.reach ?? 70, 20, 150) * Math.PI / 180;
+  const amt = clamp(b.shoulderAmt ?? .5, 0, 1);
+  const f = smooth01(1 - d / reach);                       // 1 at the head, 0 beyond the reach
+  let ws = 1, ts = 1;
+  if (b.shoulder === 'taper') { ws -= .55 * amt * f; ts -= .22 * amt * f; }
+  else if (b.shoulder === 'flare') { ws += .95 * amt * f; ts += .1 * amt * f; }
+  else if (b.shoulder === 'pinch') { const g = 4 * f * (1 - f); ws -= .5 * amt * g; ts -= .12 * amt * g; }
+  if (b.style === 'tapered') ws *= 1 - .3 * smooth01(1 - d / (Math.PI * .8));
+  if (b.euro) { const e = smooth01(1 - Math.abs(Math.PI - d) / (55 * Math.PI / 180)); ws += .45 * e; ts -= .18 * e; }
+  return { w: b.width * ws, t: (b.thickness ?? 1.5) * ts };
+}
+// narrowest point over the arc the accents cover, so a stone that fits there fits everywhere
+function bandMinWidth(b, frac) {
+  let min = Infinity;
+  for (let i = 0; i <= 24; i++) { const d = Math.PI * frac * i / 24; min = Math.min(min, bandSectionAt(b, d).w); }
+  return min;
+}
+const smooth01 = x => { x = clamp(x, 0, 1); return x * x * (3 - 2 * x); };
 
 // ---------- price model ----------
 // Numbers are anchored to public data pulled 2026-09-18 (StoneAlgo, Rapaport grid via Diamonds Pro, Kitco spot,
@@ -574,10 +614,12 @@ function estimate(s) {
 
   // --- metal ---
   const m = METAL[s.metal.id], ID = ringID(s.fit.size);
-  const t = s.band.profile === 'knife' ? 1.9 : s.band.profile === 'dome' ? 1.7 : 1.5;
   const fill = { comfort:.85, flat:.97, dome:.8, knife:.62 }[s.band.profile];
-  const styleF = { plain:1, tapered:.9, split:1.15, twist:.95, bypass:1.05 }[s.band.style];
-  let grams = Math.PI * (ID + t) * s.band.width * t * fill * styleF / 1000 * m.density;
+  const styleF = { plain:1, tapered:1, split:1.15, twist:.95, bypass:1.05 }[s.band.style];
+  // integrate the real cross-section around the shank instead of assuming a constant one
+  let mm3 = 0; const N = 48;
+  for (let i = 0; i < N; i++) { const d = Math.PI * (i + .5) / N, sec = bandSectionAt(s.band, d); mm3 += 2 * (Math.PI * (ID + sec.t) / (2 * N)) * sec.w * sec.t; }
+  let grams = mm3 * fill * styleF / 1000 * m.density;
   let extra = (PRICE.metal.headGrams[s.head.style] || .6) * Math.pow(W / 6.5, 1.5);
   if (s.head.profile === 'cathedral') extra += PRICE.metal.extraGrams.cathedral;
   if (s.halo.style !== 'none') extra += (PRICE.metal.extraGrams[s.halo.style] || .8) * Math.pow(W / 6.5, 1.5);
@@ -614,6 +656,9 @@ function estimate(s) {
   if (s.details.milgrain) { det += L.milgrain; dsub.push('milgrain'); }
   if (s.details.engraving) { det += s.details.hand ? L.engraveHand : L.engraveMachine; dsub.push(s.details.hand ? 'hand engraving' : 'engraving'); }
   if (s.details.hidden !== 'none') { det += L.hiddenGem + 45; dsub.push('hidden gem'); }
+  const eng = ENGRAVINGS.find(e => e.id === (s.band.engrave || 'none'));
+  if (eng.labor) { const cov = s.sides.style === 'pave' || s.sides.style === 'channel' ? 1 - COVERAGES.find(c => c.id === s.sides.coverage).frac * .8 : 1; det += eng.labor * Math.max(.35, cov) * (s.band.width > 2.5 ? 1.25 : 1); dsub.push(eng.label.toLowerCase() + (eng.hand ? ' (hand cut)' : '') + ' engraving'); }
+  if (s.band.euro) { det += 60; dsub.push('euro shank'); }
   if (det) lines.push({ k:'Details', sub: dsub.join(', '), v: det });
 
   const total = lines.reduce((a, l) => a + l.v, 0);
@@ -631,7 +676,8 @@ function stoneCounts(s, dims) {
   if (s.halo.style === 'hidden' || s.halo.style === 'both') halo += Math.round((perim * .8) / (md * .78 * 1.12));
   let band = 0;
   if (s.sides.style === 'pave' || s.sides.style === 'channel') {
-    const Rout = ringID(s.fit.size) / 2 + 1.6, frac = COVERAGES.find(c => c.id === s.sides.coverage).frac, bm = Math.min(md, s.band.width - .55);
+    const Rout = ringID(s.fit.size) / 2 + 1.6, frac = COVERAGES.find(c => c.id === s.sides.coverage).frac;
+    const bm = Math.min(md, bandMinWidth(s.band, frac) - .55);
     if (bm >= .8) band = Math.max(0, Math.round((2 * Math.PI * Rout * frac - (W + 1.2)) / (bm * 1.12)));
   }
   return { halo, band, side: s.sides.style === 'three' ? 2 : 0 };
@@ -639,6 +685,7 @@ function stoneCounts(s, dims) {
 
 const fmt$ = v => '$' + Math.round(v).toLocaleString('en-US');
 const fmtRange = (a, b) => `${fmt$(a)} – ${fmt$(b)}`;
+
 
 // =====================================================================
 //  Section 2: parametric 3D ring (three.js)
@@ -847,11 +894,12 @@ const circleProfile = (r, cy, n = 14) => Array.from({ length: n }, (_, i) => { c
 
 function sweep(profile, o) {
   // o: { R, phi0, phi1, seg, closed, radial(φ), axial(φ), wScale(φ), tScale(φ) }
-  const P = profile.length, S = o.seg, nR = o.closed ? S : S + 1, pos = new Float32Array(nR * P * 3), idx = [];
+  const P = profile.length, S = o.seg, nR = o.closed ? S : S + 1, pos = new Float32Array(nR * P * 3), uv = new Float32Array(nR * P * 2), idx = [];
+  const vAt = []; { let acc = 0; for (let k = 0; k < P; k++) { vAt.push(acc); const kn = (k + 1) % P; acc += Math.hypot(profile[kn][0] - profile[k][0], profile[kn][1] - profile[k][1]); } const tot = acc || 1; for (let k = 0; k < P; k++) vAt[k] /= tot; }
   for (let j = 0; j < nR; j++) {
     const phi = o.phi0 + (o.phi1 - o.phi0) * j / S, c = Math.cos(phi), s = Math.sin(phi);
     const R = o.R + (o.radial ? o.radial(phi) : 0), ax = o.axial ? o.axial(phi) : 0, ws = o.wScale ? o.wScale(phi) : 1, ts = o.tScale ? o.tScale(phi) : 1;
-    for (let k = 0; k < P; k++) { const px = profile[k][0] * ws, py = profile[k][1] * ts, r = R + py, b = (j * P + k) * 3; pos[b] = r * c; pos[b + 1] = r * s; pos[b + 2] = px + ax; }
+    for (let k = 0; k < P; k++) { const px = profile[k][0] * ws, py = profile[k][1] * ts, r = R + py, b = (j * P + k) * 3; pos[b] = r * c; pos[b + 1] = r * s; pos[b + 2] = px + ax; const u = (j * P + k) * 2; uv[u] = j / S; uv[u + 1] = vAt[k]; }
   }
   for (let j = 0; j < S; j++) {
     const jn = o.closed ? (j + 1) % S : j + 1;
@@ -872,10 +920,9 @@ function sweep(profile, o) {
     }
   }
   const geo = new THREE.BufferGeometry();
-  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setIndex(idx); geo.computeVertexNormals();
+  geo.setAttribute('position', new THREE.BufferAttribute(pos, 3)); geo.setAttribute('uv', new THREE.BufferAttribute(uv, 2)); geo.setIndex(idx); geo.computeVertexNormals();
   return geo;
 }
-const smooth01 = x => { x = clamp(x, 0, 1); return x * x * (3 - 2 * x); };
 const angDist = (a, b) => { let d = (a - b) % (2 * Math.PI); if (d > Math.PI) d -= 2 * Math.PI; if (d < -Math.PI) d += 2 * Math.PI; return Math.abs(d); };
 
 // ---------- materials ----------
@@ -888,6 +935,59 @@ function hammeredBump() {
   for (let i = 0; i < 260; i++) { const x = Math.random() * 256, y = Math.random() * 256, r = 10 + Math.random() * 14; const rg = g.createRadialGradient(x, y, 0, x, y, r); rg.addColorStop(0, 'rgba(255,255,255,.55)'); rg.addColorStop(1, 'rgba(60,60,60,0)'); g.fillStyle = rg; g.beginPath(); g.arc(x, y, r, 0, 7); g.fill(); }
   bumpTex = new THREE.CanvasTexture(c); bumpTex.wrapS = bumpTex.wrapT = THREE.RepeatWrapping; bumpTex.repeat.set(6, 1); return bumpTex;
 }
+// how many millimetres of band one repeat of each pattern covers
+const ENG_TILE_MM = { rope: 5, florentine: 7, deco: 11, vine: 16, scroll: 22 };
+const engTex = new Map();
+function engravingTexture(pattern) {
+  if (engTex.has(pattern)) return engTex.get(pattern);
+  const W = 512, H = 256, c = document.createElement('canvas'); c.width = W; c.height = H;
+  const g = c.getContext('2d');
+  g.fillStyle = '#808080'; g.fillRect(0, 0, W, H);
+  g.lineCap = 'round'; g.lineJoin = 'round';
+  const cut = (w, a) => { g.strokeStyle = `rgba(20,20,20,${a})`; g.lineWidth = w; };
+  const ridge = (w, a) => { g.strokeStyle = `rgba(240,240,240,${a})`; g.lineWidth = w; };
+  if (pattern === 'rope') {
+    for (let i = -H; i < W + H; i += 64) {
+      ridge(26, .8); g.beginPath(); g.moveTo(i, 0); g.lineTo(i + H * .6, H); g.stroke();
+      cut(10, .85); g.beginPath(); g.moveTo(i + 32, 0); g.lineTo(i + 32 + H * .6, H); g.stroke();
+    }
+  } else if (pattern === 'florentine') {
+    for (const dir of [1, -1]) for (let i = -H; i < W + H; i += 13) { cut(3, .5); g.beginPath(); g.moveTo(i, dir > 0 ? 0 : H); g.lineTo(i + H * .5 * dir, dir > 0 ? H : 0); g.stroke(); }
+  } else if (pattern === 'deco') {
+    for (let i = 0; i < W; i += 128) {
+      cut(10, .9);
+      g.beginPath(); g.moveTo(i, H * .18); g.lineTo(i + 44, H * .18); g.lineTo(i + 44, H * .5); g.lineTo(i + 88, H * .5); g.lineTo(i + 88, H * .82); g.lineTo(i + 128, H * .82); g.stroke();
+      ridge(5, .6); g.beginPath(); g.moveTo(i + 8, H * .3); g.lineTo(i + 56, H * .3); g.lineTo(i + 56, H * .62); g.lineTo(i + 100, H * .62); g.stroke();
+      cut(7, .8); g.beginPath(); g.arc(i + 108, H * .28, 14, 0, 7); g.stroke();
+    }
+  } else if (pattern === 'vine') {
+    cut(9, .9); g.beginPath();
+    for (let x = 0; x <= W; x += 4) g.lineTo(x, H / 2 + Math.sin(x / W * Math.PI * 2) * H * .2);
+    g.stroke();
+    for (let i = 0; i < 4; i++) {
+      const x = 64 + i * 128, y = H / 2 + Math.sin(x / W * Math.PI * 2) * H * .2, up = i % 2 ? 1 : -1;
+      g.fillStyle = 'rgba(15,15,15,.9)'; g.beginPath(); g.ellipse(x, y + up * 46, 42, 22, up * .5, 0, 7); g.fill();
+      ridge(4, .7); g.beginPath(); g.moveTo(x - 32, y + up * 46); g.lineTo(x + 32, y + up * 46); g.stroke();
+      cut(6, .8); g.beginPath(); g.moveTo(x, y); g.quadraticCurveTo(x + up * 10, y + up * 24, x, y + up * 44); g.stroke();
+    }
+  } else if (pattern === 'scroll') {
+    for (const s2 of [1, -1]) {
+      for (let i = 0; i < 2; i++) {
+        const cx = 128 + i * 256, cy = H / 2 + s2 * 44;
+        cut(10, .92); g.beginPath();
+        for (let a = 0; a < Math.PI * 2.6; a += .08) { const r = 8 + a * 22, x = cx + Math.cos(a) * r, y = cy + s2 * Math.sin(a) * r * .55; a === 0 ? g.moveTo(x, y) : g.lineTo(x, y); }
+        g.stroke();
+        ridge(4, .6); g.beginPath();
+        for (let a = 0; a < Math.PI * 2.4; a += .08) { const r = 16 + a * 22, x = cx + Math.cos(a) * r, y = cy + s2 * Math.sin(a) * r * .55; a === 0 ? g.moveTo(x, y) : g.lineTo(x, y); }
+        g.stroke();
+      }
+      cut(7, .85); g.beginPath(); g.moveTo(0, H / 2 + s2 * 18); g.bezierCurveTo(W * .25, H / 2 - s2 * 30, W * .75, H / 2 + s2 * 66, W, H / 2 + s2 * 18); g.stroke();
+    }
+  }
+  const tx = new THREE.CanvasTexture(c); tx.wrapS = tx.wrapT = THREE.RepeatWrapping; tx.anisotropy = 4;
+  engTex.set(pattern, tx); return tx;
+}
+
 function metalMat(id, finish = 'polish') {
   const k = 'm:' + id + ':' + finish; if (matCache.has(k)) return matCache.get(k);
   const m = METAL[id], mat = new THREE.MeshStandardMaterial({ metalness: 1, roughness: finish === 'polish' ? .13 : finish === 'satin' ? .4 : .2, envMapIntensity: 1 });
@@ -895,6 +995,16 @@ function metalMat(id, finish = 'polish') {
   if (finish === 'hammered') { mat.bumpMap = hammeredBump(); mat.bumpScale = .12; }
   matCache.set(k, mat); return mat;
 }
+function engravedMat(id, finish, pattern, reps) {
+  const k = 'e:' + id + ':' + finish + ':' + pattern + ':' + reps;
+  if (matCache.has(k)) return matCache.get(k);
+  const base = metalMat(id, finish), mat = base.clone();
+  const tx = engravingTexture(pattern).clone(); tx.needsUpdate = true; tx.repeat.set(reps, 1);
+  mat.bumpMap = tx; mat.bumpScale = pattern === 'florentine' ? .06 : pattern === 'scroll' ? .3 : pattern === 'vine' ? .26 : .18;
+  if (pattern === 'florentine') mat.roughness = Math.max(mat.roughness, .38);
+  matCache.set(k, mat); return mat;
+}
+
 function gemMat(g, W, D, origin) {
   const k = 'g:' + g.id + ':' + Math.round(W); if (matCache.has(k)) return matCache.get(k);
   const colored = !(g.id === 'natural' || g.id === 'lab' || g.id === 'moissanite' || g.id === 'whiteSapph');
@@ -963,10 +1073,13 @@ function disposeGroup(g) { g.traverse(o => { if (o.isMesh || o.isInstancedMesh) 
 function buildRing(s) {
   const G = new THREE.Group();
   const st = s.stone, dims = stoneDims(st), L = dims.L, W = dims.W, D = dims.D, shape = SHAPE[st.shape];
-  const bandMat = metalMat(s.metal.id, s.metal.finish), headMat = metalMat(s.metal.head === 'same' ? s.metal.id : s.metal.head, 'polish');
+  const engPattern = s.band.engrave && s.band.engrave !== 'none' && s.band.style !== 'twist' ? s.band.engrave : 'none';
+  const bandMat = engPattern === 'none' ? metalMat(s.metal.id, s.metal.finish)
+    : engravedMat(s.metal.id, s.metal.finish, engPattern, Math.max(2, Math.round(2 * Math.PI * (ringID(s.fit.size) / 2 + 1.5) / ENG_TILE_MM[engPattern])));
+  const headMat = metalMat(s.metal.head === 'same' ? s.metal.id : s.metal.head, 'polish');
   const gemType = GEM[st.type];
   const md = meleeFor(W);
-  const Rin = ringID(s.fit.size) / 2, w = s.band.width, t = s.band.profile === 'knife' ? 1.9 : s.band.profile === 'dome' ? 1.7 : 1.5, Rout = Rin + t;
+  const Rin = ringID(s.fit.size) / 2, w = s.band.width, t = s.band.thickness ?? 1.5, Rout = Rin + t;
   const TOP = Math.PI / 2;
   const seg = 160;
   const meshes = { metalBand: [], metalHead: [] };
@@ -979,7 +1092,7 @@ function buildRing(s) {
   // ----- head geometry numbers -----
   const stoneParts = gem(st.shape, L, W, D, shape.facets, st.cutStyle);
   const { crownH, girdleT, pavD } = stoneParts;
-  const cathedral = s.head.profile === 'cathedral', lift = cathedral ? pavD * .45 : 0;
+  const cathedral = s.head.profile === 'cathedral', lift = cathedral ? pavD * .45 * clamp(s.band.cathRise ?? .75, .2, 1.4) / .75 : 0;
   const yTop = Rout + lift;
   const isBezel = s.head.style === 'bezel' || s.head.style === 'halfbezel', isTension = s.head.style === 'tension';
   let yG = yTop + pavD * (s.head.profile === 'low' ? .3 : s.head.profile === 'high' ? 1.0 : .58) + (s.head.profile === 'high' ? .5 : 0);
@@ -993,48 +1106,51 @@ function buildRing(s) {
   // ----- band -----
   const prof = bandProfile(s.band.profile, w, t);
   const halfHead = Math.atan2(extX / 2 + .6, Rout);
-  const radialCath = phi => { const d = angDist(phi, TOP), a = 38 * D2R; return d < a ? lift * smooth01(1 - d / a) : 0; };
-  const radialFn = cathedral ? radialCath : null;
-  const taper = phi => { const d = angDist(phi, TOP); return 1 - .34 * smooth01(1 - d / (Math.PI * .75)); };
+  const sectionAt = phi => bandSectionAt(s.band, angDist(phi, TOP));
+  const wScaleFn = phi => sectionAt(phi).w / w;
+  const tScaleFn = phi => sectionAt(phi).t / t;
+  const widthAt = phi => sectionAt(phi).w;
+  const euroRadial = phi => s.band.euro ? -.3 * smooth01(1 - angDist(phi, TOP + Math.PI) / (55 * D2R)) : 0;
+  const radialCath = phi => { const d = angDist(phi, TOP), a = 38 * D2R; return (d < a ? lift * smooth01(1 - d / a) : 0) + euroRadial(phi); };
+  const radialFn = cathedral || s.band.euro ? radialCath : null;
   if (s.band.style === 'twist') {
     const r = Math.min(w * .3, t * .5), A = w * .25, k = 9;
     for (const sgn of [1, -1]) {
-      const geo = sweep(circleProfile(r, t / 2), { R: Rin, phi0: 0, phi1: 2 * Math.PI, seg, closed: true, radial: phi => (radialFn ? radialFn(phi) : 0) + sgn * A * .5 * Math.cos(k * phi), axial: phi => sgn * A * Math.sin(k * phi) });
+      const geo = sweep(circleProfile(r, t / 2), { R: Rin, phi0: 0, phi1: 2 * Math.PI, seg, closed: true, radial: phi => (radialFn ? radialFn(phi) : 0) + sgn * A * .5 * Math.cos(k * phi), axial: phi => sgn * A * Math.sin(k * phi), tScale: tScaleFn });
       addMesh(geo, bandMat);
     }
   } else if (s.band.style === 'split') {
     const a = 62 * D2R, S = .75 + w * .25;
-    const main = sweep(prof, { R: Rin, phi0: TOP + a, phi1: TOP - a + 2 * Math.PI, seg: Math.round(seg * .8), closed: false, radial: radialFn });
+    const main = sweep(prof, { R: Rin, phi0: TOP + a, phi1: TOP - a + 2 * Math.PI, seg: Math.round(seg * .8), closed: false, radial: radialFn, wScale: wScaleFn, tScale: tScaleFn });
     addMesh(main, bandMat);
     for (const sgn of [1, -1]) {
-      const arm = sweep(prof, { R: Rin, phi0: TOP - a - 2 * D2R, phi1: TOP + a + 2 * D2R, seg: 48, closed: false, radial: radialFn, wScale: () => .5, axial: phi => { const f = smooth01(1 - angDist(phi, TOP) / a); return sgn * (w * .25 + S * f); } });
+      const arm = sweep(prof, { R: Rin, phi0: TOP - a - 2 * D2R, phi1: TOP + a + 2 * D2R, seg: 48, closed: false, radial: radialFn, tScale: tScaleFn, wScale: phi => .5 * wScaleFn(phi), axial: phi => { const f = smooth01(1 - angDist(phi, TOP) / a); return sgn * (w * .25 + S * f); } });
       addMesh(arm, bandMat);
     }
   } else if (s.band.style === 'bypass') {
     const phi0 = TOP - 22 * D2R, span = 404 * D2R, A = Math.max(1.0, w * .6);
-    const geo = sweep(prof, { R: Rin, phi0, phi1: phi0 + span, seg, closed: false, radial: radialFn, axial: phi => A * Math.cos(Math.PI * (phi - phi0) / span), wScale: phi => 1 - .25 * smooth01(1 - Math.min(phi - phi0, phi0 + span - phi) / (40 * D2R)) });
+    const geo = sweep(prof, { R: Rin, phi0, phi1: phi0 + span, seg, closed: false, radial: radialFn, tScale: tScaleFn, axial: phi => A * Math.cos(Math.PI * (phi - phi0) / span), wScale: phi => wScaleFn(phi) * (1 - .25 * smooth01(1 - Math.min(phi - phi0, phi0 + span - phi) / (40 * D2R))) });
     addMesh(geo, bandMat);
   } else if (isTension) {
     const gap = Math.atan2(extX / 2 + .1, Rin + t / 2);
-    const geo = sweep(prof, { R: Rin, phi0: TOP + gap, phi1: TOP - gap + 2 * Math.PI, seg, closed: false, tScale: phi => 1 + .35 * smooth01(1 - Math.min(angDist(phi, TOP + gap), angDist(phi, TOP - gap)) / (30 * D2R)) });
+    const geo = sweep(prof, { R: Rin, phi0: TOP + gap, phi1: TOP - gap + 2 * Math.PI, seg, closed: false, wScale: wScaleFn, tScale: phi => tScaleFn(phi) * (1 + .35 * smooth01(1 - Math.min(angDist(phi, TOP + gap), angDist(phi, TOP - gap)) / (30 * D2R))) });
     addMesh(geo, bandMat);
   } else {
-    const geo = sweep(prof, { R: Rin, phi0: 0, phi1: 2 * Math.PI, seg, closed: true, radial: radialFn, wScale: s.band.style === 'tapered' ? taper : null });
+    const geo = sweep(prof, { R: Rin, phi0: 0, phi1: 2 * Math.PI, seg, closed: true, radial: radialFn, wScale: wScaleFn, tScale: tScaleFn });
     addMesh(geo, bandMat);
   }
-  const widthAt = phi => w * (s.band.style === 'tapered' ? taper(phi) : 1);
 
   // ----- milgrain beads along band edges -----
   if (s.details.milgrain && s.band.style !== 'twist') {
     const br = .13, pitch = .33, n = Math.round(2 * Math.PI * Rout / pitch), geo = new THREE.SphereGeometry(br, 6, 5);
     const inst = new THREE.InstancedMesh(geo, headMat, n * 2); let i = 0;
-    for (let k = 0; k < n; k++) { const phi = k / n * 2 * Math.PI, R = Rout - .06 + (radialFn ? radialFn(phi) : 0), hw = widthAt(phi) / 2 - .1; for (const sgn of [1, -1]) { _m.makeTranslation(R * Math.cos(phi), R * Math.sin(phi), sgn * hw); inst.setMatrixAt(i++, _m); } }
+    for (let k = 0; k < n; k++) { const phi = k / n * 2 * Math.PI, R = Rout - .06 + (radialFn ? radialFn(phi) : 0) + (tScaleFn(phi) - 1) * t, hw = widthAt(phi) / 2 - .1; for (const sgn of [1, -1]) { _m.makeTranslation(R * Math.cos(phi), R * Math.sin(phi), sgn * hw); inst.setMatrixAt(i++, _m); } }
     inst.castShadow = true; G.add(inst);
   }
 
   // ----- pavé / channel on the band -----
   if (s.sides.style === 'pave' || s.sides.style === 'channel') {
-    const frac = COVERAGES.find(c => c.id === s.sides.coverage).frac, bm = Math.min(md, w - .55);
+    const frac = COVERAGES.find(c => c.id === s.sides.coverage).frac, bm = Math.min(md, bandMinWidth(s.band, frac) - .55);
     if (bm >= .8) {
       const isChan = s.sides.style === 'channel', Rs = Rout - bm * (isChan ? .32 : .14), pitch = bm * 1.12;
       const arc = 2 * Math.PI * frac, phiA = TOP - arc / 2, count = Math.round(arc * Rs / pitch);
@@ -1042,12 +1158,12 @@ function buildRing(s) {
       for (let k = 0; k <= count; k++) {
         const phi = phiA + arc * k / count; if (angDist(phi, TOP) < halfHead) continue;
         if (s.sides.style === 'pave' && s.band.style === 'split' && angDist(phi, TOP) < 62 * D2R) continue;
-        const R = Rs + (radialFn ? radialFn(phi) : 0);
+        const R = Rs + (radialFn ? radialFn(phi) : 0) + (tScaleFn(phi) - 1) * t;
         placeMelee(s.sides.accent, R * Math.cos(phi), R * Math.sin(phi), 0, [Math.cos(phi), Math.sin(phi), 0], bm);
-        if (!isChan) { const phm = phi + arc / count / 2, Rb = Rout + .02 + (radialFn ? radialFn(phm) : 0); for (const sgn of [1, -1]) { _m.makeTranslation(Rb * Math.cos(phm), Rb * Math.sin(phm), sgn * bm * .46); beads.push(_m.clone()); } }
+        if (!isChan) { const phm = phi + arc / count / 2, Rb = Rout + .02 + (radialFn ? radialFn(phm) : 0) + (tScaleFn(phm) - 1) * t; for (const sgn of [1, -1]) { _m.makeTranslation(Rb * Math.cos(phm), Rb * Math.sin(phm), sgn * bm * .46); beads.push(_m.clone()); } }
       }
       if (beads.length) { const inst = new THREE.InstancedMesh(beadGeo, headMat, beads.length); beads.forEach((m, i) => inst.setMatrixAt(i, m)); G.add(inst); }
-      if (isChan) for (const sgn of [1, -1]) addMesh(sweep(circleProfile(.17, 0, 8), { R: Rout - .05, phi0: phiA, phi1: phiA + arc, seg: Math.round(seg * frac), closed: frac === 1, axial: () => sgn * (w / 2 - .17) }), headMat);
+      if (isChan) for (const sgn of [1, -1]) addMesh(sweep(circleProfile(.17, 0, 8), { R: Rout - .05, phi0: phiA, phi1: phiA + arc, seg: Math.round(seg * frac), closed: frac === 1, radial: phi => (radialFn ? radialFn(phi) : 0) + (tScaleFn(phi) - 1) * t, axial: phi => sgn * (widthAt(phi) / 2 - .17) }), headMat);
     }
   }
 
@@ -1242,6 +1358,7 @@ function resizeGL(stage) {
   R3.renderer.setSize(w, h, false); R3.camera.aspect = w / h; R3.camera.updateProjectionMatrix();
 }
 
+
 // =====================================================================
 //  Section 3: UI — character-creator slots, option trays, estimator, spec sheet
 // =====================================================================
@@ -1274,6 +1391,13 @@ function notes(s) {
   if (s.band.profile === 'knife' && (s.sides.style === 'pave' || s.sides.style === 'channel')) out.push({ slot: 'band', level: 'warn', text: 'A knife-edge band has no flat top to hold stones. Switch to comfort fit, flat or half-round for pavé or channel.' });
   if ((s.sides.style === 'pave' || s.sides.style === 'channel') && s.band.width < 1.6) out.push({ slot: 'band', level: 'warn', text: 'Bands under 1.6 mm cannot hold accent stones safely. Widen the band or drop the accents.' });
   if ((s.sides.style === 'pave' || s.sides.style === 'channel') && s.sides.coverage === 'full') out.push({ slot: 'sides', level: 'info', text: 'Eternity bands cannot be resized. Get the finger size right before ordering.' });
+  if (s.band.engrave !== 'none' && s.band.style === 'twist') out.push({ slot: 'band', level: 'warn', text: 'A twisted shank has no flat surface to engrave. The pattern is ignored on this band.' });
+  if (s.band.engrave !== 'none' && (s.sides.style === 'pave' || s.sides.style === 'channel') && s.sides.coverage === 'full') out.push({ slot: 'band', level: 'warn', text: 'An eternity band is covered in stones. There is no metal left to engrave.' });
+  if (s.band.engrave !== 'none' && s.band.width < 1.8) out.push({ slot: 'band', level: 'info', text: 'Engraving reads best on 2 mm or wider. On a narrow band the pattern gets lost.' });
+  if (s.band.thickness < 1.3 && METAL[s.metal.id].family === 'gold' && METAL[s.metal.id].karat >= 18) out.push({ slot: 'band', level: 'warn', text: '18k gold is soft. Under 1.3 mm thick it will bend out of round with daily wear.' });
+  if (s.band.shoulder === 'flare' && s.sides.style === 'three') out.push({ slot: 'band', level: 'info', text: 'Widening shoulders compete with side stones for space. Most three-stone rings taper instead.' });
+  if (s.band.shoulder === 'taper' && bandSectionAt(s.band, 0).w < 1.5) out.push({ slot: 'band', level: 'warn', text: `Tapering to ${bandSectionAt(s.band, 0).w.toFixed(1)} mm at the head leaves little metal to hold the setting. Most jewelers stop around 1.5 mm.` });
+  if (s.band.euro && (s.sides.style === 'pave' || s.sides.style === 'channel') && s.sides.coverage === 'full') out.push({ slot: 'band', level: 'warn', text: 'A euro shank needs a plain flat bottom, so it cannot carry a full eternity of stones.' });
   if (s.band.style === 'twist' && s.details.milgrain) out.push({ slot: 'details', level: 'info', text: 'Milgrain needs a flat edge to sit on, so it is skipped on a twisted band.' });
   if (s.head.profile === 'low' && (s.halo.style === 'hidden' || s.halo.style === 'both')) out.push({ slot: 'halo', level: 'info', text: 'A hidden halo needs a little height under the stone. Low profile will mostly hide it.' });
   if (sh.tips || st.shape === 'princess') out.push({ slot: 'head', level: 'ok', text: 'Pointed corners get V-prongs automatically so the tips are protected.' });
@@ -1313,6 +1437,17 @@ const GLYPH = {
   split: SVG(`<path d="M14 9 A13 13 0 1 0 26 9 M14 9 L16 5 M26 9 L24 5 M17 11 A9 9 0 1 0 23 11 M17 11 L15 7 M23 11 L25 7"/>`),
   twist: SVG(`<path d="M7 20 C 12 10, 18 30, 24 20 S 33 10, 33 20 M7 20 C 12 30, 18 10, 24 20 S 33 30, 33 20"/>`),
   bypass: SVG(`<path d="M22 8 A13 13 0 1 0 31 27 M31 27 L34 21 M22 8 L17 12"/>`),
+  sh_even: SVG(`<path d="M4 33 A18 18 0 0 1 36 33" stroke-width="5"/>`),
+  sh_taper: SVG(`<path d="M4 33 A18 18 0 0 1 36 33" stroke-width="2"/><path d="M4 33 A18 18 0 0 1 11 16" stroke-width="6"/><path d="M36 33 A18 18 0 0 0 29 16" stroke-width="6"/>`),
+  sh_flare: SVG(`<path d="M4 33 A18 18 0 0 1 36 33" stroke-width="2.4"/><path d="M11 16 A18 18 0 0 1 29 16" stroke-width="7"/>`),
+  sh_pinch: SVG(`<path d="M4 33 A18 18 0 0 1 36 33" stroke-width="2.4"/><path d="M16 12 A18 18 0 0 1 24 12" stroke-width="6"/><path d="M4 33 A18 18 0 0 1 9 19" stroke-width="5"/><path d="M36 33 A18 18 0 0 0 31 19" stroke-width="5"/>`),
+  eng_none: SVG(`<rect x="5" y="15" width="30" height="11" rx="3"/>`),
+  eng_rope: SVG(`<rect x="5" y="15" width="30" height="11" rx="3"/>${[9, 15, 21, 27, 33].map(x => `<path d="M${x - 4} 26 L${x + 2} 15" opacity=".75"/>`).join('')}`),
+  eng_florentine: SVG(`<rect x="5" y="15" width="30" height="11" rx="3"/>${[8, 13, 18, 23, 28, 33].map(x => `<path d="M${x - 3} 26 L${x + 3} 15" opacity=".5"/><path d="M${x - 3} 15 L${x + 3} 26" opacity=".5"/>`).join('')}`),
+  eng_deco: SVG(`<rect x="5" y="15" width="30" height="11" rx="3"/><path d="M8 24 L13 24 L13 20 L18 20 L18 17 L23 17 L23 20 L28 20 L28 24 L33 24" opacity=".8"/>`),
+  eng_vine: SVG(`<rect x="5" y="15" width="30" height="11" rx="3"/><path d="M7 21 Q 13 15 19 21 T 33 21" opacity=".8"/><circle cx="13" cy="17.5" r="2" opacity=".7"/><circle cx="26" cy="24" r="2" opacity=".7"/>`),
+  eng_scroll: SVG(`<rect x="5" y="15" width="30" height="11" rx="3"/><path d="M9 24 C 12 16, 18 16, 18 21 C 18 25, 13 25, 14 20" opacity=".8"/><path d="M22 17 C 25 25, 31 25, 31 20 C 31 16, 26 16, 27 21" opacity=".8"/>`),
+  euro: SVG(`<path d="M20 7 A13 13 0 1 1 20 33 A13 13 0 1 1 20 7" opacity=".45"/><path d="M9 28 L31 28" stroke-width="4"/><path d="M8 24 A13 13 0 0 1 32 24" opacity=".45"/>`),
   comfort: SVG(`<rect x="8" y="13" width="24" height="14" rx="6"/>`), flat: SVG(`<rect x="8" y="14" width="24" height="12" rx="1"/>`), dome: SVG(`<path d="M8 27 L8 22 A12 12 0 0 1 32 22 L32 27 Z"/>`), knife: SVG(`<path d="M8 27 L8 22 L20 12 L32 22 L32 27 Z"/>`),
   low: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 19 L20 13 L26 19 L20 25 Z"/>`), standard: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 14 L20 8 L26 14 L20 20 Z"/><path d="M17 20 L17 24 M23 20 L23 24"/>`),
   high: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 10 L20 4 L26 10 L20 16 Z"/><path d="M16 16 L16 23 M24 16 L24 23"/>`), cathedral: SVG(`<path d="M4 34 A18 18 0 0 1 36 34"/><path d="M14 12 L20 6 L26 12 L20 18 Z"/><path d="M8 24 C 12 18, 14 14, 15 13 M32 24 C 28 18, 26 14, 25 13"/>`),
@@ -1335,7 +1470,7 @@ const SLOTS = [
   { id: 'head', label: 'Setting', title: 'Setting', desc: 'How the stone is held and how high it sits.', value: s => `${HEADS.find(h => h.id === s.head.style).label} · ${PROFILES.find(p => p.id === s.head.profile).label.toLowerCase()}`, icon: s => glyph(s.head.style) },
   { id: 'halo', label: 'Halo', title: 'Halo', desc: 'A frame of small stones around, or hidden under, the center.', value: s => HALOS.find(h => h.id === s.halo.style).label + (s.halo.style !== 'none' && s.halo.accent !== 'diamond' ? ` · ${ACCENTS.find(a => a.id === s.halo.accent).label.toLowerCase()}` : ''), icon: s => glyph(s.halo.style === 'double' ? 'halo_double' : s.halo.style) },
   { id: 'sides', label: 'Side stones', title: 'Side stones', desc: 'Accents along the band or flanking the center.', value: s => { const x = SIDES.find(v => v.id === s.sides.style).label; return s.sides.style === 'pave' || s.sides.style === 'channel' ? `${x} · ${COVERAGES.find(c => c.id === s.sides.coverage).label.toLowerCase()}` : s.sides.style === 'three' ? `${x} · ${SIDE_SHAPES.find(v => v.id === s.sides.sideShape).label.toLowerCase()}s` : x; }, icon: s => glyph(s.sides.style === 'none' ? 'sides_none' : s.sides.style) },
-  { id: 'band', label: 'Band', title: 'Band', desc: 'Style, cross-section and width of the shank.', value: s => `${BANDS.find(b => b.id === s.band.style).label} · ${s.band.width.toFixed(1)} mm ${BAND_PROFILES.find(p => p.id === s.band.profile).label.toLowerCase()}`, icon: s => glyph(s.band.style) },
+  { id: 'band', label: 'Band', title: 'The band itself', desc: 'Width, thickness, how it changes on the way up to the stone, and what is cut into it.', value: s => { const sec = bandSectionAt(s.band, 0); const base = `${BANDS.find(b => b.id === s.band.style).label} · ${s.band.width.toFixed(1)}`; const head = Math.abs(sec.w - s.band.width) > .05 ? `→${sec.w.toFixed(1)}` : ''; return `${base}${head} mm${s.band.engrave !== 'none' ? ' · ' + ENGRAVINGS.find(e => e.id === s.band.engrave).label.toLowerCase() : ''}`; }, icon: s => glyph(s.band.style) },
   { id: 'metal', label: 'Metal', title: 'Metal & finish', desc: 'Alloy, colour and surface finish. Two-tone heads are common.', value: s => METAL[s.metal.id].label + (s.metal.head !== 'same' ? ` · ${METAL[s.metal.head].short} head` : '') + (s.metal.finish !== 'polish' ? ` · ${FINISHES.find(f => f.id === s.metal.finish).label.toLowerCase()}` : ''), icon: s => swatch(METAL[s.metal.id].hex) },
   { id: 'details', label: 'Details', title: 'Details', desc: 'The small things a jeweler asks about last, and that make it yours.', value: s => { const d = []; if (s.details.milgrain) d.push('milgrain'); if (s.details.hidden !== 'none') d.push('hidden ' + HIDDEN_GEMS.find(h => h.id === s.details.hidden).label.toLowerCase()); if (s.details.engraving) d.push(`“${s.details.engraving}”`); return d.length ? d.join(' · ') : 'None yet'; }, icon: s => SVG(`<path d="M8 30 L26 12 L30 16 L12 34 L7 35 Z"/><path d="M23 15 L27 19"/>`) },
   { id: 'fit', label: 'Ring size', title: 'Ring size', desc: 'US sizing. The jeweler will confirm before casting.', value: s => `US ${s.fit.size} · UK ${sizeUK(s.fit.size)} · EU ${sizeEU(s.fit.size)}`, icon: s => SVG(`<circle cx="20" cy="20" r="12"/><path d="M20 8 L20 12 M20 28 L20 32 M8 20 L12 20 M28 20 L32 20"/>`) },
@@ -1426,6 +1561,7 @@ function renderTray() {
     add('Head', tiles(HEADS, it => it.id === state.head.style, it => { state.head.style = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.head.style = it.id; } }));
     if (!['bezel', 'halfbezel', 'tension'].includes(state.head.style)) add('Prong tips', tiles(PRONG_TIPS, it => it.id === state.head.tip, it => { state.head.tip = it.id; }, { icon: it => glyph(it.id === 'flat' ? 'flat_tip' : it.id) }));
     add('Profile', tiles(PROFILES, it => it.id === state.head.profile, it => { state.head.profile = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.head.profile = it.id; }, cols: 2 }));
+    if (state.head.profile === 'cathedral') add('Cathedral rise', range({ id: 'cath', label: 'How high the shoulders sweep', min: .2, max: 1.4, step: .05, value: state.band.cathRise, fmt: v => `${Math.round(v * 100)}%`, sub: v => v < .6 ? 'A gentle lift.' : v < 1 ? 'A classic arch.' : 'A dramatic sweep up to the stone.', set: v => { state.band.cathRise = v; } }));
   }
   if (currentSlot === 'halo') {
     add('Halo', tiles(HALOS, it => it.id === state.halo.style, it => { state.halo.style = it.id; }, { icon: it => glyph(it.id === 'double' ? 'halo_double' : it.id), apply: (s, it) => { s.halo.style = it.id; } }));
@@ -1444,7 +1580,17 @@ function renderTray() {
   if (currentSlot === 'band') {
     add('Style', tiles(BANDS, it => it.id === state.band.style, it => { state.band.style = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.band.style = it.id; } }));
     add('Cross-section', tiles(BAND_PROFILES, it => it.id === state.band.profile, it => { state.band.profile = it.id; }, { icon: it => glyph(it.id), apply: (s, it) => { s.band.profile = it.id; }, cols: 2 }));
-    add('Width', range({ id: 'width', label: 'Band width', min: 1.4, max: 4, step: .1, value: state.band.width, fmt: v => `${v.toFixed(1)} mm`, sub: v => v < 1.7 ? 'Dainty. Makes the stone look bigger, wears faster.' : v < 2.3 ? 'The everyday standard.' : v < 3 ? 'Substantial, modern.' : 'Cigar band territory.', set: v => { state.band.width = v; } }));
+    add('Width at the back', range({ id: 'width', label: 'Band width', min: 1.2, max: 5, step: .1, value: state.band.width, fmt: v => `${v.toFixed(1)} mm`, sub: v => v < 1.7 ? 'Dainty. Makes the stone look bigger, wears faster.' : v < 2.3 ? 'The everyday standard.' : v < 3.2 ? 'Substantial, modern.' : 'Cigar band territory.', set: v => { state.band.width = v; } }));
+    add('Thickness', range({ id: 'thick', label: 'Metal depth', min: 1, max: 2.8, step: .05, value: state.band.thickness, fmt: v => `${v.toFixed(2)} mm`, sub: v => v < 1.3 ? 'Thin. Fine in platinum, risky in soft gold.' : v < 1.8 ? 'Normal for an engagement ring.' : 'Heavy and hard-wearing. Costs metal.', set: v => { state.band.thickness = v; } }), 'How far it stands off the finger');
+    add('On the way up to the stone', tiles(SHOULDERS, it => it.id === state.band.shoulder, it => { state.band.shoulder = it.id; }, { icon: it => glyph('sh_' + it.id), apply: (s, it) => { s.band.shoulder = it.id; }, cols: 2 }));
+    if (state.band.shoulder !== 'even') {
+      add('How much', range({ id: 'shamt', label: 'Strength', min: 0, max: 1, step: .05, value: state.band.shoulderAmt, fmt: v => `${Math.round(v * 100)}%`, sub: v => { const sec = bandSectionAt({ ...state.band, shoulderAmt: v }, 0); return `${state.band.width.toFixed(1)} mm at the back → ${sec.w.toFixed(1)} mm at the head`; }, set: v => { state.band.shoulderAmt = v; } }));
+      add('How far it reaches', range({ id: 'reach', label: 'Shoulder length', min: 25, max: 140, step: 5, value: state.band.reach, fmt: v => `${v}°`, sub: v => v < 50 ? 'A short shoulder right at the head.' : v < 90 ? 'A natural sweep along the top third.' : 'A long taper running most of the way around.', set: v => { state.band.reach = v; } }));
+    }
+    body.appendChild(switchRow('Euro shank', 'Flat, squared-off bottom. Stops the ring spinning and wears evenly.', state.band.euro, v => { state.band.euro = v; }));
+    add('Engraved surface', tiles(ENGRAVINGS, it => it.id === state.band.engrave, it => { state.band.engrave = it.id; }, { icon: it => glyph('eng_' + it.id), apply: (s, it) => { s.band.engrave = it.id; } }), 'Cut into the outside of the band');
+    const eg = ENGRAVINGS.find(e => e.id === state.band.engrave);
+    if (eg.id !== 'none') { const d = el('div', 'note ok'); d.innerHTML = `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg><span>${esc(eg.desc)}${eg.hand ? ' Expect two to three weeks on top of the build.' : ''}</span>`; body.appendChild(d); }
   }
   if (currentSlot === 'metal') {
     add('Metal', tiles(METALS, it => it.id === state.metal.id, it => { state.metal.id = it.id; }, { icon: it => swatch(it.hex), apply: (s, it) => { s.metal.id = it.id; } }));
@@ -1473,7 +1619,9 @@ function summaryText(s) {
   parts.push(HEADS.find(h => h.id === s.head.style).label.toLowerCase() + (s.head.profile !== 'standard' ? ` ${PROFILES.find(p => p.id === s.head.profile).label.toLowerCase()}` : ''));
   if (s.halo.style !== 'none') parts.push(HALOS.find(h => h.id === s.halo.style).label.toLowerCase());
   if (s.sides.style !== 'none') parts.push(SLOTS.find(x => x.id === 'sides').value(s).toLowerCase());
-  parts.push(`${BANDS.find(b => b.id === s.band.style).label.toLowerCase()} ${s.band.width.toFixed(1)} mm band`);
+  const secH = bandSectionAt(s.band, 0);
+  parts.push(`${BANDS.find(b => b.id === s.band.style).label.toLowerCase()} ${s.band.width.toFixed(1)}${Math.abs(secH.w - s.band.width) > .05 ? `→${secH.w.toFixed(1)}` : ''} mm band`);
+  if (s.band.engrave !== 'none') parts.push(`${ENGRAVINGS.find(e => e.id === s.band.engrave).label.toLowerCase()} engraving`);
   parts.push(METAL[s.metal.id].label);
   return { text: parts.join(' · '), mm: `${d.L.toFixed(1)}×${d.W.toFixed(1)} mm · US ${s.fit.size}` };
 }
@@ -1499,10 +1647,15 @@ function specRows(s) {
     ['Size', `${st.carat.toFixed(2)} ct ≈ ${d.L.toFixed(2)} × ${d.W.toFixed(2)} × ${d.D.toFixed(2)} mm (L:W ${d.ratio.toFixed(2)})`],
     ['Orientation', st.orient === 'ew' && SHAPE[st.shape].elong ? 'East–west' : 'North–south']];
   if (st.type === 'natural' || st.type === 'lab') rows.push(['Grade', `${st.color} colour, ${st.clarity} clarity, ${CUTS.find(x => x.id === st.cut).label.toLowerCase()} cut`]);
-  rows.push(['sec', 'Setting'], ['Head', `${HEADS.find(h => h.id === s.head.style).label}${['bezel', 'halfbezel', 'tension'].includes(s.head.style) ? '' : `, ${PRONG_TIPS.find(t => t.id === s.head.tip).label.toLowerCase()} tips`}${SHAPE[st.shape].tips || st.shape === 'princess' ? ', V-prongs on points' : ''}`], ['Profile', PROFILES.find(p => p.id === s.head.profile).label]);
+  rows.push(['sec', 'Setting'], ['Head', `${HEADS.find(h => h.id === s.head.style).label}${['bezel', 'halfbezel', 'tension'].includes(s.head.style) ? '' : `, ${PRONG_TIPS.find(t => t.id === s.head.tip).label.toLowerCase()} tips`}${SHAPE[st.shape].tips || st.shape === 'princess' ? ', V-prongs on points' : ''}`], ['Profile', PROFILES.find(p => p.id === s.head.profile).label + (s.head.profile === 'cathedral' ? `, ${Math.round(s.band.cathRise * 100)}% rise` : '')]);
   rows.push(['Halo', s.halo.style === 'none' ? 'None' : `${HALOS.find(h => h.id === s.halo.style).label}, ${c.halo} × ~${md.toFixed(1)} mm ${ACCENTS.find(a => a.id === s.halo.accent).label.toLowerCase()}${s.halo.style !== 'hidden' ? `, ${HALO_SHAPES.find(h => h.id === s.halo.shape).label.toLowerCase()} outline` : ''}`]);
   rows.push(['Side stones', s.sides.style === 'none' ? 'None' : s.sides.style === 'three' ? `Three-stone, 2 × ${SIDE_SHAPES.find(x => x.id === s.sides.sideShape).label.toLowerCase()} at ${Math.round(s.sides.sideSize * 100)}% of center width, ${ACCENTS.find(a => a.id === s.sides.accent).label.toLowerCase()}` : `${SIDES.find(x => x.id === s.sides.style).label}, ${COVERAGES.find(x => x.id === s.sides.coverage).label.toLowerCase()} coverage, ${c.band} × ~${Math.min(md, s.band.width - .55).toFixed(1)} mm ${ACCENTS.find(a => a.id === s.sides.accent).label.toLowerCase()}`]);
-  rows.push(['sec', 'Band & metal'], ['Band', `${BANDS.find(b => b.id === s.band.style).label}, ${BAND_PROFILES.find(p => p.id === s.band.profile).label.toLowerCase()}, ${s.band.width.toFixed(1)} mm wide`], ['Metal', METAL[s.metal.id].label + (s.metal.head !== 'same' ? `, ${METAL[s.metal.head].label} head` : '')], ['Finish', FINISHES.find(f => f.id === s.metal.finish).label], ['Ring size', `US ${s.fit.size} (UK ${sizeUK(s.fit.size)}, EU ${sizeEU(s.fit.size)}, ${ringID(s.fit.size).toFixed(1)} mm inner diameter)`]);
+  const secHead = bandSectionAt(s.band, 0), secBack = bandSectionAt(s.band, Math.PI);
+  rows.push(['sec', 'Band & metal'],
+    ['Band', `${BANDS.find(b => b.id === s.band.style).label}, ${BAND_PROFILES.find(p => p.id === s.band.profile).label.toLowerCase()}${s.band.euro ? ', euro shank' : ''}`],
+    ['Section', `${secBack.w.toFixed(2)} × ${secBack.t.toFixed(2)} mm at the base → ${secHead.w.toFixed(2)} × ${secHead.t.toFixed(2)} mm at the head`],
+    ['Shoulder', s.band.shoulder === 'even' ? 'Even width' : `${SHOULDERS.find(x => x.id === s.band.shoulder).label}, ${Math.round(s.band.shoulderAmt * 100)}% over ${s.band.reach}°`],
+    ['Engraving', s.band.engrave === 'none' ? 'None' : `${ENGRAVINGS.find(e => e.id === s.band.engrave).label}${ENGRAVINGS.find(e => e.id === s.band.engrave).hand ? ', hand cut' : ', machine cut'}`], ['Metal', METAL[s.metal.id].label + (s.metal.head !== 'same' ? `, ${METAL[s.metal.head].label} head` : '')], ['Finish', FINISHES.find(f => f.id === s.metal.finish).label], ['Ring size', `US ${s.fit.size} (UK ${sizeUK(s.fit.size)}, EU ${sizeEU(s.fit.size)}, ${ringID(s.fit.size).toFixed(1)} mm inner diameter)`]);
   const det = []; if (s.details.milgrain) det.push('Milgrain edges'); if (s.details.hidden !== 'none') det.push(`Hidden ${HIDDEN_GEMS.find(h => h.id === s.details.hidden).label.toLowerCase()} under the head`); if (s.details.engraving) det.push(`${s.details.hand ? 'Hand' : 'Machine'} engraving: “${s.details.engraving}”`);
   rows.push(['sec', 'Details'], ['Extras', det.length ? det.join('; ') : 'None']);
   return rows;
@@ -1543,7 +1696,9 @@ function randomize() {
   s.head.style = g.fragile ? pick(['bezel', 'halfbezel']) : pick(HEADS.filter(h => h.id !== 'tension' || g.hard >= 9)).id; s.head.tip = pick(PRONG_TIPS).id; s.head.profile = pick(PROFILES).id;
   s.halo.style = pick(['none', 'none', 'single', 'hidden', 'double', 'both']); s.halo.shape = pick(HALO_SHAPES).id; s.halo.accent = Math.random() < .8 ? 'diamond' : pick(ACCENTS).id;
   s.sides.style = pick(['none', 'pave', 'pave', 'channel', 'three']); s.sides.coverage = pick(COVERAGES).id; s.sides.sideShape = pick(SIDE_SHAPES).id; s.sides.sideSize = +lerp(.3, .5, Math.random()).toFixed(2); s.sides.accent = Math.random() < .85 ? 'diamond' : pick(ACCENTS).id;
-  s.band.style = pick(BANDS).id; s.band.profile = s.sides.style === 'pave' || s.sides.style === 'channel' ? pick(['comfort', 'flat', 'dome']) : pick(BAND_PROFILES).id; s.band.width = +(s.sides.style === 'none' ? lerp(1.5, 3, Math.random()) : lerp(1.7, 2.6, Math.random())).toFixed(1);
+  s.band.style = pick(BANDS).id; s.band.profile = s.sides.style === 'pave' || s.sides.style === 'channel' ? pick(['comfort', 'flat', 'dome']) : pick(BAND_PROFILES).id; s.band.width = +(s.sides.style === 'none' ? lerp(1.5, 3.2, Math.random()) : lerp(1.7, 2.6, Math.random())).toFixed(1);
+  s.band.thickness = +lerp(1.3, 2, Math.random()).toFixed(2); s.band.shoulder = pick(['even', 'even', 'taper', 'flare', 'pinch']); s.band.shoulderAmt = +lerp(.3, .9, Math.random()).toFixed(2); s.band.reach = Math.round(lerp(40, 110, Math.random()) / 5) * 5;
+  s.band.euro = Math.random() < .2; s.band.engrave = s.band.style === 'twist' || (s.sides.style !== 'none' && s.sides.coverage === 'full') ? 'none' : (Math.random() < .3 ? pick(ENGRAVINGS).id : 'none'); s.band.cathRise = +lerp(.4, 1.2, Math.random()).toFixed(2);
   s.metal.id = pick(METALS).id; s.metal.head = Math.random() < .25 ? pick(HEAD_METALS).id : 'same'; s.metal.finish = Math.random() < .8 ? 'polish' : pick(FINISHES).id;
   s.details.milgrain = Math.random() < .2; s.details.hidden = Math.random() < .25 ? pick(HIDDEN_GEMS).id : 'none';
   s.fit.size = pick([5, 5.5, 6, 6.5, 7, 7.5]);
@@ -1580,9 +1735,12 @@ async function init() {
   try {
     initGL(canvas); bindControls(canvas); resizeGL(stage); new ResizeObserver(() => resizeGL(stage)).observe(stage);
     glReady = true; applyCamera(); setRing(state); requestAnimationFrame(frame);
-    window.__halo = { R3, get state() { return state; }, estimate, stoneDims, THREE };
+    // Console handle for collaborators: __halo.state, tweak it, then __halo.update().
+    window.__halo = { R3, get state() { return state; }, set state(v) { state = deepMerge(DEFAULT, v); update(); },
+      update, estimate, stoneDims, bandSectionAt, setRing, goView, randomize, DEFAULT, PRESETS, THREE };
     setTimeout(() => { const h = $('#hint-rot'); if (h) h.style.opacity = '0'; }, 6000);
   } catch (e) { console.error(e); showStageMsg('3D preview unavailable', 'WebGL is not available in this browser. ' + e.message); }
 }
 init();
+
 </script>

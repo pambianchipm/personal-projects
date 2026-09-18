@@ -2,7 +2,28 @@
 
 A single-page, character-creator style engagement ring customizer. Slots on the left, a live parametric 3D ring in the middle, an optional price estimate top right, and a spec sheet a jeweler can quote from.
 
-Open `index.html` in a browser. No build step, no server, no dependencies to install — it pulls three.js r170 from jsDelivr at runtime and Fraunces / Instrument Sans / IBM Plex Mono from Google Fonts. Everything else is in the one file.
+## Running it locally
+
+```bash
+cd project-halo
+npm run vendor   # optional, downloads three.js into vendor/ so it works offline
+npm run dev      # http://localhost:5173
+```
+
+`npm run dev` serves the page and live-reloads every open tab whenever anything in `src/` changes, so two people can point at the same machine and iterate. `--port` and `--host 0.0.0.0` are both supported if you want it on the network.
+
+The shipped `index.html` is generated, not edited. Edit `src/`, then `npm run build` to regenerate it. Node 18 or newer, no dependencies to install.
+
+| Path | What it is |
+|---|---|
+| `src/head.html` | Title, fonts, the whole stylesheet. |
+| `src/body.html` | Page markup. |
+| `src/data.js` | Option catalogue, band geometry math, price model. |
+| `src/engine.js` | Parametric 3D: outlines, gem meshes, sweeps, materials, camera. |
+| `src/ui.js` | Slots, trays, estimator, spec sheet, constraints. |
+| `index.html` | Build output. One self-contained file you can email or host anywhere. |
+
+The three parts share one module scope and are concatenated in that order, so there are no imports between them. In the browser console, `__halo.state` is the live design — change a value and call `__halo.update()`.
 
 ## What it does today
 
@@ -12,6 +33,7 @@ Open `index.html` in a browser. No build step, no server, no dependencies to ins
 | Gem geometry | Faceted meshes generated per shape from real outlines and crown / girdle / pavilion proportions. Brilliant, step, old European and rose cuts. |
 | Materials | Physically based metals from measured base colors, transmissive gems with per-species index of refraction and dispersion, a procedural studio environment. |
 | Options | 19 gem types, 12 shapes, 8 heads, 5 halo styles, 4 side-stone styles, 5 shanks, 8 metals, plus finish, milgrain, hidden gem, engraving and ring size. |
+| The band | Width and thickness in millimetres, and a shoulder law: does it taper, widen or pinch on the way up to the stone, by how much, and over how much of the ring. Plus euro shank and five engraved surfaces. The same function drives the geometry and the metal weight in the estimate. |
 | Estimator | Off by default, toggled top right. Line-itemized, and every option tile shows what choosing it would add or subtract. |
 | Guardrails | Soft stones blocked from tension settings, V-prongs forced on pointed shapes, pavé blocked on knife-edge bands, eternity resize warning, and so on. |
 | Handoff | "Send to a jeweler" opens a spec sheet, a machine-readable JSON payload, and a sample jeweler match list. |

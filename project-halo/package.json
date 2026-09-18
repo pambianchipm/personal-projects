@@ -1,0 +1,14 @@
+{
+  "name": "project-halo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Parametric 3D engagement ring customizer demo",
+  "type": "module",
+  "scripts": {
+    "dev": "node serve.mjs",
+    "build": "node build.mjs",
+    "build:offline": "node build.mjs --local-three",
+    "vendor": "node vendor.mjs"
+  },
+  "engines": { "node": ">=18" }
+}
