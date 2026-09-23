@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+# jev: an on/off switch for TypeSafe (Jev) calls, so credits are spent only on purpose.
+#
+# OFF BY DEFAULT. The switch is a file in this container (~/.jev/on). Every new
+# container starts without it, so every new or resumed cloud session starts off.
+#
+# The key itself should live in the environment as TYPESAFE_API_KEY_STORED, a
+# name the TypeSafe SDKs do not read. Nothing can call Jev by accident; `jev exec`
+# hands the key over as TYPESAFE_API_KEY only while the switch is on.
+#
+#   jev on [budget]      turn on; optional token budget (default 2,000,000)
+#   jev off              turn off
+#   jev status           on/off, key found, tokens used, estimated cost
+#   jev exec -- CMD...   run CMD with TYPESAFE_API_KEY set, only if on and under budget
+#   jev allowed          exit 0 if a call may be made now (for wrappers), else 1
+#   jev record N [what]  log N input tokens a wrapper just spent
+set -euo pipefail
+
+JEV_DIR="${JEV_HOME:-$HOME/.jev}"
+FLAG="$JEV_DIR/on"
+USAGE="$JEV_DIR/usage.log"
+DEFAULT_BUDGET=2000000
+USD_PER_MTOK="0.042"  # Jev 1.13 list price per million input tokens; output is free
+
+stored_key() { printf '%s' "${TYPESAFE_API_KEY_STORED:-}"; }
+used_tokens() { [ -f "$USAGE" ] && awk '{ s += $2 } END { print s + 0 }' "$USAGE" || echo 0; }
+budget() { [ -f "$FLAG" ] && head -n1 "$FLAG" || echo 0; }
+cost() { awk -v t="$1" -v p="$USD_PER_MTOK" 'BEGIN { printf "$%.4f", t * p / 1000000 }'; }
+is_on() { [ -f "$FLAG" ]; }
+under_budget() { [ "$(used_tokens)" -lt "$(budget)" ]; }
+
+key_line() {
+  if [ -n "$(stored_key)" ]; then
+    echo "key:    found (TYPESAFE_API_KEY_STORED)"
+  elif [ -n "${TYPESAFE_API_KEY:-}" ]; then
+    echo "key:    found as TYPESAFE_API_KEY. Code can call Jev directly even while off."
+    echo "        Rename it to TYPESAFE_API_KEY_STORED in the environment settings."
+  else
+    echo "key:    missing. Add TYPESAFE_API_KEY_STORED in the environment settings;"
+    echo "        new sessions pick it up."
+  fi
+}
+
+status() {
+  local used; used="$(used_tokens)"
+  if is_on; then
+    echo "jev:    ON (budget $(budget) tokens, $(( $(budget) - used > 0 ? $(budget) - used : 0 )) left)"
+  else
+    echo "jev:    OFF"
+  fi
+  key_line
+  echo "used:   $used input tokens in this container, about $(cost "$used")"
+}
+
+case "${1:-status}" in
+  on)
+    b="${2:-$DEFAULT_BUDGET}"
+    [[ "$b" =~ ^[0-9]+$ ]] || { echo "budget must be a whole number of tokens" >&2; exit 2; }
+    mkdir -p "$JEV_DIR"
+    echo "$b" > "$FLAG"
+    status
+    ;;
+  off)
+    rm -f "$FLAG"
+    status
+    ;;
+  status)
+    status
+    ;;
+  allowed)
+    is_on && under_budget
+    ;;
+  exec)
+    shift
+    [ "${1:-}" = "--" ] && shift
+    [ $# -gt 0 ] || { echo "usage: jev exec -- COMMAND..." >&2; exit 2; }
+    if ! is_on; then
+      echo "jev is OFF, so $1 was not run with a TypeSafe key. Turn it on with /jev on." >&2
+      exit 3
+    fi
+    if ! under_budget; then
+      echo "jev budget spent ($(used_tokens) of $(budget) tokens). Raise it with /jev on <tokens>." >&2
+      exit 3
+    fi
+    key="$(stored_key)"
+    key="${key:-${TYPESAFE_API_KEY:-}}"
+    [ -n "$key" ] || { key_line >&2; exit 3; }
+    TYPESAFE_API_KEY="$key" exec "$@"
+    ;;
+  record)
+    [[ "${2:-}" =~ ^[0-9]+$ ]] || { echo "usage: jev record TOKENS [label]" >&2; exit 2; }
+    mkdir -p "$JEV_DIR"
+    printf '%s %s %s\n' "$(date -u +%FT%TZ)" "$2" "${3:-call}" >> "$USAGE"
+    ;;
+  -h|--help|help)
+    sed -n '2,/^set -euo/p' "$0" | sed '$d; s/^# \{0,1\}//'
+    ;;
+  *)
+    echo "usage: jev on [budget] | off | status | exec -- CMD | allowed | record N" >&2
+    exit 2
+    ;;
+esac
