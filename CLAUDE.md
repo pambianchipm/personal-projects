@@ -15,6 +15,11 @@ are not content Phin will use.
 
 ## Keeping the skills current
 
+This repo is the source of truth for the three skills. `setup/README.md` explains how they
+reach Phin's other machines, cloud sessions, and the Claude app.
+
 - `humanizer` is a straight copy of upstream. See `.claude/skills/humanizer/UPSTREAM.md`.
 - After editing any skill, run `scripts/package-skills.sh` to rebuild the upload zips in
   `skills-dist/`.
+- The rule that `scripts/install-global.sh` adds to `~/.claude/CLAUDE.md` lives in
+  `setup/global-claude-md.md`. Keep it in step with this file.
