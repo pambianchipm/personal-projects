@@ -44,3 +44,11 @@ old one.
 Add two or three paragraphs you wrote to `.claude/skills/co-write/voice.md`, then rerun the
 installer and rebuild the zips. This repo is public, so only paste writing you are fine
 sharing.
+
+## Player2 marketing memory
+
+The Clinkworthy and Player2 brands each have two `preference` entries tagged
+`writing-rules`: a short version of the humanizer rules and a short version of the
+storyscope rules. The Player2 agent cannot load Claude skills, so these are condensed copies.
+When the skills change in a way that matters for marketing copy, ask Claude to rewrite those
+entries. Phin's posted copy outranks both entries.
