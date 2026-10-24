@@ -23,3 +23,6 @@ reach Phin's other machines, cloud sessions, and the Claude app.
   `skills-dist/`.
 - The rule that `scripts/install-global.sh` adds to `~/.claude/CLAUDE.md` lives in
   `setup/global-claude-md.md`. Keep it in step with this file.
+- `scripts/install-global.sh` also installs the third-party claude-ads skills from their own
+  repo, pinned to one release. They are not copied here. See the claude-ads section in
+  `setup/README.md` before changing the pin.
