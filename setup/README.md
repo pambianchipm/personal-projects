@@ -14,8 +14,8 @@ curl -fsSL https://raw.githubusercontent.com/pambianchipm/personal-projects/main
 This copies the three skills into `~/.claude/skills/` and adds the co-write rule to
 `~/.claude/CLAUDE.md`. Your own content in that file stays as it is.
 
-It also installs claude-ads (see the last section). Set `CLAUDE_ADS=0` before the command to
-skip it.
+It also installs claude-ads and the design skills (see the last two sections). Set
+`CLAUDE_ADS=0` or `CLAUDE_DESIGN=0` before the command to skip either one.
 
 ## Claude Code on the web (every repo)
 
@@ -66,3 +66,32 @@ with `--target=claude`.
 
 It is not packaged for Claude.ai or the desktop app. It is built for Claude Code, and its
 `/ads` skill hands work to agents and sub-skills that an uploaded single skill would not have.
+
+## Third-party: design skills
+
+Sixteen skills for front-end and website work, from four MIT-licensed repos:
+
+| Skills | Repo |
+|---|---|
+| `emil-design-eng`, `animate`, `review-animations`, `improve-animations`, `find-animation-opportunities`, `remove-animations`, `animation-performance`, `animation-vocabulary`, `apple-design`, `mobile-native`, `break-ui`, `prototype`, `pick-ui-library` | [emilkowalski/skills](https://github.com/emilkowalski/skills) |
+| `web-design-engineer` | [ConardLi/garden-skills](https://github.com/ConardLi/garden-skills) |
+| `landing-page-design` | [elayadesign/ai-design-skills](https://github.com/elayadesign/ai-design-skills) |
+| `tastemaker` (with `ideagram` inside it) | [codeswithroh/tastemaker](https://github.com/codeswithroh/tastemaker) |
+
+The installer fetches each repo at a pinned commit and copies only those folders, each with
+the repo's LICENSE. It marks every folder it writes with `.installed-by-personal-projects`
+and never replaces a folder of the same name that lacks the mark, so a skill you installed
+another way stays put. The skills for Swift, Expo, Sonner, video and image generation in
+those repos are left out.
+
+`prototype`, `pick-ui-library` and `review-animations` only run when you call them by name.
+`tastemaker` keeps project notes in `.tastemaker/` in the repo you are working in and your
+preferences in `~/.tastemaker/`, and its scripts fetch icons and photos only from the hosts
+listed in its `SECURITY.md`.
+
+To upgrade one, read the skill files at the new commit, then change its sha in
+`scripts/install-global.sh`. To remove them, delete the folders in `~/.claude/skills/` that
+contain `.installed-by-personal-projects`.
+
+They are not in `skills-dist/`. To use one in Claude.ai or the desktop app, zip its folder
+from `~/.claude/skills/` and upload it under Settings, Capabilities, Skills.

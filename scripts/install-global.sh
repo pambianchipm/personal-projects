@@ -1,14 +1,15 @@
 #!/usr/bin/env bash
 # Install the co-write, humanizer, and storyscope skills for every Claude Code project on
-# this machine, add the co-write rule to ~/.claude/CLAUDE.md, and install the third-party
-# claude-ads skills (pinned release, see setup/README.md).
+# this machine, add the co-write rule to ~/.claude/CLAUDE.md, and install two sets of
+# third-party skills: claude-ads and the design skills (both pinned, see setup/README.md).
 #
 # From a checkout:  scripts/install-global.sh
 # From anywhere:    curl -fsSL https://raw.githubusercontent.com/pambianchipm/personal-projects/main/scripts/install-global.sh | bash
 #
-# Safe to rerun. It replaces only these three skill folders and only the marked block in
-# ~/.claude/CLAUDE.md. Set CLAUDE_HOME to install somewhere other than ~/.claude.
-# Set CLAUDE_ADS=0 to skip claude-ads.
+# Safe to rerun. It replaces only these three skill folders, design skill folders it wrote
+# itself, and the marked block in ~/.claude/CLAUDE.md. Set CLAUDE_HOME to install somewhere
+# other than ~/.claude. Set CLAUDE_ADS=0 to skip claude-ads, CLAUDE_DESIGN=0 to skip the
+# design skills.
 set -euo pipefail
 
 skills=(co-write humanizer storyscope)
@@ -85,4 +86,51 @@ if [ "${CLAUDE_ADS:-1}" != "0" ]; then
     echo "claude-ads: could not fetch $ads_ref at the pinned commit; skipped" >&2
   fi
   rm -rf "$ads_tmp"
+fi
+
+# Third-party: design skills for front-end and site work (all MIT). Each repo is pinned to a
+# commit, and only the skill folders named on its line are copied, each with the repo's
+# LICENSE. A folder is replaced only if it is missing or this installer wrote it (it carries
+# .installed-by-personal-projects), so a skill of the same name from somewhere else is left
+# alone. To upgrade, read the new commit's skill files, then change its sha below. Set
+# CLAUDE_DESIGN=0 to skip. See the design skills section in setup/README.md.
+design_marker=".installed-by-personal-projects"
+design_sources=(
+  "emilkowalski/skills a81dbca07f2217b7103e510c0f13f8d5b017afc9 skills animate animation-performance animation-vocabulary apple-design break-ui emil-design-eng find-animation-opportunities improve-animations mobile-native pick-ui-library prototype remove-animations review-animations"
+  "ConardLi/garden-skills 2b9a89340b70f632d31c0f1c69fce94a7912423e skills web-design-engineer"
+  "elayadesign/ai-design-skills ded7efc9d5c02761c41a03caf3b78f9259ab8828 skills landing-page-design"
+  "codeswithroh/tastemaker 792a28a820ec4e9159ef8621c21a6c88528bbf2e skills tastemaker"
+)
+if [ "${CLAUDE_DESIGN:-1}" != "0" ]; then
+  design_tmp="$(mktemp -d)"
+  for entry in "${design_sources[@]}"; do
+    read -r repo sha dir names <<< "$entry"
+    checkout="$design_tmp/${repo//\//-}"
+    if ! { git init --quiet "$checkout" \
+      && git -C "$checkout" fetch --quiet --depth 1 "https://github.com/$repo.git" "$sha" \
+      && git -C "$checkout" -c advice.detachedHead=false checkout --quiet FETCH_HEAD; }; then
+      echo "design: could not fetch $repo at $sha; skipped" >&2
+      continue
+    fi
+    for name in $names; do
+      target="$claude_home/skills/$name"
+      if [ -e "$target" ] && [ ! -e "$target/$design_marker" ]; then
+        echo "design: $target exists and was not installed by this script; left alone" >&2
+        continue
+      fi
+      if [ ! -f "$checkout/$dir/$name/SKILL.md" ]; then
+        echo "design: $name not found in $repo at $sha; skipped" >&2
+        continue
+      fi
+      rm -rf "${target:?}"
+      if cp -R "$checkout/$dir/$name" "$target"; then
+        [ -f "$target/LICENSE" ] || cp "$checkout/LICENSE" "$target/LICENSE"
+        echo "$repo@$sha" > "$target/$design_marker"
+        echo "installed skill: $target"
+      else
+        echo "design: could not copy $name; skipped" >&2
+      fi
+    done
+  done
+  rm -rf "$design_tmp"
 fi
